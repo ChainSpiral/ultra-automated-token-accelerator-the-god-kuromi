@@ -1,0 +1,23 @@
+# deps / build
+frontend/node_modules/
+frontend/.next/
+node_modules/
+
+# python
+__pycache__/
+*.pyc
+
+# RPC/Dune/etherscan block-keyed cache (derived, large)
+feeder/cache/
+
+# os
+.DS_Store
+
+# secrets live OUTSIDE the repo (/Users/link/podotree/.env)
+.env
+.env.*
+
+# local preview / build artifacts
+.claude/
+frontend/.claude/
+tsconfig.tsbuildinfo

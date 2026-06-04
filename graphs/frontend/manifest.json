@@ -1,0 +1,25 @@
+{
+  "tokens": [
+    {
+      "symbol": "stETH",
+      "file": "stETH.sim.json",
+      "block": 25242078,
+      "nodes": 47,
+      "edges": 50
+    },
+    {
+      "symbol": "wstETH",
+      "file": "wstETH.sim.json",
+      "block": 25242078,
+      "nodes": 32,
+      "edges": 32
+    },
+    {
+      "symbol": "rsETH",
+      "file": "rsETH.sim.json",
+      "block": 25242078,
+      "nodes": 14,
+      "edges": 15
+    }
+  ]
+}
