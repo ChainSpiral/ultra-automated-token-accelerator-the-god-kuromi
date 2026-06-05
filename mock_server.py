@@ -55,6 +55,16 @@ class H(BaseHTTPRequestHandler):
             body=json.dumps(build(token)).encode()
             self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
             self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/flow":
+            # flow.<name>.json (flow_trace.py 산출물). name 미지정 시 첫 flow.* 파일.
+            name=(parse_qs(u.query).get("name") or [None])[0]
+            p=os.path.join(FRONT,f"flow.{name}.json") if name else None
+            if not p or not os.path.exists(p):
+                cand=sorted(f for f in os.listdir(FRONT) if f.startswith("flow.") and f.endswith(".json"))
+                p=os.path.join(FRONT,cand[0]) if cand else None
+            body=json.dumps(json.load(open(p)) if p and os.path.exists(p) else {"nodes":[],"edges":[]}).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
         elif self.path.startswith("/api/health"):
             self.send_response(200); self.send_header("Content-Type","application/json"); self._cors(); self.end_headers()
             self.wfile.write(b'{"status":"ok"}')

@@ -1,0 +1,244 @@
+{
+  "root": "0xac3e018457b222d93114458476f3e3416abbe38f",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "amount": 3679.6550586347876,
+      "frac": 0.0941,
+      "kind": "erc4626_vault",
+      "label": "FraxlendPair",
+      "depth": 0
+    },
+    {
+      "from_token": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "holder": "0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1",
+      "amount": 5756243.273461726,
+      "frac": 0.9017,
+      "kind": "safe",
+      "label": "SafeProxy",
+      "depth": 1
+    },
+    {
+      "from_token": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "holder": "0x3f2b20b8e8ce30bb52239d3dfadf826ecfe6a5f7",
+      "amount": 603708.0552929221,
+      "frac": 0.0946,
+      "kind": "contract",
+      "label": "ResupplyPair",
+      "depth": 1
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "amount": 2493.6931085020797,
+      "frac": 0.0638,
+      "kind": "ledger:eigenlayer",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:eigenlayer",
+      "resolved": true,
+      "children_sum": 2099.61,
+      "coverage": 0.842
+    },
+    {
+      "from_token": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "holder": "0x56398b89d53e8731bca8c1b06886cfb14bd6b654",
+      "amount": 1874.5282490168852,
+      "frac": 0.7517,
+      "kind": "safe",
+      "label": "GnosisSafeProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 1874.5282,
+          "underlying": 1874.5282,
+          "operator": "0xd7890b468b1ed9effad20cc809f44e590622b735"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "holder": "0x19bd29e74c450ac73b49b5fb199a3d0d4c8f37b2",
+      "amount": 125.08142857201018,
+      "frac": 0.0502,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 125.0814,
+          "underlying": 125.0814,
+          "operator": "0x110af279aaffb0d182697d7fc87653838aa5945e"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "holder": "0xed7191fc83641990595559e83c989f4bbc050e4f",
+      "amount": 100.0,
+      "frac": 0.0401,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 100.0,
+          "underlying": 100.0,
+          "operator": "0x500f8fb5422cf9cd8c56198464ac21d065da2228"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2",
+      "amount": 2392.091678260067,
+      "frac": 0.0612,
+      "kind": "contract",
+      "label": "L1ChugSplashProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x3691ef68ba22a854c36bc92f6b5f30473ef5fb0a",
+      "amount": 1767.9697154523676,
+      "frac": 0.0452,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+      "amount": 1611.7701867433866,
+      "frac": 0.0412,
+      "kind": "erc4626_vault",
+      "label": "DefaultCollateral",
+      "depth": 0
+    },
+    {
+      "from_token": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+      "holder": "0xe2008b01a2ad0a9aeea9f71ecc6a176138553a61",
+      "amount": 1597.589614,
+      "frac": 0.9912,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "amount": 1483.4696012918535,
+      "frac": 0.0379,
+      "kind": "erc4626_vault",
+      "label": "FraxlendPair",
+      "depth": 0
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0x351dfdae85652cf1a1cfbe29914cd1702cd25167",
+      "amount": 421751.43623628916,
+      "frac": 0.2839,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0xcd818ef199e5ab0f4ee92ef6c90268eeb147efd0",
+      "amount": 324775.4395669227,
+      "frac": 0.2186,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+      "amount": 213664.42770655442,
+      "frac": 0.1438,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0xea32ceb2c0d5479916ef6427abab12bf59953be0",
+      "amount": 147066.72792038837,
+      "frac": 0.099,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0x4e06ea07ac8649c35b856301f26cc65db3465684",
+      "amount": 125084.143069271,
+      "frac": 0.0842,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0x318df33589c7f98698f9d54683f425cd19f70c99",
+      "amount": 92675.81557832113,
+      "frac": 0.0624,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0x56797811d35af8d49e9d2a68b6e162c48b80fe8b",
+      "amount": 48522.88874021657,
+      "frac": 0.0327,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 1
+    },
+    {
+      "from_token": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "holder": "0xc14390a9691f4381d4816e95ead34035a9c24842",
+      "amount": 36605.82988690623,
+      "frac": 0.0246,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x4eac0ea26700f63c5303bcc54fe6e891579472d9",
+      "amount": 1442.391419223509,
+      "frac": 0.0369,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "holder": "0x608e1e01ef072c15e5da7235ce793f4d24eca67b",
+      "amount": 1157.9619570663704,
+      "frac": 0.0296,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    }
+  ]
+}

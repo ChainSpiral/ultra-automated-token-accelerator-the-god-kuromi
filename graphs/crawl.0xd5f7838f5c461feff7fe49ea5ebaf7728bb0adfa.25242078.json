@@ -1,0 +1,78 @@
+{
+  "root": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x6206ae3781f9f1b6fbcf44c7240b1be14f3169ef",
+      "amount": 42200.0,
+      "frac": 0.2012,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x12be34be067ebd201f6eaf78a861d90b2a66b113",
+      "amount": 33958.89161464141,
+      "frac": 0.1619,
+      "kind": "contract",
+      "label": "DelayedWithdraw",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x15bb5d31048381c84a157526cef9513531b8be1e",
+      "amount": 26748.193326148008,
+      "frac": 0.1275,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x95fc37a27a2f68e3a647cdc081f0a89bb47c3012",
+      "amount": 26136.518787971243,
+      "frac": 0.1246,
+      "kind": "contract",
+      "label": "L1ChugSplashProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x7c0e4d6c035d1bd60489ab7e16116ff7ca6c956a",
+      "amount": 24527.75491188,
+      "frac": 0.1169,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x180a1b935d28494f9ff4233985562b18b3dcfa74",
+      "amount": 14779.163909690933,
+      "frac": 0.0705,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0xf89d7b9c864f589bbf53a82105107622b35eaa40",
+      "amount": 12234.797109367808,
+      "frac": 0.0583,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "holder": "0x4f24535e67ebbdb274a1a7aa3e33339e05f0e46d",
+      "amount": 3000.0113,
+      "frac": 0.0143,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    }
+  ]
+}

@@ -7,7 +7,14 @@ export const dynamic = "force-dynamic";
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 type RawNode = { id: string; type: string; label: string; data?: Record<string, unknown> };
-type RawEdge = { id: string; source: string; target: string; label?: string; edge_type?: string };
+type RawEdge = {
+  id: string;
+  source: string;
+  target: string;
+  label?: string;
+  edge_type?: string;
+  coverage?: number;
+};
 type Tok = { symbol: string; nodes: number; edges: number; block: number; file: string };
 
 export default async function OverviewRoute({
@@ -24,6 +31,7 @@ export default async function OverviewRoute({
     /* manifest 없으면 기본 그래프로 */
   }
   const selected = sp.token ?? tokens[0]?.symbol;
+  const tokenMeta = tokens.find((t) => t.symbol === selected);
 
   let nodes: RawNode[] = [];
   let edges: RawEdge[] = [];
@@ -40,10 +48,37 @@ export default async function OverviewRoute({
     error = e instanceof Error ? e.message : String(e);
   }
 
+  const covs = edges.map((e) => e.coverage).filter((c): c is number => typeof c === "number");
+  const avgCov = covs.length ? covs.reduce((a, b) => a + b, 0) / covs.length : null;
+
   return (
     <div className="flex h-dvh flex-col">
       <SiteHeader />
       {tokens.length > 0 && <TokenPicker tokens={tokens} selected={selected} />}
+      {!error && tokenMeta && (
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-[var(--color-border-subtle)] bg-[var(--color-surface)] px-5 py-2 font-mono text-[11px] text-[var(--color-text-muted)]">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="inline-block size-1.5 rounded-full bg-[var(--color-healthy)]" />
+            <span className="text-[var(--color-text-secondary)]">스냅샷</span> block{" "}
+            <span className="text-[var(--color-text-primary)]">{tokenMeta.block.toLocaleString()}</span>
+          </span>
+          <span>·</span>
+          <span>
+            nodes <span className="text-[var(--color-text-secondary)]">{nodes.length}</span> / edges{" "}
+            <span className="text-[var(--color-text-secondary)]">{edges.length}</span>
+          </span>
+          {avgCov != null && (
+            <>
+              <span>·</span>
+              <span>
+                평균 coverage{" "}
+                <span className="text-[var(--color-text-secondary)]">{(avgCov * 100).toFixed(0)}%</span>
+              </span>
+            </>
+          )}
+          <span className="ml-auto text-[10px]">같은 block 재실행 시 동일 그래프 (재현 가능)</span>
+        </div>
+      )}
       {error ? (
         <div className="flex flex-1 items-center justify-center p-12 text-center">
           <div className="space-y-2">

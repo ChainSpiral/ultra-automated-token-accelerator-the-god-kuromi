@@ -1,0 +1,1039 @@
+{
+  "nodes": [
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "type": "token",
+      "label": "0x40d1…6c2f",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x54c58157def387a880ae62332d1445f03adbe7e9",
+      "type": "protocol",
+      "label": "0x54c5…e7e9",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x54c58157def387a880ae62332d1445f03adbe7e9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb0f8c20b849886cad270d705acc39739c0683f64",
+      "type": "protocol",
+      "label": "EOA 0xb0f8…3f64",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xb0f8c20b849886cad270d705acc39739c0683f64",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x444c55075086f531a1c02730f41c46b9bbb00a39",
+      "type": "protocol",
+      "label": "EOA 0x444c…0a39",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x444c55075086f531a1c02730f41c46b9bbb00a39",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe52ea6b2230cd7e2aee1805c3aebd34b9c74fcc3",
+      "type": "protocol",
+      "label": "Safe 0xe52e…fcc3",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xe52ea6b2230cd7e2aee1805c3aebd34b9c74fcc3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x577ebc5de943e35cdf9ecb5bbe1f7d7cb6c7c647",
+      "type": "protocol",
+      "label": "EOA 0x577e…c647",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x577ebc5de943e35cdf9ecb5bbe1f7d7cb6c7c647",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5ef87dec00a19d2b47ee0073d869f7d7feff26ef",
+      "type": "protocol",
+      "label": "Safe 0x5ef8…26ef",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x5ef87dec00a19d2b47ee0073d869f7d7feff26ef",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2a0e3a59f35e51acfd15b5cb8092663143d3a541",
+      "type": "protocol",
+      "label": "EOA 0x2a0e…a541",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x2a0e3a59f35e51acfd15b5cb8092663143d3a541",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc2b7d2aedf1f24d3409788e3a95d021ceb2238f8",
+      "type": "protocol",
+      "label": "EOA 0xc2b7…38f8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xc2b7d2aedf1f24d3409788e3a95d021ceb2238f8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x41bc7d0687e6cea57fa26da78379dfdc5627c56d",
+      "type": "protocol",
+      "label": "EOA 0x41bc…c56d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x41bc7d0687e6cea57fa26da78379dfdc5627c56d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "type": "protocol",
+      "label": "stkGHO",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": "stkGHO",
+        "depth": 0,
+        "address": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xfeb016d0d14ac0fa6d69199608b0776d007203b2",
+      "type": "protocol",
+      "label": "Safe 0xfeb0…03b2",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xfeb016d0d14ac0fa6d69199608b0776d007203b2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdbd87325d7b1189dcc9255c4926076ff4a96a271",
+      "type": "protocol",
+      "label": "BoringVault (Veda)",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "BoringVault",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xdbd87325d7b1189dcc9255c4926076ff4a96a271",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+      "type": "protocol",
+      "label": "EOA 0x39d7…ebdf",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1123dce34dadb4e233081868ef48d28ac0d86ae0",
+      "type": "protocol",
+      "label": "EOA 0x1123…6ae0",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x1123dce34dadb4e233081868ef48d28ac0d86ae0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff",
+      "type": "protocol",
+      "label": "EOA 0x189f…7bff",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1ad9470698495aef0400846e8d3dfe87af96ebfb",
+      "type": "protocol",
+      "label": "EOA 0x1ad9…ebfb",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x1ad9470698495aef0400846e8d3dfe87af96ebfb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7",
+      "type": "protocol",
+      "label": "EOA 0x0e50…71a7",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3516901e0b57536631589b60650faf48bf371af8",
+      "type": "protocol",
+      "label": "EOA 0x3516…1af8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x3516901e0b57536631589b60650faf48bf371af8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5513224daaeabca31af5280727878d52097afa05",
+      "type": "protocol",
+      "label": "0x5513…fa05",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x5513224daaeabca31af5280727878d52097afa05",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2ce01c87fec1b71a9041c52caed46fc5f4807285",
+      "type": "protocol",
+      "label": "0x2ce0…7285",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x2ce01c87fec1b71a9041c52caed46fc5f4807285",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d",
+      "type": "protocol",
+      "label": "Safe 0xaa12…c79d",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
+      "type": "protocol",
+      "label": "InitializableAdminUpgradeabilityProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "InitializableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xaff94a1706ef11c0ddd1af83d17456423539b342",
+      "type": "protocol",
+      "label": "EOA 0xaff9…b342",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xaff94a1706ef11c0ddd1af83d17456423539b342",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdeadd8ab03075b7fba81864202a2f59ee25b312b",
+      "type": "protocol",
+      "label": "Safe 0xdead…312b",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xdeadd8ab03075b7fba81864202a2f59ee25b312b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
+      "type": "protocol",
+      "label": "Vault",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Vault",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3",
+      "type": "protocol",
+      "label": "Safe 0x8e53…cfe3",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x06179f7c1be40863405f374e7f5f8806c728660a",
+      "type": "protocol",
+      "label": "0x0617…660a",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x06179f7c1be40863405f374e7f5f8806c728660a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdd62115f601daebccfdd2aeed834513d8dc2f4e2",
+      "type": "protocol",
+      "label": "EOA 0xdd62…f4e2",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xdd62115f601daebccfdd2aeed834513d8dc2f4e2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561",
+      "type": "protocol",
+      "label": "0x9f4f…1561",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Proxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e",
+      "type": "protocol",
+      "label": "Safe 0x3492…fc9e",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26",
+      "type": "protocol",
+      "label": "EOA 0x7ded…bc26",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x58a48b6cfa8b813757ad8627265741c679bb4445",
+      "type": "protocol",
+      "label": "opaque 0x58a4…4445",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x58a48b6cfa8b813757ad8627265741c679bb4445",
+        "approx": true
+      }
+    },
+    {
+      "id": "0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31",
+      "type": "protocol",
+      "label": "EOA 0x5a95…1c31",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3e43a976a28e593ef2494a8fda4135bf3260f8ee",
+      "type": "protocol",
+      "label": "EOA 0x3e43…f8ee",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x3e43a976a28e593ef2494a8fda4135bf3260f8ee",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf",
+      "type": "protocol",
+      "label": "EOA 0xd225…15bf",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x54c58157def387a880ae62332d1445f03adbe7e9#0",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x54c58157def387a880ae62332d1445f03adbe7e9",
+      "label": "35.7% 208,687,459",
+      "edge_type": "holds",
+      "amount": 208687458.794921,
+      "depth": 0
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0xe1753f2e00940cc31213dd92013cf019dfe4ca1d#1",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "label": "21.6% 126,072,676",
+      "edge_type": "vault",
+      "amount": 126072676.14654899,
+      "depth": 0
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0xb0f8c20b849886cad270d705acc39739c0683f64#2",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0xb0f8c20b849886cad270d705acc39739c0683f64",
+      "label": "8.4% 10,612,017",
+      "edge_type": "holds",
+      "amount": 10612017.231858963,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x444c55075086f531a1c02730f41c46b9bbb00a39#3",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x444c55075086f531a1c02730f41c46b9bbb00a39",
+      "label": "6.0% 7,571,635",
+      "edge_type": "holds",
+      "amount": 7571635.087743398,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0xe52ea6b2230cd7e2aee1805c3aebd34b9c74fcc3#4",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0xe52ea6b2230cd7e2aee1805c3aebd34b9c74fcc3",
+      "label": "5.1% 6,451,445",
+      "edge_type": "holds",
+      "amount": 6451444.537661024,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x577ebc5de943e35cdf9ecb5bbe1f7d7cb6c7c647#5",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x577ebc5de943e35cdf9ecb5bbe1f7d7cb6c7c647",
+      "label": "3.9% 4,914,613",
+      "edge_type": "holds",
+      "amount": 4914613.04015993,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x5ef87dec00a19d2b47ee0073d869f7d7feff26ef#6",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x5ef87dec00a19d2b47ee0073d869f7d7feff26ef",
+      "label": "3.6% 4,575,878",
+      "edge_type": "holds",
+      "amount": 4575878.017851927,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x2a0e3a59f35e51acfd15b5cb8092663143d3a541#7",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x2a0e3a59f35e51acfd15b5cb8092663143d3a541",
+      "label": "3.6% 4,478,359",
+      "edge_type": "holds",
+      "amount": 4478358.65361873,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0xc2b7d2aedf1f24d3409788e3a95d021ceb2238f8#8",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0xc2b7d2aedf1f24d3409788e3a95d021ceb2238f8",
+      "label": "3.0% 3,805,744",
+      "edge_type": "holds",
+      "amount": 3805744.1251996052,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x41bc7d0687e6cea57fa26da78379dfdc5627c56d#9",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x41bc7d0687e6cea57fa26da78379dfdc5627c56d",
+      "label": "3.0% 3,770,819",
+      "edge_type": "holds",
+      "amount": 3770818.7366320915,
+      "depth": 1
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d#10",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "label": "13.0% 75,776,467",
+      "edge_type": "wrapper",
+      "amount": 75776466.55571184,
+      "depth": 0
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xfeb016d0d14ac0fa6d69199608b0776d007203b2#11",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0xfeb016d0d14ac0fa6d69199608b0776d007203b2",
+      "label": "16.7% 12,676,126",
+      "edge_type": "holds",
+      "amount": 12676125.751478028,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xdbd87325d7b1189dcc9255c4926076ff4a96a271#12",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0xdbd87325d7b1189dcc9255c4926076ff4a96a271",
+      "label": "11.6% 8,803,043",
+      "edge_type": "holds",
+      "amount": 8803043.06043803,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x39d787fdf7384597c7208644dbb6fda1cca4ebdf#13",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
+      "label": "6.8% 5,164,442",
+      "edge_type": "holds",
+      "amount": 5164442.482953821,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1123dce34dadb4e233081868ef48d28ac0d86ae0#14",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x1123dce34dadb4e233081868ef48d28ac0d86ae0",
+      "label": "3.6% 2,698,858",
+      "edge_type": "holds",
+      "amount": 2698857.8540661186,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff#15",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff",
+      "label": "2.3% 1,776,592",
+      "edge_type": "holds",
+      "amount": 1776591.7831161302,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1ad9470698495aef0400846e8d3dfe87af96ebfb#16",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x1ad9470698495aef0400846e8d3dfe87af96ebfb",
+      "label": "2.1% 1,617,026",
+      "edge_type": "holds",
+      "amount": 1617025.741761553,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7#17",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7",
+      "label": "2.1% 1,611,258",
+      "edge_type": "holds",
+      "amount": 1611257.5093707426,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x3516901e0b57536631589b60650faf48bf371af8#18",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x3516901e0b57536631589b60650faf48bf371af8",
+      "label": "2.1% 1,590,704",
+      "edge_type": "holds",
+      "amount": 1590703.5605516348,
+      "depth": 1
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x00907f9921424583e7ffbfedf84f92b7b2be4977#19",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+      "label": "11.5% 67,253,935",
+      "edge_type": "aave_v3",
+      "amount": 67253935.18747616,
+      "depth": 0,
+      "coverage": 2.4534
+    },
+    {
+      "id": "0x00907f9921424583e7ffbfedf84f92b7b2be4977->0x5513224daaeabca31af5280727878d52097afa05#20",
+      "source": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+      "target": "0x5513224daaeabca31af5280727878d52097afa05",
+      "label": "예치 165,000,000 · LT 0%",
+      "edge_type": "lending",
+      "amount": 165000000.0,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
+        "detail": {
+          "supplied": 165000000.0,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x18efe565a5373f430e2f809b97de30335b3ad96a#21",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "label": "6.6% 38,577,983",
+      "edge_type": "aave_v3",
+      "amount": 38577983.37841777,
+      "depth": 0,
+      "coverage": 1.7439
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x2ce01c87fec1b71a9041c52caed46fc5f4807285#22",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0x2ce01c87fec1b71a9041c52caed46fc5f4807285",
+      "label": "예치 56,172,097 · LT 0%",
+      "edge_type": "lending",
+      "amount": 56172097.32074474,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 56172097.3207,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d#23",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d",
+      "label": "예치 3,637,253 · LT 0%",
+      "edge_type": "lending",
+      "amount": 3637252.731373539,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 3637252.7314,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c#24",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
+      "label": "예치 3,078,273 · LT 0%",
+      "edge_type": "lending",
+      "amount": 3078272.6582760364,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 3078272.6583,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaff94a1706ef11c0ddd1af83d17456423539b342#25",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0xaff94a1706ef11c0ddd1af83d17456423539b342",
+      "label": "예치 1,898,963 · LT 0%",
+      "edge_type": "lending",
+      "amount": 1898962.6762571973,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 1898962.6763,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xdeadd8ab03075b7fba81864202a2f59ee25b312b#26",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0xdeadd8ab03075b7fba81864202a2f59ee25b312b",
+      "label": "예치 1,703,681 · LT 0%",
+      "edge_type": "lending",
+      "amount": 1703681.0126799927,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 1703681.0127,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xc71ea051a5f82c67adcf634c36ffe6334793d24c#27",
+      "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+      "target": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
+      "label": "예치 785,768 · LT 0%",
+      "edge_type": "lending",
+      "amount": 785768.382781014,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
+        "detail": {
+          "supplied": 785768.3828,
+          "underlying_symbol": "GHO",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0xba1333333333a1ba1108e8412f11850a5c319ba9#28",
+      "source": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
+      "target": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
+      "label": "57.1% 432,477",
+      "edge_type": "holds",
+      "amount": 432476.66748622764,
+      "depth": 2
+    },
+    {
+      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3#29",
+      "source": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
+      "target": "0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3",
+      "label": "42.6% 322,612",
+      "edge_type": "holds",
+      "amount": 322612.2546565075,
+      "depth": 2
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x06179f7c1be40863405f374e7f5f8806c728660a#30",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x06179f7c1be40863405f374e7f5f8806c728660a",
+      "label": "4.3% 25,134,266",
+      "edge_type": "holds",
+      "amount": 25134266.461906016,
+      "depth": 0
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x4f827a63755855cdf3e8f3bcd20265c833f15033#31",
+      "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+      "target": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "label": "2.6% 15,182,235",
+      "edge_type": "vault",
+      "amount": 15182234.957806421,
+      "depth": 0
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xdd62115f601daebccfdd2aeed834513d8dc2f4e2#32",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0xdd62115f601daebccfdd2aeed834513d8dc2f4e2",
+      "label": "12.5% 1,904,448",
+      "edge_type": "holds",
+      "amount": 1904447.6695600771,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561#33",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561",
+      "label": "11.8% 1,791,456",
+      "edge_type": "holds",
+      "amount": 1791456.4504574754,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e#34",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e",
+      "label": "9.4% 1,421,870",
+      "edge_type": "holds",
+      "amount": 1421870.0818363857,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26#35",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26",
+      "label": "8.3% 1,257,849",
+      "edge_type": "holds",
+      "amount": 1257848.6693859058,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x58a48b6cfa8b813757ad8627265741c679bb4445#36",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x58a48b6cfa8b813757ad8627265741c679bb4445",
+      "label": "6.6% 1,008,205",
+      "edge_type": "holds",
+      "amount": 1008204.5870835498,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31#37",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31",
+      "label": "4.9% 748,310",
+      "edge_type": "holds",
+      "amount": 748310.4465000596,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x3e43a976a28e593ef2494a8fda4135bf3260f8ee#38",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x3e43a976a28e593ef2494a8fda4135bf3260f8ee",
+      "label": "3.0% 453,336",
+      "edge_type": "holds",
+      "amount": 453335.5250652419,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf#39",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf",
+      "label": "2.2% 330,678",
+      "edge_type": "holds",
+      "amount": 330677.8421985233,
+      "depth": 1
+    }
+  ],
+  "metadata": {
+    "root": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+    "block": 25242078,
+    "edge_count": 40,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

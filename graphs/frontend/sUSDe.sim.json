@@ -1,0 +1,1369 @@
+{
+  "nodes": [
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "type": "token",
+      "label": "0x9d39…3497",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "type": "protocol",
+      "label": "LayerZero OFT (bridge)",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "StakedUSDeOFTAdapter",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0591926d5d3b9cc48ae6efb8db68025ddc3adfa5",
+      "type": "protocol",
+      "label": "Safe 0x0591…dfa5",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x0591926d5d3b9cc48ae6efb8db68025ddc3adfa5",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x6142eb927529974c5cded66dafc57cb5aaaf73ab",
+      "type": "protocol",
+      "label": "EOA 0x6142…73ab",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x6142eb927529974c5cded66dafc57cb5aaaf73ab",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075",
+      "type": "protocol",
+      "label": "opaque 0xa9f8…f075",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075",
+        "approx": true
+      }
+    },
+    {
+      "id": "0xa998a89bc88d3e3e93dcd86455a1182f83433bfd",
+      "type": "protocol",
+      "label": "Safe 0xa998…3bfd",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xa998a89bc88d3e3e93dcd86455a1182f83433bfd",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9cbf099ff424979439dfba03f00b5961784c06ce",
+      "type": "protocol",
+      "label": "EOA 0x9cbf…06ce",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x9cbf099ff424979439dfba03f00b5961784c06ce",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc0c7a4627fcdd79c6aeb1f408111fb77a2318526",
+      "type": "protocol",
+      "label": "EOA 0xc0c7…8526",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xc0c7a4627fcdd79c6aeb1f408111fb77a2318526",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2304eb247ae2dcf91ba372b458fc7e4ccc55ee42",
+      "type": "protocol",
+      "label": "Safe 0x2304…ee42",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x2304eb247ae2dcf91ba372b458fc7e4ccc55ee42",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa580fe412dfbc2754bf0b9006075bd4b64a6752b",
+      "type": "protocol",
+      "label": "EOA 0xa580…752b",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xa580fe412dfbc2754bf0b9006075bd4b64a6752b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "type": "protocol",
+      "label": "Morpho",
+      "data": {
+        "category": "ledger:morpho",
+        "kind": "ledger:morpho",
+        "label": "Morpho",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xcf0a12cbd8088fc5f84ad431e71787157041cd69",
+      "type": "protocol",
+      "label": "EOA 0xcf0a…cd69",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xcf0a12cbd8088fc5f84ad431e71787157041cd69",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb00fe7a3e0eaa061de1f74af0d48de97c244f58d",
+      "type": "protocol",
+      "label": "EOA 0xb00f…f58d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xb00fe7a3e0eaa061de1f74af0d48de97c244f58d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9f1a1479191af103ff82fead23e950b6b3b2bd1a",
+      "type": "protocol",
+      "label": "EOA 0x9f1a…bd1a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x9f1a1479191af103ff82fead23e950b6b3b2bd1a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x42715ba91deda3c692b9f540cee2fbb4dae78bbb",
+      "type": "protocol",
+      "label": "EOA 0x4271…8bbb",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x42715ba91deda3c692b9f540cee2fbb4dae78bbb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdf81987465681d0515058fe0a47a3bd174012730",
+      "type": "protocol",
+      "label": "EOA 0xdf81…2730",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xdf81987465681d0515058fe0a47a3bd174012730",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xecc692198f2c97702092f9f7e9e95b2f25e6a6e8",
+      "type": "protocol",
+      "label": "EOA 0xecc6…a6e8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xecc692198f2c97702092f9f7e9e95b2f25e6a6e8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x65859153491f44e2226ca6ae37347c855158a4fb",
+      "type": "protocol",
+      "label": "EOA 0x6585…a4fb",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x65859153491f44e2226ca6ae37347c855158a4fb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+      "type": "protocol",
+      "label": "EOA 0x6efc…1177",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9ffe77146cc1da3edb87af163c6c32bab474b464",
+      "type": "protocol",
+      "label": "0x9ffe…b464",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x9ffe77146cc1da3edb87af163c6c32bab474b464",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdbf4fb6c310c1c85d0b41b5dbca06096f2e7099f",
+      "type": "protocol",
+      "label": "0xdbf4…099f",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xdbf4fb6c310c1c85d0b41b5dbca06096f2e7099f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xcbf87044fa4cd42178d0393a1e7c7d9faeef545d",
+      "type": "protocol",
+      "label": "EOA 0xcbf8…545d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xcbf87044fa4cd42178d0393a1e7c7d9faeef545d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "PendleSUSDESY",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "type": "protocol",
+      "label": "YT-sUSDE-13AUG2026",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-sUSDE-13AUG2026",
+        "depth": 1,
+        "address": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7ea90af38397575a372e36bdc0f5970fb512fc7f",
+      "type": "protocol",
+      "label": "EOA 0x7ea9…fc7f",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x7ea90af38397575a372e36bdc0f5970fb512fc7f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x84b9a226bce763e995851c395c8f68cc2d3bbfa5",
+      "type": "protocol",
+      "label": "EOA 0x84b9…bfa5",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x84b9a226bce763e995851c395c8f68cc2d3bbfa5",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd93814273b33dd33b32cd345225cfb65deb048dd",
+      "type": "protocol",
+      "label": "EOA 0xd938…48dd",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd93814273b33dd33b32cd345225cfb65deb048dd",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xec89639d883a9ff2086c6deb0d766064b5bbea03",
+      "type": "protocol",
+      "label": "EOA 0xec89…ea03",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xec89639d883a9ff2086c6deb0d766064b5bbea03",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x811e8f6d80f38a2f0f8b606cb743a950638f0ad4",
+      "type": "protocol",
+      "label": "opaque 0x811e…0ad4",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x811e8f6d80f38a2f0f8b606cb743a950638f0ad4",
+        "approx": true
+      }
+    },
+    {
+      "id": "0x20eadfcaf91bd98674ff8fc341d148e1731576a4",
+      "type": "protocol",
+      "label": "EOA 0x20ea…76a4",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x20eadfcaf91bd98674ff8fc341d148e1731576a4",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6",
+      "type": "protocol",
+      "label": "EOA 0xac3b…54a6",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "type": "protocol",
+      "label": "PLP-sUSDE-13AUG2026",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleMarketV7",
+        "symbol": "PLP-sUSDE-13AUG2026",
+        "depth": 1,
+        "address": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf6853c77a2452576eae5af424975a101ffc47308",
+      "type": "protocol",
+      "label": "EOA 0xf685…7308",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xf6853c77a2452576eae5af424975a101ffc47308",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x31f4ee28f2fb544e54a981eaa9a7a4eac7b9a07b",
+      "type": "protocol",
+      "label": "EOA 0x31f4…a07b",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x31f4ee28f2fb544e54a981eaa9a7a4eac7b9a07b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe8e49c28cd2a686fc5a3a5bcb6702ab1fe8ea84f",
+      "type": "protocol",
+      "label": "EOA 0xe8e4…a84f",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xe8e49c28cd2a686fc5a3a5bcb6702ab1fe8ea84f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7f9e4e2ef9e4da30524405d894fe12997eda81e4",
+      "type": "protocol",
+      "label": "EOA 0x7f9e…81e4",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x7f9e4e2ef9e4da30524405d894fe12997eda81e4",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5a35eed71cfe12b9bc50d4e441f42238dc744861",
+      "type": "protocol",
+      "label": "EOA 0x5a35…4861",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x5a35eed71cfe12b9bc50d4e441f42238dc744861",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4a5d1524a2dc7b2b832dc3b37e1dae3da1e975ab",
+      "type": "protocol",
+      "label": "EOA 0x4a5d…75ab",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x4a5d1524a2dc7b2b832dc3b37e1dae3da1e975ab",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0b129e1a16bcb6ec8fab24d2182ad59cc8fae4eb",
+      "type": "protocol",
+      "label": "EOA 0x0b12…e4eb",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x0b129e1a16bcb6ec8fab24d2182ad59cc8fae4eb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "type": "protocol",
+      "label": "YT-sUSDE-7MAY2026",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-sUSDE-7MAY2026",
+        "depth": 1,
+        "address": "0x30775b422b9c7415349855346352faa61fd97e41",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xee2826453a4fd5afeb7ceffeef3ffa2320081268",
+      "type": "protocol",
+      "label": "EOA 0xee28…1268",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xee2826453a4fd5afeb7ceffeef3ffa2320081268",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x740c5ed6962e47bbf36caa1dc96bb05536a7c6c1",
+      "type": "protocol",
+      "label": "EOA 0x740c…c6c1",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x740c5ed6962e47bbf36caa1dc96bb05536a7c6c1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xaa95e62532167b23e0f913f98c8e9e53707216c9",
+      "type": "protocol",
+      "label": "EOA 0xaa95…16c9",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xaa95e62532167b23e0f913f98c8e9e53707216c9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc34ae1a39662415a4720d4a3e7c2be0e202568c2",
+      "type": "protocol",
+      "label": "opaque 0xc34a…68c2",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xc34ae1a39662415a4720d4a3e7c2be0e202568c2",
+        "approx": true
+      }
+    },
+    {
+      "id": "0x73831e7c600f48cebbbff957b466be8e5c087f34",
+      "type": "protocol",
+      "label": "EOA 0x7383…7f34",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x73831e7c600f48cebbbff957b466be8e5c087f34",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc87c6fe8d58e8de932a58b6cfc0ce80735ed43c4",
+      "type": "protocol",
+      "label": "EOA 0xc87c…43c4",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xc87c6fe8d58e8de932a58b6cfc0ce80735ed43c4",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9ea38e09f41a9de53972a68268ba0dcc6d2fadf8",
+      "type": "protocol",
+      "label": "EOA 0x9ea3…adf8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x9ea38e09f41a9de53972a68268ba0dcc6d2fadf8",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2#0",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+      "label": "37.1% 521,608,562",
+      "edge_type": "holds",
+      "amount": 521608562.33175,
+      "depth": 0
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0x4579a27af00a62c0eb156349f31b345c08386419#1",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "label": "14.1% 198,383,424",
+      "edge_type": "aave_v3",
+      "amount": 198383423.94075838,
+      "depth": 0,
+      "coverage": 0.795
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0x0591926d5d3b9cc48ae6efb8db68025ddc3adfa5#2",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0x0591926d5d3b9cc48ae6efb8db68025ddc3adfa5",
+      "label": "예치 54,142,239 · LT 75%",
+      "edge_type": "lending",
+      "amount": 54142239.04946749,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 54142239.0495,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0x6142eb927529974c5cded66dafc57cb5aaaf73ab#3",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0x6142eb927529974c5cded66dafc57cb5aaaf73ab",
+      "label": "예치 44,084,235 · LT 75%",
+      "edge_type": "lending",
+      "amount": 44084235.03027771,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 44084235.0303,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075#4",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075",
+      "label": "예치 14,805,855 · LT 75%",
+      "edge_type": "lending",
+      "amount": 14805855.47772835,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 14805855.4777,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0xa998a89bc88d3e3e93dcd86455a1182f83433bfd#5",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0xa998a89bc88d3e3e93dcd86455a1182f83433bfd",
+      "label": "예치 11,992,821 · LT 75%",
+      "edge_type": "lending",
+      "amount": 11992821.264958441,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 11992821.265,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0x9cbf099ff424979439dfba03f00b5961784c06ce#6",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0x9cbf099ff424979439dfba03f00b5961784c06ce",
+      "label": "예치 9,872,737 · LT 75%",
+      "edge_type": "lending",
+      "amount": 9872737.15780079,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 9872737.1578,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0xc0c7a4627fcdd79c6aeb1f408111fb77a2318526#7",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0xc0c7a4627fcdd79c6aeb1f408111fb77a2318526",
+      "label": "예치 8,969,221 · LT 75%",
+      "edge_type": "lending",
+      "amount": 8969221.13059588,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 8969221.1306,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0x2304eb247ae2dcf91ba372b458fc7e4ccc55ee42#8",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0x2304eb247ae2dcf91ba372b458fc7e4ccc55ee42",
+      "label": "예치 7,350,018 · LT 75%",
+      "edge_type": "lending",
+      "amount": 7350017.76,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 7350017.76,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4579a27af00a62c0eb156349f31b345c08386419->0xa580fe412dfbc2754bf0b9006075bd4b64a6752b#9",
+      "source": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "target": "0xa580fe412dfbc2754bf0b9006075bd4b64a6752b",
+      "label": "예치 6,498,904 · LT 75%",
+      "edge_type": "lending",
+      "amount": 6498903.890837209,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 6498903.8908,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb#10",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "label": "10.5% 147,981,609",
+      "edge_type": "morpho",
+      "amount": 147981608.86364928,
+      "depth": 0,
+      "coverage": 0.5923
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xcf0a12cbd8088fc5f84ad431e71787157041cd69#11",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0xcf0a12cbd8088fc5f84ad431e71787157041cd69",
+      "label": "담보 23,330,303 · 차입 24,997,287 USDtb · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 23330302.977193948,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 23330302.9772,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 24997287.0211,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xb00fe7a3e0eaa061de1f74af0d48de97c244f58d#12",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0xb00fe7a3e0eaa061de1f74af0d48de97c244f58d",
+      "label": "담보 10,981,390 · 차입 12,336,213 PYUSD · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 20730398.652382262,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+        "detail": {
+          "collateral": 10981389.8171,
+          "loan_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+          "loan_symbol": "PYUSD",
+          "borrow": 12336212.645,
+          "lltv": 0.915,
+          "utilization": 0.9029
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x9f1a1479191af103ff82fead23e950b6b3b2bd1a#13",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x9f1a1479191af103ff82fead23e950b6b3b2bd1a",
+      "label": "담보 12,868,189 · 차입 14,501,220 PYUSD · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 12868189.060915781,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+        "detail": {
+          "collateral": 12868189.0609,
+          "loan_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+          "loan_symbol": "PYUSD",
+          "borrow": 14501220.1621,
+          "lltv": 0.915,
+          "utilization": 0.9029
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x42715ba91deda3c692b9f540cee2fbb4dae78bbb#14",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x42715ba91deda3c692b9f540cee2fbb4dae78bbb",
+      "label": "담보 10,457,892 · 차입 11,216,323 USDtb · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 10457892.378633156,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 10457892.3786,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 11216323.2538,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xdf81987465681d0515058fe0a47a3bd174012730#15",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0xdf81987465681d0515058fe0a47a3bd174012730",
+      "label": "담보 5,826,399 · 차입 6,239,969 USDtb · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 5826398.860615145,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 5826398.8606,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 6239968.6421,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xecc692198f2c97702092f9f7e9e95b2f25e6a6e8#16",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0xecc692198f2c97702092f9f7e9e95b2f25e6a6e8",
+      "label": "담보 3,035,269 · 차입 3,339,998 USDtb · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 5296168.654253835,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 3035268.6057,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 3339998.4176,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x65859153491f44e2226ca6ae37347c855158a4fb#17",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x65859153491f44e2226ca6ae37347c855158a4fb",
+      "label": "담보 4,588,071 · 차입 4,815,820 PYUSD · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 4588071.144198165,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+        "detail": {
+          "collateral": 4588071.1442,
+          "loan_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+          "loan_symbol": "PYUSD",
+          "borrow": 4815819.8556,
+          "lltv": 0.915,
+          "utilization": 0.9029
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x6efc48b8b6222924fa6ea95d174af5518b761177#18",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+      "label": "담보 4,554,263 · 차입 5,062,554 USDtb · LLTV 92%",
+      "edge_type": "morpho",
+      "amount": 4554263.3737725215,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 4554263.3738,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 5062554.3875,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0x9ffe77146cc1da3edb87af163c6c32bab474b464#19",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0x9ffe77146cc1da3edb87af163c6c32bab474b464",
+      "label": "6.8% 95,442,138",
+      "edge_type": "holds",
+      "amount": 95442137.51794422,
+      "depth": 0
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0xdbf4fb6c310c1c85d0b41b5dbca06096f2e7099f#20",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0xdbf4fb6c310c1c85d0b41b5dbca06096f2e7099f",
+      "label": "4.2% 59,507,184",
+      "edge_type": "holds",
+      "amount": 59507184.20468222,
+      "depth": 0
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0xcbf87044fa4cd42178d0393a1e7c7d9faeef545d#21",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0xcbf87044fa4cd42178d0393a1e7c7d9faeef545d",
+      "label": "2.2% 30,976,579",
+      "edge_type": "holds",
+      "amount": 30976579.012279186,
+      "depth": 0
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0xbf98480425a29197e5d99d003017f63a1e595d02#22",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+      "label": "2.0% 28,022,218",
+      "edge_type": "vault",
+      "amount": 28022218.083887517,
+      "depth": 0
+    },
+    {
+      "id": "0xbf98480425a29197e5d99d003017f63a1e595d02->0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2#23",
+      "source": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+      "target": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "label": "70.6% 19,789,918",
+      "edge_type": "wrapper",
+      "amount": 19789917.748835813,
+      "depth": 1
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0x7ea90af38397575a372e36bdc0f5970fb512fc7f#24",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0x7ea90af38397575a372e36bdc0f5970fb512fc7f",
+      "label": "29.2% 7,114,178",
+      "edge_type": "holds",
+      "amount": 7114177.50947048,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0x84b9a226bce763e995851c395c8f68cc2d3bbfa5#25",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0x84b9a226bce763e995851c395c8f68cc2d3bbfa5",
+      "label": "22.3% 5,439,828",
+      "edge_type": "holds",
+      "amount": 5439828.247792561,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0xd93814273b33dd33b32cd345225cfb65deb048dd#26",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0xd93814273b33dd33b32cd345225cfb65deb048dd",
+      "label": "10.5% 2,568,304",
+      "edge_type": "holds",
+      "amount": 2568303.6278272015,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0x6142eb927529974c5cded66dafc57cb5aaaf73ab#27",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0x6142eb927529974c5cded66dafc57cb5aaaf73ab",
+      "label": "10.1% 2,460,764",
+      "edge_type": "holds",
+      "amount": 2460763.891722217,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0xec89639d883a9ff2086c6deb0d766064b5bbea03#28",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0xec89639d883a9ff2086c6deb0d766064b5bbea03",
+      "label": "6.2% 1,517,439",
+      "edge_type": "holds",
+      "amount": 1517439.1196132838,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0x811e8f6d80f38a2f0f8b606cb743a950638f0ad4#29",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0x811e8f6d80f38a2f0f8b606cb743a950638f0ad4",
+      "label": "5.2% 1,278,823",
+      "edge_type": "holds",
+      "amount": 1278822.756287945,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0x20eadfcaf91bd98674ff8fc341d148e1731576a4#30",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0x20eadfcaf91bd98674ff8fc341d148e1731576a4",
+      "label": "3.6% 879,187",
+      "edge_type": "holds",
+      "amount": 879187.3366919438,
+      "depth": 2
+    },
+    {
+      "id": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2->0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6#31",
+      "source": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "target": "0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6",
+      "label": "2.4% 586,357",
+      "edge_type": "holds",
+      "amount": 586356.6352891633,
+      "depth": 2
+    },
+    {
+      "id": "0xbf98480425a29197e5d99d003017f63a1e595d02->0x177768caf9d0e036725a51d3f60d7e20f2d4d194#32",
+      "source": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+      "target": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "label": "22.6% 6,333,345",
+      "edge_type": "wrapper",
+      "amount": 6333344.758805548,
+      "depth": 1
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6#33",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0xac3b4b95a5afb20a055575fdc7fc94b6c64f54a6",
+      "label": "17.1% 540,000",
+      "edge_type": "holds",
+      "amount": 540000.0,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0xf6853c77a2452576eae5af424975a101ffc47308#34",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0xf6853c77a2452576eae5af424975a101ffc47308",
+      "label": "14.2% 449,176",
+      "edge_type": "holds",
+      "amount": 449176.43053553626,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0x31f4ee28f2fb544e54a981eaa9a7a4eac7b9a07b#35",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0x31f4ee28f2fb544e54a981eaa9a7a4eac7b9a07b",
+      "label": "10.8% 343,134",
+      "edge_type": "holds",
+      "amount": 343133.79398455616,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0xe8e49c28cd2a686fc5a3a5bcb6702ab1fe8ea84f#36",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0xe8e49c28cd2a686fc5a3a5bcb6702ab1fe8ea84f",
+      "label": "10.0% 316,763",
+      "edge_type": "holds",
+      "amount": 316763.0329696646,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0x7f9e4e2ef9e4da30524405d894fe12997eda81e4#37",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0x7f9e4e2ef9e4da30524405d894fe12997eda81e4",
+      "label": "5.3% 167,982",
+      "edge_type": "holds",
+      "amount": 167982.3839800781,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0x5a35eed71cfe12b9bc50d4e441f42238dc744861#38",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0x5a35eed71cfe12b9bc50d4e441f42238dc744861",
+      "label": "3.2% 100,000",
+      "edge_type": "holds",
+      "amount": 100000.0,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0x4a5d1524a2dc7b2b832dc3b37e1dae3da1e975ab#39",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0x4a5d1524a2dc7b2b832dc3b37e1dae3da1e975ab",
+      "label": "2.6% 82,020",
+      "edge_type": "holds",
+      "amount": 82019.53516504039,
+      "depth": 2
+    },
+    {
+      "id": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194->0x0b129e1a16bcb6ec8fab24d2182ad59cc8fae4eb#40",
+      "source": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "target": "0x0b129e1a16bcb6ec8fab24d2182ad59cc8fae4eb",
+      "label": "2.5% 78,908",
+      "edge_type": "holds",
+      "amount": 78907.59296893488,
+      "depth": 2
+    },
+    {
+      "id": "0xbf98480425a29197e5d99d003017f63a1e595d02->0x30775b422b9c7415349855346352faa61fd97e41#41",
+      "source": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+      "target": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "label": "6.7% 1,889,177",
+      "edge_type": "wrapper",
+      "amount": 1889177.3457600211,
+      "depth": 1
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0xee2826453a4fd5afeb7ceffeef3ffa2320081268#42",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0xee2826453a4fd5afeb7ceffeef3ffa2320081268",
+      "label": "34.2% 36,627,465",
+      "edge_type": "holds",
+      "amount": 36627465.14313372,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075#43",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075",
+      "label": "32.7% 35,034,823",
+      "edge_type": "holds",
+      "amount": 35034822.80094901,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0x740c5ed6962e47bbf36caa1dc96bb05536a7c6c1#44",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0x740c5ed6962e47bbf36caa1dc96bb05536a7c6c1",
+      "label": "11.7% 12,476,983",
+      "edge_type": "holds",
+      "amount": 12476983.330422569,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0xaa95e62532167b23e0f913f98c8e9e53707216c9#45",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0xaa95e62532167b23e0f913f98c8e9e53707216c9",
+      "label": "4.9% 5,261,637",
+      "edge_type": "holds",
+      "amount": 5261636.765955354,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0xc34ae1a39662415a4720d4a3e7c2be0e202568c2#46",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0xc34ae1a39662415a4720d4a3e7c2be0e202568c2",
+      "label": "3.8% 4,050,151",
+      "edge_type": "holds",
+      "amount": 4050150.525720478,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0x73831e7c600f48cebbbff957b466be8e5c087f34#47",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0x73831e7c600f48cebbbff957b466be8e5c087f34",
+      "label": "3.3% 3,519,595",
+      "edge_type": "holds",
+      "amount": 3519594.6736408053,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0xc87c6fe8d58e8de932a58b6cfc0ce80735ed43c4#48",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0xc87c6fe8d58e8de932a58b6cfc0ce80735ed43c4",
+      "label": "1.3% 1,405,823",
+      "edge_type": "holds",
+      "amount": 1405822.571253841,
+      "depth": 2
+    },
+    {
+      "id": "0x30775b422b9c7415349855346352faa61fd97e41->0x6efc48b8b6222924fa6ea95d174af5518b761177#49",
+      "source": "0x30775b422b9c7415349855346352faa61fd97e41",
+      "target": "0x6efc48b8b6222924fa6ea95d174af5518b761177",
+      "label": "1.2% 1,260,605",
+      "edge_type": "holds",
+      "amount": 1260605.3552770573,
+      "depth": 2
+    },
+    {
+      "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497->0x9ea38e09f41a9de53972a68268ba0dcc6d2fadf8#50",
+      "source": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "target": "0x9ea38e09f41a9de53972a68268ba0dcc6d2fadf8",
+      "label": "1.9% 27,406,259",
+      "edge_type": "holds",
+      "amount": 27406259.088349048,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+    "block": 25242078,
+    "edge_count": 51,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

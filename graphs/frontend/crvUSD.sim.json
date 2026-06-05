@@ -1,0 +1,210 @@
+{
+  "nodes": [
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "type": "token",
+      "label": "0xf939…1b4e",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+      "type": "protocol",
+      "label": "Factory",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Factory",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+      "type": "protocol",
+      "label": "crvUSD Controller",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "crvUSD Controller",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67",
+      "type": "protocol",
+      "label": "crvUSD Controller",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "crvUSD Controller",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3",
+      "type": "protocol",
+      "label": "Peg Keeper V2",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Peg Keeper V2",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9201da0d97caaaff53f01b2fb56767c7072de340",
+      "type": "protocol",
+      "label": "Peg Keeper V2",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Peg Keeper V2",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x9201da0d97caaaff53f01b2fb56767c7072de340",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+      "type": "protocol",
+      "label": "crvUSD Controller",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "crvUSD Controller",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3",
+      "type": "protocol",
+      "label": "crvUSD Controller",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "crvUSD Controller",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xec0820efafc41d8943ee8de495fc9ba8495b15cf",
+      "type": "protocol",
+      "label": "crvUSD Controller",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "crvUSD Controller",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xec0820efafc41d8943ee8de495fc9ba8495b15cf",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0x370a449febb9411c95bf897021377fe0b7d100c0#0",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+      "label": "35.6% 743,096,626",
+      "edge_type": "holds",
+      "amount": 743096625.8326671,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0xa920de414ea4ab66b97da1bfe9e6eca7d4219635#1",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0xa920de414ea4ab66b97da1bfe9e6eca7d4219635",
+      "label": "9.5% 198,061,634",
+      "edge_type": "holds",
+      "amount": 198061633.758884,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67#2",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0x4e59541306910ad6dc1dac0ac9dfb29bd9f15c67",
+      "label": "8.8% 184,521,774",
+      "edge_type": "holds",
+      "amount": 184521774.15126446,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3#3",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0xfb726f57d251ab5c731e5c64ed4f5f94351ef9f3",
+      "label": "6.5% 135,000,000",
+      "edge_type": "holds",
+      "amount": 135000000.0,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0x9201da0d97caaaff53f01b2fb56767c7072de340#4",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0x9201da0d97caaaff53f01b2fb56767c7072de340",
+      "label": "6.5% 135,000,000",
+      "edge_type": "holds",
+      "amount": 135000000.0,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0x100daa78fc509db39ef7d04de0c1abd299f4c6ce#5",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0x100daa78fc509db39ef7d04de0c1abd299f4c6ce",
+      "label": "6.3% 131,745,814",
+      "edge_type": "holds",
+      "amount": 131745814.13390969,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3#6",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0xf8c786b1064889ffd3c8a08b48d5e0c159f4cbe3",
+      "label": "2.3% 48,787,451",
+      "edge_type": "holds",
+      "amount": 48787451.178476185,
+      "depth": 0
+    },
+    {
+      "id": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e->0xec0820efafc41d8943ee8de495fc9ba8495b15cf#7",
+      "source": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+      "target": "0xec0820efafc41d8943ee8de495fc9ba8495b15cf",
+      "label": "2.3% 48,701,311",
+      "edge_type": "holds",
+      "amount": 48701311.145793416,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+    "block": 25242078,
+    "edge_count": 8,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

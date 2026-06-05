@@ -1,0 +1,281 @@
+{
+  "root": "0x6b175474e89094c44da98b954eedeac495271d0f",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "holder": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+      "amount": 719422309.2639661,
+      "frac": 0.1651,
+      "kind": "contract",
+      "label": "ERC20PredicateProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "holder": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+      "amount": 396447316.12179726,
+      "frac": 0.091,
+      "kind": "ledger:maker",
+      "label": "DssLitePsm",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:maker",
+      "resolved": false
+    },
+    {
+      "from_token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "holder": "0x250ba4e73a365cefdd170a2b1ff9fc03097d64f3",
+      "amount": 155000200.0,
+      "frac": 0.0356,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "holder": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "amount": 97774500.89909121,
+      "frac": 0.0224,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "resolved": true,
+      "children_sum": 266054333.16,
+      "coverage": 2.7211
+    },
+    {
+      "from_token": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "amount": 263054183.62161112,
+      "frac": 2.6904,
+      "kind": "contract",
+      "label": "ALMProxy",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+        "detail": {
+          "supplied": 263054183.6216,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.0001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "holder": "0x77565d50da284f4d614585e5de839197715dd771",
+      "amount": 3000149.5345343626,
+      "frac": 0.0307,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+        "detail": {
+          "supplied": 3000149.5345,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.0001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "holder": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "amount": 50026208.364769824,
+      "frac": 0.0115,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "resolved": true,
+      "children_sum": 91189979.17,
+      "coverage": 1.8228
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x0c903235c380a717d970bbf91f4dd5780fd68ceb",
+      "amount": 30069080.925071433,
+      "frac": 0.6011,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 30069080.9251,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a",
+      "amount": 24447096.37796841,
+      "frac": 0.4887,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 24447096.378,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16",
+      "amount": 19043787.088783227,
+      "frac": 0.3807,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 19043787.0888,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c",
+      "amount": 4193812.686118428,
+      "frac": 0.0838,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 4193812.6861,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f",
+      "amount": 3866562.4512895904,
+      "frac": 0.0773,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 3866562.4513,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x8c6cf6223f733ef1858cc768547bf2fda96e78e3",
+      "amount": 3811399.009119158,
+      "frac": 0.0762,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 3811399.0091,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x0387435b9079a6b5f873ce57643e1b5914276528",
+      "amount": 2924309.680023931,
+      "frac": 0.0585,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2924309.68,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x023a5ea899df16831d6f3101f4568fddb577c887",
+      "amount": 2833930.9514199803,
+      "frac": 0.0566,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2833930.9514,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    }
+  ]
+}

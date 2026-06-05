@@ -1,0 +1,307 @@
+{
+  "root": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "amount": 68960.09224328688,
+      "frac": 0.6006,
+      "kind": "ledger:eigenlayer",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:eigenlayer",
+      "resolved": true,
+      "children_sum": 48529.91,
+      "coverage": 0.7037
+    },
+    {
+      "from_token": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "holder": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "amount": 23410.283352437073,
+      "frac": 0.3395,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "note": "singleton ledger; expand via adapter:kelp",
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 23410.2834,
+          "underlying": 23410.2834,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "resolved": true,
+      "children_sum": 23410.28,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 23410.283352437073,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 2,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "holder": "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1",
+      "amount": 431907.05340022163,
+      "frac": 0.7585,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 3,
+      "note": "singleton ledger; expand via adapter:aave_v3"
+    },
+    {
+      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "holder": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+      "amount": 80547.67469212066,
+      "frac": 0.1415,
+      "kind": "contract",
+      "label": "RSETH_OFTAdapter",
+      "depth": 3
+    },
+    {
+      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "holder": "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16",
+      "amount": 16486.658299663282,
+      "frac": 0.029,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 3,
+      "note": "singleton ledger; expand via adapter:kelp"
+    },
+    {
+      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "holder": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+      "amount": 9891.965761816911,
+      "frac": 0.0174,
+      "kind": "ledger:compound_v3",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 3,
+      "note": "singleton ledger; expand via adapter:compound_v3"
+    },
+    {
+      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "holder": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "amount": 5941.008118993307,
+      "frac": 0.0104,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "holder": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "amount": 12873.961864101828,
+      "frac": 0.1867,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "note": "singleton ledger; expand via adapter:kelp",
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 12873.9619,
+          "underlying": 12873.9619,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "resolved": true,
+      "children_sum": 12873.96,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 12873.961864101828,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 2,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "holder": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "amount": 8899.501123417793,
+      "frac": 0.1291,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "note": "singleton ledger; expand via adapter:kelp",
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 8899.5011,
+          "underlying": 8899.5011,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "resolved": true,
+      "children_sum": 8899.5,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 8899.501123417793,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 2,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "holder": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "amount": 2611.9141334440133,
+      "frac": 0.0379,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "note": "singleton ledger; expand via adapter:kelp",
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 2611.9141,
+          "underlying": 2611.9141,
+          "operator": "0xdbed88d83176316fc46797b43adee927dc2ff2f5"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "resolved": true,
+      "children_sum": 2611.91,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 2611.9141334440133,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 2,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "holder": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "amount": 734.249098272648,
+      "frac": 0.0106,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "eigenlayer",
+      "note": "singleton ledger; expand via adapter:kelp",
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 734.2491,
+          "underlying": 734.2491,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "resolved": true,
+      "children_sum": 734.25,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 734.249098272648,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 2,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+      "amount": 11270.536468077746,
+      "frac": 0.0982,
+      "kind": "ledger:kelp",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:kelp",
+      "resolved": true,
+      "children_sum": 11270.54,
+      "coverage": 1.0
+    },
+    {
+      "from_token": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "amount": 11270.536468077746,
+      "frac": 1.0,
+      "kind": "erc20_receipt",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "kelp",
+      "note": "symbol=rsETH"
+    },
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0x4f2083f5fbede34c2714affb3105539775f7fe64",
+      "amount": 9325.665507483996,
+      "frac": 0.0812,
+      "kind": "safe",
+      "label": "GnosisSafeProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0x9f0491b32dbce587c50c4c43ab303b06478193a7",
+      "amount": 1654.743814439999,
+      "frac": 0.0144,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0xfe6795a3aea16a2b76f4ee24fe319cef4b93af84",
+      "amount": 1400.435584503104,
+      "frac": 0.0122,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "holder": "0x8ff377b1cbee8d88d0a330a8523da3c31838bade",
+      "amount": 1316.2677399457914,
+      "frac": 0.0115,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    }
+  ]
+}

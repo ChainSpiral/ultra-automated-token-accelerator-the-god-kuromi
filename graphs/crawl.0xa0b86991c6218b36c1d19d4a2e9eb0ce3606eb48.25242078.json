@@ -1,0 +1,78 @@
+{
+  "root": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0x37305b1cd40574e4c5ce33f8e8306be057fd7341",
+      "amount": 4333004020.300563,
+      "frac": 0.0835,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0x38aaef3782910bdd9ea3566c839788af6ff9b200",
+      "amount": 2190023294.45702,
+      "frac": 0.0422,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0xe1940f578743367f38d3f25c2d2d32d6636929b6",
+      "amount": 1699999999.039577,
+      "frac": 0.0327,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0xad354cfbaa4a8572dd6df021514a3931a8329ef5",
+      "amount": 1400000000.5201,
+      "frac": 0.027,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0xffa69c0080582098af595156240214b742735a5e",
+      "amount": 1282999999.8601,
+      "frac": 0.0247,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+      "amount": 1131944388.968718,
+      "frac": 0.0218,
+      "kind": "contract",
+      "label": "ERC20PredicateProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0x01b8697695eab322a339c4bf75740db75dc9375e",
+      "amount": 769256809.353701,
+      "frac": 0.0148,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "holder": "0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+      "amount": 683953059.054858,
+      "frac": 0.0132,
+      "kind": "contract",
+      "label": "ERC1967Proxy",
+      "depth": 0
+    }
+  ]
+}

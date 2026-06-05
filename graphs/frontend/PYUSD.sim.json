@@ -1,0 +1,327 @@
+{
+  "nodes": [
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "type": "token",
+      "label": "0x6c3e…a0e8",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2fb074fa59c9294c71246825c1c9a0c7782d41a4",
+      "type": "protocol",
+      "label": "EOA 0x2fb0…41a4",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x2fb074fa59c9294c71246825c1c9a0c7782d41a4",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe7f0fdd40472775a659c3e42bda605a88642657b",
+      "type": "protocol",
+      "label": "EOA 0xe7f0…657b",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xe7f0fdd40472775a659c3e42bda605a88642657b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x6cd57b9a87c96421cfd7bc2b2f940c7e89cac4b5",
+      "type": "protocol",
+      "label": "EOA 0x6cd5…c4b5",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x6cd57b9a87c96421cfd7bc2b2f940c7e89cac4b5",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "type": "protocol",
+      "label": "ALMProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ALMProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xafbb1a7e9ddef38d9bc4a220e702b18dacaa2a62",
+      "type": "protocol",
+      "label": "EOA 0xafbb…2a62",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xafbb1a7e9ddef38d9bc4a220e702b18dacaa2a62",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xea7d82ce184571773a7997871a6997cce470b079",
+      "type": "protocol",
+      "label": "EOA 0xea7d…b079",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xea7d82ce184571773a7997871a6997cce470b079",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "type": "protocol",
+      "label": "Morpho",
+      "data": {
+        "category": "ledger:morpho",
+        "kind": "ledger:morpho",
+        "label": "Morpho",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "MetaMorphoV1_1",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x80126555b170957dfed67a3bfbb7893e20fe4fc0",
+      "type": "protocol",
+      "label": "MorphoVaultV1Adapter",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "MorphoVaultV1Adapter",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x80126555b170957dfed67a3bfbb7893e20fe4fc0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x93d6393e66b56449b7926b9abfeb37606732de89",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "MorphoMarketV1AdapterV2",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x93d6393e66b56449b7926b9abfeb37606732de89",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0x2fb074fa59c9294c71246825c1c9a0c7782d41a4#0",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0x2fb074fa59c9294c71246825c1c9a0c7782d41a4",
+      "label": "18.8% 351,480,065",
+      "edge_type": "holds",
+      "amount": 351480064.642273,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0xe7f0fdd40472775a659c3e42bda605a88642657b#1",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0xe7f0fdd40472775a659c3e42bda605a88642657b",
+      "label": "17.6% 328,581,173",
+      "edge_type": "holds",
+      "amount": 328581173.032901,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0x6cd57b9a87c96421cfd7bc2b2f940c7e89cac4b5#2",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0x6cd57b9a87c96421cfd7bc2b2f940c7e89cac4b5",
+      "label": "16.1% 300,000,000",
+      "edge_type": "holds",
+      "amount": 300000000.03309,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0x1601843c5e9bc251a3272907010afa41fa18347e#3",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "label": "14.1% 262,640,248",
+      "edge_type": "holds",
+      "amount": 262640247.800837,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0xafbb1a7e9ddef38d9bc4a220e702b18dacaa2a62#4",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0xafbb1a7e9ddef38d9bc4a220e702b18dacaa2a62",
+      "label": "10.8% 201,138,944",
+      "edge_type": "holds",
+      "amount": 201138943.918667,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0x779224df1c756b4edd899854f32a53e8c2b2ce5d#5",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+      "label": "4.7% 87,221,209",
+      "edge_type": "aave_v3",
+      "amount": 87221209.061232,
+      "depth": 0,
+      "coverage": 1.1465
+    },
+    {
+      "id": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d->0x1601843c5e9bc251a3272907010afa41fa18347e#6",
+      "source": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+      "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "label": "예치 100,000,130 · LT 0%",
+      "edge_type": "lending",
+      "amount": 100000129.53371,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+        "detail": {
+          "supplied": 100000129.5337,
+          "underlying_symbol": "PYUSD",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0xea7d82ce184571773a7997871a6997cce470b079#7",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0xea7d82ce184571773a7997871a6997cce470b079",
+      "label": "2.6% 48,516,827",
+      "edge_type": "holds",
+      "amount": 48516826.71827,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb#8",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "label": "2.2% 40,813,251",
+      "edge_type": "morpho",
+      "amount": 40813251.022493,
+      "depth": 0,
+      "coverage": 0.9916
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x19b3cd7032b8c062e8d44eacad661a0970dd8c55#9",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+      "label": "예치 75,016,218 (idle 8,320,686) · util 89%",
+      "edge_type": "morpho",
+      "amount": 33671662.41273584,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "supply",
+        "venue": "0xc9629945524f3fde56c7e8854a6c3d48e76b9d97236abbe73c750fcc7aeb8501",
+        "detail": {
+          "supply": 75016217.8091,
+          "idle_share": 8320685.6771,
+          "utilization": 0.8891
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55->0x80126555b170957dfed67a3bfbb7893e20fe4fc0#10",
+      "source": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+      "target": "0x80126555b170957dfed67a3bfbb7893e20fe4fc0",
+      "label": "100.0% 144,521,139",
+      "edge_type": "holds",
+      "amount": 144521139.20630231,
+      "depth": 2
+    },
+    {
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x93d6393e66b56449b7926b9abfeb37606732de89#11",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x93d6393e66b56449b7926b9abfeb37606732de89",
+      "label": "예치 78,689,803 (idle 6,798,926) · util 91%",
+      "edge_type": "morpho",
+      "amount": 6798925.800435485,
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "supply",
+        "venue": "0x41c41d0c9aadbf4751f5ee215ed5a16954a4b34e1b70fca5393d4b08858fa3fa",
+        "detail": {
+          "supply": 78689803.2691,
+          "idle_share": 6798925.8004,
+          "utilization": 0.9136
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    }
+  ],
+  "metadata": {
+    "root": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+    "block": 25242078,
+    "edge_count": 12,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

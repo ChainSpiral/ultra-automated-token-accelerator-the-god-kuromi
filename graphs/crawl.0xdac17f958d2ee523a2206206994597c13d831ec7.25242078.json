@@ -1,0 +1,60 @@
+{
+  "root": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "amount": 19967378226.983707,
+      "frac": 0.2057,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+      "amount": 9184997799.482302,
+      "frac": 0.0946,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0x835678a611b28684005a5e2233695fb6cbbb0007",
+      "amount": 5876489264.174121,
+      "frac": 0.0605,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+      "amount": 3625391953.959155,
+      "frac": 0.0373,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0x5754284f345afc66a98fbb0a0afe71e0f007b949",
+      "amount": 3470579537.047257,
+      "frac": 0.0358,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "holder": "0xb0a27099582833c0cb8c7a0565759ff145113d64",
+      "amount": 1463306890.855674,
+      "frac": 0.0151,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    }
+  ]
+}

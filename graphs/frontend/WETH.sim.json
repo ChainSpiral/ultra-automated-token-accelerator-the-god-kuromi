@@ -1,0 +1,384 @@
+{
+  "nodes": [
+    {
+      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "type": "token",
+      "label": "WETH",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf04a5cc80b1e94c69b48f5ee68a08cd2f09a7c3e",
+      "type": "protocol",
+      "label": "Maker",
+      "data": {
+        "category": "ledger:maker",
+        "kind": "ledger:maker",
+        "label": "GemJoin",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf04a5cc80b1e94c69b48f5ee68a08cd2f09a7c3e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+      "type": "protocol",
+      "label": "EOA 0x28a5…a6b0",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3",
+      "type": "protocol",
+      "label": "EOA 0x741a…31f3",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
+      "type": "protocol",
+      "label": "Safe 0x9992…f242",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf",
+      "type": "protocol",
+      "label": "EOA 0x3478…ddcf",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4",
+      "type": "protocol",
+      "label": "Safe 0xc3fe…31e4",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdc3abf85e090528669cf1b44ef4082b269c21a95",
+      "type": "protocol",
+      "label": "EOA 0xdc3a…1a95",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xdc3abf85e090528669cf1b44ef4082b269c21a95",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x34d1231f15da58762a84ead35242896e7fec4ac1",
+      "type": "protocol",
+      "label": "Safe 0x34d1…4ac1",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x34d1231f15da58762a84ead35242896e7fec4ac1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2269ce2753e2967dd5322a56188c3d24435b3588",
+      "type": "protocol",
+      "label": "Safe 0x2269…3588",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x2269ce2753e2967dd5322a56188c3d24435b3588",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
+      "type": "protocol",
+      "label": "Maker",
+      "data": {
+        "category": "ledger:maker",
+        "kind": "ledger:maker",
+        "label": "GemJoin",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2->0xf04a5cc80b1e94c69b48f5ee68a08cd2f09a7c3e#0",
+      "source": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "target": "0xf04a5cc80b1e94c69b48f5ee68a08cd2f09a7c3e",
+      "label": "20.6% 480,222",
+      "edge_type": "maker",
+      "amount": 480222.01866719994,
+      "depth": 0
+    },
+    {
+      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2->0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8#1",
+      "source": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "target": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "label": "14.1% 328,250",
+      "edge_type": "aave_v3",
+      "amount": 328249.5724162787,
+      "depth": 0,
+      "coverage": 2.0844
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0#2",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
+      "label": "예치 144,540 · LT 83%",
+      "edge_type": "lending",
+      "amount": 144540.3559062781,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 144540.3559,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3#3",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3",
+      "label": "예치 138,355 · LT 83%",
+      "edge_type": "lending",
+      "amount": 138355.0596841441,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 138355.0597,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x99926ab8e1b589500ae87977632f13cf7f70f242#4",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
+      "label": "예치 107,682 · LT 83%",
+      "edge_type": "lending",
+      "amount": 107681.86696503278,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 107681.867,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf#5",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf",
+      "label": "예치 95,837 · LT 83%",
+      "edge_type": "lending",
+      "amount": 95836.63379477811,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 95836.6338,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4#6",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4",
+      "label": "예치 58,029 · LT 83%",
+      "edge_type": "lending",
+      "amount": 58028.662347203746,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 58028.6623,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0xdc3abf85e090528669cf1b44ef4082b269c21a95#7",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0xdc3abf85e090528669cf1b44ef4082b269c21a95",
+      "label": "예치 47,725 · LT 83%",
+      "edge_type": "lending",
+      "amount": 47724.602220288776,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 47724.6022,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x34d1231f15da58762a84ead35242896e7fec4ac1#8",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x34d1231f15da58762a84ead35242896e7fec4ac1",
+      "label": "예치 46,738 · LT 83%",
+      "edge_type": "lending",
+      "amount": 46738.49615482475,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 46738.4962,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x2269ce2753e2967dd5322a56188c3d24435b3588#9",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0x2269ce2753e2967dd5322a56188c3d24435b3588",
+      "label": "예치 45,291 · LT 83%",
+      "edge_type": "lending",
+      "amount": 45290.7335814863,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 45290.7336,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2->0x2f0b23f53734252bda2277357e97e1517d6b042a#10",
+      "source": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "target": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
+      "label": "10.6% 246,836",
+      "edge_type": "maker",
+      "amount": 246835.95655936917,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "block": 25242078,
+    "edge_count": 11,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "root": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0x2fb074fa59c9294c71246825c1c9a0c7782d41a4",
+      "amount": 351480064.642273,
+      "frac": 0.1883,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0xe7f0fdd40472775a659c3e42bda605a88642657b",
+      "amount": 328581173.032901,
+      "frac": 0.1761,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0x6cd57b9a87c96421cfd7bc2b2f940c7e89cac4b5",
+      "amount": 300000000.03309,
+      "frac": 0.1608,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "amount": 262640247.800837,
+      "frac": 0.1407,
+      "kind": "contract",
+      "label": "ALMProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0xafbb1a7e9ddef38d9bc4a220e702b18dacaa2a62",
+      "amount": 201138943.918667,
+      "frac": 0.1078,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+      "amount": 87221209.061232,
+      "frac": 0.0467,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "resolved": true,
+      "children_sum": 100000129.53,
+      "coverage": 1.1465
+    },
+    {
+      "from_token": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+      "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "amount": 100000129.53371,
+      "frac": 1.1465,
+      "kind": "contract",
+      "label": "ALMProxy",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
+        "detail": {
+          "supplied": 100000129.5337,
+          "underlying_symbol": "PYUSD",
+          "ltv": 0.0,
+          "liq_threshold": 0.0
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0xea7d82ce184571773a7997871a6997cce470b079",
+      "amount": 48516826.71827,
+      "frac": 0.026,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "amount": 40813251.022493,
+      "frac": 0.0219,
+      "kind": "ledger:morpho",
+      "label": "Morpho",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:morpho",
+      "resolved": true,
+      "children_sum": 40470588.21,
+      "coverage": 0.9916
+    },
+    {
+      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "holder": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+      "amount": 33671662.41273584,
+      "frac": 0.825,
+      "kind": "erc4626_vault",
+      "label": "MetaMorphoV1_1",
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "supply",
+        "venue": "0xc9629945524f3fde56c7e8854a6c3d48e76b9d97236abbe73c750fcc7aeb8501",
+        "detail": {
+          "supply": 75016217.8091,
+          "idle_share": 8320685.6771,
+          "utilization": 0.8891
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x19b3cd7032b8c062e8d44eacad661a0970dd8c55",
+      "holder": "0x80126555b170957dfed67a3bfbb7893e20fe4fc0",
+      "amount": 144521139.20630231,
+      "frac": 1.0,
+      "kind": "contract",
+      "label": "MorphoVaultV1Adapter",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "holder": "0x93d6393e66b56449b7926b9abfeb37606732de89",
+      "amount": 6798925.800435485,
+      "frac": 0.1666,
+      "kind": "erc4626_vault",
+      "label": "MorphoMarketV1AdapterV2",
+      "depth": 1,
+      "via": "morpho",
+      "position": {
+        "role": "supply",
+        "venue": "0x41c41d0c9aadbf4751f5ee215ed5a16954a4b34e1b70fca5393d4b08858fa3fa",
+        "detail": {
+          "supply": 78689803.2691,
+          "idle_share": 6798925.8004,
+          "utilization": 0.9136
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    }
+  ]
+}

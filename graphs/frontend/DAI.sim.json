@@ -1,0 +1,503 @@
+{
+  "nodes": [
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "type": "token",
+      "label": "0x6b17…1d0f",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+      "type": "protocol",
+      "label": "ERC20PredicateProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC20PredicateProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+      "type": "protocol",
+      "label": "Maker",
+      "data": {
+        "category": "ledger:maker",
+        "kind": "ledger:maker",
+        "label": "DssLitePsm",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x250ba4e73a365cefdd170a2b1ff9fc03097d64f3",
+      "type": "protocol",
+      "label": "0x250b…64f3",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x250ba4e73a365cefdd170a2b1ff9fc03097d64f3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "type": "protocol",
+      "label": "ALMProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ALMProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x77565d50da284f4d614585e5de839197715dd771",
+      "type": "protocol",
+      "label": "EOA 0x7756…d771",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x77565d50da284f4d614585e5de839197715dd771",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0c903235c380a717d970bbf91f4dd5780fd68ceb",
+      "type": "protocol",
+      "label": "EOA 0x0c90…8ceb",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x0c903235c380a717d970bbf91f4dd5780fd68ceb",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a",
+      "type": "protocol",
+      "label": "EOA 0xb4d3…186a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16",
+      "type": "protocol",
+      "label": "EOA 0x5167…6e16",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c",
+      "type": "protocol",
+      "label": "EOA 0x496a…c03c",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f",
+      "type": "protocol",
+      "label": "EOA 0x1701…041f",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8c6cf6223f733ef1858cc768547bf2fda96e78e3",
+      "type": "protocol",
+      "label": "EOA 0x8c6c…78e3",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x8c6cf6223f733ef1858cc768547bf2fda96e78e3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0387435b9079a6b5f873ce57643e1b5914276528",
+      "type": "protocol",
+      "label": "EOA 0x0387…6528",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x0387435b9079a6b5f873ce57643e1b5914276528",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x023a5ea899df16831d6f3101f4568fddb577c887",
+      "type": "protocol",
+      "label": "EOA 0x023a…c887",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x023a5ea899df16831d6f3101f4568fddb577c887",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f->0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf#0",
+      "source": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "target": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+      "label": "16.5% 719,422,309",
+      "edge_type": "holds",
+      "amount": 719422309.2639661,
+      "depth": 0
+    },
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f->0xf6e72db5454dd049d0788e411b06cfaf16853042#1",
+      "source": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "target": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+      "label": "9.1% 396,447,316",
+      "edge_type": "maker",
+      "amount": 396447316.12179726,
+      "depth": 0
+    },
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f->0x250ba4e73a365cefdd170a2b1ff9fc03097d64f3#2",
+      "source": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "target": "0x250ba4e73a365cefdd170a2b1ff9fc03097d64f3",
+      "label": "3.6% 155,000,200",
+      "edge_type": "holds",
+      "amount": 155000200.0,
+      "depth": 0
+    },
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f->0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b#3",
+      "source": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "target": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "label": "2.2% 97,774,501",
+      "edge_type": "aave_v3",
+      "amount": 97774500.89909121,
+      "depth": 0,
+      "coverage": 2.7211
+    },
+    {
+      "id": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b->0x1601843c5e9bc251a3272907010afa41fa18347e#4",
+      "source": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "label": "예치 263,054,184 · LT 0%",
+      "edge_type": "lending",
+      "amount": 263054183.62161112,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+        "detail": {
+          "supplied": 263054183.6216,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.0001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b->0x77565d50da284f4d614585e5de839197715dd771#5",
+      "source": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+      "target": "0x77565d50da284f4d614585e5de839197715dd771",
+      "label": "예치 3,000,150 · LT 0%",
+      "edge_type": "lending",
+      "amount": 3000149.5345343626,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
+        "detail": {
+          "supplied": 3000149.5345,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.0001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x6b175474e89094c44da98b954eedeac495271d0f->0x018008bfb33d285247a21d44e50697654f754e63#6",
+      "source": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "target": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "label": "1.1% 50,026,208",
+      "edge_type": "aave_v3",
+      "amount": 50026208.364769824,
+      "depth": 0,
+      "coverage": 1.8228
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x0c903235c380a717d970bbf91f4dd5780fd68ceb#7",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x0c903235c380a717d970bbf91f4dd5780fd68ceb",
+      "label": "예치 30,069,081 · LT 77%",
+      "edge_type": "lending",
+      "amount": 30069080.925071433,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 30069080.9251,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a#8",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a",
+      "label": "예치 24,447,096 · LT 77%",
+      "edge_type": "lending",
+      "amount": 24447096.37796841,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 24447096.378,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16#9",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16",
+      "label": "예치 19,043,787 · LT 77%",
+      "edge_type": "lending",
+      "amount": 19043787.088783227,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 19043787.0888,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c#10",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c",
+      "label": "예치 4,193,813 · LT 77%",
+      "edge_type": "lending",
+      "amount": 4193812.686118428,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 4193812.6861,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f#11",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f",
+      "label": "예치 3,866,562 · LT 77%",
+      "edge_type": "lending",
+      "amount": 3866562.4512895904,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 3866562.4513,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x8c6cf6223f733ef1858cc768547bf2fda96e78e3#12",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x8c6cf6223f733ef1858cc768547bf2fda96e78e3",
+      "label": "예치 3,811,399 · LT 77%",
+      "edge_type": "lending",
+      "amount": 3811399.009119158,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 3811399.0091,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x0387435b9079a6b5f873ce57643e1b5914276528#13",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x0387435b9079a6b5f873ce57643e1b5914276528",
+      "label": "예치 2,924,310 · LT 77%",
+      "edge_type": "lending",
+      "amount": 2924309.680023931,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2924309.68,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x018008bfb33d285247a21d44e50697654f754e63->0x023a5ea899df16831d6f3101f4568fddb577c887#14",
+      "source": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "target": "0x023a5ea899df16831d6f3101f4568fddb577c887",
+      "label": "예치 2,833,931 · LT 77%",
+      "edge_type": "lending",
+      "amount": 2833930.9514199803,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2833930.9514,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    }
+  ],
+  "metadata": {
+    "root": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "block": 25242078,
+    "edge_count": 15,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

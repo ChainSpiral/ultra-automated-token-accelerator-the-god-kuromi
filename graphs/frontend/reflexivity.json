@@ -1,0 +1,454 @@
+{
+  "block": 25248315,
+  "scc": [],
+  "tokens": {
+    "sdeUSD": {
+      "grade": "CRITICAL",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x0f956344",
+        "mid": "0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+        "loan": "USDC",
+        "oracle": "0x65F9f6d537C2D628D1c2663896436817440eDB72",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 3,
+        "collat_usd": 605390833,
+        "_collat": "0x5c5b196abe0d54485975d1ec29617d42d9198326"
+      },
+      "backing": {}
+    },
+    "BONDUSD": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0x1dca6989",
+        "mid": "0x1dca6989b0d2b0a546530b3a739e91402eee2e1536a2d3ded4f5ce589a9cd1c2",
+        "loan": "USR",
+        "oracle": "0x1b4A3F92e5Fffd1d35A98751c9FE4472483579bB",
+        "oracle_name": "ChainlinkOracle",
+        "n_markets": 1,
+        "collat_usd": 7535938016,
+        "_collat": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83"
+      },
+      "backing": {}
+    },
+    "PRIME": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x41c41d0c",
+        "mid": "0x41c41d0c9aadbf4751f5ee215ed5a16954a4b34e1b70fca5393d4b08858fa3fa",
+        "loan": "PYUSD",
+        "oracle": "0x335e5718bC20028d5e357473a3736C187Ca6b07e",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 3,
+        "collat_usd": 96000072,
+        "_collat": "0x19ebb35279a16207ec4ba82799cc64715065f7f6"
+      },
+      "backing": {}
+    },
+    "USD0++": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x1eda1b67",
+        "mid": "0x1eda1b67414336cab3914316cb58339ddaef9e43f939af1fed162a989c98bc20",
+        "loan": "USDC",
+        "oracle": "0xBf877B424bE6d06cA4755aF2c677120eC71cac53",
+        "oracle_name": "",
+        "n_markets": 9,
+        "collat_usd": 29048,
+        "_collat": "0x35d8949372d46b7a3d5a56006ae77b215fc69bc0"
+      },
+      "backing": {}
+    },
+    "USDT": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "ext-feed?",
+      "oracle": {
+        "market": "0xb74aae3b",
+        "mid": "0xb74aae3bada73b0bd1087bd110d35afaa390de0451e5745091fbb5d296684e1c",
+        "loan": "USDT",
+        "oracle": "0x24CC84c52f15c06170c1b7cBfaeD4b9D1D1FDd55",
+        "oracle_name": "",
+        "n_markets": 3,
+        "collat_usd": 70195483,
+        "_collat": "0x3d4762b4bb4b4c922377fe5b887e900d7fb64cdf"
+      },
+      "backing": {}
+    },
+    "mF-ONE": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0xef2c308b",
+        "mid": "0xef2c308b5abecf5c8750a1aa82b47c558005feb7a03f4f8e1ad682d71ac8d0ba",
+        "loan": "USDC",
+        "oracle": "0x0cB1928EcA8783F05a07D9Ae2AfB33f38BFBEb78",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 1,
+        "collat_usd": 24929274,
+        "_collat": "0x238a700ed6165261cf8b2e544ba797bc11e466ba"
+      },
+      "backing": {}
+    },
+    "msY": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x23a7d0ff",
+        "mid": "0x23a7d0ff682b323363fb8ba58327ed87001f6306e09b7fd7413bbe4698e749c8",
+        "loan": "USDC",
+        "oracle": "0xB0b6Fc449CcF81Ff4129A86ddc814412E3Cd9Aa4",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 5,
+        "collat_usd": 41842838,
+        "_collat": "0x890a5122aa1da30fec4286de7904ff808f0bd74a"
+      },
+      "backing": {}
+    },
+    "reUSD": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x4565ac05",
+        "mid": "0x4565ac05d38b19374ccbb04c17cca60ca9353cd41824f0803d0fc7704f60eaed",
+        "loan": "USDC",
+        "oracle": "0xA66a4F03Fd8031973f8C7718904ce32385f54E70",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 5,
+        "collat_usd": 16575272,
+        "_collat": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72"
+      },
+      "backing": {}
+    },
+    "siUSD": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x64d2f82e",
+        "mid": "0x64d2f82e674b764d618b630297813cd34bdc42a0fa66f92efa2ac8b1efe4bbd5",
+        "loan": "msUSD",
+        "oracle": "0xC7bB5f34D645f3849a3091Ce4b6724631ee811Af",
+        "oracle_name": "",
+        "n_markets": 2,
+        "collat_usd": 19932505,
+        "_collat": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb"
+      },
+      "backing": {}
+    },
+    "stcUSD": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xdbf4bc06",
+        "mid": "0xdbf4bc065d4e76f4505a523f2bba5e5ccdca94c16d67c3a6ff1dadbcbb26d4aa",
+        "loan": "USDT",
+        "oracle": "0x8C257cb4Ba8d5a78B3d82e2aAeC211700e94a814",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 8,
+        "collat_usd": 21119823,
+        "_collat": "0x88887be419578051ff9f4eb6c858a951921d8888"
+      },
+      "backing": {}
+    },
+    "wstUSR": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0xd9e34b1e",
+        "mid": "0xd9e34b1eed46d123ac1b69b224de1881dbc88798bc7b70f504920f62f58f28cc",
+        "loan": "USDC",
+        "oracle": "0xDa850a72080024e17c1590fbf6ea7a826dB90760",
+        "oracle_name": "",
+        "n_markets": 8,
+        "collat_usd": 20438589,
+        "_collat": "0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055"
+      },
+      "backing": {}
+    },
+    "xUSD": {
+      "grade": "HIGH",
+      "cycle": false,
+      "oracle_class": "bespoke/NAV",
+      "oracle": {
+        "market": "0x39fe55e5",
+        "mid": "0x39fe55e5102beac5fb3caff54142f26250b97dcdb5bea6122818c7760f38b331",
+        "loan": "USDC",
+        "oracle": "0x2F05Ac98D85101b5F826D51337dF573CF02A0A38",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 2,
+        "collat_usd": 0,
+        "_collat": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94"
+      },
+      "backing": {}
+    },
+    "sUSDat": {
+      "grade": "MED",
+      "cycle": false,
+      "oracle_class": "self-NAV",
+      "oracle": {
+        "market": "0x582fdc41",
+        "mid": "0x582fdc4176da0ab5c65e086603ab9ecd9188e889e16efef6e35854cf14e15065",
+        "loan": "AUSD",
+        "oracle": "0x78e16Ed8a8ebC86B707316dC84BA7e3E74A3b23A",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 3,
+        "collat_usd": 23191468,
+        "_collat": "0xd166337499e176bbc38a1fbd113ab144e5bd2df7"
+      },
+      "backing": {}
+    },
+    "sUSDe": {
+      "grade": "MED",
+      "cycle": false,
+      "oracle_class": "self-NAV",
+      "oracle": {
+        "market": "0x88a18b2f",
+        "mid": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "loan": "USDtb",
+        "oracle": "0x67BcC03438D7d71c39343d7AD21cb73Dc19aDB89",
+        "oracle_name": "",
+        "n_markets": 19,
+        "collat_usd": 124554852,
+        "_collat": "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+      },
+      "backing": {}
+    },
+    "AA_FalconXUSDC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "other",
+      "oracle": {
+        "market": "0xe83d72fa",
+        "mid": "0xe83d72fa5b00dcd46d9e0e860d95aa540d5ec106da5833108a9f826f21f36f52",
+        "loan": "USDC",
+        "oracle": "0x52eA2C12734B5bB61e1edf52Bb0f01D9206493Fc",
+        "oracle_name": "",
+        "n_markets": 3,
+        "collat_usd": 76669533,
+        "_collat": "0xc26a6fa2c37b38e549a4a1807543801db684f99c"
+      },
+      "backing": {}
+    },
+    "LBTC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0x6a7e36eb",
+        "mid": "0x6a7e36eb088bd501d73f7ab4c5b8671358559341a78ce521c9e499dc0bc642b9",
+        "loan": "PYUSD",
+        "oracle": "0x0AeAa9320d78a5Edb9387A08682d1738BCc64b1f",
+        "oracle_name": "",
+        "n_markets": 17,
+        "collat_usd": 54174877,
+        "_collat": "0x8236a87084f8b84306f72007f36f2618a5634494"
+      },
+      "backing": {}
+    },
+    "PAXG": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "other",
+      "oracle": {
+        "market": "0x8eaf7b29",
+        "mid": "0x8eaf7b29f02ba8d8c1d7aeb587403dcb16e2e943e4e2f5f94b0963c2386406c9",
+        "loan": "USDC",
+        "oracle": "0xDd1778F71a4a1C6A0eFebd8AE9f8848634CE1101",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 8,
+        "collat_usd": 1028592721,
+        "_collat": "0x45804880de22913dafe09f4980848ece6ecbaf78"
+      },
+      "backing": {}
+    },
+    "PT-apyUSD-18JUN2026": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xa75bb490",
+        "mid": "0xa75bb490ecfee90c86a9d22ebc2dde42fb83478b3f18722b9fc6f5f668cab124",
+        "loan": "USDC",
+        "oracle": "0xAc0Fa280aD4BA07F750DFa550aA3C3f182ca8B3e",
+        "oracle_name": "",
+        "n_markets": 3,
+        "collat_usd": 26523386,
+        "_collat": "0x3365554a61ceff74a76528f9e86c1e87946d16a5"
+      },
+      "backing": {}
+    },
+    "PT-reUSD-25JUN2026": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "other",
+      "oracle": {
+        "market": "0x9bc98c2f",
+        "mid": "0x9bc98c2f20ac58287ef2c860eea53a2fdc27c17a7817ff1206c0b7840cc7cd79",
+        "loan": "USDC",
+        "oracle": "0x12d66602C691Aa93E90415aB22FB0760695AC768",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 5,
+        "collat_usd": 31508498,
+        "_collat": "0x3eaa0f0f0a5d3d595ae4e4b0d27f439d01c3e7b2"
+      },
+      "backing": {}
+    },
+    "WBTC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xa921ef34",
+        "mid": "0xa921ef34e2fc7a27ccc50ae7e4b154e16c9799d3387076c421423ef52ac4df99",
+        "loan": "USDT",
+        "oracle": "0x008bF4B1cDA0cc9f0e882E0697f036667652E1ef",
+        "oracle_name": "",
+        "n_markets": 30,
+        "collat_usd": 82460431,
+        "_collat": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "backing": {}
+    },
+    "cbBTC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xffd01061",
+        "mid": "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc",
+        "loan": "RLUSD",
+        "oracle": "0x8b36909dD84d310CBDe90cb286d9dAB285a245bd",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 30,
+        "collat_usd": 30148190,
+        "_collat": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+      },
+      "backing": {}
+    },
+    "kBTC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xe51f9aaa",
+        "mid": "0xe51f9aaad25d0e755429cf77076b3c2d37cb1228ed81f8a5482f2102c220eef5",
+        "loan": "PYUSD",
+        "oracle": "0x007db14ca0d171fA583955fEF3917B2b9A95CF18",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 2,
+        "collat_usd": 55010939,
+        "_collat": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98"
+      },
+      "backing": {}
+    },
+    "sUSDS": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0x3274643d",
+        "mid": "0x3274643db77a064abd3bc851de77556a4ad2e2f502f4f0c80845fa8f909ecf0b",
+        "loan": "USDT",
+        "oracle": "0x0C426d174FC88B7A25d59945Ab2F7274Bf7B4C79",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 14,
+        "collat_usd": 79865710,
+        "_collat": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
+      },
+      "backing": {}
+    },
+    "stUSDS": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xd570c19c",
+        "mid": "0xd570c19c0dc0fbe4ab7faf4a37c4150e1c141c8aada8ca3e1b4b6c1b712af93d",
+        "loan": "USDC",
+        "oracle": "0xba3D2Dc1670763c6729CC923A922C7513C0f9DD0",
+        "oracle_name": "",
+        "n_markets": 5,
+        "collat_usd": 16612203,
+        "_collat": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9"
+      },
+      "backing": {}
+    },
+    "syrupUSDC": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xc9629945",
+        "mid": "0xc9629945524f3fde56c7e8854a6c3d48e76b9d97236abbe73c750fcc7aeb8501",
+        "loan": "PYUSD",
+        "oracle": "0xc8043d248551Ed19B33cbc89dCCd69148c827039",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 12,
+        "collat_usd": 78865523,
+        "_collat": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b"
+      },
+      "backing": {}
+    },
+    "weETH": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0x85d59152",
+        "mid": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+        "loan": "PYUSD",
+        "oracle": "0x221898dA0890Fc5fb6c890Fcdc051FA97946eE11",
+        "oracle_name": "MorphoChainlinkOracleV2",
+        "n_markets": 27,
+        "collat_usd": 99022646,
+        "_collat": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+      },
+      "backing": {}
+    },
+    "wstETH": {
+      "grade": "ok",
+      "cycle": false,
+      "oracle_class": "anchored",
+      "oracle": {
+        "market": "0xe7e9694b",
+        "mid": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+        "loan": "USDT",
+        "oracle": "0x95DB30fAb9A3754e42423000DF27732CB2396992",
+        "oracle_name": "",
+        "n_markets": 30,
+        "collat_usd": 467622482,
+        "_collat": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+      },
+      "backing": {}
+    },
+    "wsrUSD": {
+      "grade": "CHECK",
+      "cycle": false,
+      "oracle_class": "ext-feed?",
+      "oracle": {
+        "market": "0x1590cb22",
+        "mid": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+        "loan": "USDC",
+        "oracle": "0x938D2eDb20425cF80F008E7ec314Eb456940Da15",
+        "oracle_name": "",
+        "n_markets": 7,
+        "collat_usd": 42214809,
+        "_collat": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094"
+      },
+      "backing": {}
+    }
+  }
+}

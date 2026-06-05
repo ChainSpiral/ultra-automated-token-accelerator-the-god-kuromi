@@ -1,0 +1,569 @@
+{
+  "nodes": [
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "type": "token",
+      "label": "0xac3e…e38f",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xac3e018457b222d93114458476f3e3416abbe38f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "FraxlendPair",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1",
+      "type": "protocol",
+      "label": "Safe 0x4b45…1bc1",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3f2b20b8e8ce30bb52239d3dfadf826ecfe6a5f7",
+      "type": "protocol",
+      "label": "ResupplyPair",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ResupplyPair",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x3f2b20b8e8ce30bb52239d3dfadf826ecfe6a5f7",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "type": "protocol",
+      "label": "EigenLayer",
+      "data": {
+        "category": "ledger:eigenlayer",
+        "kind": "ledger:eigenlayer",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x56398b89d53e8731bca8c1b06886cfb14bd6b654",
+      "type": "protocol",
+      "label": "Safe 0x5639…b654",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x56398b89d53e8731bca8c1b06886cfb14bd6b654",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x19bd29e74c450ac73b49b5fb199a3d0d4c8f37b2",
+      "type": "protocol",
+      "label": "EOA 0x19bd…37b2",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x19bd29e74c450ac73b49b5fb199a3d0d4c8f37b2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xed7191fc83641990595559e83c989f4bbc050e4f",
+      "type": "protocol",
+      "label": "EOA 0xed71…0e4f",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xed7191fc83641990595559e83c989f4bbc050e4f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2",
+      "type": "protocol",
+      "label": "L1ChugSplashProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "L1ChugSplashProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3691ef68ba22a854c36bc92f6b5f30473ef5fb0a",
+      "type": "protocol",
+      "label": "0x3691…fb0a",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x3691ef68ba22a854c36bc92f6b5f30473ef5fb0a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "DefaultCollateral",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe2008b01a2ad0a9aeea9f71ecc6a176138553a61",
+      "type": "protocol",
+      "label": "EOA 0xe200…3a61",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xe2008b01a2ad0a9aeea9f71ecc6a176138553a61",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "FraxlendPair",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x351dfdae85652cf1a1cfbe29914cd1702cd25167",
+      "type": "protocol",
+      "label": "EOA 0x351d…5167",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x351dfdae85652cf1a1cfbe29914cd1702cd25167",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xcd818ef199e5ab0f4ee92ef6c90268eeb147efd0",
+      "type": "protocol",
+      "label": "EOA 0xcd81…efd0",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xcd818ef199e5ab0f4ee92ef6c90268eeb147efd0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+      "type": "protocol",
+      "label": "EOA 0x16f6…ef9b",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xea32ceb2c0d5479916ef6427abab12bf59953be0",
+      "type": "protocol",
+      "label": "EOA 0xea32…3be0",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xea32ceb2c0d5479916ef6427abab12bf59953be0",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4e06ea07ac8649c35b856301f26cc65db3465684",
+      "type": "protocol",
+      "label": "EOA 0x4e06…5684",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x4e06ea07ac8649c35b856301f26cc65db3465684",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x318df33589c7f98698f9d54683f425cd19f70c99",
+      "type": "protocol",
+      "label": "EOA 0x318d…0c99",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x318df33589c7f98698f9d54683f425cd19f70c99",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x56797811d35af8d49e9d2a68b6e162c48b80fe8b",
+      "type": "protocol",
+      "label": "0x5679…fe8b",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x56797811d35af8d49e9d2a68b6e162c48b80fe8b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc14390a9691f4381d4816e95ead34035a9c24842",
+      "type": "protocol",
+      "label": "EOA 0xc143…4842",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xc14390a9691f4381d4816e95ead34035a9c24842",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4eac0ea26700f63c5303bcc54fe6e891579472d9",
+      "type": "protocol",
+      "label": "EOA 0x4eac…72d9",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4eac0ea26700f63c5303bcc54fe6e891579472d9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x608e1e01ef072c15e5da7235ce793f4d24eca67b",
+      "type": "protocol",
+      "label": "0x608e…a67b",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x608e1e01ef072c15e5da7235ce793f4d24eca67b",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d#0",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "label": "9.4% 3,680",
+      "edge_type": "vault",
+      "amount": 3679.6550586347876,
+      "depth": 0
+    },
+    {
+      "id": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d->0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1#1",
+      "source": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "target": "0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1",
+      "label": "90.2% 5,756,243",
+      "edge_type": "holds",
+      "amount": 5756243.273461726,
+      "depth": 1
+    },
+    {
+      "id": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d->0x3f2b20b8e8ce30bb52239d3dfadf826ecfe6a5f7#2",
+      "source": "0xab3cb84c310186b2fa4b4503624a5d90b5dcb22d",
+      "target": "0x3f2b20b8e8ce30bb52239d3dfadf826ecfe6a5f7",
+      "label": "9.5% 603,708",
+      "edge_type": "holds",
+      "amount": 603708.0552929221,
+      "depth": 1
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6#3",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "label": "6.4% 2,494",
+      "edge_type": "eigenlayer",
+      "amount": 2493.6931085020797,
+      "depth": 0,
+      "coverage": 0.842
+    },
+    {
+      "id": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6->0x56398b89d53e8731bca8c1b06886cfb14bd6b654#4",
+      "source": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "target": "0x56398b89d53e8731bca8c1b06886cfb14bd6b654",
+      "label": "restake 1,875 · op 0xd7890b…",
+      "edge_type": "restake",
+      "amount": 1874.5282490168852,
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 1874.5282,
+          "underlying": 1874.5282,
+          "operator": "0xd7890b468b1ed9effad20cc809f44e590622b735"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6->0x19bd29e74c450ac73b49b5fb199a3d0d4c8f37b2#5",
+      "source": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "target": "0x19bd29e74c450ac73b49b5fb199a3d0d4c8f37b2",
+      "label": "restake 125 · op 0x110af2…",
+      "edge_type": "restake",
+      "amount": 125.08142857201018,
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 125.0814,
+          "underlying": 125.0814,
+          "operator": "0x110af279aaffb0d182697d7fc87653838aa5945e"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6->0xed7191fc83641990595559e83c989f4bbc050e4f#6",
+      "source": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+      "target": "0xed7191fc83641990595559e83c989f4bbc050e4f",
+      "label": "restake 100 · op 0x500f8f…",
+      "edge_type": "restake",
+      "amount": 100.0,
+      "depth": 1,
+      "via": "eigenlayer",
+      "position": {
+        "role": "restake",
+        "venue": "0x8ca7a5d6f3acd3a7a8bc468a8cd0fb14b6bd28b6",
+        "detail": {
+          "shares": 100.0,
+          "underlying": 100.0,
+          "operator": "0x500f8fb5422cf9cd8c56198464ac21d065da2228"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2#7",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2",
+      "label": "6.1% 2,392",
+      "edge_type": "holds",
+      "amount": 2392.091678260067,
+      "depth": 0
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x3691ef68ba22a854c36bc92f6b5f30473ef5fb0a#8",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x3691ef68ba22a854c36bc92f6b5f30473ef5fb0a",
+      "label": "4.5% 1,768",
+      "edge_type": "holds",
+      "amount": 1767.9697154523676,
+      "depth": 0
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2#9",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+      "label": "4.1% 1,612",
+      "edge_type": "vault",
+      "amount": 1611.7701867433866,
+      "depth": 0
+    },
+    {
+      "id": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2->0xe2008b01a2ad0a9aeea9f71ecc6a176138553a61#10",
+      "source": "0x5198cb44d7b2e993ebdda9cad3b9a0eaa32769d2",
+      "target": "0xe2008b01a2ad0a9aeea9f71ecc6a176138553a61",
+      "label": "99.1% 1,598",
+      "edge_type": "holds",
+      "amount": 1597.589614,
+      "depth": 1
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15#11",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "label": "3.8% 1,483",
+      "edge_type": "vault",
+      "amount": 1483.4696012918535,
+      "depth": 0
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0x351dfdae85652cf1a1cfbe29914cd1702cd25167#12",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0x351dfdae85652cf1a1cfbe29914cd1702cd25167",
+      "label": "28.4% 421,751",
+      "edge_type": "holds",
+      "amount": 421751.43623628916,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0xcd818ef199e5ab0f4ee92ef6c90268eeb147efd0#13",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0xcd818ef199e5ab0f4ee92ef6c90268eeb147efd0",
+      "label": "21.9% 324,775",
+      "edge_type": "holds",
+      "amount": 324775.4395669227,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0x16f6965651143a140f1f5f213e378bc4683cef9b#14",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0x16f6965651143a140f1f5f213e378bc4683cef9b",
+      "label": "14.4% 213,664",
+      "edge_type": "holds",
+      "amount": 213664.42770655442,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0xea32ceb2c0d5479916ef6427abab12bf59953be0#15",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0xea32ceb2c0d5479916ef6427abab12bf59953be0",
+      "label": "9.9% 147,067",
+      "edge_type": "holds",
+      "amount": 147066.72792038837,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0x4e06ea07ac8649c35b856301f26cc65db3465684#16",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0x4e06ea07ac8649c35b856301f26cc65db3465684",
+      "label": "8.4% 125,084",
+      "edge_type": "holds",
+      "amount": 125084.143069271,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0x318df33589c7f98698f9d54683f425cd19f70c99#17",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0x318df33589c7f98698f9d54683f425cd19f70c99",
+      "label": "6.2% 92,676",
+      "edge_type": "holds",
+      "amount": 92675.81557832113,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0x56797811d35af8d49e9d2a68b6e162c48b80fe8b#18",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0x56797811d35af8d49e9d2a68b6e162c48b80fe8b",
+      "label": "3.3% 48,523",
+      "edge_type": "holds",
+      "amount": 48522.88874021657,
+      "depth": 1
+    },
+    {
+      "id": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15->0xc14390a9691f4381d4816e95ead34035a9c24842#19",
+      "source": "0x78bb3aec3d855431bd9289fd98da13f9ebb7ef15",
+      "target": "0xc14390a9691f4381d4816e95ead34035a9c24842",
+      "label": "2.5% 36,606",
+      "edge_type": "holds",
+      "amount": 36605.82988690623,
+      "depth": 1
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x4eac0ea26700f63c5303bcc54fe6e891579472d9#20",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x4eac0ea26700f63c5303bcc54fe6e891579472d9",
+      "label": "3.7% 1,442",
+      "edge_type": "holds",
+      "amount": 1442.391419223509,
+      "depth": 0
+    },
+    {
+      "id": "0xac3e018457b222d93114458476f3e3416abbe38f->0x608e1e01ef072c15e5da7235ce793f4d24eca67b#21",
+      "source": "0xac3e018457b222d93114458476f3e3416abbe38f",
+      "target": "0x608e1e01ef072c15e5da7235ce793f4d24eca67b",
+      "label": "3.0% 1,158",
+      "edge_type": "holds",
+      "amount": 1157.9619570663704,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xac3e018457b222d93114458476f3e3416abbe38f",
+    "block": 25242078,
+    "edge_count": 22,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

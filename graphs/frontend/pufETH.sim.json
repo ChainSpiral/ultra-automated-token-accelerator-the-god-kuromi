@@ -1,0 +1,1470 @@
+{
+  "nodes": [
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "type": "token",
+      "label": "0xd9a4…6a72",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd5549b9e07c1ff372b1a3912e184213bfe37bf25",
+      "type": "protocol",
+      "label": "EOA 0xd554…bf25",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xd5549b9e07c1ff372b1a3912e184213bfe37bf25",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf7b6b32492c2e13799d921e84202450131bd238b",
+      "type": "protocol",
+      "label": "0xf7b6…238b",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf7b6b32492c2e13799d921e84202450131bd238b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa775c23f5b135e6acbc821b309e10662b1dca2de",
+      "type": "protocol",
+      "label": "EOA 0xa775…a2de",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xa775c23f5b135e6acbc821b309e10662b1dca2de",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9",
+      "type": "protocol",
+      "label": "crvPufETH",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "CurveStableSwapNG",
+        "symbol": "crvPufETH",
+        "depth": 0,
+        "address": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb6ec26a3433d6cd11084c2094f12c4e571806d06",
+      "type": "protocol",
+      "label": "crvPufETH-gauge",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "LiquidityGaugeV6",
+        "symbol": "crvPufETH-gauge",
+        "depth": 1,
+        "address": "0xb6ec26a3433d6cd11084c2094f12c4e571806d06",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+      "type": "protocol",
+      "label": "EOA 0x267e…f91e",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x37bde20736e959b790e95e8247abff6f628530d9",
+      "type": "protocol",
+      "label": "EOA 0x37bd…30d9",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x37bde20736e959b790e95e8247abff6f628530d9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "type": "protocol",
+      "label": "YT-pufETH-25JUN2026",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-pufETH-25JUN2026",
+        "depth": 1,
+        "address": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x41f03af13cb6cec919e5838a53ae79eadf291b87",
+      "type": "protocol",
+      "label": "EOA 0x41f0…1b87",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x41f03af13cb6cec919e5838a53ae79eadf291b87",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb47598dddbb9bd03c1a8f4a39c017f715b2ce2d6",
+      "type": "protocol",
+      "label": "EOA 0xb475…e2d6",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xb47598dddbb9bd03c1a8f4a39c017f715b2ce2d6",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x723265936ec47139d543c63f081de65e587cf5c1",
+      "type": "protocol",
+      "label": "EOA 0x7232…f5c1",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x723265936ec47139d543c63f081de65e587cf5c1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x92b5bf1c7de42ad8a4060509bc4d7ddad2156313",
+      "type": "protocol",
+      "label": "EOA 0x92b5…6313",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x92b5bf1c7de42ad8a4060509bc4d7ddad2156313",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf0cb782600452bb4c403ecfb703284e10bbb1729",
+      "type": "protocol",
+      "label": "EOA 0xf0cb…1729",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xf0cb782600452bb4c403ecfb703284e10bbb1729",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd2a3afc44b635fdf50d3c4eb89b0c3109cfd5fac",
+      "type": "protocol",
+      "label": "opaque 0xd2a3…5fac",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd2a3afc44b635fdf50d3c4eb89b0c3109cfd5fac",
+        "approx": true
+      }
+    },
+    {
+      "id": "0x1b72bac3772050fdcaf468cce7e20deb3cb02d89",
+      "type": "protocol",
+      "label": "EOA 0x1b72…2d89",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x1b72bac3772050fdcaf468cce7e20deb3cb02d89",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc0e87089937c161d4a59587c392c58685b5d9812",
+      "type": "protocol",
+      "label": "EOA 0xc0e8…9812",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xc0e87089937c161d4a59587c392c58685b5d9812",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "type": "protocol",
+      "label": "PENDLE-LPT",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleMarketV3",
+        "symbol": "PENDLE-LPT",
+        "depth": 1,
+        "address": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe90b4aa6002e263031e9a05d50ce8709b9f92fa8",
+      "type": "protocol",
+      "label": "EOA 0xe90b…2fa8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xe90b4aa6002e263031e9a05d50ce8709b9f92fa8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xef9d106067dbc0cd846c313f4cca4b8af4a5e932",
+      "type": "protocol",
+      "label": "EOA 0xef9d…e932",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xef9d106067dbc0cd846c313f4cca4b8af4a5e932",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7bb60a26ed799362a6f2c811e2f8cce40b1ee606",
+      "type": "protocol",
+      "label": "EOA 0x7bb6…e606",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x7bb60a26ed799362a6f2c811e2f8cce40b1ee606",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x70345c846335051ed3827f53fedfc3091b023aba",
+      "type": "protocol",
+      "label": "Safe 0x7034…3aba",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x70345c846335051ed3827f53fedfc3091b023aba",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3aaee0c2d6fbcebb4876bc0bc7a99ec07cf86366",
+      "type": "protocol",
+      "label": "EOA 0x3aae…6366",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x3aaee0c2d6fbcebb4876bc0bc7a99ec07cf86366",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf7e326856009c52e9842b135723194eeba53a5df",
+      "type": "protocol",
+      "label": "EOA 0xf7e3…a5df",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xf7e326856009c52e9842b135723194eeba53a5df",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x000f3dc066fa6c8ff69a931bcea25d11a21df3d3",
+      "type": "protocol",
+      "label": "EOA 0x000f…f3d3",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x000f3dc066fa6c8ff69a931bcea25d11a21df3d3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "type": "protocol",
+      "label": "YT-pufETH-27JUN2024",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-pufETH-27JUN2024",
+        "depth": 1,
+        "address": "0x391b570e81e354a85a496952b66adc831715f54f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd164b614fde7939078c7558f9680fa32f01aed77",
+      "type": "protocol",
+      "label": "EOA 0xd164…ed77",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd164b614fde7939078c7558f9680fa32f01aed77",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5c0e5eebe5f2c3818b992e1fff2ffc1a39d9425c",
+      "type": "protocol",
+      "label": "EOA 0x5c0e…425c",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x5c0e5eebe5f2c3818b992e1fff2ffc1a39d9425c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb68e81fbb687fb172807fe20c569e7aeabcc594b",
+      "type": "protocol",
+      "label": "EOA 0xb68e…594b",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xb68e81fbb687fb172807fe20c569e7aeabcc594b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd09d0cd5d14749fbddfa6c5dfd48af3cc638ca8f",
+      "type": "protocol",
+      "label": "EOA 0xd09d…ca8f",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd09d0cd5d14749fbddfa6c5dfd48af3cc638ca8f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdf2868df50ac67950be49e3fabb1cf364cd5dd7e",
+      "type": "protocol",
+      "label": "EOA 0xdf28…dd7e",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xdf2868df50ac67950be49e3fabb1cf364cd5dd7e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4a9ce81c0d560d2e0f9014b7d758e93a7a0a64c1",
+      "type": "protocol",
+      "label": "EOA 0x4a9c…64c1",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x4a9ce81c0d560d2e0f9014b7d758e93a7a0a64c1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
+      "type": "protocol",
+      "label": "EOA 0x82e4…8e30",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "type": "protocol",
+      "label": "YT-pufETH-26SEP2024",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-pufETH-26SEP2024",
+        "depth": 1,
+        "address": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x3971e238a194c77ad085f81f295fcc86221ae696",
+      "type": "protocol",
+      "label": "EOA 0x3971…e696",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x3971e238a194c77ad085f81f295fcc86221ae696",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x427bba37b4e6486b2de3b4678844edf1909ea56b",
+      "type": "protocol",
+      "label": "Safe 0x427b…a56b",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x427bba37b4e6486b2de3b4678844edf1909ea56b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x284531c7c7231b344a5d0c8f6a149f63bc0e6ef9",
+      "type": "protocol",
+      "label": "opaque 0x2845…6ef9",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x284531c7c7231b344a5d0c8f6a149f63bc0e6ef9",
+        "approx": true
+      }
+    },
+    {
+      "id": "0xaa1e9116f8b88c318172d90faca850bc30c7d127",
+      "type": "protocol",
+      "label": "EOA 0xaa1e…d127",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xaa1e9116f8b88c318172d90faca850bc30c7d127",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xcff41a198e143fef2b82e7c3cf01a16e2a238768",
+      "type": "protocol",
+      "label": "EOA 0xcff4…8768",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xcff41a198e143fef2b82e7c3cf01a16e2a238768",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4e2bb4b6ead3830f4625cbbeb2f80b920f6417ee",
+      "type": "protocol",
+      "label": "EOA 0x4e2b…17ee",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x4e2bb4b6ead3830f4625cbbeb2f80b920f6417ee",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8dc09f5364a03de8d0da29d6274eabe8930b415a",
+      "type": "protocol",
+      "label": "EOA 0x8dc0…415a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x8dc09f5364a03de8d0da29d6274eabe8930b415a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xad4261ff3fab979781b5104b843d7d0b05350d95",
+      "type": "protocol",
+      "label": "EOA 0xad42…0d95",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xad4261ff3fab979781b5104b843d7d0b05350d95",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "type": "protocol",
+      "label": "YT-pufETH-26JUN2025",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleYieldToken",
+        "symbol": "YT-pufETH-26JUN2025",
+        "depth": 1,
+        "address": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9db0ee5bac43ea008312295a95c2e287ecff8c8d",
+      "type": "protocol",
+      "label": "EOA 0x9db0…8c8d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x9db0ee5bac43ea008312295a95c2e287ecff8c8d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1b08a70901544950ade8e7ab5e8789df43dd24ae",
+      "type": "protocol",
+      "label": "EOA 0x1b08…24ae",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x1b08a70901544950ade8e7ab5e8789df43dd24ae",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe7057096f17351ea42b8f7f4af77d94aa5a45664",
+      "type": "protocol",
+      "label": "EOA 0xe705…5664",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xe7057096f17351ea42b8f7f4af77d94aa5a45664",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x28325eea9947e8e9f139a607fb4f6fb623e51cca",
+      "type": "protocol",
+      "label": "EOA 0x2832…1cca",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x28325eea9947e8e9f139a607fb4f6fb623e51cca",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5d8ee564b86a9fcffc9a786525373cd4abf5d4dc",
+      "type": "protocol",
+      "label": "EOA 0x5d8e…d4dc",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x5d8ee564b86a9fcffc9a786525373cd4abf5d4dc",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1e830ed61b6f1bb785481de18b06283d0736b955",
+      "type": "protocol",
+      "label": "opaque 0x1e83…b955",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x1e830ed61b6f1bb785481de18b06283d0736b955",
+        "approx": true
+      }
+    },
+    {
+      "id": "0xbeaae572562131e92dae1b6800c5c20af440caca",
+      "type": "protocol",
+      "label": "opaque 0xbeaa…caca",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xbeaae572562131e92dae1b6800c5c20af440caca",
+        "approx": true
+      }
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "type": "protocol",
+      "label": "PENDLE-LPT",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "PendleMarketV3",
+        "symbol": "PENDLE-LPT",
+        "depth": 1,
+        "address": "0x17be998a578fd97687b24e83954fec86dc20c979",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x52569bcfc5e32340894f1d180f957e49774bdb29",
+      "type": "protocol",
+      "label": "EOA 0x5256…db29",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x52569bcfc5e32340894f1d180f957e49774bdb29",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x16cedaa720f5bac9196175e88ec3be5bd80790be",
+      "type": "protocol",
+      "label": "EOA 0x16ce…90be",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x16cedaa720f5bac9196175e88ec3be5bd80790be",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xbb8a430025e7280655314c30d87f630d6719e0f9",
+      "type": "protocol",
+      "label": "EOA 0xbb8a…e0f9",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xbb8a430025e7280655314c30d87f630d6719e0f9",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x27c3958424276f1d97c62ed147a2bf04bb601340",
+      "type": "protocol",
+      "label": "EOA 0x27c3…1340",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x27c3958424276f1d97c62ed147a2bf04bb601340",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x0c723f9fb61964a3cd211dbbb2f3ff9296f2538d",
+      "type": "protocol",
+      "label": "EOA 0x0c72…538d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x0c723f9fb61964a3cd211dbbb2f3ff9296f2538d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd464594b8cde07c8a070ad5e05fb5b8c57c8bb42",
+      "type": "protocol",
+      "label": "EOA 0xd464…bb42",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd464594b8cde07c8a070ad5e05fb5b8c57c8bb42",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x797d6ca4d44b62d46e0b55b9fd6f8f80346398e5",
+      "type": "protocol",
+      "label": "EOA 0x797d…98e5",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x797d6ca4d44b62d46e0b55b9fd6f8f80346398e5",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x26d0b14d9f54280be20ec543de96e32c04b65104",
+      "type": "protocol",
+      "label": "EOA 0x26d0…5104",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x26d0b14d9f54280be20ec543de96e32c04b65104",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa7d1030bbbd21eb96e356537766ed0eee8fb0234",
+      "type": "protocol",
+      "label": "EOA 0xa7d1…0234",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xa7d1030bbbd21eb96e356537766ed0eee8fb0234",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xdda0483184e75a5579ef9635ed14baccf9d50283",
+      "type": "protocol",
+      "label": "0xdda0…0283",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xdda0483184e75a5579ef9635ed14baccf9d50283",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8ea1f6b673bd7dcd726ca4f3ae9b1ed639f5c1f6",
+      "type": "protocol",
+      "label": "EOA 0x8ea1…c1f6",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x8ea1f6b673bd7dcd726ca4f3ae9b1ed639f5c1f6",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xd5549b9e07c1ff372b1a3912e184213bfe37bf25#0",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xd5549b9e07c1ff372b1a3912e184213bfe37bf25",
+      "label": "43.4% 11,197",
+      "edge_type": "holds",
+      "amount": 11196.786519481058,
+      "depth": 0
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xf7b6b32492c2e13799d921e84202450131bd238b#1",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xf7b6b32492c2e13799d921e84202450131bd238b",
+      "label": "6.4% 1,654",
+      "edge_type": "holds",
+      "amount": 1654.4264347239143,
+      "depth": 0
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xa775c23f5b135e6acbc821b309e10662b1dca2de#2",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xa775c23f5b135e6acbc821b309e10662b1dca2de",
+      "label": "4.5% 1,157",
+      "edge_type": "holds",
+      "amount": 1156.7396847851871,
+      "depth": 0
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9#3",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9",
+      "label": "4.0% 1,023",
+      "edge_type": "wrapper",
+      "amount": 1023.2315593692322,
+      "depth": 0
+    },
+    {
+      "id": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9->0xb6ec26a3433d6cd11084c2094f12c4e571806d06#4",
+      "source": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9",
+      "target": "0xb6ec26a3433d6cd11084c2094f12c4e571806d06",
+      "label": "88.3% 929",
+      "edge_type": "wrapper",
+      "amount": 929.2933038136977,
+      "depth": 1
+    },
+    {
+      "id": "0xb6ec26a3433d6cd11084c2094f12c4e571806d06->0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e#5",
+      "source": "0xb6ec26a3433d6cd11084c2094f12c4e571806d06",
+      "target": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+      "label": "98.3% 914",
+      "edge_type": "holds",
+      "amount": 913.8364315595455,
+      "depth": 2
+    },
+    {
+      "id": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9->0x37bde20736e959b790e95e8247abff6f628530d9#6",
+      "source": "0xb3c8ce1ee157b0dcaa96897c9170aee6281706c9",
+      "target": "0x37bde20736e959b790e95e8247abff6f628530d9",
+      "label": "6.0% 63",
+      "edge_type": "holds",
+      "amount": 63.263180874198255,
+      "depth": 1
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905#7",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "label": "3.8% 982",
+      "edge_type": "vault",
+      "amount": 981.7049268197558,
+      "depth": 0
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466#8",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "label": "57.9% 568",
+      "edge_type": "wrapper",
+      "amount": 568.0015883009954,
+      "depth": 1
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0x41f03af13cb6cec919e5838a53ae79eadf291b87#9",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0x41f03af13cb6cec919e5838a53ae79eadf291b87",
+      "label": "19.4% 118",
+      "edge_type": "holds",
+      "amount": 118.40999904474154,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0xb47598dddbb9bd03c1a8f4a39c017f715b2ce2d6#10",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0xb47598dddbb9bd03c1a8f4a39c017f715b2ce2d6",
+      "label": "13.2% 81",
+      "edge_type": "holds",
+      "amount": 80.65014526801617,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0x723265936ec47139d543c63f081de65e587cf5c1#11",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0x723265936ec47139d543c63f081de65e587cf5c1",
+      "label": "10.9% 66",
+      "edge_type": "holds",
+      "amount": 66.45410630149165,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0x92b5bf1c7de42ad8a4060509bc4d7ddad2156313#12",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0x92b5bf1c7de42ad8a4060509bc4d7ddad2156313",
+      "label": "10.6% 64",
+      "edge_type": "holds",
+      "amount": 64.4208995622522,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0xf0cb782600452bb4c403ecfb703284e10bbb1729#13",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0xf0cb782600452bb4c403ecfb703284e10bbb1729",
+      "label": "9.9% 60",
+      "edge_type": "holds",
+      "amount": 59.998512981724666,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0xd2a3afc44b635fdf50d3c4eb89b0c3109cfd5fac#14",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0xd2a3afc44b635fdf50d3c4eb89b0c3109cfd5fac",
+      "label": "7.2% 44",
+      "edge_type": "holds",
+      "amount": 43.7777167984999,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0x1b72bac3772050fdcaf468cce7e20deb3cb02d89#15",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0x1b72bac3772050fdcaf468cce7e20deb3cb02d89",
+      "label": "6.7% 41",
+      "edge_type": "holds",
+      "amount": 40.925223446320516,
+      "depth": 2
+    },
+    {
+      "id": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466->0xc0e87089937c161d4a59587c392c58685b5d9812#16",
+      "source": "0xb1dd1a6f9a9f09867c7a128d99e4c1f9510d8466",
+      "target": "0xc0e87089937c161d4a59587c392c58685b5d9812",
+      "label": "5.1% 31",
+      "edge_type": "holds",
+      "amount": 31.248247861178395,
+      "depth": 2
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0x02c1289dacb6d459fc784236e862bc504c991f81#17",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "label": "28.0% 275",
+      "edge_type": "wrapper",
+      "amount": 274.5053613338759,
+      "depth": 1
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0x1b72bac3772050fdcaf468cce7e20deb3cb02d89#18",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0x1b72bac3772050fdcaf468cce7e20deb3cb02d89",
+      "label": "35.7% 63",
+      "edge_type": "holds",
+      "amount": 63.03508796560471,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0xe90b4aa6002e263031e9a05d50ce8709b9f92fa8#19",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0xe90b4aa6002e263031e9a05d50ce8709b9f92fa8",
+      "label": "27.1% 48",
+      "edge_type": "holds",
+      "amount": 47.74546448678544,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0xef9d106067dbc0cd846c313f4cca4b8af4a5e932#20",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0xef9d106067dbc0cd846c313f4cca4b8af4a5e932",
+      "label": "7.2% 13",
+      "edge_type": "holds",
+      "amount": 12.748384284772198,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0x7bb60a26ed799362a6f2c811e2f8cce40b1ee606#21",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0x7bb60a26ed799362a6f2c811e2f8cce40b1ee606",
+      "label": "5.7% 10",
+      "edge_type": "holds",
+      "amount": 10.055094688151263,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0x70345c846335051ed3827f53fedfc3091b023aba#22",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0x70345c846335051ed3827f53fedfc3091b023aba",
+      "label": "5.3% 9",
+      "edge_type": "holds",
+      "amount": 9.324711467639803,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0x3aaee0c2d6fbcebb4876bc0bc7a99ec07cf86366#23",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0x3aaee0c2d6fbcebb4876bc0bc7a99ec07cf86366",
+      "label": "4.2% 8",
+      "edge_type": "holds",
+      "amount": 7.5014001024105115,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0xf7e326856009c52e9842b135723194eeba53a5df#24",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0xf7e326856009c52e9842b135723194eeba53a5df",
+      "label": "2.8% 5",
+      "edge_type": "holds",
+      "amount": 4.967555651626439,
+      "depth": 2
+    },
+    {
+      "id": "0x02c1289dacb6d459fc784236e862bc504c991f81->0x000f3dc066fa6c8ff69a931bcea25d11a21df3d3#25",
+      "source": "0x02c1289dacb6d459fc784236e862bc504c991f81",
+      "target": "0x000f3dc066fa6c8ff69a931bcea25d11a21df3d3",
+      "label": "2.7% 5",
+      "edge_type": "holds",
+      "amount": 4.789654500797977,
+      "depth": 2
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0x391b570e81e354a85a496952b66adc831715f54f#26",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "label": "4.9% 48",
+      "edge_type": "wrapper",
+      "amount": 47.78945565885354,
+      "depth": 1
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0xd164b614fde7939078c7558f9680fa32f01aed77#27",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0xd164b614fde7939078c7558f9680fa32f01aed77",
+      "label": "14.9% 13,862",
+      "edge_type": "holds",
+      "amount": 13861.892639830528,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0x5c0e5eebe5f2c3818b992e1fff2ffc1a39d9425c#28",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0x5c0e5eebe5f2c3818b992e1fff2ffc1a39d9425c",
+      "label": "3.4% 3,157",
+      "edge_type": "holds",
+      "amount": 3157.481608075469,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0xb68e81fbb687fb172807fe20c569e7aeabcc594b#29",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0xb68e81fbb687fb172807fe20c569e7aeabcc594b",
+      "label": "3.1% 2,910",
+      "edge_type": "holds",
+      "amount": 2909.8352232008156,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0xd09d0cd5d14749fbddfa6c5dfd48af3cc638ca8f#30",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0xd09d0cd5d14749fbddfa6c5dfd48af3cc638ca8f",
+      "label": "1.9% 1,770",
+      "edge_type": "holds",
+      "amount": 1769.5489841239676,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0xdf2868df50ac67950be49e3fabb1cf364cd5dd7e#31",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0xdf2868df50ac67950be49e3fabb1cf364cd5dd7e",
+      "label": "1.8% 1,634",
+      "edge_type": "holds",
+      "amount": 1634.4946986010716,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0x4a9ce81c0d560d2e0f9014b7d758e93a7a0a64c1#32",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0x4a9ce81c0d560d2e0f9014b7d758e93a7a0a64c1",
+      "label": "1.5% 1,376",
+      "edge_type": "holds",
+      "amount": 1375.5544070871142,
+      "depth": 2
+    },
+    {
+      "id": "0x391b570e81e354a85a496952b66adc831715f54f->0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30#33",
+      "source": "0x391b570e81e354a85a496952b66adc831715f54f",
+      "target": "0x82e4d78c6c62d461251fa5a1d4deb9f0fe378e30",
+      "label": "1.5% 1,358",
+      "edge_type": "holds",
+      "amount": 1357.9966224106677,
+      "depth": 2
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c#34",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "label": "3.5% 35",
+      "edge_type": "wrapper",
+      "amount": 34.59166543594837,
+      "depth": 1
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0x3971e238a194c77ad085f81f295fcc86221ae696#35",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0x3971e238a194c77ad085f81f295fcc86221ae696",
+      "label": "10.6% 7,424",
+      "edge_type": "holds",
+      "amount": 7424.0424875975195,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0x427bba37b4e6486b2de3b4678844edf1909ea56b#36",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0x427bba37b4e6486b2de3b4678844edf1909ea56b",
+      "label": "8.2% 5,752",
+      "edge_type": "holds",
+      "amount": 5752.481034225008,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0x284531c7c7231b344a5d0c8f6a149f63bc0e6ef9#37",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0x284531c7c7231b344a5d0c8f6a149f63bc0e6ef9",
+      "label": "7.1% 4,949",
+      "edge_type": "holds",
+      "amount": 4948.878485589944,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0xaa1e9116f8b88c318172d90faca850bc30c7d127#38",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0xaa1e9116f8b88c318172d90faca850bc30c7d127",
+      "label": "6.0% 4,204",
+      "edge_type": "holds",
+      "amount": 4204.049889223088,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0xcff41a198e143fef2b82e7c3cf01a16e2a238768#39",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0xcff41a198e143fef2b82e7c3cf01a16e2a238768",
+      "label": "5.3% 3,716",
+      "edge_type": "holds",
+      "amount": 3715.871690380079,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0x4e2bb4b6ead3830f4625cbbeb2f80b920f6417ee#40",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0x4e2bb4b6ead3830f4625cbbeb2f80b920f6417ee",
+      "label": "4.6% 3,199",
+      "edge_type": "holds",
+      "amount": 3198.56536382486,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0x8dc09f5364a03de8d0da29d6274eabe8930b415a#41",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0x8dc09f5364a03de8d0da29d6274eabe8930b415a",
+      "label": "3.5% 2,468",
+      "edge_type": "holds",
+      "amount": 2468.2441828730393,
+      "depth": 2
+    },
+    {
+      "id": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c->0xad4261ff3fab979781b5104b843d7d0b05350d95#42",
+      "source": "0x1a65eb80a2ac3ea6e41d456ddd6e9cc5728bef7c",
+      "target": "0xad4261ff3fab979781b5104b843d7d0b05350d95",
+      "label": "3.4% 2,368",
+      "edge_type": "holds",
+      "amount": 2368.4086237344527,
+      "depth": 2
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0x784a0bb8208c70290cac6bcbc3650ceb9227813e#43",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "label": "1.7% 17",
+      "edge_type": "wrapper",
+      "amount": 16.887066405152847,
+      "depth": 1
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0x9db0ee5bac43ea008312295a95c2e287ecff8c8d#44",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0x9db0ee5bac43ea008312295a95c2e287ecff8c8d",
+      "label": "20.8% 2,709",
+      "edge_type": "holds",
+      "amount": 2708.5361474157467,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0x1b08a70901544950ade8e7ab5e8789df43dd24ae#45",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0x1b08a70901544950ade8e7ab5e8789df43dd24ae",
+      "label": "15.0% 1,954",
+      "edge_type": "holds",
+      "amount": 1953.5921817526596,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0xe7057096f17351ea42b8f7f4af77d94aa5a45664#46",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0xe7057096f17351ea42b8f7f4af77d94aa5a45664",
+      "label": "13.9% 1,811",
+      "edge_type": "holds",
+      "amount": 1811.4641250549605,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0x28325eea9947e8e9f139a607fb4f6fb623e51cca#47",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0x28325eea9947e8e9f139a607fb4f6fb623e51cca",
+      "label": "6.6% 853",
+      "edge_type": "holds",
+      "amount": 853.4756095593496,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0x5d8ee564b86a9fcffc9a786525373cd4abf5d4dc#48",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0x5d8ee564b86a9fcffc9a786525373cd4abf5d4dc",
+      "label": "5.6% 727",
+      "edge_type": "holds",
+      "amount": 726.9777998074613,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0xf0cb782600452bb4c403ecfb703284e10bbb1729#49",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0xf0cb782600452bb4c403ecfb703284e10bbb1729",
+      "label": "4.7% 605",
+      "edge_type": "holds",
+      "amount": 605.2352801720266,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0x1e830ed61b6f1bb785481de18b06283d0736b955#50",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0x1e830ed61b6f1bb785481de18b06283d0736b955",
+      "label": "4.3% 561",
+      "edge_type": "holds",
+      "amount": 560.9633636620233,
+      "depth": 2
+    },
+    {
+      "id": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e->0xbeaae572562131e92dae1b6800c5c20af440caca#51",
+      "source": "0x784a0bb8208c70290cac6bcbc3650ceb9227813e",
+      "target": "0xbeaae572562131e92dae1b6800c5c20af440caca",
+      "label": "3.8% 493",
+      "edge_type": "holds",
+      "amount": 493.0709795127426,
+      "depth": 2
+    },
+    {
+      "id": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905->0x17be998a578fd97687b24e83954fec86dc20c979#52",
+      "source": "0x253008ba4ae2f3e6488dc998a5321d4eb1a0c905",
+      "target": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "label": "1.6% 16",
+      "edge_type": "wrapper",
+      "amount": 15.597979403555128,
+      "depth": 1
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x52569bcfc5e32340894f1d180f957e49774bdb29#53",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x52569bcfc5e32340894f1d180f957e49774bdb29",
+      "label": "53.1% 9",
+      "edge_type": "holds",
+      "amount": 9.050162888923836,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x16cedaa720f5bac9196175e88ec3be5bd80790be#54",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x16cedaa720f5bac9196175e88ec3be5bd80790be",
+      "label": "5.6% 1",
+      "edge_type": "holds",
+      "amount": 0.9527086732767993,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0xbb8a430025e7280655314c30d87f630d6719e0f9#55",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0xbb8a430025e7280655314c30d87f630d6719e0f9",
+      "label": "4.3% 1",
+      "edge_type": "holds",
+      "amount": 0.7410597336590208,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x27c3958424276f1d97c62ed147a2bf04bb601340#56",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x27c3958424276f1d97c62ed147a2bf04bb601340",
+      "label": "4.2% 1",
+      "edge_type": "holds",
+      "amount": 0.7136453016255268,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x0c723f9fb61964a3cd211dbbb2f3ff9296f2538d#57",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x0c723f9fb61964a3cd211dbbb2f3ff9296f2538d",
+      "label": "3.2% 1",
+      "edge_type": "holds",
+      "amount": 0.5543998009310226,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0xd464594b8cde07c8a070ad5e05fb5b8c57c8bb42#58",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0xd464594b8cde07c8a070ad5e05fb5b8c57c8bb42",
+      "label": "3.2% 1",
+      "edge_type": "holds",
+      "amount": 0.5433754740361457,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x797d6ca4d44b62d46e0b55b9fd6f8f80346398e5#59",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x797d6ca4d44b62d46e0b55b9fd6f8f80346398e5",
+      "label": "3.1% 1",
+      "edge_type": "holds",
+      "amount": 0.5237409680640586,
+      "depth": 2
+    },
+    {
+      "id": "0x17be998a578fd97687b24e83954fec86dc20c979->0x26d0b14d9f54280be20ec543de96e32c04b65104#60",
+      "source": "0x17be998a578fd97687b24e83954fec86dc20c979",
+      "target": "0x26d0b14d9f54280be20ec543de96e32c04b65104",
+      "label": "2.8% 0",
+      "edge_type": "holds",
+      "amount": 0.47471017673061805,
+      "depth": 2
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xa7d1030bbbd21eb96e356537766ed0eee8fb0234#61",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xa7d1030bbbd21eb96e356537766ed0eee8fb0234",
+      "label": "3.3% 846",
+      "edge_type": "holds",
+      "amount": 845.8322627688007,
+      "depth": 0
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0xdda0483184e75a5579ef9635ed14baccf9d50283#62",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0xdda0483184e75a5579ef9635ed14baccf9d50283",
+      "label": "3.1% 792",
+      "edge_type": "holds",
+      "amount": 791.756129012864,
+      "depth": 0
+    },
+    {
+      "id": "0xd9a442856c234a39a81a089c06451ebaa4306a72->0x8ea1f6b673bd7dcd726ca4f3ae9b1ed639f5c1f6#63",
+      "source": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "target": "0x8ea1f6b673bd7dcd726ca4f3ae9b1ed639f5c1f6",
+      "label": "2.5% 643",
+      "edge_type": "holds",
+      "amount": 643.0277323772193,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+    "block": 25242078,
+    "edge_count": 64,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

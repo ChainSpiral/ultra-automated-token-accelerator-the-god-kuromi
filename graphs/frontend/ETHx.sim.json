@@ -1,0 +1,535 @@
+{
+  "nodes": [
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "type": "token",
+      "label": "0xa35b…a15b",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "type": "protocol",
+      "label": "EigenLayer",
+      "data": {
+        "category": "ledger:eigenlayer",
+        "kind": "ledger:eigenlayer",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "type": "protocol",
+      "label": "rsETH",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": "rsETH",
+        "depth": 1,
+        "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 3,
+        "address": "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+      "type": "protocol",
+      "label": "LayerZero OFT (bridge)",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "RSETH_OFTAdapter",
+        "symbol": null,
+        "depth": 3,
+        "address": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 3,
+        "address": "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+      "type": "protocol",
+      "label": "Compound v3",
+      "data": {
+        "category": "ledger:compound_v3",
+        "kind": "ledger:compound_v3",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 3,
+        "address": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "type": "protocol",
+      "label": "EOA 0x2216…ea7c",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 3,
+        "address": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x79f17234746344e0365d40be50d8d43db9082c32",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x395884d1974a839702bcfcba176ac7871c788946",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+      "type": "protocol",
+      "label": "Kelp",
+      "data": {
+        "category": "ledger:kelp",
+        "kind": "ledger:kelp",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4f2083f5fbede34c2714affb3105539775f7fe64",
+      "type": "protocol",
+      "label": "Safe 0x4f20…fe64",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4f2083f5fbede34c2714affb3105539775f7fe64",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x9f0491b32dbce587c50c4c43ab303b06478193a7",
+      "type": "protocol",
+      "label": "0x9f04…93a7",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x9f0491b32dbce587c50c4c43ab303b06478193a7",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xfe6795a3aea16a2b76f4ee24fe319cef4b93af84",
+      "type": "protocol",
+      "label": "EOA 0xfe67…af84",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xfe6795a3aea16a2b76f4ee24fe319cef4b93af84",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x8ff377b1cbee8d88d0a330a8523da3c31838bade",
+      "type": "protocol",
+      "label": "EOA 0x8ff3…bade",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x8ff377b1cbee8d88d0a330a8523da3c31838bade",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d#0",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "label": "60.1% 68,960",
+      "edge_type": "eigenlayer",
+      "amount": 68960.09224328688,
+      "depth": 0,
+      "coverage": 0.7037
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d->0x4c798c4653b1257d5149910523d7a6eed5712f83#1",
+      "source": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "target": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "label": "restake 23,410 · op 0xbe7d5f…",
+      "edge_type": "restake",
+      "amount": 23410.283352437073,
+      "depth": 1,
+      "via": "eigenlayer",
+      "coverage": 1.0,
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 23410.2834,
+          "underlying": 23410.2834,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4c798c4653b1257d5149910523d7a6eed5712f83->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#2",
+      "source": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 23,410",
+      "edge_type": "transformed",
+      "amount": 23410.283352437073,
+      "depth": 2,
+      "via": "kelp"
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7->0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1#3",
+      "source": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "target": "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1",
+      "label": "75.8% 431,907",
+      "edge_type": "aave_v3",
+      "amount": 431907.05340022163,
+      "depth": 3
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7->0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3#4",
+      "source": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "target": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+      "label": "14.1% 80,548",
+      "edge_type": "holds",
+      "amount": 80547.67469212066,
+      "depth": 3
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7->0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16#5",
+      "source": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "target": "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16",
+      "label": "2.9% 16,487",
+      "edge_type": "kelp",
+      "amount": 16486.658299663282,
+      "depth": 3
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7->0xa17581a9e3356d9a858b789d68b4d866e593ae94#6",
+      "source": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "target": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+      "label": "1.7% 9,892",
+      "edge_type": "compound_v3",
+      "amount": 9891.965761816911,
+      "depth": 3
+    },
+    {
+      "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7->0x22162dbba43fe0477cdc5234e248264ec7c6ea7c#7",
+      "source": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "target": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "label": "1.0% 5,941",
+      "edge_type": "holds",
+      "amount": 5941.008118993307,
+      "depth": 3
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d->0xee5470e1519972c3ea95249d60ebd064af2d53d3#8",
+      "source": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "target": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "label": "restake 12,874 · op 0xbe7d5f…",
+      "edge_type": "restake",
+      "amount": 12873.961864101828,
+      "depth": 1,
+      "via": "eigenlayer",
+      "coverage": 1.0,
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 12873.9619,
+          "underlying": 12873.9619,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xee5470e1519972c3ea95249d60ebd064af2d53d3->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#9",
+      "source": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 12,874",
+      "edge_type": "transformed",
+      "amount": 12873.961864101828,
+      "depth": 2,
+      "via": "kelp"
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d->0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85#10",
+      "source": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "target": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "label": "restake 8,900 · op 0xbe7d5f…",
+      "edge_type": "restake",
+      "amount": 8899.501123417793,
+      "depth": 1,
+      "via": "eigenlayer",
+      "coverage": 1.0,
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 8899.5011,
+          "underlying": 8899.5011,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#11",
+      "source": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 8,900",
+      "edge_type": "transformed",
+      "amount": 8899.501123417793,
+      "depth": 2,
+      "via": "kelp"
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d->0x79f17234746344e0365d40be50d8d43db9082c32#12",
+      "source": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "target": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "label": "restake 2,612 · op 0xdbed88…",
+      "edge_type": "restake",
+      "amount": 2611.9141334440133,
+      "depth": 1,
+      "via": "eigenlayer",
+      "coverage": 1.0,
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 2611.9141,
+          "underlying": 2611.9141,
+          "operator": "0xdbed88d83176316fc46797b43adee927dc2ff2f5"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x79f17234746344e0365d40be50d8d43db9082c32->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#13",
+      "source": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 2,612",
+      "edge_type": "transformed",
+      "amount": 2611.9141334440133,
+      "depth": 2,
+      "via": "kelp"
+    },
+    {
+      "id": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d->0x395884d1974a839702bcfcba176ac7871c788946#14",
+      "source": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+      "target": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "label": "restake 734 · op 0xbe7d5f…",
+      "edge_type": "restake",
+      "amount": 734.249098272648,
+      "depth": 1,
+      "via": "eigenlayer",
+      "coverage": 1.0,
+      "position": {
+        "role": "restake",
+        "venue": "0x9d7ed45ee2e8fc5482fa2428f15c971e6369011d",
+        "detail": {
+          "shares": 734.2491,
+          "underlying": 734.2491,
+          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x395884d1974a839702bcfcba176ac7871c788946->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#15",
+      "source": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 734",
+      "edge_type": "transformed",
+      "amount": 734.249098272648,
+      "depth": 2,
+      "via": "kelp"
+    },
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0xc66830e2667bc740c0bed9a71f18b14b8c8184ba#16",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+      "label": "9.8% 11,271",
+      "edge_type": "kelp",
+      "amount": 11270.536468077746,
+      "depth": 0,
+      "coverage": 1.0
+    },
+    {
+      "id": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba->0xa1290d69c65a6fe4df752f95823fae25cb99e5a7#17",
+      "source": "0xc66830e2667bc740c0bed9a71f18b14b8c8184ba",
+      "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "label": "100.0% 11,271",
+      "edge_type": "transformed",
+      "amount": 11270.536468077746,
+      "depth": 1,
+      "via": "kelp"
+    },
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0x4f2083f5fbede34c2714affb3105539775f7fe64#18",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0x4f2083f5fbede34c2714affb3105539775f7fe64",
+      "label": "8.1% 9,326",
+      "edge_type": "holds",
+      "amount": 9325.665507483996,
+      "depth": 0
+    },
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0x9f0491b32dbce587c50c4c43ab303b06478193a7#19",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0x9f0491b32dbce587c50c4c43ab303b06478193a7",
+      "label": "1.4% 1,655",
+      "edge_type": "holds",
+      "amount": 1654.743814439999,
+      "depth": 0
+    },
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0xfe6795a3aea16a2b76f4ee24fe319cef4b93af84#20",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0xfe6795a3aea16a2b76f4ee24fe319cef4b93af84",
+      "label": "1.2% 1,400",
+      "edge_type": "holds",
+      "amount": 1400.435584503104,
+      "depth": 0
+    },
+    {
+      "id": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b->0x8ff377b1cbee8d88d0a330a8523da3c31838bade#21",
+      "source": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+      "target": "0x8ff377b1cbee8d88d0a330a8523da3c31838bade",
+      "label": "1.1% 1,316",
+      "edge_type": "holds",
+      "amount": 1316.2677399457914,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+    "block": 25242078,
+    "edge_count": 22,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

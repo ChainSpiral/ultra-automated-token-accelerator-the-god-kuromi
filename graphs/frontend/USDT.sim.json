@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "type": "token",
+      "label": "0xdac1…1ec7",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "type": "protocol",
+      "label": "EOA 0xf977…acec",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+      "type": "protocol",
+      "label": "EOA 0x47ac…d503",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x835678a611b28684005a5e2233695fb6cbbb0007",
+      "type": "protocol",
+      "label": "EOA 0x8356…0007",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x835678a611b28684005a5e2233695fb6cbbb0007",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+      "type": "protocol",
+      "label": "0x6c96…1dee",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5754284f345afc66a98fbb0a0afe71e0f007b949",
+      "type": "protocol",
+      "label": "EOA 0x5754…b949",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x5754284f345afc66a98fbb0a0afe71e0f007b949",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb0a27099582833c0cb8c7a0565759ff145113d64",
+      "type": "protocol",
+      "label": "EOA 0xb0a2…3d64",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xb0a27099582833c0cb8c7a0565759ff145113d64",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0xf977814e90da44bfa03b6295a0616a897441acec#0",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "label": "20.6% 19,967,378,227",
+      "edge_type": "holds",
+      "amount": 19967378226.983707,
+      "depth": 0
+    },
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503#1",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503",
+      "label": "9.5% 9,184,997,799",
+      "edge_type": "holds",
+      "amount": 9184997799.482302,
+      "depth": 0
+    },
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0x835678a611b28684005a5e2233695fb6cbbb0007#2",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0x835678a611b28684005a5e2233695fb6cbbb0007",
+      "label": "6.0% 5,876,489,264",
+      "edge_type": "holds",
+      "amount": 5876489264.174121,
+      "depth": 0
+    },
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0x6c96de32cea08842dcc4058c14d3aaad7fa41dee#3",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+      "label": "3.7% 3,625,391,954",
+      "edge_type": "holds",
+      "amount": 3625391953.959155,
+      "depth": 0
+    },
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0x5754284f345afc66a98fbb0a0afe71e0f007b949#4",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0x5754284f345afc66a98fbb0a0afe71e0f007b949",
+      "label": "3.6% 3,470,579,537",
+      "edge_type": "holds",
+      "amount": 3470579537.047257,
+      "depth": 0
+    },
+    {
+      "id": "0xdac17f958d2ee523a2206206994597c13d831ec7->0xb0a27099582833c0cb8c7a0565759ff145113d64#5",
+      "source": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "target": "0xb0a27099582833c0cb8c7a0565759ff145113d64",
+      "label": "1.5% 1,463,306,891",
+      "edge_type": "holds",
+      "amount": 1463306890.855674,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "block": 25242078,
+    "edge_count": 6,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

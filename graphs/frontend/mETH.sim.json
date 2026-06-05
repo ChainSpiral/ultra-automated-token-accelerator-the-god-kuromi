@@ -1,0 +1,210 @@
+{
+  "nodes": [
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "type": "token",
+      "label": "0xd5f7…adfa",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x6206ae3781f9f1b6fbcf44c7240b1be14f3169ef",
+      "type": "protocol",
+      "label": "EOA 0x6206…69ef",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x6206ae3781f9f1b6fbcf44c7240b1be14f3169ef",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x12be34be067ebd201f6eaf78a861d90b2a66b113",
+      "type": "protocol",
+      "label": "DelayedWithdraw",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "DelayedWithdraw",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x12be34be067ebd201f6eaf78a861d90b2a66b113",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x15bb5d31048381c84a157526cef9513531b8be1e",
+      "type": "protocol",
+      "label": "EOA 0x15bb…be1e",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x15bb5d31048381c84a157526cef9513531b8be1e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x95fc37a27a2f68e3a647cdc081f0a89bb47c3012",
+      "type": "protocol",
+      "label": "L1ChugSplashProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "L1ChugSplashProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x95fc37a27a2f68e3a647cdc081f0a89bb47c3012",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7c0e4d6c035d1bd60489ab7e16116ff7ca6c956a",
+      "type": "protocol",
+      "label": "EOA 0x7c0e…956a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x7c0e4d6c035d1bd60489ab7e16116ff7ca6c956a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x180a1b935d28494f9ff4233985562b18b3dcfa74",
+      "type": "protocol",
+      "label": "EOA 0x180a…fa74",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x180a1b935d28494f9ff4233985562b18b3dcfa74",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf89d7b9c864f589bbf53a82105107622b35eaa40",
+      "type": "protocol",
+      "label": "EOA 0xf89d…aa40",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf89d7b9c864f589bbf53a82105107622b35eaa40",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4f24535e67ebbdb274a1a7aa3e33339e05f0e46d",
+      "type": "protocol",
+      "label": "0x4f24…e46d",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4f24535e67ebbdb274a1a7aa3e33339e05f0e46d",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x6206ae3781f9f1b6fbcf44c7240b1be14f3169ef#0",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x6206ae3781f9f1b6fbcf44c7240b1be14f3169ef",
+      "label": "20.1% 42,200",
+      "edge_type": "holds",
+      "amount": 42200.0,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x12be34be067ebd201f6eaf78a861d90b2a66b113#1",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x12be34be067ebd201f6eaf78a861d90b2a66b113",
+      "label": "16.2% 33,959",
+      "edge_type": "holds",
+      "amount": 33958.89161464141,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x15bb5d31048381c84a157526cef9513531b8be1e#2",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x15bb5d31048381c84a157526cef9513531b8be1e",
+      "label": "12.8% 26,748",
+      "edge_type": "holds",
+      "amount": 26748.193326148008,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x95fc37a27a2f68e3a647cdc081f0a89bb47c3012#3",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x95fc37a27a2f68e3a647cdc081f0a89bb47c3012",
+      "label": "12.5% 26,137",
+      "edge_type": "holds",
+      "amount": 26136.518787971243,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x7c0e4d6c035d1bd60489ab7e16116ff7ca6c956a#4",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x7c0e4d6c035d1bd60489ab7e16116ff7ca6c956a",
+      "label": "11.7% 24,528",
+      "edge_type": "holds",
+      "amount": 24527.75491188,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x180a1b935d28494f9ff4233985562b18b3dcfa74#5",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x180a1b935d28494f9ff4233985562b18b3dcfa74",
+      "label": "7.0% 14,779",
+      "edge_type": "holds",
+      "amount": 14779.163909690933,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0xf89d7b9c864f589bbf53a82105107622b35eaa40#6",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0xf89d7b9c864f589bbf53a82105107622b35eaa40",
+      "label": "5.8% 12,235",
+      "edge_type": "holds",
+      "amount": 12234.797109367808,
+      "depth": 0
+    },
+    {
+      "id": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa->0x4f24535e67ebbdb274a1a7aa3e33339e05f0e46d#7",
+      "source": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "target": "0x4f24535e67ebbdb274a1a7aa3e33339e05f0e46d",
+      "label": "1.4% 3,000",
+      "edge_type": "holds",
+      "amount": 3000.0113,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+    "block": 25242078,
+    "edge_count": 8,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

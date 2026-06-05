@@ -1,0 +1,78 @@
+{
+  "root": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0x3154cf16ccdb4c6d922629664174b904d80f2c35",
+      "amount": 33679.57010138515,
+      "frac": 0.0855,
+      "kind": "contract",
+      "label": "L1ChugSplashProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0x51dd50f9bdfebd6ce8b96f41763e805f12f1acd4",
+      "amount": 15080.509796174138,
+      "frac": 0.0383,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0xd253bed96c6610c2351fb260a71eda0dadcfb5bc",
+      "amount": 9844.766161684602,
+      "frac": 0.025,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0x2d59e99018e640a02cb0a0492754437d1daba7a0",
+      "amount": 7938.421853645774,
+      "frac": 0.0202,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0x1c29e4f144564f930d2f3f7ebb462aa039d3167b",
+      "amount": 7938.421853645774,
+      "frac": 0.0202,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0xa6723ec698ea9ebf578edc036ad44ebe502c9028",
+      "amount": 7902.84737715021,
+      "frac": 0.0201,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0x90a0f023090dabdae28ad5f0e17dc15913aa48da",
+      "amount": 7848.824140263043,
+      "frac": 0.0199,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+      "holder": "0xfdf84b1ee4b35d76a24da33bf5cfb0194192e531",
+      "amount": 7848.824140263043,
+      "frac": 0.0199,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "nodes": [
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "type": "token",
+      "label": "0xbf54…2110",
+      "data": {
+        "category": "token",
+        "kind": "token",
+        "label": null,
+        "symbol": null,
+        "depth": -1,
+        "address": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb99a2c4c1c4f1fc27150681b740396f6ce1cbcf5",
+      "type": "protocol",
+      "label": "EOA 0xb99a…bcf5",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xb99a2c4c1c4f1fc27150681b740396f6ce1cbcf5",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "type": "protocol",
+      "label": "EOA 0x2216…ea7c",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc8140da31e6bca19b287cc35531c2212763c2059",
+      "type": "protocol",
+      "label": "0xc814…2059",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xc8140da31e6bca19b287cc35531c2212763c2059",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+      "type": "protocol",
+      "label": "EOA 0x267e…f91e",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x5efc9d10e42fb517456f4ac41eb5e2ebe42c8918",
+      "type": "protocol",
+      "label": "0x5efc…8918",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x5efc9d10e42fb517456f4ac41eb5e2ebe42c8918",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+      "type": "protocol",
+      "label": "Aave",
+      "data": {
+        "category": "ledger:aave_v3",
+        "kind": "ledger:aave_v3",
+        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xef992050dff61225ba6fb6018a106a6e2b2569a3",
+      "type": "protocol",
+      "label": "0xef99…69a3",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "TransparentUpgradeableProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xef992050dff61225ba6fb6018a106a6e2b2569a3",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+      "type": "protocol",
+      "label": "FluidLiquidityProxy",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "FluidLiquidityProxy",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+      "type": "protocol",
+      "label": "ZtakingPool",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "ZtakingPool",
+        "symbol": null,
+        "depth": 0,
+        "address": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+        "approx": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0xb131cd463d83782d4de33e00e35ef034f0869ba1#0",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+      "label": "20.8% 14,001",
+      "edge_type": "aave_v3",
+      "amount": 14001.41955235405,
+      "depth": 0,
+      "coverage": 0.9999
+    },
+    {
+      "id": "0xb131cd463d83782d4de33e00e35ef034f0869ba1->0xb99a2c4c1c4f1fc27150681b740396f6ce1cbcf5#1",
+      "source": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+      "target": "0xb99a2c4c1c4f1fc27150681b740396f6ce1cbcf5",
+      "label": "예치 13,999 · LT 76%",
+      "edge_type": "lending",
+      "amount": 13999.319974139042,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+        "detail": {
+          "supplied": 13999.32,
+          "underlying_symbol": "ezETH",
+          "ltv": 0.75,
+          "liq_threshold": 0.76
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0x22162dbba43fe0477cdc5234e248264ec7c6ea7c#2",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "label": "20.6% 13,851",
+      "edge_type": "holds",
+      "amount": 13850.681248147283,
+      "depth": 0
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0xc8140da31e6bca19b287cc35531c2212763c2059#3",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0xc8140da31e6bca19b287cc35531c2212763c2059",
+      "label": "18.9% 12,729",
+      "edge_type": "holds",
+      "amount": 12728.986869118855,
+      "depth": 0
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e#4",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+      "label": "11.9% 8,001",
+      "edge_type": "holds",
+      "amount": 8000.5128776328465,
+      "depth": 0
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0x5efc9d10e42fb517456f4ac41eb5e2ebe42c8918#5",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0x5efc9d10e42fb517456f4ac41eb5e2ebe42c8918",
+      "label": "6.0% 4,028",
+      "edge_type": "holds",
+      "amount": 4027.850560623497,
+      "depth": 0
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479#6",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+      "label": "5.8% 3,908",
+      "edge_type": "aave_v3",
+      "amount": 3907.9143063108345,
+      "depth": 0,
+      "coverage": 0.988
+    },
+    {
+      "id": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479->0xef992050dff61225ba6fb6018a106a6e2b2569a3#7",
+      "source": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+      "target": "0xef992050dff61225ba6fb6018a106a6e2b2569a3",
+      "label": "예치 3,861 · LT 0%",
+      "edge_type": "lending",
+      "amount": 3860.907933108905,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+        "detail": {
+          "supplied": 3860.9079,
+          "underlying_symbol": "ezETH",
+          "ltv": 0.0,
+          "liq_threshold": 0.001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0x52aa899454998be5b000ad077a46bbe360f4e497#8",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+      "label": "2.1% 1,405",
+      "edge_type": "holds",
+      "amount": 1405.2641583208706,
+      "depth": 0
+    },
+    {
+      "id": "0xbf5495efe5db9ce00f80364c8b423567e58d2110->0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6#9",
+      "source": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "target": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+      "label": "1.2% 797",
+      "edge_type": "holds",
+      "amount": 796.6248458695136,
+      "depth": 0
+    }
+  ],
+  "metadata": {
+    "root": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+    "block": 25242078,
+    "edge_count": 10,
+    "source": "feeder/crawl + adapters/crawl_to_frontend.py"
+  }
+}

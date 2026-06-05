@@ -1,0 +1,130 @@
+{
+  "root": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+  "block": 25242078,
+  "edges": [
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+      "amount": 14001.41955235405,
+      "frac": 0.2081,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "resolved": true,
+      "children_sum": 13999.32,
+      "coverage": 0.9999
+    },
+    {
+      "from_token": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+      "holder": "0xb99a2c4c1c4f1fc27150681b740396f6ce1cbcf5",
+      "amount": 13999.319974139042,
+      "frac": 0.9999,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0xb131cd463d83782d4de33e00e35ef034f0869ba1",
+        "detail": {
+          "supplied": 13999.32,
+          "underlying_symbol": "ezETH",
+          "ltv": 0.75,
+          "liq_threshold": 0.76
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
+      "amount": 13850.681248147283,
+      "frac": 0.2059,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0xc8140da31e6bca19b287cc35531c2212763c2059",
+      "amount": 12728.986869118855,
+      "frac": 0.1892,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
+      "amount": 8000.5128776328465,
+      "frac": 0.1189,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0x5efc9d10e42fb517456f4ac41eb5e2ebe42c8918",
+      "amount": 4027.850560623497,
+      "frac": 0.0599,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+      "amount": 3907.9143063108345,
+      "frac": 0.0581,
+      "kind": "ledger:aave_v3",
+      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "depth": 0,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "resolved": true,
+      "children_sum": 3860.91,
+      "coverage": 0.988
+    },
+    {
+      "from_token": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+      "holder": "0xef992050dff61225ba6fb6018a106a6e2b2569a3",
+      "amount": 3860.907933108905,
+      "frac": 0.988,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4e2a4d9b3df7aae73b418bd39f3af9e148e3f479",
+        "detail": {
+          "supplied": 3860.9079,
+          "underlying_symbol": "ezETH",
+          "ltv": 0.0,
+          "liq_threshold": 0.001
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+      "amount": 1405.2641583208706,
+      "frac": 0.0209,
+      "kind": "contract",
+      "label": "FluidLiquidityProxy",
+      "depth": 0
+    },
+    {
+      "from_token": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+      "holder": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+      "amount": 796.6248458695136,
+      "frac": 0.0118,
+      "kind": "contract",
+      "label": "ZtakingPool",
+      "depth": 0
+    }
+  ]
+}

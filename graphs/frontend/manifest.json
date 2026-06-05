@@ -20,6 +20,153 @@
       "block": 25242078,
       "nodes": 14,
       "edges": 15
+    },
+    {
+      "symbol": "weETH",
+      "file": "weETH.sim.json",
+      "block": 25242078,
+      "nodes": 55,
+      "edges": 55
+    },
+    {
+      "symbol": "ezETH",
+      "file": "ezETH.sim.json",
+      "block": 25242078,
+      "nodes": 11,
+      "edges": 10
+    },
+    {
+      "symbol": "rETH",
+      "file": "rETH.sim.json",
+      "block": 25242078,
+      "nodes": 26,
+      "edges": 26
+    },
+    {
+      "symbol": "cbETH",
+      "file": "cbETH.sim.json",
+      "block": 25242078,
+      "nodes": 9,
+      "edges": 8
+    },
+    {
+      "symbol": "ETHx",
+      "file": "ETHx.sim.json",
+      "block": 25242078,
+      "nodes": 18,
+      "edges": 22
+    },
+    {
+      "symbol": "sfrxETH",
+      "file": "sfrxETH.sim.json",
+      "block": 25242078,
+      "nodes": 23,
+      "edges": 22
+    },
+    {
+      "symbol": "mETH",
+      "file": "mETH.sim.json",
+      "block": 25242078,
+      "nodes": 9,
+      "edges": 8
+    },
+    {
+      "symbol": "pufETH",
+      "file": "pufETH.sim.json",
+      "block": 25242078,
+      "nodes": 63,
+      "edges": 64
+    },
+    {
+      "symbol": "swETH",
+      "file": "swETH.sim.json",
+      "block": 25242078,
+      "nodes": 57,
+      "edges": 60
+    },
+    {
+      "symbol": "WETH",
+      "file": "WETH.sim.json",
+      "block": 25242078,
+      "nodes": 12,
+      "edges": 11
+    },
+    {
+      "symbol": "WBTC",
+      "file": "WBTC.sim.json",
+      "block": 25242078,
+      "nodes": 40,
+      "edges": 39
+    },
+    {
+      "symbol": "cbBTC",
+      "file": "cbBTC.sim.json",
+      "block": 25242078,
+      "nodes": 32,
+      "edges": 32
+    },
+    {
+      "symbol": "USDC",
+      "file": "USDC.sim.json",
+      "block": 25242078,
+      "nodes": 9,
+      "edges": 8
+    },
+    {
+      "symbol": "USDT",
+      "file": "USDT.sim.json",
+      "block": 25242078,
+      "nodes": 7,
+      "edges": 6
+    },
+    {
+      "symbol": "DAI",
+      "file": "DAI.sim.json",
+      "block": 25242078,
+      "nodes": 16,
+      "edges": 15
+    },
+    {
+      "symbol": "USDS",
+      "file": "USDS.sim.json",
+      "block": 25242078,
+      "nodes": 30,
+      "edges": 33
+    },
+    {
+      "symbol": "USDe",
+      "file": "USDe.sim.json",
+      "block": 25242078,
+      "nodes": 68,
+      "edges": 74
+    },
+    {
+      "symbol": "sUSDe",
+      "file": "sUSDe.sim.json",
+      "block": 25242078,
+      "nodes": 48,
+      "edges": 51
+    },
+    {
+      "symbol": "crvUSD",
+      "file": "crvUSD.sim.json",
+      "block": 25242078,
+      "nodes": 9,
+      "edges": 8
+    },
+    {
+      "symbol": "GHO",
+      "file": "GHO.sim.json",
+      "block": 25242078,
+      "nodes": 41,
+      "edges": 40
+    },
+    {
+      "symbol": "PYUSD",
+      "file": "PYUSD.sim.json",
+      "block": 25242078,
+      "nodes": 12,
+      "edges": 12
     }
   ]
 }
