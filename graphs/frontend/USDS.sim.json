@@ -141,6 +141,174 @@
       }
     },
     {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "type": "protocol",
+      "label": "ERC4626 Vault",
+      "data": {
+        "category": "erc4626_vault",
+        "kind": "erc4626_vault",
+        "label": "ERC1967Proxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x7fea5b4568751533039179116e372e26b6b41b13",
+      "type": "protocol",
+      "label": "EOA 0x7fea…1b13",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x7fea5b4568751533039179116e372e26b6b41b13",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc746033844ec72aa6c7409cc88e9ff5cbf4d9c9d",
+      "type": "protocol",
+      "label": "EOA 0xc746…9c9d",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xc746033844ec72aa6c7409cc88e9ff5cbf4d9c9d",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xc453e33ae2d465d36fea462bfe810cd6ab408916",
+      "type": "protocol",
+      "label": "EOA 0xc453…8916",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xc453e33ae2d465d36fea462bfe810cd6ab408916",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xf7d6dacc6cb39bf7ee33f82ff74d3ed221f45a84",
+      "type": "protocol",
+      "label": "EOA 0xf7d6…5a84",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xf7d6dacc6cb39bf7ee33f82ff74d3ed221f45a84",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xb0a998bd329a5bd72d244b9fc8e29bf35b7a3dbd",
+      "type": "protocol",
+      "label": "EOA 0xb0a9…3dbd",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xb0a998bd329a5bd72d244b9fc8e29bf35b7a3dbd",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa09fe38187abecc2768b98b80ea30afbc2fbd774",
+      "type": "protocol",
+      "label": "EOA 0xa09f…d774",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xa09fe38187abecc2768b98b80ea30afbc2fbd774",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xd8a5fd7a1ceff556788e2ed9b85969b561d9bcea",
+      "type": "protocol",
+      "label": "EOA 0xd8a5…bcea",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0xd8a5fd7a1ceff556788e2ed9b85969b561d9bcea",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x2674341d40b445c21287b81c4bc95ec8e358f7e8",
+      "type": "protocol",
+      "label": "EOA 0x2674…f7e8",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x2674341d40b445c21287b81c4bc95ec8e358f7e8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x60e023448e6224194f2077c644903813042cb5cd",
+      "type": "protocol",
+      "label": "Safe 0x60e0…b5cd",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "SafeProxy",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x60e023448e6224194f2077c644903813042cb5cd",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x419b4866d2e5f57c74906405924ee7b935ae1405",
+      "type": "protocol",
+      "label": "EOA 0x419b…1405",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x419b4866d2e5f57c74906405924ee7b935ae1405",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+      "type": "protocol",
+      "label": "Escrow",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "Escrow",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+        "approx": false
+      }
+    },
+    {
       "id": "0x173e314c7635b45322cd8cb14f44b312e079f3af",
       "type": "protocol",
       "label": "StakingRewards",
@@ -323,6 +491,20 @@
       }
     },
     {
+      "id": "0x2385233abb910357e2b97a16d40e0443e53d0769",
+      "type": "protocol",
+      "label": "EOA 0x2385…0769",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 2,
+        "address": "0x2385233abb910357e2b97a16d40e0443e53d0769",
+        "approx": false
+      }
+    },
+    {
       "id": "0xcb194a1a6236bee348e29e38e859475a6d1940df",
       "type": "protocol",
       "label": "opaque 0xcb19…40df",
@@ -407,17 +589,31 @@
       }
     },
     {
-      "id": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+      "id": "0x9284205bb73efd293e310b12a37788114a7724a9",
       "type": "protocol",
-      "label": "Escrow",
+      "label": "Safe 0x9284…24a9",
       "data": {
-        "category": "contract",
-        "kind": "contract",
-        "label": "Escrow",
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
         "symbol": null,
-        "depth": 0,
-        "address": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+        "depth": 1,
+        "address": "0x9284205bb73efd293e310b12a37788114a7724a9",
         "approx": false
+      }
+    },
+    {
+      "id": "0xe952c988c46fe69105dfac99e420fe94a66b64f8",
+      "type": "protocol",
+      "label": "opaque 0xe952…64f8",
+      "data": {
+        "category": "opaque",
+        "kind": "opaque",
+        "label": "",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xe952c988c46fe69105dfac99e420fe94a66b64f8",
+        "approx": true
       }
     }
   ],
@@ -504,7 +700,115 @@
       "depth": 1
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x173e314c7635b45322cd8cb14f44b312e079f3af#9",
+      "id": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd->0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe#9",
+      "source": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "target": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "label": "2.0% 113,375,163",
+      "edge_type": "vault",
+      "amount": 113375162.88073185,
+      "depth": 1
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0x7fea5b4568751533039179116e372e26b6b41b13#10",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0x7fea5b4568751533039179116e372e26b6b41b13",
+      "label": "34.1% 38,698,909",
+      "edge_type": "holds",
+      "amount": 38698908.58026858,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xc746033844ec72aa6c7409cc88e9ff5cbf4d9c9d#11",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xc746033844ec72aa6c7409cc88e9ff5cbf4d9c9d",
+      "label": "9.4% 10,709,587",
+      "edge_type": "holds",
+      "amount": 10709587.114115603,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xc453e33ae2d465d36fea462bfe810cd6ab408916#12",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xc453e33ae2d465d36fea462bfe810cd6ab408916",
+      "label": "6.4% 7,226,919",
+      "edge_type": "holds",
+      "amount": 7226918.993081942,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xf7d6dacc6cb39bf7ee33f82ff74d3ed221f45a84#13",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xf7d6dacc6cb39bf7ee33f82ff74d3ed221f45a84",
+      "label": "4.8% 5,389,764",
+      "edge_type": "holds",
+      "amount": 5389764.239307361,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xb0a998bd329a5bd72d244b9fc8e29bf35b7a3dbd#14",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xb0a998bd329a5bd72d244b9fc8e29bf35b7a3dbd",
+      "label": "3.5% 3,919,703",
+      "edge_type": "holds",
+      "amount": 3919702.9208647646,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xa09fe38187abecc2768b98b80ea30afbc2fbd774#15",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xa09fe38187abecc2768b98b80ea30afbc2fbd774",
+      "label": "3.3% 3,781,487",
+      "edge_type": "holds",
+      "amount": 3781487.0672930037,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0xd8a5fd7a1ceff556788e2ed9b85969b561d9bcea#16",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0xd8a5fd7a1ceff556788e2ed9b85969b561d9bcea",
+      "label": "2.9% 3,336,117",
+      "edge_type": "holds",
+      "amount": 3336117.242041067,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0x2674341d40b445c21287b81c4bc95ec8e358f7e8#17",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0x2674341d40b445c21287b81c4bc95ec8e358f7e8",
+      "label": "2.8% 3,195,754",
+      "edge_type": "holds",
+      "amount": 3195754.3725276594,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0x60e023448e6224194f2077c644903813042cb5cd#18",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0x60e023448e6224194f2077c644903813042cb5cd",
+      "label": "2.4% 2,745,506",
+      "edge_type": "holds",
+      "amount": 2745506.1330551673,
+      "depth": 2
+    },
+    {
+      "id": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe->0x419b4866d2e5f57c74906405924ee7b935ae1405#19",
+      "source": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "target": "0x419b4866d2e5f57c74906405924ee7b935ae1405",
+      "label": "2.3% 2,643,840",
+      "edge_type": "holds",
+      "amount": 2643839.9137674915,
+      "depth": 2
+    },
+    {
+      "id": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd->0x1196f688c585d3e5c895ef8954ffb0dcdafc566a#20",
+      "source": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "target": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+      "label": "1.7% 94,897,186",
+      "edge_type": "holds",
+      "amount": 94897185.64813805,
+      "depth": 1
+    },
+    {
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x173e314c7635b45322cd8cb14f44b312e079f3af#21",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0x173e314c7635b45322cd8cb14f44b312e079f3af",
       "label": "9.7% 812,419,506",
@@ -513,22 +817,22 @@
       "depth": 0
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359#10",
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359#22",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
       "label": "2.4% 204,401,447",
       "edge_type": "aave_v3",
       "amount": 204401446.99416772,
       "depth": 0,
-      "coverage": 2.7655
+      "coverage": 0.9998
     },
     {
-      "id": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359->0x1601843c5e9bc251a3272907010afa41fa18347e#11",
+      "id": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359->0x1601843c5e9bc251a3272907010afa41fa18347e#23",
       "source": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
       "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
       "label": "예치 565,270,850 · LT 0%",
       "edge_type": "lending",
-      "amount": 565270850.0540793,
+      "amount": 204368905.46849734,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -536,6 +840,8 @@
         "venue": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
         "detail": {
           "supplied": 565270850.0541,
+          "attributed": 204368905.4685,
+          "pool_liquidity": 204401446.9942,
           "underlying_symbol": "USDS",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -545,7 +851,7 @@
       }
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9#12",
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9#24",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "label": "2.2% 184,311,461",
@@ -554,7 +860,7 @@
       "depth": 0
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xee2826453a4fd5afeb7ceffeef3ffa2320081268#13",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xee2826453a4fd5afeb7ceffeef3ffa2320081268#25",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0xee2826453a4fd5afeb7ceffeef3ffa2320081268",
       "label": "16.7% 29,214,550",
@@ -563,17 +869,17 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb#14",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb#26",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "label": "11.9% 20,736,317",
       "edge_type": "morpho",
       "amount": 20736316.538879793,
       "depth": 1,
-      "coverage": 0.9751
+      "coverage": 0.9957
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xae0a739c3724bb5cd2bdcf73764c87a5a6ec21a3#15",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0xae0a739c3724bb5cd2bdcf73764c87a5a6ec21a3#27",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0xae0a739c3724bb5cd2bdcf73764c87a5a6ec21a3",
       "label": "담보 6,277,920 · 차입 4,966,667 USDC · LLTV 86%",
@@ -597,7 +903,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x7c6211ab60fda17eecb0f7f5d3d252dcb84924c8#16",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x7c6211ab60fda17eecb0f7f5d3d252dcb84924c8#28",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x7c6211ab60fda17eecb0f7f5d3d252dcb84924c8",
       "label": "담보 3,942,984 · 차입 3,399,951 USDC · LLTV 86%",
@@ -621,7 +927,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x9668df5f81e1924b6996e558023b17ad54c11d20#17",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x9668df5f81e1924b6996e558023b17ad54c11d20#29",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x9668df5f81e1924b6996e558023b17ad54c11d20",
       "label": "담보 4,283,189 · 차입 1,001,544 USDC · LLTV 86%",
@@ -645,7 +951,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x7c906dd9fbf91116c859c363c64a85547fd6865f#18",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x7c906dd9fbf91116c859c363c64a85547fd6865f#30",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x7c906dd9fbf91116c859c363c64a85547fd6865f",
       "label": "담보 1,636,340 · 차입 1,448,403 USDC · LLTV 86%",
@@ -669,7 +975,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x0000aa99e12ad566e4c97882296076023d123cfe#19",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x0000aa99e12ad566e4c97882296076023d123cfe#31",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x0000aa99e12ad566e4c97882296076023d123cfe",
       "label": "담보 1,382,236 · 차입 1,190,968 USDC · LLTV 86%",
@@ -693,7 +999,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x04f461af0894c871d3997b29eac293260f68021c#20",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x04f461af0894c871d3997b29eac293260f68021c#32",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x04f461af0894c871d3997b29eac293260f68021c",
       "label": "담보 738,681 · 차입 412,728 USDT · LLTV 86%",
@@ -717,7 +1023,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x472e782560ffb0a9a27e262ff9126f76388ae902#21",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x472e782560ffb0a9a27e262ff9126f76388ae902#33",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x472e782560ffb0a9a27e262ff9126f76388ae902",
       "label": "담보 480,652 · 차입 302,172 USDC · LLTV 86%",
@@ -741,7 +1047,7 @@
       }
     },
     {
-      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x91fbbf1c90454b02a3b20631f0ca52b7d61a3e51#22",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x91fbbf1c90454b02a3b20631f0ca52b7d61a3e51#34",
       "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "target": "0x91fbbf1c90454b02a3b20631f0ca52b7d61a3e51",
       "label": "담보 431,640 · 차입 351,202 USDC · LLTV 86%",
@@ -765,7 +1071,31 @@
       }
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xcb194a1a6236bee348e29e38e859475a6d1940df#23",
+      "id": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb->0x2385233abb910357e2b97a16d40e0443e53d0769#35",
+      "source": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "target": "0x2385233abb910357e2b97a16d40e0443e53d0769",
+      "label": "담보 427,088 · 차입 383,696 USDS · LLTV 86%",
+      "edge_type": "morpho",
+      "amount": 427088.01671035757,
+      "depth": 2,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x77e624dd9dd980810c2b804249e88f3598d9c7ec91f16aa5fbf6e3fdf6087f82",
+        "detail": {
+          "collateral": 427088.0167,
+          "loan_token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "loan_symbol": "USDS",
+          "borrow": 383696.3634,
+          "lltv": 0.86,
+          "utilization": 0.8997
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xcb194a1a6236bee348e29e38e859475a6d1940df#36",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0xcb194a1a6236bee348e29e38e859475a6d1940df",
       "label": "4.0% 7,030,588",
@@ -774,7 +1104,7 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xe968b7ed7b61df683207c7d46e17fcc5f86e2908#24",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xe968b7ed7b61df683207c7d46e17fcc5f86e2908#37",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0xe968b7ed7b61df683207c7d46e17fcc5f86e2908",
       "label": "3.5% 6,203,354",
@@ -783,7 +1113,7 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x9e309ca1b9fe7951cf59b84fe235380ab5d5090a#25",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x9e309ca1b9fe7951cf59b84fe235380ab5d5090a#38",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0x9e309ca1b9fe7951cf59b84fe235380ab5d5090a",
       "label": "2.8% 4,837,942",
@@ -792,7 +1122,7 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x485c07c5516315881c732c90122ba4de3f356180#26",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x485c07c5516315881c732c90122ba4de3f356180#39",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0x485c07c5516315881c732c90122ba4de3f356180",
       "label": "2.7% 4,774,433",
@@ -801,7 +1131,7 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x19c9ae601431ea610fdd8b288e66d83f884e1157#27",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x19c9ae601431ea610fdd8b288e66d83f884e1157#40",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0x19c9ae601431ea610fdd8b288e66d83f884e1157",
       "label": "2.7% 4,737,904",
@@ -810,7 +1140,7 @@
       "depth": 1
     },
     {
-      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x0f3c2476fbf0ed09dff00ea7f4ef252dcc72e6f1#28",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x0f3c2476fbf0ed09dff00ea7f4ef252dcc72e6f1#41",
       "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "target": "0x0f3c2476fbf0ed09dff00ea7f4ef252dcc72e6f1",
       "label": "2.5% 4,331,704",
@@ -819,7 +1149,25 @@
       "depth": 1
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x7f311a4d48377030bd810395f4ccfc03bdbe9ef3#29",
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0x9284205bb73efd293e310b12a37788114a7724a9#42",
+      "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+      "target": "0x9284205bb73efd293e310b12a37788114a7724a9",
+      "label": "2.3% 3,942,737",
+      "edge_type": "holds",
+      "amount": 3942736.9896480055,
+      "depth": 1
+    },
+    {
+      "id": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9->0xe952c988c46fe69105dfac99e420fe94a66b64f8#43",
+      "source": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+      "target": "0xe952c988c46fe69105dfac99e420fe94a66b64f8",
+      "label": "2.0% 3,570,117",
+      "edge_type": "holds",
+      "amount": 3570117.0973548023,
+      "depth": 1
+    },
+    {
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x7f311a4d48377030bd810395f4ccfc03bdbe9ef3#44",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0x7f311a4d48377030bd810395f4ccfc03bdbe9ef3",
       "label": "1.8% 147,246,695",
@@ -828,7 +1176,7 @@
       "depth": 0
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x467194771dae2967aef3ecbedd3bf9a310c76c65#30",
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x467194771dae2967aef3ecbedd3bf9a310c76c65#45",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0x467194771dae2967aef3ecbedd3bf9a310c76c65",
       "label": "1.2% 100,314,411",
@@ -837,7 +1185,7 @@
       "depth": 0
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x1196f688c585d3e5c895ef8954ffb0dcdafc566a#31",
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0x1196f688c585d3e5c895ef8954ffb0dcdafc566a#46",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
       "label": "1.2% 100,001,007",
@@ -846,7 +1194,7 @@
       "depth": 0
     },
     {
-      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0xa10c7ce4b876998858b1a9e12b10092229539400#32",
+      "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f->0xa10c7ce4b876998858b1a9e12b10092229539400#47",
       "source": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "target": "0xa10c7ce4b876998858b1a9e12b10092229539400",
       "label": "1.2% 99,816,978",
@@ -858,7 +1206,7 @@
   "metadata": {
     "root": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
     "block": 25242078,
-    "edge_count": 33,
+    "edge_count": 48,
     "source": "feeder/crawl + adapters/crawl_to_frontend.py"
   }
 }

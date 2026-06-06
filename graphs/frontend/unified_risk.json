@@ -1,0 +1,1966 @@
+{
+  "morpho_tokens": 17,
+  "euler_tokens": 134,
+  "tokens": {
+    "eUSDe-7": {
+      "token": "eUSDe-7",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDe / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "sUSDe": {
+      "token": "sUSDe",
+      "worst_grade": "MED",
+      "venues": {
+        "morpho": {
+          "grade": "MED",
+          "oracle_class": "self-NAV",
+          "sees": "VAULT=SELF",
+          "distressed": false,
+          "concentration": 0.23071963709795518,
+          "collat_usd": 124339036
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDe / USD"
+        }
+      },
+      "n_venues": 2
+    },
+    "eWBTC-3": {
+      "token": "eWBTC-3",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle, :"
+        }
+      },
+      "n_venues": 1
+    },
+    "ecbBTC-3": {
+      "token": "ecbBTC-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:ChainlinkOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "eynETH-2": {
+      "token": "eynETH-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "ersETH-1": {
+      "token": "ersETH-1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "ChainlinkOracle:rsETH/WETH"
+        }
+      },
+      "n_venues": 1
+    },
+    "mTBILL": {
+      "token": "mTBILL",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:mTBILL/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "rstETH": {
+      "token": "rstETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":0x7a4eff/0xc02aaa"
+        }
+      },
+      "n_venues": 1
+    },
+    "LDO": {
+      "token": "LDO",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "ChainlinkOracle:LDO / ETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xf3f491": {
+      "token": "0xf3f491",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xe3eb09": {
+      "token": "0xe3eb09",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x07f9a5": {
+      "token": "0x07f9a5",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":USDS / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "ONDO": {
+      "token": "ONDO",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "PythOracle:ONDO/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xdd629e": {
+      "token": "0xdd629e",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xa35b1b": {
+      "token": "0xa35b1b",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": "RateProviderOracle:RateProviderOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDe": {
+      "token": "USDe",
+      "worst_grade": "CHECK",
+      "venues": {
+        "morpho": {
+          "grade": "CHECK",
+          "oracle_class": "ext-feed?",
+          "sees": "\ube44\ud45c\uc900 \uc624\ub77c\ud074(\uc678\ubd80\ud53c\ub4dc \ucd94\uc815, \uc218\ub3d9\ud655\uc778)",
+          "distressed": false,
+          "concentration": 0.7767266948250677,
+          "collat_usd": 364875
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDe / USD"
+        }
+      },
+      "n_venues": 2
+    },
+    "0xc02aaa": {
+      "token": "0xc02aaa",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "reUSD": {
+      "token": "reUSD",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\ub300\ucd9c\ub2f4\ubcf4 \uc2dc\uc7a5 \uc5c6\uc74c",
+          "distressed": false,
+          "concentration": null,
+          "collat_usd": 0
+        }
+      },
+      "n_venues": 1
+    },
+    "srUSDe": {
+      "token": "srUSDe",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "sdeUSD": {
+      "token": "sdeUSD",
+      "worst_grade": "DISTRESSED",
+      "venues": {
+        "morpho": {
+          "grade": "DISTRESSED",
+          "oracle_class": "bespoke/NAV",
+          "sees": "VAULT=SELF, FEED:RedStone Price Feed for deUSD_FUNDAMENTAL",
+          "distressed": true,
+          "concentration": 0.9998411650477588,
+          "collat_usd": 618796159
+        }
+      },
+      "n_venues": 1
+    },
+    "ETH+": {
+      "token": "ETH+",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:Redstone Price Feed"
+        }
+      },
+      "n_venues": 1
+    },
+    "PT-mMEV-30OCT2025": {
+      "token": "PT-mMEV-30OCT2025",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x437cc3": {
+      "token": "0x437cc3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "ewstETH-11": {
+      "token": "ewstETH-11",
+      "worst_grade": "MED",
+      "venues": {
+        "euler": {
+          "grade": "MED",
+          "oracle_class": "fundamental/NAV",
+          "sees": "LidoFundamentalOracle:LidoFundamentalOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xf6e2ef": {
+      "token": "0xf6e2ef",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:ChainlinkOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "eeBTC-3": {
+      "token": "eeBTC-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:eBTC/0xbbbbbb, ChainlinkOracle:BTC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "PAXG": {
+      "token": "PAXG",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "ewM-3": {
+      "token": "ewM-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "frxUSD": {
+      "token": "frxUSD",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\ub300\ucd9c\ub2f4\ubcf4 \uc2dc\uc7a5 \uc5c6\uc74c",
+          "distressed": false,
+          "concentration": null,
+          "collat_usd": 0
+        }
+      },
+      "n_venues": 1
+    },
+    "PT-USDf-29JAN2026": {
+      "token": "PT-USDf-29JAN2026",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xb3b362": {
+      "token": "0xb3b362",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "ezETH": {
+      "token": "ezETH",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "FEED:ezETH/ETH exchange rate",
+          "distressed": false,
+          "concentration": 0.6660283914135204,
+          "collat_usd": 219662
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:ezETH/WETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 2
+    },
+    "sUSDf": {
+      "token": "sUSDf",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x2306e1": {
+      "token": "0x2306e1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "ewM-2": {
+      "token": "ewM-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x940fca": {
+      "token": "0x940fca",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xc58d04": {
+      "token": "0xc58d04",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x1924d7": {
+      "token": "0x1924d7",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": ":, :ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x113206": {
+      "token": "0x113206",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x6be9e8": {
+      "token": "0x6be9e8",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "USD0": {
+      "token": "USD0",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\ub300\ucd9c\ub2f4\ubcf4 \uc2dc\uc7a5 \uc5c6\uc74c",
+          "distressed": false,
+          "concentration": null,
+          "collat_usd": 0
+        }
+      },
+      "n_venues": 1
+    },
+    "0xa1290d": {
+      "token": "0xa1290d",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:rsETH/0xc02aaa"
+        }
+      },
+      "n_venues": 1
+    },
+    "sUSDS": {
+      "token": "sUSDS",
+      "worst_grade": "MED",
+      "venues": {
+        "morpho": {
+          "grade": "MED",
+          "oracle_class": "self-NAV",
+          "sees": "VAULT=SELF",
+          "distressed": false,
+          "concentration": 0.6899269998461485,
+          "collat_usd": 34
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDS / USD"
+        }
+      },
+      "n_venues": 2
+    },
+    "eUSDtb-2": {
+      "token": "eUSDtb-2",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDtb": {
+      "token": "USDtb",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:USDtb/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "xUSD": {
+      "token": "xUSD",
+      "worst_grade": "HIGH",
+      "venues": {
+        "morpho": {
+          "grade": "HIGH",
+          "oracle_class": "bespoke/NAV",
+          "sees": "FEED:xUSD/USD",
+          "distressed": false,
+          "concentration": 1.0,
+          "collat_usd": 0
+        }
+      },
+      "n_venues": 1
+    },
+    "ersETH-2": {
+      "token": "ersETH-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "mETH": {
+      "token": "mETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "PythOracle:mETH/WETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xe846ca": {
+      "token": "0xe846ca",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":weETH/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "eUSDT-2": {
+      "token": "eUSDT-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xe4199e": {
+      "token": "0xe4199e",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "eLBTC-2": {
+      "token": "eLBTC-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "TBILL": {
+      "token": "TBILL",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkInfrequentOracle:TBILL/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xcd5fe2": {
+      "token": "0xcd5fe2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xa62b20": {
+      "token": "0xa62b20",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "RLUSD": {
+      "token": "RLUSD",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:RLUSD/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "wUSDM": {
+      "token": "wUSDM",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:USDM/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x328646": {
+      "token": "0x328646",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x002222": {
+      "token": "0x002222",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:USDA/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "ePT-jrUSDe-15JAN2026-1": {
+      "token": "ePT-jrUSDe-15JAN2026-1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xc4984b": {
+      "token": "0xc4984b",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "emTBILL-2": {
+      "token": "emTBILL-2",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "eRLUSD-3": {
+      "token": "eRLUSD-3",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "deUSD": {
+      "token": "deUSD",
+      "worst_grade": "HIGH",
+      "venues": {
+        "morpho": {
+          "grade": "HIGH",
+          "oracle_class": "bespoke/NAV",
+          "sees": "FEED:RedStone Price Feed for deUSD_FUNDAMENTAL",
+          "distressed": false,
+          "concentration": 1.0,
+          "collat_usd": 1
+        }
+      },
+      "n_venues": 1
+    },
+    "eynETHx-2": {
+      "token": "eynETHx-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "ewstETH-1": {
+      "token": "ewstETH-1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x298966": {
+      "token": "0x298966",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "crvUSD": {
+      "token": "crvUSD",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "FEED:CRVUSD / USD",
+          "distressed": false,
+          "concentration": 1.0,
+          "collat_usd": 0
+        }
+      },
+      "n_venues": 1
+    },
+    "pufETH": {
+      "token": "pufETH",
+      "worst_grade": "MED",
+      "venues": {
+        "morpho": {
+          "grade": "MED",
+          "oracle_class": "self-NAV",
+          "sees": "VAULT=SELF",
+          "distressed": false,
+          "concentration": 0.6154222362102019,
+          "collat_usd": 71554
+        }
+      },
+      "n_venues": 1
+    },
+    "eUSDS-3": {
+      "token": "eUSDS-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:ChainlinkOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "tETH": {
+      "token": "tETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "ChainlinkOracle:tETH / wstETH Exchange Rate, LidoFundamentalOracle:LidoFundament"
+        }
+      },
+      "n_venues": 1
+    },
+    "epzETH-2": {
+      "token": "epzETH-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:ChainlinkOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xa28c23": {
+      "token": "0xa28c23",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "syrupUSDC": {
+      "token": "syrupUSDC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "LBTC": {
+      "token": "LBTC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "cbETH": {
+      "token": "cbETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:cbETH/WETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "cbBTC": {
+      "token": "cbBTC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "XAUt": {
+      "token": "XAUt",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDf": {
+      "token": "USDf",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xdc035d": {
+      "token": "0xdc035d",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDS/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x5fd133": {
+      "token": "0x5fd133",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xcbb7c0": {
+      "token": "0xcbb7c0",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xfae103": {
+      "token": "0xfae103",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "rETH": {
+      "token": "rETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:rETH/WETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xbe9895": {
+      "token": "0xbe9895",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:cbETH/WETH, :"
+        }
+      },
+      "n_venues": 1
+    },
+    "WETH": {
+      "token": "WETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xa3931d": {
+      "token": "0xa3931d",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "LINK": {
+      "token": "LINK",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:LINK / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "SKY": {
+      "token": "SKY",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChronicleOracle:SKY/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x7f39c5": {
+      "token": "0x7f39c5",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x9e7144": {
+      "token": "0x9e7144",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": ":TBTC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xe3ca83": {
+      "token": "0xe3ca83",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "eUSDT-20": {
+      "token": "eUSDT-20",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "pzETH": {
+      "token": "pzETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:Redstone Price Feed"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDS": {
+      "token": "USDS",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "EOA",
+          "distressed": false,
+          "concentration": 0.9978553117142342,
+          "collat_usd": 51
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDS / USD"
+        }
+      },
+      "n_venues": 2
+    },
+    "GRT": {
+      "token": "GRT",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:GRT / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "rsETH": {
+      "token": "rsETH",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "FEED:rsETH/ETH exchange rate",
+          "distressed": false,
+          "concentration": 0.8432181961243503,
+          "collat_usd": 1455
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": "RateProviderOracle:RateProviderOracle"
+        }
+      },
+      "n_venues": 2
+    },
+    "eUSDY-1": {
+      "token": "eUSDY-1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "esUSDS-3": {
+      "token": "esUSDS-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":USDS / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "tBTC": {
+      "token": "tBTC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xbc3516": {
+      "token": "0xbc3516",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "PT-mHYPER-20NOV2025": {
+      "token": "PT-mHYPER-20NOV2025",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "PYUSD": {
+      "token": "PYUSD",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:PYUSD / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "eezETH-3": {
+      "token": "eezETH-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": "RateProviderOracle:RateProviderOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "ecbETH-2": {
+      "token": "ecbETH-2",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xf88d8d": {
+      "token": "0xf88d8d",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "ChainlinkOracle:mETH / ETH"
+        }
+      },
+      "n_venues": 1
+    },
+    "mHYPER": {
+      "token": "mHYPER",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x18084f": {
+      "token": "0x18084f",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "UNI": {
+      "token": "UNI",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:UNI / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "agETH": {
+      "token": "agETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:agETH/WETH"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x797dd8": {
+      "token": "0x797dd8",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDC": {
+      "token": "USDC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "PT-sUSDf-29JAN2026": {
+      "token": "PT-sUSDf-29JAN2026",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "eETHx-3": {
+      "token": "eETHx-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:ETHx/WETH, ChainlinkOracle:ETH / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "wstETH": {
+      "token": "wstETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "USDT": {
+      "token": "USDT",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:USDT / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x8236a8": {
+      "token": "0x8236a8",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "emTBILL-1": {
+      "token": "emTBILL-1",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x44a107": {
+      "token": "0x44a107",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "wOETH": {
+      "token": "wOETH",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "FixedRateOracle:OETH/WETH"
+        }
+      },
+      "n_venues": 1
+    },
+    "ePT-cUSDO-19JUN2025-3": {
+      "token": "ePT-cUSDO-19JUN2025-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "eBTC": {
+      "token": "eBTC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "RateProviderOracle:eBTC/0xbbbbbb, ChainlinkOracle:BTC / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xdac17f": {
+      "token": "0xdac17f",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "ewUSDM-2": {
+      "token": "ewUSDM-2",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:USDM/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "wM": {
+      "token": "wM",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:wM/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "AUSD": {
+      "token": "AUSD",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:AUSD/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "USD0++": {
+      "token": "USD0++",
+      "worst_grade": "HIGH",
+      "venues": {
+        "morpho": {
+          "grade": "HIGH",
+          "oracle_class": "bespoke/NAV",
+          "sees": "FEED:Naked USD0++ price feed adapter",
+          "distressed": false,
+          "concentration": 0.4643498154629048,
+          "collat_usd": 29048
+        }
+      },
+      "n_venues": 1
+    },
+    "weETH": {
+      "token": "weETH",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "FEED:weETH/ETH exchange rate",
+          "distressed": false,
+          "concentration": 0.3396675533455339,
+          "collat_usd": 32807141
+        },
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 2
+    },
+    "mMEV": {
+      "token": "mMEV",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "AAVE": {
+      "token": "AAVE",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "market-feed",
+          "sees": "ChainlinkOracle:AAVE / USD"
+        }
+      },
+      "n_venues": 1
+    },
+    "GHO": {
+      "token": "GHO",
+      "worst_grade": "ok",
+      "venues": {
+        "morpho": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "FEED:WBTC / BTC, FEED:BTC / USD",
+          "distressed": false,
+          "concentration": 0.6666644689008138,
+          "collat_usd": 59
+        }
+      },
+      "n_venues": 1
+    },
+    "0xbeef69": {
+      "token": "0xbeef69",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "WBTC": {
+      "token": "WBTC",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "anchored",
+          "sees": "real asset collateral"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x9c6e67": {
+      "token": "0x9c6e67",
+      "worst_grade": "HIGH",
+      "venues": {
+        "euler": {
+          "grade": "HIGH",
+          "oracle_class": "fixed/hardcoded",
+          "sees": "FixedRateOracle:FixedRateOracle"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x07a36c": {
+      "token": "0x07a36c",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xc455d7": {
+      "token": "0xc455d7",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "sBUIDL": {
+      "token": "sBUIDL",
+      "worst_grade": "MED",
+      "venues": {
+        "euler": {
+          "grade": "MED",
+          "oracle_class": "fundamental/NAV",
+          "sees": "ChainlinkInfrequentOracle:RedStone Price Feed for BUIDL_FUNDAMENTAL"
+        }
+      },
+      "n_venues": 1
+    },
+    "ETHx": {
+      "token": "ETHx",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ""
+        }
+      },
+      "n_venues": 1
+    },
+    "0x1e548c": {
+      "token": "0x1e548c",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":USDS/0x000000"
+        }
+      },
+      "n_venues": 1
+    },
+    "PT-sUSDf-25SEP2025": {
+      "token": "PT-sUSDf-25SEP2025",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x998d76": {
+      "token": "0x998d76",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "etBTC-3": {
+      "token": "etBTC-3",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "0x056f3a": {
+      "token": "0x056f3a",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "other",
+          "sees": ":"
+        }
+      },
+      "n_venues": 1
+    },
+    "0xda8a66": {
+      "token": "0xda8a66",
+      "worst_grade": "ok",
+      "venues": {
+        "euler": {
+          "grade": "ok",
+          "oracle_class": "none",
+          "sees": "router/uoa \uc5c6\uc74c"
+        }
+      },
+      "n_venues": 1
+    }
+  },
+  "ranked": [
+    "sdeUSD",
+    "0x002222",
+    "0x9c6e67",
+    "0xdd629e",
+    "AUSD",
+    "RLUSD",
+    "USD0++",
+    "USDtb",
+    "deUSD",
+    "eRLUSD-3",
+    "eUSDtb-2",
+    "eWBTC-3",
+    "emTBILL-2",
+    "ewUSDM-2",
+    "mTBILL",
+    "wM",
+    "wUSDM",
+    "xUSD",
+    "ewstETH-11",
+    "pufETH",
+    "sBUIDL",
+    "sUSDS",
+    "sUSDe",
+    "USDe",
+    "0x056f3a",
+    "0x07a36c",
+    "0x07f9a5",
+    "0x113206",
+    "0x18084f",
+    "0x1924d7",
+    "0x1e548c",
+    "0x2306e1",
+    "0x298966",
+    "0x328646",
+    "0x437cc3",
+    "0x44a107",
+    "0x5fd133",
+    "0x6be9e8",
+    "0x797dd8",
+    "0x7f39c5",
+    "0x8236a8",
+    "0x940fca",
+    "0x998d76",
+    "0x9e7144",
+    "0xa1290d",
+    "0xa28c23",
+    "0xa35b1b",
+    "0xa3931d",
+    "0xa62b20",
+    "0xb3b362",
+    "0xbc3516",
+    "0xbe9895",
+    "0xbeef69",
+    "0xc02aaa",
+    "0xc455d7",
+    "0xc4984b",
+    "0xc58d04",
+    "0xcbb7c0",
+    "0xcd5fe2",
+    "0xda8a66",
+    "0xdac17f",
+    "0xdc035d",
+    "0xe3ca83",
+    "0xe3eb09",
+    "0xe4199e",
+    "0xe846ca",
+    "0xf3f491",
+    "0xf6e2ef",
+    "0xf88d8d",
+    "0xfae103",
+    "AAVE",
+    "ETH+",
+    "ETHx",
+    "GHO",
+    "GRT",
+    "LBTC",
+    "LDO",
+    "LINK",
+    "ONDO",
+    "PAXG",
+    "PT-USDf-29JAN2026",
+    "PT-mHYPER-20NOV2025",
+    "PT-mMEV-30OCT2025",
+    "PT-sUSDf-25SEP2025",
+    "PT-sUSDf-29JAN2026",
+    "PYUSD",
+    "SKY",
+    "TBILL",
+    "UNI",
+    "USD0",
+    "USDC",
+    "USDS",
+    "USDT",
+    "USDf",
+    "WBTC",
+    "WETH",
+    "XAUt",
+    "agETH",
+    "cbBTC",
+    "cbETH",
+    "crvUSD",
+    "eBTC",
+    "eETHx-3",
+    "eLBTC-2",
+    "ePT-cUSDO-19JUN2025-3",
+    "ePT-jrUSDe-15JAN2026-1",
+    "eUSDS-3",
+    "eUSDT-2",
+    "eUSDT-20",
+    "eUSDY-1",
+    "eUSDe-7",
+    "ecbBTC-3",
+    "ecbETH-2",
+    "eeBTC-3",
+    "eezETH-3",
+    "emTBILL-1",
+    "epzETH-2",
+    "ersETH-1",
+    "ersETH-2",
+    "esUSDS-3",
+    "etBTC-3",
+    "ewM-2",
+    "ewM-3",
+    "ewstETH-1",
+    "eynETH-2",
+    "eynETHx-2",
+    "ezETH",
+    "frxUSD",
+    "mETH",
+    "mHYPER",
+    "mMEV",
+    "pzETH",
+    "rETH",
+    "reUSD",
+    "rsETH",
+    "rstETH",
+    "sUSDf",
+    "srUSDe",
+    "syrupUSDC",
+    "tBTC",
+    "tETH",
+    "wOETH",
+    "weETH",
+    "wstETH"
+  ]
+}

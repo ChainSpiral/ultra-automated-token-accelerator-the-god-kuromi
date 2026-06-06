@@ -12,6 +12,14 @@ type Meta = {
   cycle_nodes?: number;
 };
 
+type FlowItem = {
+  name: string;
+  label: string;
+  nodes: number;
+  edges: number;
+  cycle_nodes: number;
+};
+
 export default async function FlowRoute({
   searchParams,
 }: {
@@ -19,13 +27,25 @@ export default async function FlowRoute({
 }) {
   const sp = await searchParams;
   const view = sp.view === "full" ? "full" : "loop"; // 기본 = 루프만(읽기 쉽게)
+
+  // 선택 가능한 데이터셋 목록 (없으면 selector 숨김)
+  let flowList: FlowItem[] = [];
+  try {
+    const r = await fetch(`${API}/api/flows`, { cache: "no-store" });
+    if (r.ok) flowList = await r.json();
+  } catch {
+    /* selector 없이 진행 */
+  }
+  // active = URL의 name, 없으면 목록 첫 항목(=stream), 그것도 없으면 stream.
+  const active = sp.name ?? flowList[0]?.name ?? "stream";
+
   let nodes: FlowNode[] = [];
   let edges: FlowEdge[] = [];
   let meta: Meta = {};
   let error: string | null = null;
   let fullNodeCount = 0;
   try {
-    const url = sp.name ? `${API}/api/flow?name=${sp.name}` : `${API}/api/flow`;
+    const url = `${API}/api/flow?name=${active}`;
     const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error(`/api/flow → ${res.status}`);
     const raw = await res.json();
@@ -59,6 +79,31 @@ export default async function FlowRoute({
   return (
     <div className="flex h-dvh flex-col">
       <SiteHeader />
+      {flowList.length > 0 && (
+        <div className="flex flex-wrap items-center gap-1.5 border-b border-[var(--color-border-subtle)] bg-[var(--color-surface)] px-5 py-2 text-[11px]">
+          <span className="mr-1 font-mono font-semibold text-[var(--color-text-muted)]">데이터셋</span>
+          {flowList.map((f) => {
+            const on = f.name === active;
+            return (
+              <a
+                key={f.name}
+                href={`/flow?name=${f.name}&view=${view}`}
+                title={`${f.nodes} nodes · ${f.edges} edges`}
+                className={`flex items-center gap-1 rounded-md border px-2 py-0.5 font-mono transition-colors ${
+                  on
+                    ? "border-[var(--color-accent)] bg-[var(--color-accent)] text-white"
+                    : "border-[var(--color-border-subtle)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)]"
+                }`}
+              >
+                {f.label}
+                {f.cycle_nodes > 0 && (
+                  <span className={on ? "text-white" : "text-[#f87171]"}>⟳</span>
+                )}
+              </a>
+            );
+          })}
+        </div>
+      )}
       {!error && (
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-[var(--color-border-subtle)] bg-[var(--color-surface)] px-5 py-2 font-mono text-[11px] text-[var(--color-text-muted)]">
           <span className="font-semibold text-[var(--color-text-secondary)]">VALUE FLOW</span>
@@ -82,13 +127,13 @@ export default async function FlowRoute({
           )}
           <span className="flex items-center gap-0.5 rounded-md border border-[var(--color-border-subtle)] p-0.5">
             <a
-              href={`/flow?name=${sp.name ?? "stream"}&view=loop`}
+              href={`/flow?name=${active}&view=loop`}
               className={view === "loop" ? "rounded bg-[var(--color-accent)] px-1.5 py-0.5 text-white" : "px-1.5 py-0.5"}
             >
               루프만
             </a>
             <a
-              href={`/flow?name=${sp.name ?? "stream"}&view=full`}
+              href={`/flow?name=${active}&view=full`}
               className={view === "full" ? "rounded bg-[var(--color-accent)] px-1.5 py-0.5 text-white" : "px-1.5 py-0.5"}
             >
               전체 {fullNodeCount}

@@ -33,6 +33,9 @@ def run_one(sym, addr, block, depth, k):
     crawl_json = os.path.join(ROOT, "graphs", f"crawl.{addr}.{block}.json")
     subprocess.run([sys.executable, os.path.join(ROOT, "feeder", "crawl.py"),
                     addr, str(block), "--depth", str(depth), "--k", str(k)], check=True)
+    # 검증 게이트: 불변식(보존/coverage/self-loop) 실패 시 변환·매니페스트 갱신 중단
+    subprocess.run([sys.executable, os.path.join(ROOT, "feeder", "validate.py"),
+                    crawl_json], check=True)
     sim = os.path.join(FRONT, f"{sym}.sim.json")
     subprocess.run([sys.executable, os.path.join(ROOT, "adapters", "crawl_to_frontend.py"),
                     crawl_json, sim], check=True)

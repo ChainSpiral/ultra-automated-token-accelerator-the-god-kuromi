@@ -155,6 +155,34 @@
       }
     },
     {
+      "id": "0xfd81b27d9796a1ba7d7171ea70010c9befb2a62a",
+      "type": "protocol",
+      "label": "EOA 0xfd81…a62a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xfd81b27d9796a1ba7d7171ea70010c9befb2a62a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x133289557d457f9eddd07989ab0920005c686181",
+      "type": "protocol",
+      "label": "EOA 0x1332…6181",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x133289557d457f9eddd07989ab0920005c686181",
+        "approx": false
+      }
+    },
+    {
       "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "type": "protocol",
       "label": "stkGHO",
@@ -277,6 +305,34 @@
         "symbol": null,
         "depth": 1,
         "address": "0x3516901e0b57536631589b60650faf48bf371af8",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xcaae49fb7f74ccfbe8a05e6104b01c097a78789f",
+      "type": "protocol",
+      "label": "BoringVault (Veda)",
+      "data": {
+        "category": "contract",
+        "kind": "contract",
+        "label": "BoringVault",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xcaae49fb7f74ccfbe8a05e6104b01c097a78789f",
+        "approx": false
+      }
+    },
+    {
+      "id": "0x787eff01c9fdc1918d1aa6eeff089b191e2922e4",
+      "type": "protocol",
+      "label": "EOA 0x787e…22e4",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x787eff01c9fdc1918d1aa6eeff089b191e2922e4",
         "approx": false
       }
     },
@@ -573,6 +629,34 @@
         "address": "0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf",
         "approx": false
       }
+    },
+    {
+      "id": "0x49a1effce91d603a9a5ae8f0f676f7ebcd2a6029",
+      "type": "protocol",
+      "label": "EOA 0x49a1…6029",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0x49a1effce91d603a9a5ae8f0f676f7ebcd2a6029",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xeceda45ad3c57681c7e49b47072a014df54ee659",
+      "type": "protocol",
+      "label": "EOA 0xeced…e659",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xeceda45ad3c57681c7e49b47072a014df54ee659",
+        "approx": false
+      }
     }
   ],
   "edges": [
@@ -667,7 +751,25 @@
       "depth": 1
     },
     {
-      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d#10",
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0xfd81b27d9796a1ba7d7171ea70010c9befb2a62a#10",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0xfd81b27d9796a1ba7d7171ea70010c9befb2a62a",
+      "label": "2.9% 3,663,926",
+      "edge_type": "holds",
+      "amount": 3663925.7195378602,
+      "depth": 1
+    },
+    {
+      "id": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d->0x133289557d457f9eddd07989ab0920005c686181#11",
+      "source": "0xe1753f2e00940cc31213dd92013cf019dfe4ca1d",
+      "target": "0x133289557d457f9eddd07989ab0920005c686181",
+      "label": "2.6% 3,255,449",
+      "edge_type": "holds",
+      "amount": 3255448.7549672266,
+      "depth": 1
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d#12",
       "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "target": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "label": "13.0% 75,776,467",
@@ -676,7 +778,7 @@
       "depth": 0
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xfeb016d0d14ac0fa6d69199608b0776d007203b2#11",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xfeb016d0d14ac0fa6d69199608b0776d007203b2#13",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0xfeb016d0d14ac0fa6d69199608b0776d007203b2",
       "label": "16.7% 12,676,126",
@@ -685,7 +787,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xdbd87325d7b1189dcc9255c4926076ff4a96a271#12",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xdbd87325d7b1189dcc9255c4926076ff4a96a271#14",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0xdbd87325d7b1189dcc9255c4926076ff4a96a271",
       "label": "11.6% 8,803,043",
@@ -694,7 +796,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x39d787fdf7384597c7208644dbb6fda1cca4ebdf#13",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x39d787fdf7384597c7208644dbb6fda1cca4ebdf#15",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x39d787fdf7384597c7208644dbb6fda1cca4ebdf",
       "label": "6.8% 5,164,442",
@@ -703,7 +805,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1123dce34dadb4e233081868ef48d28ac0d86ae0#14",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1123dce34dadb4e233081868ef48d28ac0d86ae0#16",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x1123dce34dadb4e233081868ef48d28ac0d86ae0",
       "label": "3.6% 2,698,858",
@@ -712,7 +814,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff#15",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff#17",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x189f87f0ab22bb59fa88dc58a86e8dbe32d67bff",
       "label": "2.3% 1,776,592",
@@ -721,7 +823,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1ad9470698495aef0400846e8d3dfe87af96ebfb#16",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x1ad9470698495aef0400846e8d3dfe87af96ebfb#18",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x1ad9470698495aef0400846e8d3dfe87af96ebfb",
       "label": "2.1% 1,617,026",
@@ -730,7 +832,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7#17",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7#19",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x0e50a83c9c70bff3881ff2085ca9e62e6c5f71a7",
       "label": "2.1% 1,611,258",
@@ -739,7 +841,7 @@
       "depth": 1
     },
     {
-      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x3516901e0b57536631589b60650faf48bf371af8#18",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x3516901e0b57536631589b60650faf48bf371af8#20",
       "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
       "target": "0x3516901e0b57536631589b60650faf48bf371af8",
       "label": "2.1% 1,590,704",
@@ -748,22 +850,40 @@
       "depth": 1
     },
     {
-      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x00907f9921424583e7ffbfedf84f92b7b2be4977#19",
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0xcaae49fb7f74ccfbe8a05e6104b01c097a78789f#21",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0xcaae49fb7f74ccfbe8a05e6104b01c097a78789f",
+      "label": "1.9% 1,429,187",
+      "edge_type": "holds",
+      "amount": 1429186.783845117,
+      "depth": 1
+    },
+    {
+      "id": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d->0x787eff01c9fdc1918d1aa6eeff089b191e2922e4#22",
+      "source": "0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d",
+      "target": "0x787eff01c9fdc1918d1aa6eeff089b191e2922e4",
+      "label": "1.7% 1,301,313",
+      "edge_type": "holds",
+      "amount": 1301312.697324697,
+      "depth": 1
+    },
+    {
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x00907f9921424583e7ffbfedf84f92b7b2be4977#23",
       "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "target": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
       "label": "11.5% 67,253,935",
       "edge_type": "aave_v3",
       "amount": 67253935.18747616,
       "depth": 0,
-      "coverage": 2.4534
+      "coverage": 0.9991
     },
     {
-      "id": "0x00907f9921424583e7ffbfedf84f92b7b2be4977->0x5513224daaeabca31af5280727878d52097afa05#20",
+      "id": "0x00907f9921424583e7ffbfedf84f92b7b2be4977->0x5513224daaeabca31af5280727878d52097afa05#24",
       "source": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
       "target": "0x5513224daaeabca31af5280727878d52097afa05",
       "label": "예치 165,000,000 · LT 0%",
       "edge_type": "lending",
-      "amount": 165000000.0,
+      "amount": 67191629.65423906,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -771,6 +891,8 @@
         "venue": "0x00907f9921424583e7ffbfedf84f92b7b2be4977",
         "detail": {
           "supplied": 165000000.0,
+          "attributed": 67191629.6542,
+          "pool_liquidity": 67253935.1875,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -780,22 +902,22 @@
       }
     },
     {
-      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x18efe565a5373f430e2f809b97de30335b3ad96a#21",
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x18efe565a5373f430e2f809b97de30335b3ad96a#25",
       "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "target": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "label": "6.6% 38,577,983",
       "edge_type": "aave_v3",
       "amount": 38577983.37841777,
       "depth": 0,
-      "coverage": 1.7439
+      "coverage": 0.9798
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x2ce01c87fec1b71a9041c52caed46fc5f4807285#22",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x2ce01c87fec1b71a9041c52caed46fc5f4807285#26",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0x2ce01c87fec1b71a9041c52caed46fc5f4807285",
       "label": "예치 56,172,097 · LT 0%",
       "edge_type": "lending",
-      "amount": 56172097.32074474,
+      "amount": 31559888.912649985,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -803,6 +925,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 56172097.3207,
+          "attributed": 31559888.9126,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -812,12 +936,12 @@
       }
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d#23",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d#27",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0xaa12bad4a501d45a5b771e49c2fd415ba8bfc79d",
       "label": "예치 3,637,253 · LT 0%",
       "edge_type": "lending",
-      "amount": 3637252.731373539,
+      "amount": 2043564.2894713213,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -825,6 +949,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 3637252.7314,
+          "attributed": 2043564.2895,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -834,12 +960,12 @@
       }
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c#24",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c#28",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
       "label": "예치 3,078,273 · LT 0%",
       "edge_type": "lending",
-      "amount": 3078272.6582760364,
+      "amount": 1729505.3553601485,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -847,6 +973,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 3078272.6583,
+          "attributed": 1729505.3554,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -856,12 +984,12 @@
       }
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaff94a1706ef11c0ddd1af83d17456423539b342#25",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xaff94a1706ef11c0ddd1af83d17456423539b342#29",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0xaff94a1706ef11c0ddd1af83d17456423539b342",
       "label": "예치 1,898,963 · LT 0%",
       "edge_type": "lending",
-      "amount": 1898962.6762571973,
+      "amount": 1066918.5230833942,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -869,6 +997,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 1898962.6763,
+          "attributed": 1066918.5231,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -878,12 +1008,12 @@
       }
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xdeadd8ab03075b7fba81864202a2f59ee25b312b#26",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xdeadd8ab03075b7fba81864202a2f59ee25b312b#30",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0xdeadd8ab03075b7fba81864202a2f59ee25b312b",
       "label": "예치 1,703,681 · LT 0%",
       "edge_type": "lending",
-      "amount": 1703681.0126799927,
+      "amount": 957200.9247893031,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -891,6 +1021,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 1703681.0127,
+          "attributed": 957200.9248,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -900,12 +1032,12 @@
       }
     },
     {
-      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xc71ea051a5f82c67adcf634c36ffe6334793d24c#27",
+      "id": "0x18efe565a5373f430e2f809b97de30335b3ad96a->0xc71ea051a5f82c67adcf634c36ffe6334793d24c#31",
       "source": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
       "target": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
       "label": "예치 785,768 · LT 0%",
       "edge_type": "lending",
-      "amount": 785768.382781014,
+      "amount": 441478.31493703334,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -913,6 +1045,8 @@
         "venue": "0x18efe565a5373f430e2f809b97de30335b3ad96a",
         "detail": {
           "supplied": 785768.3828,
+          "attributed": 441478.3149,
+          "pool_liquidity": 38577983.3784,
           "underlying_symbol": "GHO",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -922,7 +1056,7 @@
       }
     },
     {
-      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0xba1333333333a1ba1108e8412f11850a5c319ba9#28",
+      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0xba1333333333a1ba1108e8412f11850a5c319ba9#32",
       "source": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
       "target": "0xba1333333333a1ba1108e8412f11850a5c319ba9",
       "label": "57.1% 432,477",
@@ -931,7 +1065,7 @@
       "depth": 2
     },
     {
-      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3#29",
+      "id": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c->0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3#33",
       "source": "0xc71ea051a5f82c67adcf634c36ffe6334793d24c",
       "target": "0x8e53d04644e9ab0412a8c6bd228c84da7664cfe3",
       "label": "42.6% 322,612",
@@ -940,7 +1074,7 @@
       "depth": 2
     },
     {
-      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x06179f7c1be40863405f374e7f5f8806c728660a#30",
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x06179f7c1be40863405f374e7f5f8806c728660a#34",
       "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "target": "0x06179f7c1be40863405f374e7f5f8806c728660a",
       "label": "4.3% 25,134,266",
@@ -949,7 +1083,7 @@
       "depth": 0
     },
     {
-      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x4f827a63755855cdf3e8f3bcd20265c833f15033#31",
+      "id": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f->0x4f827a63755855cdf3e8f3bcd20265c833f15033#35",
       "source": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "target": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "label": "2.6% 15,182,235",
@@ -958,7 +1092,7 @@
       "depth": 0
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xdd62115f601daebccfdd2aeed834513d8dc2f4e2#32",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xdd62115f601daebccfdd2aeed834513d8dc2f4e2#36",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0xdd62115f601daebccfdd2aeed834513d8dc2f4e2",
       "label": "12.5% 1,904,448",
@@ -967,7 +1101,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561#33",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561#37",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x9f4f18ac9cc9de7c1441ac39ab2dbd7174fa1561",
       "label": "11.8% 1,791,456",
@@ -976,7 +1110,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e#34",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e#38",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x34922a7c50706642d3a5dff0c3c445a5b1acfc9e",
       "label": "9.4% 1,421,870",
@@ -985,7 +1119,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26#35",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26#39",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x7dedea128c251bc79bfd6d26bb7e5678cc2dbc26",
       "label": "8.3% 1,257,849",
@@ -994,7 +1128,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x58a48b6cfa8b813757ad8627265741c679bb4445#36",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x58a48b6cfa8b813757ad8627265741c679bb4445#40",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x58a48b6cfa8b813757ad8627265741c679bb4445",
       "label": "6.6% 1,008,205",
@@ -1003,7 +1137,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31#37",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31#41",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x5a95f72c4f6138f42ab7c86a8e633db7d7081c31",
       "label": "4.9% 748,310",
@@ -1012,7 +1146,7 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x3e43a976a28e593ef2494a8fda4135bf3260f8ee#38",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x3e43a976a28e593ef2494a8fda4135bf3260f8ee#42",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0x3e43a976a28e593ef2494a8fda4135bf3260f8ee",
       "label": "3.0% 453,336",
@@ -1021,19 +1155,37 @@
       "depth": 1
     },
     {
-      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf#39",
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf#43",
       "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
       "target": "0xd22591ffe762d7d8e4a9da3a4d5961246a0b15bf",
       "label": "2.2% 330,678",
       "edge_type": "holds",
       "amount": 330677.8421985233,
       "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0x49a1effce91d603a9a5ae8f0f676f7ebcd2a6029#44",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0x49a1effce91d603a9a5ae8f0f676f7ebcd2a6029",
+      "label": "2.0% 304,118",
+      "edge_type": "holds",
+      "amount": 304118.4061418751,
+      "depth": 1
+    },
+    {
+      "id": "0x4f827a63755855cdf3e8f3bcd20265c833f15033->0xeceda45ad3c57681c7e49b47072a014df54ee659#45",
+      "source": "0x4f827a63755855cdf3e8f3bcd20265c833f15033",
+      "target": "0xeceda45ad3c57681c7e49b47072a014df54ee659",
+      "label": "1.8% 268,010",
+      "edge_type": "holds",
+      "amount": 268009.6111592991,
+      "depth": 1
     }
   ],
   "metadata": {
     "root": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
     "block": 25242078,
-    "edge_count": 40,
+    "edge_count": 46,
     "source": "feeder/crawl + adapters/crawl_to_frontend.py"
   }
 }

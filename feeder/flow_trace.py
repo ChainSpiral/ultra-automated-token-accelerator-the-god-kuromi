@@ -176,7 +176,8 @@ def trace(seeds, frm, to, depth, maxnodes, contracts):
             for r in rows:
                 f = (r.get("from") or ZERO).lower()
                 t = (r.get("to") or ZERO).lower()
-                asset = r.get("asset") or "?"
+                # asset 정체성 = 토큰 컨트랙트 주소(스푸핑 불가). 심볼은 attacker-controllable 이라 안 씀.
+                asset = ((r.get("rawContract") or {}).get("address") or "?").lower()
                 val = r.get("value") or 0.0
                 blk = int(r["blockNum"], 16)
                 key = (f, t, asset)
@@ -238,6 +239,27 @@ def find_cycles(roots, nodes, edges, injected_token, maxlen=5):
         dfs(s, [s], [], set())
     return cyc_nodes, cyc_edges
 
+# 신뢰 가능한 토큰 심볼 해석 (asset 키는 주소). 심볼 스푸핑(zero-width/Lisu 등) 탐지.
+_TRUSTED_ADDR = {v.lower(): k for k, v in TOKENS.items()}
+_MAJORS = {"USDC", "USDT", "DAI", "WETH", "WBTC", "ETH", "USDS", "FRAX", "CRVUSD", "GHO", "USDE"}
+_SYM_CACHE = {}
+def trusted_sym(addr, block):
+    if addr == ZERO: return ("mint/burn", False)
+    if not addr or addr == "?": return ("?", False)
+    if addr in _SYM_CACHE: return _SYM_CACHE[addr]
+    a = addr.lower()
+    if a in _TRUSTED_ADDR:
+        r = (_TRUSTED_ADDR[a], False)
+    else:
+        try: raw = CR.read_symbol(a, block) or ""
+        except Exception: raw = ""
+        clean = "".join(c for c in raw if ord(c) < 128 and c.isprintable()).strip()
+        # 스푸핑 의심: ASCII/zero-width 정제로 글자가 바뀌었거나, 메이저 심볼 사칭(신뢰주소 아님)
+        suspicious = (clean != raw) or (clean.upper() in _MAJORS and a not in _TRUSTED_ADDR)
+        r = (clean or a[:8], suspicious)
+    _SYM_CACHE[addr] = r
+    return r
+
 # ---------- assemble frontend JSON ----------
 def build_json(seeds, frm, to, nodes, edges, explored):
     seeds_l = [s.lower() for s in seeds]
@@ -275,15 +297,18 @@ def build_json(seeds, frm, to, nodes, edges, explored):
         })
     out_edges = []
     for (f, t, asset), e in edges.items():
+        sym, suspicious = trusted_sym(asset, to)   # asset=주소 → 신뢰 심볼 + 스푸핑 플래그
         # (C) Morpho Blue 와의 transfer 는 담보/차입 의미를 라벨에 부여
         role = None
         if t == MORPHO: role = "공급/담보"
         elif f == MORPHO: role = "차입/인출"
-        base = f"{asset} {e['amount']:,.0f}" + (f" ×{e['count']}" if e["count"] > 1 else "")
+        tag = " ⚠️spoof?" if suspicious else ""
+        base = f"{sym} {e['amount']:,.0f}" + (f" ×{e['count']}" if e["count"] > 1 else "") + tag
         out_edges.append({
             "id": f"{f}->{t}:{asset}",
             "source": f, "target": t,
-            "asset": asset, "amount": round(e["amount"], 4), "count": e["count"],
+            "asset": sym, "token": asset, "suspicious": suspicious,
+            "amount": round(e["amount"], 4), "count": e["count"],
             "role": role,
             "label": (f"[{role}] " if role else "") + base,
             "block_range": [e["minblk"], e["maxblk"]],

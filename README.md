@@ -66,11 +66,11 @@ frontend/              # Next.js /overview (React Flow, depth 컬럼 레이아�
 graphs/                # 산출물 (crawl.*.json, frontend/*.sim.json)
 ```
 
-## 불변식 (validate 게이트)
+## 불변식 (`validate.py` 게이트, `run.py`가 강제)
 
-- **bipartite**: 모든 엣지 token↔holder. self-loop 금지.
-- **보존**: 합 = 추적 총량. transformed/nested/via 는 재카운트 X.
-- **컷오프**: 컷 이하 잔여는 `coverage`로 명시 (silent 누락 금지).
-- **provenance**: `verifiable_onchain` + `confidence`(HIGH=온체인 측정값만).
+- **보존 / 이중계산 0**: 같은 from_token 아래 `Σfrac ≤ 1.0` (레벨별; price-free라 전역합 아님). 넘으면 FAIL.
+- **커버리지 / 컷오프**: from_token별 coverage와 잔여 "기타 N%" 명시 (silent 누락 금지).
+- **provenance**: 모르는 건 `resolved:false` / `opaque`로 개수 명시. `confidence` HIGH=온체인 측정값만.
+- **self-loop 금지**: from_token≠holder (backstop). 산출물 전체는 **layered DAG** (= `defi-dagggg`).
 
 체인: Ethereum mainnet. 멀티체인은 v2. 😈

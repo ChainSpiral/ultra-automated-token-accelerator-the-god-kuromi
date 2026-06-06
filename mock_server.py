@@ -9,6 +9,37 @@ def manifest():
         return json.load(open(MANIFEST))
     return {"tokens":[]}
 
+# flow.<name>.json -> 사람이 읽는 라벨 + 정렬 순서 (사건 먼저, 정상 대조군 마지막)
+FLOW_LABELS={
+    "stream":"Stream xUSD",
+    "usd0pp":"USD0++",
+    "reusd":"Resupply reUSD",
+    "mim":"MIM",
+    "rseth_live":"rsETH (정상)",
+}
+FLOW_ORDER=["stream","usd0pp","reusd","mim","rseth_live"]
+
+def flows():
+    out=[]
+    for f in os.listdir(FRONT):
+        if not (f.startswith("flow.") and f.endswith(".json")): continue
+        name=f[len("flow."):-len(".json")]
+        try: d=json.load(open(os.path.join(FRONT,f)))
+        except Exception: continue
+        m=d.get("metadata",{}) or {}
+        out.append({
+            "name":name,
+            "label":FLOW_LABELS.get(name,name),
+            "nodes":len(d.get("nodes",[])),
+            "edges":len(d.get("edges",[])),
+            "cycle_nodes":m.get("cycle_nodes",0) or 0,
+            "from_block":m.get("from_block"),
+            "to_block":m.get("to_block"),
+        })
+    order={n:i for i,n in enumerate(FLOW_ORDER)}
+    out.sort(key=lambda x:(order.get(x["name"],99),x["name"]))
+    return out
+
 def sim_path(token):
     # token 심볼 -> sim 파일. 없으면 매니페스트 첫번째, 그것도 없으면 legacy crawl.sim.json
     if token:
@@ -50,6 +81,11 @@ class H(BaseHTTPRequestHandler):
             body=json.dumps(manifest()).encode()
             self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
             self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/flows":
+            # 사용 가능한 flow 데이터셋 목록 (프론트 선택 UI용)
+            body=json.dumps(flows()).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
         elif u.path=="/api/graph":
             token=(parse_qs(u.query).get("token") or [None])[0]
             body=json.dumps(build(token)).encode()
@@ -63,6 +99,29 @@ class H(BaseHTTPRequestHandler):
                 cand=sorted(f for f in os.listdir(FRONT) if f.startswith("flow.") and f.endswith(".json"))
                 p=os.path.join(FRONT,cand[0]) if cand else None
             body=json.dumps(json.load(open(p)) if p and os.path.exists(p) else {"nodes":[],"edges":[]}).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/contagions":
+            # 볼트별 contagion 인덱스 (위험순) — 선택 UI용
+            p=os.path.join(FRONT,"contagion.index.json")
+            body=json.dumps(json.load(open(p)) if os.path.exists(p) else {"vaults":[]}).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/contagion":
+            # 단일 볼트 contagion 그래프. vault 미지정 시 인덱스 첫(최고위험) 볼트.
+            vault=(parse_qs(u.query).get("vault") or [None])[0]
+            if not vault:
+                idx=os.path.join(FRONT,"contagion.index.json")
+                vs=json.load(open(idx)).get("vaults",[]) if os.path.exists(idx) else []
+                vault=vs[0]["address"] if vs else None
+            p=os.path.join(FRONT,f"contagion.{vault.lower()}.json") if vault else None
+            body=json.dumps(json.load(open(p)) if p and os.path.exists(p) else {"nodes":[],"edges":[]}).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/reflexivity":
+            # reflexivity_scan.py 산출물 (토큰별 reflexivity 등급)
+            p=os.path.join(FRONT,"reflexivity.json")
+            body=json.dumps(json.load(open(p)) if os.path.exists(p) else {"tokens":{}}).encode()
             self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
             self.end_headers(); self.wfile.write(body)
         elif self.path.startswith("/api/health"):

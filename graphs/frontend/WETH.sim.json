@@ -155,6 +155,34 @@
       }
     },
     {
+      "id": "0xabbd5b2b0b034781e58434736728b9d0673de7f1",
+      "type": "protocol",
+      "label": "EOA 0xabbd…e7f1",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xabbd5b2b0b034781e58434736728b9d0673de7f1",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xe40d278afd00e6187db21ff8c96d572359ef03bf",
+      "type": "protocol",
+      "label": "Safe 0xe40d…03bf",
+      "data": {
+        "category": "safe",
+        "kind": "safe",
+        "label": "GnosisSafeProxy",
+        "symbol": null,
+        "depth": 1,
+        "address": "0xe40d278afd00e6187db21ff8c96d572359ef03bf",
+        "approx": false
+      }
+    },
+    {
       "id": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
       "type": "protocol",
       "label": "Maker",
@@ -187,7 +215,7 @@
       "edge_type": "aave_v3",
       "amount": 328249.5724162787,
       "depth": 0,
-      "coverage": 2.0844
+      "coverage": 0.3958
     },
     {
       "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0#2",
@@ -195,7 +223,7 @@
       "target": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
       "label": "예치 144,540 · LT 83%",
       "edge_type": "lending",
-      "amount": 144540.3559062781,
+      "amount": 24753.97039926923,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -203,6 +231,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 144540.3559,
+          "attributed": 24753.9704,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -217,7 +247,7 @@
       "target": "0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3",
       "label": "예치 138,355 · LT 83%",
       "edge_type": "lending",
-      "amount": 138355.0596841441,
+      "amount": 23694.677036987105,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -225,6 +255,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 138355.0597,
+          "attributed": 23694.677,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -239,7 +271,7 @@
       "target": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
       "label": "예치 107,682 · LT 83%",
       "edge_type": "lending",
-      "amount": 107681.86696503278,
+      "amount": 18441.588376320655,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -247,6 +279,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 107681.867,
+          "attributed": 18441.5884,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -261,7 +295,7 @@
       "target": "0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf",
       "label": "예치 95,837 · LT 83%",
       "edge_type": "lending",
-      "amount": 95836.63379477811,
+      "amount": 16412.9746412123,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -269,6 +303,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 95836.6338,
+          "attributed": 16412.9746,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -283,7 +319,7 @@
       "target": "0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4",
       "label": "예치 58,029 · LT 83%",
       "edge_type": "lending",
-      "amount": 58028.662347203746,
+      "amount": 9937.984316181408,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -291,6 +327,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 58028.6623,
+          "attributed": 9937.9843,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -305,7 +343,7 @@
       "target": "0xdc3abf85e090528669cf1b44ef4082b269c21a95",
       "label": "예치 47,725 · LT 83%",
       "edge_type": "lending",
-      "amount": 47724.602220288776,
+      "amount": 8173.3117596856155,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -313,6 +351,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 47724.6022,
+          "attributed": 8173.3118,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -327,7 +367,7 @@
       "target": "0x34d1231f15da58762a84ead35242896e7fec4ac1",
       "label": "예치 46,738 · LT 83%",
       "edge_type": "lending",
-      "amount": 46738.49615482475,
+      "amount": 8004.4313096411715,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -335,6 +375,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 46738.4962,
+          "attributed": 8004.4313,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -349,7 +391,7 @@
       "target": "0x2269ce2753e2967dd5322a56188c3d24435b3588",
       "label": "예치 45,291 · LT 83%",
       "edge_type": "lending",
-      "amount": 45290.7335814863,
+      "amount": 7756.487601042394,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -357,6 +399,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 45290.7336,
+          "attributed": 7756.4876,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -366,7 +410,55 @@
       }
     },
     {
-      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2->0x2f0b23f53734252bda2277357e97e1517d6b042a#10",
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0xabbd5b2b0b034781e58434736728b9d0673de7f1#10",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0xabbd5b2b0b034781e58434736728b9d0673de7f1",
+      "label": "예치 40,199 · LT 83%",
+      "edge_type": "lending",
+      "amount": 6884.560469068202,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 40199.4833,
+          "attributed": 6884.5605,
+          "pool_liquidity": 328249.5724,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8->0xe40d278afd00e6187db21ff8c96d572359ef03bf#11",
+      "source": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "target": "0xe40d278afd00e6187db21ff8c96d572359ef03bf",
+      "label": "예치 34,245 · LT 83%",
+      "edge_type": "lending",
+      "amount": 5864.73734488336,
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 34244.6569,
+          "attributed": 5864.7373,
+          "pool_liquidity": 328249.5724,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2->0x2f0b23f53734252bda2277357e97e1517d6b042a#12",
       "source": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
       "target": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
       "label": "10.6% 246,836",
@@ -378,7 +470,7 @@
   "metadata": {
     "root": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
     "block": 25242078,
-    "edge_count": 11,
+    "edge_count": 13,
     "source": "feeder/crawl + adapters/crawl_to_frontend.py"
   }
 }

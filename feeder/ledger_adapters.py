@@ -69,7 +69,10 @@ S_BALANCEOF_SEL   = "0x70a08231"
 
 
 class AaveV3(Adapter):
-    """Aave v3 / Spark aToken. 홀더 = 예치자(supply). amount = aToken.balanceOf(=underlying 환산).
+    """Aave v3 / Spark aToken. 홀더 = 예치자(supply).
+       amount = 예치 청구권(aToken.balanceOf)을 풀의 '물리 유동성'(부모가 귀속시킨 underlying 잔고)에
+       totalSupply 비례로 환산한 몫. (raw aToken 잔고 그대로 쓰면 차입으로 풀을 떠난 분까지 합산돼
+       children_sum>풀잔고 = 이중계산. supplied=원 청구권은 position.detail 에 보존.)
        발견=Dune erc20 홀더 / 검증=온체인 balanceOf @block. 위험설정값=reserve LTV·청산임계(price-free)."""
     name = "aave_v3"
     def matches(self, addr, ctx):
@@ -89,9 +92,17 @@ class AaveV3(Adapter):
         if cfg and cfg != "0x":
             c = int(cfg, 16); ltv = (c & 0xFFFF) / 1e4; lt = ((c >> 16) & 0xFFFF) / 1e4
         ts = ctx["eth_call"](addr, S_TOTALSUPPLY_SEL)
-        total = (int(ts, 16) / dec) if ts and ts != "0x" else 0
+        total = (int(ts, 16) / dec) if ts and ts != "0x" else 0  # 총예치(=가용+차입자에게 대출됨)
         if total <= 0:
             return None
+        # 물리적 underlying = 부모 엣지가 이 aToken 에 귀속시킨 잔고(= 풀에 실재하는 가용 유동성).
+        # aToken.balanceOf 합(=총예치 total)은 차입으로 풀을 떠난 분까지 포함 → phys 초과 → 이중계산.
+        # 예치자 청구권을 totalSupply 비례로 '물리 유동성 phys' 에만 환산해 분배한다(coverage=Σsup/total≤1).
+        phys = ctx.get("amount")
+        if phys is None:  # 어댑터 단독 호출 등 부모 amount 없을 때: 온체인에서 직접 측정
+            ub = ctx["eth_call"](underlying, S_BALANCEOF_SEL + _a(addr))
+            phys = (int(ub, 16) / (10 ** _dec(ctx, underlying))) if ub and ub != "0x" else total
+        liq_share = phys / total
         ck = f"aave_holders_{addr}_{block}"
         cands = ctx["cache_get"]("ledger", ck)
         if cands is None:
@@ -101,12 +112,14 @@ class AaveV3(Adapter):
         out = []
         for h in cands:
             bh = ctx["eth_call"](addr, S_BALANCEOF_SEL + _a(h))
-            sup = (int(bh, 16) / dec) if bh and bh != "0x" else 0
+            sup = (int(bh, 16) / dec) if bh and bh != "0x" else 0  # 예치 청구권(aToken 잔고)
             if sup <= 0 or sup / total < MINFRAC:
                 continue
-            out.append({"addr": h, "amount": sup, "label": "",
+            attributed = sup * liq_share  # 물리 유동성 중 이 예치자 몫(같은 단위, 한 번만 카운트)
+            out.append({"addr": h, "amount": attributed, "label": "",
                         "position": {"role": "supply", "venue": addr,
-                                     "detail": {"supplied": round(sup, 4), "underlying_symbol": usym,
+                                     "detail": {"supplied": round(sup, 4), "attributed": round(attributed, 4),
+                                                "pool_liquidity": round(phys, 4), "underlying_symbol": usym,
                                                 "ltv": ltv, "liq_threshold": lt},
                                      "verifiable_onchain": True, "confidence": "HIGH"}})
         out.sort(key=lambda x: -x["amount"])

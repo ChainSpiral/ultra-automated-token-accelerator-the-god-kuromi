@@ -1,5 +1,5 @@
 {
-  "_invariant": "All edges must connect exactly one token node and one protocol node. No token-token or protocol-protocol edges.",
+  "_invariant": "Within one token graph, an edge attributes a token to where it rests (token <-> holder/protocol); no self-loop (from==to). Note: the full multi-depth output is a layered DAG (shared parents, vault->market hops), NOT strictly bipartite. The load-bearing invariant is CONSERVATION: per from_token (same unit) the kept holders' Sigma(frac) <= 1.0 (enforced by feeder/validate.py).",
 
   "_policy": {
     "1_attribution": "Count a token at the ONE place it physically rests. Never double-count.",

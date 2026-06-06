@@ -84,6 +84,114 @@
       "depth": 1
     },
     {
+      "from_token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "holder": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "amount": 113375162.88073185,
+      "frac": 0.0202,
+      "kind": "erc4626_vault",
+      "label": "ERC1967Proxy",
+      "depth": 1
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0x7fea5b4568751533039179116e372e26b6b41b13",
+      "amount": 38698908.58026858,
+      "frac": 0.3413,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xc746033844ec72aa6c7409cc88e9ff5cbf4d9c9d",
+      "amount": 10709587.114115603,
+      "frac": 0.0945,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xc453e33ae2d465d36fea462bfe810cd6ab408916",
+      "amount": 7226918.993081942,
+      "frac": 0.0637,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xf7d6dacc6cb39bf7ee33f82ff74d3ed221f45a84",
+      "amount": 5389764.239307361,
+      "frac": 0.0475,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xb0a998bd329a5bd72d244b9fc8e29bf35b7a3dbd",
+      "amount": 3919702.9208647646,
+      "frac": 0.0346,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xa09fe38187abecc2768b98b80ea30afbc2fbd774",
+      "amount": 3781487.0672930037,
+      "frac": 0.0334,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0xd8a5fd7a1ceff556788e2ed9b85969b561d9bcea",
+      "amount": 3336117.242041067,
+      "frac": 0.0294,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0x2674341d40b445c21287b81c4bc95ec8e358f7e8",
+      "amount": 3195754.3725276594,
+      "frac": 0.0282,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0x60e023448e6224194f2077c644903813042cb5cd",
+      "amount": 2745506.1330551673,
+      "frac": 0.0242,
+      "kind": "safe",
+      "label": "SafeProxy",
+      "depth": 2
+    },
+    {
+      "from_token": "0xbc65ad17c5c0a2a4d159fa5a503f4992c7b545fe",
+      "holder": "0x419b4866d2e5f57c74906405924ee7b935ae1405",
+      "amount": 2643839.9137674915,
+      "frac": 0.0233,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2
+    },
+    {
+      "from_token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "holder": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+      "amount": 94897185.64813805,
+      "frac": 0.0169,
+      "kind": "contract",
+      "label": "Escrow",
+      "depth": 1
+    },
+    {
       "from_token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
       "holder": "0x173e314c7635b45322cd8cb14f44b312e079f3af",
       "amount": 812419505.8635937,
@@ -102,14 +210,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 565270850.05,
-      "coverage": 2.7655
+      "children_sum": 204368905.47,
+      "coverage": 0.9998
     },
     {
       "from_token": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
       "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
-      "amount": 565270850.0540793,
-      "frac": 2.7655,
+      "amount": 204368905.46849734,
+      "frac": 0.9998,
       "kind": "contract",
       "label": "ALMProxy",
       "depth": 1,
@@ -119,6 +227,8 @@
         "venue": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
         "detail": {
           "supplied": 565270850.0541,
+          "attributed": 204368905.4685,
+          "pool_liquidity": 204401446.9942,
           "underlying_symbol": "USDS",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -155,8 +265,8 @@
       "depth": 1,
       "note": "singleton ledger; expand via adapter:morpho",
       "resolved": true,
-      "children_sum": 20220733.51,
-      "coverage": 0.9751
+      "children_sum": 20647821.53,
+      "coverage": 0.9957
     },
     {
       "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
@@ -351,6 +461,30 @@
       }
     },
     {
+      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "holder": "0x2385233abb910357e2b97a16d40e0443e53d0769",
+      "amount": 427088.01671035757,
+      "frac": 0.0206,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x77e624dd9dd980810c2b804249e88f3598d9c7ec91f16aa5fbf6e3fdf6087f82",
+        "detail": {
+          "collateral": 427088.0167,
+          "loan_token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "loan_symbol": "USDS",
+          "borrow": 383696.3634,
+          "lltv": 0.86,
+          "utilization": 0.8997
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
       "from_token": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
       "holder": "0xcb194a1a6236bee348e29e38e859475a6d1940df",
       "amount": 7030588.085949857,
@@ -402,6 +536,24 @@
       "frac": 0.0248,
       "kind": "EOA",
       "label": "EOA",
+      "depth": 1
+    },
+    {
+      "from_token": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+      "holder": "0x9284205bb73efd293e310b12a37788114a7724a9",
+      "amount": 3942736.9896480055,
+      "frac": 0.0226,
+      "kind": "safe",
+      "label": "GnosisSafeProxy",
+      "depth": 1
+    },
+    {
+      "from_token": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+      "holder": "0xe952c988c46fe69105dfac99e420fe94a66b64f8",
+      "amount": 3570117.0973548023,
+      "frac": 0.0204,
+      "kind": "opaque",
+      "label": "",
       "depth": 1
     },
     {

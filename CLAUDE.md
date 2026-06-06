@@ -1,4 +1,4 @@
-# bipartite-graphhh — Token ↔ Protocol 의존성 그래프 빌더
+# defi-dagggg — Token ↔ Protocol 의존성 그래프 빌더
 
 주어진 `(token, block)` 좌표에 대해, 그 토큰이 온체인에서 **어떤 프로토콜에 얼마나 의존하는지**를
 **이분그래프(token ↔ protocol)** JSON으로 산출한다. 결과는 `schema.json` 구조를 100% 따른다.
@@ -62,14 +62,19 @@ morpho share    → resolved(Morpho+market)|  LP token    → resolved(DEX pool)
 bridge/OFT      → crosschain             |  해독 불가    → opaque (confidence LOW)
 ```
 
-## 6. 불변식 (전부 통과 필수 — 코드 테스트로 강제)
+## 6. 불변식 (`feeder/validate.py` 게이트 — 실패 시 `run.py`가 변환·매니페스트 갱신 중단)
 
-- **bipartite**: 모든 엣지는 token↔protocol. token-token / protocol-protocol 금지.
-- **보존 (이중계산 0)**: `Σ(leaf + terminal amount) == 추적된 토큰 총량`.
-  pass_through / nested / via / transformed-out 은 **절대 안 더한다**.
-- **컷오프**: 모든 노드/엣지 ≥0.3% or ≥$10M. 버린 잔여는 "기타 N%"로 **명시**(silent 누락 금지).
-- **provenance**: 모든 엣지에 `snapshot_block` + `verifiable_onchain` + `confidence`.
-  `confidence: HIGH` 는 온체인 측정값에만. 오프체인/주장은 MEDIUM/LOW.
+- **보존 / 이중계산 0** (제일 중요): 같은 `from_token`(= 같은 단위) 아래 `Σ frac ≤ 1.0`.
+  price-free라 depth가 깊어지면 단위가 바뀌므로 **전역 Σ가 아니라 레벨별 Σfrac**로 검증한다.
+  1을 넘으면 그 레벨에서 이중계산 → **FAIL**. pass_through / nested / transformed-out은 애초에 안 더한다.
+- **커버리지 / 컷오프**: 노드/엣지 ≥0.3% or ≥$10M만. `from_token`별 coverage(=Σfrac)와
+  잔여 "기타 N%"를 **명시**(silent 누락 금지). ledger 어댑터는 `children_sum/amount ≤ 1.0`.
+- **provenance**: 분류 안 되면 `resolved:false` / `opaque`로 **개수를 명시**(지어내지 않음).
+  `confidence: HIGH`는 온체인 측정값에만. 오프체인/주장은 MEDIUM/LOW.
+- **self-loop 금지**: `from_token == holder` 0건 (crawl이 막지만 게이트가 backstop).
+
+> ※ 단일 토큰 그래프 한 장은 token↔holder 구조지만, depth를 펼친 **전체 산출물은 layered DAG**
+> (공유 부모·멀티홉 존재) — 이게 레포 이름이 `defi-dagggg`인 이유다. 옛 "bipartite 불변식"은 폐기.
 
 ## 7. 데이터 소스 / 키 (전부 `block` 고정 → 재현)
 

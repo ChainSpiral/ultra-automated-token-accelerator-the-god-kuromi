@@ -41,14 +41,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 266054333.16,
-      "coverage": 2.7211
+      "children_sum": 90812127.24,
+      "coverage": 0.9288
     },
     {
       "from_token": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
       "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
-      "amount": 263054183.62161112,
-      "frac": 2.6904,
+      "amount": 89788088.43253483,
+      "frac": 0.9183,
       "kind": "contract",
       "label": "ALMProxy",
       "depth": 1,
@@ -58,6 +58,8 @@
         "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
         "detail": {
           "supplied": 263054183.6216,
+          "attributed": 89788088.4325,
+          "pool_liquidity": 97774500.8991,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.0001
@@ -69,8 +71,8 @@
     {
       "from_token": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
       "holder": "0x77565d50da284f4d614585e5de839197715dd771",
-      "amount": 3000149.5345343626,
-      "frac": 0.0307,
+      "amount": 1024038.80451141,
+      "frac": 0.0105,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -80,6 +82,8 @@
         "venue": "0x4dedf26112b3ec8ec46e7e31ea5e123490b05b8b",
         "detail": {
           "supplied": 3000149.5345,
+          "attributed": 1024038.8045,
+          "pool_liquidity": 97774500.8991,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.0001
@@ -98,14 +102,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 91189979.17,
-      "coverage": 1.8228
+      "children_sum": 31740823.31,
+      "coverage": 0.6345
     },
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x0c903235c380a717d970bbf91f4dd5780fd68ceb",
-      "amount": 30069080.925071433,
-      "frac": 0.6011,
+      "amount": 9928410.67784585,
+      "frac": 0.1985,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -115,6 +119,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 30069080.9251,
+          "attributed": 9928410.6778,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -126,8 +132,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0xb4d3bea9d824c4dd7ded7ccc93e6212e3f0b186a",
-      "amount": 24447096.37796841,
-      "frac": 0.4887,
+      "amount": 8072106.138733654,
+      "frac": 0.1614,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -137,6 +143,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 24447096.378,
+          "attributed": 8072106.1387,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -148,8 +156,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x5167069edb46ba7a1fb04ac24ee83f665a7a6e16",
-      "amount": 19043787.088783227,
-      "frac": 0.3807,
+      "amount": 6288005.261951623,
+      "frac": 0.1257,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -159,6 +167,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 19043787.0888,
+          "attributed": 6288005.262,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -170,8 +180,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x496a0f3fd10a06d3ecdef8d82ba1be3683c4c03c",
-      "amount": 4193812.686118428,
-      "frac": 0.0838,
+      "amount": 1384741.181730837,
+      "frac": 0.0277,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -181,6 +191,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 4193812.6861,
+          "attributed": 1384741.1817,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -192,8 +204,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x1701037d4553c0cd5b4ed0c46b3a766c7d5b041f",
-      "amount": 3866562.4512895904,
-      "frac": 0.0773,
+      "amount": 1276687.505800452,
+      "frac": 0.0255,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -203,6 +215,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 3866562.4513,
+          "attributed": 1276687.5058,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -214,8 +228,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x8c6cf6223f733ef1858cc768547bf2fda96e78e3",
-      "amount": 3811399.009119158,
-      "frac": 0.0762,
+      "amount": 1258473.2707316643,
+      "frac": 0.0252,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -225,6 +239,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 3811399.0091,
+          "attributed": 1258473.2707,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -236,8 +252,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x0387435b9079a6b5f873ce57643e1b5914276528",
-      "amount": 2924309.680023931,
-      "frac": 0.0585,
+      "amount": 965568.1703350435,
+      "frac": 0.0193,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -247,6 +263,8 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 2924309.68,
+          "attributed": 965568.1703,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77
@@ -258,8 +276,8 @@
     {
       "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
       "holder": "0x023a5ea899df16831d6f3101f4568fddb577c887",
-      "amount": 2833930.9514199803,
-      "frac": 0.0566,
+      "amount": 935726.3159611899,
+      "frac": 0.0187,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -269,6 +287,56 @@
         "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
         "detail": {
           "supplied": 2833930.9514,
+          "attributed": 935726.316,
+          "pool_liquidity": 50026208.3648,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x2dee59010cbb5dd5dfc4ab90f7a63c423041b2bb",
+      "amount": 887120.7035307747,
+      "frac": 0.0177,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2686724.5011,
+          "attributed": 887120.7035,
+          "pool_liquidity": 50026208.3648,
+          "underlying_symbol": "DAI",
+          "ltv": 0.0,
+          "liq_threshold": 0.77
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x018008bfb33d285247a21d44e50697654f754e63",
+      "holder": "0x2b42ed261fea5bcf47e181d9d3633e626aa400d3",
+      "amount": 743984.0804615949,
+      "frac": 0.0149,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x018008bfb33d285247a21d44e50697654f754e63",
+        "detail": {
+          "supplied": 2253222.4188,
+          "attributed": 743984.0805,
+          "pool_liquidity": 50026208.3648,
           "underlying_symbol": "DAI",
           "ltv": 0.0,
           "liq_threshold": 0.77

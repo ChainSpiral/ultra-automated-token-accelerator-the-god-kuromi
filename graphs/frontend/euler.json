@@ -1,0 +1,1432 @@
+{
+  "venue": "euler",
+  "block": 25248315,
+  "tokens": {
+    "0x7f39c5": {
+      "token": "0x7f39c5",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "0xc02aaa",
+        "0x1abaea"
+      ]
+    },
+    "USDC": {
+      "token": "USDC",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDC / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDT",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "EURC",
+        "LBTC"
+      ]
+    },
+    "USDT": {
+      "token": "USDT",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDT / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "EURC",
+        "0xa0b869",
+        "LBTC"
+      ]
+    },
+    "wstETH": {
+      "token": "wstETH",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "0xbe9895": {
+      "token": "0xbe9895",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:cbETH/WETH, :",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "USDT",
+        "cbBTC",
+        "WBTC"
+      ]
+    },
+    "weETH": {
+      "token": "weETH",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "0xc02aaa",
+        "0xa0b869",
+        "cbBTC",
+        "0x2260fa",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "0x07f9a5": {
+      "token": "0x07f9a5",
+      "oracle_class": "other",
+      "sees": ":USDS / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "USDC"
+      ]
+    },
+    "esUSDS-3": {
+      "token": "esUSDS-3",
+      "oracle_class": "other",
+      "sees": ":USDS / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "0xdd629e": {
+      "token": "0xdd629e",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle",
+      "grade": "HIGH",
+      "borrows": [
+        "0xc02aaa",
+        "wstETH",
+        "USDC",
+        "LBTC"
+      ]
+    },
+    "0x9c6e67": {
+      "token": "0x9c6e67",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle",
+      "grade": "HIGH",
+      "borrows": [
+        "0xc02aaa",
+        "0xcd5fe2",
+        "0xcbb7c0"
+      ]
+    },
+    "tBTC": {
+      "token": "tBTC",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "0x998d76": {
+      "token": "0x998d76",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa",
+        "wstETH",
+        "0xa0b869"
+      ]
+    },
+    "ecbBTC-3": {
+      "token": "ecbBTC-3",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:ChainlinkOracle",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa",
+        "0x7f39c5"
+      ]
+    },
+    "eLBTC-2": {
+      "token": "eLBTC-2",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa",
+        "0x7f39c5",
+        "0xa0b869",
+        "WBTC"
+      ]
+    },
+    "cbETH": {
+      "token": "cbETH",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:cbETH/WETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "USDS": {
+      "token": "USDS",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDS / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "0x7f39c5",
+        "weETH",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "LBTC",
+        "0x8236a8"
+      ]
+    },
+    "sUSDS": {
+      "token": "sUSDS",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDS / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "0x7f39c5",
+        "weETH",
+        "0xdac17f",
+        "cbBTC",
+        "WBTC",
+        "EURC",
+        "LBTC"
+      ]
+    },
+    "mTBILL": {
+      "token": "mTBILL",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:mTBILL/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "wM": {
+      "token": "wM",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:wM/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "WETH",
+        "0x7f39c5",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "0xdac17f",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "WBTC": {
+      "token": "WBTC",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "0xcbb7c0",
+        "cbBTC",
+        "EURC",
+        "LBTC"
+      ]
+    },
+    "cbBTC": {
+      "token": "cbBTC",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "LBTC": {
+      "token": "LBTC",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "0xcbb7c0",
+        "cbBTC",
+        "WBTC"
+      ]
+    },
+    "ezETH": {
+      "token": "ezETH",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:ezETH/WETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "0x1abaea",
+        "LBTC"
+      ]
+    },
+    "rETH": {
+      "token": "rETH",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:rETH/WETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "mETH": {
+      "token": "mETH",
+      "oracle_class": "anchored",
+      "sees": "PythOracle:mETH/WETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "rsETH": {
+      "token": "rsETH",
+      "oracle_class": "other",
+      "sees": "RateProviderOracle:RateProviderOracle",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "LBTC"
+      ]
+    },
+    "ETHx": {
+      "token": "ETHx",
+      "oracle_class": "other",
+      "sees": "",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "USDC",
+        "USDT",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "wUSDM": {
+      "token": "wUSDM",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:USDM/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "eBTC": {
+      "token": "eBTC",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:eBTC/0xbbbbbb, ChainlinkOracle:BTC / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "0x7f39c5",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "WETH": {
+      "token": "WETH",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "0xa0b869",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "0x2260fa",
+        "LBTC"
+      ]
+    },
+    "tETH": {
+      "token": "tETH",
+      "oracle_class": "anchored",
+      "sees": "ChainlinkOracle:tETH / wstETH Exchange Rate, LidoFundamentalOracle:LidoFundament",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "weETH",
+        "USDC",
+        "0xdac17f",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "USDtb": {
+      "token": "USDtb",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:USDtb/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "WETH",
+        "weETH",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "RLUSD": {
+      "token": "RLUSD",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:RLUSD/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "USDe": {
+      "token": "USDe",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDe / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "cbBTC",
+        "WBTC",
+        "EURC",
+        "LBTC"
+      ]
+    },
+    "syrupUSDC": {
+      "token": "syrupUSDC",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDC / USD",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "wstETH",
+        "weETH",
+        "USDC",
+        "USDT",
+        "cbBTC",
+        "WBTC",
+        "LBTC"
+      ]
+    },
+    "0xe846ca": {
+      "token": "0xe846ca",
+      "oracle_class": "other",
+      "sees": ":weETH/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "0x7f39c5",
+        "cbBTC"
+      ]
+    },
+    "0xa3931d": {
+      "token": "0xa3931d",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "wstETH",
+        "weETH",
+        "USDC",
+        "0xdac17f",
+        "0xa0b869",
+        "0xcbb7c0"
+      ]
+    },
+    "0x18084f": {
+      "token": "0x18084f",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "wstETH",
+        "0xdac17f",
+        "cbBTC",
+        "WBTC"
+      ]
+    },
+    "ecbETH-2": {
+      "token": "ecbETH-2",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "wstETH",
+        "weETH",
+        "0xa0b869"
+      ]
+    },
+    "0xa28c23": {
+      "token": "0xa28c23",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "wstETH"
+      ]
+    },
+    "0x328646": {
+      "token": "0x328646",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "wstETH"
+      ]
+    },
+    "ewstETH-11": {
+      "token": "ewstETH-11",
+      "oracle_class": "fundamental/NAV",
+      "sees": "LidoFundamentalOracle:LidoFundamentalOracle",
+      "grade": "MED",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "wOETH": {
+      "token": "wOETH",
+      "oracle_class": "anchored",
+      "sees": "FixedRateOracle:OETH/WETH",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "ETH+": {
+      "token": "ETH+",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:Redstone Price Feed",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "eezETH-3": {
+      "token": "eezETH-3",
+      "oracle_class": "other",
+      "sees": "RateProviderOracle:RateProviderOracle",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "ersETH-2": {
+      "token": "ersETH-2",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "0x5fd133": {
+      "token": "0x5fd133",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "0xbeef69": {
+      "token": "0xbeef69",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "epzETH-2": {
+      "token": "epzETH-2",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:ChainlinkOracle",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "rstETH": {
+      "token": "rstETH",
+      "oracle_class": "other",
+      "sees": ":0x7a4eff/0xc02aaa",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "0xc4984b": {
+      "token": "0xc4984b",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "0x2306e1": {
+      "token": "0x2306e1",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xc02aaa"
+      ]
+    },
+    "pzETH": {
+      "token": "pzETH",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:Redstone Price Feed",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "ersETH-1": {
+      "token": "ersETH-1",
+      "oracle_class": "anchored",
+      "sees": "ChainlinkOracle:rsETH/WETH",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "agETH": {
+      "token": "agETH",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:agETH/WETH",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "0xa1290d": {
+      "token": "0xa1290d",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:rsETH/0xc02aaa",
+      "grade": "ok",
+      "borrows": [
+        "WETH",
+        "0x2260fa",
+        "EURC"
+      ]
+    },
+    "0xf6e2ef": {
+      "token": "0xf6e2ef",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:ChainlinkOracle",
+      "grade": "ok",
+      "borrows": [
+        "WETH"
+      ]
+    },
+    "emTBILL-2": {
+      "token": "emTBILL-2",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle",
+      "grade": "HIGH",
+      "borrows": [
+        "0xcd5fe2",
+        "0x2260fa"
+      ]
+    },
+    "0x9e7144": {
+      "token": "0x9e7144",
+      "oracle_class": "anchored",
+      "sees": ":TBTC / USD",
+      "grade": "ok",
+      "borrows": [
+        "0xcd5fe2"
+      ]
+    },
+    "0x056f3a": {
+      "token": "0x056f3a",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "weETH"
+      ]
+    },
+    "0xbc3516": {
+      "token": "0xbc3516",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xcd5fe2"
+      ]
+    },
+    "0xb3b362": {
+      "token": "0xb3b362",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xcd5fe2"
+      ]
+    },
+    "ewstETH-1": {
+      "token": "ewstETH-1",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xcd5fe2"
+      ]
+    },
+    "0xa35b1b": {
+      "token": "0xa35b1b",
+      "oracle_class": "other",
+      "sees": "RateProviderOracle:RateProviderOracle",
+      "grade": "ok",
+      "borrows": [
+        "0xcd5fe2"
+      ]
+    },
+    "ewUSDM-2": {
+      "token": "ewUSDM-2",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:USDM/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "weETH"
+      ]
+    },
+    "eeBTC-3": {
+      "token": "eeBTC-3",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:eBTC/0xbbbbbb, ChainlinkOracle:BTC / USD",
+      "grade": "ok",
+      "borrows": [
+        "weETH"
+      ]
+    },
+    "0xcd5fe2": {
+      "token": "0xcd5fe2",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "USDC",
+        "0xdac17f",
+        "USDT",
+        "0x1abaea"
+      ]
+    },
+    "0x1e548c": {
+      "token": "0x1e548c",
+      "oracle_class": "other",
+      "sees": ":USDS/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "USDC",
+        "WBTC"
+      ]
+    },
+    "0x437cc3": {
+      "token": "0x437cc3",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "etBTC-3": {
+      "token": "etBTC-3",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0xcbb7c0": {
+      "token": "0xcbb7c0",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869",
+        "USDT",
+        "WBTC"
+      ]
+    },
+    "0x44a107": {
+      "token": "0x44a107",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0x6be9e8": {
+      "token": "0x6be9e8",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0x07a36c": {
+      "token": "0x07a36c",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "XAUt": {
+      "token": "XAUt",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "USDC",
+        "USDT"
+      ]
+    },
+    "TBILL": {
+      "token": "TBILL",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkInfrequentOracle:TBILL/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "USDC",
+        "USDT"
+      ]
+    },
+    "0xc02aaa": {
+      "token": "0xc02aaa",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "eUSDS-3": {
+      "token": "eUSDS-3",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:ChainlinkOracle",
+      "grade": "ok",
+      "borrows": [
+        "0xdac17f"
+      ]
+    },
+    "0x298966": {
+      "token": "0x298966",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xdac17f",
+        "0xcbb7c0"
+      ]
+    },
+    "eWBTC-3": {
+      "token": "eWBTC-3",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle, :",
+      "grade": "HIGH",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "0xdc035d": {
+      "token": "0xdc035d",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDS/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "0xdac17f",
+        "cbBTC",
+        "0x2260fa",
+        "EURC"
+      ]
+    },
+    "emTBILL-1": {
+      "token": "emTBILL-1",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "ewM-2": {
+      "token": "ewM-2",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xdac17f"
+      ]
+    },
+    "eUSDtb-2": {
+      "token": "eUSDtb-2",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle",
+      "grade": "HIGH",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "eRLUSD-3": {
+      "token": "eRLUSD-3",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:FixedRateOracle",
+      "grade": "HIGH",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "eUSDe-7": {
+      "token": "eUSDe-7",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDe / USD",
+      "grade": "ok",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "sUSDe": {
+      "token": "sUSDe",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDe / USD",
+      "grade": "ok",
+      "borrows": [
+        "USDT",
+        "USDC",
+        "EURC"
+      ]
+    },
+    "sBUIDL": {
+      "token": "sBUIDL",
+      "oracle_class": "fundamental/NAV",
+      "sees": "ChainlinkInfrequentOracle:RedStone Price Feed for BUIDL_FUNDAMENTAL",
+      "grade": "MED",
+      "borrows": [
+        "USDT"
+      ]
+    },
+    "USDf": {
+      "token": "USDf",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "sUSDf": {
+      "token": "sUSDf",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "PT-sUSDf-25SEP2025": {
+      "token": "PT-sUSDf-25SEP2025",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "PT-USDf-29JAN2026": {
+      "token": "PT-USDf-29JAN2026",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "PT-sUSDf-29JAN2026": {
+      "token": "PT-sUSDf-29JAN2026",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0x002222": {
+      "token": "0x002222",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:USDA/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0xe3eb09": {
+      "token": "0xe3eb09",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "eUSDY-1": {
+      "token": "eUSDY-1",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0x940fca": {
+      "token": "0x940fca",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "mHYPER": {
+      "token": "mHYPER",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "PT-mHYPER-20NOV2025": {
+      "token": "PT-mHYPER-20NOV2025",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0x797dd8": {
+      "token": "0x797dd8",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:USDC / USD",
+      "grade": "ok",
+      "borrows": [
+        "cbBTC"
+      ]
+    },
+    "0x1924d7": {
+      "token": "0x1924d7",
+      "oracle_class": "anchored",
+      "sees": ":, :ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "cbBTC"
+      ]
+    },
+    "eETHx-3": {
+      "token": "eETHx-3",
+      "oracle_class": "anchored",
+      "sees": "RateProviderOracle:ETHx/WETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "cbBTC"
+      ]
+    },
+    "eUSDT-2": {
+      "token": "eUSDT-2",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "WBTC"
+      ]
+    },
+    "ewM-3": {
+      "token": "ewM-3",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "WBTC"
+      ]
+    },
+    "0xf88d8d": {
+      "token": "0xf88d8d",
+      "oracle_class": "anchored",
+      "sees": "ChainlinkOracle:mETH / ETH",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "0xe4199e": {
+      "token": "0xe4199e",
+      "oracle_class": "other",
+      "sees": ":",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "0xfae103": {
+      "token": "0xfae103",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0x1abaea"
+      ]
+    },
+    "0x8236a8": {
+      "token": "0x8236a8",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "0x1abaea"
+      ]
+    },
+    "UNI": {
+      "token": "UNI",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:UNI / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "LINK": {
+      "token": "LINK",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:LINK / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "AAVE": {
+      "token": "AAVE",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:AAVE / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "GRT": {
+      "token": "GRT",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:GRT / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "SKY": {
+      "token": "SKY",
+      "oracle_class": "market-feed",
+      "sees": "ChronicleOracle:SKY/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "ONDO": {
+      "token": "ONDO",
+      "oracle_class": "market-feed",
+      "sees": "PythOracle:ONDO/0x000000",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "LDO": {
+      "token": "LDO",
+      "oracle_class": "anchored",
+      "sees": "ChainlinkOracle:LDO / ETH, ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "PAXG": {
+      "token": "PAXG",
+      "oracle_class": "anchored",
+      "sees": "real asset collateral",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "PYUSD": {
+      "token": "PYUSD",
+      "oracle_class": "market-feed",
+      "sees": "ChainlinkOracle:PYUSD / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "AUSD": {
+      "token": "AUSD",
+      "oracle_class": "fixed/hardcoded",
+      "sees": "FixedRateOracle:AUSD/0x000000",
+      "grade": "HIGH",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "eynETH-2": {
+      "token": "eynETH-2",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "eynETHx-2": {
+      "token": "eynETHx-2",
+      "oracle_class": "anchored",
+      "sees": "ChainlinkOracle:ETH / USD",
+      "grade": "ok",
+      "borrows": [
+        "EURC"
+      ]
+    },
+    "ePT-cUSDO-19JUN2025-3": {
+      "token": "ePT-cUSDO-19JUN2025-3",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        null
+      ]
+    },
+    "0xc455d7": {
+      "token": "0xc455d7",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        null
+      ]
+    },
+    "0xdac17f": {
+      "token": "0xdac17f",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0xa62b20": {
+      "token": "0xa62b20",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0xf3f491": {
+      "token": "0xf3f491",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "srUSDe": {
+      "token": "srUSDe",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0xda8a66": {
+      "token": "0xda8a66",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0xc58d04": {
+      "token": "0xc58d04",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "ePT-jrUSDe-15JAN2026-1": {
+      "token": "ePT-jrUSDe-15JAN2026-1",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "mMEV": {
+      "token": "mMEV",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "0x113206": {
+      "token": "0x113206",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "eUSDT-20": {
+      "token": "eUSDT-20",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0xa0b869"
+      ]
+    },
+    "PT-mMEV-30OCT2025": {
+      "token": "PT-mMEV-30OCT2025",
+      "oracle_class": "none",
+      "sees": "router/uoa \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "USDC"
+      ]
+    },
+    "0xe3ca83": {
+      "token": "0xe3ca83",
+      "oracle_class": "none",
+      "sees": "\uc5b4\ub311\ud130 \uc5c6\uc74c",
+      "grade": "ok",
+      "borrows": [
+        "0x8236a8"
+      ]
+    }
+  }
+}

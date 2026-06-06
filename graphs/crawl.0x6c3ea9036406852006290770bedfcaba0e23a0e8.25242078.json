@@ -57,14 +57,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 100000129.53,
-      "coverage": 1.1465
+      "children_sum": 87221198.11,
+      "coverage": 1.0
     },
     {
       "from_token": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
       "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
-      "amount": 100000129.53371,
-      "frac": 1.1465,
+      "amount": 87221198.10651927,
+      "frac": 1.0,
       "kind": "contract",
       "label": "ALMProxy",
       "depth": 1,
@@ -74,6 +74,8 @@
         "venue": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
         "detail": {
           "supplied": 100000129.5337,
+          "attributed": 87221198.1065,
+          "pool_liquidity": 87221209.0612,
           "underlying_symbol": "PYUSD",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -154,6 +156,34 @@
         "verifiable_onchain": true,
         "confidence": "HIGH"
       }
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0x5cd45451d92d77116daa1dd663260ae427d6862a",
+      "amount": 37627600.009686,
+      "frac": 0.0202,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "holder": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+      "amount": 29313151.127499,
+      "frac": 0.0157,
+      "kind": "erc20_receipt",
+      "label": "CurveStableSwapNG",
+      "depth": 0,
+      "note": "symbol=PYUSDUSDS"
+    },
+    {
+      "from_token": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+      "holder": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "amount": 99921896.65212679,
+      "frac": 1.0,
+      "kind": "contract",
+      "label": "ALMProxy",
+      "depth": 1
     }
   ]
 }

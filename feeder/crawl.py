@@ -61,11 +61,13 @@ def balanceof(token,addr,block):
 def total_supply(token,block): return _int(eth_call(token,SEL["totalSupply"],block))
 def get_decimals(token,block):
     d=_int(eth_call(token,SEL["decimals"],block)); return d if 0<d<=36 else 18
-def get_code(addr):
-    c=cache_get("code",addr)
+def get_code(addr,block="latest"):
+    tag=hex(block) if isinstance(block,int) else block
+    ck=addr if tag=="latest" else f"{addr}_{tag}"   # block 별 캐시 분리(historical 재현, latest 와 비충돌)
+    c=cache_get("code",ck)
     if c is not None: return c
-    code=rpc("eth_getCode",[addr,"latest"])
-    cache_put("code",addr,code); return code
+    code=rpc("eth_getCode",[addr,tag])
+    cache_put("code",ck,code); return code
 def read_addr(to,sel,block):
     h=eth_call(to,sel,block)
     if not h or h=="0x" or len(h)<42: return None

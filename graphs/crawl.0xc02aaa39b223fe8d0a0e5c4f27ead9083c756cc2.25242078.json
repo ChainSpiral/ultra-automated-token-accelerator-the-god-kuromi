@@ -23,14 +23,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 684196.41,
-      "coverage": 2.0844
+      "children_sum": 129924.72,
+      "coverage": 0.3958
     },
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x28a55c4b4f9615fde3cdaddf6cc01fcf2e38a6b0",
-      "amount": 144540.3559062781,
-      "frac": 0.4403,
+      "amount": 24753.97039926923,
+      "frac": 0.0754,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -40,6 +40,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 144540.3559,
+          "attributed": 24753.9704,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -51,8 +53,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x741aa7cfb2c7bf2a1e7d4da2e3df6a56ca4131f3",
-      "amount": 138355.0596841441,
-      "frac": 0.4215,
+      "amount": 23694.677036987105,
+      "frac": 0.0722,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -62,6 +64,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 138355.0597,
+          "attributed": 23694.677,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -73,8 +77,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
-      "amount": 107681.86696503278,
-      "frac": 0.328,
+      "amount": 18441.588376320655,
+      "frac": 0.0562,
       "kind": "safe",
       "label": "GnosisSafeProxy",
       "depth": 1,
@@ -84,6 +88,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 107681.867,
+          "attributed": 18441.5884,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -95,8 +101,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x34780c209d5c575cc1c1ceb57af95d4d2a69ddcf",
-      "amount": 95836.63379477811,
-      "frac": 0.292,
+      "amount": 16412.9746412123,
+      "frac": 0.05,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -106,6 +112,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 95836.6338,
+          "attributed": 16412.9746,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -117,8 +125,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0xc3fe8b63ea05e8e27b3f3358d646915d7ed931e4",
-      "amount": 58028.662347203746,
-      "frac": 0.1768,
+      "amount": 9937.984316181408,
+      "frac": 0.0303,
       "kind": "safe",
       "label": "GnosisSafeProxy",
       "depth": 1,
@@ -128,6 +136,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 58028.6623,
+          "attributed": 9937.9843,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -139,8 +149,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0xdc3abf85e090528669cf1b44ef4082b269c21a95",
-      "amount": 47724.602220288776,
-      "frac": 0.1454,
+      "amount": 8173.3117596856155,
+      "frac": 0.0249,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -150,6 +160,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 47724.6022,
+          "attributed": 8173.3118,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -161,8 +173,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x34d1231f15da58762a84ead35242896e7fec4ac1",
-      "amount": 46738.49615482475,
-      "frac": 0.1424,
+      "amount": 8004.4313096411715,
+      "frac": 0.0244,
       "kind": "safe",
       "label": "GnosisSafeProxy",
       "depth": 1,
@@ -172,6 +184,8 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 46738.4962,
+          "attributed": 8004.4313,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83
@@ -183,8 +197,8 @@
     {
       "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
       "holder": "0x2269ce2753e2967dd5322a56188c3d24435b3588",
-      "amount": 45290.7335814863,
-      "frac": 0.138,
+      "amount": 7756.487601042394,
+      "frac": 0.0236,
       "kind": "safe",
       "label": "GnosisSafeProxy",
       "depth": 1,
@@ -194,6 +208,56 @@
         "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
         "detail": {
           "supplied": 45290.7336,
+          "attributed": 7756.4876,
+          "pool_liquidity": 328249.5724,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "holder": "0xabbd5b2b0b034781e58434736728b9d0673de7f1",
+      "amount": 6884.560469068202,
+      "frac": 0.021,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 40199.4833,
+          "attributed": 6884.5605,
+          "pool_liquidity": 328249.5724,
+          "underlying_symbol": "WETH",
+          "ltv": 0.805,
+          "liq_threshold": 0.83
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "holder": "0xe40d278afd00e6187db21ff8c96d572359ef03bf",
+      "amount": 5864.73734488336,
+      "frac": 0.0179,
+      "kind": "safe",
+      "label": "GnosisSafeProxy",
+      "depth": 1,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+        "detail": {
+          "supplied": 34244.6569,
+          "attributed": 5864.7373,
+          "pool_liquidity": 328249.5724,
           "underlying_symbol": "WETH",
           "ltv": 0.805,
           "liq_threshold": 0.83

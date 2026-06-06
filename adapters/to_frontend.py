@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""bipartite-graphhh graph.json  ->  new-simulator frontend (simulator_graph.json shape).
+"""defi-dagggg graph.json  ->  new-simulator frontend (simulator_graph.json shape).
 Usage: python3 adapters/to_frontend.py graphs/wstETH.<block>.graph.json
 Out:   graphs/frontend/<token>.sim.json   { nodes:[{id,type,label,data}], edges:[{id,source,target,label,edge_type}], metadata }
 Mapping is lossless-enough for rendering; full detail stays in the source graph.json (drill-down)."""
@@ -61,13 +61,13 @@ def convert(g):
     for n in nodes: uniq.setdefault(n["id"],n)
     return {"nodes":list(uniq.values()),"edges":edges,
             "metadata":{"root":taddr,"symbol":sym,"snapshot_block":g["meta"]["snapshot_block"],
-                        "snapshot_ts":g["meta"]["snapshot_ts"],"source":"bipartite-graphhh/adapters/to_frontend.py",
+                        "snapshot_ts":g["meta"]["snapshot_ts"],"source":"defi-dagggg/adapters/to_frontend.py",
                         "note":"flat react-flow shape for new-simulator frontend; full detail in source graph.json"}}
 
 if __name__=="__main__":
     src=sys.argv[1]; g=json.load(open(src))
     out=convert(g)
-    od="/Users/link/bipartite-graphhh/graphs/frontend"
+    od="/Users/link/defi-dagggg/graphs/frontend"
     op=os.path.join(od,f"{out['metadata']['symbol']}.sim.json")
     open(op,"w").write(json.dumps(out,ensure_ascii=False,indent=2))
     print("saved",op)

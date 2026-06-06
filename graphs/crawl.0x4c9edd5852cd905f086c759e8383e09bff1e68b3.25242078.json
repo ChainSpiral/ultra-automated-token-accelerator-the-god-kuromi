@@ -30,8 +30,8 @@
       "depth": 1,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 157716030.76,
-      "coverage": 0.795
+      "children_sum": 168325533.52,
+      "coverage": 0.8485
     },
     {
       "from_token": "0x4579a27af00a62c0eb156349f31b345c08386419",
@@ -47,6 +47,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 54142239.0495,
+          "attributed": 54142239.0495,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -69,6 +71,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 44084235.0303,
+          "attributed": 44084235.0303,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -91,6 +95,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 14805855.4777,
+          "attributed": 14805855.4777,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -113,6 +119,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 11992821.265,
+          "attributed": 11992821.265,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -135,6 +143,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 9872737.1578,
+          "attributed": 9872737.1578,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -157,6 +167,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 8969221.1306,
+          "attributed": 8969221.1306,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -179,6 +191,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 7350017.76,
+          "attributed": 7350017.76,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -201,6 +215,8 @@
         "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
         "detail": {
           "supplied": 6498903.8908,
+          "attributed": 6498903.8908,
+          "pool_liquidity": 198383423.9408,
           "underlying_symbol": "sUSDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -208,6 +224,145 @@
         "verifiable_onchain": true,
         "confidence": "HIGH"
       }
+    },
+    {
+      "from_token": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "holder": "0x08c14b32c8a48894e4b933090ebcc9ce33b21135",
+      "amount": 5401730.803933855,
+      "frac": 0.0272,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2,
+      "via": "aave_v3",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 5401730.8039,
+          "attributed": 5401730.8039,
+          "pool_liquidity": 198383423.9408,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0x4579a27af00a62c0eb156349f31b345c08386419",
+      "holder": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "amount": 5207771.954028328,
+      "frac": 0.0263,
+      "kind": "erc20_receipt",
+      "label": "InitializableUpgradeabilityProxy",
+      "depth": 2,
+      "via": "aave_v3",
+      "note": "symbol=mPT-sUSDe",
+      "position": {
+        "role": "supply",
+        "venue": "0x4579a27af00a62c0eb156349f31b345c08386419",
+        "detail": {
+          "supplied": 5207771.954,
+          "attributed": 5207771.954,
+          "pool_liquidity": 198383423.9408,
+          "underlying_symbol": "sUSDe",
+          "ltv": 0.0,
+          "liq_threshold": 0.75
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0xf6ff1f7fceb2ce6d26687eaab5988b445d0b94a2",
+      "amount": 1299330.7520965738,
+      "frac": 0.4304,
+      "kind": "contract",
+      "label": "Proxy",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x3dd46846eed8d147841ae162c8425c08bd8e1b41",
+      "amount": 1009964.4592864024,
+      "frac": 0.3345,
+      "kind": "contract",
+      "label": "Proxy",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x714167f0075d49c2d5ff57ddf8c2f81f119dfeb7",
+      "amount": 147885.09042369362,
+      "frac": 0.049,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x99a54e2f1857e54e3fd0dc1fd09b32195c91e684",
+      "amount": 135890.19113160414,
+      "frac": 0.045,
+      "kind": "safe",
+      "label": "GnosisSafeProxy",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0xb76e40277b79b78dfa954cbec863d0e4fd0656ca",
+      "amount": 100000.0,
+      "frac": 0.0331,
+      "kind": "contract",
+      "label": "Proxy",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0xd44383f58fa3266ec62ca6c3d1faa5afa3a776d7",
+      "amount": 52991.81464989022,
+      "frac": 0.0176,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x6185ccd36ee2f9bf9b6fb835f6452cf874d3610f",
+      "amount": 49922.85797455583,
+      "frac": 0.0165,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x5912aa8d46aa411471aff0ed5c19a8e4f6e73d4a",
+      "amount": 49102.24040142371,
+      "frac": 0.0163,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x77203234b71004a32629f69d3f35c881250c89db",
+      "amount": 38233.08948994015,
+      "frac": 0.0127,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
+      "holder": "0x0e883b0120f26c1a6286eff44028e40991389e88",
+      "amount": 34563.32381870515,
+      "frac": 0.0114,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
     },
     {
       "from_token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
@@ -219,8 +374,8 @@
       "depth": 1,
       "note": "singleton ledger; expand via adapter:morpho",
       "resolved": true,
-      "children_sum": 87651685.1,
-      "coverage": 0.5923
+      "children_sum": 95698010.07,
+      "coverage": 0.6467
     },
     {
       "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
@@ -415,6 +570,54 @@
       }
     },
     {
+      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "holder": "0x2a691723fa94b2e38c1cda37dc64c7298f73378d",
+      "amount": 4550000.0,
+      "frac": 0.0307,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 2,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 4550000.0,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 4804539.8815,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
+      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "holder": "0x05d487ca1e8e4fc9f685ea1182d1b6156297353a",
+      "amount": 3496324.96314208,
+      "frac": 0.0236,
+      "kind": "safe",
+      "label": "SafeProxy",
+      "depth": 2,
+      "via": "morpho",
+      "position": {
+        "role": "collateral",
+        "venue": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+        "detail": {
+          "collateral": 3496324.9631,
+          "loan_token": "0xc139190f447e929f090edeb554d95abb8b18ac1c",
+          "loan_symbol": "USDtb",
+          "borrow": 3665152.9015,
+          "lltv": 0.915,
+          "utilization": 0.9056
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      }
+    },
+    {
       "from_token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
       "holder": "0x9ffe77146cc1da3edb87af163c6c32bab474b464",
       "amount": 95442137.51794422,
@@ -533,6 +736,15 @@
       "depth": 3
     },
     {
+      "from_token": "0x45a699a11a4a17fe0931ef3cea4bfc3235e659f2",
+      "holder": "0x663dbe05f86c03c394b56dc7a22bd11ef0129bc4",
+      "amount": 504864.0606300606,
+      "frac": 0.0207,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
       "from_token": "0xbf98480425a29197e5d99d003017f63a1e595d02",
       "holder": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
       "amount": 6333344.758805548,
@@ -610,6 +822,24 @@
       "holder": "0x0b129e1a16bcb6ec8fab24d2182ad59cc8fae4eb",
       "amount": 78907.59296893488,
       "frac": 0.0249,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "holder": "0xa066eb53ba93c09564501cc712cbee4797ea035c",
+      "amount": 71901.44240440468,
+      "frac": 0.0227,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 3
+    },
+    {
+      "from_token": "0x177768caf9d0e036725a51d3f60d7e20f2d4d194",
+      "holder": "0x78fca58f1e54a00e44f7d6c40b771a8ed97c2296",
+      "amount": 68235.14343261145,
+      "frac": 0.0216,
       "kind": "EOA",
       "label": "EOA",
       "depth": 3
@@ -706,6 +936,24 @@
       "depth": 1
     },
     {
+      "from_token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "holder": "0xa8687a15d4be32cc8f0a8a7b9704a4c3993d9613",
+      "amount": 25278295.862749543,
+      "frac": 0.018,
+      "kind": "contract",
+      "label": "OlympusTreasury",
+      "depth": 1
+    },
+    {
+      "from_token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "holder": "0xb3e6fc32cd058a1dd5ac8b0246e1701737764399",
+      "amount": 22501726.32446974,
+      "frac": 0.016,
+      "kind": "contract",
+      "label": "TransparentUpgradeableProxy",
+      "depth": 1
+    },
+    {
       "from_token": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
       "holder": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
       "amount": 1719452934.3435085,
@@ -733,14 +981,14 @@
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
-      "children_sum": 303873991.43,
-      "coverage": 1.9399
+      "children_sum": 136918452.89,
+      "coverage": 0.8741
     },
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0xd93814273b33dd33b32cd345225cfb65deb048dd",
-      "amount": 119510672.16594683,
-      "frac": 0.7629,
+      "amount": 53848689.913464874,
+      "frac": 0.3438,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -750,6 +998,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 119510672.1659,
+          "attributed": 53848689.9135,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -761,8 +1011,8 @@
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0xc468315a2df54f9c076bd5cfe5002ba211f74ca6",
-      "amount": 118578555.47202179,
-      "frac": 0.757,
+      "amount": 53428700.11753571,
+      "frac": 0.3411,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -772,6 +1022,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 118578555.472,
+          "attributed": 53428700.1175,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -783,8 +1035,8 @@
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0x9cbf099ff424979439dfba03f00b5961784c06ce",
-      "amount": 29721922.127963062,
-      "frac": 0.1897,
+      "amount": 13391997.043397712,
+      "frac": 0.0855,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1,
@@ -794,6 +1046,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 29721922.128,
+          "attributed": 13391997.0434,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -805,8 +1059,8 @@
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0xa9f86d9eaf339305cd36e76bc0de7ac5b024f075",
-      "amount": 17958759.262836687,
-      "frac": 0.1146,
+      "amount": 8091793.320618684,
+      "frac": 0.0517,
       "kind": "opaque",
       "label": "",
       "depth": 1,
@@ -816,6 +1070,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 17958759.2628,
+          "attributed": 8091793.3206,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -827,8 +1083,8 @@
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0x2a32219fa180752a9405734399937b1234780ad1",
-      "amount": 7508872.932779211,
-      "frac": 0.0479,
+      "amount": 3383321.0275596636,
+      "frac": 0.0216,
       "kind": "contract",
       "label": "TransparentUpgradeableProxy",
       "depth": 1,
@@ -838,6 +1094,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 7508872.9328,
+          "attributed": 3383321.0276,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -849,8 +1107,8 @@
     {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "amount": 5933115.644344018,
-      "frac": 0.0379,
+      "amount": 2673321.961651919,
+      "frac": 0.0171,
       "kind": "erc20_receipt",
       "label": "InitializableUpgradeabilityProxy",
       "depth": 1,
@@ -861,6 +1119,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 5933115.6443,
+          "attributed": 2673321.9617,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75
@@ -870,82 +1130,10 @@
       }
     },
     {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0xf6ff1f7fceb2ce6d26687eaab5988b445d0b94a2",
-      "amount": 1299330.7520965738,
-      "frac": 0.4304,
-      "kind": "contract",
-      "label": "Proxy",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0x3dd46846eed8d147841ae162c8425c08bd8e1b41",
-      "amount": 1009964.4592864024,
-      "frac": 0.3345,
-      "kind": "contract",
-      "label": "Proxy",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0x714167f0075d49c2d5ff57ddf8c2f81f119dfeb7",
-      "amount": 147885.09042369362,
-      "frac": 0.049,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0x99a54e2f1857e54e3fd0dc1fd09b32195c91e684",
-      "amount": 135890.19113160414,
-      "frac": 0.045,
-      "kind": "safe",
-      "label": "GnosisSafeProxy",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0xb76e40277b79b78dfa954cbec863d0e4fd0656ca",
-      "amount": 100000.0,
-      "frac": 0.0331,
-      "kind": "contract",
-      "label": "Proxy",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0xd44383f58fa3266ec62ca6c3d1faa5afa3a776d7",
-      "amount": 52991.81464989022,
-      "frac": 0.0176,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0x6185ccd36ee2f9bf9b6fb835f6452cf874d3610f",
-      "amount": 49922.85797455583,
-      "frac": 0.0165,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2
-    },
-    {
-      "from_token": "0xfec2adfa296fe189f53089fd5ccd8c28dd559cf2",
-      "holder": "0x5912aa8d46aa411471aff0ed5c19a8e4f6e73d4a",
-      "amount": 49102.24040142371,
-      "frac": 0.0163,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2
-    },
-    {
       "from_token": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
       "holder": "0xbafa91d22c093e42e28d7be417e38244e4153f78",
-      "amount": 4662093.825295115,
-      "frac": 0.0298,
+      "amount": 2100629.5102850995,
+      "frac": 0.0134,
       "kind": "safe",
       "label": "SafeProxy",
       "depth": 1,
@@ -955,6 +1143,8 @@
         "venue": "0x4f5923fc5fd4a93352581b38b7cd26943012decf",
         "detail": {
           "supplied": 4662093.8253,
+          "attributed": 2100629.5103,
+          "pool_liquidity": 156645498.8379,
           "underlying_symbol": "USDe",
           "ltv": 0.0,
           "liq_threshold": 0.75

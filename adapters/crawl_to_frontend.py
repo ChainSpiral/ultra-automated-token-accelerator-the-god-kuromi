@@ -164,7 +164,7 @@ def convert(d):
 if __name__ == "__main__":
     src = sys.argv[1]; d = json.load(open(src))
     out = convert(d)
-    od = "/Users/link/bipartite-graphhh/graphs/frontend"; os.makedirs(od, exist_ok=True)
+    od = "/Users/link/defi-dagggg/graphs/frontend"; os.makedirs(od, exist_ok=True)
     op = sys.argv[2] if len(sys.argv) > 2 else os.path.join(od, "crawl.sim.json")
     open(op, "w").write(json.dumps(out, ensure_ascii=False, indent=2))
     print("saved", op)

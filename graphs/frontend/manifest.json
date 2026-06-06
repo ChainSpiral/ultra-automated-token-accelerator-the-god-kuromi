@@ -88,8 +88,8 @@
       "symbol": "WETH",
       "file": "WETH.sim.json",
       "block": 25242078,
-      "nodes": 12,
-      "edges": 11
+      "nodes": 14,
+      "edges": 13
     },
     {
       "symbol": "WBTC",
@@ -123,22 +123,22 @@
       "symbol": "DAI",
       "file": "DAI.sim.json",
       "block": 25242078,
-      "nodes": 16,
-      "edges": 15
+      "nodes": 18,
+      "edges": 17
     },
     {
       "symbol": "USDS",
       "file": "USDS.sim.json",
       "block": 25242078,
-      "nodes": 30,
-      "edges": 33
+      "nodes": 44,
+      "edges": 48
     },
     {
       "symbol": "USDe",
       "file": "USDe.sim.json",
       "block": 25242078,
-      "nodes": 68,
-      "edges": 74
+      "nodes": 78,
+      "edges": 85
     },
     {
       "symbol": "sUSDe",
@@ -158,15 +158,15 @@
       "symbol": "GHO",
       "file": "GHO.sim.json",
       "block": 25242078,
-      "nodes": 41,
-      "edges": 40
+      "nodes": 47,
+      "edges": 46
     },
     {
       "symbol": "PYUSD",
       "file": "PYUSD.sim.json",
       "block": 25242078,
-      "nodes": 12,
-      "edges": 12
+      "nodes": 14,
+      "edges": 15
     }
   ]
 }

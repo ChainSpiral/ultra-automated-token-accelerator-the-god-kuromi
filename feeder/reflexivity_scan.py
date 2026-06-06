@@ -87,9 +87,10 @@ def backing_edges(sym, addr):
 
 # ---------- 축2: 오라클 ----------
 def collateral_oracle(addr):
-    """T 가 담보인 Morpho 시장 中 최대 시장의 오라클 주소+이름+빌리는 자산."""
+    """T 가 담보인 Morpho 시장 中 가장 reflexive 한(worst-oracle) 시장의 오라클+규모+빌리는 자산.
+    distressed/규모/집중도(mid)는 그 worst-oracle 시장 기준으로 일관 보고. (size 최대 시장은 size_* 로 별도 보존)"""
     q = ('{ markets(first:30, where:{collateralAssetAddress_in:["%s"]}){ items{ '
-         'marketId loanAsset{symbol} oracleAddress '
+         'marketId loanAsset{symbol} oracleAddress collateralAsset{priceUsd} '
          'state{collateralAssetsUsd supplyAssetsUsd borrowAssetsUsd} } } }') % addr
     items = (gql(q).get("markets") or {}).get("items") or []
     if not items:
@@ -100,14 +101,32 @@ def collateral_oracle(addr):
         return max(st.get("collateralAssetsUsd") or 0, st.get("supplyAssetsUsd") or 0,
                    st.get("borrowAssetsUsd") or 0)
     items.sort(key=lambda m: -msize(m))
-    top = items[0]
-    oracle = top.get("oracleAddress")
-    name = CR.etherscan_name(oracle) if oracle else None
-    tot = round(msize(top))
-    return {"market": top["marketId"][:10], "mid": top["marketId"],
-            "loan": top["loanAsset"]["symbol"],
-            "oracle": oracle, "oracle_name": name, "n_markets": len(items),
-            "collat_usd": round(tot), "_collat": addr}
+    top = items[0]   # size 최대 시장 (참고용 보존 — size_mid/size_usd)
+    # ★ multi-market: 상위 10개 마켓의 오라클을 모두 분류해 가장 reflexive 한 것 채택
+    #   (top-by-size 마켓만 보면, 안전한 큰 마켓 + reflexive 작은 마켓 토큰을 놓침)
+    SEV = {"bespoke/NAV": 3, "self-NAV": 2, "ext-feed?": 1, "market-feed": 0, "anchored": 0, "other": 0, "none": -1}
+    csym = ADDR2SYM.get(addr, "?")
+    worst = None   # (sev, cls, sees, oracle, market_dict)
+    for m in items[:10]:
+        orc = m.get("oracleAddress")
+        if not orc: continue
+        r = oracle_introspect(orc, addr, csym, CR.etherscan_name(orc))
+        sev = SEV.get(r["cls"], 0)
+        if worst is None or sev > worst[0]:
+            worst = (sev, r["cls"], r["sees"], orc, m)
+    if worst is None:
+        worst = (-1, "none", "오라클 없음", top.get("oracleAddress"), top)
+    wm = worst[4]                                   # worst-oracle 시장 = 보고 기준 시장
+    wmid = wm["marketId"]
+    tot = round(msize(wm))                          # ★ 규모도 worst-oracle 시장 기준 (오라클과 일관)
+    cp = (wm.get("collateralAsset") or {}).get("priceUsd")
+    distressed = ((cp is None) or (cp < 0.01)) and tot >= 1_000_000
+    return {"market": wmid[:10], "mid": wmid,       # mid=worst-oracle 시장 (집중도·오라클 모두 이 시장 기준 → 일관)
+            "worst_mid": wmid, "loan": wm["loanAsset"]["symbol"],
+            "oracle": worst[3], "oracle_name": CR.etherscan_name(worst[3]) if worst[3] else None,
+            "n_markets": len(items), "collat_usd": tot, "collat_price": cp, "distressed": distressed,
+            "size_mid": top["marketId"], "size_usd": round(msize(top)),   # 참고: size 최대 시장(별도 라벨, 미카운트)
+            "_collat": addr, "_precls": worst[1], "_presees": worst[2]}
 
 # --- 축B: 대출 시장 자기거래/집중 탐지 (private/sole-borrower 패턴 = Stream xUSD 수법) ---
 def market_risk(mid):
@@ -131,6 +150,7 @@ def market_risk(mid):
 # --- 정밀 오라클 introspection: MorphoChainlinkOracleV2 getter 를 keccak 셀렉터로 직접 호출 ---
 REAL_CRYPTO = {"ETH", "WETH", "STETH", "WSTETH", "BTC", "WBTC", "CBBTC", "TBTC", "LBTC"}
 STABLE = {"USDC", "USDT", "DAI"}            # 가장 깊은 독립 가격발견 스테이블
+REAL_RWA = {"XAU", "XAUT", "GOLD", "PAXG"}  # 독립 실물(금) — XAU/USD 등도 외부 앵커
 
 def _sel(sig): return "0x" + keccak(text=sig).hex()[:8]
 def _caddr(o, sig):
@@ -151,34 +171,47 @@ def oracle_introspect(oracle, collat, collat_sym, oracle_name):
     """오라클이 '무엇을 보는지' 정밀 판정: 가격이 독립 실물피드(ETH/USD 등)에 앵커되나,
     아니면 합성자산 자기 전용피드/NAV(reflexive)에만 의존하나."""
     if not oracle: return {"cls": "none", "sees": "대출담보 시장 없음"}
-    if (CR.get_code(oracle) or "0x") == "0x": return {"cls": "none", "sees": "EOA"}
+    if (CR.get_code(oracle, BLOCK) or "0x") == "0x": return {"cls": "none", "sees": "EOA"}
+    # 담보 자체가 실물 자산(WBTC/WETH/wstETH/gold…)이면 reflexivity 무관 → anchored (euler_scan 과 일관)
+    if collat_sym and collat_sym.upper() in (REAL_CRYPTO | REAL_RWA):
+        return {"cls": "anchored", "sees": "real asset collateral"}
     bv = _caddr(oracle, "BASE_VAULT()")
-    feeds = [f for f in (_caddr(oracle, s) for s in
-             ("BASE_FEED_1()", "BASE_FEED_2()", "QUOTE_FEED_1()", "QUOTE_FEED_2()")) if f]
+    # ★ 담보(BASE) 측 피드만으로 분류. QUOTE_FEED 는 대출/통화(USD) 정규화라 담보 reflexivity 와 무관.
+    #   (예: USD0++ 시장 [BASE:USD0++/USD, QUOTE:USDC/USD] → USDC 때문에 anchored 오판하던 FN 수정)
+    feeds = [f for f in (_caddr(oracle, s) for s in ("BASE_FEED_1()", "BASE_FEED_2()")) if f]
     descs = [(_desc(f) or "?") for f in feeds]
     # 실물 앵커 판정: 피드 설명에 실물자산 심볼이 "단어"로 등장하면 앵커됨.
     #   "rsETH/ETH exchange rate" → 단어 {RSETH,ETH,..} ∩ 실물 = {ETH} → 앵커 (ETH 표시가)
     #   "xUSD/USD" → 단어 {XUSD,USD} ∩ 실물 = ∅ → 앵커 아님 (USD 는 fiat 단위, 실물 아님)
-    anchored = any(set(re.split(r"[\s/]+", d.upper())) & (REAL_CRYPTO | STABLE) for d in descs)
+    anchored = any(set(re.split(r"[\s/]+", d.upper())) & (REAL_CRYPTO | STABLE | REAL_RWA) for d in descs)
     vault_self = False
     if bv:
         und = CR.read_addr(bv, CR.SEL["asset"], BLOCK)
         vault_self = (bv.lower() == collat) or (und and und.lower() == collat)
-    # 합성 자기참조 피드? 담보/그 기초자산 심볼이 피드 이름에 있거나 fundamental/naked 류
     und0 = CR.read_addr(collat, CR.SEL["asset"], BLOCK)
     synth = {collat_sym.upper()} | ({ADDR2SYM.get(und0.lower(), "").upper()} if und0 else set())
     synth.discard("")
-    refs_synth = any(any(sn and sn in d.upper() for sn in synth) for d in descs) \
-        or any(k in d.lower() for d in descs for k in ("fundamental", "naked"))
-    bespoke = (not anchored) and (refs_synth or (vault_self and bool(feeds)))
+    def _words(s): return set(re.split(r"[^A-Za-z0-9+]+", s.upper()))
+    # NAV/펀더멘털 = 자가보고(reflexive). 합성 자기참조는 단어경계 매칭(부분문자열 오탐 방지).
+    nav = any(k in d.lower() for d in descs for k in ("fundamental", "naked"))
+    refs_synth = any(synth & _words(d) for d in descs)
+    # market-feed: 실제 오라클 네트워크(Chainlink/Pyth/RedStone…)가 가격 소스면 합성이라도 정상 시장가.
+    #   네트워크 이름이 피드 컨트랙트명 또는 description 에 있으면 인정 (prose 피드 "RedStone Price Feed for USDe" 포함).
+    #   단 "fundamental"/"naked"(자가 NAV)는 nav 가 먼저 잡으므로 여기 안 옴.
+    NETS = ("chainlink", "pyth", "redstone", "chronicle", "stork", "aggregator")
+    feed_names = [(CR.etherscan_name(f) or "") for f in feeds]
+    market = bool(feeds) and (not nav) and \
+        any(any(nw in (nm + " " + d).lower() for nw in NETS) for nm, d in zip(feed_names, descs))
     sees = ", ".join(([("VAULT=SELF" if vault_self else "VAULT=" + ADDR2SYM.get((bv or '').lower(), (bv or '')[:8]))] if bv else [])
                      + [f"FEED:{d}" for d in descs]) or "(MorphoChainlink getter 없음)"
-    if anchored:                       cls = "anchored"        # 독립 실물피드 앵커 — 안전
-    elif bespoke:                      cls = "bespoke/NAV"     # 합성 전용/펀더멘털 피드 — 신뢰기반(위험)
+    if anchored:                       cls = "anchored"        # 실물 앵커 — 안전
+    elif nav:                          cls = "bespoke/NAV"     # 자가보고 NAV/펀더멘털 — reflexive
+    elif market:                       cls = "market-feed"     # 실제 네트워크 시장가 피드 — 정상
+    elif refs_synth:                   cls = "bespoke/NAV"     # 합성 전용 피드(네트워크 아님) — 신뢰기반
     elif vault_self and not feeds:     cls = "self-NAV"        # 자기 convertToAssets, peg 가정
     elif not bv and not feeds:
         # MorphoChainlink 아님 → 바이트코드에서 담보/기초자산 주소 참조 여부로 coarse 판정
-        lc = (CR.get_code(oracle) or "").lower()
+        lc = (CR.get_code(oracle, BLOCK) or "").lower()
         refs = (collat[2:].lower() in lc) or (und0 and und0[2:].lower() in lc)
         cls = "bespoke/NAV" if refs else "ext-feed?"
         sees = ("비표준 오라클: 바이트코드가 담보 참조(자기NAV류)" if refs
@@ -187,10 +220,9 @@ def oracle_introspect(oracle, collat, collat_sym, oracle_name):
     return {"cls": cls, "sees": sees}
 
 def classify_oracle(o):
+    # collateral_oracle 가 이미 multi-market 최악 분류를 _precls/_presees 에 계산해둠 (중복 introspection 제거)
     if not o: return ("none", "대출담보 시장 없음")
-    sym = ADDR2SYM.get(o["_collat"], "?")
-    r = oracle_introspect(o.get("oracle"), o["_collat"], sym, o.get("oracle_name"))
-    return (r["cls"], r["sees"])
+    return (o.get("_precls", "none"), o.get("_presees", ""))
 
 # ---------- 사이클 검출 (Tarjan) ----------
 # --- 토큰 자동발굴: Morpho 담보 universe 를 시장규모순으로 (하드코딩 목록 대신) ---
@@ -259,13 +291,12 @@ def main():
         risks = dict(ex.map(mr, TOKENS))
     # 3) 사이클(순환 백킹)
     sccs = [c for c in find_scc(graph) if len(c) > 1]
+    # self-loop (T 가 자기를 직접 백킹) 도 사이클 — SCC 출력에 포함시켜 cycle 플래그와 일관성 유지
+    sccs += [[a] for a, deps in graph.items() if a in deps]
     in_cycle = {a for c in sccs for a in c}
-    # self-loop (T 가 자기를 백킹)
-    for a, deps in graph.items():
-        if a in deps: in_cycle.add(a)
 
     print("순환 백킹 SCC:", [[ADDR2SYM.get(a, a[:8]) for a in c] for c in sccs] or "없음", "\n")
-    rows = []
+    rows = []; records = {}
     for s, a in TOKENS.items():
         al = a.lower()
         ocls, sees = classify_oracle(oracles[s])
@@ -277,9 +308,11 @@ def main():
         # 집중 = 한 차입자가 90%+ 점유 & 의미있는 규모 (차입자 수 무관 — conc 가 이미 독점 포착)
         sole = bool(rk and rk["conc"] > 0.90 and rk["borrow_usd"] >= 1_000_000)
         reflexive = ocls in ("bespoke/NAV",)
-        # 등급: 직접 순환백킹 = CRITICAL; (private 시장 + reflexive 오라클) = CRITICAL(사기 조합);
-        #       전용피드 또는 private 시장 단독 = HIGH; 자기NAV = MED
-        if cyc or (sole and reflexive): grade = "CRITICAL"
+        distressed = bool(o and o.get("distressed"))
+        # 등급: DISTRESSED(담보 가격불가+큰부채=이미 frozen/bad-debt, 신규위험 아님) 를 먼저 분리.
+        #       그 다음 LIVE 위험: 순환백킹/private+reflexive=CRITICAL; 전용피드/private=HIGH; 자기NAV=MED
+        if distressed: grade = "DISTRESSED"
+        elif cyc or (sole and reflexive): grade = "CRITICAL"
         elif reflexive or sole: grade = "HIGH"
         elif ocls == "self-NAV": grade = "MED"
         elif ocls == "ext-feed?": grade = "CHECK"   # 비표준 오라클, 외부피드 추정(수동확인)
@@ -291,11 +324,21 @@ def main():
             if sole: flags.append("★sole-borrower(private)")
             if looping: flags.append("looping")
             bsig = f" | 시장:{rk['n_borrowers']}borrowers 집중{rk['conc']*100:.0f}% ${rk['borrow_usd']:,}" + ("/" + ",".join(flags) if flags else "")
-        lends = (f"→{o['loan']} 담보시장 (${o['collat_usd']:,}) | 오라클[{ocls}]: {sees}{bsig}"
+        frozen_tag = " ⚠FROZEN(담보 가격불가→이미 bad-debt/aftermath 가능)" if distressed else ""
+        lends = (f"→{o['loan']} 담보시장 (${o['collat_usd']:,}) | 오라클[{ocls}]: {sees}{bsig}{frozen_tag}"
                  if o else "담보로 안 쓰임")
         rows.append((grade, s, cyc, ocls, deps, lends))
+        records[s] = {
+            "grade": grade, "token": a, "cycle": cyc, "oracle_class": ocls, "sees": sees,
+            "distressed": distressed, "backing": deps,
+            "loan": (o or {}).get("loan"), "collat_usd": (o or {}).get("collat_usd", 0),
+            "oracle": (o or {}).get("oracle"), "oracle_name": (o or {}).get("oracle_name"),
+            "n_markets": (o or {}).get("n_markets", 0),
+            "concentration": (rk["conc"] if rk else None), "n_borrowers": (rk["n_borrowers"] if rk else 0),
+            "borrow_usd": (rk["borrow_usd"] if rk else 0), "sole_borrower": sole, "looping": looping,
+        }
     # 출력
-    order = {"CRITICAL": 0, "HIGH": 1, "MED": 2, "ok": 3}
+    order = {"CRITICAL": 0, "DISTRESSED": 1, "HIGH": 2, "MED": 3, "CHECK": 4, "ok": 5}
     rows.sort(key=lambda r: (order.get(r[0], 9), r[1]))
     print(f"{'GRADE':9}{'TOKEN':8}{'순환백킹':8} 담보로 무엇을 빌리나 / 오라클이 보는 것")
     print("-" * 115)
@@ -304,8 +347,8 @@ def main():
         if deps != "-": print(f"{'':17}└ 백킹: {deps[:90]}")
     # save
     res = {"block": BLOCK, "scc": [[ADDR2SYM.get(a, a) for a in c] for c in sccs],
-           "tokens": {s: {"grade": g, "cycle": c, "oracle_class": ocls, "oracle": oracles[s],
-                          "backing": backing[s]} for (g, s, c, ocls, _deps, _l) in rows}}
+           "order": ["CRITICAL", "DISTRESSED", "HIGH", "MED", "CHECK", "ok"],
+           "tokens": records}
     p = os.path.join(ROOT, "..", "graphs", "frontend", "reflexivity.json")
     json.dump(res, open(p, "w"), indent=2)
     print(f"\nsaved -> {os.path.abspath(p)}")

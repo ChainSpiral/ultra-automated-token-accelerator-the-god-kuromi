@@ -167,6 +167,34 @@
         "address": "0x93d6393e66b56449b7926b9abfeb37606732de89",
         "approx": false
       }
+    },
+    {
+      "id": "0x5cd45451d92d77116daa1dd663260ae427d6862a",
+      "type": "protocol",
+      "label": "EOA 0x5cd4…862a",
+      "data": {
+        "category": "EOA",
+        "kind": "EOA",
+        "label": "EOA",
+        "symbol": null,
+        "depth": 0,
+        "address": "0x5cd45451d92d77116daa1dd663260ae427d6862a",
+        "approx": false
+      }
+    },
+    {
+      "id": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+      "type": "protocol",
+      "label": "PYUSDUSDS",
+      "data": {
+        "category": "erc20_receipt",
+        "kind": "erc20_receipt",
+        "label": "CurveStableSwapNG",
+        "symbol": "PYUSDUSDS",
+        "depth": 0,
+        "address": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+        "approx": false
+      }
     }
   ],
   "edges": [
@@ -223,7 +251,7 @@
       "edge_type": "aave_v3",
       "amount": 87221209.061232,
       "depth": 0,
-      "coverage": 1.1465
+      "coverage": 1.0
     },
     {
       "id": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d->0x1601843c5e9bc251a3272907010afa41fa18347e#6",
@@ -231,7 +259,7 @@
       "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
       "label": "예치 100,000,130 · LT 0%",
       "edge_type": "lending",
-      "amount": 100000129.53371,
+      "amount": 87221198.10651927,
       "depth": 1,
       "via": "aave_v3",
       "position": {
@@ -239,6 +267,8 @@
         "venue": "0x779224df1c756b4edd899854f32a53e8c2b2ce5d",
         "detail": {
           "supplied": 100000129.5337,
+          "attributed": 87221198.1065,
+          "pool_liquidity": 87221209.0612,
           "underlying_symbol": "PYUSD",
           "ltv": 0.0,
           "liq_threshold": 0.0
@@ -316,12 +346,39 @@
         "verifiable_onchain": true,
         "confidence": "HIGH"
       }
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0x5cd45451d92d77116daa1dd663260ae427d6862a#12",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0x5cd45451d92d77116daa1dd663260ae427d6862a",
+      "label": "2.0% 37,627,600",
+      "edge_type": "holds",
+      "amount": 37627600.009686,
+      "depth": 0
+    },
+    {
+      "id": "0x6c3ea9036406852006290770bedfcaba0e23a0e8->0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f#13",
+      "source": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "target": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+      "label": "1.6% 29,313,151",
+      "edge_type": "wrapper",
+      "amount": 29313151.127499,
+      "depth": 0
+    },
+    {
+      "id": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f->0x1601843c5e9bc251a3272907010afa41fa18347e#14",
+      "source": "0xa632d59b9b804a956bfaa9b48af3a1b74808fc1f",
+      "target": "0x1601843c5e9bc251a3272907010afa41fa18347e",
+      "label": "100.0% 99,921,897",
+      "edge_type": "holds",
+      "amount": 99921896.65212679,
+      "depth": 1
     }
   ],
   "metadata": {
     "root": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
     "block": 25242078,
-    "edge_count": 12,
+    "edge_count": 15,
     "source": "feeder/crawl + adapters/crawl_to_frontend.py"
   }
 }
