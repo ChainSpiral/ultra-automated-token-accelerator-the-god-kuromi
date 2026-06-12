@@ -1,0 +1,1338 @@
+{
+  "meta": {
+    "block": 25242078,
+    "generated_at": 1780987061,
+    "source": "feeder/reflexivity_deep.py",
+    "price_free_verdict": true,
+    "usd_fields_are_materiality_hints_only": true,
+    "seed_markets": 79,
+    "tokens": 15,
+    "crawl_mode": "off",
+    "fast_pricing": true,
+    "reserve_scan": false
+  },
+  "labels": {
+    "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee": "weETH",
+    "0x9d39a5de30e57443bff2a8307a4256c8797a3497": "sUSDe",
+    "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b": "syrupUSDC",
+    "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd": "sUSDS",
+    "0xc26a6fa2c37b38e549a4a1807543801db684f99c": "AA_FalconXUSDC",
+    "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094": "wsrUSD",
+    "0x3eaa0f0f0a5d3d595ae4e4b0d27f439d01c3e7b2": "PT-reUSD-25JUN2026",
+    "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb": "siUSD",
+    "0x88887be419578051ff9f4eb6c858a951921d8888": "stcUSD",
+    "0xb8d89678e75a973e74698c976716308abb8a46a4": "savUSD",
+    "0x5086bf358635b81d8c47c66d1c8b9e567db70c72": "reUSD",
+    "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3": "OETH",
+    "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94": "xUSD",
+    "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7": "rsETH",
+    "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83": "BONDUSD"
+  },
+  "stock": {
+    "rho": 1.0,
+    "matrix_nodes": [
+      "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "0xc26a6fa2c37b38e549a4a1807543801db684f99c",
+      "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+      "0x3eaa0f0f0a5d3d595ae4e4b0d27f439d01c3e7b2",
+      "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+      "0x88887be419578051ff9f4eb6c858a951921d8888",
+      "0xb8d89678e75a973e74698c976716308abb8a46a4",
+      "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+      "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+      "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+      "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83"
+    ],
+    "matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "cycles": [
+      {
+        "nodes": [
+          "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83"
+        ],
+        "rho": 1.0,
+        "cycle_path": [
+          "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+          "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83"
+        ],
+        "depth": 1,
+        "edges": [
+          {
+            "from": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+            "to": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+            "weight": 1.0,
+            "reason": "trivial-control-unbacked",
+            "graph": "stock",
+            "evidence": {
+              "pricing": {
+                "partition": "D",
+                "class": "oracle-mismatch",
+                "confidence": "HIGH",
+                "evidence": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+                "oracle_reads": [
+                  {
+                    "marketId": "0x1dca6989b0d2b0a546530b3a739e91402eee2e1536a2d3ded4f5ce589a9cd1c2",
+                    "loan": "USR",
+                    "oracle": "0x1b4a3f92e5fffd1d35a98751c9fe4472483579bb",
+                    "cls": "oracle-mismatch",
+                    "sees": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+                    "feeds": [
+                      {
+                        "address": "0x536218f9e9eb48863970252233c8f271f554c2d0",
+                        "description": "RETH / ETH"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "listed": false,
+              "has_supplying_vaults": false,
+              "classification": "TRIVIAL/depth-1/no-victims"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ranked": [
+    {
+      "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "symbol": "weETH",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 12,
+        "usd_hint": 188635942.00830823,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+            "loan_symbol": "PYUSD",
+            "supply_assets_native": 66756644.700556,
+            "borrow_assets_native": 60290553.720993
+          },
+          {
+            "marketId": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+            "loan_symbol": "RLUSD",
+            "supply_assets_native": 44228480.87461365,
+            "borrow_assets_native": 40090942.97484929
+          },
+          {
+            "marketId": "0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+            "loan_symbol": "WETH",
+            "supply_assets_native": 18276.06370852654,
+            "borrow_assets_native": 15992.906482416121
+          },
+          {
+            "marketId": "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 7647720.843449,
+            "borrow_assets_native": 7008509.418705
+          },
+          {
+            "marketId": "0x61765602144e91e5ac9f9e98b8584eae308f9951596fd7f5e0f59f21cd2bf664",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 1771177.78295,
+            "borrow_assets_native": 1526660.388204
+          },
+          {
+            "marketId": "0x58b332ca359ff83620416be363c874947c2d1ae7b5913d367ed761d1ad422b19",
+            "loan_symbol": "msETH",
+            "supply_assets_native": 886.0869696141322,
+            "borrow_assets_native": 796.9426223404865
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 3.0689061118708914
+    },
+    {
+      "token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "symbol": "sUSDe",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 5,
+        "usd_hint": 163590547.898526,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+            "loan_symbol": "USDtb",
+            "supply_assets_native": 120355963.46438336,
+            "borrow_assets_native": 108989917.93457286
+          },
+          {
+            "marketId": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+            "loan_symbol": "PYUSD",
+            "supply_assets_native": 53144397.68975,
+            "borrow_assets_native": 47982434.443295
+          },
+          {
+            "marketId": "0x39d11026eae1c6ec02aa4c0910778664089cdd97c3fd23f68f7cd05e2e95af48",
+            "loan_symbol": "DAI",
+            "supply_assets_native": 1622987.8647766055,
+            "borrow_assets_native": 1260376.2504501333
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+          "to": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+          "weight": 0.3846502959046591,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 1735476878085253579241601709,
+            "supply_raw": 4511830347104206123523503861,
+            "amount_native": 1735476878.0852535,
+            "supply_native": 4511830347.104206,
+            "src_symbol": "sUSDe",
+            "dst_symbol": "USDe"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 3.053439552401396
+    },
+    {
+      "token": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "symbol": "syrupUSDC",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 3,
+        "usd_hint": 148640226.07489046,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0xc9629945524f3fde56c7e8854a6c3d48e76b9d97236abbe73c750fcc7aeb8501",
+            "loan_symbol": "PYUSD",
+            "supply_assets_native": 75016219.029492,
+            "borrow_assets_native": 66695533.217016
+          },
+          {
+            "marketId": "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394",
+            "loan_symbol": "RLUSD",
+            "supply_assets_native": 51486654.76243451,
+            "borrow_assets_native": 46340851.657859065
+          },
+          {
+            "marketId": "0xab3196447663a41382ba4b4d55eab3fa702ee2cf071db224fd72492953040056",
+            "loan_symbol": "AUSD",
+            "supply_assets_native": 20912585.797166,
+            "borrow_assets_native": 18798081.942799
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "weight": 0.026235411933101555,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 1362143961111515,
+            "supply_raw": 51920052354614665,
+            "amount_native": 1362143961.111515,
+            "supply_native": 51920052354.61466,
+            "src_symbol": "syrupUSDC",
+            "dst_symbol": "USDC"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 3.0430340900284043
+    },
+    {
+      "token": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+      "symbol": "sUSDS",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 9,
+        "usd_hint": 79305523.94825104,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x3274643db77a064abd3bc851de77556a4ad2e2f502f4f0c80845fa8f909ecf0b",
+            "loan_symbol": "USDT",
+            "supply_assets_native": 80534674.967087,
+            "borrow_assets_native": 70075829.804393
+          },
+          {
+            "marketId": "0x09cf702bb8b6fe8c6effb6021744e365f598b89bc28f3ea7cd6c55115af825df",
+            "loan_symbol": "AUSD",
+            "supply_assets_native": 4178095.277438,
+            "borrow_assets_native": 3551152.895697
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+          "to": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "weight": 0.732055457846777,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 6158915984234560920657302260,
+            "supply_raw": 8413182250358489400264644082,
+            "amount_native": 6158915984.234561,
+            "supply_native": 8413182250.358489,
+            "src_symbol": "sUSDS",
+            "dst_symbol": "USDS"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.9748258610505713
+    },
+    {
+      "token": "0xc26a6fa2c37b38e549a4a1807543801db684f99c",
+      "symbol": "AA_FalconXUSDC",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 6,
+        "usd_hint": 76669704.04682103,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0xe83d72fa5b00dcd46d9e0e860d95aa540d5ec106da5833108a9f826f21f36f52",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 49378453.636607,
+            "borrow_assets_native": 45039922.703462
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.971155948125313
+    },
+    {
+      "token": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+      "symbol": "wsrUSD",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 6,
+        "usd_hint": 48932838.984510936,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 42885733.148729,
+            "borrow_assets_native": 38181425.252425
+          },
+          {
+            "marketId": "0xa9f70093360419b4544f17a4553ac5847d896be23f020295bd95c24af4df700e",
+            "loan_symbol": "USDT",
+            "supply_assets_native": 5410025.484398,
+            "borrow_assets_native": 5117862.177239
+          },
+          {
+            "marketId": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 928891.481647,
+            "borrow_assets_native": 835889.033728
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+          "to": "0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+          "weight": 250.9001133210712,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 75185487729750269005682381,
+            "supply_raw": 299663028184993716980696,
+            "amount_native": 75185487.72975028,
+            "supply_native": 299663.0281849937,
+            "src_symbol": "wsrUSD",
+            "dst_symbol": "rUSD"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.9224001055637796
+    },
+    {
+      "token": "0x3eaa0f0f0a5d3d595ae4e4b0d27f439d01c3e7b2",
+      "symbol": "PT-reUSD-25JUN2026",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 5,
+        "usd_hint": 39405050.82985542,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x9bc98c2f20ac58287ef2c860eea53a2fdc27c17a7817ff1206c0b7840cc7cd79",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 28546334.574502,
+            "borrow_assets_native": 24781608.172203
+          },
+          {
+            "marketId": "0x3fea56ab83b05840dc83dc6b3d2f2fbd938147cbaa8126bac529e6c820058253",
+            "loan_symbol": "USDT",
+            "supply_assets_native": 8830089.595522,
+            "borrow_assets_native": 7990585.086799
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.8988879757684916
+    },
+    {
+      "token": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+      "symbol": "siUSD",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 8,
+        "usd_hint": 33088089.740384392,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x64d2f82e674b764d618b630297813cd34bdc42a0fa66f92efa2ac8b1efe4bbd5",
+            "loan_symbol": "msUSD",
+            "supply_assets_native": 20006301.897346616,
+            "borrow_assets_native": 15348807.817884209
+          },
+          {
+            "marketId": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 14542894.152795,
+            "borrow_assets_native": 13339060.456556
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+          "to": "0x48f9e38f3070ad8945dfeae3fa70987722e3d89c",
+          "weight": 0.600138464195346,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 54061379971354866552724324,
+            "supply_raw": 90081511512246288350561396,
+            "amount_native": 54061379.971354865,
+            "supply_native": 90081511.51224628,
+            "src_symbol": "siUSD",
+            "dst_symbol": "iUSD"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.8799179270208644
+    },
+    {
+      "token": "0x88887be419578051ff9f4eb6c858a951921d8888",
+      "symbol": "stcUSD",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 8,
+        "usd_hint": 31002686.10481254,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0xdbf4bc065d4e76f4505a523f2bba5e5ccdca94c16d67c3a6ff1dadbcbb26d4aa",
+            "loan_symbol": "USDT",
+            "supply_assets_native": 17368706.893898,
+            "borrow_assets_native": 16420050.854316
+          },
+          {
+            "marketId": "0xeb17955ea422baeddbfb0b8d8c9086c5be7a9cfdefb292119a102e981a30062e",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 6169641.279252,
+            "borrow_assets_native": 5640841.255645
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [
+        {
+          "from": "0x88887be419578051ff9f4eb6c858a951921d8888",
+          "to": "0xcccc62962d17b8914c62d74ffb843d73b2a3cccc",
+          "weight": 0.8837630093266508,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 76862487326352302947525374,
+            "supply_raw": 86971831266070658291331159,
+            "amount_native": 76862487.3263523,
+            "supply_native": 86971831.26607066,
+            "src_symbol": "stcUSD",
+            "dst_symbol": "cUSD"
+          },
+          "graph": "stock"
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.8728498342990303
+    },
+    {
+      "token": "0xb8d89678e75a973e74698c976716308abb8a46a4",
+      "symbol": "savUSD",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 1,
+        "usd_hint": 18163076.385803174,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0xe07d416323a1afbfe0bf2fe27ffb549ff565cf5c86d21b79fc60664038e597c9",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 12891759.164528,
+            "borrow_assets_native": 11374980.931288
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.814797358326624
+    },
+    {
+      "token": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+      "symbol": "reUSD",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 5,
+        "usd_hint": 15754661.165668627,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x4565ac05d38b19374ccbb04c17cca60ca9353cd41824f0803d0fc7704f60eaed",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 15958657.841249,
+            "borrow_assets_native": 14511308.643431
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.79935227370932
+    },
+    {
+      "token": "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+      "symbol": "OETH",
+      "control": null,
+      "verdict": "NEEDS_DEEP_SCAN",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "target-needs-deep-pricing",
+        "confidence": "LOW",
+        "evidence": "fast discovery mode: vault-exposed synthetic/LRT candidate; rerun without --fast-pricing for oracle introspection",
+        "fast": true
+      },
+      "materiality": {
+        "vault_count": 3,
+        "usd_hint": 14148553.089938512,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 9089135.926713,
+            "borrow_assets_native": 8181367.677095
+          }
+        ]
+      },
+      "confidence": "LOW",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 2.78767801486178
+    },
+    {
+      "token": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+      "symbol": "xUSD",
+      "control": "historical-flow-positive",
+      "verdict": "POSITIVE",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 1.3130282765544998,
+      "inflation_factor": "infinite",
+      "cycle_path": [],
+      "cycle_depth": 2,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "bespoke/NAV",
+        "confidence": "MEDIUM",
+        "evidence": "FEED:xUSD/USD",
+        "oracle_reads": [
+          {
+            "marketId": "0xc05394d0261ed1c3c1af310007fdc4e64b3bcf650822b70526763fefc64b729e",
+            "loan": "USDC",
+            "oracle": "0xc36f094172a04d93f97f7154183e13bf241c0eef",
+            "cls": "ext-feed?",
+            "sees": "\ube44\ud45c\uc900 \uc624\ub77c\ud074(\uc678\ubd80\ud53c\ub4dc \ucd94\uc815, \uc218\ub3d9\ud655\uc778)",
+            "feeds": []
+          },
+          {
+            "marketId": "0x39fe55e5102beac5fb3caff54142f26250b97dcdb5bea6122818c7760f38b331",
+            "loan": "USDC",
+            "oracle": "0x2f05ac98d85101b5f826d51337df573cf02a0a38",
+            "cls": "bespoke/NAV",
+            "sees": "FEED:xUSD/USD",
+            "feeds": [
+              {
+                "address": "0xc36f094172a04d93f97f7154183e13bf241c0eef",
+                "description": "xUSD/USD"
+              }
+            ]
+          }
+        ]
+      },
+      "materiality": {
+        "vault_count": 0,
+        "usd_hint": 0,
+        "onchain_supply_assets": []
+      },
+      "confidence": "MEDIUM",
+      "stock_edges": [],
+      "flow": {
+        "rho": 1.3130282765544998,
+        "status": "positive",
+        "from_block": 23722236,
+        "to_block": 23723236,
+        "source": "/Users/link/defi-dagggg/graphs/frontend/flow.stream.json",
+        "seeds": [
+          "0x000000000004444c5dc75cb358380d2e3de08a90",
+          "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+          "0xd422e46baf00d3b2abddd800422c277f88ba7bec",
+          "0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a"
+        ],
+        "cycle_depth": 2,
+        "issued_claim_out_native": 9633.1291,
+        "returned_claim_in_native": 12648.5709,
+        "sample_window_loop_gain": 1.3130282765544998,
+        "root_cycle_edges": [
+          {
+            "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "to": "0x63242a4ea82847b20e506b63b0e2e2eff0cc6cb0",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 2372.092,
+            "count": 6,
+            "minblk": 23722272,
+            "maxblk": 23722957,
+            "tx": "0xe6dbb42e1b58216819fd58e21c9d7f922c5d0c2a68afb43e207e86ce0c020e71",
+            "in_cycle": true
+          },
+          {
+            "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "to": "0x111111125421ca6dc452d289314280a0f8842a65",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 0.7758,
+            "count": 2,
+            "minblk": 23722509,
+            "maxblk": 23722509,
+            "tx": "0x6be403bcb48fb2f362fa31cc9aacd3647a4bcc789e0f30fa1bacba08b02c95f1",
+            "in_cycle": true
+          },
+          {
+            "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "to": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 3579.0216,
+            "count": 10,
+            "minblk": 23722889,
+            "maxblk": 23723106,
+            "tx": "0xa14d5a7adaeaa96bda856ffa4e53e88fbabd049bfe247516f01ff74049858c80",
+            "in_cycle": true
+          },
+          {
+            "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "to": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 934.8476,
+            "count": 2,
+            "minblk": 23722910,
+            "maxblk": 23722910,
+            "tx": "0xea6c661c3f455c8c229670f0f90655f4afd370e66f577379829dab69cf3a00db",
+            "in_cycle": true
+          },
+          {
+            "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "to": "0x207e1074858a7e78f17002075739ed2745dbaece",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 1869.6375,
+            "count": 2,
+            "minblk": 23723068,
+            "maxblk": 23723068,
+            "tx": "0x2d333d58d81160b3b8acce4c85dbd8a75fae3c9a6f67a269c71372076bcdc45a",
+            "in_cycle": true
+          },
+          {
+            "from": "0x5745050e787f693ed21e4418d528f78ad9c374a6",
+            "to": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 1163.5599,
+            "count": 4,
+            "minblk": 23722266,
+            "maxblk": 23723084,
+            "tx": "0x9ea9a391e7dc9099a3a757b353caa3f8ac3da09d13780e8c14849d3311b85e87",
+            "in_cycle": true
+          },
+          {
+            "from": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+            "to": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 5998.5785,
+            "count": 6,
+            "minblk": 23722869,
+            "maxblk": 23722883,
+            "tx": "0x53f105866e2b714e8bda14b0c78d221639c65307a99e2504ed0924370f384bb6",
+            "in_cycle": true
+          },
+          {
+            "from": "0x365084b05fa7d5028346bd21d842ed0601bab5b8",
+            "to": "0x000000000004444c5dc75cb358380d2e3de08a90",
+            "asset": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+            "amount": 708.1291,
+            "count": 4,
+            "minblk": 23723071,
+            "maxblk": 23723133,
+            "tx": "0x54eb77cf427cd7b3d9e6804274b1caac9ecf5c7d71e16af3819e69bd44474649",
+            "in_cycle": true
+          }
+        ],
+        "address_scc_count": 4,
+        "notes": "rho is set from closed recycled-claim flow cycles; amounts are token-native."
+      },
+      "opaque": [],
+      "rank_score": 0.5
+    },
+    {
+      "token": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+      "symbol": "BONDUSD",
+      "control": "trivial-positive",
+      "verdict": "TRIVIAL_POSITIVE",
+      "rho_stock": 1.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": "infinite",
+      "cycle_path": [
+        "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+        "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83"
+      ],
+      "cycle_depth": 1,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "oracle-mismatch",
+        "confidence": "HIGH",
+        "evidence": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+        "oracle_reads": [
+          {
+            "marketId": "0x1dca6989b0d2b0a546530b3a739e91402eee2e1536a2d3ded4f5ce589a9cd1c2",
+            "loan": "USR",
+            "oracle": "0x1b4a3f92e5fffd1d35a98751c9fe4472483579bb",
+            "cls": "oracle-mismatch",
+            "sees": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+            "feeds": [
+              {
+                "address": "0x536218f9e9eb48863970252233c8f271f554c2d0",
+                "description": "RETH / ETH"
+              }
+            ]
+          }
+        ]
+      },
+      "materiality": {
+        "vault_count": 0,
+        "usd_hint": 0,
+        "onchain_supply_assets": []
+      },
+      "confidence": "HIGH",
+      "stock_edges": [
+        {
+          "from": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+          "to": "0x8413d2a624a9fa8b6d3ec7b22cf7f62e55d6bc83",
+          "weight": 1.0,
+          "reason": "trivial-control-unbacked",
+          "graph": "stock",
+          "evidence": {
+            "pricing": {
+              "partition": "D",
+              "class": "oracle-mismatch",
+              "confidence": "HIGH",
+              "evidence": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+              "oracle_reads": [
+                {
+                  "marketId": "0x1dca6989b0d2b0a546530b3a739e91402eee2e1536a2d3ded4f5ce589a9cd1c2",
+                  "loan": "USR",
+                  "oracle": "0x1b4a3f92e5fffd1d35a98751c9fe4472483579bb",
+                  "cls": "oracle-mismatch",
+                  "sees": "FEED:RETH / ETH | feed asset does not match collateral symbol/underlying",
+                  "feeds": [
+                    {
+                      "address": "0x536218f9e9eb48863970252233c8f271f554c2d0",
+                      "description": "RETH / ETH"
+                    }
+                  ]
+                }
+              ]
+            },
+            "listed": false,
+            "has_supplying_vaults": false,
+            "classification": "TRIVIAL/depth-1/no-victims"
+          }
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 0.25
+    },
+    {
+      "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "symbol": "rsETH",
+      "control": "negative-control",
+      "verdict": "NEGATIVE",
+      "rho_stock": 0.0,
+      "rho_stock_global": 1.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "R",
+        "class": "anchored",
+        "confidence": "HIGH",
+        "evidence": "FEED:rsETH/ETH exchange rate",
+        "oracle_reads": [
+          {
+            "marketId": "0xeeabdcb98e9f7ec216d259a2c026bbb701971efae0b44eec79a86053f9b128b6",
+            "loan": "WETH",
+            "oracle": "0x423671566de77e9cb50e9be4383ba78ffc808a4e",
+            "cls": "other",
+            "sees": "FEED:?",
+            "feeds": [
+              {
+                "address": "0xa736eae8805ddeffba40cab8c99bcb309deabd9b",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "marketId": "0xba761af4134efb0855adfba638945f454f0a704af11fc93439e20c7c5ebab942",
+            "loan": "WETH",
+            "oracle": "0x2a2658fc208ed00e11d96d3f7470618924466877",
+            "cls": "anchored",
+            "sees": "FEED:rsETH/ETH exchange rate",
+            "feeds": [
+              {
+                "address": "0xbac9fc6917c067f763eda63f569e0c6a7dbbcd80",
+                "description": "rsETH/ETH exchange rate"
+              }
+            ]
+          },
+          {
+            "marketId": "0xb7aaedc202cc26f4d714507605efdd2d03cf9f4994a814cb19bb49a513a506a8",
+            "loan": "WETH",
+            "oracle": "0x4098b3f2a0e8897d7f253e3035f7dd3285594dad",
+            "cls": "market-feed",
+            "sees": "FEED:?",
+            "feeds": [
+              {
+                "address": "0x03c68933f7a3f76875c0bc670a58e69294cdfd01",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "marketId": "0xa72f4af2570dca1b356aa6c1e6a804d0d3df5b23bb092189776d0dc652feabb4",
+            "loan": "USDA",
+            "oracle": "0x599ad2053bfe462ab535f6370b9abba137cdeb83",
+            "cls": "anchored",
+            "sees": "FEED:?, FEED:ETH / USD",
+            "feeds": [
+              {
+                "address": "0xa736eae8805ddeffba40cab8c99bcb309deabd9b",
+                "description": ""
+              },
+              {
+                "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+                "description": "ETH / USD"
+              }
+            ]
+          },
+          {
+            "marketId": "0x0188775134d3541a13801c090658734743bcfe54662b045644f8e19d31958dfa",
+            "loan": "wstETH",
+            "oracle": "0x24c02eb0b4c2819f9b33264e367bb6536c9fe664",
+            "cls": "anchored",
+            "sees": "FEED:rsETH/ETH exchange rate",
+            "feeds": [
+              {
+                "address": "0xbac9fc6917c067f763eda63f569e0c6a7dbbcd80",
+                "description": "rsETH/ETH exchange rate"
+              }
+            ]
+          }
+        ]
+      },
+      "materiality": {
+        "vault_count": 0,
+        "usd_hint": 0,
+        "onchain_supply_assets": []
+      },
+      "confidence": "HIGH",
+      "stock_edges": [],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": -3.0
+    }
+  ]
+}

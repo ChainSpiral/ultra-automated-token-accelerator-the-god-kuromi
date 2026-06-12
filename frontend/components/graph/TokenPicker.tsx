@@ -2,7 +2,17 @@
 
 import { useRouter } from "next/navigation";
 
-type Tok = { symbol: string; nodes: number; edges: number; block: number };
+type Tok = {
+  symbol: string;
+  nodes: number;
+  edges: number;
+  block: number;
+  avg_coverage?: number | null;
+};
+
+function fmtCov(v: number | null | undefined): string {
+  return typeof v === "number" ? `${(v * 100).toFixed(0)}%` : "-";
+}
 
 export function TokenPicker({ tokens, selected }: { tokens: Tok[]; selected?: string }) {
   const router = useRouter();
@@ -16,7 +26,7 @@ export function TokenPicker({ tokens, selected }: { tokens: Tok[]; selected?: st
       >
         {tokens.map((t) => (
           <option key={t.symbol} value={t.symbol}>
-            {t.symbol}  ({t.nodes}n/{t.edges}e)
+            {t.symbol}  ({t.nodes}n/{t.edges}e · cov {fmtCov(t.avg_coverage)})
           </option>
         ))}
       </select>

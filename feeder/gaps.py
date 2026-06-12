@@ -13,7 +13,14 @@ def is_gap(e):
     k = str(e.get("kind", ""))
     if k.startswith("ledger:"):
         return e.get("resolved") is False  # 어댑터 매칭됐지만 미해결(스텁)
-    return k in ("contract", "opaque")     # 정체불명 컨트랙트 = 새 프로토콜 후보
+    return k in ("contract", "proxy", "opaque")  # 정체불명 컨트랙트 = 새 프로토콜 후보
+
+def gap_label(e):
+    px = e.get("proxy") or {}
+    impl = px.get("implementation_label")
+    if impl:
+        return f"{impl} (proxy:{px.get('proxy_label') or px.get('proxy_kind')})"
+    return e.get("label") or e.get("kind") or "?"
 
 def main():
     files = [f for f in glob.glob(os.path.join(GDIR, "crawl.*.json"))]
@@ -26,7 +33,7 @@ def main():
         for e in d.get("edges", []):
             if not is_gap(e): continue
             total_gap_edges += 1
-            lab = e.get("label") or e.get("kind") or "?"
+            lab = gap_label(e)
             g = by_label[lab]
             g["count"] += 1; g["addrs"].add(e["holder"]); g["tokens"].add(root[:10]); g["depths"].add(e.get("depth"))
     rows = sorted(by_label.items(), key=lambda kv: (-len(kv[1]["tokens"]), -kv[1]["count"]))

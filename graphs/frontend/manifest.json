@@ -4,169 +4,217 @@
       "symbol": "stETH",
       "file": "stETH.sim.json",
       "block": 25242078,
-      "nodes": 47,
-      "edges": 50
+      "nodes": 32,
+      "edges": 35,
+      "avg_coverage": 0.7470833333333333,
+      "coverage_edges": 6
     },
     {
       "symbol": "wstETH",
       "file": "wstETH.sim.json",
       "block": 25242078,
-      "nodes": 32,
-      "edges": 32
+      "nodes": 27,
+      "edges": 30,
+      "avg_coverage": 0.68665,
+      "coverage_edges": 4
     },
     {
       "symbol": "rsETH",
       "file": "rsETH.sim.json",
       "block": 25242078,
       "nodes": 14,
-      "edges": 15
+      "edges": 15,
+      "avg_coverage": 0.9429000000000001,
+      "coverage_edges": 2
     },
     {
       "symbol": "weETH",
       "file": "weETH.sim.json",
       "block": 25242078,
       "nodes": 55,
-      "edges": 55
+      "edges": 55,
+      "avg_coverage": 0.7810666666666667,
+      "coverage_edges": 3
     },
     {
       "symbol": "ezETH",
       "file": "ezETH.sim.json",
       "block": 25242078,
       "nodes": 11,
-      "edges": 10
+      "edges": 10,
+      "avg_coverage": 0.99395,
+      "coverage_edges": 2
     },
     {
       "symbol": "rETH",
       "file": "rETH.sim.json",
       "block": 25242078,
       "nodes": 26,
-      "edges": 26
+      "edges": 26,
+      "avg_coverage": 0.77,
+      "coverage_edges": 2
     },
     {
       "symbol": "cbETH",
       "file": "cbETH.sim.json",
       "block": 25242078,
       "nodes": 9,
-      "edges": 8
+      "edges": 8,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "ETHx",
       "file": "ETHx.sim.json",
       "block": 25242078,
       "nodes": 18,
-      "edges": 22
+      "edges": 22,
+      "avg_coverage": 0.9576714285714285,
+      "coverage_edges": 7
     },
     {
       "symbol": "sfrxETH",
       "file": "sfrxETH.sim.json",
       "block": 25242078,
       "nodes": 23,
-      "edges": 22
+      "edges": 22,
+      "avg_coverage": 0.842,
+      "coverage_edges": 1
     },
     {
       "symbol": "mETH",
       "file": "mETH.sim.json",
       "block": 25242078,
       "nodes": 9,
-      "edges": 8
+      "edges": 8,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "pufETH",
       "file": "pufETH.sim.json",
       "block": 25242078,
       "nodes": 63,
-      "edges": 64
+      "edges": 64,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "swETH",
       "file": "swETH.sim.json",
       "block": 25242078,
       "nodes": 57,
-      "edges": 60
+      "edges": 60,
+      "avg_coverage": 0.1057,
+      "coverage_edges": 1
     },
     {
       "symbol": "WETH",
       "file": "WETH.sim.json",
       "block": 25242078,
       "nodes": 14,
-      "edges": 13
+      "edges": 13,
+      "avg_coverage": 0.3958,
+      "coverage_edges": 1
     },
     {
       "symbol": "WBTC",
       "file": "WBTC.sim.json",
       "block": 25242078,
       "nodes": 40,
-      "edges": 39
+      "edges": 39,
+      "avg_coverage": 0.41395,
+      "coverage_edges": 4
     },
     {
       "symbol": "cbBTC",
       "file": "cbBTC.sim.json",
       "block": 25242078,
       "nodes": 32,
-      "edges": 32
+      "edges": 32,
+      "avg_coverage": 0.8074,
+      "coverage_edges": 3
     },
     {
       "symbol": "USDC",
       "file": "USDC.sim.json",
       "block": 25242078,
       "nodes": 9,
-      "edges": 8
+      "edges": 8,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "USDT",
       "file": "USDT.sim.json",
       "block": 25242078,
       "nodes": 7,
-      "edges": 6
+      "edges": 6,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "DAI",
       "file": "DAI.sim.json",
       "block": 25242078,
       "nodes": 18,
-      "edges": 17
+      "edges": 17,
+      "avg_coverage": 0.78165,
+      "coverage_edges": 2
     },
     {
       "symbol": "USDS",
       "file": "USDS.sim.json",
       "block": 25242078,
       "nodes": 44,
-      "edges": 48
+      "edges": 48,
+      "avg_coverage": 0.99775,
+      "coverage_edges": 2
     },
     {
       "symbol": "USDe",
       "file": "USDe.sim.json",
       "block": 25242078,
       "nodes": 78,
-      "edges": 85
+      "edges": 85,
+      "avg_coverage": 0.7897666666666666,
+      "coverage_edges": 3
     },
     {
       "symbol": "sUSDe",
       "file": "sUSDe.sim.json",
       "block": 25242078,
       "nodes": 48,
-      "edges": 51
+      "edges": 51,
+      "avg_coverage": 0.6936500000000001,
+      "coverage_edges": 2
     },
     {
       "symbol": "crvUSD",
       "file": "crvUSD.sim.json",
       "block": 25242078,
       "nodes": 9,
-      "edges": 8
+      "edges": 8,
+      "avg_coverage": null,
+      "coverage_edges": 0
     },
     {
       "symbol": "GHO",
       "file": "GHO.sim.json",
       "block": 25242078,
       "nodes": 47,
-      "edges": 46
+      "edges": 46,
+      "avg_coverage": 0.9894499999999999,
+      "coverage_edges": 2
     },
     {
       "symbol": "PYUSD",
       "file": "PYUSD.sim.json",
       "block": 25242078,
       "nodes": 14,
-      "edges": 15
+      "edges": 15,
+      "avg_coverage": 0.9958,
+      "coverage_edges": 2
     }
   ]
 }

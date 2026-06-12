@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-11",
+  "purpose": "Stable registry for vault operators, vault frameworks, and high-signal vault instances seen in holder or borrow-flow graphs.",
+  "rules": [
+    "Use this file to pin known vault identities before guessing from generic contract names.",
+    "Do not infer owner or curator beyond the listed evidence.",
+    "If evidence is weak, keep owner_or_curator as null and confidence LOW.",
+    "Gross lending positions can be much larger than vault TVL when the vault loops or rebalances across venues."
+  ],
+  "entities": {
+    "ipor_fusion": {
+      "display_name": "IPOR Fusion",
+      "operator_or_project": "IPOR Labs / IPOR DAO",
+      "entity_type": "vault_infrastructure",
+      "frameworks": [
+        "PlasmaVault"
+      ],
+      "confidence": "HIGH",
+      "why_it_matters": "Fusion PlasmaVaults can batch fuse actions across Aave, Spark, Morpho and other venues; they should be treated as strategy vaults, not simple EOAs or passive token holders.",
+      "source_urls": [
+        "https://github.com/IPOR-Labs/ipor-fusion.py",
+        "https://docs.ipor.io/build-on-fusion/atomists/vault-configuration-step-by-step/substrates",
+        "https://app.vaults.fyi/opportunity/mainnet/0xB8a451107A9f87FDe481D4D686247D6e43Ed715e",
+        "https://app.ipor.io/fusion/ethereum/0xb8a451107a9f87fde481d4d686247d6e43ed715e"
+      ],
+      "risk_notes": [
+        "A January 2026 public report described a PlasmaVault-related exploit involving a legacy EIP-7702 issue; verify whether an observed vault uses affected components before generalizing risk.",
+        "A generic PlasmaVaultBase label is framework-level evidence. Use vault name, symbol, asset, curator and current positions to identify the concrete strategy."
+      ]
+    },
+    "mellow": {
+      "display_name": "Mellow",
+      "operator_or_project": "Mellow",
+      "entity_type": "vault_infrastructure",
+      "frameworks": [
+        "Vault",
+        "Subvault",
+        "TokenizedShareManager"
+      ],
+      "confidence": "HIGH",
+      "why_it_matters": "Mellow vaults split execution across parent Vault and Subvault accounts; subvault holders should be rolled up to the parent vault/product when interpreting holder graphs.",
+      "source_urls": [
+        "local:feeder/mellow.py",
+        "local:graphs/crawl.0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0.25242078.json"
+      ],
+      "risk_notes": [
+        "Do not label a Subvault as a separate end-user holder; identify parent_vault and share_manager first."
+      ]
+    },
+    "etherfi_boringvault": {
+      "display_name": "Ether.fi BoringVault",
+      "operator_or_project": "Ether.fi",
+      "entity_type": "vault_product",
+      "frameworks": [
+        "BoringVault"
+      ],
+      "confidence": "MEDIUM",
+      "why_it_matters": "BoringVault receipts such as liquidETH can hold or route through Aave/Spark receipt tokens; interpret as managed vault product exposure rather than a simple wallet.",
+      "source_urls": [
+        "local:prior-crawl-observation",
+        "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+      ],
+      "risk_notes": [
+        "Current owner/authority should be re-read before making governance or control claims."
+      ]
+    },
+    "veda_golden_goose": {
+      "display_name": "Golden Goose Vault",
+      "operator_or_project": "Veda / Lido GGV",
+      "entity_type": "vault_product",
+      "frameworks": [
+        "BoringVault"
+      ],
+      "confidence": "HIGH",
+      "why_it_matters": "GG is a BoringVault receipt for the Lido Golden Goose Vault product. In holder graphs, treat the vault itself as the relevant managed product exposure; expanding GG token shareholders usually adds noise.",
+      "source_urls": [
+        "https://stake.lido.fi/earn/ggv/deposit",
+        "https://etherscan.io/address/0xef417fce1883c6653e7dc6af7c6f85ccde84aa09"
+      ],
+      "risk_notes": [
+        "Vault allocation and deposit status should be re-read before making current portfolio claims.",
+        "The GG token represents shares of the vault; holder expansion is not the same as strategy allocation."
+      ]
+    },
+    "inheritable_vault": {
+      "display_name": "InheritableVault",
+      "operator_or_project": null,
+      "entity_type": "custody_wallet_framework",
+      "frameworks": [
+        "ERC1967Proxy",
+        "UUPSUpgradeable",
+        "Ownable2StepUpgradeable",
+        "InheritableVault"
+      ],
+      "confidence": "HIGH",
+      "why_it_matters": "InheritableVault contracts are upgradeable general wallets with dead-man-switch ownership transfer. Treat them as controlled custody wallets, not DeFi strategy vaults or passive EOAs.",
+      "source_urls": [
+        "https://etherscan.io/address/0x000000000073f8f0541e942d85ef5fb5d0e84844",
+        "https://etherscan.io/address/0x87f93115e313cba3e9d7a559424d1be5cac01b4d#code"
+      ],
+      "risk_notes": [
+        "The contract exposes owner-only arbitrary execution and ERC20 transfer functions.",
+        "Owner and inheritor addresses are account-level control evidence only; do not infer real-world identity without separate evidence."
+      ]
+    }
+  },
+  "instances": {
+    "0xb8a451107a9f87fde481d4d686247d6e43ed715e": {
+      "entity": "ipor_fusion",
+      "chain": "ethereum",
+      "contract_label": "PlasmaVaultBase",
+      "proxy_label": "PlasmaVault",
+      "implementation": "0x2de7320004f837925ba31326ff66210be90171ab",
+      "name": "Fusion stETH looping Ethereum",
+      "symbol": "fusnstETH",
+      "asset": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "asset_symbol": "stETH",
+      "curator": "IPOR DAO",
+      "strategy_summary": "stETH looping vault that actively uses Morpho, Aave, Aave Lido and Spark-style lending venues.",
+      "classification": "managed_leverage_looping_vault",
+      "confidence": "HIGH",
+      "evidence": {
+        "onchain_name": "Fusion stETH looping Ethereum",
+        "onchain_symbol": "fusnstETH",
+        "onchain_asset": "stETH",
+        "local_flow_observation": "In WETH borrow-flow sample, receiver 0xb8a451...715e repeatedly borrowed and reallocated WETH across Morpho Blue, Aave aEthWETH, Aave Lido aEthLidoWETH and Spark spWETH."
+      }
+    },
+    "0x277c6a642564a91ff78b008022d65683cee5ccc5": {
+      "entity": "mellow",
+      "chain": "ethereum",
+      "contract_label": "Vault",
+      "proxy_label": "TransparentUpgradeableProxy",
+      "name": "Mellow stRATEGY / strETH Vault",
+      "symbol": "strETH",
+      "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+      "classification": "parent_strategy_vault",
+      "confidence": "HIGH",
+      "evidence": {
+        "subvault_count": 8,
+        "known_subvaults_seen": [
+          "0x3883d8cdcdda03784908cfa2f34ed2cf1604e4d7",
+          "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080"
+        ]
+      }
+    },
+    "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080": {
+      "entity": "mellow",
+      "chain": "ethereum",
+      "contract_label": "Subvault",
+      "parent_vault": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+      "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+      "classification": "subvault_execution_account",
+      "confidence": "HIGH"
+    },
+    "0x3883d8cdcdda03784908cfa2f34ed2cf1604e4d7": {
+      "entity": "mellow",
+      "chain": "ethereum",
+      "contract_label": "Subvault",
+      "parent_vault": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+      "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+      "classification": "subvault_execution_account",
+      "confidence": "HIGH"
+    },
+    "0xf0bb20865277abd641a307ece5ee04e79073416c": {
+      "entity": "etherfi_boringvault",
+      "chain": "ethereum",
+      "contract_label": "BoringVault",
+      "name": "Ether.fi Liquid ETH",
+      "symbol": "liquidETH",
+      "classification": "managed_vault_receipt",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "local_observation": "Seen as liquidETH BoringVault holding spwstETH, wstETH and WETH in previous wstETH flow work."
+      }
+    },
+    "0x000000000073f8f0541e942d85ef5fb5d0e84844": {
+      "entity": "inheritable_vault",
+      "chain": "ethereum",
+      "contract_label": "InheritableVault",
+      "proxy_label": "ERC1967Proxy",
+      "implementation": "0x87f93115e313cba3e9d7a559424d1be5cac01b4d",
+      "name": "InheritableVault custody wallet",
+      "classification": "upgradeable_inheritance_custody_wallet",
+      "confidence": "HIGH",
+      "evidence": {
+        "source_comment": "UUPS-upgradeable general wallet with dead-man's-switch ownership transfer",
+        "local_snapshot_observation": "At block 25242078, this address held about 182,418 stETH directly and no wstETH or WETH."
+      }
+    },
+    "0xef417fce1883c6653e7dc6af7c6f85ccde84aa09": {
+      "entity": "veda_golden_goose",
+      "chain": "ethereum",
+      "contract_label": "BoringVault",
+      "name": "Golden Goose Vault",
+      "symbol": "GG",
+      "classification": "managed_vault_receipt",
+      "graph_leaf": true,
+      "confidence": "HIGH",
+      "evidence": {
+        "onchain_name": "Golden Goose Vault",
+        "onchain_symbol": "GG",
+        "local_snapshot_observation": "At block 25242078, this vault held about 70,518 aEthweETH in the Aave weETH market."
+      }
+    }
+  }
+}

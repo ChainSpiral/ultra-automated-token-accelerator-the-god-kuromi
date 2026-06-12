@@ -8,18 +8,49 @@ EOA/contract DFS dependency crawler (price-free, arbitrary token).
   - 컨트랙트가 "그 자체로 ERC20 receipt/wrapper/vault" 면(aToken·ERC4626·심볼 있는 ERC20)
     → 그걸 토큰으로 보고 홀더를 다시 크롤(DFS). = 예치자/래퍼 보유자 역추적.
   - EOA / Safe / 정체불명 / 토큰 아님(싱글톤) → leaf.
-컷오프: 각 레벨에서 그 토큰 totalSupply 대비 MIN_FRAC 이상 + top-K. (price-free)
+backing 비중 전파(통일 규칙, price-free):
+  - 홀더 H 로 내려갈 때, "H 가 실제 보유한 루트T(=부모가 귀속시킨 amount)" 를 스케일 기준으로 넘긴다.
+    각 하위 홀더 d 의 귀속량 = (d 의 H 지분 = balanceOf/totalSupply) × amount.  ← H 의 다른 백킹은 몰라도 됨.
+  - 따라서 모든 깊이의 amount 는 '루트T 단위' 로 통일된다. 순수 래퍼(wstETH)는 스케일≈1 로 그대로 통과,
+    바스켓(rsETH 등)은 보유한 T 슬라이스만큼만 흘러 자연히 감쇠 → 컷 아래로 잘림.
+컷오프: 전역 gfrac = (그 홀더에 귀속된 루트T) / 루트T totalSupply ≥ GMINFRAC (모든 depth 동일 분모) + top-K.
+  (frac= 레벨-로컬 지분은 validate 보존게이트용으로 별도 보존.)
 재현성: 모든 값 block 고정 + cache.
 
-usage: python3 feeder/crawl.py <token_addr|symbol> <block> [--depth N] [--k K] [--minfrac F]
+usage: python3 feeder/crawl.py <token_addr|symbol> [block] [--depth N] [--k K] [--minfrac F]
+       block 생략 시 feeder/snapshot.py 의 고정 snapshot 사용
 """
 import json, os, sys, time, urllib.request, urllib.error
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ROOT, "cache"); os.makedirs(CACHE, exist_ok=True)
 ENV = "/Users/link/podotree/.env"
+
+# --- 전역 크롤 파라미터 (__main__ 에서 덮어씀) ---
+MAXDEPTH = 3          # DFS 최대 깊이
+GMINFRAC = 0.005      # ★ 전역 컷오프: 루트T totalSupply 대비 0.5% 미만 귀속분은 가지치기
+ROOT_SUPPLY = 1.0     # 루트T totalSupply(native) — depth0 에서 1회 설정, gfrac 분모
 sys.path.insert(0, ROOT)
 import ledger_adapters as LA   # 확장 종류 B (singleton-ledger 어댑터 레지스트리)
+import proxy as PX
+import mellow as MELLOW
+from snapshot import DEFAULT_SNAPSHOT_BLOCK
+
+_VAULT_REGISTRY = None
+
+def vault_registry():
+    global _VAULT_REGISTRY
+    if _VAULT_REGISTRY is not None:
+        return _VAULT_REGISTRY
+    p = os.path.join(os.path.dirname(ROOT), "registry", "vault_entities.json")
+    try:
+        _VAULT_REGISTRY = {k.lower(): v for k, v in json.load(open(p)).get("instances", {}).items()}
+    except Exception:
+        _VAULT_REGISTRY = {}
+    return _VAULT_REGISTRY
+
+def registry_instance(addr):
+    return vault_registry().get(addr.lower())
 
 def load_env():
     e={}
@@ -52,7 +83,7 @@ def eth_call(to,data,block):
     except Exception: return None
 
 SEL={"totalSupply":"0x18160ddd","symbol":"0x95d89b41","decimals":"0x313ce567",
-     "underlying":"0xb16a19de","asset":"0x38d52e0f"}
+     "underlying":"0xb16a19de","asset":"0x38d52e0f","name":"0x06fdde03","pool":"0x7535d246"}
 
 def _int(h):
     return int(h,16) if h and h!="0x" else 0
@@ -68,6 +99,13 @@ def get_code(addr,block="latest"):
     if c is not None: return c
     code=rpc("eth_getCode",[addr,tag])
     cache_put("code",ck,code); return code
+def get_storage(addr,slot,block):
+    tag=hex(block) if isinstance(block,int) else block
+    ck=f"{addr}_{slot}_{tag}"
+    c=cache_get("storage",ck)
+    if c is not None: return c
+    word=rpc("eth_getStorageAt",[addr,slot,tag])
+    cache_put("storage",ck,word); return word
 def read_addr(to,sel,block):
     h=eth_call(to,sel,block)
     if not h or h=="0x" or len(h)<42: return None
@@ -93,6 +131,34 @@ def read_symbol(to,block):
             if 0<ln<=64: return b[64:64+ln].decode("utf8","ignore").strip("\x00") or None
         return b.rstrip(b"\x00").decode("utf8","ignore") or None
     except Exception: return None
+
+def read_string(to,sel,block):
+    h=eth_call(to,sel,block)
+    if not h or h=="0x": return None
+    try:
+        b=bytes.fromhex(h[2:])
+        if len(b)>=64:
+            ln=int.from_bytes(b[32:64],"big")
+            if 0<ln<=200: return b[64:64+ln].decode("utf8","ignore").strip("\x00") or None
+        return b.rstrip(b"\x00").decode("utf8","ignore") or None
+    except Exception: return None
+
+def aave_family_label(addr,block):
+    name=read_string(addr,SEL["name"],block)
+    sym=read_symbol(addr,block)
+    pool=read_addr(addr,SEL["pool"],block)
+    low=((name or "")+" "+(sym or "")).lower()
+    if "spark" in low or (sym or "").lower().startswith("sp"):
+        venue="Spark"
+    elif "lido" in low:
+        venue="Aave Lido"
+    elif "aave" in low or (sym or "").lower().startswith("a"):
+        venue="Aave"
+    else:
+        venue="Aave-v3 fork"
+    tail=sym or name
+    label=f"{venue} ({tail})" if tail else venue
+    return label, {"venue": venue, "name": name, "symbol": sym, "pool": pool}
 
 # ---------- cache ----------
 def cache_get(kind,key):
@@ -129,32 +195,81 @@ def dune_holders(token,block):
     cache_put("holders",ck,rows); return rows
 
 # ---------- Etherscan label ----------
-def etherscan_name(addr):
-    c=cache_get("esname",addr)
+def etherscan_source(addr):
+    c=cache_get("esource",addr)
     if c is not None: return c
     try:
         u=f"https://api.etherscan.io/v2/api?chainid=1&module=contract&action=getsourcecode&address={addr}&apikey={ETHERSCAN}"
         d=json.loads(urllib.request.urlopen(u,timeout=30).read())
-        nm=d["result"][0].get("ContractName","") if isinstance(d.get("result"),list) else ""
-    except Exception: nm=""
+        src=d["result"][0] if isinstance(d.get("result"),list) and d["result"] else {}
+    except Exception: src={}
+    cache_put("esource",addr,src); time.sleep(0.21); return src
+
+def etherscan_name(addr):
+    c=cache_get("esname",addr)
+    if c is not None: return c
+    nm=etherscan_source(addr).get("ContractName","")
     cache_put("esname",addr,nm); time.sleep(0.21); return nm
+
+def resolve_proxy(addr,block):
+    ck=f"{addr}_{block}"
+    c=cache_get("proxy",ck)
+    if c is not None: return c or None
+    out=PX.resolve_proxy(addr,{
+        "get_storage": lambda a,slot: get_storage(a,slot,block),
+        "eth_call": lambda a,data: eth_call(a,data,block),
+        "get_code": lambda a: get_code(a,block),
+        "etherscan_source": etherscan_source,
+        "etherscan_name": etherscan_name,
+    })
+    cache_put("proxy",ck,out or False); return out
+
+def resolve_mellow(addr,block,label):
+    ck=f"{addr}_{block}_{label or ''}"
+    c=cache_get("mellow",ck)
+    if c is not None: return c or None
+    out=MELLOW.resolve(addr,label,{
+        "eth_call": lambda a,data: eth_call(a,data,block),
+    })
+    if out:
+        cache_put("mellow",ck,out)
+    return out
 
 # ---------- classify ----------
 def classify(addr,block):
-    ck=cache_get("classify",addr)
+    classify_key=f"v6_registry_{addr}"
+    ck=cache_get("classify",classify_key)
     if ck is not None: return ck
     out={"addr":addr,"kind":"unknown","label":None,"expandable":False,"adapter":None,"note":None}
-    code=get_code(addr)
+    code=get_code(addr,block)
     if not code or code=="0x":
         out.update(kind="EOA",label="EOA",expandable=False)
-        cache_put("classify",addr,out); return out
-    nm=etherscan_name(addr); out["label"]=nm or None
+        cache_put("classify",classify_key,out); return out
+    nm=etherscan_name(addr)
+    px=resolve_proxy(addr,block)
+    if px:
+        out["proxy"]=px
+    impl_label=(px or {}).get("implementation_label")
+    semantic_label=impl_label or nm
+    mellow=resolve_mellow(addr,block,semantic_label)
+    if mellow:
+        out["mellow"]=mellow
+        semantic_label=mellow["display_label"]
+    reg=registry_instance(addr)
+    if reg:
+        out["registry"]=reg
+        semantic_label=reg.get("name") or semantic_label
+    out["label"]=semantic_label or None
     # 확장 종류 B 먼저: singleton-ledger 어댑터 매칭 (ERC20 포장지가 아닌 프로토콜 장부)
-    ad=LA.match(addr,mkctx(block,nm))
+    ad=LA.match(addr,mkctx(block,semantic_label))
     if ad:
+        if ad.name=="aave_v3":
+            semantic_label, aave_meta = aave_family_label(addr,block)
+            out["aave_family"]=aave_meta
+            out["label"]=semantic_label
         out.update(kind=f"ledger:{ad.name}",adapter=ad.name,expandable=False,
                    note=f"singleton ledger; expand via adapter:{ad.name}")
-        cache_put("classify",addr,out); return out
+        cache_put("classify",classify_key,out); return out
     # interface probes (확장 종류 A: ERC20-unwrap)
     if read_addr(addr,SEL["underlying"],block):
         out.update(kind="aToken",expandable=True)            # Aave/Spark aToken
@@ -173,56 +288,93 @@ def classify(addr,block):
             out.update(kind="erc20_receipt",expandable=True,note=note)  # wstETH/cToken/Pendle 등
         else:
             # 토큰 아님 = 싱글톤/풀/Safe/기타 → leaf
-            low=(nm or "").lower()
+            low=((semantic_label or "") + " " + (nm or "")).lower()
             if "safe" in low: out.update(kind="safe")
-            elif nm: out.update(kind="contract")
+            elif mellow and mellow.get("role") == "subvault":
+                out.update(kind="mellow_subvault")
+            elif mellow and mellow.get("role") == "vault":
+                out.update(kind="mellow_vault")
+            elif px and not impl_label:
+                out.update(kind="proxy")
+            elif semantic_label or nm:
+                out.update(kind="contract")
             else: out.update(kind="opaque")
-    cache_put("classify",addr,out); return out
+    if reg and reg.get("graph_leaf"):
+        out["label"] = reg.get("name") or out.get("label")
+        out["expandable"] = False
+        out["note"] = out.get("note") or (f"symbol={reg.get('symbol')}" if reg.get("symbol") else None)
+    cache_put("classify",classify_key,out); return out
 
 # ---------- DFS ----------
 # 통일 재귀: 어떤 경로로 발견된 홀더든(직접 holder / 어댑터 child) 동일 dispatch 를 다시 탄다.
 #   dispatch = classify → 종류A(ERC20 unwrap) | 종류B(ledger 어댑터) | leaf.
 # 덕분에 "예치자/차입자 → vault → vault 예치자 → …" 가 끊기지 않고 이어진다.
 
-def visit_token(token,block,depth,K,MINFRAC,visited,edges,token_label=None):
-    """token 의 홀더를 Dune+balanceOf 로 열거(컷오프) → 각자 dispatch."""
+def visit_token(token,block,depth,K,MINFRAC,visited,edges,token_label=None,parent_amount=None):
+    """token 의 홀더를 Dune+balanceOf 로 열거 → 각자 dispatch.
+       parent_amount = 이 토큰 레벨로 흘러든 '루트T 귀속량'(루트T native 단위).
+         None(=depth0) 이면 token 이 곧 루트T → inflow = totalSupply(native).
+       각 홀더 d 귀속량 attributed = (d 의 이 토큰 지분) × inflow  (루트T 단위, price-free; H 의 다른 백킹 불필요).
+       컷오프는 전역 gfrac = attributed / ROOT_SUPPLY ≥ GMINFRAC (모든 depth 동일 분모)."""
+    global ROOT_SUPPLY
     token=token.lower()
     ts=total_supply(token,block) or 1
     dec=get_decimals(token,block)
+    ts_native=ts/(10**dec)
+    if depth==0:
+        ROOT_SUPPLY=ts_native or 1.0
+    inflow = ts_native if depth==0 else (parent_amount if parent_amount is not None else ts_native)
     rows=[]
     for h in dune_holders(token,block):
         h=h.lower(); b=balanceof(token,h,block)
-        if b>0: rows.append((h,b,b/ts))
-    rows=[r for r in rows if r[2]>=MINFRAC]
+        if b<=0: continue
+        share=b/ts                      # 이 토큰 내 지분(레벨-로컬, validate Σfrac≤1 용)
+        attributed=share*inflow         # 루트T 귀속량(native) — 모든 depth 동일 단위
+        gfrac=attributed/ROOT_SUPPLY if ROOT_SUPPLY else 0.0
+        rows.append((h,attributed,share,gfrac))
+    rows=[r for r in rows if r[3]>=GMINFRAC]   # ★ 전역 컷(루트T 대비)
     rows.sort(key=lambda x:-x[1]); rows=rows[:K]
-    print(f"{'  '*depth}┌ {token_label or token[:10]}  (holders kept {len(rows)}, dec {dec})")
-    for h,b,frac in rows:
-        dispatch(token,h,b/(10**dec),frac,block,depth,K,MINFRAC,visited,edges)
+    print(f"{'  '*depth}┌ {token_label or token[:10]}  (holders kept {len(rows)}, dec {dec}, inflow {inflow:,.0f})")
+    for h,attributed,share,gfrac in rows:
+        dispatch(token,h,attributed,share,block,depth,K,MINFRAC,visited,edges,gfrac=gfrac)
 
-def dispatch(from_token,holder,amount,frac,block,depth,K,MINFRAC,visited,edges,via=None,position=None):
+def dispatch(from_token,holder,amount,frac,block,depth,K,MINFRAC,visited,edges,via=None,position=None,gfrac=None):
     """홀더 1개 처리: 엣지 생성 + (깊이/visited 허용 시) 종류A 재귀 또는 종류B expand.
+       amount = 이 홀더에 귀속된 '루트T 량'(native, 스케일 반영). frac = from_token 내 로컬 지분.
+       gfrac  = 루트T totalSupply 대비 전역 비율(컷·비교 기준).
        position = 어댑터가 채운 포지션 detail(역할·담보·차입·위험설정값) → 엣지에 부착."""
     if holder.lower()==from_token.lower():
-        return  # 토큰이 자기 자신 보유(escrow/unclaimed) → self-loop 방지(bipartite 위반 방지)
+        return  # 토큰이 자기 자신 보유(escrow/unclaimed) → self-loop 방지
     info=classify(holder,block)
     tag=info["kind"]; lab=info["label"] or ""
     pad="  "*depth
     mark=f" via {via}" if via else ""
-    print(f"{pad}├─ {holder[:10]} {amount:>14,.0f} {('%4.1f%%'%(frac*100)) if frac is not None else '   ?'}  [{tag}] {lab}{mark}")
+    gtxt=('%5.2f%%'%(gfrac*100)) if gfrac is not None else '    ?'
+    print(f"{pad}├─ {holder[:10]} {amount:>14,.0f} g{gtxt}  [{tag}] {lab}{mark}")
     edge={"from_token":from_token,"holder":holder,"amount":amount,
           "frac":round(frac,4) if frac is not None else None,
+          "gfrac":round(gfrac,6) if gfrac is not None else None,
           "kind":tag,"label":lab,"depth":depth}
     if via: edge["via"]=via
     if info.get("note"): edge["note"]=info["note"]
+    if info.get("proxy"): edge["proxy"]=info["proxy"]
+    if info.get("mellow"): edge["mellow"]=info["mellow"]
+    if info.get("aave_family"): edge["aave_family"]=info["aave_family"]
+    if info.get("registry"): edge["registry"]=info["registry"]
     if position: edge["position"]=position
     edges.append(edge)
+    if ((position or {}).get("detail") or {}).get("registry_forced"):
+        edge["registry_forced"]=True
+        return
     if depth>=MAXDEPTH or holder in visited:
         return
-    # 종류 A: 홀더가 그 자체로 ERC20 → 그 토큰의 홀더를 다시 열거
+    # 종류 A: 홀더가 그 자체로 ERC20 → 그 토큰 홀더를 펼치되, 이 홀더에 귀속된 루트T량(amount)을
+    #         스케일 기준(parent_amount)으로 넘긴다 = backing 비중 전파. 순수 래퍼≈1, 바스켓은 감쇠.
     if info["expandable"]:
         visited.add(holder)
         visit_token(holder,block,depth+1,K,MINFRAC,visited,edges,
-                    token_label=(info.get("note") or info["label"] or holder[:10]))
+                    token_label=(info.get("note") or info["label"] or holder[:10]),
+                    parent_amount=amount)
     # 종류 B: singleton-ledger 어댑터 → 프로토콜 소스로 하위 포지션 펼침, 각 child 를 다시 dispatch
     elif info.get("adapter"):
         visited.add(holder)
@@ -231,7 +383,8 @@ def dispatch(from_token,holder,amount,frac,block,depth,K,MINFRAC,visited,edges,v
         if children=="ERC20":
             # 어댑터가 "이 토큰분은 그냥 ERC20 영수증 unwrap 하라" 위임 (예: Comet 베이스 공급자)
             edge["resolved"]=True
-            visit_token(holder,block,depth+1,K,MINFRAC,visited,edges,token_label=info["label"] or holder[:10])
+            visit_token(holder,block,depth+1,K,MINFRAC,visited,edges,
+                        token_label=info["label"] or holder[:10],parent_amount=amount)
         elif children is None:
             edge["resolved"]=False  # 미구현/조회불가 → opaque leaf
             print(f"{pad}│  └ unresolved (adapter:{info['adapter']} TODO)")
@@ -242,18 +395,24 @@ def dispatch(from_token,holder,amount,frac,block,depth,K,MINFRAC,visited,edges,v
             edge["children_sum"]=round(csum,2)
             edge["coverage"]=round(csum/amount,4) if amount else None
             for c in children:
-                ca=c["addr"].lower(); camt=c["amount"]
+                ca=c["addr"].lower(); camt=c["amount"]   # 어댑터 child amount 는 이미 루트T native(스케일 반영)
+                cgfrac=(camt/ROOT_SUPPLY) if ROOT_SUPPLY else None
+                pdetail=(c.get("position") or {}).get("detail") or {}
+                if cgfrac is not None and cgfrac<GMINFRAC and not pdetail.get("registry_pinned"):
+                    continue
                 dispatch(holder,ca,camt,(camt/amount if amount else None),
                          block,depth+1,K,MINFRAC,visited,edges,via=info["adapter"],
-                         position=c.get("position"))
+                         position=c.get("position"),gfrac=cgfrac)
 
 if __name__=="__main__":
     arg=sys.argv[1].lower(); token=KNOWN.get(arg,arg)
-    block=int(sys.argv[2])
+    block=int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else DEFAULT_SNAPSHOT_BLOCK
     MAXDEPTH=int(sys.argv[sys.argv.index("--depth")+1]) if "--depth" in sys.argv else 3
     K=int(sys.argv[sys.argv.index("--k")+1]) if "--k" in sys.argv else 12
-    MINFRAC=float(sys.argv[sys.argv.index("--minfrac")+1]) if "--minfrac" in sys.argv else 0.01
-    print(f"# crawl {token} @block {block}  depth<={MAXDEPTH} top{K} minfrac{MINFRAC}")
+    # --minfrac 는 이제 '전역 gfrac 컷'(루트T totalSupply 대비). 기본 0.5%.
+    GMINFRAC=float(sys.argv[sys.argv.index("--minfrac")+1]) if "--minfrac" in sys.argv else 0.005
+    MINFRAC=GMINFRAC   # 어댑터 내부 로컬 컷 임계도 동일하게
+    print(f"# crawl {token} @block {block}  depth<={MAXDEPTH} top{K} gminfrac{GMINFRAC} (전역 backing-비중 컷)")
     edges=[]; visit_token(token,block,0,K,MINFRAC,set([token.lower()]),edges,token_label=arg)
     out=os.path.join(ROOT,"..","graphs",f"crawl.{arg}.{block}.json")
     json.dump({"root":token,"block":block,"edges":edges},open(out,"w"),indent=2)

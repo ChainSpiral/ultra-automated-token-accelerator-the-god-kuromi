@@ -15,7 +15,14 @@ type RawEdge = {
   edge_type?: string;
   coverage?: number;
 };
-type Tok = { symbol: string; nodes: number; edges: number; block: number; file: string };
+type Tok = {
+  symbol: string;
+  nodes: number;
+  edges: number;
+  block: number;
+  file: string;
+  avg_coverage?: number | null;
+};
 
 export default async function OverviewRoute({
   searchParams,
@@ -49,7 +56,12 @@ export default async function OverviewRoute({
   }
 
   const covs = edges.map((e) => e.coverage).filter((c): c is number => typeof c === "number");
-  const avgCov = covs.length ? covs.reduce((a, b) => a + b, 0) / covs.length : null;
+  const avgCov =
+    typeof tokenMeta?.avg_coverage === "number"
+      ? tokenMeta.avg_coverage
+      : covs.length
+        ? covs.reduce((a, b) => a + b, 0) / covs.length
+        : null;
 
   return (
     <div className="flex h-dvh flex-col">

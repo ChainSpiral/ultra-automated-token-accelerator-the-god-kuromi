@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "block": 25242078,
+    "generated_at": 1780986870,
+    "source": "feeder/reflexivity_deep.py",
+    "price_free_verdict": true,
+    "usd_fields_are_materiality_hints_only": true,
+    "seed_markets": 79,
+    "tokens": 2,
+    "crawl_mode": "cached",
+    "fast_pricing": false,
+    "reserve_scan": false
+  },
+  "labels": {
+    "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee": "weETH",
+    "0x9d39a5de30e57443bff2a8307a4256c8797a3497": "sUSDe"
+  },
+  "stock": {
+    "rho": 0.0,
+    "matrix_nodes": [
+      "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+    ],
+    "matrix": [
+      [
+        0.0
+      ]
+    ],
+    "cycles": []
+  },
+  "ranked": [
+    {
+      "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "symbol": "weETH",
+      "control": null,
+      "verdict": "STOCK_NEGATIVE_FLOW_UNTESTED",
+      "rho_stock": 0.0,
+      "rho_stock_global": 0.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "R",
+        "class": "anchored",
+        "confidence": "HIGH",
+        "evidence": "FEED:weETH / ETH, FEED:ETH / USD",
+        "oracle_reads": [
+          {
+            "marketId": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+            "loan": "PYUSD",
+            "oracle": "0x221898da0890fc5fb6c890fcdc051fa97946ee11",
+            "cls": "anchored",
+            "sees": "FEED:weETH / ETH, FEED:ETH / USD",
+            "feeds": [
+              {
+                "address": "0x5c9c449bbc9a6075a2c061df312a35fd1e05ff22",
+                "description": "weETH / ETH"
+              },
+              {
+                "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+                "description": "ETH / USD"
+              }
+            ]
+          },
+          {
+            "marketId": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+            "loan": "RLUSD",
+            "oracle": "0x6ab351ffde101bb24a97332f4f7162c1711f110b",
+            "cls": "anchored",
+            "sees": "FEED:weETH / ETH, FEED:ETH / USD",
+            "feeds": [
+              {
+                "address": "0x5c9c449bbc9a6075a2c061df312a35fd1e05ff22",
+                "description": "weETH / ETH"
+              },
+              {
+                "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+                "description": "ETH / USD"
+              }
+            ]
+          },
+          {
+            "marketId": "0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+            "loan": "WETH",
+            "oracle": "0xbdd2f2d473e8d63d1bfb0185b5bdb8046ca48a72",
+            "cls": "anchored",
+            "sees": "FEED:weETH/ETH exchange rate",
+            "feeds": [
+              {
+                "address": "0x4270e1817576bba4b640466be79a408ef128f828",
+                "description": "weETH/ETH exchange rate"
+              }
+            ]
+          },
+          {
+            "marketId": "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd",
+            "loan": "USDC",
+            "oracle": "0xa3a7a3cefee206f9d7fe00ec3c83324ed4228411",
+            "cls": "anchored",
+            "sees": "FEED:weETH/ETH exchange rate, FEED:ETH / USD",
+            "feeds": [
+              {
+                "address": "0x4270e1817576bba4b640466be79a408ef128f828",
+                "description": "weETH/ETH exchange rate"
+              },
+              {
+                "address": "0xc0053f3fbccd593758258334dfce24c2a9a673ad",
+                "description": "ETH / USD"
+              }
+            ]
+          },
+          {
+            "marketId": "0x61765602144e91e5ac9f9e98b8584eae308f9951596fd7f5e0f59f21cd2bf664",
+            "loan": "USDC",
+            "oracle": "0x5635a2f38c5dfd1d8fdb176d9cb5aefa07bf6a68",
+            "cls": "market-feed",
+            "sees": "FEED:Redstone Price Feed",
+            "feeds": [
+              {
+                "address": "0xddb6f90ffb4d3257dd666b69178e5b3c5bf41136",
+                "description": "Redstone Price Feed"
+              }
+            ]
+          },
+          {
+            "marketId": "0x58b332ca359ff83620416be363c874947c2d1ae7b5913d367ed761d1ad422b19",
+            "loan": "msETH",
+            "oracle": "0xbdd2f2d473e8d63d1bfb0185b5bdb8046ca48a72",
+            "cls": "anchored",
+            "sees": "FEED:weETH/ETH exchange rate",
+            "feeds": [
+              {
+                "address": "0x4270e1817576bba4b640466be79a408ef128f828",
+                "description": "weETH/ETH exchange rate"
+              }
+            ]
+          }
+        ]
+      },
+      "materiality": {
+        "vault_count": 12,
+        "usd_hint": 188566190.10708192,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+            "loan_symbol": "PYUSD",
+            "supply_assets_native": 66756644.700556,
+            "borrow_assets_native": 60290553.720993
+          },
+          {
+            "marketId": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+            "loan_symbol": "RLUSD",
+            "supply_assets_native": 44228480.87461365,
+            "borrow_assets_native": 40090942.97484929
+          },
+          {
+            "marketId": "0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+            "loan_symbol": "WETH",
+            "supply_assets_native": 18276.06370852654,
+            "borrow_assets_native": 15992.906482416121
+          },
+          {
+            "marketId": "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 7647720.843449,
+            "borrow_assets_native": 7008509.418705
+          },
+          {
+            "marketId": "0x61765602144e91e5ac9f9e98b8584eae308f9951596fd7f5e0f59f21cd2bf664",
+            "loan_symbol": "USDC",
+            "supply_assets_native": 1771177.78295,
+            "borrow_assets_native": 1526660.388204
+          },
+          {
+            "marketId": "0x58b332ca359ff83620416be363c874947c2d1ae7b5913d367ed761d1ad422b19",
+            "loan_symbol": "msETH",
+            "supply_assets_native": 886.0869696141322,
+            "borrow_assets_native": 796.9426223404865
+          }
+        ]
+      },
+      "confidence": "HIGH",
+      "stock_edges": [
+        {
+          "from": "0xbdfa7b7893081b35fb54027489e2bc7a38275129",
+          "to": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "weight": 0.6055,
+          "reason": "crawl-holder-reversed",
+          "graph": "stock",
+          "evidence": {
+            "crawl_root": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+            "cached_path": "/Users/link/defi-dagggg/graphs/crawl.0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee.25242078.json",
+            "cached": true,
+            "holder_kind": "ledger:aave_v3",
+            "holder_label": "InitializableImmutableAdminUpgradeabilityProxy",
+            "amount_root_native": 955230.6272201841,
+            "frac_of_backing_supply": 0.6055,
+            "gfrac_root": null,
+            "depth": 0
+          }
+        },
+        {
+          "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "to": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "weight": 0.0154,
+          "reason": "crawl-holder-reversed",
+          "graph": "stock",
+          "evidence": {
+            "crawl_root": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+            "cached_path": "/Users/link/defi-dagggg/graphs/crawl.0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee.25242078.json",
+            "cached": true,
+            "holder_kind": "ledger:aave_v3",
+            "holder_label": "InitializableImmutableAdminUpgradeabilityProxy",
+            "amount_root_native": 24245.460243305704,
+            "frac_of_backing_supply": 0.0154,
+            "gfrac_root": null,
+            "depth": 0
+          }
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 3.0688659571853654
+    },
+    {
+      "token": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+      "symbol": "sUSDe",
+      "control": null,
+      "verdict": "STOCK_NEGATIVE_FLOW_UNTESTED",
+      "rho_stock": 0.0,
+      "rho_stock_global": 0.0,
+      "rho_flow": 0.0,
+      "inflation_factor": 1.0,
+      "cycle_path": [],
+      "cycle_depth": 0,
+      "pricing_partition": {
+        "partition": "D",
+        "class": "self-NAV",
+        "confidence": "MEDIUM",
+        "evidence": "VAULT=SELF",
+        "oracle_reads": [
+          {
+            "marketId": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+            "loan": "USDtb",
+            "oracle": "0x67bcc03438d7d71c39343d7ad21cb73dc19adb89",
+            "cls": "self-NAV",
+            "sees": "VAULT=SELF",
+            "feeds": []
+          },
+          {
+            "marketId": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+            "loan": "PYUSD",
+            "oracle": "0xe6212d05cb5af3c821fef1c1a233a678724f9e7e",
+            "cls": "market-feed",
+            "sees": "VAULT=SELF, FEED:USDe / USD",
+            "feeds": [
+              {
+                "address": "0xa569d910839ae8865da8f8e70fffb0cba869f961",
+                "description": "USDe / USD"
+              }
+            ]
+          },
+          {
+            "marketId": "0x39d11026eae1c6ec02aa4c0910778664089cdd97c3fd23f68f7cd05e2e95af48",
+            "loan": "DAI",
+            "oracle": "0x5d916980d5ae1737a8330bf24df812b2911aae25",
+            "cls": "self-NAV",
+            "sees": "VAULT=SELF",
+            "feeds": []
+          }
+        ]
+      },
+      "materiality": {
+        "vault_count": 5,
+        "usd_hint": 163590547.898526,
+        "onchain_supply_assets": [
+          {
+            "marketId": "0x88a18b2f4d94e7ad27a381b15531c06abf05a7c99dd5d3c3679875fed6f7e742",
+            "loan_symbol": "USDtb",
+            "supply_assets_native": 120355963.46438336,
+            "borrow_assets_native": 108989917.93457286
+          },
+          {
+            "marketId": "0x90ef0c5a0dc7c4de4ad4585002d44e9d411d212d2f6258e94948beecf8b4c0d5",
+            "loan_symbol": "PYUSD",
+            "supply_assets_native": 53144397.68975,
+            "borrow_assets_native": 47982434.443295
+          },
+          {
+            "marketId": "0x39d11026eae1c6ec02aa4c0910778664089cdd97c3fd23f68f7cd05e2e95af48",
+            "loan_symbol": "DAI",
+            "supply_assets_native": 1622987.8647766055,
+            "borrow_assets_native": 1260376.2504501333
+          }
+        ]
+      },
+      "confidence": "MEDIUM",
+      "stock_edges": [
+        {
+          "from": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+          "to": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+          "weight": 0.3846502959046591,
+          "reason": "asset()",
+          "evidence": {
+            "amount_raw": 1735476878085253579241601709,
+            "supply_raw": 4511830347104206123523503861,
+            "amount_native": 1735476878.0852535,
+            "supply_native": 4511830347.104206,
+            "src_symbol": "sUSDe",
+            "dst_symbol": "USDe"
+          },
+          "graph": "stock"
+        },
+        {
+          "from": "0x4579a27af00a62c0eb156349f31b345c08386419",
+          "to": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+          "weight": 0.1411,
+          "reason": "crawl-holder-reversed",
+          "graph": "stock",
+          "evidence": {
+            "crawl_root": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+            "cached_path": "/Users/link/defi-dagggg/graphs/crawl.0x9d39a5de30e57443bff2a8307a4256c8797a3497.25242078.json",
+            "cached": true,
+            "holder_kind": "ledger:aave_v3",
+            "holder_label": "InitializableImmutableAdminUpgradeabilityProxy",
+            "amount_root_native": 198383423.94075838,
+            "frac_of_backing_supply": 0.1411,
+            "gfrac_root": null,
+            "depth": 0
+          }
+        },
+        {
+          "from": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+          "to": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+          "weight": 0.0199,
+          "reason": "crawl-holder-reversed",
+          "graph": "stock",
+          "evidence": {
+            "crawl_root": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+            "cached_path": "/Users/link/defi-dagggg/graphs/crawl.0x9d39a5de30e57443bff2a8307a4256c8797a3497.25242078.json",
+            "cached": true,
+            "holder_kind": "erc4626_vault",
+            "holder_label": "PendleSUSDESY",
+            "amount_root_native": 28022218.083887517,
+            "frac_of_backing_supply": 0.0199,
+            "gfrac_root": null,
+            "depth": 0
+          }
+        }
+      ],
+      "flow": {
+        "rho": 0.0,
+        "status": "not-run",
+        "reason": "disabled"
+      },
+      "opaque": [],
+      "rank_score": 3.053439552401396
+    }
+  ]
+}

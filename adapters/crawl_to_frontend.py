@@ -7,6 +7,34 @@ Usage: python3 adapters/crawl_to_frontend.py graphs/crawl.<tok>.<block>.json [ou
 import json, sys, os
 from collections import Counter
 
+REGISTRY_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                             "registry", "vault_entities.json")
+_VAULT_INSTANCES = None
+
+def vault_instances():
+    global _VAULT_INSTANCES
+    if _VAULT_INSTANCES is not None:
+        return _VAULT_INSTANCES
+    try:
+        data = json.load(open(REGISTRY_PATH))
+        _VAULT_INSTANCES = {k.lower(): v for k, v in data.get("instances", {}).items()}
+    except Exception:
+        _VAULT_INSTANCES = {}
+    return _VAULT_INSTANCES
+
+def vault_instance(addr):
+    return vault_instances().get(addr.lower())
+
+def compact_vault_meta(meta):
+    if not meta:
+        return None
+    keys = (
+        "entity", "name", "symbol", "asset_symbol", "curator", "classification",
+        "confidence", "strategy_summary", "parent_vault", "share_manager",
+        "contract_label", "proxy_label",
+    )
+    return {k: meta[k] for k in keys if meta.get(k) is not None}
+
 # child kind / via -> edge_type (프론트 색상용 카테고리)
 VIA2ET = {"morpho": "morpho", "eigenlayer": "restake", "kelp": "transformed",
           "maker": "cdp", "compound_v3": "compound_v3", "aave_v3": "lending"}
@@ -16,6 +44,7 @@ def edge_type(e):
     k = e["kind"]
     if k == "aToken":         return "lending"
     if k == "erc4626_vault":  return "vault"
+    if k in ("mellow_subvault", "mellow_vault"): return "vault"
     if k == "erc20_receipt":  return "wrapper"
     if str(k).startswith("ledger:"): return k.split(":")[1]
     if k in ("EOA", "safe"):  return "holds"
@@ -28,6 +57,7 @@ KIND_LABEL = {
     "aToken": "Aave", "ledger:aave_v3": "Aave", "erc4626_vault": "ERC4626 Vault",
     "ledger:morpho": "Morpho", "ledger:eigenlayer": "EigenLayer",
     "ledger:kelp": "Kelp", "ledger:maker": "Maker", "ledger:compound_v3": "Compound v3",
+    "mellow_subvault": "Mellow Subvault", "mellow_vault": "Mellow Vault",
 }
 # 주요 토큰 주소 -> 심볼 (root/홀더 라벨용)
 KNOWN_TOKEN = {
@@ -56,6 +86,10 @@ def node_label(addr, kind, label, sym=None):
     # 1) erc20 receipt: 심볼이 가장 의미있음 (wstETH / SY-weETH / PENDLE-LPT …)
     if kind == "erc20_receipt":
         return sym or KNOWN_TOKEN.get(a) or "wrapper"
+    if kind in ("mellow_subvault", "mellow_vault"):
+        return label or KIND_LABEL.get(kind, "Mellow")
+    if kind == "ledger:aave_v3" and label and label not in ("AToken", "ATokenInstance"):
+        return label
     # 2) kind 기반 프로토콜 이름
     if kind in KIND_LABEL:
         base = KIND_LABEL[kind]
@@ -87,9 +121,11 @@ def convert(d):
             if part.startswith("symbol="): return part[len("symbol="):]
         return None
     meta = {}
-    def touch(addr, kind=None, label=None, depth=None, note=None):
+    def touch(addr, kind=None, label=None, depth=None, note=None, proxy=None, mellow=None, aave_family=None):
         addr = addr.lower()
-        m = meta.setdefault(addr, {"kind": kind, "label": label, "depth": depth, "sym": sym_of(note)})
+        m = meta.setdefault(addr, {"kind": kind, "label": label, "depth": depth,
+                                   "sym": sym_of(note), "proxy": proxy, "mellow": mellow,
+                                   "aave_family": aave_family})
         if depth is not None and (m["depth"] is None or depth < m["depth"]):
             m["depth"] = depth
         if kind and (not m.get("kind") or m["kind"] in (None, "token")):
@@ -98,11 +134,18 @@ def convert(d):
             m["label"] = label
         if not m.get("sym"):
             m["sym"] = sym_of(note)
+        if proxy and not m.get("proxy"):
+            m["proxy"] = proxy
+        if mellow and not m.get("mellow"):
+            m["mellow"] = mellow
+        if aave_family and not m.get("aave_family"):
+            m["aave_family"] = aave_family
         return addr
     touch(root, "token", None, -1)  # root
     for e in edges_in:
         touch(e["from_token"])
-        touch(e["holder"].lower(), e["kind"], e.get("label"), e["depth"], e.get("note"))
+        touch(e["holder"].lower(), e["kind"], e.get("label"), e["depth"],
+              e.get("note"), e.get("proxy"), e.get("mellow"), e.get("aave_family"))
     nodes = []
     for addr, m in meta.items():
         is_root = addr == root
@@ -111,14 +154,18 @@ def convert(d):
         if is_root:
             lab = KNOWN_TOKEN.get(addr) or sym or m.get("label") or short(addr)
         else:
-            lab = node_label(addr, kind, m.get("label"), sym)
+            vmeta = vault_instance(addr)
+            lab = (vmeta or {}).get("name") or node_label(addr, kind, m.get("label"), sym)
+        vmeta = vault_instance(addr)
         nodes.append({
             "id": addr,
             "type": "token" if is_root else "protocol",
             "label": lab,
             "data": {"category": kind, "kind": kind, "label": m.get("label"),
                      "symbol": sym, "depth": m.get("depth"), "address": addr,
-                     "approx": (kind == "opaque")},
+                     "approx": (kind == "opaque"), "proxy": m.get("proxy"),
+                     "mellow": m.get("mellow"), "aave_family": m.get("aave_family"),
+                     "vault_entity": compact_vault_meta(vmeta)},
         })
     def pos_label(p):
         # 포지션 detail -> 사람이 읽는 라벨 (price-free, 토큰 네이티브)
@@ -155,6 +202,10 @@ def convert(d):
               "edge_type": edge_type(e), "amount": amt, "depth": e["depth"]}
         if e.get("via"): ed["via"] = e["via"]
         if e.get("coverage") is not None: ed["coverage"] = e["coverage"]
+        if e.get("proxy"): ed["proxy"] = e["proxy"]
+        if e.get("mellow"): ed["mellow"] = e["mellow"]
+        if e.get("aave_family"): ed["aave_family"] = e["aave_family"]
+        if e.get("registry_forced"): ed["registry_forced"] = True
         if pos: ed["position"] = pos
         edges.append(ed)
     return {"nodes": nodes, "edges": edges,

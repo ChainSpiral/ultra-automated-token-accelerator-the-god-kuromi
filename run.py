@@ -3,8 +3,10 @@
 usage:
   python3 run.py <symbol|addr> [block] [--depth N] [--k K]   # 단일 토큰
   python3 run.py --all [block] [--depth N] [--k K]            # tokens.json 전체
+  # block 생략 시 feeder/snapshot.py 의 고정 snapshot 사용
 서버(mock_server :8000, next :3000)는 떠 있으면 브라우저 새로고침/셀렉터로 반영됨."""
 import sys, os, json, subprocess, urllib.request
+from feeder.snapshot import DEFAULT_SNAPSHOT_BLOCK
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 TOKENS = json.load(open(os.path.join(ROOT, "feeder", "tokens.json")))
@@ -28,6 +30,9 @@ def head_block():
 def opt(name, default):
     return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
 
+def block_arg(index):
+    return int(sys.argv[index]) if len(sys.argv) > index and sys.argv[index].isdigit() else DEFAULT_SNAPSHOT_BLOCK
+
 def run_one(sym, addr, block, depth, k):
     print(f"\n=== {sym} ({addr}) @ {block} ===")
     crawl_json = os.path.join(ROOT, "graphs", f"crawl.{addr}.{block}.json")
@@ -40,8 +45,11 @@ def run_one(sym, addr, block, depth, k):
     subprocess.run([sys.executable, os.path.join(ROOT, "adapters", "crawl_to_frontend.py"),
                     crawl_json, sim], check=True)
     d = json.load(open(sim))
+    covs = [e.get("coverage") for e in d.get("edges", []) if isinstance(e.get("coverage"), (int, float))]
+    avg_coverage = (sum(covs) / len(covs)) if covs else None
     return {"symbol": sym, "file": f"{sym}.sim.json", "block": block,
-            "nodes": len(d["nodes"]), "edges": len(d["edges"])}
+            "nodes": len(d["nodes"]), "edges": len(d["edges"]),
+            "avg_coverage": avg_coverage, "coverage_edges": len(covs)}
 
 def update_manifest(entry):
     m = {}
@@ -56,7 +64,7 @@ def update_manifest(entry):
 if __name__ == "__main__":
     depth = int(opt("--depth", 4)); k = int(opt("--k", 10))
     if sys.argv[1] == "--all":
-        block = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else head_block()
+        block = block_arg(2)
         for sym, addr in TOKENS.items():
             try:
                 update_manifest(run_one(sym, addr.lower(), block, depth, k))
@@ -68,6 +76,6 @@ if __name__ == "__main__":
             sym = next(s for s in TOKENS if s.lower() == arg.lower()); addr = TOKENS[sym].lower()
         else:
             addr = arg.lower(); sym = ADDR2SYM.get(addr, addr[:10])
-        block = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else head_block()
+        block = block_arg(2)
         update_manifest(run_one(sym, addr, block, depth, k))
     print(f"\nmanifest -> {MANIFEST}")

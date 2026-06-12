@@ -24,6 +24,9 @@ ctx (코어가 주입; 어댑터는 RPC 재구현 금지):
   ctx["block"]               -> int
 """
 
+import json
+import os
+
 # ---- selectors / addresses ----
 S_UNDERLYINGTOKEN = "0x2495a599"  # EigenLayer StrategyBase.underlyingToken()
 S_TOTALSHARES     = "0x3a98ef39"  # EigenLayer StrategyBase.totalShares()
@@ -67,6 +70,26 @@ AAVE_HOLDERS_QID = "7644342"    # 재사용: erc20 net-holders 쿼리 (token,blo
 S_TOTALSUPPLY_SEL = "0x18160ddd"
 S_BALANCEOF_SEL   = "0x70a08231"
 
+_PINNED_VAULTS = None
+
+def _pinned_vault_addresses():
+    """Registry-pinned vaults should survive top-K truncation when they hold a position."""
+    global _PINNED_VAULTS
+    if _PINNED_VAULTS is not None:
+        return _PINNED_VAULTS
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.join(root, "registry", "vault_entities.json")
+    out = {}
+    try:
+        instances = json.load(open(path)).get("instances", {})
+        for addr, meta in instances.items():
+            if isinstance(addr, str) and addr.startswith("0x"):
+                out[addr.lower()] = meta
+    except Exception:
+        out = {}
+    _PINNED_VAULTS = out
+    return out
+
 
 class AaveV3(Adapter):
     """Aave v3 / Spark aToken. 홀더 = 예치자(supply).
@@ -109,21 +132,36 @@ class AaveV3(Adapter):
             rows = ctx["dune"](AAVE_HOLDERS_QID, {"token": addr, "block": str(block)})
             cands = [r.get("holder") for r in rows if isinstance(r.get("holder"), str) and r["holder"].startswith("0x")]
             ctx["cache_put"]("ledger", ck, cands)
+        pinned = _pinned_vault_addresses()
+        # Dune ranking is still the primary discovery source, but registry-pinned vaults
+        # are semantically important and can sit just below top-K.
+        cands = list(dict.fromkeys([h.lower() for h in cands] + list(pinned.keys())))
         out = []
         for h in cands:
             bh = ctx["eth_call"](addr, S_BALANCEOF_SEL + _a(h))
             sup = (int(bh, 16) / dec) if bh and bh != "0x" else 0  # 예치 청구권(aToken 잔고)
-            if sup <= 0 or sup / total < MINFRAC:
+            is_pinned = h.lower() in pinned
+            if sup <= 0 or (sup / total < MINFRAC and not is_pinned):
                 continue
             attributed = sup * liq_share  # 물리 유동성 중 이 예치자 몫(같은 단위, 한 번만 카운트)
-            out.append({"addr": h, "amount": attributed, "label": "",
+            label = (pinned.get(h.lower()) or {}).get("name", "") if is_pinned else ""
+            out.append({"addr": h, "amount": attributed, "label": label,
                         "position": {"role": "supply", "venue": addr,
                                      "detail": {"supplied": round(sup, 4), "attributed": round(attributed, 4),
                                                 "pool_liquidity": round(phys, 4), "underlying_symbol": usym,
-                                                "ltv": ltv, "liq_threshold": lt},
+                                                "ltv": ltv, "liq_threshold": lt,
+                                                "registry_pinned": is_pinned},
                                      "verifiable_onchain": True, "confidence": "HIGH"}})
         out.sort(key=lambda x: -x["amount"])
-        return out[:K] or None
+        top = out[:K]
+        seen = {x["addr"].lower() for x in top}
+        pinned_extra = [
+            x for x in out[K:]
+            if x["addr"].lower() not in seen and x.get("position", {}).get("detail", {}).get("registry_pinned")
+        ]
+        for x in pinned_extra:
+            x["position"]["detail"]["registry_forced"] = True
+        return (top + pinned_extra) or None
 
 
 class EigenLayerStrategy(Adapter):

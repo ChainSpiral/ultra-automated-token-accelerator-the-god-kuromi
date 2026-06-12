@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사기민팅의 수학적 정의 — 백킹 스펙트럴 이론</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]'], ['$$','$$']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --accent:#b00020; --line:#e3e3e3; --bg:#fbfbf9; --code:#f3f1ec; --okbg:#eef7ee; --badbg:#fcecec; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+         color: var(--fg); background: var(--bg); line-height: 1.7; margin: 0; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 120px; }
+  h1 { font-size: 1.85rem; line-height: 1.3; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 1.02rem; margin: 0 0 8px; }
+  .lead { background: #fff; border:1px solid var(--line); border-left:4px solid var(--accent);
+          padding: 16px 20px; border-radius: 8px; margin: 24px 0 40px; font-size: 1.05rem; }
+  h2 { font-size: 1.3rem; margin: 48px 0 14px; padding-top: 18px; border-top: 1px solid var(--line);
+       letter-spacing: -0.01em; }
+  h2 .n { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: 10px; }
+  h3 { font-size: 1.05rem; margin: 26px 0 8px; color:#333; }
+  p { margin: 12px 0; }
+  code { background: var(--code); padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+         font-family: "SF Mono", ui-monospace, Menlo, monospace; }
+  .eqbox { background:#fff; border:1px solid var(--line); border-radius:8px; padding: 6px 18px; margin: 18px 0; overflow-x:auto; }
+  .keybox { background:#fff; border:2px solid var(--accent); border-radius:8px; padding: 10px 18px; margin: 20px 0; }
+  .keybox .lbl { color: var(--accent); font-weight: 700; font-size:.82rem; letter-spacing:.04em; text-transform:uppercase; }
+  table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+  th { background: #f2efe9; font-weight: 600; }
+  tr-ok {}
+  .ok { color:#1a7f37; font-weight:600; } .bad { color: var(--accent); font-weight:600; }
+  .pill { display:inline-block; padding:1px 8px; border-radius:20px; font-size:.85em; font-weight:600; }
+  .pill.ok { background:var(--okbg); color:#1a7f37; } .pill.bad { background:var(--badbg); color:var(--accent); }
+  ul { margin: 12px 0; padding-left: 22px; } li { margin: 6px 0; }
+  .muted { color: var(--muted); }
+  .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  strong { font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>사기민팅의 수학적 정의</h1>
+  <p class="sub">백킹 행렬의 스펙트럴 반경으로 본 자기참조 백킹 — defi-dagggg / ChainSpiral</p>
+
+  <div class="lead">
+    토큰을 <b>외생 가격 앵커 \(R\)</b> 와 <b>자가 NAV 파생 \(D\)</b> 로 (오라클 종류로) 나누고,
+    백킹 행렬 \(A_{ij}=B_{ij}/S_j\) 를 만들었을 때 —
+    <b>사기 \(\iff \rho(A_{DD}) \ge 1\)</b> (외부로 환원되는 일관 가치의 부재).
+    사이클의 <i>존재</i>가 아니라 <i>루프 이득</i>이 기준이며, 담보가 움직이면 \(A\) 를 <b>흐름 그래프</b>로 잡는다.
+  </div>
+
+  <h2><span class="n">1.</span>백킹을 선형방정식으로</h2>
+  <p>각 토큰 \(i\): 공급 \(S_i\) (온체인), 가격 \(p_i\), 준비금이 보유한 토큰 \(j\) 의 양 \(B_{ij}\) (= <code>balanceOf</code>, 온체인). 값 \(V_i = p_i S_i\).</p>
+  <p>“토큰 \(i\) 의 가치 = 그 준비금의 가치” 라는 백킹 항등식:</p>
+  <div class="eqbox">
+    \[ V_i \;=\; \sum_j B_{ij}\,p_j \;=\; \sum_j \frac{B_{ij}}{S_j}\,V_j
+       \qquad\Longrightarrow\qquad \boxed{\,V = A\,V\,}, \quad A_{ij}=\frac{B_{ij}}{S_j} \]
+  </div>
+  <ul>
+    <li>\(A_{ij}\) = <b>토큰 \(j\) 의 총공급 중, \(i\) 의 준비금에 잠긴 비율.</b></li>
+    <li>열 합 \(\sum_i A_{ij} \le 1\). 그 <b>누수분 \(1-\sum_i A_{ij}\) = \(j\) 를 실제 외부 홀더가 들고 있는 비율</b> = “외부로 빠진 진짜 소유”.</li>
+  </ul>
+
+  <h2><span class="n">2.</span>여기서 오라클이 들어온다 — 앵커 vs 파생</h2>
+  <p>\(V=AV\) 는 누수가 있으면 \(\rho(A)<1\) 이라 <b>유일해가 \(V=0\)</b>. 외부 가치 주입(앵커)이 필요. 토큰을 둘로 나눈다:</p>
+  <ul>
+    <li><b>앵커 \(R\) (외생 가격)</b>: 가격이 외부 시장/실물에서 옴. USDC=1, ETH=깊은 시장 오라클. 백킹에서 파생되지 않음.</li>
+    <li><b>파생 \(D\) (내생 가격)</b>: 가격이 자가 NAV = 준비금가치/공급. \(V=AV\) 가 그대로 적용.</li>
+  </ul>
+  <div class="keybox">
+    <span class="lbl">핵심</span>
+    <p style="margin:6px 0 0">이 \(R/D\) 분할을 정하는 것이 <b>오라클 종류</b>다. 시장/앵커 오라클 → \(R\). 자가보고 NAV 오라클 → \(D\).
+    (이미 구현한 <code>oracle_introspect</code> 의 <code>anchored</code>/<code>market-feed</code> vs <code>bespoke/NAV</code> 가 정확히 이 분류.)</p>
+  </div>
+
+  <h2><span class="n">3.</span>정확한 모순 조건 (= 사기 정의)</h2>
+  <p>파생만 떼어내면:</p>
+  <div class="eqbox">
+    \[ V_D = A_{DD}\,V_D + A_{DR}\,V_R
+       \quad\Longrightarrow\quad
+       V_D = (I - A_{DD})^{-1}\,A_{DR}\,V_R \]
+  </div>
+  <p>Perron–Frobenius: \(A_{DD}\ge 0\) 이므로 \((I-A_{DD})^{-1}=\sum_{k\ge0} A_{DD}^{\,k}\). 이것이 <b>유한 양수해로 수렴 \(\iff \rho(A_{DD})<1\)</b>.</p>
+  <div class="keybox">
+    <span class="lbl">사기 조건</span>
+    <div class="eqbox" style="border:none; margin:6px 0 0; padding:0">
+      \[ \rho(A_{DD}) \;\ge\; 1 \quad\Longleftrightarrow\quad
+         \text{외부 앵커로 환원되는 일관 가치가 없음} \;=\; \text{모순(사기)} \]
+    </div>
+  </div>
+  <p>정도(degree)까지 연속 정량화:</p>
+  <div class="eqbox">
+    \[ \text{자기팽창 계수} = \frac{1}{1-\rho(A_{DD})}, \qquad \text{외부백킹 비율} \approx 1-\rho \]
+  </div>
+  <p>\(\rho=0\) → 완전 외부백킹, \(\rho\to1\) → 완전 자기참조(사기 절벽).</p>
+
+  <h2><span class="n">4.</span>사이클 ≠ 모순 (루프 이득이 기준)</h2>
+  <p>사이클의 <b>존재</b>가 아니라 사이클의 <b>이득(loop gain)</b>이 기준. 2-사이클 \(i\to j\to i\) 면:</p>
+  <div class="eqbox">\[ \rho = \sqrt{A_{ij}\,A_{ji}} \]</div>
+  <ul>
+    <li><b>rsETH 루핑</b>: 사이클 있지만 매 패스 LTV&lt;1 해어컷 + 담보가 외부 ETH(앵커) → 이득 &lt; 1 → \(\rho<1\) → <span class="pill ok">정상</span> (해어컷 = 누수)</li>
+    <li><b>상호백킹 두 토큰이 서로를 전량 준비금으로</b>: \(A_{ij}=A_{ji}=1 \Rightarrow \rho=1\) → <span class="pill bad">사기</span>. 절반씩이면 \(\rho=0.5\) → 정상.</li>
+    <li><b>자기루프</b> \(A_{ii}\) = (자기 공급 중 자기 준비금에 든 비율). “받은 USDC를 다시 나한테” = \(A_{ii}\to1 \Rightarrow \rho\ge1\).</li>
+  </ul>
+  <p>→ <b>사이클은 무죄, \(\rho(A_{DD})\ge1\) 이 유죄.</b></p>
+
+  <h2><span class="n">5.</span>오라클의 두 번째 역할 — assertion gap</h2>
+  <p>§3 은 “일관 가치가 <i>존재하나</i>”였고, 별개로 “오라클이 그 가치를 <i>말하나</i>” 도 봐야 한다:</p>
+  <div class="eqbox">
+    \[ \mathrm{gap}_i = \bigl|\,p_i^{\text{oracle}} - p_i^{\text{backing}}\,\bigr|,
+       \qquad p_i^{\text{backing}} = \frac{\sum_j B_{ij}\,p_j}{S_i} \]
+  </div>
+  <p>\(\rho<1\) 이라 일관해가 있어도, <b>하드코딩/동결 오라클</b>이 \(p^{\text{backing}}\) 과 다른 값을 주장하면 그 자체가 모순(가격 동결 → 청산 미발화 → bad debt 누적). risk-exposure 의 <code>oracle_hardcoded_switch</code> 가 이 축.</p>
+
+  <h2><span class="n">6.</span>정적(stock) vs 흐름(flow) — xUSD 는 흐름이 필요</h2>
+  <ul>
+    <li><b>Stock \(B_{ij}\)</b> (현재 <code>balanceOf</code>): 상호백킹·자기보유를 잡음. 한 스냅샷.</li>
+    <li><b>xUSD 함정</b>: 받은 USDC 를 빼서 재예치 → 스냅샷엔 USDC 가 안 보일 수 있음. 흐름 현상.</li>
+    <li><b>Flow 그래프</b>: 노드=주소/토큰, 엣지=mint 를 펀딩한 담보의 출처. 발행자 통제집합 \(S\) 가 <b>flow-SCC</b> 를 이루고, 그 SCC 의 <b>순외부유입 ≈ 0 인데 발행 &gt; 0</b> → 그 블록 \(\rho\ge1\).</li>
+  </ul>
+  <p>흐름 보존형(동치):</p>
+  <div class="eqbox">
+    \[ \text{사기} \iff \sum_{i\in S} S_i\cdot\text{peg}
+       \;>\; \underbrace{\bigl(\text{$S$ 밖에서 $S$ 로 들어온 누적 외부유입}\bigr)}_{\text{재활용은 cycle 이라 } 0 \text{ 에 수렴}} \]
+  </div>
+  <p>“내가 받은 걸 나한테 다시” = \(S\) 내부 사이클 → 우변 \(0\) → 위반. 이것이 <code>flow_trace.py</code> 가 보는 것.</p>
+
+  <h2><span class="n">7.</span>DeFi 경우의 수 (전부 같은 조건)</h2>
+  <table>
+    <thead><tr><th>메커니즘</th><th>그래프에서</th><th>판정</th></tr></thead>
+    <tbody>
+      <tr><td>초과담보 스테이블 (DAI)</td><td>담보 = 외부(USDC/ETH) \(\in R\)</td><td>\(\rho=0\) <span class="pill ok">정상</span></td></tr>
+      <tr><td>LRT 루핑 (rsETH)</td><td>사이클 but ETH 앵커 + LTV 해어컷</td><td>\(\rho<1\) <span class="pill ok">정상</span></td></tr>
+      <tr><td>래퍼 (wstETH)</td><td>stETH \(\in R\), 자기루프 없음</td><td>\(\rho=0\) <span class="pill ok">정상</span></td></tr>
+      <tr><td>xUSD 자기민팅</td><td>flow-SCC, 외부유입 → 0</td><td>\(\rho\ge1\) <span class="pill bad">사기</span></td></tr>
+      <tr><td>상호백킹 2토큰</td><td>\(A_{ij}A_{ji}\)</td><td>\(\ge1\) <span class="pill bad">사기</span></td></tr>
+      <tr><td>재담보 체인 (vault share → 담보 → …)</td><td>매 단계 LTV&lt;1 누수면 OK</td><td>루프백 + 이득 \(\ge1\) <span class="pill bad">사기</span></td></tr>
+      <tr><td>알고스테이블 (UST/LUNA)</td><td>gov 토큰을 \(R\) 로 <b>오분류</b>하면 못 잡음</td><td>gov 가 실은 \(D\) → \(\rho\ge1\)</td></tr>
+      <tr><td>하드코딩 오라클</td><td>\(\rho<1\) 이라도 gap 큼</td><td>assertion-gap 위반</td></tr>
+      <tr><td>부분 자기백킹 (80% 진짜)</td><td>\(A_{ii}=0.2\)</td><td>\(\rho=0.2\), 팽창 \(1.25\times\) (경고)</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="n">8.</span>온체인 측정 가능성 + 정직한 판단점</h2>
+  <p><b>측정 가능 (HIGH)</b>: \(S_i\) (totalSupply), \(B_{ij}\) (balanceOf), flow (mint 로그 + 담보 출처), 오라클 종류 (introspection).</p>
+  <h3>진짜 어려운 곳 (여기가 전부를 가른다)</h3>
+  <ul>
+    <li><b>누가 앵커 \(R\) 인가</b> — “시장가 있음”이 곧 외생은 아님(LUNA). 깊이/독립성(CAPO 식) 검증이 \(R\) 자격의 핵심. <b>\(R\) 오분류 = 유일한 치명적 실패모드.</b></li>
+    <li><b>발행자 집합 \(S\) 식별</b> — flow-SCC(독립 외부유입 없는 닫힌 성분)로 검출, 임계 필요.</li>
+    <li>단위/decimals/peg 정합.</li>
+  </ul>
+
+  <h2><span class="n">9.</span>앵커의 backing 은 어디 있나 — RWA / off-chain 처리</h2>
+  <p><b>“USDC 의 백킹(실물 달러)은 off-chain 인데 \(A\) 에 안 들어가지 않나?”</b> — 정확한 의문. 셋으로 분리해 답한다.</p>
+
+  <h3>(a) USDC 의 on-chain 보유분은 이미 방정식에 있다</h3>
+  <p>D-토큰 \(i\) 가 준비금에 들고 있는 USDC 는 앵커 주입 항 \(A_{DR}V_R\) 로 들어간다:</p>
+  <div class="eqbox">\[ V_D = (I-A_{DD})^{-1}\,\underbrace{A_{DR}V_R}_{\text{앵커(USDC 등)에서 들어온 가치}} \]</div>
+  <p>\(i\) 는 <b>자기가 온체인으로 실제 보유한 USDC 만큼만</b> 백킹 크레딧을 받는다 (\(A_{i,\text{USDC}}=B_{i,\text{USDC}}/S_{\text{USDC}}\)).
+  “은행에 USDC 있다”는 off-chain 주장은 \(B=0\) 이라 <b>자동으로 0 크레딧</b> — 오히려 robust.</p>
+
+  <h3>(b) 방정식 밖에 있는 것 = \(p_{\text{USDC}}=1\) 의 정당성</h3>
+  <p>들어가지 않는 건 USDC 보유<i>량</i>이 아니라 <b>그 가격이 1 이라는 보장</b>(= off-chain 준비금)이다. 이건 <b>환원 불가능한 신뢰 공리</b>.
+  모든 온체인-only 시스템은 어떤 외생 공리에서 멈춘다. \(R\) = <b>공리 집합 = 신뢰 경계</b>. 프레임워크는
+  “\(R\) 이 건전하다면 \(D\) 가 일관되나”라는 <b>상대적 일관성</b>만 증명한다 (공리 대비 정리).</p>
+
+  <h3>(c) 고치는 법 — \(R\) 을 계층화 + off-chain 노드 명시</h3>
+  <p>앵커는 한 종류가 아니다. \(R\) 을 종단(terminal) 종류로 쪼갠다:</p>
+  <table>
+    <thead><tr><th>앵커 종류</th><th>예</th><th>backing 위치</th><th>신뢰</th></tr></thead>
+    <tbody>
+      <tr><td>\(R_{\text{chain}}\) — 온체인 본원</td><td>ETH, (native), stETH</td><td>온체인 / 프로토콜 강제 상환</td><td><span class="pill ok">HIGH</span></td></tr>
+      <tr><td>\(R_{\text{rwa}}\) — off-chain 실물</td><td>USDC, USDT, USYC, T-bill 토큰</td><td>off-chain 준비금 → attestation 엣지로 노드 \(\Omega\) 연결 (weight 검증불가)</td><td><span class="pill" style="background:#fff6e5;color:#9a6700">MEDIUM</span></td></tr>
+      <tr><td>market-only — 시장가만</td><td>상환 없는 토큰</td><td>외부 시장 (깊이 검증 필요, LUNA 함정)</td><td><span class="pill bad">LOW</span></td></tr>
+    </tbody>
+  </table>
+  <p>그러면 각 D-토큰의 grounded value 가 <b>백킹 경로의 종단별로 분해</b>된다:</p>
+  <div class="eqbox">\[ V_i \;=\; V_i^{\text{chain}} \;+\; V_i^{\text{rwa}} \;+\; V_i^{\text{mkt}}
+      \qquad (\text{경로가 어느 } R\text{ 에서 끝나는가}) \]</div>
+  <p>“이 토큰 가치의 \(X\%\) 는 온체인 증명, \(Y\%\) 는 RWA attestation, \(Z\%\) 는 시장가” — 이게 정직한 출력.
+  신뢰도는 <b>support 의 최약 앵커로 캡</b>: \(\;\mathrm{conf}(i)=\min_{a\in\text{support}(i)} \mathrm{conf}(a)\).</p>
+
+  <h3>(d) 앵커 자체가 무너지면? — 탐지가 아니라 시나리오</h3>
+  <p>USDC 디페그/준비금 가짜는 off-chain 이라 <b>온체인으로 탐지 불가</b>. 대신 <b>노출도를 정량화</b>: 특정 앵커에 충격 \(\delta\) 를 주고 재계산.</p>
+  <div class="eqbox">\[ V_D(\delta) = (I-A_{DD})^{-1}A_{DR}\,(V_R-\delta) \]</div>
+  <p>= “USDC 가 \(\delta\) 만큼 무너지면 D 가 얼마 잃나” (risk-exposure 의 스트레스-테스트 영역). <b>자기참조 탐지(\(\rho\ge1\), 온체인)</b> 와
+  <b>앵커-실패 노출(\(V_R\) 시나리오)</b> 는 별개의 질문.</p>
+
+  <div class="keybox">
+    <span class="lbl">정리</span>
+    <p style="margin:6px 0 0">프레임워크의 일은 <b>모든 가치를 최소한의 명시적 외생 신뢰 공리로 밀어내리는 것.</b>
+    건강한 토큰 = 소수의 고품질 앵커에 얕게 의존. 사기 = \(\rho\ge1\) (grounding 없음) <i>또는</i> grounding 이 순환/가짜 앵커에 전부 의존.
+    off-chain proof-of-reserves(DD)는 정확히 이 \(R_{\text{rwa}}\) 노드에서 인계받는다 — 프레임워크가 <b>“무엇을 off-chain 으로 신뢰해야 하는지”를 정확히 짚어준다.</b></p>
+  </div>
+
+  <div class="keybox">
+    <span class="lbl">한 줄 정의</span>
+    <p style="margin:6px 0 0">토큰을 외생 앵커 \(R\) 과 자가 NAV 파생 \(D\) 로 (오라클 종류로) 나누고, 백킹 행렬 \(A_{ij}=B_{ij}/S_j\) 를 만들었을 때 —
+    <b>사기 = \(\rho(A_{DD})\ge1\)</b> (외부로 환원되는 일관 가치 부재). 사이클이 아니라 <b>루프 이득</b>이 기준이고,
+    담보가 움직이면 \(A\) 를 <b>흐름 그래프</b>로 잡는다. 정도는 \(\dfrac{1}{1-\rho}\) 로 연속 정량화.</p>
+  </div>
+
+  <div class="footer">
+    다음 단계: 지금 <code>reflexivity_scan.py</code> 의 “사이클 유/무” 이진 판정을 <b>스펙트럴 반경 \(\rho(A_{DD})\)</b> 연속 점수로 대체.
+    stock + flow 두 그래프 모두에서 \(A\) 를 만들고, 오라클 introspection 으로 \(R/D\) 자동 분할.
+  </div>
+
+</div>
+</body>
+</html>

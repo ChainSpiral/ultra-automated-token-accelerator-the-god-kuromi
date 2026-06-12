@@ -1,0 +1,635 @@
+{
+  "n_markets": 181,
+  "candidates": [
+    {
+      "score": 15.31,
+      "collat": "BONDUSD",
+      "loan": "USR",
+      "collat_addr": "0x8413D2a624A9fA8b6D3eC7b22CF7F62E55D6Bc83",
+      "loan_addr": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110",
+      "oracle": "0x1b4A3F92e5Fffd1d35A98751c9FE4472483579bB",
+      "lltv": "945000000000000000",
+      "borrowUsd": 7434558592.299728,
+      "borrow": 20442348650.244816,
+      "loanSupply": 10057556.285211662,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 2032.54,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "BONDUSD",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 8.0,
+      "collat": "rRLP",
+      "loan": "USDC",
+      "collat_addr": "0x64688b6E895a64C3584FF1420d4119342558A504",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xD4F41C6DF780bb143Ec5b4B02ffc5fAC73d764b1",
+      "lltv": "860000000000000000",
+      "borrowUsd": 591069.9292157368,
+      "borrow": 591325.942349,
+      "loanSupply": 52159428071.75193,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "rRLP",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 8.0,
+      "collat": "ROY-ST-apyUSD",
+      "loan": "apxUSD",
+      "collat_addr": "0xBd373c9D3D8976a4FECC504a93c768BBE8C3227C",
+      "loan_addr": "0x98A878b1Cd98131B271883B390f68D2c90674665",
+      "oracle": "0x6c0824B17eF83459fd3959eb76a16aBD0F59DF35",
+      "lltv": "915000000000000000",
+      "borrowUsd": 240530.22131572734,
+      "borrow": 250674.51062793817,
+      "loanSupply": 407947485.86417794,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "ROY-ST-apyUSD",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 7.0,
+      "collat": "USDT",
+      "loan": "USDT",
+      "collat_addr": "0x3D4762b4bB4B4C922377Fe5b887E900D7fB64cDf",
+      "loan_addr": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "oracle": "0x24CC84c52f15c06170c1b7cBfaeD4b9D1D1FDd55",
+      "lltv": "980000000000000000",
+      "borrowUsd": 74413610.25834993,
+      "borrow": 74459237.975807,
+      "loanSupply": 97070655229.72336,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 7.0,
+      "collat": "USDT",
+      "loan": "USDT",
+      "collat_addr": "0x3D4762b4bB4B4C922377Fe5b887E900D7fB64cDf",
+      "loan_addr": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "oracle": "0x24CC84c52f15c06170c1b7cBfaeD4b9D1D1FDd55",
+      "lltv": "945000000000000000",
+      "borrowUsd": 13064154.258785697,
+      "borrow": 13072164.722695,
+      "loanSupply": 97070655229.72336,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 7.0,
+      "collat": "PT-slvlUSD-25SEP2025",
+      "loan": "lvlUSD",
+      "collat_addr": "0x2CA5f2C4300450D53214B00546795c1c07B89acB",
+      "loan_addr": "0x7C1156E515aA1A2E851674120074968C905aAF37",
+      "oracle": "0xDAeb58A601c4793667e0B0F67815cd952E752E0B",
+      "lltv": "915000000000000000",
+      "borrowUsd": 166710.52166528723,
+      "borrow": 166889.04987154566,
+      "loanSupply": 530224.2528981821,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.31,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "PT-slvlUSD-25SEP2025",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 7.0,
+      "collat": "MC-USR",
+      "loan": "USD0",
+      "collat_addr": "0xD50DA5F859811A91fD1876C9461fD39c23C747Ad",
+      "loan_addr": "0x73A15FeD60Bf67631dC6cd7Bc5B6e8da8190aCF5",
+      "oracle": "0x5eFDCAe531BD6ff8FC84c203F65F31E36d1099FB",
+      "lltv": "915000000000000000",
+      "borrowUsd": 50965.624912521984,
+      "borrow": 51041.37608858486,
+      "loanSupply": 553309899.2221862,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "MC-USR",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.5,
+      "collat": "PAXG",
+      "loan": "USDC",
+      "collat_addr": "0x45804880De22913dAFE09f4980848ECE6EcbAf78",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xDd1778F71a4a1C6A0eFebd8AE9f8848634CE1101",
+      "lltv": "915000000000000000",
+      "borrowUsd": 1123755136.6413925,
+      "borrow": 1124241874.435572,
+      "loanSupply": 52159428071.75193,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.02,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "PAXG",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.5,
+      "collat": "RLP",
+      "loan": "USDC",
+      "collat_addr": "0x4956b52aE2fF65D74CA2d61207523288e4528f96",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x19018450A02bC5c1994eaD517498311f64B2626a",
+      "lltv": "860000000000000000",
+      "borrowUsd": 6814797.094951586,
+      "borrow": 6817748.822777,
+      "loanSupply": 52159428071.75193,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "RLP",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.5,
+      "collat": "RLP",
+      "loan": "AUSD",
+      "collat_addr": "0x4956b52aE2fF65D74CA2d61207523288e4528f96",
+      "loan_addr": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "oracle": "0x19018450A02bC5c1994eaD517498311f64B2626a",
+      "lltv": "860000000000000000",
+      "borrowUsd": 1039867.8476527822,
+      "borrow": 1040238.579812,
+      "loanSupply": 86865891.518349,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.01,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "RLP",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.5,
+      "collat": "amphrETH",
+      "loan": "WETH",
+      "collat_addr": "0x5fD13359Ba15A84B76f7F87568309040176167cd",
+      "loan_addr": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "oracle": "0x0642aaB8ca0a9F3784ea59988c47D4cCe6056Aee",
+      "lltv": "860000000000000000",
+      "borrowUsd": 823378.4352175893,
+      "borrow": 488.3144672641492,
+      "loanSupply": 2584369.476247395,
+      "util": 0.9999999999999999,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "collat_unknown": "amphrETH",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.01,
+      "collat": "siUSD",
+      "loan": "msUSD",
+      "collat_addr": "0xDBDC1Ef57537E34680B898E1FEBD3D68c7389bCB",
+      "loan_addr": "0xab5eB14c09D416F0aC63661E57EDB7AEcDb9BEfA",
+      "oracle": "0xC7bB5f34D645f3849a3091Ce4b6724631ee811Af",
+      "lltv": "915000000000000000",
+      "borrowUsd": 16531544.09308563,
+      "borrow": 16585316.28305218,
+      "loanSupply": 16133365.518555835,
+      "util": 0.8287010405263426,
+      "signals": {
+        "borrow/loanSupply": 1.03,
+        "collat_unknown": "siUSD"
+      }
+    },
+    {
+      "score": 5.0,
+      "collat": "ILLIQUID_PERPDEX_COLL",
+      "loan": "USDC",
+      "collat_addr": "0x610209DAbf47375307Bb2A3263F85440Eedc7834",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x6779b2F08611906FcE70c70c596e05859701235d",
+      "lltv": "945000000000000000",
+      "borrowUsd": 536044.7167756635,
+      "borrow": 536276.896558,
+      "loanSupply": 52159428071.75193,
+      "util": 0.8789950191011601,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "ILLIQUID_PERPDEX_COLL",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.0,
+      "collat": "sBTCD",
+      "loan": "WBTC",
+      "collat_addr": "0x3BC801419479865B24b4d32faB0Bf64638Abbd5f",
+      "loan_addr": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "oracle": "0x332ebF042a7B7D87A8a2628186f8A5B12d8a6d94",
+      "lltv": "770000000000000000",
+      "borrowUsd": 280413.8236124148,
+      "borrow": 4.44525294,
+      "loanSupply": 116132.18273272,
+      "util": 0.9251094505054535,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "sBTCD",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.0,
+      "collat": "ROY-ST-apyUSD",
+      "loan": "USDC",
+      "collat_addr": "0xBd373c9D3D8976a4FECC504a93c768BBE8C3227C",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xfcC6676c57E70daA29478cc6633122D135cD5A6F",
+      "lltv": "915000000000000000",
+      "borrowUsd": 245491.9799915454,
+      "borrow": 245598.311185,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9800047294479589,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "ROY-ST-apyUSD",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.0,
+      "collat": "bdUSD",
+      "loan": "USDC",
+      "collat_addr": "0xF8F226dA66244F89e70C5B5D1a5C5b0d505Eb1d8",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x1D8Cbc63Ee5eF7B33cB1eE7b32ad90d619e4D3cF",
+      "lltv": "860000000000000000",
+      "borrowUsd": 76329.16772925548,
+      "borrow": 76362.228571,
+      "loanSupply": 52159428071.75193,
+      "util": 0.8794245157321587,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "bdUSD",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 5.0,
+      "collat": "ACRDX",
+      "loan": "USDC",
+      "collat_addr": "0x5CFf44513C84BFA387bB0D62Af723F76Dfc6b379",
+      "loan_addr": "0xB6A9c3375b3a57dA78F7C467Bd7B91cb8665A61e",
+      "oracle": "0x0266192a71C1aB0a59e08A22C513CD42Bbb05356",
+      "lltv": "860000000000000000",
+      "borrowUsd": 0,
+      "borrow": 920534.874932,
+      "loanSupply": 11050000.0,
+      "util": 0.7966309757515289,
+      "signals": {
+        "borrow/loanSupply": 0.08,
+        "collat_unknown": "ACRDX",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted",
+          "unrecognized_collateral_asset"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 4.5,
+      "collat": "sdeUSD",
+      "loan": "USDC",
+      "collat_addr": "0x5C5b196aBE0d54485975D1Ec29617D42D9198326",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x65F9f6d537C2D628D1c2663896436817440eDB72",
+      "lltv": "915000000000000000",
+      "borrowUsd": 661399196.8413873,
+      "borrow": 661685672.04906,
+      "loanSupply": 52159428071.75193,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.01,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 4.5,
+      "collat": "wstUSR",
+      "loan": "USDC",
+      "collat_addr": "0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xDa850a72080024e17c1590fbf6ea7a826dB90760",
+      "lltv": "915000000000000000",
+      "borrowUsd": 22260613.93910466,
+      "borrow": 22270255.792363,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9999999496783084,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 4.5,
+      "collat": "USR",
+      "loan": "USDC",
+      "collat_addr": "0x66a1E37c9b0eAddca17d3662D6c05F4DECf3e110",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x8875ceb24E656FCA062759BDCF870F59A2B0187b",
+      "lltv": "915000000000000000",
+      "borrowUsd": 976926.1041565797,
+      "borrow": 977349.245143,
+      "loanSupply": 52159428071.75193,
+      "util": 0.999999948692857,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 4.5,
+      "collat": "deUSD",
+      "loan": "USDC",
+      "collat_addr": "0x15700B564Ca08D9439C58cA5053166E8317aa138",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x1325Eb089Ac14B437E78D5D481e32611F6907eF8",
+      "lltv": "860000000000000000",
+      "borrowUsd": 110343.12890076105,
+      "borrow": 110390.922383,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9999993348370538,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 4.0,
+      "collat": "PT-RLP-9APR2026",
+      "loan": "USDC",
+      "collat_addr": "0x29fD7180E5cCEd14Ad148c7997e6B6857a8BE86e",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x89C3Dd5E0c78136EfE412e57CC05A7835EF9F501",
+      "lltv": "860000000000000000",
+      "borrowUsd": 1462369.7158519835,
+      "borrow": 1463003.119506,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9998769169011471,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "PT-RLP-9APR2026",
+        "collat_unpriced(USD=null)": true,
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 3.0,
+      "collat": "WBTC",
+      "loan": "LBTC",
+      "collat_addr": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "loan_addr": "0x8236a87084f8B84306f72007F36F2618A5634494",
+      "oracle": "0xb7e622716CF9F32206C8bD05041CDDE87812D532",
+      "lltv": "945000000000000000",
+      "borrowUsd": 66844.72397919667,
+      "borrow": 1.0506796,
+      "loanSupply": 8316.90620331,
+      "util": 1,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "self_deal(util\u22481,supply==borrow)": true
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "AVLT",
+      "loan": "USDC",
+      "collat_addr": "0x74dB7a52773A52699dbC0c01b1254E5301E3e119",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x2C7aA77cC726B35b1F182D90d45292e0BE38a841",
+      "lltv": "860000000000000000",
+      "borrowUsd": 3554820.421389102,
+      "borrow": 3556360.13889,
+      "loanSupply": 52159428071.75193,
+      "util": 0.8890749061405463,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "AVLT",
+        "collat_unpriced(USD=null)": true
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "msY",
+      "loan": "USDC",
+      "collat_addr": "0x890A5122Aa1dA30fEC4286DE7904Ff808F0bd74A",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xB0b6Fc449CcF81Ff4129A86ddc814412E3Cd9Aa4",
+      "lltv": "915000000000000000",
+      "borrowUsd": 2384736.3892910765,
+      "borrow": 2385769.302327,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9284214552483523,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "msY",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "mM1-USD",
+      "loan": "USDC",
+      "collat_addr": "0xCc5C22C7A6BCC25e66726AeF011dDE74289ED203",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0x72D028037d6B4dE722370ac6e9EEED5eDe9cF0A0",
+      "lltv": "860000000000000000",
+      "borrowUsd": 475042.6686019372,
+      "borrow": 475248.426256,
+      "loanSupply": 52159428071.75193,
+      "util": 0.9114181107766286,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "mM1-USD",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "eUSDe",
+      "loan": "USDe",
+      "collat_addr": "0x90D2af7d622ca3141efA4d8f1F24d86E5974Cc8F",
+      "loan_addr": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "oracle": "0xaE4750d0813B5E37A51f7629beedd72AF1f9cA35",
+      "lltv": "915000000000000000",
+      "borrowUsd": 57948.34259169004,
+      "borrow": 57992.9020312828,
+      "loanSupply": 4490111832.839595,
+      "util": 0.683756104228404,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "eUSDe",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "srUSD",
+      "loan": "USDC",
+      "collat_addr": "0x738d1115B90efa71AE468F1287fc864775e23a31",
+      "loan_addr": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "oracle": "0xf3FB6f72f1bbD5dFfC03c8c120E7692559643B6d",
+      "lltv": "915000000000000000",
+      "borrowUsd": 71855.19955890912,
+      "borrow": 71886.322568,
+      "loanSupply": 52159428071.75193,
+      "util": 0.8960612508035513,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "srUSD",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    },
+    {
+      "score": 2.5,
+      "collat": "USUALX",
+      "loan": "USUAL",
+      "collat_addr": "0x06B964d96f5dCF7Eae9d7C559B09EDCe244d4B8E",
+      "loan_addr": "0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E",
+      "oracle": "0x7bA6A0590a97c256a015d34102Fc9df6b74b1f1c",
+      "lltv": "945000000000000000",
+      "borrowUsd": 12813.46160455788,
+      "borrow": 1354983.857748217,
+      "loanSupply": 1833702980.7114875,
+      "util": 0.7725828477206623,
+      "signals": {
+        "borrow/loanSupply": 0.0,
+        "collat_unknown": "USUALX",
+        "warnings": [
+          "not_whitelisted"
+        ],
+        "listed": false
+      }
+    }
+  ]
+}

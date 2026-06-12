@@ -5,8 +5,9 @@
     {
       "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
       "holder": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
-      "amount": 4333855.658659789,
+      "amount": 4333855.658659788,
       "frac": 0.4873,
+      "gfrac": 0.48734,
       "kind": "erc20_receipt",
       "label": "WstETH",
       "depth": 0,
@@ -15,33 +16,58 @@
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x12b54025c112aa61face2cdb7118740875a566e9",
-      "amount": 932386.8584956959,
+      "amount": 1152502.4095015288,
       "frac": 0.2659,
+      "gfrac": 0.129598,
       "kind": "ledger:aave_v3",
-      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "label": "Spark (spwstETH)",
       "depth": 1,
       "note": "singleton ledger; expand via adapter:aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+        "implementation_label": "AToken"
+      },
+      "aave_family": {
+        "venue": "Spark",
+        "name": "Spark wstETH",
+        "symbol": "spwstETH",
+        "pool": "0xc13e21b648a5ee794902342038ff3adab66be987"
+      },
       "resolved": true,
-      "children_sum": 560356.86,
-      "coverage": 0.601
+      "children_sum": 777790.04,
+      "coverage": 0.6749
     },
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0x9600a48ed0f931d0c422d574e3275a90d8b22745",
-      "amount": 130930.06112011003,
+      "amount": 161837.69825480855,
       "frac": 0.1404,
+      "gfrac": 0.018199,
       "kind": "contract",
-      "label": "InstaAccountV2",
+      "label": "InstaDefaultImplementation",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InstaAccountV2",
+        "implementation": "0x8f4a8675ea3a069d1d8280bd19b802430f8f53be",
+        "implementation_label": "InstaDefaultImplementation"
+      },
       "position": {
         "role": "supply",
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 130930.0611,
+          "attributed": 161837.6983,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -50,8 +76,9 @@
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0xd4584bf988c9e8994688b56484e2f74ceaeefb20",
-      "amount": 128130.34751313037,
+      "amount": 158377.0781187605,
       "frac": 0.1374,
+      "gfrac": 0.017809,
       "kind": "EOA",
       "label": "EOA",
       "depth": 2,
@@ -61,9 +88,12 @@
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 128130.3475,
+          "attributed": 158377.0781,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -72,20 +102,31 @@
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0x3a0dc3fc4b84e2427ced214c9ce858ea218e97d9",
-      "amount": 104276.16029715758,
+      "amount": 128891.81919696987,
       "frac": 0.1118,
+      "gfrac": 0.014494,
       "kind": "contract",
-      "label": "InstaAccountV2",
+      "label": "InstaDefaultImplementation",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InstaAccountV2",
+        "implementation": "0x8f4a8675ea3a069d1d8280bd19b802430f8f53be",
+        "implementation_label": "InstaDefaultImplementation"
+      },
       "position": {
         "role": "supply",
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 104276.1603,
+          "attributed": 128891.8192,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -94,8 +135,9 @@
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0x466a682931825f320f0327f65ed1607939f57501",
-      "amount": 49999.00000000015,
+      "amount": 61801.87350267234,
       "frac": 0.0536,
+      "gfrac": 0.00695,
       "kind": "EOA",
       "label": "EOA",
       "depth": 2,
@@ -105,9 +147,12 @@
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 49999.0,
+          "attributed": 61801.8735,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -116,20 +161,31 @@
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0x6231bd0147ca6d052b833183037b04cfb2090e5c",
-      "amount": 47693.05814517037,
+      "amount": 58951.58596058735,
       "frac": 0.0512,
+      "gfrac": 0.006629,
       "kind": "contract",
-      "label": "InstaAccountV2",
+      "label": "InstaDefaultImplementation",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InstaAccountV2",
+        "implementation": "0x8f4a8675ea3a069d1d8280bd19b802430f8f53be",
+        "implementation_label": "InstaDefaultImplementation"
+      },
       "position": {
         "role": "supply",
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 47693.0581,
+          "attributed": 58951.586,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -138,8 +194,9 @@
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
       "holder": "0xcaf1943ce973c1de423fe6e9f1a255049e51666e",
-      "amount": 38692.10186800622,
+      "amount": 47825.84422086492,
       "frac": 0.0415,
+      "gfrac": 0.005378,
       "kind": "EOA",
       "label": "EOA",
       "depth": 2,
@@ -149,9 +206,12 @@
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
           "supplied": 38692.1019,
+          "attributed": 47825.8442,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -159,21 +219,26 @@
     },
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
-      "holder": "0xda46f11ac5e394111d92f8879302a9347fe42259",
-      "amount": 31393.589371122962,
-      "frac": 0.0337,
-      "kind": "contract",
-      "label": "AccountImplementation",
+      "holder": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "amount": 34325.62815128567,
+      "frac": 0.0298,
+      "gfrac": 0.00386,
+      "kind": "erc20_receipt",
+      "label": "BoringVault",
       "depth": 2,
       "via": "aave_v3",
+      "note": "symbol=liquidETH",
       "position": {
         "role": "supply",
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
-          "supplied": 31393.5894,
+          "supplied": 27770.1465,
+          "attributed": 34325.6282,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": true
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -181,56 +246,138 @@
     },
     {
       "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
-      "holder": "0xd1781818f7f30b68155fec7d31f812abe7b00be9",
-      "amount": 29242.545983667074,
-      "frac": 0.0314,
-      "kind": "contract",
-      "label": "DSProxy",
+      "holder": "0x3883d8cdcdda03784908cfa2f34ed2cf1604e4d7",
+      "amount": 33820.58438711736,
+      "frac": 0.0293,
+      "gfrac": 0.003803,
+      "kind": "mellow_subvault",
+      "label": "Mellow stRATEGY / strETH Subvault",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0x0000000e535b4e063f8372933a55470e67910a66",
+        "implementation_label": "Subvault"
+      },
+      "mellow": {
+        "protocol": "Mellow",
+        "role": "subvault",
+        "parent_vault": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+        "is_registered_subvault": true,
+        "subvault_count": 8,
+        "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+        "share_name": "Mellow stRATEGY",
+        "share_symbol": "strETH",
+        "display_label": "Mellow stRATEGY / strETH Subvault"
+      },
       "position": {
         "role": "supply",
         "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
         "detail": {
-          "supplied": 29242.546,
+          "supplied": 27361.5556,
+          "attributed": 33820.5844,
+          "pool_liquidity": 1152502.4095,
           "underlying_symbol": "wstETH",
           "ltv": 0.83,
-          "liq_threshold": 0.84
+          "liq_threshold": 0.84,
+          "registry_pinned": true
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
       }
+    },
+    {
+      "from_token": "0x12b54025c112aa61face2cdb7118740875a566e9",
+      "holder": "0xb8a451107a9f87fde481d4d686247d6e43ed715e",
+      "amount": 17007.896127237043,
+      "frac": 0.0148,
+      "gfrac": 0.001913,
+      "kind": "erc4626_vault",
+      "label": "PlasmaVaultBase",
+      "depth": 2,
+      "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "PlasmaVault",
+        "implementation": "0x2de7320004f837925ba31326ff66210be90171ab",
+        "implementation_label": "PlasmaVaultBase"
+      },
+      "position": {
+        "role": "supply",
+        "venue": "0x12b54025c112aa61face2cdb7118740875a566e9",
+        "detail": {
+          "supplied": 13759.7414,
+          "attributed": 17007.8961,
+          "pool_liquidity": 1152502.4095,
+          "underlying_symbol": "wstETH",
+          "ltv": 0.83,
+          "liq_threshold": 0.84,
+          "registry_pinned": true,
+          "registry_forced": true
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "registry_forced": true
     },
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "amount": 667144.9511413451,
+      "amount": 824642.8579202559,
       "frac": 0.1903,
+      "gfrac": 0.092731,
       "kind": "ledger:aave_v3",
-      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "label": "Aave (aEthwstETH)",
       "depth": 1,
       "note": "singleton ledger; expand via adapter:aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+        "implementation_label": "ATokenInstance"
+      },
+      "aave_family": {
+        "venue": "Aave",
+        "name": "Aave Ethereum wstETH",
+        "symbol": "aEthwstETH",
+        "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"
+      },
       "resolved": true,
-      "children_sum": 240012.68,
-      "coverage": 0.3598
+      "children_sum": 334674.83,
+      "coverage": 0.4058
     },
     {
       "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
       "holder": "0xe84a061897afc2e7ff5fb7e3686717c528617487",
-      "amount": 55219.133413551004,
-      "frac": 0.0828,
-      "kind": "contract",
-      "label": "Proxy",
+      "amount": 67676.25668704123,
+      "frac": 0.0821,
+      "gfrac": 0.00761,
+      "kind": "safe",
+      "label": "GnosisSafe",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "Proxy",
+        "implementation": "0x34cfac646f301356faa8b21e94227e3583fe3f5f",
+        "implementation_label": "GnosisSafe"
+      },
       "position": {
         "role": "supply",
         "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
         "detail": {
           "supplied": 55219.1334,
+          "attributed": 67676.2567,
+          "pool_liquidity": 824642.8579,
           "underlying_symbol": "wstETH",
           "ltv": 0.785,
-          "liq_threshold": 0.81
+          "liq_threshold": 0.81,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -239,20 +386,42 @@
     {
       "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
       "holder": "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080",
-      "amount": 53774.65802681581,
-      "frac": 0.0806,
-      "kind": "contract",
-      "label": "TransparentUpgradeableProxy",
+      "amount": 65905.91584669014,
+      "frac": 0.0799,
+      "gfrac": 0.007411,
+      "kind": "mellow_subvault",
+      "label": "Mellow stRATEGY / strETH Subvault",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0x0000000e535b4e063f8372933a55470e67910a66",
+        "implementation_label": "Subvault"
+      },
+      "mellow": {
+        "protocol": "Mellow",
+        "role": "subvault",
+        "parent_vault": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+        "is_registered_subvault": true,
+        "subvault_count": 8,
+        "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+        "share_name": "Mellow stRATEGY",
+        "share_symbol": "strETH",
+        "display_label": "Mellow stRATEGY / strETH Subvault"
+      },
       "position": {
         "role": "supply",
         "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
         "detail": {
           "supplied": 53774.658,
+          "attributed": 65905.9158,
+          "pool_liquidity": 824642.8579,
           "underlying_symbol": "wstETH",
           "ltv": 0.785,
-          "liq_threshold": 0.81
+          "liq_threshold": 0.81,
+          "registry_pinned": true
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -261,20 +430,31 @@
     {
       "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
       "holder": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
-      "amount": 42000.0001267029,
-      "frac": 0.063,
+      "amount": 51474.961914794774,
+      "frac": 0.0624,
+      "gfrac": 0.005788,
       "kind": "safe",
-      "label": "SafeProxy",
+      "label": "Safe",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "SafeProxy",
+        "implementation": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+        "implementation_label": "Safe"
+      },
       "position": {
         "role": "supply",
         "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
         "detail": {
           "supplied": 42000.0001,
+          "attributed": 51474.9619,
+          "pool_liquidity": 824642.8579,
           "underlying_symbol": "wstETH",
           "ltv": 0.785,
-          "liq_threshold": 0.81
+          "liq_threshold": 0.81,
+          "registry_pinned": false
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
@@ -282,136 +462,70 @@
     },
     {
       "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "holder": "0x81d0ac9a5f91188074fd753a03885162bec74246",
-      "amount": 23888.902718296937,
-      "frac": 0.0358,
-      "kind": "EOA",
-      "label": "EOA",
+      "holder": "0xb8a451107a9f87fde481d4d686247d6e43ed715e",
+      "amount": 10617.98663300856,
+      "frac": 0.0129,
+      "gfrac": 0.001194,
+      "kind": "erc4626_vault",
+      "label": "PlasmaVaultBase",
       "depth": 2,
       "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "PlasmaVault",
+        "implementation": "0x2de7320004f837925ba31326ff66210be90171ab",
+        "implementation_label": "PlasmaVaultBase"
+      },
       "position": {
         "role": "supply",
         "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
         "detail": {
-          "supplied": 23888.9027,
+          "supplied": 8663.5409,
+          "attributed": 10617.9866,
+          "pool_liquidity": 824642.8579,
           "underlying_symbol": "wstETH",
           "ltv": 0.785,
-          "liq_threshold": 0.81
+          "liq_threshold": 0.81,
+          "registry_pinned": true,
+          "registry_forced": true
         },
         "verifiable_onchain": true,
         "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "holder": "0x54b338e6cfd605dad2264b96b0a730fb2bdca9e4",
-      "amount": 17783.70625456138,
-      "frac": 0.0267,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "aave_v3",
-      "position": {
-        "role": "supply",
-        "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-        "detail": {
-          "supplied": 17783.7063,
-          "underlying_symbol": "wstETH",
-          "ltv": 0.785,
-          "liq_threshold": 0.81
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "holder": "0xffefa70b6deaab975ef15a6474ce9c4214d82b02",
-      "amount": 17573.487890535383,
-      "frac": 0.0263,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "aave_v3",
-      "position": {
-        "role": "supply",
-        "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-        "detail": {
-          "supplied": 17573.4879,
-          "underlying_symbol": "wstETH",
-          "ltv": 0.785,
-          "liq_threshold": 0.81
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "holder": "0x989b96317735d70a7762bf96c034b203713aae18",
-      "amount": 15498.981297816006,
-      "frac": 0.0232,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "aave_v3",
-      "position": {
-        "role": "supply",
-        "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-        "detail": {
-          "supplied": 15498.9813,
-          "underlying_symbol": "wstETH",
-          "ltv": 0.785,
-          "liq_threshold": 0.81
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-      "holder": "0x9e2ab154f8f3a3072d7448b21b727c00f8914185",
-      "amount": 14273.806326826261,
-      "frac": 0.0214,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "aave_v3",
-      "position": {
-        "role": "supply",
-        "venue": "0x0b925ed163218f6662a35e0f0371ac234f9e9371",
-        "detail": {
-          "supplied": 14273.8063,
-          "underlying_symbol": "wstETH",
-          "ltv": 0.785,
-          "liq_threshold": 0.81
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
+      },
+      "registry_forced": true
     },
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "amount": 313934.82238093065,
+      "amount": 388047.76785914693,
       "frac": 0.0895,
+      "gfrac": 0.043636,
       "kind": "ledger:morpho",
       "label": "Morpho",
       "depth": 1,
       "note": "singleton ledger; expand via adapter:morpho",
       "resolved": true,
-      "children_sum": 247013.07,
-      "coverage": 0.7868
+      "children_sum": 252201.12,
+      "coverage": 0.6499
     },
     {
       "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
       "holder": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
       "amount": 204682.47914978434,
-      "frac": 0.652,
+      "frac": 0.5275,
+      "gfrac": 0.023016,
       "kind": "safe",
-      "label": "SafeProxy",
+      "label": "Safe",
       "depth": 2,
       "via": "morpho",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "SafeProxy",
+        "implementation": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+        "implementation_label": "Safe"
+      },
       "position": {
         "role": "collateral",
         "venue": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
@@ -428,178 +542,11 @@
       }
     },
     {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0x462a336dcac6eaf544106266914caa5a18b831d0",
-      "amount": 10824.23882274066,
-      "frac": 0.0345,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d",
-        "detail": {
-          "collateral": 8237.4121,
-          "loan_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "loan_symbol": "WETH",
-          "borrow": 8919.6352,
-          "lltv": 0.945,
-          "utilization": 0.8997
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
-      "amount": 7153.40240111895,
-      "frac": 0.0228,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
-        "detail": {
-          "collateral": 4753.4024,
-          "loan_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "loan_symbol": "USDC",
-          "borrow": 6005628.7383,
-          "lltv": 0.86,
-          "utilization": 0.9023
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0x20f6c325df578a11209817a30ebb2f0d5454176d",
-      "amount": 6703.904615206373,
-      "frac": 0.0214,
-      "kind": "safe",
-      "label": "SafeProxy",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
-        "detail": {
-          "collateral": 6703.9046,
-          "loan_token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "loan_symbol": "USDC",
-          "borrow": 7576503.3282,
-          "lltv": 0.86,
-          "utilization": 0.9023
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0xb224f589297a5a207e6069de5dafd4b120129817",
-      "amount": 5602.8155894070405,
-      "frac": 0.0178,
-      "kind": "contract",
-      "label": "MorphoLendingAdapter",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
-        "detail": {
-          "collateral": 5602.8156,
-          "loan_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "loan_symbol": "WETH",
-          "borrow": 6648.5965,
-          "lltv": 0.965,
-          "utilization": 0.8906
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0x0b00c540bc5f203d97ac87da62164d3d37e19798",
-      "amount": 4174.280140276781,
-      "frac": 0.0133,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
-        "detail": {
-          "collateral": 3731.1805,
-          "loan_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "loan_symbol": "WETH",
-          "borrow": 4226.1095,
-          "lltv": 0.965,
-          "utilization": 0.8906
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0xde6b2a06407575b98724818445178c1f5fd53361",
-      "amount": 4059.1597175753304,
-      "frac": 0.0129,
-      "kind": "opaque",
-      "label": "",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
-        "detail": {
-          "collateral": 4059.1597,
-          "loan_token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "loan_symbol": "USDT",
-          "borrow": 4434230.0891,
-          "lltv": 0.86,
-          "utilization": 0.9556
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
-      "from_token": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-      "holder": "0x9a3569c7053f9fb5abeb7ccb1678bd33c47ad278",
-      "amount": 3812.787484252962,
-      "frac": 0.0121,
-      "kind": "contract",
-      "label": "ImmutableBeaconProxy",
-      "depth": 2,
-      "via": "morpho",
-      "position": {
-        "role": "collateral",
-        "venue": "0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
-        "detail": {
-          "collateral": 3812.7875,
-          "loan_token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "loan_symbol": "WETH",
-          "borrow": 4073.3015,
-          "lltv": 0.965,
-          "utilization": 0.8906
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      }
-    },
-    {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x248ccbf4864221fc0e840f29bb042ad5bfc89b5c",
-      "amount": 84755.94999319674,
+      "amount": 104764.92208861528,
       "frac": 0.0242,
+      "gfrac": 0.011781,
       "kind": "ledger:maker",
       "label": "GemJoin",
       "depth": 1,
@@ -609,26 +556,43 @@
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x52aa899454998be5b000ad077a46bbe360f4e497",
-      "amount": 57127.4611558188,
+      "amount": 70613.9689023621,
       "frac": 0.0163,
+      "gfrac": 0.007941,
       "kind": "contract",
-      "label": "FluidLiquidityProxy",
-      "depth": 1
+      "label": "FluidLiquidityDummyImpl",
+      "depth": 1,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "FluidLiquidityProxy",
+        "implementation": "0xcc331daf69752bece3dc98dbc63eacd5092266a2",
+        "implementation_label": "FluidLiquidityDummyImpl"
+      }
     },
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x0f25c1dc2a9922304f2eac71dca9b07e310e8e5a",
-      "amount": 53471.85601776506,
+      "amount": 66095.35767205103,
       "frac": 0.0153,
+      "gfrac": 0.007432,
       "kind": "contract",
-      "label": "OssifiableProxy",
-      "depth": 1
+      "label": "L1ERC20TokenGateway",
+      "depth": 1,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "OssifiableProxy",
+        "implementation": "0xc4e3ff0b5b106f88fc64c43031be8b076ee9f21c",
+        "implementation_label": "L1ERC20TokenGateway"
+      }
     },
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0x5313b39bf226ced2332c81eb97bb28c6fd50d1a3",
-      "amount": 39011.04001906244,
+      "amount": 48220.66850198703,
       "frac": 0.0111,
+      "gfrac": 0.005422,
       "kind": "EOA",
       "label": "EOA",
       "depth": 1
@@ -636,21 +600,155 @@
     {
       "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
       "holder": "0xa586a732394a1affcf15b972cd47c936033c9fa7",
-      "amount": 38949.100415960354,
+      "amount": 48144.106352737195,
       "frac": 0.0111,
+      "gfrac": 0.005414,
       "kind": "contract",
       "label": "SiloedLockReleaseTokenPool",
       "depth": 1
     },
     {
+      "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "holder": "0xc035a7cf15375ce2706766804551791ad035e0c2",
+      "amount": 47811.04861239355,
+      "frac": 0.011,
+      "gfrac": 0.005376,
+      "kind": "ledger:aave_v3",
+      "label": "Aave Lido (aEthLidowstETH)",
+      "depth": 1,
+      "note": "singleton ledger; expand via adapter:aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0x80d786df608603ccdcc83f5712b97c185a6a948d",
+        "implementation_label": "ATokenInstance"
+      },
+      "aave_family": {
+        "venue": "Aave Lido",
+        "name": "Aave Ethereum Lido wstETH",
+        "symbol": "aEthLidowstETH",
+        "pool": "0x4e033931ad43597d96d6bcc25c280717730b58b1"
+      },
+      "resolved": true,
+      "children_sum": 41238.17,
+      "coverage": 0.8625
+    },
+    {
+      "from_token": "0xc035a7cf15375ce2706766804551791ad035e0c2",
+      "holder": "0xb8a451107a9f87fde481d4d686247d6e43ed715e",
+      "amount": 226.40119114510003,
+      "frac": 0.0047,
+      "gfrac": 2.5e-05,
+      "kind": "erc4626_vault",
+      "label": "PlasmaVaultBase",
+      "depth": 2,
+      "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "PlasmaVault",
+        "implementation": "0x2de7320004f837925ba31326ff66210be90171ab",
+        "implementation_label": "PlasmaVaultBase"
+      },
+      "position": {
+        "role": "supply",
+        "venue": "0xc035a7cf15375ce2706766804551791ad035e0c2",
+        "detail": {
+          "supplied": 254.8105,
+          "attributed": 226.4012,
+          "pool_liquidity": 47811.0486,
+          "underlying_symbol": "wstETH",
+          "ltv": 0.82,
+          "liq_threshold": 0.83,
+          "registry_pinned": true,
+          "registry_forced": true
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "registry_forced": true
+    },
+    {
+      "from_token": "0xc035a7cf15375ce2706766804551791ad035e0c2",
+      "holder": "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080",
+      "amount": 3.2340512814124006e-07,
+      "frac": 0.0,
+      "gfrac": 0.0,
+      "kind": "mellow_subvault",
+      "label": "Mellow stRATEGY / strETH Subvault",
+      "depth": 2,
+      "via": "aave_v3",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0x0000000e535b4e063f8372933a55470e67910a66",
+        "implementation_label": "Subvault"
+      },
+      "mellow": {
+        "protocol": "Mellow",
+        "role": "subvault",
+        "parent_vault": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+        "is_registered_subvault": true,
+        "subvault_count": 8,
+        "share_manager": "0xcd3c0f51798d1daa92fb192e57844ae6cee8a6c7",
+        "share_name": "Mellow stRATEGY",
+        "share_symbol": "strETH",
+        "display_label": "Mellow stRATEGY / strETH Subvault"
+      },
+      "position": {
+        "role": "supply",
+        "venue": "0xc035a7cf15375ce2706766804551791ad035e0c2",
+        "detail": {
+          "supplied": 0.0,
+          "attributed": 0.0,
+          "pool_liquidity": 47811.0486,
+          "underlying_symbol": "wstETH",
+          "ltv": 0.82,
+          "liq_threshold": 0.83,
+          "registry_pinned": true,
+          "registry_forced": true
+        },
+        "verifiable_onchain": true,
+        "confidence": "HIGH"
+      },
+      "registry_forced": true
+    },
+    {
+      "from_token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "holder": "0x7c697d6cff279f3f9c2401d0ea2ac7e7ede0e2c3",
+      "amount": 45767.18480234633,
+      "frac": 0.0106,
+      "gfrac": 0.005146,
+      "kind": "safe",
+      "label": "GnosisSafe",
+      "depth": 1,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "GnosisSafeProxy",
+        "implementation": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+        "implementation_label": "GnosisSafe"
+      }
+    },
+    {
       "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
       "holder": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-      "amount": 386129.15128577495,
+      "amount": 386129.1512857749,
       "frac": 0.0434,
+      "gfrac": 0.04342,
       "kind": "ledger:eigenlayer",
-      "label": "TransparentUpgradeableProxy",
+      "label": "StrategyBaseTVLLimits",
       "depth": 0,
       "note": "singleton ledger; expand via adapter:eigenlayer",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0xb427e2eb4bb33ee3f1ee72dc9e347e8625a72230",
+        "implementation_label": "StrategyBaseTVLLimits"
+      },
       "resolved": true,
       "children_sum": 343428.11,
       "coverage": 0.8894
@@ -660,11 +758,19 @@
       "holder": "0x79f17234746344e0365d40be50d8d43db9082c32",
       "amount": 281523.3042817435,
       "frac": 0.7291,
+      "gfrac": 0.031657,
       "kind": "ledger:kelp",
-      "label": "TransparentUpgradeableProxy",
+      "label": "NodeDelegator",
       "depth": 1,
       "via": "eigenlayer",
       "note": "singleton ledger; expand via adapter:kelp",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0xa86f75549c21f815f61053a39b0d97062ff6dc53",
+        "implementation_label": "NodeDelegator"
+      },
       "position": {
         "role": "restake",
         "venue": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
@@ -685,194 +791,26 @@
       "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
       "amount": 281523.3042817435,
       "frac": 1.0,
+      "gfrac": 0.031657,
       "kind": "erc20_receipt",
-      "label": "TransparentUpgradeableProxy",
+      "label": "RSETH",
       "depth": 2,
       "via": "kelp",
-      "note": "symbol=rsETH"
-    },
-    {
-      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "holder": "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1",
-      "amount": 431907.05340022163,
-      "frac": 0.7585,
-      "kind": "ledger:aave_v3",
-      "label": "InitializableImmutableAdminUpgradeabilityProxy",
-      "depth": 3,
-      "note": "singleton ledger; expand via adapter:aave_v3"
-    },
-    {
-      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "holder": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
-      "amount": 80547.67469212066,
-      "frac": 0.1415,
-      "kind": "contract",
-      "label": "RSETH_OFTAdapter",
-      "depth": 3
-    },
-    {
-      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "holder": "0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16",
-      "amount": 16486.658299663282,
-      "frac": 0.029,
-      "kind": "ledger:kelp",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 3,
-      "note": "singleton ledger; expand via adapter:kelp"
-    },
-    {
-      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "holder": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
-      "amount": 9891.965761816911,
-      "frac": 0.0174,
-      "kind": "ledger:compound_v3",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 3,
-      "note": "singleton ledger; expand via adapter:compound_v3"
-    },
-    {
-      "from_token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "holder": "0x22162dbba43fe0477cdc5234e248264ec7c6ea7c",
-      "amount": 5941.008118993307,
-      "frac": 0.0104,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 3
-    },
-    {
-      "from_token": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-      "holder": "0x395884d1974a839702bcfcba176ac7871c788946",
-      "amount": 30662.665071083746,
-      "frac": 0.0794,
-      "kind": "ledger:kelp",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 1,
-      "via": "eigenlayer",
-      "note": "singleton ledger; expand via adapter:kelp",
-      "position": {
-        "role": "restake",
-        "venue": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-        "detail": {
-          "shares": 27990.8756,
-          "underlying": 30662.6651,
-          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      },
-      "resolved": true,
-      "children_sum": 30662.67,
-      "coverage": 1.0
-    },
-    {
-      "from_token": "0x395884d1974a839702bcfcba176ac7871c788946",
-      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "amount": 30662.665071083746,
-      "frac": 1.0,
-      "kind": "erc20_receipt",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 2,
-      "via": "kelp",
-      "note": "symbol=rsETH"
-    },
-    {
-      "from_token": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-      "holder": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
-      "amount": 19039.572975546682,
-      "frac": 0.0493,
-      "kind": "ledger:kelp",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 1,
-      "via": "eigenlayer",
-      "note": "singleton ledger; expand via adapter:kelp",
-      "position": {
-        "role": "restake",
-        "venue": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-        "detail": {
-          "shares": 17380.5609,
-          "underlying": 19039.573,
-          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      },
-      "resolved": true,
-      "children_sum": 19039.57,
-      "coverage": 1.0
-    },
-    {
-      "from_token": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
-      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "amount": 19039.572975546682,
-      "frac": 1.0,
-      "kind": "erc20_receipt",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 2,
-      "via": "kelp",
-      "note": "symbol=rsETH"
-    },
-    {
-      "from_token": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-      "holder": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
-      "amount": 7968.271882532957,
-      "frac": 0.0206,
-      "kind": "ledger:kelp",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 1,
-      "via": "eigenlayer",
-      "note": "singleton ledger; expand via adapter:kelp",
-      "position": {
-        "role": "restake",
-        "venue": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-        "detail": {
-          "shares": 7273.957,
-          "underlying": 7968.2719,
-          "operator": "0xbe7d5f26f5d5f567d35a86dd4d7d02aced2d5bff"
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
-      },
-      "resolved": true,
-      "children_sum": 7968.27,
-      "coverage": 1.0
-    },
-    {
-      "from_token": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
-      "holder": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "amount": 7968.271882532957,
-      "frac": 1.0,
-      "kind": "erc20_receipt",
-      "label": "TransparentUpgradeableProxy",
-      "depth": 2,
-      "via": "kelp",
-      "note": "symbol=rsETH"
-    },
-    {
-      "from_token": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-      "holder": "0x15f688feed7f014b933d306a74bc5d11506f54b9",
-      "amount": 4234.296931220337,
-      "frac": 0.011,
-      "kind": "EOA",
-      "label": "EOA",
-      "depth": 1,
-      "via": "eigenlayer",
-      "position": {
-        "role": "restake",
-        "venue": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
-        "detail": {
-          "shares": 3865.3417,
-          "underlying": 4234.2969,
-          "operator": "0x5accc90436492f24e6af278569691e2c942a676d"
-        },
-        "verifiable_onchain": true,
-        "confidence": "HIGH"
+      "note": "symbol=rsETH",
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "TransparentUpgradeableProxy",
+        "implementation": "0x7159107483e623707c18c6e06cbc095bd0717783",
+        "implementation_label": "RSETH"
       }
     },
     {
       "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
       "holder": "0x176f3dab24a159341c0509bb36b833e7fdd0a132",
-      "amount": 233915.54280532413,
+      "amount": 233915.5428053241,
       "frac": 0.0263,
+      "gfrac": 0.026304,
       "kind": "EOA",
       "label": "EOA",
       "depth": 0
@@ -882,8 +820,53 @@
       "holder": "0x000000000073f8f0541e942d85ef5fb5d0e84844",
       "amount": 182418.00301601266,
       "frac": 0.0205,
+      "gfrac": 0.020513,
       "kind": "contract",
-      "label": "ERC1967Proxy",
+      "label": "InheritableVault",
+      "depth": 0,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "ERC1967Proxy",
+        "implementation": "0x87f93115e313cba3e9d7a559424d1be5cac01b4d",
+        "implementation_label": "InheritableVault"
+      }
+    },
+    {
+      "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "holder": "0x1b7a4c3797236a1c37f8741c0be35c2c72736fff",
+      "amount": 61425.12629164482,
+      "frac": 0.0069,
+      "gfrac": 0.006907,
+      "kind": "contract",
+      "label": "EtherFiRestaker",
+      "depth": 0,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "UUPSProxy",
+        "implementation": "0x9d795b303b9da3488fd3a4ca4702c872576bd0c6",
+        "implementation_label": "EtherFiRestaker"
+      }
+    },
+    {
+      "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "holder": "0xccc5eeebe15291620be733997af60735618548d7",
+      "amount": 60428.27184198682,
+      "frac": 0.0068,
+      "gfrac": 0.006795,
+      "kind": "EOA",
+      "label": "EOA",
+      "depth": 0
+    },
+    {
+      "from_token": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "holder": "0xe53fff67f9f384d20ebea36f43b93dc49ed22753",
+      "amount": 46025.34179767804,
+      "frac": 0.0052,
+      "gfrac": 0.005176,
+      "kind": "EOA",
+      "label": "EOA",
       "depth": 0
     }
   ]
