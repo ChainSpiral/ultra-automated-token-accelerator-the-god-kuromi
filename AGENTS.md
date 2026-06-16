@@ -1,5 +1,14 @@
 # defi-dagggg Agent Notes
 
+## Current EOA Flow Handoff
+
+- For the current `grahahahahahahaha` branch, read
+  `docs/eoa-flow-agent-handoff.md` first.
+- This repo is the data/crawler/mock-API side of the EOA-flow work. The paired
+  UI/API repo is `/Users/link/risk-exposure-monitoring-flowmap`.
+- Do not print API keys. Local keys are loaded from `/Users/link/podotree/.env`
+  or process env.
+
 ## Vault Entity Registry
 
 - Before classifying a vault-like holder, borrower, receipt token, or strategy
