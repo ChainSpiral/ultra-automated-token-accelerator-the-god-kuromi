@@ -28,6 +28,15 @@ type RawEdge = {
   amount?: number;
 };
 
+interface HiddenEoaRelation {
+  id: string;
+  address: string;
+  label: string;
+  direction: "out" | "in";
+  edgeLabel?: string;
+  amount?: number;
+}
+
 const EDGE_COLOR: Record<string, string> = {
   collateral: "#60a5fa",
   dex: "#34d399",
@@ -87,6 +96,14 @@ const isAddress = (s: string | undefined): s is string =>
 function nodeAddress(n: RawNode): string | null {
   const a = (n.data?.address as string | undefined) ?? n.id;
   return isAddress(a) ? a.toLowerCase() : null;
+}
+
+function nodeKind(n: RawNode): string {
+  return String(n.data?.category ?? n.data?.kind ?? n.type);
+}
+
+function isEoaNode(n: RawNode): boolean {
+  return nodeKind(n) === "EOA";
 }
 
 function sideForAngle(angle: number, inward = false): Position {
@@ -150,10 +167,26 @@ function explorerLinks(addr: string, isToken: boolean): ExplorerLink[] {
   return links;
 }
 
-function NodeInspector({ node, onClose }: { node: RawNode; onClose: () => void }) {
+function fmtTokenAmount(v: unknown): string {
+  const n = typeof v === "number" ? v : NaN;
+  if (!isFinite(n)) return "";
+  if (Math.abs(n) >= 1_000_000) return `${(n / 1_000_000).toFixed(2)}M`;
+  if (Math.abs(n) >= 1_000) return Math.round(n).toLocaleString();
+  return n.toLocaleString(undefined, { maximumFractionDigits: 4 });
+}
+
+function NodeInspector({
+  node,
+  hiddenEoas,
+  onClose,
+}: {
+  node: RawNode;
+  hiddenEoas: HiddenEoaRelation[];
+  onClose: () => void;
+}) {
   const [copied, setCopied] = useState(false);
   const addr = nodeAddress(node);
-  const kind = String(node.data?.category ?? node.data?.kind ?? node.type);
+  const kind = nodeKind(node);
   const kindLabel = KIND_LABEL[kind] ?? kind;
   const isToken = node.type === "token" || kind === "token";
   const symbol = (node.data?.symbol as string | undefined) ?? null;
@@ -237,18 +270,103 @@ function NodeInspector({ node, onClose }: { node: RawNode; onClose: () => void }
             </div>
           </section>
         )}
+
+        {hiddenEoas.length > 0 && (
+          <section>
+            <div className="mb-1.5 flex items-center justify-between text-[10px] font-medium uppercase tracking-wider text-slate-500">
+              <span>숨긴 EOA 주소</span>
+              <span>{hiddenEoas.length}개</span>
+            </div>
+            <div className="space-y-1.5">
+              {hiddenEoas.map((r) => (
+                <a
+                  key={`${r.id}:${r.address}`}
+                  href={`https://etherscan.io/address/${r.address}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={r.address}
+                  className="block rounded-md border border-white/10 bg-white/5 px-2.5 py-2 transition-colors hover:border-white/25 hover:bg-white/10"
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="shrink-0 font-mono text-[10px] text-slate-500">
+                      {r.direction === "out" ? "→" : "←"}
+                    </span>
+                    <span className="min-w-0 flex-1 truncate font-mono text-[11px] text-slate-200">
+                      {r.address}
+                    </span>
+                    <span className="shrink-0 text-slate-500">↗</span>
+                  </div>
+                  <div className="mt-1 flex items-center gap-2 text-[10px] text-slate-400">
+                    <span className="truncate">{r.label}</span>
+                    {(r.edgeLabel || r.amount != null) && (
+                      <span className="ml-auto shrink-0 font-mono">
+                        {r.edgeLabel ?? fmtTokenAmount(r.amount)}
+                      </span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </aside>
   );
 }
 
 export function OverviewCanvas({ nodes, edges }: { nodes: RawNode[]; edges: RawEdge[] }) {
+  const { visibleNodes, visibleEdges, hiddenEoasByNode } = useMemo(() => {
+    const visible = nodes.filter((n) => !isEoaNode(n));
+    const allById = new Map(nodes.map((n) => [n.id, n]));
+    const visibleIds = new Set(visible.map((n) => n.id));
+    const hiddenByNode = new Map<string, HiddenEoaRelation[]>();
+
+    const pushHidden = (nodeId: string, eoa: RawNode, edge: RawEdge, direction: "out" | "in") => {
+      const addr = nodeAddress(eoa) ?? eoa.id;
+      const arr = hiddenByNode.get(nodeId) ?? [];
+      arr.push({
+        id: edge.id,
+        address: addr,
+        label: eoa.label,
+        direction,
+        edgeLabel: edge.label,
+        amount: edge.amount,
+      });
+      hiddenByNode.set(nodeId, arr);
+    };
+
+    for (const e of edges) {
+      const source = allById.get(e.source);
+      const target = allById.get(e.target);
+      if (!source || !target) continue;
+      const sourceEoa = isEoaNode(source);
+      const targetEoa = isEoaNode(target);
+      if (sourceEoa && !targetEoa && visibleIds.has(target.id)) pushHidden(target.id, source, e, "in");
+      if (targetEoa && !sourceEoa && visibleIds.has(source.id)) pushHidden(source.id, target, e, "out");
+    }
+
+    for (const [nodeId, arr] of hiddenByNode) {
+      hiddenByNode.set(
+        nodeId,
+        arr.sort((a, b) => (b.amount ?? 0) - (a.amount ?? 0) || a.address.localeCompare(b.address)),
+      );
+    }
+
+    return {
+      visibleNodes: visible,
+      visibleEdges: edges.filter((e) => visibleIds.has(e.source) && visibleIds.has(e.target)),
+      hiddenEoasByNode: hiddenByNode,
+    };
+  }, [nodes, edges]);
+
   const { layoutNodes, layoutEdges } = useMemo(() => {
     const depthOf = (n: RawNode): number => {
       if (n.type === "token") return -1;
       const d = n.data?.depth;
       return typeof d === "number" ? d : 0;
     };
+    const nodes = visibleNodes;
+    const edges = visibleEdges;
     const nodeById = new Map(nodes.map((n) => [n.id, n]));
     const root = nodes.find((n) => n.type === "token") ?? nodes[0];
     const ringOf = (n: RawNode): number => Math.max(0, depthOf(n) + 1);
@@ -483,24 +601,24 @@ export function OverviewCanvas({ nodes, edges }: { nodes: RawNode[]; edges: RawE
     });
 
     return { layoutNodes: rfNodes, layoutEdges };
-  }, [nodes, edges]);
+  }, [visibleNodes, visibleEdges]);
 
   // 노드 클릭 → 상세 패널 (주소 + 외부 탐색기 링크)
-  const rawById = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
+  const rawById = useMemo(() => new Map(visibleNodes.map((n) => [n.id, n])), [visibleNodes]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const selected = selectedId ? rawById.get(selectedId) ?? null : null;
   const focus = useMemo(() => {
     if (!selectedId) return null;
     const nodeIds = new Set<string>([selectedId]);
     const edgeIds = new Set<string>();
-    for (const e of edges) {
+    for (const e of visibleEdges) {
       if (e.source !== selectedId && e.target !== selectedId) continue;
       nodeIds.add(e.source);
       nodeIds.add(e.target);
       edgeIds.add(e.id);
     }
     return { nodeIds, edgeIds };
-  }, [edges, selectedId]);
+  }, [visibleEdges, selectedId]);
 
   const highlightedNodes = useMemo(() => {
     if (!focus) return layoutNodes;
@@ -584,7 +702,13 @@ export function OverviewCanvas({ nodes, edges }: { nodes: RawNode[]; edges: RawE
         <Controls />
         <MiniMap pannable zoomable />
       </ReactFlow>
-      {selected && <NodeInspector node={selected} onClose={() => setSelectedId(null)} />}
+      {selected && (
+        <NodeInspector
+          node={selected}
+          hiddenEoas={hiddenEoasByNode.get(selected.id) ?? []}
+          onClose={() => setSelectedId(null)}
+        />
+      )}
     </div>
   );
 }

@@ -11,27 +11,46 @@
         "symbol": null,
         "depth": -1,
         "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
       "id": "0xbdfa7b7893081b35fb54027489e2bc7a38275129",
       "type": "protocol",
-      "label": "Aave",
+      "label": "Aave (aEthweETH)",
       "data": {
         "category": "ledger:aave_v3",
         "kind": "ledger:aave_v3",
-        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "label": "Aave (aEthweETH)",
         "symbol": null,
         "depth": 0,
         "address": "0xbdfa7b7893081b35fb54027489e2bc7a38275129",
-        "approx": false
+        "approx": false,
+        "proxy": {
+          "is_proxy": true,
+          "proxy_kind": "etherscan",
+          "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+          "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+          "implementation_label": "ATokenInstance"
+        },
+        "mellow": null,
+        "aave_family": {
+          "venue": "Aave",
+          "name": "Aave Ethereum weETH",
+          "symbol": "aEthweETH",
+          "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"
+        },
+        "vault_entity": null
       }
     },
     {
       "id": "0xf0bb20865277abd641a307ece5ee04e79073416c",
       "type": "protocol",
-      "label": "liquidETH",
+      "label": "Ether.fi Liquid ETH",
       "data": {
         "category": "erc20_receipt",
         "kind": "erc20_receipt",
@@ -39,7 +58,18 @@
         "symbol": "liquidETH",
         "depth": 1,
         "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": {
+          "entity": "etherfi_boringvault",
+          "name": "Ether.fi Liquid ETH",
+          "symbol": "liquidETH",
+          "classification": "managed_vault_receipt",
+          "confidence": "MEDIUM",
+          "contract_label": "BoringVault"
+        }
       }
     },
     {
@@ -53,7 +83,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x602d9abd5671d24026e2ca473903ff2a9a957407",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -67,7 +101,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -81,7 +119,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0x5f8f52ddc15990a45ba5aab85dfd9fdfae11b661",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -95,7 +137,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0xa86e3d1c80a750a310b484fb9bdc470753a7506f",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -109,7 +155,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0x59fc128f84226d1fbf9edcb38a1b6bbd244fcfdc",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -123,7 +173,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0xecc9a66007a19f11c7c6d9fc51180f12c679ab92",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -137,7 +191,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0xdc5dee5f8e37edf84768d2018ac772431b6aa4c8",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -151,7 +209,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0x799f8bf2e1e50ad2c1c27d7d072f0150442d4316",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -165,7 +227,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0x02a0ff63fe227cc25e0c9c98424bb0fdaf366d6d",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -179,7 +245,11 @@
         "symbol": null,
         "depth": 3,
         "address": "0x90cda2eab9a1d5fb098f5bd8954af798a6d03701",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -193,7 +263,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -207,7 +281,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x0b1bad6fb57761591896374a2c3760b2edc90b7a",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -221,7 +299,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x54d250405d22e858d125ce2c1affc7d73afe6029",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -235,7 +317,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x1e78322001bdc85f21a7a2f3429dc55c1c13cfae",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -249,7 +335,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0xbf90446e72b09fa0fbe84b198aed2f05935468fa",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -263,7 +353,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x3fb61cab57e70e23a1fd3a1fed21be866ca2bbfa",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -277,13 +371,17 @@
         "symbol": null,
         "depth": 1,
         "address": "0x9600a48ed0f931d0c422d574e3275a90d8b22745",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
       "id": "0xef417fce1883c6653e7dc6af7c6f85ccde84aa09",
       "type": "protocol",
-      "label": "GG",
+      "label": "Golden Goose Vault",
       "data": {
         "category": "erc20_receipt",
         "kind": "erc20_receipt",
@@ -291,7 +389,18 @@
         "symbol": "GG",
         "depth": 1,
         "address": "0xef417fce1883c6653e7dc6af7c6f85ccde84aa09",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": {
+          "entity": "veda_golden_goose",
+          "name": "Golden Goose Vault",
+          "symbol": "GG",
+          "classification": "managed_vault_receipt",
+          "confidence": "HIGH",
+          "contract_label": "BoringVault"
+        }
       }
     },
     {
@@ -305,7 +414,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0xe39682c3c44b73285a2556d4869041e674d1a6b7",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -319,7 +432,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x7f515c80fa4c1fcff34f0329141a9c3b20468fe5",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -333,7 +450,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x084caf1bf60e49aec07ec4148a3f1f0f57fd11eb",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -347,7 +468,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x6880d13a189db78e2795db3246cccb7bc4b146b3",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -361,7 +486,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x23e054e91b6cddaeace5ad7891e316427b8327e0",
-        "approx": true
+        "approx": true,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -375,7 +504,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0x59d1f0e417c78b47aef3b2510a03fd290dd4091d",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -389,7 +522,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0xb8d1d22609d10078db36915fc4610f8674b44319",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -403,7 +540,11 @@
         "symbol": null,
         "depth": 2,
         "address": "0xe5c6497fc067593bc5f93351e82376ac4641a7ae",
-        "approx": true
+        "approx": true,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -417,7 +558,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x78cca58ceeebf201555a3c0f3daeb55d1f1ca564",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -431,7 +576,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x7f6d23e436099ec78a73c430b16782b0d68585bd",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -445,7 +594,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x99e7a28793de26a45db79dcd142e926e5d6ebd4f",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -459,7 +612,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x99926ab8e1b589500ae87977632f13cf7f70f242",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -473,7 +630,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x2e15d7aa0650de1009710fdd45c3468d75ae1392",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -487,7 +648,11 @@
         "symbol": null,
         "depth": 0,
         "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -501,7 +666,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xa122687285dc5012141055a801045f069112e7c6",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -515,7 +684,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x64423e2f6b35d24f35e3fa3938d9b896004776b1",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -529,7 +702,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -543,7 +720,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x691cb02bf62a0bb2397bfae9a55f7380d415fff2",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -557,7 +738,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x268e5e8ee954016964e59c093d8deaee0245424c",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -571,7 +756,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -585,7 +774,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x0b00c540bc5f203d97ac87da62164d3d37e19798",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -599,7 +792,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -613,7 +810,11 @@
         "symbol": null,
         "depth": 0,
         "address": "0xcd2eb13d6831d4602d80e5db9230a57596cdca63",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -627,21 +828,40 @@
         "symbol": null,
         "depth": 0,
         "address": "0xa3a7b6f88361f48403514059f1f16c8e78d60eec",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
       "id": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
       "type": "protocol",
-      "label": "Aave",
+      "label": "Spark (spweETH)",
       "data": {
         "category": "ledger:aave_v3",
         "kind": "ledger:aave_v3",
-        "label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "label": "Spark (spweETH)",
         "symbol": null,
         "depth": 0,
         "address": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
-        "approx": false
+        "approx": false,
+        "proxy": {
+          "is_proxy": true,
+          "proxy_kind": "etherscan",
+          "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+          "implementation": "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+          "implementation_label": "AToken"
+        },
+        "mellow": null,
+        "aave_family": {
+          "venue": "Spark",
+          "name": "Spark weETH",
+          "symbol": "spweETH",
+          "pool": "0xc13e21b648a5ee794902342038ff3adab66be987"
+        },
+        "vault_entity": null
       }
     },
     {
@@ -655,7 +875,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xb5c98c0d2861d39c538aff4e87cee946ffa1adf4",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -669,7 +893,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xb39c9e0e764b5c52e6cf4b968fc25bdd1b9678d4",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -683,7 +911,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xc5655450d4d738869d003b24b4ded842cea5af78",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -697,7 +929,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xd25b400836fc3376029bef3831c364e16c780de8",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -711,7 +947,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xeeda1b827e47ce5994713a305e699e9f812de44a",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -725,7 +965,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -739,7 +983,11 @@
         "symbol": null,
         "depth": 1,
         "address": "0xd7215dbbd6e595a57e4ddc7786ef068f8da8b564",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -753,7 +1001,11 @@
         "symbol": null,
         "depth": 0,
         "address": "0xed0c6079229e2d407672a117c22b62064f4a4312",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     },
     {
@@ -767,7 +1019,11 @@
         "symbol": null,
         "depth": 0,
         "address": "0x93d526aa8d672e171aa3eac2a7e303e9e132e72a",
-        "approx": false
+        "approx": false,
+        "proxy": null,
+        "mellow": null,
+        "aave_family": null,
+        "vault_entity": null
       }
     }
   ],
@@ -780,7 +1036,20 @@
       "edge_type": "aave_v3",
       "amount": 955230.6272201841,
       "depth": 0,
-      "coverage": 0.7608
+      "coverage": 0.7608,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+        "implementation_label": "ATokenInstance"
+      },
+      "aave_family": {
+        "venue": "Aave",
+        "name": "Aave Ethereum weETH",
+        "symbol": "aEthweETH",
+        "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"
+      }
     },
     {
       "id": "0xbdfa7b7893081b35fb54027489e2bc7a38275129->0xf0bb20865277abd641a307ece5ee04e79073416c#1",
@@ -1402,7 +1671,20 @@
       "edge_type": "aave_v3",
       "amount": 24245.460243305704,
       "depth": 0,
-      "coverage": 0.7141
+      "coverage": 0.7141,
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+        "implementation_label": "AToken"
+      },
+      "aave_family": {
+        "venue": "Spark",
+        "name": "Spark weETH",
+        "symbol": "spweETH",
+        "pool": "0xc13e21b648a5ee794902342038ff3adab66be987"
+      }
     },
     {
       "id": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008->0x691cb02bf62a0bb2397bfae9a55f7380d415fff2#45",

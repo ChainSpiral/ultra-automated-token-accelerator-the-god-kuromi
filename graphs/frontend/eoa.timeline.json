@@ -1,0 +1,906 @@
+{
+  "metadata": {
+    "source": "feeder/eoa_timeline.py",
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 24908000,
+    "to_block": 24909000,
+    "address_count": 1,
+    "receipt_transfers": "important",
+    "important_only": false,
+    "generated_at_utc": "2026-06-16T08:47:42Z"
+  },
+  "addresses": {
+    "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b": {
+      "summary": {
+        "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "tx_count": 7,
+        "token_transfer_count": 17,
+        "event_count": 11,
+        "category_counts": {
+          "token_receive": 1,
+          "token_call": 7,
+          "token_send": 3
+        },
+        "first_block": 24908285,
+        "last_block": 24908438,
+        "first_seen_utc": "2026-04-18T17:35:35Z",
+        "last_seen_utc": "2026-04-18T18:06:23Z"
+      }
+    }
+  },
+  "events": [
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x1ae232da212c45f35c1525f851e4c41d529bf18af862d9ce9fd40bf709db4222",
+      "block_number": 24908285,
+      "timestamp": 1776533735,
+      "datetime_utc": "2026-04-18T17:35:35Z",
+      "transaction_index": 12,
+      "call": null,
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "116500000000000000000000",
+          "amount": "116500",
+          "amount_float": 116500.0,
+          "from": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+          "to": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "direction": "in"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908285:12:0",
+      "category": "token_receive",
+      "action": "receive",
+      "priority": 65,
+      "protocol": "",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0xe381248517921e5a576fd915e6c7b93f7ab10f3d323ea89730b28fe91d84e70a",
+      "block_number": 24908294,
+      "timestamp": 1776533843,
+      "datetime_utc": "2026-04-18T17:37:23Z",
+      "transaction_index": 14,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67505,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "53000000000000000000000",
+          "amount": "53000",
+          "amount_float": 53000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0x1f4c1c2e610f089d6914c4448e6f21cb0db3adef",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908294:14:1",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x95fa2f737aa3f22c182dc86898ac63853ce3c6ddc802ced97a635eb8474d19ed",
+      "block_number": 24908297,
+      "timestamp": 1776533879,
+      "datetime_utc": "2026-04-18T17:37:59Z",
+      "transaction_index": 36,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67505,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "30000000000000000000000",
+          "amount": "30000",
+          "amount_float": 30000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xeba786c9517a4823a5cfd9c72e4e80bf8168129b",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908297:36:2",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x2acb453e79dd29844ecbd268ea70ba61c6e309767660e326c035f5121a8156bd",
+      "block_number": 24908304,
+      "timestamp": 1776533963,
+      "datetime_utc": "2026-04-18T17:39:23Z",
+      "transaction_index": 33,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67505,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "10000000000000000000000",
+          "amount": "10000",
+          "amount_float": 10000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xcbb24a6b4dafaaa1a759a2f413ea0eb6ae1455cc",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908304:33:3",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+      "block_number": 24908305,
+      "timestamp": 1776533987,
+      "datetime_utc": "2026-04-18T17:39:47Z",
+      "transaction_index": 78,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67505,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "6000000000000000000000",
+          "amount": "6000",
+          "amount_float": 6000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x373dfc8aa9c4e4fd365a24bdf36cfb23f1770086d2568b85dcfd05467c890f23",
+      "block_number": 24908309,
+      "timestamp": 1776534035,
+      "datetime_utc": "2026-04-18T17:40:35Z",
+      "transaction_index": 123,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67505,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "5000000000000000000000",
+          "amount": "5000",
+          "amount_float": 5000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0x8d11aeac74267dd5c56d371bf4ae1afa174c2d49",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908309:123:5",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0xe8748b75e9156de25b5b5225bf0d274bf31af8a3e7bdc7a14e847b42b00ce3b3",
+      "block_number": 24908312,
+      "timestamp": 1776534071,
+      "datetime_utc": "2026-04-18T17:41:11Z",
+      "transaction_index": 92,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 67493,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "8000000000000000000000",
+          "amount": "8000",
+          "amount_float": 8000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0x1b748b680373a1dd70a2319261328cab2a6f644c",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908312:92:6",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x684ccb28d1a9fd7db9c21f3bdf92691c124c17858edd45ad37e07bfd7c26cd2f",
+      "block_number": 24908316,
+      "timestamp": 1776534119,
+      "datetime_utc": "2026-04-18T17:41:59Z",
+      "transaction_index": 121,
+      "call": {
+        "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "to": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "target_label": "TransparentUpgradeableProxy->RSETH",
+        "method_id": "0xa9059cbb",
+        "function_name": "transfer(address _to, uint256 _value)",
+        "value_wei": "0",
+        "gas_used": 62693,
+        "is_error": false,
+        "semantic": {
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "priority": 75,
+          "needs_receipt": false,
+          "notes": []
+        }
+      },
+      "transfers": [
+        {
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "name": "rsETH",
+          "decimals": 18,
+          "value_raw": "4500000000000000000000",
+          "amount": "4500",
+          "amount_float": 4500.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xe9e2f48bb0018276391aec240abb46e8c3cad181",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908316:121:7",
+      "category": "token_call",
+      "action": "transfer",
+      "priority": 75,
+      "protocol": "0xa129...e5a7",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x593be069232759224fff915c5367a918ba2665e85508741ba0aa84fa45f17ba5",
+      "block_number": 24908425,
+      "timestamp": 1776535427,
+      "datetime_utc": "2026-04-18T18:03:47Z",
+      "transaction_index": 107,
+      "call": null,
+      "transfers": [
+        {
+          "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+          "symbol": "Тoken",
+          "name": "Тoken",
+          "decimals": 18,
+          "value_raw": "30000000000000000000000",
+          "amount": "30000",
+          "amount_float": 30000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xeba73b818ae2ac5a3111f6b6f4bb7895910b129b",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908425:107:8",
+      "category": "token_send",
+      "action": "send",
+      "priority": 65,
+      "protocol": "",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0xd4853b7823e9afb07b2fb53a3b514daeede622b3b0dbf9d6f6d706d084520a76",
+      "block_number": 24908428,
+      "timestamp": 1776535463,
+      "datetime_utc": "2026-04-18T18:04:23Z",
+      "transaction_index": 161,
+      "call": null,
+      "transfers": [
+        {
+          "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+          "symbol": "Тoken",
+          "name": "Тoken",
+          "decimals": 18,
+          "value_raw": "53000000000000000000000",
+          "amount": "53000",
+          "amount_float": 53000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0x1f4cf71e40155a82f7df0ca82bbe641ce9bdadef",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908428:161:9",
+      "category": "token_send",
+      "action": "send",
+      "priority": 65,
+      "protocol": "",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    },
+    {
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0x65d3d7c5f3efb86ac626de2c5e1d3af0558c24ba8dda2be4c64ba1d59c6ae13e",
+      "block_number": 24908438,
+      "timestamp": 1776535583,
+      "datetime_utc": "2026-04-18T18:06:23Z",
+      "transaction_index": 252,
+      "call": null,
+      "transfers": [
+        {
+          "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+          "symbol": "Тoken",
+          "name": "Тoken",
+          "decimals": 18,
+          "value_raw": "10000000000000000000000",
+          "amount": "10000",
+          "amount_float": 10000.0,
+          "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "to": "0xcbb25ef4f7c4f2874cac70d25d7460705ed955cc",
+          "direction": "out"
+        }
+      ],
+      "receipt_transfers": [],
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908438:252:10",
+      "category": "token_send",
+      "action": "send",
+      "priority": 65,
+      "protocol": "",
+      "transfer_count": 1,
+      "receipt_transfer_count": 0
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "type": "EOA",
+        "label": "EOA 0x8b1b...0d3b",
+        "data": {
+          "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "kind": "EOA"
+        }
+      },
+      {
+        "id": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+        "type": "address",
+        "label": "RSETH_OFTAdapter",
+        "data": {
+          "address": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "type": "address",
+        "label": "TransparentUpgradeableProxy->RSETH",
+        "data": {
+          "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0x1f4c1c2e610f089d6914c4448e6f21cb0db3adef",
+        "type": "address",
+        "label": "0x1f4c...adef",
+        "data": {
+          "address": "0x1f4c1c2e610f089d6914c4448e6f21cb0db3adef",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xeba786c9517a4823a5cfd9c72e4e80bf8168129b",
+        "type": "address",
+        "label": "0xeba7...129b",
+        "data": {
+          "address": "0xeba786c9517a4823a5cfd9c72e4e80bf8168129b",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xcbb24a6b4dafaaa1a759a2f413ea0eb6ae1455cc",
+        "type": "address",
+        "label": "0xcbb2...55cc",
+        "data": {
+          "address": "0xcbb24a6b4dafaaa1a759a2f413ea0eb6ae1455cc",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+        "type": "address",
+        "label": "0xbb6a...c787",
+        "data": {
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0x8d11aeac74267dd5c56d371bf4ae1afa174c2d49",
+        "type": "address",
+        "label": "0x8d11...2d49",
+        "data": {
+          "address": "0x8d11aeac74267dd5c56d371bf4ae1afa174c2d49",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0x1b748b680373a1dd70a2319261328cab2a6f644c",
+        "type": "address",
+        "label": "0x1b74...644c",
+        "data": {
+          "address": "0x1b748b680373a1dd70a2319261328cab2a6f644c",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xe9e2f48bb0018276391aec240abb46e8c3cad181",
+        "type": "address",
+        "label": "0xe9e2...d181",
+        "data": {
+          "address": "0xe9e2f48bb0018276391aec240abb46e8c3cad181",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xeba73b818ae2ac5a3111f6b6f4bb7895910b129b",
+        "type": "address",
+        "label": "0xeba7...129b",
+        "data": {
+          "address": "0xeba73b818ae2ac5a3111f6b6f4bb7895910b129b",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0x1f4cf71e40155a82f7df0ca82bbe641ce9bdadef",
+        "type": "address",
+        "label": "0x1f4c...adef",
+        "data": {
+          "address": "0x1f4cf71e40155a82f7df0ca82bbe641ce9bdadef",
+          "kind": "address"
+        }
+      },
+      {
+        "id": "0xcbb25ef4f7c4f2874cac70d25d7460705ed955cc",
+        "type": "address",
+        "label": "0xcbb2...55cc",
+        "data": {
+          "address": "0xcbb25ef4f7c4f2874cac70d25d7460705ed955cc",
+          "kind": "address"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "eoa-transfer-0",
+        "source": "0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3",
+        "target": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "edge_type": "token_transfer",
+        "category": "token_receive",
+        "action": "receive",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "116500",
+        "amount_float": 116500.0,
+        "value_raw": "116500000000000000000000",
+        "direction": "in",
+        "tx_hash": "0x1ae232da212c45f35c1525f851e4c41d529bf18af862d9ce9fd40bf709db4222",
+        "block_number": 24908285,
+        "timestamp": 1776533735,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908285:12:0"
+      },
+      {
+        "id": "eoa-call-1",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0xe381248517921e5a576fd915e6c7b93f7ab10f3d323ea89730b28fe91d84e70a",
+        "block_number": 24908294,
+        "timestamp": 1776533843,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908294:14:1"
+      },
+      {
+        "id": "eoa-transfer-2",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0x1f4c1c2e610f089d6914c4448e6f21cb0db3adef",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "53000",
+        "amount_float": 53000.0,
+        "value_raw": "53000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0xe381248517921e5a576fd915e6c7b93f7ab10f3d323ea89730b28fe91d84e70a",
+        "block_number": 24908294,
+        "timestamp": 1776533843,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908294:14:1"
+      },
+      {
+        "id": "eoa-call-3",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0x95fa2f737aa3f22c182dc86898ac63853ce3c6ddc802ced97a635eb8474d19ed",
+        "block_number": 24908297,
+        "timestamp": 1776533879,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908297:36:2"
+      },
+      {
+        "id": "eoa-transfer-4",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xeba786c9517a4823a5cfd9c72e4e80bf8168129b",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "30000",
+        "amount_float": 30000.0,
+        "value_raw": "30000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x95fa2f737aa3f22c182dc86898ac63853ce3c6ddc802ced97a635eb8474d19ed",
+        "block_number": 24908297,
+        "timestamp": 1776533879,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908297:36:2"
+      },
+      {
+        "id": "eoa-call-5",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0x2acb453e79dd29844ecbd268ea70ba61c6e309767660e326c035f5121a8156bd",
+        "block_number": 24908304,
+        "timestamp": 1776533963,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908304:33:3"
+      },
+      {
+        "id": "eoa-transfer-6",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xcbb24a6b4dafaaa1a759a2f413ea0eb6ae1455cc",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "10000",
+        "amount_float": 10000.0,
+        "value_raw": "10000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x2acb453e79dd29844ecbd268ea70ba61c6e309767660e326c035f5121a8156bd",
+        "block_number": 24908304,
+        "timestamp": 1776533963,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908304:33:3"
+      },
+      {
+        "id": "eoa-call-7",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+        "block_number": 24908305,
+        "timestamp": 1776533987,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4"
+      },
+      {
+        "id": "eoa-transfer-8",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "6000",
+        "amount_float": 6000.0,
+        "value_raw": "6000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+        "block_number": 24908305,
+        "timestamp": 1776533987,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4"
+      },
+      {
+        "id": "eoa-call-9",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0x373dfc8aa9c4e4fd365a24bdf36cfb23f1770086d2568b85dcfd05467c890f23",
+        "block_number": 24908309,
+        "timestamp": 1776534035,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908309:123:5"
+      },
+      {
+        "id": "eoa-transfer-10",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0x8d11aeac74267dd5c56d371bf4ae1afa174c2d49",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "5000",
+        "amount_float": 5000.0,
+        "value_raw": "5000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x373dfc8aa9c4e4fd365a24bdf36cfb23f1770086d2568b85dcfd05467c890f23",
+        "block_number": 24908309,
+        "timestamp": 1776534035,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908309:123:5"
+      },
+      {
+        "id": "eoa-call-11",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0xe8748b75e9156de25b5b5225bf0d274bf31af8a3e7bdc7a14e847b42b00ce3b3",
+        "block_number": 24908312,
+        "timestamp": 1776534071,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908312:92:6"
+      },
+      {
+        "id": "eoa-transfer-12",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0x1b748b680373a1dd70a2319261328cab2a6f644c",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "8000",
+        "amount_float": 8000.0,
+        "value_raw": "8000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0xe8748b75e9156de25b5b5225bf0d274bf31af8a3e7bdc7a14e847b42b00ce3b3",
+        "block_number": 24908312,
+        "timestamp": 1776534071,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908312:92:6"
+      },
+      {
+        "id": "eoa-call-13",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "edge_type": "call",
+        "category": "token_call",
+        "action": "transfer",
+        "protocol": "0xa129...e5a7",
+        "tx_hash": "0x684ccb28d1a9fd7db9c21f3bdf92691c124c17858edd45ad37e07bfd7c26cd2f",
+        "block_number": 24908316,
+        "timestamp": 1776534119,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908316:121:7"
+      },
+      {
+        "id": "eoa-transfer-14",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xe9e2f48bb0018276391aec240abb46e8c3cad181",
+        "edge_type": "token_transfer",
+        "category": "token_call",
+        "action": "transfer",
+        "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+        "symbol": "rsETH",
+        "amount": "4500",
+        "amount_float": 4500.0,
+        "value_raw": "4500000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x684ccb28d1a9fd7db9c21f3bdf92691c124c17858edd45ad37e07bfd7c26cd2f",
+        "block_number": 24908316,
+        "timestamp": 1776534119,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908316:121:7"
+      },
+      {
+        "id": "eoa-transfer-15",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xeba73b818ae2ac5a3111f6b6f4bb7895910b129b",
+        "edge_type": "token_transfer",
+        "category": "token_send",
+        "action": "send",
+        "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+        "symbol": "Тoken",
+        "amount": "30000",
+        "amount_float": 30000.0,
+        "value_raw": "30000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x593be069232759224fff915c5367a918ba2665e85508741ba0aa84fa45f17ba5",
+        "block_number": 24908425,
+        "timestamp": 1776535427,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908425:107:8"
+      },
+      {
+        "id": "eoa-transfer-16",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0x1f4cf71e40155a82f7df0ca82bbe641ce9bdadef",
+        "edge_type": "token_transfer",
+        "category": "token_send",
+        "action": "send",
+        "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+        "symbol": "Тoken",
+        "amount": "53000",
+        "amount_float": 53000.0,
+        "value_raw": "53000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0xd4853b7823e9afb07b2fb53a3b514daeede622b3b0dbf9d6f6d706d084520a76",
+        "block_number": 24908428,
+        "timestamp": 1776535463,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908428:161:9"
+      },
+      {
+        "id": "eoa-transfer-17",
+        "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "target": "0xcbb25ef4f7c4f2874cac70d25d7460705ed955cc",
+        "edge_type": "token_transfer",
+        "category": "token_send",
+        "action": "send",
+        "token": "0x9a508f4ad6d667892aed6cb53c6a32a85823dfd5",
+        "symbol": "Тoken",
+        "amount": "10000",
+        "amount_float": 10000.0,
+        "value_raw": "10000000000000000000000",
+        "direction": "out",
+        "tx_hash": "0x65d3d7c5f3efb86ac626de2c5e1d3af0558c24ba8dda2be4c64ba1d59c6ae13e",
+        "block_number": 24908438,
+        "timestamp": 1776535583,
+        "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908438:252:10"
+      }
+    ]
+  }
+}

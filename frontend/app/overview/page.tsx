@@ -24,6 +24,14 @@ type Tok = {
   avg_coverage?: number | null;
 };
 
+function nodeKind(n: RawNode): string {
+  return String(n.data?.category ?? n.data?.kind ?? n.type);
+}
+
+function isVisibleGraphNode(n: RawNode): boolean {
+  return n.type !== "bridge" && nodeKind(n) !== "EOA";
+}
+
 export default async function OverviewRoute({
   searchParams,
 }: {
@@ -55,7 +63,13 @@ export default async function OverviewRoute({
     error = e instanceof Error ? e.message : String(e);
   }
 
-  const covs = edges.map((e) => e.coverage).filter((c): c is number => typeof c === "number");
+  const visibleNodeIds = new Set(nodes.filter(isVisibleGraphNode).map((n) => n.id));
+  const visibleNodeCount = visibleNodeIds.size;
+  const visibleEdgeCount = edges.filter((e) => visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target)).length;
+  const covs = edges
+    .filter((e) => visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target))
+    .map((e) => e.coverage)
+    .filter((c): c is number => typeof c === "number");
   const avgCov =
     typeof tokenMeta?.avg_coverage === "number"
       ? tokenMeta.avg_coverage
@@ -76,8 +90,8 @@ export default async function OverviewRoute({
           </span>
           <span>·</span>
           <span>
-            nodes <span className="text-[var(--color-text-secondary)]">{nodes.length}</span> / edges{" "}
-            <span className="text-[var(--color-text-secondary)]">{edges.length}</span>
+            nodes <span className="text-[var(--color-text-secondary)]">{visibleNodeCount}</span> / edges{" "}
+            <span className="text-[var(--color-text-secondary)]">{visibleEdgeCount}</span>
           </span>
           {avgCov != null && (
             <>

@@ -1,0 +1,4004 @@
+{
+  "nodes": [
+    {
+      "id": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "type": "eoa",
+      "label": "EOA 0x3252...5669",
+      "data": {
+        "kind": "eoa",
+        "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+        "lane": 0,
+        "step": -1,
+        "dfs_depth": 0,
+        "discovered_by": "seed",
+        "event_count": 176,
+        "first_seen_utc": "2025-12-11T14:24:11Z",
+        "last_seen_utc": "2026-05-26T14:23:11Z",
+        "category_counts": {
+          "vault": 30,
+          "swap": 52,
+          "yield_basis": 31,
+          "lending": 43,
+          "bridge": 16,
+          "fx_long": 4
+        }
+      }
+    },
+    {
+      "id": "protocol:0xdcd0f5ab30856f28385f641580bbd85f88349124",
+      "type": "protocol",
+      "label": "alUSD vault/token",
+      "data": {
+        "kind": "protocol",
+        "category": "vault",
+        "address": "0xdcd0f5ab30856f28385f641580bbd85f88349124"
+      }
+    },
+    {
+      "id": "protocol:0x6a000f20005980200259b80c5102003040001068",
+      "type": "protocol",
+      "label": "ParaSwap AugustusV6",
+      "data": {
+        "kind": "protocol",
+        "category": "swap",
+        "address": "0x6a000f20005980200259b80c5102003040001068"
+      }
+    },
+    {
+      "id": "protocol:0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+      "type": "protocol",
+      "label": "Yield Basis old yb-cbBTC LT",
+      "data": {
+        "kind": "protocol",
+        "category": "yield_basis",
+        "address": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
+      }
+    },
+    {
+      "id": "protocol:0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+      "type": "protocol",
+      "label": "Yield Basis old yb-cbBTC Gauge",
+      "data": {
+        "kind": "protocol",
+        "category": "yield_basis",
+        "address": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893"
+      }
+    },
+    {
+      "id": "protocol:0x111111125421ca6dc452d289314280a0f8842a65",
+      "type": "protocol",
+      "label": "1inch AggregationRouterV6",
+      "data": {
+        "kind": "protocol",
+        "category": "swap",
+        "address": "0x111111125421ca6dc452d289314280a0f8842a65"
+      }
+    },
+    {
+      "id": "protocol:0xc13e21b648a5ee794902342038ff3adab66be987",
+      "type": "protocol",
+      "label": "Spark Pool",
+      "data": {
+        "kind": "protocol",
+        "category": "lending",
+        "address": "0xc13e21b648a5ee794902342038ff3adab66be987"
+      }
+    },
+    {
+      "id": "protocol:0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+      "type": "protocol",
+      "label": "9Summits flagship USDC",
+      "data": {
+        "kind": "protocol",
+        "category": "vault",
+        "address": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc"
+      }
+    },
+    {
+      "id": "protocol:0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+      "type": "protocol",
+      "label": "Odos Router V2",
+      "data": {
+        "kind": "protocol",
+        "category": "swap",
+        "address": "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559"
+      }
+    },
+    {
+      "id": "protocol:0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+      "type": "protocol",
+      "label": "Spark ETH vault/receipt",
+      "data": {
+        "kind": "protocol",
+        "category": "vault",
+        "address": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
+      }
+    },
+    {
+      "id": "protocol:0x88ff1e5b602916615391f55854588efcbb7663f0",
+      "type": "protocol",
+      "label": "Optimism StandardBridge",
+      "data": {
+        "kind": "protocol",
+        "category": "bridge",
+        "address": "0x88ff1e5b602916615391f55854588efcbb7663f0"
+      }
+    },
+    {
+      "id": "protocol:0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+      "type": "protocol",
+      "label": "CCTP MessageTransmitterV2",
+      "data": {
+        "kind": "protocol",
+        "category": "bridge",
+        "address": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64"
+      }
+    },
+    {
+      "id": "protocol:0x28b5a0e9c621a5badaa536219b3a228c8168cf5d",
+      "type": "protocol",
+      "label": "CCTP TokenMessengerV2",
+      "data": {
+        "kind": "protocol",
+        "category": "bridge",
+        "address": "0x28b5a0e9c621a5badaa536219b3a228c8168cf5d"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xdcd0f5ab30856f28385f641580bbd85f88349124",
+      "edge_type": "protocol_flow",
+      "category": "vault",
+      "label": "1 tx | redeem(uint256,address,address) | +4.91M USDC",
+      "tx_hash": "0x42c2f8204857e409a3ccc617946d0fd0829510eb901b6c12e0ea25e5b3bad89a",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23990320:238:3",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x42c2f8204857e409a3ccc617946d0fd0829510eb901b6c12e0ea25e5b3bad89a",
+          "datetime_utc": "2025-12-11T15:25:47Z",
+          "block_number": 23990320,
+          "category": "vault",
+          "protocol": "alUSD",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 4909284.44091,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 1,
+      "id": "eoa-flow-edge-0"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x6a000f20005980200259b80c5102003040001068",
+      "edge_type": "protocol_flow",
+      "category": "swap",
+      "label": "18 tx | swapExactAmountIn(...)/swapExactAmountInOutOnMakerPSM(...) | -6.72M USDC / -173.67k YB",
+      "tx_hash": "0xa4b82f9bd92b83da482a999e0e96a20bd349e603482f7be328235e43d894dd8d",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998345:124:7",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x1625f995df474d18523cf0eb0970ff35a9f7064c99c7613d6843e680287fa6fa",
+          "datetime_utc": "2025-12-12T18:32:11Z",
+          "block_number": 23998345,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 4909999.03067,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 4909999.03067,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:30",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc797a166f3edd34a5bde50e084f19b3e137d2ca20a06d083d550576b7ab0c6d0",
+          "datetime_utc": "2025-12-18T10:22:11Z",
+          "block_number": 24038862,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapOnAugustusRFQTryBatchFill(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4592.580176174801,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 0.6387255093717042,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:33",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x49ec39d6575ba733599a2f10da8a0d82799902498696b7cec72bbd25ab7b41c6",
+          "datetime_utc": "2025-12-19T08:05:35Z",
+          "block_number": 24045334,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 3872.5427805889453,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 0.5235881679402125,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:35",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x59776ca210d8903f0401f3977937d196d6b5bfd5fd99391312d08d538adf968b",
+          "datetime_utc": "2025-12-22T14:25:11Z",
+          "block_number": 24068732,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 14039.073705408948,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.7845868569986694,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:40",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xada90722d61d9038f301f4eceb74e94cfbeae4bc44a6407f98a53e630647bbc1",
+          "datetime_utc": "2025-12-23T13:27:47Z",
+          "block_number": 24075608,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapOnAugustusRFQTryBatchFill(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4124.224443542353,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 0.5298658997194937,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:45",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xfd820d88c1a1dd36635a7fb2bfedd0dd8bce49eecba3741b881741fca6828ee7",
+          "datetime_utc": "2025-12-28T09:12:59Z",
+          "block_number": 24110156,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 21327.27014819356,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 2.967229643572105,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:61",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc542815ec9a482e182b5135a1b1929061b18eacb799671db9ed262bcac9e9ce9",
+          "datetime_utc": "2026-01-03T16:59:47Z",
+          "block_number": 24155473,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 18156.38702249711,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 2.452400682029064,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:80",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xef6da1c5b4e1f4daa33ddf2caf83278c974563748f452442b69c4131f4da4c2e",
+          "datetime_utc": "2026-01-07T09:01:11Z",
+          "block_number": 24181770,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOnCurveV1(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 101.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 109.60100235624726,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:82",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x34237d77681da5bbe71351bcd76d93fa3f1502e21508e4a28ac6ae812e5c1623",
+          "datetime_utc": "2026-01-07T09:02:35Z",
+          "block_number": 24181777,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 15628.697882909582,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 2.0840882707614767,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:86",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x1efcf31aac6e00c19ff57e0b1c7fa0088c0e90be836a8f03e80fe21bf14238ed",
+          "datetime_utc": "2026-01-07T10:55:23Z",
+          "block_number": 24182340,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 999968.232545,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 999968.232545,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:99",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x732bece2d0a442dd899f1942e0356c54fd95965e8f51e937c91b2b84f2c2e9d9",
+          "datetime_utc": "2026-01-12T14:16:23Z",
+          "block_number": 24219170,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 18729.16413737254,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 2.523073957600554,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:102",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xe3d71a69a2aa0922f51918181547af303d06d65ba427c069652874d14b93057e",
+          "datetime_utc": "2026-01-19T08:26:47Z",
+          "block_number": 24267615,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 22787.943962492576,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.9266940410935534,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:123",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x0ddc1b4cf771ccad25bf4d8c778202843af96c618563c1668961ff444ae33ae3",
+          "datetime_utc": "2026-01-26T08:12:23Z",
+          "block_number": 24317730,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 23592.93745561763,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.9907481435127292,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:131",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x77d77144ebbd990f1f9f95fabe3fad7e7dd37c60288ab52ae080307e663d8a87",
+          "datetime_utc": "2026-01-30T09:00:11Z",
+          "block_number": 24346645,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 250000.0015,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 250000.0015,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:152",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x23ef8291d32f38ff8cec3d588e7816ec4e18dd71a3151a35c4698f71d62c0fe1",
+          "datetime_utc": "2026-02-03T10:21:35Z",
+          "block_number": 24375703,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 200056.394267,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 200056.394267,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:159",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x0a33411e012d33d1f3e7bc14ebb18abf53a4af237dbeea30fda12f4e1d989fb3",
+          "datetime_utc": "2026-02-03T10:30:11Z",
+          "block_number": 24375740,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 26818.148963878008,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.8564610303140947,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:171",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x8b7af93492af3a3686d733745842c6524c2738375a09ce54c32939758427a601",
+          "datetime_utc": "2026-02-05T11:18:59Z",
+          "block_number": 24390286,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 200000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 200000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:179",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xa4b82f9bd92b83da482a999e0e96a20bd349e603482f7be328235e43d894dd8d",
+          "datetime_utc": "2026-02-06T09:47:35Z",
+          "block_number": 24396983,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountInOutOnMakerPSM(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 159837.615629,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 159837.615629,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 18,
+      "id": "eoa-flow-edge-1"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+      "edge_type": "protocol_flow",
+      "category": "yield_basis",
+      "label": "5 tx | lt_deposit/approve | -30 cbBTC / +29.11 yb-cbBTC",
+      "tx_hash": "0x32973ec8586258037cda9646f349997750559595c31c98d3b3017dba4d5db900",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998396:88:11",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x6708e90f0763f70593aa09dd7abbe9659591da8ac6387b038d25332e9ecfa238",
+          "datetime_utc": "2025-12-12T18:42:23Z",
+          "block_number": 23998396,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "lt_deposit",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+              "symbol": "cbBTC",
+              "amount": 20.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+              "symbol": "yb-cbBTC",
+              "amount": 19.406919328526712,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998400:149:12",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x987d6d916d42f6f5d0b3c3d4d9239b9f1057a7408477ecc6e565c64e301645dd",
+          "datetime_utc": "2025-12-12T18:43:11Z",
+          "block_number": 23998400,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "lt_deposit",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+              "symbol": "cbBTC",
+              "amount": 5.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+              "symbol": "yb-cbBTC",
+              "amount": 4.851850620906276,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998404:89:13",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x62e6b9afa35a37fda20c6c315ca3f8857622b7e9c05ddc8d7a4cb42bf78317eb",
+          "datetime_utc": "2025-12-12T18:43:59Z",
+          "block_number": 23998404,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "lt_deposit",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+              "symbol": "cbBTC",
+              "amount": 3.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+              "symbol": "yb-cbBTC",
+              "amount": 2.91110809539977,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998407:93:14",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x840c605f1668b6ef7bc6ea405bce8720e517dec6d88fb487126d820b92ba3f90",
+          "datetime_utc": "2025-12-12T18:44:35Z",
+          "block_number": 23998407,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "lt_deposit",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+              "symbol": "cbBTC",
+              "amount": 2.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+              "symbol": "yb-cbBTC",
+              "amount": 1.9407388827995509,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:22",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x32973ec8586258037cda9646f349997750559595c31c98d3b3017dba4d5db900",
+          "datetime_utc": "2025-12-16T08:13:11Z",
+          "block_number": 24023899,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "approve",
+          "transfers": []
+        }
+      ],
+      "event_count": 5,
+      "id": "eoa-flow-edge-2"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+      "edge_type": "protocol_flow",
+      "category": "yield_basis",
+      "label": "14 tx | gauge_claim/gauge_deposit | -29.11 yb-cbBTC / +187.69k YB",
+      "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:23",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xed437b7a96b7b2fb8623ddb495aa357115797898496e51fdb8032676d25b2d49",
+          "datetime_utc": "2025-12-16T08:16:59Z",
+          "block_number": 24023918,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_deposit",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+              "symbol": "yb-cbBTC",
+              "amount": 29.110616927632307,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "symbol": "g(yb-cbBTC)",
+              "amount": 30.003131320830256,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:24",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc0ec13d9c336ee118f3f6155cb74ce82eb0f0a650b5a43c5b6a30600134ea76f",
+          "datetime_utc": "2025-12-17T08:31:59Z",
+          "block_number": 24031158,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4330.3880428476605,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:28",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x55766cab2cc46423c83345be1bd6e116cb47e18e0e6cc7b771c313b442eee95a",
+          "datetime_utc": "2025-12-18T10:20:11Z",
+          "block_number": 24038852,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4592.580176174801,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:32",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x14f3590652424eb9c57cdbadcdf6613c306d8915e5e6e762915adc90933516c2",
+          "datetime_utc": "2025-12-19T08:04:35Z",
+          "block_number": 24045329,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 3872.5427805889453,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:34",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x956bdd54aaafda4f919df250bd6d250d249994cee8bbcf902d8193e0a13a08ab",
+          "datetime_utc": "2025-12-22T14:24:11Z",
+          "block_number": 24068727,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 14039.073705408948,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:39",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x0040650e6cde90591f9d6b78e9cfd536b08b8db55a28290c4e59e65b20bd0924",
+          "datetime_utc": "2025-12-23T13:26:47Z",
+          "block_number": 24075603,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4124.224443542353,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:44",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc0f28c67a1842ae039ebef9250f090034f8d8887bdf0dec9092b6b006d1bc43a",
+          "datetime_utc": "2025-12-28T09:12:11Z",
+          "block_number": 24110152,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 21327.27014819356,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:50",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x6f4fd07f4e6088d599ef7daae2711dbadeeadd90aae0206baa9b4b0927573931",
+          "datetime_utc": "2025-12-30T13:44:47Z",
+          "block_number": 24125827,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 9688.579754055943,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:60",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x6253d0b4fd23d5fb94a5c6bd21e861a10ebb8fbf59f1b2a48c6900a12d423180",
+          "datetime_utc": "2026-01-03T16:58:59Z",
+          "block_number": 24155469,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 18156.38702249711,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:81",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x197ead6e2fc55a8c29173bd3330f180edd59eadc0e995bd23ae43a418254f1cf",
+          "datetime_utc": "2026-01-07T09:01:35Z",
+          "block_number": 24181772,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 15628.697882909582,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:98",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x9adcf17130d9eacdd5bfe68cf029b3edf345749de5de0d34e1f5a9b707a22e8b",
+          "datetime_utc": "2026-01-12T14:15:35Z",
+          "block_number": 24219166,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 18729.16413737254,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:101",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xb50d98576313ebd7792f203b346bf86e54dc996799948cf5c2c2f72adace3d2e",
+          "datetime_utc": "2026-01-19T08:19:47Z",
+          "block_number": 24267580,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 22787.943962492576,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:122",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc155b5bfa76189978a273e2f91d77386987f2c3633e6a9f5feb3bb31d8bb63ae",
+          "datetime_utc": "2026-01-26T08:11:23Z",
+          "block_number": 24317725,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 23592.93745561763,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:158",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
+          "datetime_utc": "2026-02-03T10:29:23Z",
+          "block_number": 24375736,
+          "category": "yield_basis",
+          "protocol": "Yield Basis",
+          "action": "gauge_claim",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 26818.148963878008,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 14,
+      "id": "eoa-flow-edge-3"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x111111125421ca6dc452d289314280a0f8842a65",
+      "edge_type": "protocol_flow",
+      "category": "swap",
+      "label": "2 tx | swap(...) | -14.02k YB / +1.9311 WETH",
+      "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:26",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x526c311bc26952206477db4c2b30799f85eaedc14ab1da6a4f18b871f42a3538",
+          "datetime_utc": "2025-12-17T08:59:23Z",
+          "block_number": 24031295,
+          "category": "swap",
+          "protocol": "1inch",
+          "action": "swap(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 4330.3880428476605,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 0.6063355299657252,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:51",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
+          "datetime_utc": "2025-12-30T13:45:35Z",
+          "block_number": 24125831,
+          "category": "swap",
+          "protocol": "1inch",
+          "action": "swap(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x01791f726b4103694969820be083196cc7c045ff",
+              "symbol": "YB",
+              "amount": 9688.579754055943,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.324804042224681,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 2,
+      "id": "eoa-flow-edge-4"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xc13e21b648a5ee794902342038ff3adab66be987",
+      "edge_type": "protocol_flow",
+      "category": "lending",
+      "label": "15 tx | withdraw/repay | -1.81M USDS / -1.80M variableDebtUSDS",
+      "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:54",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x13547e2d11be10cb52f4d78682b796e74b203d2b3ba2a03e1319d88c30752407",
+          "datetime_utc": "2025-12-30T14:26:35Z",
+          "block_number": 24126035,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "symbol": "spWETH",
+              "amount": 24.371700561536066,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 25.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:68",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xe776016280b75886da2daa76314145a69c486be95dd694d1da3a99dc036d07c6",
+          "datetime_utc": "2026-01-07T08:30:59Z",
+          "block_number": 24181619,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "supply",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 999.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "symbol": "spweETH",
+              "amount": 999.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:69",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x578ed782cc0585170427d8feeb017d0a6e232ac5c961f72b44edadcbdad08007",
+          "datetime_utc": "2026-01-07T08:31:47Z",
+          "block_number": 24181623,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "borrow",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 1503805.2336371664,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 1500200.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:74",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x9d79f30eedc8b812222d9e9ce86ac1970c510d6477bcf55ec2cd9ebc0728466e",
+          "datetime_utc": "2026-01-07T08:44:23Z",
+          "block_number": 24181686,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "supply",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 750.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "symbol": "spweETH",
+              "amount": 750.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:75",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x1d8e8167d26f534c0bfc514f739665865705bd21dc0651ec75ad71f2eb75b962",
+          "datetime_utc": "2026-01-07T08:45:11Z",
+          "block_number": 24181690,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "symbol": "spWETH",
+              "amount": 758.6562993753562,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 758.88991836207,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:88",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x741b44aa533e253b50f4cf4a8c9934adebe9256e73677886ff5706f8983c7cd1",
+          "datetime_utc": "2026-01-07T10:59:35Z",
+          "block_number": 24182361,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "repay",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 999968.232545,
+              "count": 1
+            },
+            {
+              "direction": "out",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 999935.345817124,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:89",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x03f4a016d792ade82eaf1dfe573c8146025f0913b6623d65b6777ce9a048b73e",
+          "datetime_utc": "2026-01-07T11:00:35Z",
+          "block_number": 24182366,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "symbol": "spweETH",
+              "amount": 650.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 650.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:132",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xf10d8441bf2db13a46bdc53fa2cbc5ffc0101cf39f43c6d4a6698e7cd4142d34",
+          "datetime_utc": "2026-01-30T09:00:59Z",
+          "block_number": 24346649,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "repay",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 250000.0015,
+              "count": 1
+            },
+            {
+              "direction": "out",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 245582.8765685197,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:137",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x4b600f7d6c1e8447c189850ab3f612558bbbae9e5d5d8922813d67ded9d47cac",
+          "datetime_utc": "2026-02-02T13:39:11Z",
+          "block_number": 24369526,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "supply",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 15.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "symbol": "spWETH",
+              "amount": 15.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:143",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x1c075fdf061b131714eee31658666ece7229102d221a2ed4db046cc5220f0ba0",
+          "datetime_utc": "2026-02-03T09:30:11Z",
+          "block_number": 24375446,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "symbol": "spweETH",
+              "amount": 80.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 80.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:153",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x56746d0e9962f10bd8942049d5e3c451253ebda36e617c9cc8014b01fe478430",
+          "datetime_utc": "2026-02-03T10:22:59Z",
+          "block_number": 24375709,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "repay",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 200056.394267,
+              "count": 1
+            },
+            {
+              "direction": "out",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 199403.08923539484,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:154",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x728836cf1e8dda7eb14fb962ba70c37695ce8fbe525b037c46cf72025bf97ff8",
+          "datetime_utc": "2026-02-03T10:24:59Z",
+          "block_number": 24375716,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "symbol": "spweETH",
+              "amount": 90.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 90.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:172",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xbc58e3733bf81583d47c0d0503a5d21bce752608f3cbc064b448ac5e1499dd48",
+          "datetime_utc": "2026-02-05T11:20:23Z",
+          "block_number": 24390293,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "repay",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 200000.0,
+              "count": 1
+            },
+            {
+              "direction": "out",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 199723.35693386378,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:180",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x7163c8f360572e895bc5e32ae062ea19ae673b0c0aed32b21860ede9f1317f17",
+          "datetime_utc": "2026-02-06T09:48:23Z",
+          "block_number": 24396987,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "repay",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+              "symbol": "USDS",
+              "amount": 159837.615629,
+              "count": 1
+            },
+            {
+              "direction": "out",
+              "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+              "symbol": "variableDebtUSDS",
+              "amount": 159734.71438859205,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:181",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
+          "datetime_utc": "2026-02-06T10:13:11Z",
+          "block_number": 24397110,
+          "category": "lending",
+          "protocol": "Spark",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "symbol": "spWETH",
+              "amount": 15.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 15.002522015563637,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 15,
+      "id": "eoa-flow-edge-5"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+      "edge_type": "protocol_flow",
+      "category": "vault",
+      "label": "10 tx | claimSharesAndRequestRedeem(uint256)/redeem(uint256,address,address) | -3.00M USDC / -1.80M 9SUSDC",
+      "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:64",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xb998d119fb3cc95a85d6ab9beeb98fd315b2dbabd634c803192fa58463df060f",
+          "datetime_utc": "2026-01-06T10:27:23Z",
+          "block_number": 24175034,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "requestDeposit(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1500000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 905340.1929873994,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:78",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x5404c1d9fa1b2159699affd003853ade69a64b0c6752d159cb00a554bf519c08",
+          "datetime_utc": "2026-01-07T08:58:35Z",
+          "block_number": 24181757,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "claimSharesAndRequestRedeem(uint256)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 900266.2558528266,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 1350399.3837792827,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:85",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x00e24e0f8cdf37337cfbde454e56e88c500d8fca973c110ea6db03787a7897c6",
+          "datetime_utc": "2026-01-07T10:54:35Z",
+          "block_number": 24182336,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 999968.232545,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:126",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x8c45485fd01de86ac7ce908a92d03fb0aa717007800640f65be3134b2b631bc2",
+          "datetime_utc": "2026-01-28T08:40:11Z",
+          "block_number": 24332206,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "requestDeposit(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1500000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:145",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xa754533643c14ade49689e7a52aebcd73c8718b85d0dfaa74a818c172343dc6a",
+          "datetime_utc": "2026-02-03T09:35:11Z",
+          "block_number": 24375471,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "claimSharesAndRequestRedeem(uint256)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 179211.9224696432,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 1344089.4185223726,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:150",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x14306ec98b803a7260ad18c67b71105652c0ef3617819531bedee1191c4ee7c4",
+          "datetime_utc": "2026-02-03T10:19:47Z",
+          "block_number": 24375694,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 200056.394117,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:168",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xca14d17b26bfd0fc6e6c870e6c3090c194fe2b81a47d73f0eab46d0838a6562b",
+          "datetime_utc": "2026-02-04T08:13:59Z",
+          "block_number": 24382222,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "claimSharesAndRequestRedeem(uint256)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 358322.80844729196,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:169",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x66a9f5dc2cc7a7f708f06ff8ab2e4847e54af624217e2c1cfaadedc62477dde8",
+          "datetime_utc": "2026-02-05T11:16:35Z",
+          "block_number": 24390274,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 400176.098112,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:175",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x606e88c03d3253293dbe516c53ac77080f40e839a556b7dc5f4f852d76d3572a",
+          "datetime_utc": "2026-02-06T08:23:23Z",
+          "block_number": 24396564,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "claimSharesAndRequestRedeem(uint256)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "symbol": "9SUSDC",
+              "amount": 358165.1279399311,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:176",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
+          "datetime_utc": "2026-02-06T09:43:23Z",
+          "block_number": 24396963,
+          "category": "vault",
+          "protocol": "9SUSDC",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 399837.615629,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 10,
+      "id": "eoa-flow-edge-6"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+      "edge_type": "protocol_flow",
+      "category": "swap",
+      "label": "1 tx | swapCompact() | -650 weETH / +705.23 WETH",
+      "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:91",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
+          "datetime_utc": "2026-01-07T11:01:59Z",
+          "block_number": 24182373,
+          "category": "swap",
+          "protocol": "Odos",
+          "action": "swapCompact()",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 650.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 705.2298004383825,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 1,
+      "id": "eoa-flow-edge-7"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+      "edge_type": "protocol_flow",
+      "category": "vault",
+      "label": "6 tx | withdraw(uint256,address,address)/deposit(uint256,address,uint16) | -1.62k WETH / -1.61k spETH",
+      "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:94",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xfdf3eff37a4f150c2f2bcb44783bd563a23cf79521eaaf0bdc29391fe5522eb4",
+          "datetime_utc": "2026-01-07T16:49:47Z",
+          "block_number": 24184106,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "deposit(uint256,address,uint16)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1619.0628896271649,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 1614.4377976143853,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:95",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x73a90393427f1f16dae38b50b6a46bb17fd18a45721c83836866a81d3122a8b2",
+          "datetime_utc": "2026-01-09T16:18:35Z",
+          "block_number": 24198270,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 4.9853376072686455,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 5.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:103",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x6f3268456ba12266fa4bf0e2e1bdad0b2311cc1ff99d514f77a3dc9ab6dac9ae",
+          "datetime_utc": "2026-01-20T08:33:11Z",
+          "block_number": 24274819,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 0.9966525129625766,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:106",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x7a302007d6c5cc39a124b5314ada2eff51e97f09f61f2608a7ec4049671a7e3d",
+          "datetime_utc": "2026-01-20T08:56:47Z",
+          "block_number": 24274936,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 1245.8148910863506,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1250.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:110",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xf2280a1b87fd66478fd3141bfdb07541e3a462020a012600491fc24b34affa4d",
+          "datetime_utc": "2026-01-23T09:07:59Z",
+          "block_number": 24296490,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 298.9640492227908,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 300.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:134",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
+          "datetime_utc": "2026-02-02T13:34:23Z",
+          "block_number": 24369502,
+          "category": "vault",
+          "protocol": "Spark ETH vault",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "symbol": "spETH",
+              "amount": 63.67686718501263,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 63.92456166499069,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 6,
+      "id": "eoa-flow-edge-8"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x88ff1e5b602916615391f55854588efcbb7663f0",
+      "edge_type": "protocol_flow",
+      "category": "bridge",
+      "label": "4 tx | bridgeETHTo(address,uint32,bytes)",
+      "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:105",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x0bd6ab947a335ecbea6b2eecd3be49bb5b6e367bc3987b6e80ba961f0f3b6d29",
+          "datetime_utc": "2026-01-20T08:40:11Z",
+          "block_number": 24274853,
+          "category": "bridge",
+          "protocol": "Optimism",
+          "action": "bridgeETHTo(address,uint32,bytes)",
+          "transfers": []
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:108",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x4d5a626aac2d178bfaed2709274db5a38ba5c27aa76b6ce7908044bbd61c6ef0",
+          "datetime_utc": "2026-01-20T08:58:47Z",
+          "block_number": 24274946,
+          "category": "bridge",
+          "protocol": "Optimism",
+          "action": "bridgeETHTo(address,uint32,bytes)",
+          "transfers": []
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:112",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xa376a328c77db20d182344ddad7c2c5289f662e498d6023995f857174765134e",
+          "datetime_utc": "2026-01-23T09:09:11Z",
+          "block_number": 24296496,
+          "category": "bridge",
+          "protocol": "Optimism",
+          "action": "bridgeETHTo(address,uint32,bytes)",
+          "transfers": []
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:139",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
+          "datetime_utc": "2026-02-02T13:41:11Z",
+          "block_number": 24369535,
+          "category": "bridge",
+          "protocol": "Optimism",
+          "action": "bridgeETHTo(address,uint32,bytes)",
+          "transfers": []
+        }
+      ],
+      "event_count": 4,
+      "id": "eoa-flow-edge-9"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+      "edge_type": "protocol_flow",
+      "category": "bridge",
+      "label": "2 tx | receiveMessage(bytes,bytes) | +1.75M USDC",
+      "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:125",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xe20a58db0dfc18a6e04b42f6ae14dcb5941c6c6b612ad771fa7dcc62fe3bc06e",
+          "datetime_utc": "2026-01-28T08:35:47Z",
+          "block_number": 24332184,
+          "category": "bridge",
+          "protocol": "CCTP",
+          "action": "receiveMessage(bytes,bytes)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1500000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:129",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
+          "datetime_utc": "2026-01-30T08:58:59Z",
+          "block_number": 24346639,
+          "category": "bridge",
+          "protocol": "CCTP",
+          "action": "receiveMessage(bytes,bytes)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 250000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 2,
+      "id": "eoa-flow-edge-10"
+    },
+    {
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "protocol:0x28b5a0e9c621a5badaa536219b3a228c8168cf5d",
+      "edge_type": "protocol_flow",
+      "category": "bridge",
+      "label": "2 tx | depositForBurn(uint256,uint32,bytes32,address,bytes32,uint256,uint32) | -440.18k USDC",
+      "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:173",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x9c9d9640c9d11ca9084b772e26f4d4b97e09fbb1b51c610e472ed3450326fe93",
+          "datetime_utc": "2026-02-05T11:20:23Z",
+          "block_number": 24390293,
+          "category": "bridge",
+          "protocol": "CCTP",
+          "action": "depositForBurn(uint256,uint32,bytes32,address,bytes32,uint256,uint32)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 200176.098112,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:178",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
+          "datetime_utc": "2026-02-06T09:45:47Z",
+          "block_number": 24396975,
+          "category": "bridge",
+          "protocol": "CCTP",
+          "action": "depositForBurn(uint256,uint32,bytes32,address,bytes32,uint256,uint32)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 240000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 2,
+      "id": "eoa-flow-edge-11"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23990320:238:3",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x42c2f8204857e409a3ccc617946d0fd0829510eb901b6c12e0ea25e5b3bad89a",
+      "datetime_utc": "2025-12-11T15:25:47Z",
+      "block_number": 23990320,
+      "category": "vault",
+      "protocol": "alUSD",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 4909284.44091,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998345:124:7",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1625f995df474d18523cf0eb0970ff35a9f7064c99c7613d6843e680287fa6fa",
+      "datetime_utc": "2025-12-12T18:32:11Z",
+      "block_number": 23998345,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 4909999.03067,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 4909999.03067,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998396:88:11",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6708e90f0763f70593aa09dd7abbe9659591da8ac6387b038d25332e9ecfa238",
+      "datetime_utc": "2025-12-12T18:42:23Z",
+      "block_number": 23998396,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "lt_deposit",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "symbol": "cbBTC",
+          "amount": 20.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+          "symbol": "yb-cbBTC",
+          "amount": 19.406919328526712,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998400:149:12",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x987d6d916d42f6f5d0b3c3d4d9239b9f1057a7408477ecc6e565c64e301645dd",
+      "datetime_utc": "2025-12-12T18:43:11Z",
+      "block_number": 23998400,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "lt_deposit",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "symbol": "cbBTC",
+          "amount": 5.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+          "symbol": "yb-cbBTC",
+          "amount": 4.851850620906276,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998404:89:13",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x62e6b9afa35a37fda20c6c315ca3f8857622b7e9c05ddc8d7a4cb42bf78317eb",
+      "datetime_utc": "2025-12-12T18:43:59Z",
+      "block_number": 23998404,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "lt_deposit",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "symbol": "cbBTC",
+          "amount": 3.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+          "symbol": "yb-cbBTC",
+          "amount": 2.91110809539977,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998407:93:14",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x840c605f1668b6ef7bc6ea405bce8720e517dec6d88fb487126d820b92ba3f90",
+      "datetime_utc": "2025-12-12T18:44:35Z",
+      "block_number": 23998407,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "lt_deposit",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "symbol": "cbBTC",
+          "amount": 2.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+          "symbol": "yb-cbBTC",
+          "amount": 1.9407388827995509,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:22",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x32973ec8586258037cda9646f349997750559595c31c98d3b3017dba4d5db900",
+      "datetime_utc": "2025-12-16T08:13:11Z",
+      "block_number": 24023899,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "approve",
+      "transfers": []
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:23",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xed437b7a96b7b2fb8623ddb495aa357115797898496e51fdb8032676d25b2d49",
+      "datetime_utc": "2025-12-16T08:16:59Z",
+      "block_number": 24023918,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_deposit",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+          "symbol": "yb-cbBTC",
+          "amount": 29.110616927632307,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "symbol": "g(yb-cbBTC)",
+          "amount": 30.003131320830256,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:24",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc0ec13d9c336ee118f3f6155cb74ce82eb0f0a650b5a43c5b6a30600134ea76f",
+      "datetime_utc": "2025-12-17T08:31:59Z",
+      "block_number": 24031158,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4330.3880428476605,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:26",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x526c311bc26952206477db4c2b30799f85eaedc14ab1da6a4f18b871f42a3538",
+      "datetime_utc": "2025-12-17T08:59:23Z",
+      "block_number": 24031295,
+      "category": "swap",
+      "protocol": "1inch",
+      "action": "swap(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4330.3880428476605,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 0.6063355299657252,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:28",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x55766cab2cc46423c83345be1bd6e116cb47e18e0e6cc7b771c313b442eee95a",
+      "datetime_utc": "2025-12-18T10:20:11Z",
+      "block_number": 24038852,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4592.580176174801,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:30",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc797a166f3edd34a5bde50e084f19b3e137d2ca20a06d083d550576b7ab0c6d0",
+      "datetime_utc": "2025-12-18T10:22:11Z",
+      "block_number": 24038862,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapOnAugustusRFQTryBatchFill(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4592.580176174801,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 0.6387255093717042,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:32",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x14f3590652424eb9c57cdbadcdf6613c306d8915e5e6e762915adc90933516c2",
+      "datetime_utc": "2025-12-19T08:04:35Z",
+      "block_number": 24045329,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 3872.5427805889453,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:33",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x49ec39d6575ba733599a2f10da8a0d82799902498696b7cec72bbd25ab7b41c6",
+      "datetime_utc": "2025-12-19T08:05:35Z",
+      "block_number": 24045334,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 3872.5427805889453,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 0.5235881679402125,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:34",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x956bdd54aaafda4f919df250bd6d250d249994cee8bbcf902d8193e0a13a08ab",
+      "datetime_utc": "2025-12-22T14:24:11Z",
+      "block_number": 24068727,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 14039.073705408948,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:35",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x59776ca210d8903f0401f3977937d196d6b5bfd5fd99391312d08d538adf968b",
+      "datetime_utc": "2025-12-22T14:25:11Z",
+      "block_number": 24068732,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 14039.073705408948,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.7845868569986694,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:39",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x0040650e6cde90591f9d6b78e9cfd536b08b8db55a28290c4e59e65b20bd0924",
+      "datetime_utc": "2025-12-23T13:26:47Z",
+      "block_number": 24075603,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4124.224443542353,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:40",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xada90722d61d9038f301f4eceb74e94cfbeae4bc44a6407f98a53e630647bbc1",
+      "datetime_utc": "2025-12-23T13:27:47Z",
+      "block_number": 24075608,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapOnAugustusRFQTryBatchFill(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 4124.224443542353,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 0.5298658997194937,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:44",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc0f28c67a1842ae039ebef9250f090034f8d8887bdf0dec9092b6b006d1bc43a",
+      "datetime_utc": "2025-12-28T09:12:11Z",
+      "block_number": 24110152,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 21327.27014819356,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:45",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xfd820d88c1a1dd36635a7fb2bfedd0dd8bce49eecba3741b881741fca6828ee7",
+      "datetime_utc": "2025-12-28T09:12:59Z",
+      "block_number": 24110156,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 21327.27014819356,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 2.967229643572105,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:50",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6f4fd07f4e6088d599ef7daae2711dbadeeadd90aae0206baa9b4b0927573931",
+      "datetime_utc": "2025-12-30T13:44:47Z",
+      "block_number": 24125827,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 9688.579754055943,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:51",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
+      "datetime_utc": "2025-12-30T13:45:35Z",
+      "block_number": 24125831,
+      "category": "swap",
+      "protocol": "1inch",
+      "action": "swap(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 9688.579754055943,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.324804042224681,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:54",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x13547e2d11be10cb52f4d78682b796e74b203d2b3ba2a03e1319d88c30752407",
+      "datetime_utc": "2025-12-30T14:26:35Z",
+      "block_number": 24126035,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "symbol": "spWETH",
+          "amount": 24.371700561536066,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 25.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:60",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6253d0b4fd23d5fb94a5c6bd21e861a10ebb8fbf59f1b2a48c6900a12d423180",
+      "datetime_utc": "2026-01-03T16:58:59Z",
+      "block_number": 24155469,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 18156.38702249711,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:61",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc542815ec9a482e182b5135a1b1929061b18eacb799671db9ed262bcac9e9ce9",
+      "datetime_utc": "2026-01-03T16:59:47Z",
+      "block_number": 24155473,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 18156.38702249711,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 2.452400682029064,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:64",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xb998d119fb3cc95a85d6ab9beeb98fd315b2dbabd634c803192fa58463df060f",
+      "datetime_utc": "2026-01-06T10:27:23Z",
+      "block_number": 24175034,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "requestDeposit(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1500000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 905340.1929873994,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:68",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe776016280b75886da2daa76314145a69c486be95dd694d1da3a99dc036d07c6",
+      "datetime_utc": "2026-01-07T08:30:59Z",
+      "block_number": 24181619,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "supply",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 999.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "symbol": "spweETH",
+          "amount": 999.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:69",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x578ed782cc0585170427d8feeb017d0a6e232ac5c961f72b44edadcbdad08007",
+      "datetime_utc": "2026-01-07T08:31:47Z",
+      "block_number": 24181623,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "borrow",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 1503805.2336371664,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 1500200.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:74",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x9d79f30eedc8b812222d9e9ce86ac1970c510d6477bcf55ec2cd9ebc0728466e",
+      "datetime_utc": "2026-01-07T08:44:23Z",
+      "block_number": 24181686,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "supply",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 750.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "symbol": "spweETH",
+          "amount": 750.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:75",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1d8e8167d26f534c0bfc514f739665865705bd21dc0651ec75ad71f2eb75b962",
+      "datetime_utc": "2026-01-07T08:45:11Z",
+      "block_number": 24181690,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "symbol": "spWETH",
+          "amount": 758.6562993753562,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 758.88991836207,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:78",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5404c1d9fa1b2159699affd003853ade69a64b0c6752d159cb00a554bf519c08",
+      "datetime_utc": "2026-01-07T08:58:35Z",
+      "block_number": 24181757,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "claimSharesAndRequestRedeem(uint256)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 900266.2558528266,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 1350399.3837792827,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:80",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xef6da1c5b4e1f4daa33ddf2caf83278c974563748f452442b69c4131f4da4c2e",
+      "datetime_utc": "2026-01-07T09:01:11Z",
+      "block_number": 24181770,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOnCurveV1(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 101.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 109.60100235624726,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:81",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x197ead6e2fc55a8c29173bd3330f180edd59eadc0e995bd23ae43a418254f1cf",
+      "datetime_utc": "2026-01-07T09:01:35Z",
+      "block_number": 24181772,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 15628.697882909582,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:82",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x34237d77681da5bbe71351bcd76d93fa3f1502e21508e4a28ac6ae812e5c1623",
+      "datetime_utc": "2026-01-07T09:02:35Z",
+      "block_number": 24181777,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 15628.697882909582,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 2.0840882707614767,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:85",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x00e24e0f8cdf37337cfbde454e56e88c500d8fca973c110ea6db03787a7897c6",
+      "datetime_utc": "2026-01-07T10:54:35Z",
+      "block_number": 24182336,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 999968.232545,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:86",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1efcf31aac6e00c19ff57e0b1c7fa0088c0e90be836a8f03e80fe21bf14238ed",
+      "datetime_utc": "2026-01-07T10:55:23Z",
+      "block_number": 24182340,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 999968.232545,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 999968.232545,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:88",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x741b44aa533e253b50f4cf4a8c9934adebe9256e73677886ff5706f8983c7cd1",
+      "datetime_utc": "2026-01-07T10:59:35Z",
+      "block_number": 24182361,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "repay",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 999968.232545,
+          "count": 1
+        },
+        {
+          "direction": "out",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 999935.345817124,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:89",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x03f4a016d792ade82eaf1dfe573c8146025f0913b6623d65b6777ce9a048b73e",
+      "datetime_utc": "2026-01-07T11:00:35Z",
+      "block_number": 24182366,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "symbol": "spweETH",
+          "amount": 650.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 650.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:91",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
+      "datetime_utc": "2026-01-07T11:01:59Z",
+      "block_number": 24182373,
+      "category": "swap",
+      "protocol": "Odos",
+      "action": "swapCompact()",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 650.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 705.2298004383825,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:94",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xfdf3eff37a4f150c2f2bcb44783bd563a23cf79521eaaf0bdc29391fe5522eb4",
+      "datetime_utc": "2026-01-07T16:49:47Z",
+      "block_number": 24184106,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "deposit(uint256,address,uint16)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1619.0628896271649,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 1614.4377976143853,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:95",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x73a90393427f1f16dae38b50b6a46bb17fd18a45721c83836866a81d3122a8b2",
+      "datetime_utc": "2026-01-09T16:18:35Z",
+      "block_number": 24198270,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 4.9853376072686455,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 5.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:98",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x9adcf17130d9eacdd5bfe68cf029b3edf345749de5de0d34e1f5a9b707a22e8b",
+      "datetime_utc": "2026-01-12T14:15:35Z",
+      "block_number": 24219166,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 18729.16413737254,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:99",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x732bece2d0a442dd899f1942e0356c54fd95965e8f51e937c91b2b84f2c2e9d9",
+      "datetime_utc": "2026-01-12T14:16:23Z",
+      "block_number": 24219170,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 18729.16413737254,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 2.523073957600554,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:101",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xb50d98576313ebd7792f203b346bf86e54dc996799948cf5c2c2f72adace3d2e",
+      "datetime_utc": "2026-01-19T08:19:47Z",
+      "block_number": 24267580,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 22787.943962492576,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:102",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe3d71a69a2aa0922f51918181547af303d06d65ba427c069652874d14b93057e",
+      "datetime_utc": "2026-01-19T08:26:47Z",
+      "block_number": 24267615,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 22787.943962492576,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.9266940410935534,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:103",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6f3268456ba12266fa4bf0e2e1bdad0b2311cc1ff99d514f77a3dc9ab6dac9ae",
+      "datetime_utc": "2026-01-20T08:33:11Z",
+      "block_number": 24274819,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 0.9966525129625766,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:105",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x0bd6ab947a335ecbea6b2eecd3be49bb5b6e367bc3987b6e80ba961f0f3b6d29",
+      "datetime_utc": "2026-01-20T08:40:11Z",
+      "block_number": 24274853,
+      "category": "bridge",
+      "protocol": "Optimism",
+      "action": "bridgeETHTo(address,uint32,bytes)",
+      "transfers": []
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:106",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x7a302007d6c5cc39a124b5314ada2eff51e97f09f61f2608a7ec4049671a7e3d",
+      "datetime_utc": "2026-01-20T08:56:47Z",
+      "block_number": 24274936,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 1245.8148910863506,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1250.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:108",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x4d5a626aac2d178bfaed2709274db5a38ba5c27aa76b6ce7908044bbd61c6ef0",
+      "datetime_utc": "2026-01-20T08:58:47Z",
+      "block_number": 24274946,
+      "category": "bridge",
+      "protocol": "Optimism",
+      "action": "bridgeETHTo(address,uint32,bytes)",
+      "transfers": []
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:110",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xf2280a1b87fd66478fd3141bfdb07541e3a462020a012600491fc24b34affa4d",
+      "datetime_utc": "2026-01-23T09:07:59Z",
+      "block_number": 24296490,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 298.9640492227908,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 300.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:112",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xa376a328c77db20d182344ddad7c2c5289f662e498d6023995f857174765134e",
+      "datetime_utc": "2026-01-23T09:09:11Z",
+      "block_number": 24296496,
+      "category": "bridge",
+      "protocol": "Optimism",
+      "action": "bridgeETHTo(address,uint32,bytes)",
+      "transfers": []
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:122",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc155b5bfa76189978a273e2f91d77386987f2c3633e6a9f5feb3bb31d8bb63ae",
+      "datetime_utc": "2026-01-26T08:11:23Z",
+      "block_number": 24317725,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 23592.93745561763,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:123",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x0ddc1b4cf771ccad25bf4d8c778202843af96c618563c1668961ff444ae33ae3",
+      "datetime_utc": "2026-01-26T08:12:23Z",
+      "block_number": 24317730,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 23592.93745561763,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.9907481435127292,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:125",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe20a58db0dfc18a6e04b42f6ae14dcb5941c6c6b612ad771fa7dcc62fe3bc06e",
+      "datetime_utc": "2026-01-28T08:35:47Z",
+      "block_number": 24332184,
+      "category": "bridge",
+      "protocol": "CCTP",
+      "action": "receiveMessage(bytes,bytes)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1500000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:126",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x8c45485fd01de86ac7ce908a92d03fb0aa717007800640f65be3134b2b631bc2",
+      "datetime_utc": "2026-01-28T08:40:11Z",
+      "block_number": 24332206,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "requestDeposit(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1500000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:129",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
+      "datetime_utc": "2026-01-30T08:58:59Z",
+      "block_number": 24346639,
+      "category": "bridge",
+      "protocol": "CCTP",
+      "action": "receiveMessage(bytes,bytes)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 250000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:131",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x77d77144ebbd990f1f9f95fabe3fad7e7dd37c60288ab52ae080307e663d8a87",
+      "datetime_utc": "2026-01-30T09:00:11Z",
+      "block_number": 24346645,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 250000.0015,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 250000.0015,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:132",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xf10d8441bf2db13a46bdc53fa2cbc5ffc0101cf39f43c6d4a6698e7cd4142d34",
+      "datetime_utc": "2026-01-30T09:00:59Z",
+      "block_number": 24346649,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "repay",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 250000.0015,
+          "count": 1
+        },
+        {
+          "direction": "out",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 245582.8765685197,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:134",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
+      "datetime_utc": "2026-02-02T13:34:23Z",
+      "block_number": 24369502,
+      "category": "vault",
+      "protocol": "Spark ETH vault",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "symbol": "spETH",
+          "amount": 63.67686718501263,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 63.92456166499069,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:137",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x4b600f7d6c1e8447c189850ab3f612558bbbae9e5d5d8922813d67ded9d47cac",
+      "datetime_utc": "2026-02-02T13:39:11Z",
+      "block_number": 24369526,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "supply",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 15.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "symbol": "spWETH",
+          "amount": 15.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:139",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
+      "datetime_utc": "2026-02-02T13:41:11Z",
+      "block_number": 24369535,
+      "category": "bridge",
+      "protocol": "Optimism",
+      "action": "bridgeETHTo(address,uint32,bytes)",
+      "transfers": []
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:143",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1c075fdf061b131714eee31658666ece7229102d221a2ed4db046cc5220f0ba0",
+      "datetime_utc": "2026-02-03T09:30:11Z",
+      "block_number": 24375446,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "symbol": "spweETH",
+          "amount": 80.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 80.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:145",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xa754533643c14ade49689e7a52aebcd73c8718b85d0dfaa74a818c172343dc6a",
+      "datetime_utc": "2026-02-03T09:35:11Z",
+      "block_number": 24375471,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "claimSharesAndRequestRedeem(uint256)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 179211.9224696432,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 1344089.4185223726,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:150",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x14306ec98b803a7260ad18c67b71105652c0ef3617819531bedee1191c4ee7c4",
+      "datetime_utc": "2026-02-03T10:19:47Z",
+      "block_number": 24375694,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 200056.394117,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:152",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x23ef8291d32f38ff8cec3d588e7816ec4e18dd71a3151a35c4698f71d62c0fe1",
+      "datetime_utc": "2026-02-03T10:21:35Z",
+      "block_number": 24375703,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 200056.394267,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 200056.394267,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:153",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x56746d0e9962f10bd8942049d5e3c451253ebda36e617c9cc8014b01fe478430",
+      "datetime_utc": "2026-02-03T10:22:59Z",
+      "block_number": 24375709,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "repay",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 200056.394267,
+          "count": 1
+        },
+        {
+          "direction": "out",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 199403.08923539484,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:154",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x728836cf1e8dda7eb14fb962ba70c37695ce8fbe525b037c46cf72025bf97ff8",
+      "datetime_utc": "2026-02-03T10:24:59Z",
+      "block_number": 24375716,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "symbol": "spweETH",
+          "amount": 90.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 90.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:158",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
+      "datetime_utc": "2026-02-03T10:29:23Z",
+      "block_number": 24375736,
+      "category": "yield_basis",
+      "protocol": "Yield Basis",
+      "action": "gauge_claim",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 26818.148963878008,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:159",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x0a33411e012d33d1f3e7bc14ebb18abf53a4af237dbeea30fda12f4e1d989fb3",
+      "datetime_utc": "2026-02-03T10:30:11Z",
+      "block_number": 24375740,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x01791f726b4103694969820be083196cc7c045ff",
+          "symbol": "YB",
+          "amount": 26818.148963878008,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.8564610303140947,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:168",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xca14d17b26bfd0fc6e6c870e6c3090c194fe2b81a47d73f0eab46d0838a6562b",
+      "datetime_utc": "2026-02-04T08:13:59Z",
+      "block_number": 24382222,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "claimSharesAndRequestRedeem(uint256)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 358322.80844729196,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:169",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x66a9f5dc2cc7a7f708f06ff8ab2e4847e54af624217e2c1cfaadedc62477dde8",
+      "datetime_utc": "2026-02-05T11:16:35Z",
+      "block_number": 24390274,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 400176.098112,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:171",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x8b7af93492af3a3686d733745842c6524c2738375a09ce54c32939758427a601",
+      "datetime_utc": "2026-02-05T11:18:59Z",
+      "block_number": 24390286,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 200000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 200000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:172",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xbc58e3733bf81583d47c0d0503a5d21bce752608f3cbc064b448ac5e1499dd48",
+      "datetime_utc": "2026-02-05T11:20:23Z",
+      "block_number": 24390293,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "repay",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 200000.0,
+          "count": 1
+        },
+        {
+          "direction": "out",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 199723.35693386378,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:173",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x9c9d9640c9d11ca9084b772e26f4d4b97e09fbb1b51c610e472ed3450326fe93",
+      "datetime_utc": "2026-02-05T11:20:23Z",
+      "block_number": 24390293,
+      "category": "bridge",
+      "protocol": "CCTP",
+      "action": "depositForBurn(uint256,uint32,bytes32,address,bytes32,uint256,uint32)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 200176.098112,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:175",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x606e88c03d3253293dbe516c53ac77080f40e839a556b7dc5f4f852d76d3572a",
+      "datetime_utc": "2026-02-06T08:23:23Z",
+      "block_number": 24396564,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "claimSharesAndRequestRedeem(uint256)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 358165.1279399311,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:176",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
+      "datetime_utc": "2026-02-06T09:43:23Z",
+      "block_number": 24396963,
+      "category": "vault",
+      "protocol": "9SUSDC",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 399837.615629,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:178",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
+      "datetime_utc": "2026-02-06T09:45:47Z",
+      "block_number": 24396975,
+      "category": "bridge",
+      "protocol": "CCTP",
+      "action": "depositForBurn(uint256,uint32,bytes32,address,bytes32,uint256,uint32)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 240000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:179",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xa4b82f9bd92b83da482a999e0e96a20bd349e603482f7be328235e43d894dd8d",
+      "datetime_utc": "2026-02-06T09:47:35Z",
+      "block_number": 24396983,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountInOutOnMakerPSM(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 159837.615629,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 159837.615629,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:180",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x7163c8f360572e895bc5e32ae062ea19ae673b0c0aed32b21860ede9f1317f17",
+      "datetime_utc": "2026-02-06T09:48:23Z",
+      "block_number": 24396987,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "repay",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+          "symbol": "USDS",
+          "amount": 159837.615629,
+          "count": 1
+        },
+        {
+          "direction": "out",
+          "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+          "symbol": "variableDebtUSDS",
+          "amount": 159734.71438859205,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:181",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
+      "datetime_utc": "2026-02-06T10:13:11Z",
+      "block_number": 24397110,
+      "category": "lending",
+      "protocol": "Spark",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "symbol": "spWETH",
+          "amount": 15.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 15.002522015563637,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 1,
+    "event_count": 80,
+    "category_counts": {
+      "vault": 30,
+      "swap": 52,
+      "yield_basis": 31,
+      "lending": 43,
+      "bridge": 16,
+      "fx_long": 4
+    },
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [
+        {
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "kind": "EOA",
+          "depth": 0,
+          "discovered_by": "seed"
+        }
+      ],
+      "edges": [],
+      "seeds": [
+        "0x325228217e02e31529bf4bc6e32db695ea525669"
+      ],
+      "max_depth": 0,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-13T05:38:13Z",
+    "dfs": {
+      "seed_addresses": [
+        "0x325228217e02e31529bf4bc6e32db695ea525669"
+      ],
+      "depth": 0,
+      "directions": "both",
+      "discovered_addresses": 1,
+      "discovery_edges": 0
+    }
+  }
+}

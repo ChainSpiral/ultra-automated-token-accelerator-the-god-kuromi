@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 const TOGGLE_NAV = [
   { href: "/overview", label: "Overview" },
   { href: "/flow", label: "Flow" },
+  { href: "/eoa-flow", label: "EOA Flow" },
   { href: "/reflexivity", label: "Reflexivity" },
   { href: "/contagion", label: "Contagion" },
 ];

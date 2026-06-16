@@ -1,8 +1,10 @@
-import json, math, os
+import json, math, os, re, subprocess, sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 ROOT=os.path.dirname(os.path.abspath(__file__))
 FRONT=os.path.join(ROOT,"graphs","frontend")
 MANIFEST=os.path.join(FRONT,"manifest.json")
+ADDR_RE=re.compile(r"^0x[a-fA-F0-9]{40}$")
+SNAPSHOT_BLOCK=25242078
 
 def manifest():
     if os.path.exists(MANIFEST):
@@ -39,6 +41,83 @@ def flows():
     order={n:i for i,n in enumerate(FLOW_ORDER)}
     out.sort(key=lambda x:(order.get(x["name"],99),x["name"]))
     return out
+
+def eoa_flows():
+    out=[]
+    for f in os.listdir(FRONT):
+        if not (f.startswith("eoa.") and f.endswith(".json")): continue
+        name=f[len("eoa."):-len(".json")]
+        try: d=json.load(open(os.path.join(FRONT,f)))
+        except Exception: continue
+        if (d.get("metadata") or {}).get("view")!="eoa_flow": continue
+        m=d.get("metadata",{}) or {}
+        out.append({
+            "name":name,
+            "label":name,
+            "nodes":len(d.get("nodes",[])),
+            "edges":len(d.get("edges",[])),
+            "events":m.get("event_count",len(d.get("events",[]))) or 0,
+            "addresses":m.get("address_count",0) or 0,
+            "from_block":m.get("from_block"),
+            "to_block":m.get("to_block"),
+        })
+    out.sort(key=lambda x:x["name"])
+    return out
+
+def _safe_int(value, default, lo, hi):
+    try:
+        n = int(value)
+    except Exception:
+        n = default
+    return max(lo, min(n, hi))
+
+def build_live_eoa_flow(address, depth, max_addresses=16, max_neighbors=6, receipt_transfers="none", force=False):
+    if not ADDR_RE.match(address or ""):
+        return {"nodes":[],"edges":[],"metadata":{"error":"invalid address"}}
+    depth=_safe_int(depth or 1, 1, 0, 99)
+    max_addresses=_safe_int(max_addresses, 16, 1, 300)
+    max_neighbors=_safe_int(max_neighbors, 6, 1, 100)
+    receipt_transfers=receipt_transfers if receipt_transfers in ("none","important","all") else "none"
+    safe_name=f"seed.{address[:6].lower()}{address[-4:].lower()}.d{depth}"
+    out=os.path.join(FRONT,f"eoa.{safe_name}.json")
+    rebuild=force or not os.path.exists(out)
+    if not rebuild:
+        try:
+            existing=json.load(open(out))
+            m=existing.get("metadata",{}) or {}
+            has_event_node=any(n.get("type")=="event" for n in existing.get("nodes",[]))
+            dfs=m.get("dfs",{}) or {}
+            rebuild=(
+                m.get("format_version")!=2
+                or has_event_node
+                or int(dfs.get("depth") or -1) < depth
+                or int(dfs.get("discovered_addresses") or 0) < min(max_addresses, int(m.get("address_count") or 0))
+                or m.get("receipt_transfers") != receipt_transfers
+            )
+        except Exception:
+            rebuild=True
+    if rebuild:
+        cmd=[
+            sys.executable, os.path.join(ROOT,"feeder","eoa_timeline.py"),
+            "--addresses", address.lower(),
+            "--dfs-wallets",
+            "--dfs-depth", str(depth),
+            "--dfs-directions", "both",
+            "--max-addresses", str(max_addresses),
+            "--max-neighbors-per-address", str(max_neighbors),
+            "--from-block", "23990000",
+            "--to-block", str(SNAPSHOT_BLOCK),
+            "--important-only",
+            "--keep-token-flows",
+            "--receipt-transfers", receipt_transfers,
+            "--frontend-flow",
+            "--max-events-per-address", "80",
+            "--out", out,
+        ]
+        if depth > 2:
+            cmd.insert(cmd.index("--frontend-flow"), "--dfs-only")
+        subprocess.run(cmd, cwd=ROOT, check=True, timeout=300)
+    return json.load(open(out))
 
 def sim_path(token):
     # token 심볼 -> sim 파일. 없으면 매니페스트 첫번째, 그것도 없으면 legacy crawl.sim.json
@@ -99,6 +178,36 @@ class H(BaseHTTPRequestHandler):
                 cand=sorted(f for f in os.listdir(FRONT) if f.startswith("flow.") and f.endswith(".json"))
                 p=os.path.join(FRONT,cand[0]) if cand else None
             body=json.dumps(json.load(open(p)) if p and os.path.exists(p) else {"nodes":[],"edges":[]}).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/eoa-flows":
+            # eoa.<name>.json 목록 (EOA semantic flow graph)
+            body=json.dumps(eoa_flows()).encode()
+            self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
+            self.end_headers(); self.wfile.write(body)
+        elif u.path=="/api/eoa-flow":
+            q=parse_qs(u.query)
+            address=(q.get("address") or [None])[0]
+            if address:
+                try:
+                    data=build_live_eoa_flow(
+                        address,
+                        (q.get("depth") or ["1"])[0],
+                        max_addresses=(q.get("maxAddresses") or ["16"])[0],
+                        max_neighbors=(q.get("maxNeighbors") or ["6"])[0],
+                        receipt_transfers=(q.get("receiptTransfers") or ["none"])[0],
+                        force=(q.get("force") or [""])[0] in ("1","true","yes"),
+                    )
+                except Exception as e:
+                    data={"nodes":[],"edges":[],"metadata":{"error":str(e)}}
+                body=json.dumps(data).encode()
+            else:
+                name=(q.get("name") or [None])[0]
+                p=os.path.join(FRONT,f"eoa.{name}.json") if name else None
+                if not p or not os.path.exists(p):
+                    cand=sorted(f for f in os.listdir(FRONT) if f.startswith("eoa.") and f.endswith(".json"))
+                    p=os.path.join(FRONT,cand[0]) if cand else None
+                body=json.dumps(json.load(open(p)) if p and os.path.exists(p) else {"nodes":[],"edges":[],"metadata":{}}).encode()
             self.send_response(200); self.send_header("Content-Type","application/json"); self._cors()
             self.end_headers(); self.wfile.write(body)
         elif u.path=="/api/contagions":

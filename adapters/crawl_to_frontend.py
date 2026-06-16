@@ -81,15 +81,20 @@ def name_hint(label):
        or "erc1967" in low or low in ("proxy", "ossifiableproxy"): return None  # 의미없는 프록시명 버림
     return label  # 그 외 진짜 이름은 유지
 
-def node_label(addr, kind, label, sym=None):
+def node_label(addr, kind, label, sym=None, aave_family=None):
     a = addr.lower()
     # 1) erc20 receipt: 심볼이 가장 의미있음 (wstETH / SY-weETH / PENDLE-LPT …)
     if kind == "erc20_receipt":
         return sym or KNOWN_TOKEN.get(a) or "wrapper"
     if kind in ("mellow_subvault", "mellow_vault"):
         return label or KIND_LABEL.get(kind, "Mellow")
-    if kind == "ledger:aave_v3" and label and label not in ("AToken", "ATokenInstance"):
-        return label
+    if kind == "ledger:aave_v3":
+        if aave_family:
+            venue = aave_family.get("venue") or "Aave-v3 fork"
+            tail = aave_family.get("symbol") or aave_family.get("name")
+            return f"{venue} ({tail})" if tail else venue
+        if label and label not in ("AToken", "ATokenInstance") and name_hint(label):
+            return label
     # 2) kind 기반 프로토콜 이름
     if kind in KIND_LABEL:
         base = KIND_LABEL[kind]
@@ -155,7 +160,9 @@ def convert(d):
             lab = KNOWN_TOKEN.get(addr) or sym or m.get("label") or short(addr)
         else:
             vmeta = vault_instance(addr)
-            lab = (vmeta or {}).get("name") or node_label(addr, kind, m.get("label"), sym)
+            lab = (vmeta or {}).get("name") or node_label(
+                addr, kind, m.get("label"), sym, m.get("aave_family")
+            )
         vmeta = vault_instance(addr)
         nodes.append({
             "id": addr,

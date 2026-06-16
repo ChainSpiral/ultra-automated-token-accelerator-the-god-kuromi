@@ -8,12 +8,25 @@
       "amount": 955230.6272201841,
       "frac": 0.6055,
       "kind": "ledger:aave_v3",
-      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "label": "Aave (aEthweETH)",
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
       "children_sum": 726787.13,
-      "coverage": 0.7608
+      "coverage": 0.7608,
+      "aave_family": {
+        "venue": "Aave",
+        "name": "Aave Ethereum weETH",
+        "symbol": "aEthweETH",
+        "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"
+      },
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+        "implementation_label": "ATokenInstance"
+      }
     },
     {
       "from_token": "0xbdfa7b7893081b35fb54027489e2bc7a38275129",
@@ -638,12 +651,25 @@
       "amount": 24245.460243305704,
       "frac": 0.0154,
       "kind": "ledger:aave_v3",
-      "label": "InitializableImmutableAdminUpgradeabilityProxy",
+      "label": "Spark (spweETH)",
       "depth": 0,
       "note": "singleton ledger; expand via adapter:aave_v3",
       "resolved": true,
       "children_sum": 17312.96,
-      "coverage": 0.7141
+      "coverage": 0.7141,
+      "aave_family": {
+        "venue": "Spark",
+        "name": "Spark weETH",
+        "symbol": "spweETH",
+        "pool": "0xc13e21b648a5ee794902342038ff3adab66be987"
+      },
+      "proxy": {
+        "is_proxy": true,
+        "proxy_kind": "etherscan",
+        "proxy_label": "InitializableImmutableAdminUpgradeabilityProxy",
+        "implementation": "0x6175ddec3b9b38c88157c10a01ed4a3fa8639cc6",
+        "implementation_label": "AToken"
+      }
     },
     {
       "from_token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",

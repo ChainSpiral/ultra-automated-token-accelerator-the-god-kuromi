@@ -1,0 +1,431 @@
+{
+  "nodes": [
+    {
+      "id": "eoa:0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "type": "eoa",
+      "label": "EOA 0xbb6a...c787",
+      "data": {
+        "kind": "eoa",
+        "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+        "lane": 0,
+        "step": -1,
+        "dfs_depth": 0,
+        "discovered_by": "seed",
+        "event_count": 5,
+        "first_seen_utc": "2026-04-18T17:39:47Z",
+        "last_seen_utc": "2026-04-26T00:53:47Z",
+        "category_counts": {
+          "token_receive": 1,
+          "swap": 4
+        }
+      }
+    },
+    {
+      "id": "protocol:0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+      "type": "protocol",
+      "label": "Kyber MetaAggregationRouterV2",
+      "data": {
+        "kind": "protocol",
+        "category": "swap",
+        "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5"
+      }
+    },
+    {
+      "id": "eoa:0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "type": "eoa",
+      "label": "EOA 0x8b1b...0d3b",
+      "data": {
+        "kind": "eoa",
+        "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+        "lane": 1,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 1,
+        "first_seen_utc": "2026-04-18T17:35:35Z",
+        "last_seen_utc": "2026-04-18T18:06:23Z",
+        "category_counts": {
+          "token_call": 1
+        }
+      }
+    },
+    {
+      "id": "protocol:0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "type": "protocol",
+      "label": "TransparentUpgradeableProxy->RSETH",
+      "data": {
+        "kind": "protocol",
+        "category": "token_call",
+        "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "eoa:0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "target": "eoa:0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "2 tx | transfer/receive | -6.00k rsETH / +6.00k rsETH",
+      "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+      "details": [
+        {
+          "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4",
+          "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+          "datetime_utc": "2026-04-18T17:39:47Z",
+          "block_number": 24908305,
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 6000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908305:78:0",
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+          "datetime_utc": "2026-04-18T17:39:47Z",
+          "block_number": 24908305,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 6000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 2,
+      "id": "eoa-flow-edge-0"
+    },
+    {
+      "source": "eoa:0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "target": "protocol:0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+      "edge_type": "protocol_flow",
+      "category": "swap",
+      "label": "4 tx | swap(tuple) | -5.23k rsETH",
+      "tx_hash": "0xad8716d1aafb1c2e98412aa13532fe381bfe9e4241fd46ddbd5dd304bdbb0d7e",
+      "details": [
+        {
+          "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908316:7:2",
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "tx_hash": "0x9d71b08a6c946520675a379710eeff3a723ccb45cc80571e1e0ab4a6bfe7fa01",
+          "datetime_utc": "2026-04-18T17:41:59Z",
+          "block_number": 24908316,
+          "category": "swap",
+          "protocol": "Kyber",
+          "action": "swap(tuple)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 2500.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908321:4:3",
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "tx_hash": "0xd4dcf23f200dceae6d20bc6dccc6369b2d3ca91247216fceea8a2acdfb372dd3",
+          "datetime_utc": "2026-04-18T17:42:59Z",
+          "block_number": 24908321,
+          "category": "swap",
+          "protocol": "Kyber",
+          "action": "swap(tuple)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 2500.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908325:2:4",
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "tx_hash": "0xb052c5c7a082b5a27a376f13fdfd5523b2bb2f462423f28084643c59f24b287d",
+          "datetime_utc": "2026-04-18T17:43:47Z",
+          "block_number": 24908325,
+          "category": "swap",
+          "protocol": "Kyber",
+          "action": "swap(tuple)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 200.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908357:53:5",
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "tx_hash": "0xad8716d1aafb1c2e98412aa13532fe381bfe9e4241fd46ddbd5dd304bdbb0d7e",
+          "datetime_utc": "2026-04-18T17:50:11Z",
+          "block_number": 24908357,
+          "category": "swap",
+          "protocol": "Kyber",
+          "action": "swap(tuple)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 30.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 4,
+      "id": "eoa-flow-edge-1"
+    },
+    {
+      "source": "eoa:0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "target": "protocol:0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "edge_type": "protocol_flow",
+      "category": "token_call",
+      "label": "1 tx | transfer | -6.00k rsETH",
+      "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+      "details": [
+        {
+          "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4",
+          "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+          "datetime_utc": "2026-04-18T17:39:47Z",
+          "block_number": 24908305,
+          "category": "token_call",
+          "protocol": "0xa129...e5a7",
+          "action": "transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "amount": 6000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 1,
+      "id": "eoa-flow-edge-2"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b:24908305:78:4",
+      "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+      "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+      "datetime_utc": "2026-04-18T17:39:47Z",
+      "block_number": 24908305,
+      "category": "token_call",
+      "protocol": "0xa129...e5a7",
+      "action": "transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 6000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908305:78:0",
+      "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+      "datetime_utc": "2026-04-18T17:39:47Z",
+      "block_number": 24908305,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 6000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908316:7:2",
+      "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "tx_hash": "0x9d71b08a6c946520675a379710eeff3a723ccb45cc80571e1e0ab4a6bfe7fa01",
+      "datetime_utc": "2026-04-18T17:41:59Z",
+      "block_number": 24908316,
+      "category": "swap",
+      "protocol": "Kyber",
+      "action": "swap(tuple)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 2500.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908321:4:3",
+      "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "tx_hash": "0xd4dcf23f200dceae6d20bc6dccc6369b2d3ca91247216fceea8a2acdfb372dd3",
+      "datetime_utc": "2026-04-18T17:42:59Z",
+      "block_number": 24908321,
+      "category": "swap",
+      "protocol": "Kyber",
+      "action": "swap(tuple)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 2500.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908325:2:4",
+      "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "tx_hash": "0xb052c5c7a082b5a27a376f13fdfd5523b2bb2f462423f28084643c59f24b287d",
+      "datetime_utc": "2026-04-18T17:43:47Z",
+      "block_number": 24908325,
+      "category": "swap",
+      "protocol": "Kyber",
+      "action": "swap(tuple)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 200.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787:24908357:53:5",
+      "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+      "tx_hash": "0xad8716d1aafb1c2e98412aa13532fe381bfe9e4241fd46ddbd5dd304bdbb0d7e",
+      "datetime_utc": "2026-04-18T17:50:11Z",
+      "block_number": 24908357,
+      "category": "swap",
+      "protocol": "Kyber",
+      "action": "swap(tuple)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+          "symbol": "rsETH",
+          "amount": 30.0,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 2,
+    "event_count": 6,
+    "category_counts": {
+      "token_call": 1,
+      "token_receive": 1,
+      "swap": 4
+    },
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [
+        {
+          "address": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "kind": "EOA",
+          "depth": 0,
+          "discovered_by": "seed"
+        },
+        {
+          "address": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        }
+      ],
+      "edges": [
+        {
+          "source": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+          "target": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+          "relation": "in",
+          "symbols": [
+            "rsETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24908305,
+          "last_block": 24908305,
+          "sample_tx": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+          "transfers": [
+            {
+              "tx_hash": "0xc86fbb4c275eaa36b9ae3d6202c31c6a7609c428691cd4c039737ce2811e8d26",
+              "block_number": 24908305,
+              "timestamp": 1776533987,
+              "datetime_utc": "2026-04-18T17:39:47Z",
+              "token": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+              "symbol": "rsETH",
+              "decimals": 18,
+              "value_raw": "6000000000000000000000",
+              "amount": "6000",
+              "amount_float": 6000.0,
+              "from": "0x8b1b6c9a6db1304000412dd21ae6a70a82d60d3b",
+              "to": "0xbb6a6006eb71205e977eceb19fcad1c8d631c787",
+              "direction": "in"
+            }
+          ]
+        }
+      ],
+      "seeds": [
+        "0xbb6a6006eb71205e977eceb19fcad1c8d631c787"
+      ],
+      "max_depth": 1,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-16T07:01:17Z",
+    "dfs": {
+      "seed_addresses": [
+        "0xbb6a6006eb71205e977eceb19fcad1c8d631c787"
+      ],
+      "depth": 1,
+      "directions": "both",
+      "discovered_addresses": 2,
+      "discovery_edges": 1
+    }
+  }
+}

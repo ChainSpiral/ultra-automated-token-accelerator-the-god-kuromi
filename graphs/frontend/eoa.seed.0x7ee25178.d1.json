@@ -1,0 +1,5012 @@
+{
+  "nodes": [
+    {
+      "id": "eoa:0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "type": "eoa",
+      "label": "Safe 0x7ee2...5178",
+      "data": {
+        "kind": "safe",
+        "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+        "lane": 0,
+        "step": -1,
+        "dfs_depth": 0,
+        "discovered_by": "seed",
+        "event_count": 9,
+        "first_seen_utc": "2025-12-16T17:15:59Z",
+        "last_seen_utc": "2026-06-03T20:40:11Z",
+        "category_counts": {
+          "token_rebalance": 4,
+          "token_receive": 3,
+          "token_send": 2
+        }
+      }
+    },
+    {
+      "id": "eoa:0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "type": "eoa",
+      "label": "Safe 0x50a7...d82b",
+      "data": {
+        "kind": "safe",
+        "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+        "lane": 1,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 3,
+        "first_seen_utc": "2026-02-09T15:03:59Z",
+        "last_seen_utc": "2026-02-25T17:28:59Z",
+        "category_counts": {
+          "token_rebalance": 3
+        }
+      }
+    },
+    {
+      "id": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "type": "eoa",
+      "label": "EOA 0xaecc...9d8f",
+      "data": {
+        "kind": "eoa",
+        "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+        "lane": 2,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "out",
+        "event_count": 89,
+        "first_seen_utc": "2025-12-12T02:07:23Z",
+        "last_seen_utc": "2026-06-02T15:10:35Z",
+        "category_counts": {
+          "bridge": 1,
+          "lending": 47,
+          "token_receive": 4,
+          "swap": 7,
+          "vault": 30
+        }
+      }
+    },
+    {
+      "id": "protocol:0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+      "type": "protocol",
+      "label": "CCTP MessageTransmitterV2",
+      "data": {
+        "kind": "protocol",
+        "category": "bridge",
+        "address": "0x81d40f21f12a8f0e3252bccb954d722d4c464b64"
+      }
+    },
+    {
+      "id": "protocol:0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "type": "protocol",
+      "label": "Aave V3 Pool",
+      "data": {
+        "kind": "protocol",
+        "category": "lending",
+        "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"
+      }
+    },
+    {
+      "id": "protocol:0x6a000f20005980200259b80c5102003040001068",
+      "type": "protocol",
+      "label": "ParaSwap AugustusV6",
+      "data": {
+        "kind": "protocol",
+        "category": "swap",
+        "address": "0x6a000f20005980200259b80c5102003040001068"
+      }
+    },
+    {
+      "id": "protocol:0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+      "type": "protocol",
+      "label": "VaultV2",
+      "data": {
+        "kind": "protocol",
+        "category": "vault",
+        "address": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9"
+      }
+    },
+    {
+      "id": "protocol:0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+      "type": "protocol",
+      "label": "VaultV2",
+      "data": {
+        "kind": "protocol",
+        "category": "vault",
+        "address": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0"
+      }
+    },
+    {
+      "id": "eoa:0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+      "type": "eoa",
+      "label": "Safe 0xd439...fee0",
+      "data": {
+        "kind": "safe",
+        "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+        "lane": 3,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "out",
+        "event_count": 2,
+        "first_seen_utc": "2026-06-02T11:28:35Z",
+        "last_seen_utc": "2026-06-02T17:28:59Z",
+        "category_counts": {
+          "token_receive": 2
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "eoa:0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "target": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "8 tx | mixed_transfer/receive | -100.00M USDC / -20.00M USDT",
+      "tx_hash": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206",
+      "details": [
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24047652:14:7",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0xa1361cb0a829da9374ddfc91f75b80ae75158d63119b4dcf1be0710c9dc9cb7c",
+          "datetime_utc": "2025-12-19T15:51:23Z",
+          "block_number": 24047652,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24047652:14:162",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xa1361cb0a829da9374ddfc91f75b80ae75158d63119b4dcf1be0710c9dc9cb7c",
+          "datetime_utc": "2025-12-19T15:51:23Z",
+          "block_number": 24047652,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24047656:247:8",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0xf6365f8fb0a1b75f8bd92c3b7480a541334212128a708206e952234c2871eb8d",
+          "datetime_utc": "2025-12-19T15:52:11Z",
+          "block_number": 24047656,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 39999990.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24047656:247:163",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xf6365f8fb0a1b75f8bd92c3b7480a541334212128a708206e952234c2871eb8d",
+          "datetime_utc": "2025-12-19T15:52:11Z",
+          "block_number": 24047656,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 39999990.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24292318:127:11",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0x2df5c118537d26d5fe029124bdb7e259d657d44ad64f57601baf7287c434ebae",
+          "datetime_utc": "2026-01-22T19:08:59Z",
+          "block_number": 24292318,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 60000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24292318:127:723",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x2df5c118537d26d5fe029124bdb7e259d657d44ad64f57601baf7287c434ebae",
+          "datetime_utc": "2026-01-22T19:08:59Z",
+          "block_number": 24292318,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 60000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25001119:45:67",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206",
+          "datetime_utc": "2026-05-01T15:53:59Z",
+          "block_number": 25001119,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 20000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25001119:45:1508",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206",
+          "datetime_utc": "2026-05-01T15:53:59Z",
+          "block_number": 25001119,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 20000000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 8,
+      "id": "eoa-flow-edge-0"
+    },
+    {
+      "source": "eoa:0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "target": "eoa:0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "6 tx | mixed_transfer/receive | -36.44k wstETH / +36.44k wstETH",
+      "tx_hash": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19",
+      "details": [
+        {
+          "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24534527:213:9",
+          "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+          "tx_hash": "0x9e62c5f9d778643e3e429274001f9d0ac297de59fd1402c3187f01aa9fc190c4",
+          "datetime_utc": "2026-02-25T14:28:23Z",
+          "block_number": 24534527,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 0.1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24534527:213:19",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0x9e62c5f9d778643e3e429274001f9d0ac297de59fd1402c3187f01aa9fc190c4",
+          "datetime_utc": "2026-02-25T14:28:23Z",
+          "block_number": 24534527,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 0.1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24534553:169:10",
+          "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+          "tx_hash": "0xe7ae5dd93c7af3c405fc838ec0fe9292d3cfd88af6c4ecf615388f632fc7fb07",
+          "datetime_utc": "2026-02-25T14:33:35Z",
+          "block_number": 24534553,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 0.9,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24534553:169:20",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0xe7ae5dd93c7af3c405fc838ec0fe9292d3cfd88af6c4ecf615388f632fc7fb07",
+          "datetime_utc": "2026-02-25T14:33:35Z",
+          "block_number": 24534553,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 0.9,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24535423:448:11",
+          "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+          "tx_hash": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19",
+          "datetime_utc": "2026-02-25T17:28:59Z",
+          "block_number": 24535423,
+          "category": "token_rebalance",
+          "protocol": "",
+          "action": "mixed_transfer",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 36438.68640672683,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24535423:448:22",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19",
+          "datetime_utc": "2026-02-25T17:28:59Z",
+          "block_number": 24535423,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+              "symbol": "wstETH",
+              "amount": 36438.68640672683,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 6,
+      "id": "eoa-flow-edge-1"
+    },
+    {
+      "source": "eoa:0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "target": "eoa:0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "4 tx | send/receive | -4.00M USDT / +4.00M USDT",
+      "tx_hash": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c",
+      "details": [
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25229399:46:77",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0xf452e9d0c6fc3becee19ad76a3a4be922fab535642e06e033d0a8a725c67ee90",
+          "datetime_utc": "2026-06-02T11:28:35Z",
+          "block_number": 25229399,
+          "category": "token_send",
+          "protocol": "",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 100.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xd439a54fb1f33a49acef83067ca6cb468116fee0:25229399:46:0",
+          "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+          "tx_hash": "0xf452e9d0c6fc3becee19ad76a3a4be922fab535642e06e033d0a8a725c67ee90",
+          "datetime_utc": "2026-06-02T11:28:35Z",
+          "block_number": 25229399,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 100.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25229497:65:79",
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "tx_hash": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c",
+          "datetime_utc": "2026-06-02T11:48:11Z",
+          "block_number": 25229497,
+          "category": "token_send",
+          "protocol": "",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 3999900.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xd439a54fb1f33a49acef83067ca6cb468116fee0:25229497:65:1",
+          "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+          "tx_hash": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c",
+          "datetime_utc": "2026-06-02T11:48:11Z",
+          "block_number": 25229497,
+          "category": "token_receive",
+          "protocol": "",
+          "action": "receive",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 3999900.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 4,
+      "id": "eoa-flow-edge-2"
+    },
+    {
+      "source": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "target": "protocol:0x81d40f21f12a8f0e3252bccb954d722d4c464b64",
+      "edge_type": "protocol_flow",
+      "category": "bridge",
+      "label": "1 tx | receiveMessage(bytes,bytes) | +999.90k USDC",
+      "tx_hash": "0xe937def39d849fe1ebac368cfe64b4ea34536d99367bf5132a2371cfc2c7e885",
+      "details": [
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:23998086:57:52",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xe937def39d849fe1ebac368cfe64b4ea34536d99367bf5132a2371cfc2c7e885",
+          "datetime_utc": "2025-12-12T17:39:59Z",
+          "block_number": 23998086,
+          "category": "bridge",
+          "protocol": "CCTP",
+          "action": "receiveMessage(bytes,bytes)",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 999900.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 1,
+      "id": "eoa-flow-edge-3"
+    },
+    {
+      "source": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "target": "protocol:0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "edge_type": "protocol_flow",
+      "category": "lending",
+      "label": "47 tx | withdraw/pool_call | -125.40M aEthUSDC / -125.39M USDC",
+      "tx_hash": "0x18425bc6ae3f8ee98d80457a875276619b1b96aec8cf09e1688dc835105d4ae2",
+      "details": [
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:23998106:65:53",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x31e27d60eb4ef55e130cdf23ffc0fcede0158c66a7200b01213c9f9d80d0c61a",
+          "datetime_utc": "2025-12-12T17:43:59Z",
+          "block_number": 23998106,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 30998632.979971,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 30998632.97997,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24026119:39:54",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x6ea09d0f2bbfbcb9e5a40eec398eb40bfdf2f4a8687cd4c38f45b62c94963e4f",
+          "datetime_utc": "2025-12-16T15:39:23Z",
+          "block_number": 24026119,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 5988485.147627,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 6000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24030428:60:82",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xa8d5072e2642bd7e7a2c84c7d2a14455d50fafd6e7ba35384bd0be6f0e7c3bbe",
+          "datetime_utc": "2025-12-17T06:05:23Z",
+          "block_number": 24030428,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 598572.539637,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 600000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24039512:107:127",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xc841aaf2a7bad0941fc8fc231e472fdd8058ae8a9106774a1026a49eb8097cf2",
+          "datetime_utc": "2025-12-18T12:33:11Z",
+          "block_number": 24039512,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 24411583.956064,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 24414501.410832,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24098427:88:383",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xe6ad30afa76cf55a4aa94cacc70fa6744927d33b4af2f67bc28f970340ba2dcb",
+          "datetime_utc": "2025-12-26T17:54:47Z",
+          "block_number": 24098427,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 17078017.52248,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 17078017.522479,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24098939:105:385",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x1e06783a7fd90f614fdb35b79d30f933d8fcae3e1edd938660c2408e7dcb42c2",
+          "datetime_utc": "2025-12-26T19:37:23Z",
+          "block_number": 24098939,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1800000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1800104.313723,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24147779:44:386",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x8a4a1d398b62625af20c4a3ef3cb559cc1a51f8b9f36bda4666da215b3b370a2",
+          "datetime_utc": "2026-01-02T15:14:59Z",
+          "block_number": 24147779,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3088658.001016,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3100000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24147785:86:387",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xa033f8087bb06ff379baf774f74f08b47473d174d0f49328798d841f0a38de4f",
+          "datetime_utc": "2026-01-02T15:16:11Z",
+          "block_number": 24147785,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 9998.701102,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24148451:101:395",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x994af0103da30bcd80848a933b619af82d595f5f7b4d096dbcde6dce9e4af7d9",
+          "datetime_utc": "2026-01-02T17:29:59Z",
+          "block_number": 24148451,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 2599854.587141,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2600000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24176387:60:578",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x04b129e82b55a3de0a90bc4dd7bbb40dfe0f6195c443188d35ebad08b2c1a09b",
+          "datetime_utc": "2026-01-06T14:59:35Z",
+          "block_number": 24176387,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 4395121.328064,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 4400000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24238637:178:621",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x8b6841abf73294a4a16a506f36bfa0984eec6206e02e7874f2f2b8aca83fcd90",
+          "datetime_utc": "2026-01-15T07:32:11Z",
+          "block_number": 24238637,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3292719.708459,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3300000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24280246:163:653",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x09b9afe4348cec7640c59b3539878a453f096c113915d697ae95ce00d9af5626",
+          "datetime_utc": "2026-01-21T02:42:59Z",
+          "block_number": 24280246,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 997036.468663,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24285771:150:686",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x3d1e712b60f9be6f55fb2560ce687b28e0fe21cd41d5711950c04cb2575a9ff5",
+          "datetime_utc": "2026-01-21T21:11:59Z",
+          "block_number": 24285771,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 499646.602028,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 500000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24291176:62:716",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x8ed85cdfdb143a9ad6892ec8496dd6feff6057738c2d0b21e27355640a86cf1e",
+          "datetime_utc": "2026-01-22T15:19:47Z",
+          "block_number": 24291176,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 13505714.584884,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 13506036.816743,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24292347:60:724",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xf1aa306c391cfa8a72784ef809efd0975440b4f9108396c62c472a8a97378214",
+          "datetime_utc": "2026-01-22T19:14:47Z",
+          "block_number": 24292347,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 60000000.00209,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 60000309.113067,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24300100:82:729",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x6893dbf57c7eb24a582be2f6f80d1dc384a5916f435ec59f315f1475fa554633",
+          "datetime_utc": "2026-01-23T21:13:47Z",
+          "block_number": 24300100,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1011413.486419,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1020000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24329410:104:777",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xe17bcb041d535efc365fe988068b3e5001fbbce9eebd4ad326829a4a841b2a58",
+          "datetime_utc": "2026-01-27T23:19:23Z",
+          "block_number": 24329410,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 989855.036007,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1023000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24334213:47:826",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x9f9beeb4735c977a384901305ca0dc390c0b26c1df6cf550c60fc39f69ddad26",
+          "datetime_utc": "2026-01-28T15:23:35Z",
+          "block_number": 24334213,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 10634501.995521,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10640000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24341072:30:875",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xa50a4bc5239fa4e39b61db48ed304a83b407207db5e16a6ea14586a847e4534f",
+          "datetime_utc": "2026-01-29T14:21:11Z",
+          "block_number": 24341072,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 5063162.509823,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5070000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24341311:138:885",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xe59b8927864b590b606db2a1efc78af65bcfdf84184119769e0ecb93caf84073",
+          "datetime_utc": "2026-01-29T15:08:59Z",
+          "block_number": 24341311,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 5083024.993669,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5083257.1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24348631:254:906",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x0c46ca95ce1c0d637aa0dba958618c9af818ff7f3bdb750d06579011e4dfce3e",
+          "datetime_utc": "2026-01-30T15:38:11Z",
+          "block_number": 24348631,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 5941015.320328,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5948732.68976,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24373974:91:977",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xd791f905f6bc0c72917226d1ff509189251f85d62ebff952df6c01ac1f2dfb34",
+          "datetime_utc": "2026-02-03T04:34:47Z",
+          "block_number": 24373974,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1905027.880501,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1923000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398134:82:1011",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xde947cbaabd102b35e3a1abf91920a5e837ae42878e297e126072887ea196c20",
+          "datetime_utc": "2026-02-06T13:38:47Z",
+          "block_number": 24398134,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 2394609.683767,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2408479.87485,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398175:52:1017",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x46ed05ef3fe55de5d092041b28e51e61d9d450b60d9ba0daaa9accf46b892bcb",
+          "datetime_utc": "2026-02-06T13:47:11Z",
+          "block_number": 24398175,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1084229.200292,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1084250.35462,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398316:156:1023",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x3b9026c53c539ad2da543251dd8d52449ff39510004a8f5ad95ca997f8c8b16d",
+          "datetime_utc": "2026-02-06T14:15:35Z",
+          "block_number": 24398316,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1882872.600284,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1882942.36373,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398688:80:1030",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xd0d7422c4167b0599b8e7d59dd241ee153642b1b85c08ee1373a29a53663160c",
+          "datetime_utc": "2026-02-06T15:30:11Z",
+          "block_number": 24398688,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 2007846.520181,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2008021.06443,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24399187:175:1039",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x408083646fa68dd109a17e29d6ab732041fa93aaf942244f19542d412f9bee91",
+          "datetime_utc": "2026-02-06T17:10:11Z",
+          "block_number": 24399187,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 2502298.111814,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2502515.19492,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24426846:55:1100",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x6358b6f607707c97aca7d150dcc79cfeb9c92f3ae8f060c0242668e8ff66cecc",
+          "datetime_utc": "2026-02-10T14:03:11Z",
+          "block_number": 24426846,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1510665.071161,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1520000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24426850:40:1101",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xede181476753cc39e805762224e55f8c0e4c2f3e5bc5c9eac1df2c3c59c0538c",
+          "datetime_utc": "2026-02-10T14:03:59Z",
+          "block_number": 24426850,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 24998.798847,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 25000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24450696:110:1147",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x4acc302c522bf07479bdc3c391966e6dbc137804f922292b552d961b3e4fbebd",
+          "datetime_utc": "2026-02-13T21:58:35Z",
+          "block_number": 24450696,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3797764.028668,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3805342.63385,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24487813:93:1173",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x76a58eeaa2dfa2eddd260bea9ed305a24a7fa1ca27de36cb11d9811a10ff3e4f",
+          "datetime_utc": "2026-02-19T02:10:11Z",
+          "block_number": 24487813,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3520648.750139,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3531089.30894,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491425:145:1197",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xd0960e30ea04565e7eb3b65c542d96986ff07bd19adef9b8a398da7a631944a7",
+          "datetime_utc": "2026-02-19T14:15:11Z",
+          "block_number": 24491425,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1999109.649582,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491678:42:1214",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x1c93373df013cff1b4661c107c133ddd3efba880600edf48cdd071112e9836c3",
+          "datetime_utc": "2026-02-19T15:05:59Z",
+          "block_number": 24491678,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 999941.580364,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491682:158:1215",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x1b2c98c54dc52ea5cd7f07bfdafc5e8a091023b8da3adb5cdb5c45ccbd8ec082",
+          "datetime_utc": "2026-02-19T15:06:47Z",
+          "block_number": 24491682,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 6999.114719,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 7000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24502515:79:1233",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x82c23edc1a0ff087a25b88d92105b1aa7a0bafbda8ae79c37cebc8cbf65797e1",
+          "datetime_utc": "2026-02-21T03:21:35Z",
+          "block_number": 24502515,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1913644.962024,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1916000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24520553:118:1251",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x696fa963af4704e7697d454ababea03c93c139f89b8900da97cb4a987754cb2e",
+          "datetime_utc": "2026-02-23T15:42:35Z",
+          "block_number": 24520553,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1814939.265103,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1818528.57276,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24530436:871:1266",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x6e18279df8d66c2aa1132b95c40102eab915add7d8cc5d84c78f7f1abff4f879",
+          "datetime_utc": "2026-02-25T00:46:59Z",
+          "block_number": 24530436,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3058270.139215,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3060000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24530595:434:1285",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x77daf8dd8eb35c0fc9fc804c51331eeaffb44bb007e7ddcde30c7aa97f661464",
+          "datetime_utc": "2026-02-25T01:18:47Z",
+          "block_number": 24530595,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3301831.897041,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3301854.39736,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24545508:136:1305",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x451e18beec04324b6c37621ae9bf5035ba6eaa1cded031ca48cb054ea87a2072",
+          "datetime_utc": "2026-02-27T03:14:35Z",
+          "block_number": 24545508,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1017384.755113,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1019120.04695,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24546115:100:1324",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xb78cd998fbe3ea036d0f0dd0bc5d7fa3e8ef02b8d488abc8014b96922f268d59",
+          "datetime_utc": "2026-02-27T05:16:11Z",
+          "block_number": 24546115,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1400811.859624,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1400875.75287,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24546435:151:1344",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x510db7ea1f8c861c8fa6e6c6b846c4f27c343c7cf9646ed8da247ae963340cc1",
+          "datetime_utc": "2026-02-27T06:20:47Z",
+          "block_number": 24546435,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1191621.453101,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1191652.00016,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24549039:106:1365",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x8720b05bfb918d710820e4b0acd8fb325a425b77141caea08f5841e0b859d466",
+          "datetime_utc": "2026-02-27T15:03:23Z",
+          "block_number": 24549039,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3856555.443843,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3856780.06605,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24577820:150:1384",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x16e91542d71a19bc375ed71986288630da621ef76287a78919e53d80406f5c17",
+          "datetime_utc": "2026-03-03T15:27:47Z",
+          "block_number": 24577820,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1359477.698709,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1361140.71499,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24627474:127:1408",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x805c5c15fc90ce226ff6fedfec8ff1de5672183356233f5e1a768ad788089667",
+          "datetime_utc": "2026-03-10T13:49:47Z",
+          "block_number": 24627474,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 3080206.514082,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3082367.38594,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24860225:697:1458",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x1439ff53945f65573992b586ff89ea46a2bfb276be740ab23f9e5ad2298d9e08",
+          "datetime_utc": "2026-04-12T00:56:59Z",
+          "block_number": 24860225,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "pool_call",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2006671.326713,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 2012826.692094,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24892486:29:1460",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x5e960988c89e99caf075c05dab8a1128ed889543fd6e415c5219f4e45b842af4",
+          "datetime_utc": "2026-04-16T12:48:23Z",
+          "block_number": 24892486,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "in",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 1451.671597,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24908635:112:1470",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x18425bc6ae3f8ee98d80457a875276619b1b96aec8cf09e1688dc835105d4ae2",
+          "datetime_utc": "2026-04-18T18:45:59Z",
+          "block_number": 24908635,
+          "category": "lending",
+          "protocol": "Aave V3",
+          "action": "withdraw",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+              "symbol": "aEthUSDC",
+              "amount": 5160982.413289,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5161742.931251,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 47,
+      "id": "eoa-flow-edge-4"
+    },
+    {
+      "source": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "target": "protocol:0x6a000f20005980200259b80c5102003040001068",
+      "edge_type": "protocol_flow",
+      "category": "swap",
+      "label": "6 tx | swapExactAmountIn(...) | -4.00M USDC / -2.00M USDT",
+      "tx_hash": "0x7fec65f8b396aafe30c02fa38505082ef04099c198865a5a8147dac1d1c45aa5",
+      "details": [
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25002626:30:1512",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xef55cb124e724250f16f0fc53185cadd8c980e68a30d8dafdb6b5aee8dfee392",
+          "datetime_utc": "2026-05-01T20:55:59Z",
+          "block_number": 25002626,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 999963.579118,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25002677:23:1517",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x2bfb1fc351df52fbf2dc7bf4ae8577184216c88d9ed1104acfa7199fad642105",
+          "datetime_utc": "2026-05-01T21:06:11Z",
+          "block_number": 25002677,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 999955.251604,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051204:9:1561",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x381101622b0976a6c6b3e409009e44e9bc0acb18206d1cceaed56d121638dd44",
+          "datetime_utc": "2026-05-08T15:21:11Z",
+          "block_number": 25051204,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000059.849581,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051222:21:1563",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x488d8e4917b162f9283002f4d3423d2c2ec5fa60bfe860a68d02349f7d5a8459",
+          "datetime_utc": "2026-05-08T15:24:47Z",
+          "block_number": 25051222,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000061.891214,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051264:10:1565",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x36c082b2c356b10a7eb0b85efb838194dcc0819ab3880efacb57c7555d0051e7",
+          "datetime_utc": "2026-05-08T15:33:11Z",
+          "block_number": 25051264,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000040.109217,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051295:55:1566",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x7fec65f8b396aafe30c02fa38505082ef04099c198865a5a8147dac1d1c45aa5",
+          "datetime_utc": "2026-05-08T15:39:23Z",
+          "block_number": 25051295,
+          "category": "swap",
+          "protocol": "ParaSwap",
+          "action": "swapExactAmountIn(...)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1000000.0,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1000042.79995,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 6,
+      "id": "eoa-flow-edge-5"
+    },
+    {
+      "source": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "target": "protocol:0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+      "edge_type": "protocol_flow",
+      "category": "vault",
+      "label": "10 tx | withdraw(uint256,address,address) | -15.61M steakUSDT / +15.82M USDT",
+      "tx_hash": "0x699b8dd9d75e64f1e7713a87ed5784175bdcb6c1f58d34968a22cb1a0417fab9",
+      "details": [
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25024227:131:1527",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xfd2e16b390f7f09c162b81f673deab7e78a0d5b3c78196591835552c90130d3d",
+          "datetime_utc": "2026-05-04T21:09:23Z",
+          "block_number": 25024227,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 5133535.115215147,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 5200000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25024557:111:1531",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x2d09d636b2fb0bb708c2693d2cdd1aba88ec9108a6dd0885009d79ae4ddd3ee2",
+          "datetime_utc": "2026-05-04T22:15:59Z",
+          "block_number": 25024557,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 1480822.8085563804,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1500000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25068520:98:1603",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xf9dc38ee0088b5148ad41563bdda17c3eb9ce58a9273b1b1df779ea9e430727f",
+          "datetime_utc": "2026-05-11T01:16:47Z",
+          "block_number": 25068520,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 102607.51649321428,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 104000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25072323:57:1629",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x0dd78476484225cf834cc01dc2715690e696b3e916c81fbf003c204928952fc8",
+          "datetime_utc": "2026-05-11T14:01:11Z",
+          "block_number": 25072323,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 2959726.276033644,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 3000000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25116969:88:1673",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x6752eec8a98b54b6f3eacfc6e66c37374f13509e307bd3dc043cd481f81f556b",
+          "datetime_utc": "2026-05-17T19:21:59Z",
+          "block_number": 25116969,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 149164.77665183635,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 151269.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25137982:57:1706",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xe4efad8d562fc6c7df97ac712e82b593f906a246ad761d68877e9b17ff9a279a",
+          "datetime_utc": "2026-05-20T17:36:11Z",
+          "block_number": 25137982,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 493891.66925323696,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 501000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138691:124:1717",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xa9b83db31d1f421b5c8c4fbaf54ba5f88dd9cdebf6ddc01c5199fff34eb2e837",
+          "datetime_utc": "2026-05-20T19:58:11Z",
+          "block_number": 25138691,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 1478713.2219801762,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1500006.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138730:93:1718",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x45ef1398987d24342e9dcf77651f04cfade4b77e16304fac9dbee42ecadc28da",
+          "datetime_utc": "2026-05-20T20:05:59Z",
+          "block_number": 25138730,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 1478712.6560650952,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1500006.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138933:95:1728",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xb4b4acd07673616a4053198d0c9d12b48e5adfc9cf76404b2fab7c9ea9073832",
+          "datetime_utc": "2026-05-20T20:46:59Z",
+          "block_number": 25138933,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 887222.2573953036,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 900000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25140101:66:1736",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x699b8dd9d75e64f1e7713a87ed5784175bdcb6c1f58d34968a22cb1a0417fab9",
+          "datetime_utc": "2026-05-21T00:42:11Z",
+          "block_number": 25140101,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+              "symbol": "steakUSDT",
+              "amount": 1440807.6639828354,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+              "symbol": "USDT",
+              "amount": 1461575.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 10,
+      "id": "eoa-flow-edge-6"
+    },
+    {
+      "source": "eoa:0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "target": "protocol:0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+      "edge_type": "protocol_flow",
+      "category": "vault",
+      "label": "12 tx | withdraw(uint256,address,address)/redeem(uint256,address,address) | -19.35M gtUSDCp / +19.76M USDC",
+      "tx_hash": "0xb01f05eb1ce9f53c9ff83b501c2c6b69a92ef8764b0281f8f51a91a515aec16c",
+      "details": [
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25038274:20:1549",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x9de7996d8f04dd60ae725013ca98080e2801de3223364caaf715fd55264473b0",
+          "datetime_utc": "2026-05-06T20:06:59Z",
+          "block_number": 25038274,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 5017836.382796179,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5123853.53524,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051197:60:1559",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x5da8d8c52d0144fe8699ea1f133dc1dcc20f0f7d3612b2571c472920c9fcb78a",
+          "datetime_utc": "2026-05-08T15:19:47Z",
+          "block_number": 25051197,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "redeem(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 10582311.202665903,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 10807773.518828,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051513:21:1570",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x98412910c45237dea126c3cdb53917f6a066d3f3e0eb87b6593e239abbe07f16",
+          "datetime_utc": "2026-05-08T16:22:59Z",
+          "block_number": 25051513,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 294719.3957388785,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 301000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051522:58:1571",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xd683b85873e00965b515fea1fad97990bc1c0927d65623299544a2eeeb3ca582",
+          "datetime_utc": "2026-05-08T16:24:47Z",
+          "block_number": 25051522,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 2937.4022174316783,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 3000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25065347:23:1585",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x637ab79b74f46256ef62dd0f84c7ff56069bc30c30869722d8995a1ed7fa4112",
+          "datetime_utc": "2026-05-10T14:39:35Z",
+          "block_number": 25065347,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 183148.82011003618,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 187087.755807,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25067254:119:1593",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x397ee641c3f7220c4bde8a153557d83a6345a813bdb9f042cdeb47e1c3911590",
+          "datetime_utc": "2026-05-10T21:02:47Z",
+          "block_number": 25067254,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 88301.05367280488,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 90202.82,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25068694:84:1610",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xf4e9ef77dde813f90c42e6937259c7db792a91f0b939f6b0bf41c5c47689c2be",
+          "datetime_utc": "2026-05-11T01:51:35Z",
+          "block_number": 25068694,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 102533.42432961705,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 104744.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25069273:30:1619",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x8c33bd835aed84c73fc16c5f8669a619a2732dc072af523f129cb36dd8a939c6",
+          "datetime_utc": "2026-05-11T03:47:59Z",
+          "block_number": 25069273,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 102783.13674463298,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 105000.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25072342:68:1631",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xc51e2d6c434a7035a697c3b56f5b9313c441ee4032f99e0231721787c3807cdd",
+          "datetime_utc": "2026-05-11T14:04:59Z",
+          "block_number": 25072342,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 103071.92917895042,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 105300.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25087778:68:1644",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x555052afd9951da32aa27fae6af7efa962f688d50dfb76067e69f0319103a54d",
+          "datetime_utc": "2026-05-13T17:42:59Z",
+          "block_number": 25087778,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 2709521.411438705,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 2768714.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25102868:104:1657",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0x24a1b829113df7ba2e5f9956b62a78bf3d07782c89035fbf28c7afa503c8a53f",
+          "datetime_utc": "2026-05-15T20:13:11Z",
+          "block_number": 25102868,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 159564.1036652888,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 163085.0,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25102872:26:1658",
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "tx_hash": "0xb01f05eb1ce9f53c9ff83b501c2c6b69a92ef8764b0281f8f51a91a515aec16c",
+          "datetime_utc": "2026-05-15T20:13:59Z",
+          "block_number": 25102872,
+          "category": "vault",
+          "protocol": "VaultV2",
+          "action": "withdraw(uint256,address,address)",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+              "symbol": "gtUSDCp",
+              "amount": 4892.053085705011,
+              "count": 1
+            },
+            {
+              "direction": "in",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 5000.0,
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "event_count": 12,
+      "id": "eoa-flow-edge-7"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:23998086:57:52",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xe937def39d849fe1ebac368cfe64b4ea34536d99367bf5132a2371cfc2c7e885",
+      "datetime_utc": "2025-12-12T17:39:59Z",
+      "block_number": 23998086,
+      "category": "bridge",
+      "protocol": "CCTP",
+      "action": "receiveMessage(bytes,bytes)",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 999900.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:23998106:65:53",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x31e27d60eb4ef55e130cdf23ffc0fcede0158c66a7200b01213c9f9d80d0c61a",
+      "datetime_utc": "2025-12-12T17:43:59Z",
+      "block_number": 23998106,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 30998632.979971,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 30998632.97997,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24026119:39:54",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x6ea09d0f2bbfbcb9e5a40eec398eb40bfdf2f4a8687cd4c38f45b62c94963e4f",
+      "datetime_utc": "2025-12-16T15:39:23Z",
+      "block_number": 24026119,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 5988485.147627,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 6000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24030428:60:82",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xa8d5072e2642bd7e7a2c84c7d2a14455d50fafd6e7ba35384bd0be6f0e7c3bbe",
+      "datetime_utc": "2025-12-17T06:05:23Z",
+      "block_number": 24030428,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 598572.539637,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 600000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24039512:107:127",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xc841aaf2a7bad0941fc8fc231e472fdd8058ae8a9106774a1026a49eb8097cf2",
+      "datetime_utc": "2025-12-18T12:33:11Z",
+      "block_number": 24039512,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 24411583.956064,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 24414501.410832,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24047652:14:7",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0xa1361cb0a829da9374ddfc91f75b80ae75158d63119b4dcf1be0710c9dc9cb7c",
+      "datetime_utc": "2025-12-19T15:51:23Z",
+      "block_number": 24047652,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x5fa487bca6158c64046b2813623e20755091da0b",
+          "symbol": "thBILL",
+          "amount": 9.85488,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24047652:14:162",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xa1361cb0a829da9374ddfc91f75b80ae75158d63119b4dcf1be0710c9dc9cb7c",
+      "datetime_utc": "2025-12-19T15:51:23Z",
+      "block_number": 24047652,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24047656:247:8",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0xf6365f8fb0a1b75f8bd92c3b7480a541334212128a708206e952234c2871eb8d",
+      "datetime_utc": "2025-12-19T15:52:11Z",
+      "block_number": 24047656,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 39999990.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x5fa487bca6158c64046b2813623e20755091da0b",
+          "symbol": "thBILL",
+          "amount": 39419514.740359,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24047656:247:163",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xf6365f8fb0a1b75f8bd92c3b7480a541334212128a708206e952234c2871eb8d",
+      "datetime_utc": "2025-12-19T15:52:11Z",
+      "block_number": 24047656,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 39999990.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24098427:88:383",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xe6ad30afa76cf55a4aa94cacc70fa6744927d33b4af2f67bc28f970340ba2dcb",
+      "datetime_utc": "2025-12-26T17:54:47Z",
+      "block_number": 24098427,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 17078017.52248,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 17078017.522479,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24098939:105:385",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x1e06783a7fd90f614fdb35b79d30f933d8fcae3e1edd938660c2408e7dcb42c2",
+      "datetime_utc": "2025-12-26T19:37:23Z",
+      "block_number": 24098939,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1800000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1800104.313723,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24147779:44:386",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x8a4a1d398b62625af20c4a3ef3cb559cc1a51f8b9f36bda4666da215b3b370a2",
+      "datetime_utc": "2026-01-02T15:14:59Z",
+      "block_number": 24147779,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3088658.001016,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3100000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24147785:86:387",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xa033f8087bb06ff379baf774f74f08b47473d174d0f49328798d841f0a38de4f",
+      "datetime_utc": "2026-01-02T15:16:11Z",
+      "block_number": 24147785,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 9998.701102,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24148451:101:395",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x994af0103da30bcd80848a933b619af82d595f5f7b4d096dbcde6dce9e4af7d9",
+      "datetime_utc": "2026-01-02T17:29:59Z",
+      "block_number": 24148451,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 2599854.587141,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2600000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24176387:60:578",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x04b129e82b55a3de0a90bc4dd7bbb40dfe0f6195c443188d35ebad08b2c1a09b",
+      "datetime_utc": "2026-01-06T14:59:35Z",
+      "block_number": 24176387,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 4395121.328064,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 4400000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24238637:178:621",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x8b6841abf73294a4a16a506f36bfa0984eec6206e02e7874f2f2b8aca83fcd90",
+      "datetime_utc": "2026-01-15T07:32:11Z",
+      "block_number": 24238637,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3292719.708459,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3300000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24280246:163:653",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x09b9afe4348cec7640c59b3539878a453f096c113915d697ae95ce00d9af5626",
+      "datetime_utc": "2026-01-21T02:42:59Z",
+      "block_number": 24280246,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 997036.468663,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24285771:150:686",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x3d1e712b60f9be6f55fb2560ce687b28e0fe21cd41d5711950c04cb2575a9ff5",
+      "datetime_utc": "2026-01-21T21:11:59Z",
+      "block_number": 24285771,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 499646.602028,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 500000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24291176:62:716",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x8ed85cdfdb143a9ad6892ec8496dd6feff6057738c2d0b21e27355640a86cf1e",
+      "datetime_utc": "2026-01-22T15:19:47Z",
+      "block_number": 24291176,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 13505714.584884,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 13506036.816743,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24292318:127:11",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0x2df5c118537d26d5fe029124bdb7e259d657d44ad64f57601baf7287c434ebae",
+      "datetime_utc": "2026-01-22T19:08:59Z",
+      "block_number": 24292318,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 60000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x5fa487bca6158c64046b2813623e20755091da0b",
+          "symbol": "thBILL",
+          "amount": 59005591.677008,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24292318:127:723",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x2df5c118537d26d5fe029124bdb7e259d657d44ad64f57601baf7287c434ebae",
+      "datetime_utc": "2026-01-22T19:08:59Z",
+      "block_number": 24292318,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 60000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24292347:60:724",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xf1aa306c391cfa8a72784ef809efd0975440b4f9108396c62c472a8a97378214",
+      "datetime_utc": "2026-01-22T19:14:47Z",
+      "block_number": 24292347,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 60000000.00209,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 60000309.113067,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24300100:82:729",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x6893dbf57c7eb24a582be2f6f80d1dc384a5916f435ec59f315f1475fa554633",
+      "datetime_utc": "2026-01-23T21:13:47Z",
+      "block_number": 24300100,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1011413.486419,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1020000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24329410:104:777",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xe17bcb041d535efc365fe988068b3e5001fbbce9eebd4ad326829a4a841b2a58",
+      "datetime_utc": "2026-01-27T23:19:23Z",
+      "block_number": 24329410,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 989855.036007,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1023000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24334213:47:826",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x9f9beeb4735c977a384901305ca0dc390c0b26c1df6cf550c60fc39f69ddad26",
+      "datetime_utc": "2026-01-28T15:23:35Z",
+      "block_number": 24334213,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 10634501.995521,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10640000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24341072:30:875",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xa50a4bc5239fa4e39b61db48ed304a83b407207db5e16a6ea14586a847e4534f",
+      "datetime_utc": "2026-01-29T14:21:11Z",
+      "block_number": 24341072,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 5063162.509823,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5070000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24341311:138:885",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xe59b8927864b590b606db2a1efc78af65bcfdf84184119769e0ecb93caf84073",
+      "datetime_utc": "2026-01-29T15:08:59Z",
+      "block_number": 24341311,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 5083024.993669,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5083257.1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24348631:254:906",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x0c46ca95ce1c0d637aa0dba958618c9af818ff7f3bdb750d06579011e4dfce3e",
+      "datetime_utc": "2026-01-30T15:38:11Z",
+      "block_number": 24348631,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 5941015.320328,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5948732.68976,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24373974:91:977",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xd791f905f6bc0c72917226d1ff509189251f85d62ebff952df6c01ac1f2dfb34",
+      "datetime_utc": "2026-02-03T04:34:47Z",
+      "block_number": 24373974,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1905027.880501,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1923000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398134:82:1011",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xde947cbaabd102b35e3a1abf91920a5e837ae42878e297e126072887ea196c20",
+      "datetime_utc": "2026-02-06T13:38:47Z",
+      "block_number": 24398134,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 2394609.683767,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2408479.87485,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398175:52:1017",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x46ed05ef3fe55de5d092041b28e51e61d9d450b60d9ba0daaa9accf46b892bcb",
+      "datetime_utc": "2026-02-06T13:47:11Z",
+      "block_number": 24398175,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1084229.200292,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1084250.35462,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398316:156:1023",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x3b9026c53c539ad2da543251dd8d52449ff39510004a8f5ad95ca997f8c8b16d",
+      "datetime_utc": "2026-02-06T14:15:35Z",
+      "block_number": 24398316,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1882872.600284,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1882942.36373,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24398688:80:1030",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xd0d7422c4167b0599b8e7d59dd241ee153642b1b85c08ee1373a29a53663160c",
+      "datetime_utc": "2026-02-06T15:30:11Z",
+      "block_number": 24398688,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 2007846.520181,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2008021.06443,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24399187:175:1039",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x408083646fa68dd109a17e29d6ab732041fa93aaf942244f19542d412f9bee91",
+      "datetime_utc": "2026-02-06T17:10:11Z",
+      "block_number": 24399187,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 2502298.111814,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2502515.19492,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24426846:55:1100",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x6358b6f607707c97aca7d150dcc79cfeb9c92f3ae8f060c0242668e8ff66cecc",
+      "datetime_utc": "2026-02-10T14:03:11Z",
+      "block_number": 24426846,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1510665.071161,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1520000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24426850:40:1101",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xede181476753cc39e805762224e55f8c0e4c2f3e5bc5c9eac1df2c3c59c0538c",
+      "datetime_utc": "2026-02-10T14:03:59Z",
+      "block_number": 24426850,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 24998.798847,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 25000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24450696:110:1147",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x4acc302c522bf07479bdc3c391966e6dbc137804f922292b552d961b3e4fbebd",
+      "datetime_utc": "2026-02-13T21:58:35Z",
+      "block_number": 24450696,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3797764.028668,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3805342.63385,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24487813:93:1173",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x76a58eeaa2dfa2eddd260bea9ed305a24a7fa1ca27de36cb11d9811a10ff3e4f",
+      "datetime_utc": "2026-02-19T02:10:11Z",
+      "block_number": 24487813,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3520648.750139,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3531089.30894,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491425:145:1197",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xd0960e30ea04565e7eb3b65c542d96986ff07bd19adef9b8a398da7a631944a7",
+      "datetime_utc": "2026-02-19T14:15:11Z",
+      "block_number": 24491425,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1999109.649582,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491678:42:1214",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x1c93373df013cff1b4661c107c133ddd3efba880600edf48cdd071112e9836c3",
+      "datetime_utc": "2026-02-19T15:05:59Z",
+      "block_number": 24491678,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 999941.580364,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24491682:158:1215",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x1b2c98c54dc52ea5cd7f07bfdafc5e8a091023b8da3adb5cdb5c45ccbd8ec082",
+      "datetime_utc": "2026-02-19T15:06:47Z",
+      "block_number": 24491682,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 6999.114719,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 7000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24502515:79:1233",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x82c23edc1a0ff087a25b88d92105b1aa7a0bafbda8ae79c37cebc8cbf65797e1",
+      "datetime_utc": "2026-02-21T03:21:35Z",
+      "block_number": 24502515,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1913644.962024,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1916000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24520553:118:1251",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x696fa963af4704e7697d454ababea03c93c139f89b8900da97cb4a987754cb2e",
+      "datetime_utc": "2026-02-23T15:42:35Z",
+      "block_number": 24520553,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1814939.265103,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1818528.57276,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24530436:871:1266",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x6e18279df8d66c2aa1132b95c40102eab915add7d8cc5d84c78f7f1abff4f879",
+      "datetime_utc": "2026-02-25T00:46:59Z",
+      "block_number": 24530436,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3058270.139215,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3060000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24530595:434:1285",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x77daf8dd8eb35c0fc9fc804c51331eeaffb44bb007e7ddcde30c7aa97f661464",
+      "datetime_utc": "2026-02-25T01:18:47Z",
+      "block_number": 24530595,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3301831.897041,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3301854.39736,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24534527:213:9",
+      "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "tx_hash": "0x9e62c5f9d778643e3e429274001f9d0ac297de59fd1402c3187f01aa9fc190c4",
+      "datetime_utc": "2026-02-25T14:28:23Z",
+      "block_number": 24534527,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.1,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24534527:213:19",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0x9e62c5f9d778643e3e429274001f9d0ac297de59fd1402c3187f01aa9fc190c4",
+      "datetime_utc": "2026-02-25T14:28:23Z",
+      "block_number": 24534527,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24534553:169:10",
+      "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "tx_hash": "0xe7ae5dd93c7af3c405fc838ec0fe9292d3cfd88af6c4ecf615388f632fc7fb07",
+      "datetime_utc": "2026-02-25T14:33:35Z",
+      "block_number": 24534553,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.9,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.9,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24534553:169:20",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0xe7ae5dd93c7af3c405fc838ec0fe9292d3cfd88af6c4ecf615388f632fc7fb07",
+      "datetime_utc": "2026-02-25T14:33:35Z",
+      "block_number": 24534553,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 0.9,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b:24535423:448:11",
+      "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "tx_hash": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19",
+      "datetime_utc": "2026-02-25T17:28:59Z",
+      "block_number": 24535423,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 36438.68640672683,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 36438.68640672683,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:24535423:448:22",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19",
+      "datetime_utc": "2026-02-25T17:28:59Z",
+      "block_number": 24535423,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "symbol": "wstETH",
+          "amount": 36438.68640672683,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24545508:136:1305",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x451e18beec04324b6c37621ae9bf5035ba6eaa1cded031ca48cb054ea87a2072",
+      "datetime_utc": "2026-02-27T03:14:35Z",
+      "block_number": 24545508,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1017384.755113,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1019120.04695,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24546115:100:1324",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xb78cd998fbe3ea036d0f0dd0bc5d7fa3e8ef02b8d488abc8014b96922f268d59",
+      "datetime_utc": "2026-02-27T05:16:11Z",
+      "block_number": 24546115,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1400811.859624,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1400875.75287,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24546435:151:1344",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x510db7ea1f8c861c8fa6e6c6b846c4f27c343c7cf9646ed8da247ae963340cc1",
+      "datetime_utc": "2026-02-27T06:20:47Z",
+      "block_number": 24546435,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1191621.453101,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1191652.00016,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24549039:106:1365",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x8720b05bfb918d710820e4b0acd8fb325a425b77141caea08f5841e0b859d466",
+      "datetime_utc": "2026-02-27T15:03:23Z",
+      "block_number": 24549039,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3856555.443843,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3856780.06605,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24577820:150:1384",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x16e91542d71a19bc375ed71986288630da621ef76287a78919e53d80406f5c17",
+      "datetime_utc": "2026-03-03T15:27:47Z",
+      "block_number": 24577820,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1359477.698709,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1361140.71499,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24627474:127:1408",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x805c5c15fc90ce226ff6fedfec8ff1de5672183356233f5e1a768ad788089667",
+      "datetime_utc": "2026-03-10T13:49:47Z",
+      "block_number": 24627474,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 3080206.514082,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3082367.38594,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24860225:697:1458",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x1439ff53945f65573992b586ff89ea46a2bfb276be740ab23f9e5ad2298d9e08",
+      "datetime_utc": "2026-04-12T00:56:59Z",
+      "block_number": 24860225,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "pool_call",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2006671.326713,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 2012826.692094,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24892486:29:1460",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x5e960988c89e99caf075c05dab8a1128ed889543fd6e415c5219f4e45b842af4",
+      "datetime_utc": "2026-04-16T12:48:23Z",
+      "block_number": 24892486,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 1451.671597,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:24908635:112:1470",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x18425bc6ae3f8ee98d80457a875276619b1b96aec8cf09e1688dc835105d4ae2",
+      "datetime_utc": "2026-04-18T18:45:59Z",
+      "block_number": 24908635,
+      "category": "lending",
+      "protocol": "Aave V3",
+      "action": "withdraw",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+          "symbol": "aEthUSDC",
+          "amount": 5160982.413289,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5161742.931251,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25001119:45:67",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206",
+      "datetime_utc": "2026-05-01T15:53:59Z",
+      "block_number": 25001119,
+      "category": "token_rebalance",
+      "protocol": "",
+      "action": "mixed_transfer",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 20000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa3fe5c7596024e6811e14f029937d5bd8ae485b3",
+          "symbol": "thUSD",
+          "amount": 20000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25001119:45:1508",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206",
+      "datetime_utc": "2026-05-01T15:53:59Z",
+      "block_number": 25001119,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 20000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25002626:30:1512",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xef55cb124e724250f16f0fc53185cadd8c980e68a30d8dafdb6b5aee8dfee392",
+      "datetime_utc": "2026-05-01T20:55:59Z",
+      "block_number": 25002626,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 999963.579118,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25002677:23:1517",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x2bfb1fc351df52fbf2dc7bf4ae8577184216c88d9ed1104acfa7199fad642105",
+      "datetime_utc": "2026-05-01T21:06:11Z",
+      "block_number": 25002677,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 999955.251604,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25024227:131:1527",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xfd2e16b390f7f09c162b81f673deab7e78a0d5b3c78196591835552c90130d3d",
+      "datetime_utc": "2026-05-04T21:09:23Z",
+      "block_number": 25024227,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 5133535.115215147,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 5200000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25024557:111:1531",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x2d09d636b2fb0bb708c2693d2cdd1aba88ec9108a6dd0885009d79ae4ddd3ee2",
+      "datetime_utc": "2026-05-04T22:15:59Z",
+      "block_number": 25024557,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 1480822.8085563804,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1500000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25038274:20:1549",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x9de7996d8f04dd60ae725013ca98080e2801de3223364caaf715fd55264473b0",
+      "datetime_utc": "2026-05-06T20:06:59Z",
+      "block_number": 25038274,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 5017836.382796179,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5123853.53524,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051197:60:1559",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x5da8d8c52d0144fe8699ea1f133dc1dcc20f0f7d3612b2571c472920c9fcb78a",
+      "datetime_utc": "2026-05-08T15:19:47Z",
+      "block_number": 25051197,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "redeem(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 10582311.202665903,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 10807773.518828,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051204:9:1561",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x381101622b0976a6c6b3e409009e44e9bc0acb18206d1cceaed56d121638dd44",
+      "datetime_utc": "2026-05-08T15:21:11Z",
+      "block_number": 25051204,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000059.849581,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051222:21:1563",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x488d8e4917b162f9283002f4d3423d2c2ec5fa60bfe860a68d02349f7d5a8459",
+      "datetime_utc": "2026-05-08T15:24:47Z",
+      "block_number": 25051222,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000061.891214,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051264:10:1565",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x36c082b2c356b10a7eb0b85efb838194dcc0819ab3880efacb57c7555d0051e7",
+      "datetime_utc": "2026-05-08T15:33:11Z",
+      "block_number": 25051264,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000040.109217,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051295:55:1566",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x7fec65f8b396aafe30c02fa38505082ef04099c198865a5a8147dac1d1c45aa5",
+      "datetime_utc": "2026-05-08T15:39:23Z",
+      "block_number": 25051295,
+      "category": "swap",
+      "protocol": "ParaSwap",
+      "action": "swapExactAmountIn(...)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1000000.0,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1000042.79995,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051513:21:1570",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x98412910c45237dea126c3cdb53917f6a066d3f3e0eb87b6593e239abbe07f16",
+      "datetime_utc": "2026-05-08T16:22:59Z",
+      "block_number": 25051513,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 294719.3957388785,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 301000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25051522:58:1571",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xd683b85873e00965b515fea1fad97990bc1c0927d65623299544a2eeeb3ca582",
+      "datetime_utc": "2026-05-08T16:24:47Z",
+      "block_number": 25051522,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 2937.4022174316783,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 3000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25065347:23:1585",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x637ab79b74f46256ef62dd0f84c7ff56069bc30c30869722d8995a1ed7fa4112",
+      "datetime_utc": "2026-05-10T14:39:35Z",
+      "block_number": 25065347,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 183148.82011003618,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 187087.755807,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25067254:119:1593",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x397ee641c3f7220c4bde8a153557d83a6345a813bdb9f042cdeb47e1c3911590",
+      "datetime_utc": "2026-05-10T21:02:47Z",
+      "block_number": 25067254,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 88301.05367280488,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 90202.82,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25068520:98:1603",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xf9dc38ee0088b5148ad41563bdda17c3eb9ce58a9273b1b1df779ea9e430727f",
+      "datetime_utc": "2026-05-11T01:16:47Z",
+      "block_number": 25068520,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 102607.51649321428,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 104000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25068694:84:1610",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xf4e9ef77dde813f90c42e6937259c7db792a91f0b939f6b0bf41c5c47689c2be",
+      "datetime_utc": "2026-05-11T01:51:35Z",
+      "block_number": 25068694,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 102533.42432961705,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 104744.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25069273:30:1619",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x8c33bd835aed84c73fc16c5f8669a619a2732dc072af523f129cb36dd8a939c6",
+      "datetime_utc": "2026-05-11T03:47:59Z",
+      "block_number": 25069273,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 102783.13674463298,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 105000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25072323:57:1629",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x0dd78476484225cf834cc01dc2715690e696b3e916c81fbf003c204928952fc8",
+      "datetime_utc": "2026-05-11T14:01:11Z",
+      "block_number": 25072323,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 2959726.276033644,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 3000000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25072342:68:1631",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xc51e2d6c434a7035a697c3b56f5b9313c441ee4032f99e0231721787c3807cdd",
+      "datetime_utc": "2026-05-11T14:04:59Z",
+      "block_number": 25072342,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 103071.92917895042,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 105300.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25087778:68:1644",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x555052afd9951da32aa27fae6af7efa962f688d50dfb76067e69f0319103a54d",
+      "datetime_utc": "2026-05-13T17:42:59Z",
+      "block_number": 25087778,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 2709521.411438705,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 2768714.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25102868:104:1657",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x24a1b829113df7ba2e5f9956b62a78bf3d07782c89035fbf28c7afa503c8a53f",
+      "datetime_utc": "2026-05-15T20:13:11Z",
+      "block_number": 25102868,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 159564.1036652888,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 163085.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25102872:26:1658",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xb01f05eb1ce9f53c9ff83b501c2c6b69a92ef8764b0281f8f51a91a515aec16c",
+      "datetime_utc": "2026-05-15T20:13:59Z",
+      "block_number": 25102872,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0x8c106eedad96553e64287a5a6839c3cc78afa3d0",
+          "symbol": "gtUSDCp",
+          "amount": 4892.053085705011,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 5000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25116969:88:1673",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x6752eec8a98b54b6f3eacfc6e66c37374f13509e307bd3dc043cd481f81f556b",
+      "datetime_utc": "2026-05-17T19:21:59Z",
+      "block_number": 25116969,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 149164.77665183635,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 151269.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25137982:57:1706",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xe4efad8d562fc6c7df97ac712e82b593f906a246ad761d68877e9b17ff9a279a",
+      "datetime_utc": "2026-05-20T17:36:11Z",
+      "block_number": 25137982,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 493891.66925323696,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 501000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138691:124:1717",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xa9b83db31d1f421b5c8c4fbaf54ba5f88dd9cdebf6ddc01c5199fff34eb2e837",
+      "datetime_utc": "2026-05-20T19:58:11Z",
+      "block_number": 25138691,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 1478713.2219801762,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1500006.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138730:93:1718",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x45ef1398987d24342e9dcf77651f04cfade4b77e16304fac9dbee42ecadc28da",
+      "datetime_utc": "2026-05-20T20:05:59Z",
+      "block_number": 25138730,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 1478712.6560650952,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1500006.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25138933:95:1728",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0xb4b4acd07673616a4053198d0c9d12b48e5adfc9cf76404b2fab7c9ea9073832",
+      "datetime_utc": "2026-05-20T20:46:59Z",
+      "block_number": 25138933,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 887222.2573953036,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 900000.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xaecca546bafb16735b273702632c8cbb83509d8f:25140101:66:1736",
+      "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+      "tx_hash": "0x699b8dd9d75e64f1e7713a87ed5784175bdcb6c1f58d34968a22cb1a0417fab9",
+      "datetime_utc": "2026-05-21T00:42:11Z",
+      "block_number": 25140101,
+      "category": "vault",
+      "protocol": "VaultV2",
+      "action": "withdraw(uint256,address,address)",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xbeef003c68896c7d2c3c60d363e8d71a49ab2bf9",
+          "symbol": "steakUSDT",
+          "amount": 1440807.6639828354,
+          "count": 1
+        },
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 1461575.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25229399:46:77",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0xf452e9d0c6fc3becee19ad76a3a4be922fab535642e06e033d0a8a725c67ee90",
+      "datetime_utc": "2026-06-02T11:28:35Z",
+      "block_number": 25229399,
+      "category": "token_send",
+      "protocol": "",
+      "action": "send",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 100.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xd439a54fb1f33a49acef83067ca6cb468116fee0:25229399:46:0",
+      "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+      "tx_hash": "0xf452e9d0c6fc3becee19ad76a3a4be922fab535642e06e033d0a8a725c67ee90",
+      "datetime_utc": "2026-06-02T11:28:35Z",
+      "block_number": 25229399,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 100.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178:25229497:65:79",
+      "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+      "tx_hash": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c",
+      "datetime_utc": "2026-06-02T11:48:11Z",
+      "block_number": 25229497,
+      "category": "token_send",
+      "protocol": "",
+      "action": "send",
+      "transfers": [
+        {
+          "direction": "out",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 3999900.0,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "event_id": "0xd439a54fb1f33a49acef83067ca6cb468116fee0:25229497:65:1",
+      "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+      "tx_hash": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c",
+      "datetime_utc": "2026-06-02T11:48:11Z",
+      "block_number": 25229497,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+          "symbol": "USDT",
+          "amount": 3999900.0,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 4,
+    "event_count": 94,
+    "category_counts": {
+      "bridge": 1,
+      "lending": 47,
+      "token_rebalance": 7,
+      "token_receive": 9,
+      "swap": 7,
+      "vault": 30,
+      "token_send": 2
+    },
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [
+        {
+          "address": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "kind": "safe",
+          "depth": 0,
+          "discovered_by": "seed"
+        },
+        {
+          "address": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+          "kind": "safe",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "out"
+        },
+        {
+          "address": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+          "kind": "safe",
+          "depth": 1,
+          "discovered_by": "out"
+        }
+      ],
+      "edges": [
+        {
+          "source": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "target": "0xd439a54fb1f33a49acef83067ca6cb468116fee0",
+          "relation": "out",
+          "symbols": [
+            "USDT"
+          ],
+          "transfer_count": 2,
+          "first_block": 25229399,
+          "last_block": 25229497,
+          "sample_tx": "0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c"
+        },
+        {
+          "source": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+          "target": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "relation": "in",
+          "symbols": [
+            "wstETH"
+          ],
+          "transfer_count": 3,
+          "first_block": 24534527,
+          "last_block": 24535423,
+          "sample_tx": "0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19"
+        },
+        {
+          "source": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "target": "0xaecca546bafb16735b273702632c8cbb83509d8f",
+          "relation": "out",
+          "symbols": [
+            "USDC",
+            "USDT"
+          ],
+          "transfer_count": 4,
+          "first_block": 24047652,
+          "last_block": 25001119,
+          "sample_tx": "0x09708f4f85db8f22ad38349babbae6e846cd7007e96682c156685f9c53668206"
+        }
+      ],
+      "seeds": [
+        "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178"
+      ],
+      "max_depth": 1,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-14T09:05:45Z",
+    "dfs": {
+      "seed_addresses": [
+        "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178"
+      ],
+      "depth": 1,
+      "directions": "both",
+      "discovered_addresses": 4,
+      "discovery_edges": 3
+    }
+  }
+}
