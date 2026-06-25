@@ -13,7 +13,7 @@
         "discovered_by": "seed",
         "event_count": 176,
         "first_seen_utc": "2025-12-11T14:24:11Z",
-        "last_seen_utc": "2026-05-26T14:23:11Z",
+        "last_seen_utc": "2026-05-26T14:16:11Z",
         "category_counts": {
           "vault": 30,
           "swap": 52,
@@ -169,7 +169,9 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 4909284.44091,
-              "count": 1
+              "count": 1,
+              "from": "0xdcd0f5ab30856f28385f641580bbd85f88349124",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -200,19 +202,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 4909999.03067,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 4909999.03067,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:30",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:24",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc797a166f3edd34a5bde50e084f19b3e137d2ca20a06d083d550576b7ab0c6d0",
           "datetime_utc": "2025-12-18T10:22:11Z",
@@ -226,19 +232,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4592.580176174801,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 0.6387255093717042,
-              "count": 1
+              "count": 1,
+              "from": "0x67336cec42645f55059eff241cb02ea5cc52ff86",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:33",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:27",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x49ec39d6575ba733599a2f10da8a0d82799902498696b7cec72bbd25ab7b41c6",
           "datetime_utc": "2025-12-19T08:05:35Z",
@@ -252,19 +262,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 3872.5427805889453,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 0.5235881679402125,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:35",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:29",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x59776ca210d8903f0401f3977937d196d6b5bfd5fd99391312d08d538adf968b",
           "datetime_utc": "2025-12-22T14:25:11Z",
@@ -278,19 +292,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 14039.073705408948,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.7845868569986694,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:40",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:32",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xada90722d61d9038f301f4eceb74e94cfbeae4bc44a6407f98a53e630647bbc1",
           "datetime_utc": "2025-12-23T13:27:47Z",
@@ -304,19 +322,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4124.224443542353,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 0.5298658997194937,
-              "count": 1
+              "count": 1,
+              "from": "0x67336cec42645f55059eff241cb02ea5cc52ff86",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:45",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:36",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xfd820d88c1a1dd36635a7fb2bfedd0dd8bce49eecba3741b881741fca6828ee7",
           "datetime_utc": "2025-12-28T09:12:59Z",
@@ -330,19 +352,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 21327.27014819356,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 2.967229643572105,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:61",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:48",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc542815ec9a482e182b5135a1b1929061b18eacb799671db9ed262bcac9e9ce9",
           "datetime_utc": "2026-01-03T16:59:47Z",
@@ -356,19 +382,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 18156.38702249711,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 2.452400682029064,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:80",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:65",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xef6da1c5b4e1f4daa33ddf2caf83278c974563748f452442b69c4131f4da4c2e",
           "datetime_utc": "2026-01-07T09:01:11Z",
@@ -382,19 +412,23 @@
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 101.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 109.60100235624726,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:82",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:67",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x34237d77681da5bbe71351bcd76d93fa3f1502e21508e4a28ac6ae812e5c1623",
           "datetime_utc": "2026-01-07T09:02:35Z",
@@ -408,19 +442,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 15628.697882909582,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 2.0840882707614767,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:86",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:69",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x1efcf31aac6e00c19ff57e0b1c7fa0088c0e90be836a8f03e80fe21bf14238ed",
           "datetime_utc": "2026-01-07T10:55:23Z",
@@ -434,19 +472,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 999968.232545,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 999968.232545,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:99",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:81",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x732bece2d0a442dd899f1942e0356c54fd95965e8f51e937c91b2b84f2c2e9d9",
           "datetime_utc": "2026-01-12T14:16:23Z",
@@ -460,19 +502,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 18729.16413737254,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x000010036c0190e009a000d0fc3541100a07380a"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 2.523073957600554,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:102",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:83",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xe3d71a69a2aa0922f51918181547af303d06d65ba427c069652874d14b93057e",
           "datetime_utc": "2026-01-19T08:26:47Z",
@@ -486,19 +532,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 22787.943962492576,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.9266940410935534,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:123",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:95",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x0ddc1b4cf771ccad25bf4d8c778202843af96c618563c1668961ff444ae33ae3",
           "datetime_utc": "2026-01-26T08:12:23Z",
@@ -512,19 +562,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 23592.93745561763,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.9907481435127292,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:131",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:102",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x77d77144ebbd990f1f9f95fabe3fad7e7dd37c60288ab52ae080307e663d8a87",
           "datetime_utc": "2026-01-30T09:00:11Z",
@@ -538,19 +592,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 250000.0015,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 250000.0015,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:152",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:117",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x23ef8291d32f38ff8cec3d588e7816ec4e18dd71a3151a35c4698f71d62c0fe1",
           "datetime_utc": "2026-02-03T10:21:35Z",
@@ -564,19 +622,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 200056.394267,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 200056.394267,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:159",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:124",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x0a33411e012d33d1f3e7bc14ebb18abf53a4af237dbeea30fda12f4e1d989fb3",
           "datetime_utc": "2026-02-03T10:30:11Z",
@@ -590,19 +652,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 26818.148963878008,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.8564610303140947,
-              "count": 1
+              "count": 1,
+              "from": "0x6a000f20005980200259b80c5102003040001068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:171",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:135",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x8b7af93492af3a3686d733745842c6524c2738375a09ce54c32939758427a601",
           "datetime_utc": "2026-02-05T11:18:59Z",
@@ -616,19 +682,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 200000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 200000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:179",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:143",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xa4b82f9bd92b83da482a999e0e96a20bd349e603482f7be328235e43d894dd8d",
           "datetime_utc": "2026-02-06T09:47:35Z",
@@ -642,14 +712,18 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 159837.615629,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x6a000f20005980200259b80c5102003040001068"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 159837.615629,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -680,14 +754,18 @@
               "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
               "symbol": "cbBTC",
               "amount": 20.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
             },
             {
               "direction": "in",
               "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
               "symbol": "yb-cbBTC",
               "amount": 19.406919328526712,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
@@ -706,14 +784,18 @@
               "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
               "symbol": "cbBTC",
               "amount": 5.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
             },
             {
               "direction": "in",
               "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
               "symbol": "yb-cbBTC",
               "amount": 4.851850620906276,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
@@ -732,14 +814,18 @@
               "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
               "symbol": "cbBTC",
               "amount": 3.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
             },
             {
               "direction": "in",
               "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
               "symbol": "yb-cbBTC",
               "amount": 2.91110809539977,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
@@ -758,19 +844,23 @@
               "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
               "symbol": "cbBTC",
               "amount": 2.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
             },
             {
               "direction": "in",
               "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
               "symbol": "yb-cbBTC",
               "amount": 1.9407388827995509,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:22",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:16",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x32973ec8586258037cda9646f349997750559595c31c98d3b3017dba4d5db900",
           "datetime_utc": "2025-12-16T08:13:11Z",
@@ -793,7 +883,7 @@
       "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:23",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:17",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xed437b7a96b7b2fb8623ddb495aa357115797898496e51fdb8032676d25b2d49",
           "datetime_utc": "2025-12-16T08:16:59Z",
@@ -807,19 +897,23 @@
               "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
               "symbol": "yb-cbBTC",
               "amount": 29.110616927632307,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893"
             },
             {
               "direction": "in",
               "token": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
               "symbol": "g(yb-cbBTC)",
               "amount": 30.003131320830256,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:24",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:18",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc0ec13d9c336ee118f3f6155cb74ce82eb0f0a650b5a43c5b6a30600134ea76f",
           "datetime_utc": "2025-12-17T08:31:59Z",
@@ -833,12 +927,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4330.3880428476605,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:28",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:22",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x55766cab2cc46423c83345be1bd6e116cb47e18e0e6cc7b771c313b442eee95a",
           "datetime_utc": "2025-12-18T10:20:11Z",
@@ -852,12 +948,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4592.580176174801,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:32",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:26",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x14f3590652424eb9c57cdbadcdf6613c306d8915e5e6e762915adc90933516c2",
           "datetime_utc": "2025-12-19T08:04:35Z",
@@ -871,12 +969,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 3872.5427805889453,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:34",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:28",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x956bdd54aaafda4f919df250bd6d250d249994cee8bbcf902d8193e0a13a08ab",
           "datetime_utc": "2025-12-22T14:24:11Z",
@@ -890,12 +990,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 14039.073705408948,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:39",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:31",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x0040650e6cde90591f9d6b78e9cfd536b08b8db55a28290c4e59e65b20bd0924",
           "datetime_utc": "2025-12-23T13:26:47Z",
@@ -909,12 +1011,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4124.224443542353,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:44",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:35",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc0f28c67a1842ae039ebef9250f090034f8d8887bdf0dec9092b6b006d1bc43a",
           "datetime_utc": "2025-12-28T09:12:11Z",
@@ -928,12 +1032,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 21327.27014819356,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:50",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:40",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x6f4fd07f4e6088d599ef7daae2711dbadeeadd90aae0206baa9b4b0927573931",
           "datetime_utc": "2025-12-30T13:44:47Z",
@@ -947,12 +1053,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 9688.579754055943,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:60",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:47",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x6253d0b4fd23d5fb94a5c6bd21e861a10ebb8fbf59f1b2a48c6900a12d423180",
           "datetime_utc": "2026-01-03T16:58:59Z",
@@ -966,12 +1074,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 18156.38702249711,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:81",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:66",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x197ead6e2fc55a8c29173bd3330f180edd59eadc0e995bd23ae43a418254f1cf",
           "datetime_utc": "2026-01-07T09:01:35Z",
@@ -985,12 +1095,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 15628.697882909582,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:98",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:80",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x9adcf17130d9eacdd5bfe68cf029b3edf345749de5de0d34e1f5a9b707a22e8b",
           "datetime_utc": "2026-01-12T14:15:35Z",
@@ -1004,12 +1116,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 18729.16413737254,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:101",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:82",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xb50d98576313ebd7792f203b346bf86e54dc996799948cf5c2c2f72adace3d2e",
           "datetime_utc": "2026-01-19T08:19:47Z",
@@ -1023,12 +1137,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 22787.943962492576,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:122",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:94",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc155b5bfa76189978a273e2f91d77386987f2c3633e6a9f5feb3bb31d8bb63ae",
           "datetime_utc": "2026-01-26T08:11:23Z",
@@ -1042,12 +1158,14 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 23592.93745561763,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:158",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:123",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
           "datetime_utc": "2026-02-03T10:29:23Z",
@@ -1061,7 +1179,9 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 26818.148963878008,
-              "count": 1
+              "count": 1,
+              "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1078,7 +1198,7 @@
       "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:26",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:20",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x526c311bc26952206477db4c2b30799f85eaedc14ab1da6a4f18b871f42a3538",
           "datetime_utc": "2025-12-17T08:59:23Z",
@@ -1092,19 +1212,23 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 4330.3880428476605,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 0.6063355299657252,
-              "count": 1
+              "count": 1,
+              "from": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:51",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:41",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
           "datetime_utc": "2025-12-30T13:45:35Z",
@@ -1118,14 +1242,18 @@
               "token": "0x01791f726b4103694969820be083196cc7c045ff",
               "symbol": "YB",
               "amount": 9688.579754055943,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.324804042224681,
-              "count": 1
+              "count": 1,
+              "from": "0x111111125421ca6dc452d289314280a0f8842a65",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1142,7 +1270,7 @@
       "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:54",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:43",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x13547e2d11be10cb52f4d78682b796e74b203d2b3ba2a03e1319d88c30752407",
           "datetime_utc": "2025-12-30T14:26:35Z",
@@ -1156,19 +1284,23 @@
               "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
               "symbol": "spWETH",
               "amount": 24.371700561536066,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 25.0,
-              "count": 1
+              "count": 1,
+              "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:68",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:54",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xe776016280b75886da2daa76314145a69c486be95dd694d1da3a99dc036d07c6",
           "datetime_utc": "2026-01-07T08:30:59Z",
@@ -1182,19 +1314,23 @@
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 999.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
             },
             {
               "direction": "in",
               "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
               "symbol": "spweETH",
               "amount": 999.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:69",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:55",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x578ed782cc0585170427d8feeb017d0a6e232ac5c961f72b44edadcbdad08007",
           "datetime_utc": "2026-01-07T08:31:47Z",
@@ -1208,19 +1344,23 @@
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 1503805.2336371664,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             },
             {
               "direction": "in",
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 1500200.0,
-              "count": 1
+              "count": 1,
+              "from": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:74",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:60",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x9d79f30eedc8b812222d9e9ce86ac1970c510d6477bcf55ec2cd9ebc0728466e",
           "datetime_utc": "2026-01-07T08:44:23Z",
@@ -1234,19 +1374,23 @@
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 750.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
             },
             {
               "direction": "in",
               "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
               "symbol": "spweETH",
               "amount": 750.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:75",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:61",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x1d8e8167d26f534c0bfc514f739665865705bd21dc0651ec75ad71f2eb75b962",
           "datetime_utc": "2026-01-07T08:45:11Z",
@@ -1260,19 +1404,23 @@
               "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
               "symbol": "spWETH",
               "amount": 758.6562993753562,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 758.88991836207,
-              "count": 1
+              "count": 1,
+              "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:88",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:71",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x741b44aa533e253b50f4cf4a8c9934adebe9256e73677886ff5706f8983c7cd1",
           "datetime_utc": "2026-01-07T10:59:35Z",
@@ -1286,19 +1434,23 @@
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 999968.232545,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
             },
             {
               "direction": "out",
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 999935.345817124,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:89",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:72",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x03f4a016d792ade82eaf1dfe573c8146025f0913b6623d65b6777ce9a048b73e",
           "datetime_utc": "2026-01-07T11:00:35Z",
@@ -1312,19 +1464,23 @@
               "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
               "symbol": "spweETH",
               "amount": 650.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 650.0,
-              "count": 1
+              "count": 1,
+              "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:132",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:103",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xf10d8441bf2db13a46bdc53fa2cbc5ffc0101cf39f43c6d4a6698e7cd4142d34",
           "datetime_utc": "2026-01-30T09:00:59Z",
@@ -1338,19 +1494,23 @@
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 250000.0015,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
             },
             {
               "direction": "out",
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 245582.8765685197,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:137",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:108",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x4b600f7d6c1e8447c189850ab3f612558bbbae9e5d5d8922813d67ded9d47cac",
           "datetime_utc": "2026-02-02T13:39:11Z",
@@ -1364,19 +1524,23 @@
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 15.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
             },
             {
               "direction": "in",
               "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
               "symbol": "spWETH",
               "amount": 15.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:143",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:112",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x1c075fdf061b131714eee31658666ece7229102d221a2ed4db046cc5220f0ba0",
           "datetime_utc": "2026-02-03T09:30:11Z",
@@ -1390,19 +1554,23 @@
               "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
               "symbol": "spweETH",
               "amount": 80.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 80.0,
-              "count": 1
+              "count": 1,
+              "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:153",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:118",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x56746d0e9962f10bd8942049d5e3c451253ebda36e617c9cc8014b01fe478430",
           "datetime_utc": "2026-02-03T10:22:59Z",
@@ -1416,19 +1584,23 @@
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 200056.394267,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
             },
             {
               "direction": "out",
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 199403.08923539484,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:154",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:119",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x728836cf1e8dda7eb14fb962ba70c37695ce8fbe525b037c46cf72025bf97ff8",
           "datetime_utc": "2026-02-03T10:24:59Z",
@@ -1442,19 +1614,23 @@
               "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
               "symbol": "spweETH",
               "amount": 90.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 90.0,
-              "count": 1
+              "count": 1,
+              "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:172",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:136",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xbc58e3733bf81583d47c0d0503a5d21bce752608f3cbc064b448ac5e1499dd48",
           "datetime_utc": "2026-02-05T11:20:23Z",
@@ -1468,19 +1644,23 @@
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 200000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
             },
             {
               "direction": "out",
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 199723.35693386378,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:180",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:144",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x7163c8f360572e895bc5e32ae062ea19ae673b0c0aed32b21860ede9f1317f17",
           "datetime_utc": "2026-02-06T09:48:23Z",
@@ -1494,19 +1674,23 @@
               "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
               "symbol": "USDS",
               "amount": 159837.615629,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
             },
             {
               "direction": "out",
               "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
               "symbol": "variableDebtUSDS",
               "amount": 159734.71438859205,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:181",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:145",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
           "datetime_utc": "2026-02-06T10:13:11Z",
@@ -1520,14 +1704,18 @@
               "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
               "symbol": "spWETH",
               "amount": 15.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 15.002522015563637,
-              "count": 1
+              "count": 1,
+              "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1544,7 +1732,7 @@
       "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:64",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:50",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xb998d119fb3cc95a85d6ab9beeb98fd315b2dbabd634c803192fa58463df060f",
           "datetime_utc": "2026-01-06T10:27:23Z",
@@ -1558,19 +1746,23 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 1500000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             },
             {
               "direction": "in",
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 905340.1929873994,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:78",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:63",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x5404c1d9fa1b2159699affd003853ade69a64b0c6752d159cb00a554bf519c08",
           "datetime_utc": "2026-01-07T08:58:35Z",
@@ -1584,19 +1776,23 @@
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 900266.2558528266,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             },
             {
               "direction": "in",
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 1350399.3837792827,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:85",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:68",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x00e24e0f8cdf37337cfbde454e56e88c500d8fca973c110ea6db03787a7897c6",
           "datetime_utc": "2026-01-07T10:54:35Z",
@@ -1610,12 +1806,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 999968.232545,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:126",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:98",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x8c45485fd01de86ac7ce908a92d03fb0aa717007800640f65be3134b2b631bc2",
           "datetime_utc": "2026-01-28T08:40:11Z",
@@ -1629,12 +1827,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 1500000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:145",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:114",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xa754533643c14ade49689e7a52aebcd73c8718b85d0dfaa74a818c172343dc6a",
           "datetime_utc": "2026-02-03T09:35:11Z",
@@ -1648,19 +1848,23 @@
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 179211.9224696432,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             },
             {
               "direction": "in",
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 1344089.4185223726,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:150",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:115",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x14306ec98b803a7260ad18c67b71105652c0ef3617819531bedee1191c4ee7c4",
           "datetime_utc": "2026-02-03T10:19:47Z",
@@ -1674,12 +1878,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 200056.394117,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:168",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:132",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xca14d17b26bfd0fc6e6c870e6c3090c194fe2b81a47d73f0eab46d0838a6562b",
           "datetime_utc": "2026-02-04T08:13:59Z",
@@ -1693,12 +1899,14 @@
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 358322.80844729196,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:169",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:133",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x66a9f5dc2cc7a7f708f06ff8ab2e4847e54af624217e2c1cfaadedc62477dde8",
           "datetime_utc": "2026-02-05T11:16:35Z",
@@ -1712,12 +1920,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 400176.098112,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:175",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:139",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x606e88c03d3253293dbe516c53ac77080f40e839a556b7dc5f4f852d76d3572a",
           "datetime_utc": "2026-02-06T08:23:23Z",
@@ -1731,12 +1941,14 @@
               "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
               "symbol": "9SUSDC",
               "amount": 358165.1279399311,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:176",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:140",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
           "datetime_utc": "2026-02-06T09:43:23Z",
@@ -1750,7 +1962,9 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 399837.615629,
-              "count": 1
+              "count": 1,
+              "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1767,7 +1981,7 @@
       "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:91",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:74",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
           "datetime_utc": "2026-01-07T11:01:59Z",
@@ -1781,14 +1995,18 @@
               "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
               "symbol": "weETH",
               "amount": 650.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x365084b05fa7d5028346bd21d842ed0601bab5b8"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 705.2298004383825,
-              "count": 1
+              "count": 1,
+              "from": "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1805,7 +2023,7 @@
       "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:94",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:77",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xfdf3eff37a4f150c2f2bcb44783bd563a23cf79521eaaf0bdc29391fe5522eb4",
           "datetime_utc": "2026-01-07T16:49:47Z",
@@ -1819,19 +2037,23 @@
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1619.0628896271649,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
             },
             {
               "direction": "in",
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 1614.4377976143853,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:95",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:78",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x73a90393427f1f16dae38b50b6a46bb17fd18a45721c83836866a81d3122a8b2",
           "datetime_utc": "2026-01-09T16:18:35Z",
@@ -1845,19 +2067,23 @@
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 4.9853376072686455,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 5.0,
-              "count": 1
+              "count": 1,
+              "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:103",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:84",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x6f3268456ba12266fa4bf0e2e1bdad0b2311cc1ff99d514f77a3dc9ab6dac9ae",
           "datetime_utc": "2026-01-20T08:33:11Z",
@@ -1871,19 +2097,23 @@
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 0.9966525129625766,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1.0,
-              "count": 1
+              "count": 1,
+              "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:106",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:87",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x7a302007d6c5cc39a124b5314ada2eff51e97f09f61f2608a7ec4049671a7e3d",
           "datetime_utc": "2026-01-20T08:56:47Z",
@@ -1897,19 +2127,23 @@
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 1245.8148910863506,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 1250.0,
-              "count": 1
+              "count": 1,
+              "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:110",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:91",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xf2280a1b87fd66478fd3141bfdb07541e3a462020a012600491fc24b34affa4d",
           "datetime_utc": "2026-01-23T09:07:59Z",
@@ -1923,19 +2157,23 @@
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 298.9640492227908,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 300.0,
-              "count": 1
+              "count": 1,
+              "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:134",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:105",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
           "datetime_utc": "2026-02-02T13:34:23Z",
@@ -1949,14 +2187,18 @@
               "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
               "symbol": "spETH",
               "amount": 63.67686718501263,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x0000000000000000000000000000000000000000"
             },
             {
               "direction": "in",
               "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
               "symbol": "WETH",
               "amount": 63.92456166499069,
-              "count": 1
+              "count": 1,
+              "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -1973,7 +2215,7 @@
       "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:105",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:86",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x0bd6ab947a335ecbea6b2eecd3be49bb5b6e367bc3987b6e80ba961f0f3b6d29",
           "datetime_utc": "2026-01-20T08:40:11Z",
@@ -1984,7 +2226,7 @@
           "transfers": []
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:108",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:89",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x4d5a626aac2d178bfaed2709274db5a38ba5c27aa76b6ce7908044bbd61c6ef0",
           "datetime_utc": "2026-01-20T08:58:47Z",
@@ -1995,7 +2237,7 @@
           "transfers": []
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:112",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:93",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xa376a328c77db20d182344ddad7c2c5289f662e498d6023995f857174765134e",
           "datetime_utc": "2026-01-23T09:09:11Z",
@@ -2006,7 +2248,7 @@
           "transfers": []
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:139",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:110",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
           "datetime_utc": "2026-02-02T13:41:11Z",
@@ -2029,7 +2271,7 @@
       "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:125",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:97",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xe20a58db0dfc18a6e04b42f6ae14dcb5941c6c6b612ad771fa7dcc62fe3bc06e",
           "datetime_utc": "2026-01-28T08:35:47Z",
@@ -2043,12 +2285,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 1500000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:129",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:100",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
           "datetime_utc": "2026-01-30T08:58:59Z",
@@ -2062,7 +2306,9 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 250000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x0000000000000000000000000000000000000000",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
             }
           ]
         }
@@ -2079,7 +2325,7 @@
       "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
       "details": [
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:173",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:137",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0x9c9d9640c9d11ca9084b772e26f4d4b97e09fbb1b51c610e472ed3450326fe93",
           "datetime_utc": "2026-02-05T11:20:23Z",
@@ -2093,12 +2339,14 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 200176.098112,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xfd78ee919681417d192449715b2594ab58f5d002"
             }
           ]
         },
         {
-          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:178",
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:142",
           "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
           "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
           "datetime_utc": "2026-02-06T09:45:47Z",
@@ -2112,7 +2360,9 @@
               "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
               "symbol": "USDC",
               "amount": 240000.0,
-              "count": 1
+              "count": 1,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xfd78ee919681417d192449715b2594ab58f5d002"
             }
           ]
         }
@@ -2137,7 +2387,9 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 4909284.44091,
-          "count": 1
+          "count": 1,
+          "from": "0xdcd0f5ab30856f28385f641580bbd85f88349124",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
@@ -2156,14 +2408,18 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 4909999.03067,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 4909999.03067,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
@@ -2182,14 +2438,18 @@
           "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
           "symbol": "cbBTC",
           "amount": 20.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
         },
         {
           "direction": "in",
           "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
           "symbol": "yb-cbBTC",
           "amount": 19.406919328526712,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
@@ -2208,14 +2468,18 @@
           "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
           "symbol": "cbBTC",
           "amount": 5.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
         },
         {
           "direction": "in",
           "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
           "symbol": "yb-cbBTC",
           "amount": 4.851850620906276,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
@@ -2234,14 +2498,18 @@
           "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
           "symbol": "cbBTC",
           "amount": 3.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
         },
         {
           "direction": "in",
           "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
           "symbol": "yb-cbBTC",
           "amount": 2.91110809539977,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
@@ -2260,19 +2528,23 @@
           "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
           "symbol": "cbBTC",
           "amount": 2.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2"
         },
         {
           "direction": "in",
           "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
           "symbol": "yb-cbBTC",
           "amount": 1.9407388827995509,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:22",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023899:125:16",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x32973ec8586258037cda9646f349997750559595c31c98d3b3017dba4d5db900",
       "datetime_utc": "2025-12-16T08:13:11Z",
@@ -2283,7 +2555,7 @@
       "transfers": []
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:23",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24023918:173:17",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xed437b7a96b7b2fb8623ddb495aa357115797898496e51fdb8032676d25b2d49",
       "datetime_utc": "2025-12-16T08:16:59Z",
@@ -2297,19 +2569,23 @@
           "token": "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
           "symbol": "yb-cbBTC",
           "amount": 29.110616927632307,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893"
         },
         {
           "direction": "in",
           "token": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
           "symbol": "g(yb-cbBTC)",
           "amount": 30.003131320830256,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:24",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031158:224:18",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc0ec13d9c336ee118f3f6155cb74ce82eb0f0a650b5a43c5b6a30600134ea76f",
       "datetime_utc": "2025-12-17T08:31:59Z",
@@ -2323,12 +2599,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4330.3880428476605,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:26",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24031295:95:20",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x526c311bc26952206477db4c2b30799f85eaedc14ab1da6a4f18b871f42a3538",
       "datetime_utc": "2025-12-17T08:59:23Z",
@@ -2342,19 +2620,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4330.3880428476605,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 0.6063355299657252,
-          "count": 1
+          "count": 1,
+          "from": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:28",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038852:239:22",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x55766cab2cc46423c83345be1bd6e116cb47e18e0e6cc7b771c313b442eee95a",
       "datetime_utc": "2025-12-18T10:20:11Z",
@@ -2368,12 +2650,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4592.580176174801,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:30",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038862:140:24",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc797a166f3edd34a5bde50e084f19b3e137d2ca20a06d083d550576b7ab0c6d0",
       "datetime_utc": "2025-12-18T10:22:11Z",
@@ -2387,19 +2671,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4592.580176174801,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 0.6387255093717042,
-          "count": 1
+          "count": 1,
+          "from": "0x67336cec42645f55059eff241cb02ea5cc52ff86",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:32",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045329:288:26",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x14f3590652424eb9c57cdbadcdf6613c306d8915e5e6e762915adc90933516c2",
       "datetime_utc": "2025-12-19T08:04:35Z",
@@ -2413,12 +2701,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 3872.5427805889453,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:33",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24045334:211:27",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x49ec39d6575ba733599a2f10da8a0d82799902498696b7cec72bbd25ab7b41c6",
       "datetime_utc": "2025-12-19T08:05:35Z",
@@ -2432,19 +2722,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 3872.5427805889453,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 0.5235881679402125,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:34",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068727:480:28",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x956bdd54aaafda4f919df250bd6d250d249994cee8bbcf902d8193e0a13a08ab",
       "datetime_utc": "2025-12-22T14:24:11Z",
@@ -2458,12 +2752,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 14039.073705408948,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:35",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24068732:66:29",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x59776ca210d8903f0401f3977937d196d6b5bfd5fd99391312d08d538adf968b",
       "datetime_utc": "2025-12-22T14:25:11Z",
@@ -2477,19 +2773,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 14039.073705408948,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.7845868569986694,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:39",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075603:174:31",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x0040650e6cde90591f9d6b78e9cfd536b08b8db55a28290c4e59e65b20bd0924",
       "datetime_utc": "2025-12-23T13:26:47Z",
@@ -2503,12 +2803,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4124.224443542353,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:40",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075608:562:32",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xada90722d61d9038f301f4eceb74e94cfbeae4bc44a6407f98a53e630647bbc1",
       "datetime_utc": "2025-12-23T13:27:47Z",
@@ -2522,19 +2824,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 4124.224443542353,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 0.5298658997194937,
-          "count": 1
+          "count": 1,
+          "from": "0x67336cec42645f55059eff241cb02ea5cc52ff86",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:44",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110152:175:35",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc0f28c67a1842ae039ebef9250f090034f8d8887bdf0dec9092b6b006d1bc43a",
       "datetime_utc": "2025-12-28T09:12:11Z",
@@ -2548,12 +2854,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 21327.27014819356,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:45",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110156:58:36",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xfd820d88c1a1dd36635a7fb2bfedd0dd8bce49eecba3741b881741fca6828ee7",
       "datetime_utc": "2025-12-28T09:12:59Z",
@@ -2567,19 +2875,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 21327.27014819356,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 2.967229643572105,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:50",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125827:119:40",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x6f4fd07f4e6088d599ef7daae2711dbadeeadd90aae0206baa9b4b0927573931",
       "datetime_utc": "2025-12-30T13:44:47Z",
@@ -2593,12 +2905,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 9688.579754055943,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:51",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125831:311:41",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x8104fdf53accff4830afdf1af051b5a9742a53879f8298aa26755842d38cdf35",
       "datetime_utc": "2025-12-30T13:45:35Z",
@@ -2612,19 +2926,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 9688.579754055943,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x990636ecb3ff04d33d92e970d3d588bf5cd8d086"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.324804042224681,
-          "count": 1
+          "count": 1,
+          "from": "0x111111125421ca6dc452d289314280a0f8842a65",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:54",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126035:289:43",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x13547e2d11be10cb52f4d78682b796e74b203d2b3ba2a03e1319d88c30752407",
       "datetime_utc": "2025-12-30T14:26:35Z",
@@ -2638,19 +2956,23 @@
           "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
           "symbol": "spWETH",
           "amount": 24.371700561536066,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 25.0,
-          "count": 1
+          "count": 1,
+          "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:60",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155469:175:47",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x6253d0b4fd23d5fb94a5c6bd21e861a10ebb8fbf59f1b2a48c6900a12d423180",
       "datetime_utc": "2026-01-03T16:58:59Z",
@@ -2664,12 +2986,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 18156.38702249711,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:61",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24155473:171:48",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc542815ec9a482e182b5135a1b1929061b18eacb799671db9ed262bcac9e9ce9",
       "datetime_utc": "2026-01-03T16:59:47Z",
@@ -2683,19 +3007,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 18156.38702249711,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 2.452400682029064,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:64",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175034:256:50",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xb998d119fb3cc95a85d6ab9beeb98fd315b2dbabd634c803192fa58463df060f",
       "datetime_utc": "2026-01-06T10:27:23Z",
@@ -2709,19 +3037,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 1500000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         },
         {
           "direction": "in",
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 905340.1929873994,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:68",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181619:362:54",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xe776016280b75886da2daa76314145a69c486be95dd694d1da3a99dc036d07c6",
       "datetime_utc": "2026-01-07T08:30:59Z",
@@ -2735,19 +3067,23 @@
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 999.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
         },
         {
           "direction": "in",
           "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
           "symbol": "spweETH",
           "amount": 999.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:69",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181623:160:55",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x578ed782cc0585170427d8feeb017d0a6e232ac5c961f72b44edadcbdad08007",
       "datetime_utc": "2026-01-07T08:31:47Z",
@@ -2761,19 +3097,23 @@
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 1503805.2336371664,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 1500200.0,
-          "count": 1
+          "count": 1,
+          "from": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:74",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181686:196:60",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x9d79f30eedc8b812222d9e9ce86ac1970c510d6477bcf55ec2cd9ebc0728466e",
       "datetime_utc": "2026-01-07T08:44:23Z",
@@ -2787,19 +3127,23 @@
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 750.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008"
         },
         {
           "direction": "in",
           "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
           "symbol": "spweETH",
           "amount": 750.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:75",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181690:88:61",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x1d8e8167d26f534c0bfc514f739665865705bd21dc0651ec75ad71f2eb75b962",
       "datetime_utc": "2026-01-07T08:45:11Z",
@@ -2813,19 +3157,23 @@
           "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
           "symbol": "spWETH",
           "amount": 758.6562993753562,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 758.88991836207,
-          "count": 1
+          "count": 1,
+          "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:78",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181757:99:63",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x5404c1d9fa1b2159699affd003853ade69a64b0c6752d159cb00a554bf519c08",
       "datetime_utc": "2026-01-07T08:58:35Z",
@@ -2839,19 +3187,23 @@
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 900266.2558528266,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         },
         {
           "direction": "in",
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 1350399.3837792827,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:80",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181770:314:65",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xef6da1c5b4e1f4daa33ddf2caf83278c974563748f452442b69c4131f4da4c2e",
       "datetime_utc": "2026-01-07T09:01:11Z",
@@ -2865,19 +3217,23 @@
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 101.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 109.60100235624726,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:81",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181772:283:66",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x197ead6e2fc55a8c29173bd3330f180edd59eadc0e995bd23ae43a418254f1cf",
       "datetime_utc": "2026-01-07T09:01:35Z",
@@ -2891,12 +3247,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 15628.697882909582,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:82",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181777:114:67",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x34237d77681da5bbe71351bcd76d93fa3f1502e21508e4a28ac6ae812e5c1623",
       "datetime_utc": "2026-01-07T09:02:35Z",
@@ -2910,19 +3268,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 15628.697882909582,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 2.0840882707614767,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:85",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182336:160:68",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x00e24e0f8cdf37337cfbde454e56e88c500d8fca973c110ea6db03787a7897c6",
       "datetime_utc": "2026-01-07T10:54:35Z",
@@ -2936,12 +3298,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 999968.232545,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:86",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182340:260:69",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x1efcf31aac6e00c19ff57e0b1c7fa0088c0e90be836a8f03e80fe21bf14238ed",
       "datetime_utc": "2026-01-07T10:55:23Z",
@@ -2955,19 +3319,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 999968.232545,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 999968.232545,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:88",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182361:135:71",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x741b44aa533e253b50f4cf4a8c9934adebe9256e73677886ff5706f8983c7cd1",
       "datetime_utc": "2026-01-07T10:59:35Z",
@@ -2981,19 +3349,23 @@
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 999968.232545,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
         },
         {
           "direction": "out",
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 999935.345817124,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:89",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182366:216:72",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x03f4a016d792ade82eaf1dfe573c8146025f0913b6623d65b6777ce9a048b73e",
       "datetime_utc": "2026-01-07T11:00:35Z",
@@ -3007,19 +3379,23 @@
           "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
           "symbol": "spweETH",
           "amount": 650.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 650.0,
-          "count": 1
+          "count": 1,
+          "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:91",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24182373:159:74",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x94ac3f52b6ec0b7cbbd76984da30cb596761c486510978e3787bfb94ed7c1c05",
       "datetime_utc": "2026-01-07T11:01:59Z",
@@ -3033,19 +3409,23 @@
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 650.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x365084b05fa7d5028346bd21d842ed0601bab5b8"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 705.2298004383825,
-          "count": 1
+          "count": 1,
+          "from": "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:94",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24184106:187:77",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xfdf3eff37a4f150c2f2bcb44783bd563a23cf79521eaaf0bdc29391fe5522eb4",
       "datetime_utc": "2026-01-07T16:49:47Z",
@@ -3059,19 +3439,23 @@
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1619.0628896271649,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f"
         },
         {
           "direction": "in",
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 1614.4377976143853,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:95",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24198270:352:78",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x73a90393427f1f16dae38b50b6a46bb17fd18a45721c83836866a81d3122a8b2",
       "datetime_utc": "2026-01-09T16:18:35Z",
@@ -3085,19 +3469,23 @@
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 4.9853376072686455,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 5.0,
-          "count": 1
+          "count": 1,
+          "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:98",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219166:265:80",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x9adcf17130d9eacdd5bfe68cf029b3edf345749de5de0d34e1f5a9b707a22e8b",
       "datetime_utc": "2026-01-12T14:15:35Z",
@@ -3111,12 +3499,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 18729.16413737254,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:99",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24219170:252:81",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x732bece2d0a442dd899f1942e0356c54fd95965e8f51e937c91b2b84f2c2e9d9",
       "datetime_utc": "2026-01-12T14:16:23Z",
@@ -3130,19 +3520,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 18729.16413737254,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x000010036c0190e009a000d0fc3541100a07380a"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 2.523073957600554,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:101",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267580:296:82",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xb50d98576313ebd7792f203b346bf86e54dc996799948cf5c2c2f72adace3d2e",
       "datetime_utc": "2026-01-19T08:19:47Z",
@@ -3156,12 +3550,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 22787.943962492576,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:102",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24267615:116:83",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xe3d71a69a2aa0922f51918181547af303d06d65ba427c069652874d14b93057e",
       "datetime_utc": "2026-01-19T08:26:47Z",
@@ -3175,19 +3571,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 22787.943962492576,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.9266940410935534,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:103",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274819:278:84",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x6f3268456ba12266fa4bf0e2e1bdad0b2311cc1ff99d514f77a3dc9ab6dac9ae",
       "datetime_utc": "2026-01-20T08:33:11Z",
@@ -3201,19 +3601,23 @@
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 0.9966525129625766,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.0,
-          "count": 1
+          "count": 1,
+          "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:105",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274853:114:86",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x0bd6ab947a335ecbea6b2eecd3be49bb5b6e367bc3987b6e80ba961f0f3b6d29",
       "datetime_utc": "2026-01-20T08:40:11Z",
@@ -3224,7 +3628,7 @@
       "transfers": []
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:106",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274936:240:87",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x7a302007d6c5cc39a124b5314ada2eff51e97f09f61f2608a7ec4049671a7e3d",
       "datetime_utc": "2026-01-20T08:56:47Z",
@@ -3238,19 +3642,23 @@
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 1245.8148910863506,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1250.0,
-          "count": 1
+          "count": 1,
+          "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:108",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24274946:194:89",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x4d5a626aac2d178bfaed2709274db5a38ba5c27aa76b6ce7908044bbd61c6ef0",
       "datetime_utc": "2026-01-20T08:58:47Z",
@@ -3261,7 +3669,7 @@
       "transfers": []
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:110",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296490:223:91",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xf2280a1b87fd66478fd3141bfdb07541e3a462020a012600491fc24b34affa4d",
       "datetime_utc": "2026-01-23T09:07:59Z",
@@ -3275,19 +3683,23 @@
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 298.9640492227908,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 300.0,
-          "count": 1
+          "count": 1,
+          "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:112",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24296496:338:93",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xa376a328c77db20d182344ddad7c2c5289f662e498d6023995f857174765134e",
       "datetime_utc": "2026-01-23T09:09:11Z",
@@ -3298,7 +3710,7 @@
       "transfers": []
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:122",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317725:215:94",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc155b5bfa76189978a273e2f91d77386987f2c3633e6a9f5feb3bb31d8bb63ae",
       "datetime_utc": "2026-01-26T08:11:23Z",
@@ -3312,12 +3724,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 23592.93745561763,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:123",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24317730:32:95",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x0ddc1b4cf771ccad25bf4d8c778202843af96c618563c1668961ff444ae33ae3",
       "datetime_utc": "2026-01-26T08:12:23Z",
@@ -3331,19 +3745,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 23592.93745561763,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.9907481435127292,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:125",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332184:253:97",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xe20a58db0dfc18a6e04b42f6ae14dcb5941c6c6b612ad771fa7dcc62fe3bc06e",
       "datetime_utc": "2026-01-28T08:35:47Z",
@@ -3357,12 +3775,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 1500000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:126",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332206:53:98",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x8c45485fd01de86ac7ce908a92d03fb0aa717007800640f65be3134b2b631bc2",
       "datetime_utc": "2026-01-28T08:40:11Z",
@@ -3376,12 +3796,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 1500000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:129",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346639:92:100",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xc4cea89c1784a59783d9d1726a767aeff90f9fd6991e349e69287b1d1a85913b",
       "datetime_utc": "2026-01-30T08:58:59Z",
@@ -3395,12 +3817,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 250000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:131",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346645:466:102",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x77d77144ebbd990f1f9f95fabe3fad7e7dd37c60288ab52ae080307e663d8a87",
       "datetime_utc": "2026-01-30T09:00:11Z",
@@ -3414,19 +3838,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 250000.0015,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 250000.0015,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:132",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346649:222:103",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xf10d8441bf2db13a46bdc53fa2cbc5ffc0101cf39f43c6d4a6698e7cd4142d34",
       "datetime_utc": "2026-01-30T09:00:59Z",
@@ -3440,19 +3868,23 @@
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 250000.0015,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
         },
         {
           "direction": "out",
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 245582.8765685197,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:134",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369502:125:105",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x680313fcacb8cd4d1c1230bf338bca4f4279abe4791a0a783c373ac73a11e70a",
       "datetime_utc": "2026-02-02T13:34:23Z",
@@ -3466,19 +3898,23 @@
           "token": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
           "symbol": "spETH",
           "amount": 63.67686718501263,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 63.92456166499069,
-          "count": 1
+          "count": 1,
+          "from": "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:137",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369526:213:108",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x4b600f7d6c1e8447c189850ab3f612558bbbae9e5d5d8922813d67ded9d47cac",
       "datetime_utc": "2026-02-02T13:39:11Z",
@@ -3492,19 +3928,23 @@
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 15.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db"
         },
         {
           "direction": "in",
           "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
           "symbol": "spWETH",
           "amount": 15.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:139",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24369535:83:110",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x770338d8e06a11ce8d0ed78d283f197ad67d9e507eb9542c95b5488e4fdafb0b",
       "datetime_utc": "2026-02-02T13:41:11Z",
@@ -3515,7 +3955,7 @@
       "transfers": []
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:143",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375446:184:112",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x1c075fdf061b131714eee31658666ece7229102d221a2ed4db046cc5220f0ba0",
       "datetime_utc": "2026-02-03T09:30:11Z",
@@ -3529,19 +3969,23 @@
           "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
           "symbol": "spweETH",
           "amount": 80.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 80.0,
-          "count": 1
+          "count": 1,
+          "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:145",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375471:122:114",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xa754533643c14ade49689e7a52aebcd73c8718b85d0dfaa74a818c172343dc6a",
       "datetime_utc": "2026-02-03T09:35:11Z",
@@ -3555,19 +3999,23 @@
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 179211.9224696432,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         },
         {
           "direction": "in",
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 1344089.4185223726,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:150",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375694:176:115",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x14306ec98b803a7260ad18c67b71105652c0ef3617819531bedee1191c4ee7c4",
       "datetime_utc": "2026-02-03T10:19:47Z",
@@ -3581,12 +4029,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 200056.394117,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:152",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375703:378:117",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x23ef8291d32f38ff8cec3d588e7816ec4e18dd71a3151a35c4698f71d62c0fe1",
       "datetime_utc": "2026-02-03T10:21:35Z",
@@ -3600,19 +4050,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 200056.394267,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 200056.394267,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:153",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375709:578:118",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x56746d0e9962f10bd8942049d5e3c451253ebda36e617c9cc8014b01fe478430",
       "datetime_utc": "2026-02-03T10:22:59Z",
@@ -3626,19 +4080,23 @@
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 200056.394267,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
         },
         {
           "direction": "out",
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 199403.08923539484,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:154",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375716:372:119",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x728836cf1e8dda7eb14fb962ba70c37695ce8fbe525b037c46cf72025bf97ff8",
       "datetime_utc": "2026-02-03T10:24:59Z",
@@ -3652,19 +4110,23 @@
           "token": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
           "symbol": "spweETH",
           "amount": 90.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
           "symbol": "weETH",
           "amount": 90.0,
-          "count": 1
+          "count": 1,
+          "from": "0x3cfd5c0d4acaa8faee335842e4f31159fc76b008",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:158",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375736:520:123",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xb52450206ee8d531c574157a6f162abaa1c278eaef7e3681ade3007191d143d7",
       "datetime_utc": "2026-02-03T10:29:23Z",
@@ -3678,12 +4140,14 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 26818.148963878008,
-          "count": 1
+          "count": 1,
+          "from": "0xf3081a2eb8927c0462864ec3fdbe927c842a0893",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:159",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375740:890:124",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x0a33411e012d33d1f3e7bc14ebb18abf53a4af237dbeea30fda12f4e1d989fb3",
       "datetime_utc": "2026-02-03T10:30:11Z",
@@ -3697,19 +4161,23 @@
           "token": "0x01791f726b4103694969820be083196cc7c045ff",
           "symbol": "YB",
           "amount": 26818.148963878008,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x00c600b30fb0400701010f4b080409018b9006e0"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 1.8564610303140947,
-          "count": 1
+          "count": 1,
+          "from": "0x6a000f20005980200259b80c5102003040001068",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:168",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24382222:290:132",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xca14d17b26bfd0fc6e6c870e6c3090c194fe2b81a47d73f0eab46d0838a6562b",
       "datetime_utc": "2026-02-04T08:13:59Z",
@@ -3723,12 +4191,14 @@
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 358322.80844729196,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:169",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390274:254:133",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x66a9f5dc2cc7a7f708f06ff8ab2e4847e54af624217e2c1cfaadedc62477dde8",
       "datetime_utc": "2026-02-05T11:16:35Z",
@@ -3742,12 +4212,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 400176.098112,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:171",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390286:252:135",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x8b7af93492af3a3686d733745842c6524c2738375a09ce54c32939758427a601",
       "datetime_utc": "2026-02-05T11:18:59Z",
@@ -3761,19 +4233,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 200000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 200000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:172",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:128:136",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xbc58e3733bf81583d47c0d0503a5d21bce752608f3cbc064b448ac5e1499dd48",
       "datetime_utc": "2026-02-05T11:20:23Z",
@@ -3787,19 +4263,23 @@
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 200000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
         },
         {
           "direction": "out",
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 199723.35693386378,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:173",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390293:132:137",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x9c9d9640c9d11ca9084b772e26f4d4b97e09fbb1b51c610e472ed3450326fe93",
       "datetime_utc": "2026-02-05T11:20:23Z",
@@ -3813,12 +4293,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 200176.098112,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xfd78ee919681417d192449715b2594ab58f5d002"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:175",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396564:400:139",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x606e88c03d3253293dbe516c53ac77080f40e839a556b7dc5f4f852d76d3572a",
       "datetime_utc": "2026-02-06T08:23:23Z",
@@ -3832,12 +4314,14 @@
           "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
           "symbol": "9SUSDC",
           "amount": 358165.1279399311,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0720ca056f28de043e734d097b999ce9e898e07b"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:176",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396963:421:140",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xdc5118c3890b313f64559dbdc5868244c0f71be8ca95cf09535384b3af8765d6",
       "datetime_utc": "2026-02-06T09:43:23Z",
@@ -3851,12 +4335,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 399837.615629,
-          "count": 1
+          "count": 1,
+          "from": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:178",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396975:87:142",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xce4a40462a47f5fb640454b9095d46cede3c50d9a6dcd8f8c603f442250117fd",
       "datetime_utc": "2026-02-06T09:45:47Z",
@@ -3870,12 +4356,14 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 240000.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xfd78ee919681417d192449715b2594ab58f5d002"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:179",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396983:141:143",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xa4b82f9bd92b83da482a999e0e96a20bd349e603482f7be328235e43d894dd8d",
       "datetime_utc": "2026-02-06T09:47:35Z",
@@ -3889,19 +4377,23 @@
           "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
           "symbol": "USDC",
           "amount": 159837.615629,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x6a000f20005980200259b80c5102003040001068"
         },
         {
           "direction": "in",
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 159837.615629,
-          "count": 1
+          "count": 1,
+          "from": "0x0000000000000000000000000000000000000000",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:180",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396987:176:144",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0x7163c8f360572e895bc5e32ae062ea19ae673b0c0aed32b21860ede9f1317f17",
       "datetime_utc": "2026-02-06T09:48:23Z",
@@ -3915,19 +4407,23 @@
           "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
           "symbol": "USDS",
           "amount": 159837.615629,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0xc02ab1a5eaa8d1b114ef786d9bde108cd4364359"
         },
         {
           "direction": "out",
           "token": "0x8c147debea24fb98ade8dda4bf142992928b449e",
           "symbol": "variableDebtUSDS",
           "amount": 159734.71438859205,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         }
       ]
     },
     {
-      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:181",
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397110:566:145",
       "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
       "tx_hash": "0xd1b2a2bd5ba97d6caa82a0ff5e492e96f39c7fa33286377a19da9698d7099124",
       "datetime_utc": "2026-02-06T10:13:11Z",
@@ -3941,14 +4437,18 @@
           "token": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
           "symbol": "spWETH",
           "amount": 15.0,
-          "count": 1
+          "count": 1,
+          "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "to": "0x0000000000000000000000000000000000000000"
         },
         {
           "direction": "in",
           "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
           "symbol": "WETH",
           "amount": 15.002522015563637,
-          "count": 1
+          "count": 1,
+          "from": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
         }
       ]
     }
@@ -3990,7 +4490,7 @@
     "to_block": 25242078,
     "receipt_transfers": "none",
     "important_only": true,
-    "generated_at_utc": "2026-06-13T05:38:13Z",
+    "generated_at_utc": "2026-06-17T08:10:32Z",
     "dfs": {
       "seed_addresses": [
         "0x325228217e02e31529bf4bc6e32db695ea525669"

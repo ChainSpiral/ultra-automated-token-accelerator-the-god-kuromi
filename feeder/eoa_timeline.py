@@ -36,7 +36,6 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
-import html as html_lib
 import json
 import os
 import re
@@ -48,6 +47,25 @@ import urllib.request
 from collections import Counter, defaultdict
 from decimal import Decimal, InvalidOperation, getcontext
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+
+try:
+    from feeder.counterparty_registry import (
+        classify_counterparty,
+        classify_token_for_graph,
+        counterparty_labels,
+        should_expand_wallet_cluster,
+        token_allowed_for_wallet_cluster,
+        token_allowlist_symbols,
+    )
+except ImportError:
+    from counterparty_registry import (
+        classify_counterparty,
+        classify_token_for_graph,
+        counterparty_labels,
+        should_expand_wallet_cluster,
+        token_allowed_for_wallet_cluster,
+        token_allowlist_symbols,
+    )
 
 getcontext().prec = 80
 
@@ -399,6 +417,7 @@ KNOWN_LABELS = {
     "0xfe6eb3b609a7c8352a241f7f3a21cea4e9209b8f": "Spark ETH vault/receipt",
     "0xb753366082466c4b5984312f0c4bb97554be067e": "f(x) / fxUSD router",
 }
+KNOWN_LABELS.update(counterparty_labels())
 
 DFS_TOKEN_ALLOWLIST = {
     # Native / canonical majors and assets this graph is meant to follow.
@@ -428,129 +447,10 @@ DFS_TOKEN_ALLOWLIST = {
     # details, but only when explicitly known.
     "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1": "aEthrsETH",
 }
-
-TOKEN_REPUTATION_ALLOW = {"ok", "neutral"}
-TOKEN_REPUTATION_BLOCK_TERMS = {
-    "fake",
-    "phishing",
-    "scam",
-    "spam",
-    "suspicious",
-    "unsafe",
-    "malicious",
-    "impersonat",
-}
-
-
-def is_low_signal_token_symbol(symbol: str) -> bool:
-    s = (symbol or "").strip()
-    if not s:
-        return True
-    if not all(32 <= ord(ch) <= 126 for ch in s):
-        return True
-    normalized = re.sub(r"[\s_\-]+", " ", s.lower()).strip()
-    return normalized in {
-        "token",
-        "tkn",
-        "erc20",
-        "unknown",
-        "unknown token",
-        "claim",
-        "airdrop",
-        "reward",
-        "rewards",
-        "voucher",
-    }
-
-
-def etherscan_token_reputation(token: str) -> Dict[str, Any]:
-    token = norm_addr(token)
-    if not is_addr(token):
-        return {"reputation": "", "holders": None, "suspicious": True, "reason": "invalid_token"}
-    key = "etherscan-token-reputation:v2:" + token
-    cached = cache_get(key)
-    if cached is not None:
-        return cached
-
-    out: Dict[str, Any] = {
-        "reputation": "",
-        "holders": None,
-        "suspicious": False,
-        "reason": "",
-        "title": "",
-        "description": "",
-    }
-    try:
-        page = http_text(f"https://etherscan.io/token/{token}", timeout=45)
-    except Exception as exc:
-        out.update(reason=f"etherscan_page_error:{type(exc).__name__}")
-        cache_put(key, out)
-        return out
-
-    desc_match = re.search(
-        r"<meta\s+name=[\"']Description[\"']\s+content=[\"']([^\"']*)",
-        page,
-        re.IGNORECASE,
-    )
-    if desc_match:
-        out["description"] = html_lib.unescape(desc_match.group(1)).strip()
-
-    title_match = re.search(
-        r"id=[\"']ContentPlaceHolder1_spanReputation[\"'].*?title=([\"'])(.*?)\1",
-        page,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if title_match:
-        title = re.sub(r"<[^>]+>", " ", title_match.group(2))
-        out["title"] = html_lib.unescape(re.sub(r"\s+", " ", title)).strip()
-
-    text = " | ".join(str(out.get(k) or "") for k in ("description", "title"))
-    rep_match = re.search(r"Token Rep:\s*([^|<]+)", text, re.IGNORECASE)
-    if not rep_match:
-        rep_match = re.search(r"Reputation\s+([A-Za-z _-]+)\s*:", text, re.IGNORECASE)
-    if rep_match:
-        out["reputation"] = re.sub(r"\s+", " ", rep_match.group(1)).strip().upper()
-
-    holders_match = re.search(r"Holders:\s*([0-9,]+)", text, re.IGNORECASE)
-    if holders_match:
-        try:
-            out["holders"] = int(holders_match.group(1).replace(",", ""))
-        except ValueError:
-            out["holders"] = None
-
-    lowered = text.lower()
-    hit = next((term for term in TOKEN_REPUTATION_BLOCK_TERMS if term in lowered), "")
-    if hit:
-        out.update(suspicious=True, reason=f"etherscan_reputation:{hit}")
-
-    cache_put(key, out)
-    time.sleep(0.18)
-    return out
-
+DFS_TOKEN_ALLOWLIST = token_allowlist_symbols()
 
 def dfs_token_allowed(token: str, symbol: str = "", name: str = "") -> bool:
-    token = norm_addr(token)
-    if token in DFS_TOKEN_ALLOWLIST:
-        return True
-    if not is_addr(token):
-        return False
-    if is_low_signal_token_symbol(symbol) or ((name or "").strip() and is_low_signal_token_symbol(name)):
-        return False
-
-    reputation = etherscan_token_reputation(token)
-    if reputation.get("suspicious"):
-        return False
-
-    rep = str(reputation.get("reputation") or "").strip().lower()
-    if rep in TOKEN_REPUTATION_ALLOW:
-        return True
-
-    holders = reputation.get("holders")
-    contract_name = etherscan_contract_name(token)
-    if rep == "unknown" and isinstance(holders, int) and holders >= 1000 and contract_name:
-        return True
-
-    return False
+    return token_allowed_for_wallet_cluster(token, symbol=symbol, name=name)
 
 
 def label_address(address: str) -> str:
@@ -656,14 +556,17 @@ def classify_call(to_addr: str, method_id: str, function_name: str = "") -> Dict
     to_addr = norm_addr(to_addr)
     method_id = (method_id or "0x").lower()
     fn = function_name or SELECTOR_NAMES.get(method_id, "")
+    counterparty = classify_counterparty(to_addr) if to_addr else {"is_known": False}
+    protocol_label = counterparty.get("label") if counterparty.get("is_known") else cheap_label_address(to_addr)
 
     out = {
         "category": "other_call",
-        "protocol": cheap_label_address(to_addr) if to_addr else "",
+        "protocol": protocol_label if to_addr else "",
         "action": SELECTOR_NAMES.get(method_id) or (fn.split("(")[0] if fn else method_id),
         "priority": 90,
         "needs_receipt": False,
         "notes": [],
+        "counterparty": counterparty if counterparty.get("is_known") else None,
     }
 
     if not to_addr:
@@ -1025,6 +928,8 @@ def build_graph(address_payloads: Dict[str, dict], *, include_receipt_edges: boo
             call = ev.get("call")
             if call and is_addr(call.get("to", "")):
                 target = norm_addr(call["to"])
+                semantic = call.get("semantic") or {}
+                counterparty = semantic.get("counterparty")
                 add_node(
                     nodes,
                     target,
@@ -1044,10 +949,18 @@ def build_graph(address_payloads: Dict[str, dict], *, include_receipt_edges: boo
                         "block_number": ev["block_number"],
                         "timestamp": ev["timestamp"],
                         "event_id": ev["event_id"],
+                        "counterparty": counterparty,
                     }
                 )
                 edge_counter += 1
             for tr in ev.get("transfers", []):
+                token_reputation = classify_token_for_graph(
+                    tr.get("token") or "",
+                    symbol=tr.get("symbol") or "",
+                    name=tr.get("name") or "",
+                )
+                if not token_reputation.get("allowed_for_wallet_cluster"):
+                    continue
                 src = norm_addr(tr["from"])
                 dst = norm_addr(tr["to"])
                 add_node(nodes, src, kind="address")
@@ -1070,11 +983,18 @@ def build_graph(address_payloads: Dict[str, dict], *, include_receipt_edges: boo
                         "block_number": ev["block_number"],
                         "timestamp": ev["timestamp"],
                         "event_id": ev["event_id"],
+                        "token_reputation": token_reputation,
                     }
                 )
                 edge_counter += 1
             if include_receipt_edges:
                 for tr in ev.get("receipt_transfers", []):
+                    token_reputation = classify_token_for_graph(
+                        tr.get("token") or "",
+                        symbol=tr.get("symbol") or "",
+                    )
+                    if not token_reputation.get("allowed_for_wallet_cluster"):
+                        continue
                     src = norm_addr(tr["from"])
                     dst = norm_addr(tr["to"])
                     add_node(nodes, src, kind="address")
@@ -1097,6 +1017,7 @@ def build_graph(address_payloads: Dict[str, dict], *, include_receipt_edges: boo
                             "block_number": ev["block_number"],
                             "timestamp": ev["timestamp"],
                             "event_id": ev["event_id"],
+                            "token_reputation": token_reputation,
                         }
                     )
                     edge_counter += 1
@@ -1234,6 +1155,33 @@ def alchemy_transfer_to_neighbor_row(row: dict, seed: str, relation: str) -> Opt
     }
 
 
+def classify_discovery_neighbor(item: dict) -> Optional[dict]:
+    address = norm_addr(item.get("address") or "")
+    if not is_addr(address):
+        return None
+    out = dict(item)
+    out["address"] = address
+    counterparty = classify_counterparty(address)
+    kind = str(out.get("kind") or wallet_kind(address, resolve_safe_name=False))
+
+    if should_expand_wallet_cluster(address, kind):
+        out["kind"] = "safe" if kind.lower() == "safe" else "EOA"
+        out["cluster_role"] = "wallet"
+        out["expand_wallet_cluster"] = True
+        if counterparty.get("is_known"):
+            out["counterparty"] = counterparty
+        return out
+
+    if counterparty.get("is_known") and counterparty.get("retain_as_endpoint"):
+        out["kind"] = counterparty.get("category") or kind
+        out["cluster_role"] = "endpoint"
+        out["expand_wallet_cluster"] = False
+        out["counterparty"] = counterparty
+        return out
+
+    return None
+
+
 def discover_wallet_neighbors_alchemy(
     address: str,
     start_block: int,
@@ -1259,8 +1207,10 @@ def discover_wallet_neighbors_alchemy(
                 continue
             token = norm_token(row.get("token") or "")
             symbol = row.get("symbol") or "token"
-            if token != "native:eth" and not dfs_token_allowed(token, symbol):
+            token_reputation = classify_token_for_graph(token, symbol=symbol)
+            if not token_reputation.get("allowed_for_wallet_cluster"):
                 continue
+            row["token_reputation"] = token_reputation
             neighbor = norm_addr(row.get("to") if relation == "out" else row.get("from"))
             if not neighbor or neighbor == address or neighbor == ZERO:
                 continue
@@ -1293,13 +1243,12 @@ def discover_wallet_neighbors_alchemy(
         key=lambda x: (-(x["transfer_count"] or 0), -(x["last_block"] or 0), x["address"]),
     )
     for item in candidates:
-        kind = wallet_kind(item["address"], resolve_safe_name=False)
-        if kind not in ("EOA", "safe"):
-            continue
-        item["kind"] = kind
         item["symbols"] = sorted(item["symbols"])
         item["transfers"] = sorted(item.get("transfers") or [], key=lambda x: (x.get("block_number") or 0, x.get("tx_hash") or ""))
-        out.append(item)
+        classified = classify_discovery_neighbor(item)
+        if not classified:
+            continue
+        out.append(classified)
         if max_neighbors > 0 and len(out) >= max_neighbors:
             break
     return sorted(out, key=lambda x: (x["first_block"] or 0, x["address"]))
@@ -1353,7 +1302,8 @@ def discover_wallet_neighbors(
         token = norm_addr(row.get("contractAddress") or "")
         symbol = row.get("tokenSymbol") or "token"
         name = row.get("tokenName") or ""
-        if not dfs_token_allowed(token, symbol, name):
+        token_reputation = classify_token_for_graph(token, symbol=symbol, name=name)
+        if not token_reputation.get("allowed_for_wallet_cluster"):
             continue
         decimals = int(row.get("tokenDecimal") or 0)
         raw_value = row.get("value") or "0"
@@ -1394,6 +1344,7 @@ def discover_wallet_neighbors(
                 "from": src,
                 "to": dst,
                 "direction": "out" if src == address else "in",
+                "token_reputation": token_reputation,
             }
         )
         if block == item["last_block"]:
@@ -1443,6 +1394,7 @@ def discover_wallet_neighbors(
         item["first_block"] = block if item["first_block"] is None else min(item["first_block"], block)
         item["last_block"] = block if item["last_block"] is None else max(item["last_block"], block)
         item["symbols"].add("ETH")
+        token_reputation = classify_token_for_graph("native:eth", symbol="ETH")
         item["transfers"].append(
             {
                 "tx_hash": tx_hash,
@@ -1458,6 +1410,7 @@ def discover_wallet_neighbors(
                 "from": src,
                 "to": dst,
                 "direction": "out" if src == address else "in",
+                "token_reputation": token_reputation,
             }
         )
         if block == item["last_block"]:
@@ -1469,16 +1422,29 @@ def discover_wallet_neighbors(
         key=lambda x: (-(x["transfer_count"] or 0), -(x["last_block"] or 0), x["address"]),
     )
     for item in candidates:
-        kind = wallet_kind(item["address"], resolve_safe_name=False)
-        if kind not in ("EOA", "safe"):
-            continue
-        item["kind"] = kind
         item["symbols"] = sorted(item["symbols"])
         item["transfers"] = sorted(item.get("transfers") or [], key=lambda x: (x.get("block_number") or 0, x.get("tx_hash") or ""))
-        out.append(item)
+        classified = classify_discovery_neighbor(item)
+        if not classified:
+            continue
+        out.append(classified)
         if max_neighbors > 0 and len(out) >= max_neighbors:
             break
     return sorted(out, key=lambda x: (x["first_block"] or 0, x["address"]))
+
+
+def discovery_node_from_candidate(item: dict, depth: int, discovered_by: str) -> dict:
+    node = {
+        "address": norm_addr(item.get("address") or ""),
+        "kind": item.get("kind") or "EOA",
+        "depth": depth,
+        "discovered_by": discovered_by,
+        "cluster_role": item.get("cluster_role") or "wallet",
+        "expand_wallet_cluster": bool(item.get("expand_wallet_cluster", True)),
+    }
+    if item.get("counterparty"):
+        node["counterparty"] = item["counterparty"]
+    return node
 
 
 def discover_wallet_dfs(
@@ -1503,11 +1469,11 @@ def discover_wallet_dfs(
         existing = nodes.get(address)
         if existing and existing["depth"] <= depth:
             continue
-        kind = wallet_kind(address)
-        if kind not in ("EOA", "safe"):
+        classified_seed = classify_discovery_neighbor({"address": address, "cluster_role": "wallet"})
+        if not classified_seed:
             continue
-        nodes[address] = {"address": address, "kind": kind, "depth": depth, "discovered_by": discovered_by}
-        if depth >= max_depth:
+        nodes[address] = discovery_node_from_candidate(classified_seed, depth, discovered_by)
+        if not classified_seed.get("expand_wallet_cluster") or depth >= max_depth:
             continue
 
         neighbors = discover_wallet_neighbors(
@@ -1518,24 +1484,35 @@ def discover_wallet_dfs(
             max_neighbors=max_neighbors,
         )
         for nb in reversed(neighbors):
-            if max_addresses > 0 and len(nodes) + len(stack) >= max_addresses and nb["address"] not in nodes:
+            classified_nb = classify_discovery_neighbor(nb)
+            if not classified_nb:
+                continue
+            if (
+                max_addresses > 0
+                and classified_nb.get("expand_wallet_cluster")
+                and len(nodes) + len(stack) >= max_addresses
+                and nb["address"] not in nodes
+            ):
                 continue
             source = nb["address"] if nb["relation"] == "in" else address
             target = address if nb["relation"] == "in" else nb["address"]
-            edges.append(
-                {
-                    "source": source,
-                    "target": target,
-                    "relation": nb["relation"],
-                    "symbols": nb["symbols"],
-                    "transfer_count": nb["transfer_count"],
-                    "first_block": nb["first_block"],
-                    "last_block": nb["last_block"],
-                    "sample_tx": nb["sample_tx"],
-                    "transfers": nb.get("transfers") or [],
-                }
-            )
-            if nb["address"] not in nodes:
+            edge = {
+                "source": source,
+                "target": target,
+                "relation": nb["relation"],
+                "symbols": nb["symbols"],
+                "transfer_count": nb["transfer_count"],
+                "first_block": nb["first_block"],
+                "last_block": nb["last_block"],
+                "sample_tx": nb["sample_tx"],
+                "transfers": nb.get("transfers") or [],
+            }
+            if classified_nb.get("counterparty"):
+                edge["counterparty"] = classified_nb["counterparty"]
+            edges.append(edge)
+            if classified_nb.get("cluster_role") == "endpoint" and nb["address"] not in nodes:
+                nodes[nb["address"]] = discovery_node_from_candidate(classified_nb, depth + 1, nb["relation"])
+            elif classified_nb.get("expand_wallet_cluster") and nb["address"] not in nodes:
                 stack.append((nb["address"], depth + 1, nb["relation"]))
 
     ordered_nodes = sorted(nodes.values(), key=lambda x: (x["depth"], x["address"]))
@@ -1663,6 +1640,62 @@ def edge_label_from_details(details: List[dict], fallback: str = "flow") -> str:
     return f"{len(details)} tx | {action_label}"
 
 
+def discovery_flow_node_id(addr: str, dnode: Optional[dict] = None) -> str:
+    addr = norm_addr(addr)
+    if dnode and dnode.get("cluster_role") == "endpoint":
+        return f"counterparty:{addr}"
+    return f"eoa:{addr}"
+
+
+def discovery_flow_node(dnode: dict, lane: int) -> Optional[dict]:
+    addr = norm_addr(dnode.get("address") or "")
+    if not is_addr(addr):
+        return None
+    role = dnode.get("cluster_role") or "wallet"
+    counterparty = dnode.get("counterparty") or {}
+    if role == "endpoint":
+        category = counterparty.get("category") or dnode.get("kind") or "counterparty"
+        return {
+            "id": discovery_flow_node_id(addr, dnode),
+            "type": "protocol" if category in {"bridge", "router", "solver", "protocol_contract"} else "counterparty",
+            "label": counterparty.get("label") or cheap_label_address(addr),
+            "data": {
+                "kind": category,
+                "category": category,
+                "protocol": counterparty.get("label") or "",
+                "address": addr,
+                "lane": lane,
+                "step": -1,
+                "dfs_depth": dnode.get("depth"),
+                "discovered_by": dnode.get("discovered_by"),
+                "cluster_role": "endpoint",
+                "exclude_from_wallet_cluster": True,
+                "counterparty": counterparty,
+                "category_counts": {},
+            },
+        }
+
+    kind = str(dnode.get("kind") or "EOA")
+    wallet_kind = "safe" if kind.lower() == "safe" else "eoa"
+    label_kind = "Safe" if wallet_kind == "safe" else "EOA"
+    return {
+        "id": discovery_flow_node_id(addr, dnode),
+        "type": "eoa",
+        "label": f"{label_kind} {short_addr(addr)}",
+        "data": {
+            "kind": wallet_kind,
+            "address": addr,
+            "lane": lane,
+            "step": -1,
+            "dfs_depth": dnode.get("depth"),
+            "discovered_by": dnode.get("discovered_by"),
+            "cluster_role": "wallet",
+            "event_count": 0,
+            "category_counts": {},
+        },
+    }
+
+
 def build_eoa_flow_view(
     address_payloads: Dict[str, dict],
     *,
@@ -1685,7 +1718,16 @@ def build_eoa_flow_view(
     def add_flow_node(node: dict) -> None:
         nodes.setdefault(node["id"], node)
 
-    def add_flow_edge(source: str, target: str, edge_type: str, category: str, detail: Optional[dict] = None, label: Optional[str] = None, tx_hash: Optional[str] = None) -> None:
+    def add_flow_edge(
+        source: str,
+        target: str,
+        edge_type: str,
+        category: str,
+        detail: Optional[dict] = None,
+        label: Optional[str] = None,
+        tx_hash: Optional[str] = None,
+        metadata: Optional[dict] = None,
+    ) -> None:
         key = (source, target, edge_type, category)
         edge = edge_buckets.setdefault(
             key,
@@ -1699,6 +1741,8 @@ def build_eoa_flow_view(
                 "details": [],
             },
         )
+        if metadata:
+            edge.update(metadata)
         if detail:
             edge["details"].append(detail)
             edge["tx_hash"] = detail.get("tx_hash") or edge.get("tx_hash")
@@ -1747,7 +1791,8 @@ def build_eoa_flow_view(
                     continue
                 token = norm_token(tr.get("token") or "")
                 symbol = tr.get("symbol") or "token"
-                if not dfs_token_allowed(token, symbol):
+                token_reputation = classify_token_for_graph(token, symbol=symbol, name=tr.get("name") or "")
+                if not token_reputation.get("allowed_for_wallet_cluster"):
                     continue
                 amount = maybe_float(tr.get("amount") or "")
                 label = f"{fmt_num(amount)} {symbol}" if amount is not None else symbol
@@ -1759,6 +1804,7 @@ def build_eoa_flow_view(
                         "symbol": symbol,
                         "amount": amount,
                         "count": 1,
+                        "token_reputation": token_reputation,
                     }
                 ]
                 add_flow_edge(
@@ -1773,6 +1819,8 @@ def build_eoa_flow_view(
 
             if call_to:
                 protocol_id = f"protocol:{call_to}"
+                call_semantic = call.get("semantic") or {}
+                counterparty = call_semantic.get("counterparty")
                 add_flow_node(
                     {
                         "id": protocol_id,
@@ -1782,6 +1830,7 @@ def build_eoa_flow_view(
                             "kind": "protocol",
                             "category": category,
                             "address": call_to,
+                            "counterparty": counterparty,
                         },
                     }
                 )
@@ -1793,47 +1842,43 @@ def build_eoa_flow_view(
                     detail,
                     label=ev.get("action") or category,
                     tx_hash=ev.get("tx_hash"),
+                    metadata={"counterparty": counterparty} if counterparty else None,
                 )
             compact_events.append(
                 detail
             )
 
     if discovery:
-        for dnode in discovery.get("nodes", []):
+        for lane, dnode in enumerate(discovery.get("nodes", [])):
             addr = norm_addr(dnode.get("address") or "")
             if not is_addr(addr):
                 continue
-            eoa_id = f"eoa:{addr}"
-            if eoa_id not in nodes:
-                add_flow_node(
-                    {
-                        "id": eoa_id,
-                        "type": "eoa",
-                        "label": f"{dnode.get('kind', 'EOA')} {short_addr(addr)}",
-                        "data": {
-                            "kind": "eoa",
-                            "address": addr,
-                            "lane": len(nodes),
-                            "step": -1,
-                            "event_count": 0,
-                            "dfs_depth": dnode.get("depth"),
-                        },
-                    }
-                )
+            flow_id = discovery_flow_node_id(addr, dnode)
+            if flow_id not in nodes:
+                node = discovery_flow_node(dnode, lane)
+                if node:
+                    add_flow_node(node)
         for i, dedge in enumerate(discovery.get("edges", [])):
             src = norm_addr(dedge.get("source") or "")
             dst = norm_addr(dedge.get("target") or "")
-            if src not in wallet_addresses or dst not in wallet_addresses:
+            src_node = discovered_by_addr.get(src, {})
+            dst_node = discovered_by_addr.get(dst, {})
+            src_id = discovery_flow_node_id(src, src_node)
+            dst_id = discovery_flow_node_id(dst, dst_node)
+            if src_id not in nodes or dst_id not in nodes:
                 continue
+            counterparty = dedge.get("counterparty") or {}
+            category = counterparty.get("category") or "wallet_flow"
             symbols = ",".join(dedge.get("symbols") or [])
             add_flow_edge(
-                f"eoa:{src}",
-                f"eoa:{dst}",
-                "wallet_move",
-                "wallet_flow",
+                src_id,
+                dst_id,
+                "counterparty_flow" if counterparty else "wallet_move",
+                category,
                 None,
                 label=f"{dedge.get('transfer_count', 0)} tx {symbols}".strip(),
                 tx_hash=dedge.get("sample_tx"),
+                metadata={"counterparty": counterparty} if counterparty else None,
             )
 
     edges = []
@@ -1873,34 +1918,25 @@ def build_eoa_discovery_flow_view(discovery: Dict[str, Any], *, max_events_per_a
         addr = norm_addr(dnode.get("address") or "")
         if not is_addr(addr):
             continue
-        kind = str(dnode.get("kind") or "EOA").lower()
-        wallet_kind = "safe" if kind == "safe" else "eoa"
-        label_kind = "Safe" if wallet_kind == "safe" else "EOA"
-        nodes[f"eoa:{addr}"] = {
-            "id": f"eoa:{addr}",
-            "type": "eoa",
-            "label": f"{label_kind} {short_addr(addr)}",
-            "data": {
-                "kind": wallet_kind,
-                "address": addr,
-                "lane": lane,
-                "step": -1,
-                "dfs_depth": dnode.get("depth"),
-                "discovered_by": dnode.get("discovered_by"),
-                "event_count": 0,
-                "category_counts": {},
-            },
-        }
+        node = discovery_flow_node(dnode, lane)
+        if node:
+            nodes[node["id"]] = node
 
     for idx, dedge in enumerate(discovery.get("edges", [])):
         src = norm_addr(dedge.get("source") or "")
         dst = norm_addr(dedge.get("target") or "")
         if not is_addr(src) or not is_addr(dst):
             continue
-        if f"eoa:{src}" not in nodes or f"eoa:{dst}" not in nodes:
+        source_dnode = next((n for n in discovery.get("nodes", []) if norm_addr(n.get("address") or "") == src), {})
+        target_dnode = next((n for n in discovery.get("nodes", []) if norm_addr(n.get("address") or "") == dst), {})
+        source_id = discovery_flow_node_id(src, source_dnode)
+        target_id = discovery_flow_node_id(dst, target_dnode)
+        if source_id not in nodes or target_id not in nodes:
             continue
         symbols = sorted(dedge.get("symbols") or [])
-        category_counts["wallet_flow"] += int(dedge.get("transfer_count") or 0)
+        counterparty = dedge.get("counterparty") or {}
+        category = counterparty.get("category") or "wallet_flow"
+        category_counts[category] += int(dedge.get("transfer_count") or 0)
         details = []
         for transfer_idx, tr in enumerate(dedge.get("transfers") or []):
             tx_hash = tr.get("tx_hash")
@@ -1911,8 +1947,8 @@ def build_eoa_discovery_flow_view(discovery: Dict[str, Any], *, max_events_per_a
                 "tx_hash": tx_hash,
                 "datetime_utc": tr.get("datetime_utc"),
                 "block_number": tr.get("block_number"),
-                "category": "wallet_flow",
-                "protocol": "EOA/Safe transfer",
+                "category": category,
+                "protocol": counterparty.get("label") or "EOA/Safe transfer",
                 "action": "send" if direction == "out" else "receive",
                 "transfers": [{
                     "direction": direction,
@@ -1920,19 +1956,23 @@ def build_eoa_discovery_flow_view(discovery: Dict[str, Any], *, max_events_per_a
                     "symbol": tr.get("symbol") or "token",
                     "amount": tr.get("amount_float"),
                     "count": 1,
+                    "token_reputation": tr.get("token_reputation"),
                 }],
             })
-        edges.append({
+        edge = {
             "id": f"eoa-discovery-edge-{idx}",
-            "source": f"eoa:{src}",
-            "target": f"eoa:{dst}",
-            "edge_type": "wallet_move",
-            "category": "wallet_flow",
+            "source": source_id,
+            "target": target_id,
+            "edge_type": "counterparty_flow" if counterparty else "wallet_move",
+            "category": category,
             "label": f"{dedge.get('transfer_count', 0)} tx" + (f" | {','.join(symbols[:4])}" if symbols else ""),
             "tx_hash": dedge.get("sample_tx"),
             "event_count": int(dedge.get("transfer_count") or 0),
             "details": details,
-        })
+        }
+        if counterparty:
+            edge["counterparty"] = counterparty
+        edges.append(edge)
 
     return {
         "nodes": list(nodes.values()),
@@ -2053,12 +2093,17 @@ def main() -> int:
             max_neighbors=args.max_neighbors_per_address,
             directions=args.dfs_directions,
         )
-        addresses = [node["address"] for node in discovery["nodes"]]
+        addresses = [node["address"] for node in discovery["nodes"] if node.get("expand_wallet_cluster")]
 
     if args.frontend_flow and args.dfs_only:
         if not discovery:
+            fallback_nodes = []
+            for addr in addresses:
+                classified = classify_discovery_neighbor({"address": addr})
+                if classified:
+                    fallback_nodes.append(discovery_node_from_candidate(classified, 0, "seed"))
             discovery = {
-                "nodes": [{"address": addr, "kind": wallet_kind(addr), "depth": 0, "discovered_by": "seed"} for addr in addresses],
+                "nodes": fallback_nodes,
                 "edges": [],
                 "seeds": addresses,
                 "max_depth": 0,

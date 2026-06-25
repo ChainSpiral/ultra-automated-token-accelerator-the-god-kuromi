@@ -1,0 +1,64 @@
+{
+  "nodes": [
+    {
+      "id": "eoa:0xdb80ac7238981699bdc6b02209f3539c242c3de5",
+      "type": "eoa",
+      "label": "EOA 0xdb80...3de5",
+      "data": {
+        "kind": "eoa",
+        "address": "0xdb80ac7238981699bdc6b02209f3539c242c3de5",
+        "lane": 0,
+        "step": -1,
+        "dfs_depth": 0,
+        "discovered_by": "seed",
+        "event_count": 0,
+        "first_seen_utc": "2026-02-08T08:16:35Z",
+        "last_seen_utc": "2026-05-30T23:59:35Z",
+        "category_counts": {}
+      }
+    }
+  ],
+  "edges": [],
+  "events": [],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 1,
+    "event_count": 0,
+    "category_counts": {},
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [
+        {
+          "address": "0xdb80ac7238981699bdc6b02209f3539c242c3de5",
+          "kind": "EOA",
+          "depth": 0,
+          "discovered_by": "seed"
+        }
+      ],
+      "edges": [],
+      "seeds": [
+        "0xdb80ac7238981699bdc6b02209f3539c242c3de5"
+      ],
+      "max_depth": 0,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-17T05:14:16Z",
+    "dfs": {
+      "seed_addresses": [
+        "0xdb80ac7238981699bdc6b02209f3539c242c3de5"
+      ],
+      "depth": 0,
+      "directions": "both",
+      "discovered_addresses": 1,
+      "discovery_edges": 0
+    }
+  }
+}

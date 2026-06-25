@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-18",
+  "purpose": "Deterministic token filter for wallet-cluster DFS and strategy-graph transfer edges.",
+  "default_policy": "deny_unknown_for_wallet_cluster",
+  "rules": [
+    "Only locally allowlisted tokens may create wallet-cluster DFS edges.",
+    "Unknown, low-signal, fake, spoof, scam, phishing, or airdrop-style token labels are denied and may appear only as skipped-token evidence or gaps.",
+    "This registry is not a price or issuer-quality opinion. It only controls whether token transfers are graph-building signals."
+  ],
+  "low_signal_symbols": [
+    "airdrop",
+    "claim",
+    "erc20",
+    "reward",
+    "rewards",
+    "token",
+    "tkn",
+    "unknown",
+    "unknown token",
+    "voucher"
+  ],
+  "block_terms": [
+    "fake",
+    "impersonat",
+    "malicious",
+    "phishing",
+    "scam",
+    "spam",
+    "spoof",
+    "suspicious",
+    "unsafe"
+  ],
+  "chains": {
+    "1": {
+      "name": "ethereum",
+      "allowlisted_tokens": {
+        "native:eth": {
+          "symbol": "ETH",
+          "category": "native_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:MIN_DFS_NATIVE_WEI",
+              "source_type": "local_rule",
+              "description": "Native ETH transfers above the DFS minimum are accepted as wallet-cluster signals.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+          "symbol": "WETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+          "symbol": "USDC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+          "symbol": "USDT",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x6b175474e89094c44da98b954eedeac495271d0f": {
+          "symbol": "DAI",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xdc035d45d973e3ec169d2276ddab16f1e407384f": {
+          "symbol": "USDS",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x4c9edd5852cd905f086c759e8383e09bff1e68b3": {
+          "symbol": "USDe",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x9d39a5de30e57443bff2a8307a4256c8797a3497": {
+          "symbol": "sUSDe",
+          "category": "receipt_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical receipt asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+          "symbol": "wstETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xae7ab96520de3a18e5e111b5eaab095312d7fe84": {
+          "symbol": "stETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee": {
+          "symbol": "weETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7": {
+          "symbol": "rsETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xbf5495efe5db9ce00f80364c8b423567e58d2110": {
+          "symbol": "ezETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xae78736cd615f374d3085123a210448e74fc6393": {
+          "symbol": "rETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xbe9895146f7af43049ca1c1ae358b0541ea49704": {
+          "symbol": "cbETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xa35b1b31ce002fbf2058d22f30f95d405200a15b": {
+          "symbol": "ETHx",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38": {
+          "symbol": "osETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:DFS_TOKEN_ALLOWLIST",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow DFS token allowlist entry migrated into token reputation registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xd9a442856c234a39a81a089c06451ebaa4306a72": {
+          "symbol": "pufETH",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+          "symbol": "WBTC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf": {
+          "symbol": "cbBTC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/tokens.json",
+              "source_type": "local_registry",
+              "description": "Canonical asset in local token registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x8236a87084f8b84306f72007f36f2618a5634494": {
+          "symbol": "LBTC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:DFS_TOKEN_ALLOWLIST",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow DFS token allowlist entry migrated into token reputation registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x657e8c867d8b37dcc18fa4caead9c45eb088c642": {
+          "symbol": "eBTC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:DFS_TOKEN_ALLOWLIST",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow DFS token allowlist entry migrated into token reputation registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x18084fba666a33d37592fa2633fd49a74dd93a88": {
+          "symbol": "tBTC",
+          "category": "canonical_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:DFS_TOKEN_ALLOWLIST",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow DFS token allowlist entry migrated into token reputation registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x2d62109243b87c4ba3ee7ba1d91b0dd0a074d7b1": {
+          "symbol": "aEthrsETH",
+          "category": "receipt_asset",
+          "allowed_for_wallet_cluster": true,
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:DFS_TOKEN_ALLOWLIST",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow DFS token allowlist entry migrated into token reputation registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        }
+      },
+      "blocked_tokens": {}
+    }
+  }
+}

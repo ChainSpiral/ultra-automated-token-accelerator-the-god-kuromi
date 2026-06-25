@@ -1,0 +1,1735 @@
+{
+  "mode": "flow",
+  "nodes": [
+    {
+      "id": "semantic:stream-observed-actors",
+      "type": "semantic",
+      "label": "Stream-controlled actors",
+      "data": {
+        "kind": "cluster",
+        "category": "actor_cluster",
+        "is_seed": true,
+        "in_cycle": false,
+        "member_count": 5,
+        "members": [
+          "Stream/deUSD observed actor \u00b7 0x1597e4b7cf6d2877a1d690b6088668afdb045763",
+          "deUSD/sdeUSD observed actor \u00b7 0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a",
+          "Stream/deUSD routing actor \u00b7 0x33a47b816cf4fc6698b4cf1b876da9783b18b325",
+          "deUSD mint receiver \u00b7 0x25e028a45a6012763a76145d7ceea3587015e990",
+          "xUSD owner Safe / custody surface \u00b7 0x14bcd9da052cdc6fe0b9446d5a616d5b7b4d4550"
+        ]
+      }
+    },
+    {
+      "id": "semantic:stream-xusd-minting-surface",
+      "type": "semantic",
+      "label": "Stream xUSD mint/redeem surface",
+      "data": {
+        "kind": "protocol",
+        "category": "mint_surface",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Durable protocol surface that receives stablecoin funding and issues or burns xUSD",
+          "Self-mint is the actor pattern inferred from edges around this surface, not this node itself"
+        ]
+      }
+    },
+    {
+      "id": "semantic:elixir-observed-actors",
+      "type": "semantic",
+      "label": "Elixir-related actors",
+      "data": {
+        "kind": "cluster",
+        "category": "actor_cluster",
+        "is_seed": true,
+        "in_cycle": false,
+        "member_count": 2,
+        "members": [
+          "Elixir mint/redeem proxy \u00b7 0x69088d25a635d22dcbe7c4a5c7707b9cc64bd114",
+          "Elixir Safe actor \u00b7 0x738744237b7fd97af670d9ddf54390c24263cea8"
+        ]
+      }
+    },
+    {
+      "id": "protocol:ethereum:elixir:sdeusd-staking-vault",
+      "type": "semantic",
+      "label": "Elixir sdeUSD staking vault",
+      "data": {
+        "kind": "protocol",
+        "category": "staking_vault",
+        "is_seed": true,
+        "in_cycle": false,
+        "address": "0x5C5b196aBE0d54485975D1Ec29617D42D9198326",
+        "chain": "ethereum",
+        "members": [
+          "The same contract is the staking vault surface and the sdeUSD receipt token contract",
+          "Direct read: asset() = deUSD 0x1570...a138",
+          "Direct read: convertToAssets(1 sdeUSD) = 1.070566728454991870 deUSD at block 25,344,736"
+        ]
+      }
+    },
+    {
+      "id": "0x1bdb4c119225abaca0bfe12610789902851221ab",
+      "type": "address",
+      "label": "Elixir signer / USDC funder",
+      "data": {
+        "kind": "eoa",
+        "category": "operator",
+        "is_seed": true,
+        "in_cycle": false,
+        "address": "0x1bdb4c119225abaca0bfe12610789902851221ab",
+        "chain": "plume",
+        "members": [
+          "Sent 70.498M Plume USDC to Safe 0xaf8d...b070 before the Stream incident",
+          "Also appears as one owner of the 3-of-5 Safe"
+        ]
+      }
+    },
+    {
+      "id": "0xaf8d3fc487261b04256a1cc433856cc808eeb070",
+      "type": "address",
+      "label": "Elixir-linked Plume Safe",
+      "data": {
+        "kind": "safe",
+        "category": "lender_cluster",
+        "is_seed": true,
+        "in_cycle": false,
+        "address": "0xaf8d3fc487261b04256a1cc433856cc808eeb070",
+        "chain": "plume",
+        "members": [
+          "GnosisSafeProxy on Plume",
+          "Safe threshold: 3",
+          "Owners observed onchain: 0xa0d4...e2b5, 0x1bdb...21ab, 0xb42d...5229, 0x7373...4a5, 0xb7de...0357",
+          "Funded with USDC by 0x1bdb...21ab and supplied nearly all USDC into the private xUSD/USDC Morpho market"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-dex-routing",
+      "type": "semantic",
+      "label": "DEX / solver execution",
+      "data": {
+        "kind": "protocol",
+        "category": "solver",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "CoW Protocol, Uniswap routing, and same-tx solver routes observed in receipts"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-crosschain-bridges",
+      "type": "semantic",
+      "label": "Bridge exits / cross-chain wrappers",
+      "data": {
+        "kind": "protocol",
+        "category": "bridge",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "USDT0 OAdapterUpgradeable \u00b7 0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+          "Interport CCTP v2 Bridge \u00b7 0x674cb5133a2deaa4abe86ed56cb7555960966320",
+          "Agglayer vbUSDC Token \u00b7 0x53e82abbb12638f09d9e624578ccb666217a765e",
+          "SocketGateway \u00b7 0x3a23f943181408eac424116af7b7790c94cb97a5"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-mev-routing",
+      "type": "semantic",
+      "label": "MEV / solver counterparties",
+      "data": {
+        "kind": "protocol",
+        "category": "solver",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Etherscan-labeled MEV Bot 0x8c86...f940 \u00b7 0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-aave-usdc-position",
+      "type": "semantic",
+      "label": "Aave V3 USDC position surface",
+      "data": {
+        "kind": "protocol",
+        "category": "lending",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Aave Ethereum USDC V3 aToken \u00b7 0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-pusd-minter",
+      "type": "semantic",
+      "label": "pUSD minter / tokenized cash surface",
+      "data": {
+        "kind": "protocol",
+        "category": "mint_surface",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Plume pUSD TellerWithMultiAssetSupportPredicateProxy \u00b7 0x6104fe10ca937a086ba7adbd0910a4733d380cb6"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-opaque-external-outflows",
+      "type": "semantic",
+      "label": "Unlabeled external outflow addresses",
+      "data": {
+        "kind": "cluster",
+        "category": "opaque_boundary",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "unlabeled deUSD holder contract \u00b7 0xd629edc5f1ff4cb7d9dd0a5be72c1d9fc5d02709",
+          "unlabeled EOA receiving USDC \u00b7 0xa65e4b8af4d325838d68fd9ddf925ea3ca96f167",
+          "No confirmed CEX deposit label is attached to these endpoints in the current artifact."
+        ]
+      }
+    },
+    {
+      "id": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "type": "semantic",
+      "label": "Plume Morpho xUSD/USDC private market",
+      "data": {
+        "kind": "market",
+        "category": "lending",
+        "is_seed": true,
+        "in_cycle": false,
+        "chain": "plume",
+        "market_id": "0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+        "members": [
+          "Loan token: USDC 0x2223...a7af",
+          "Collateral token: xUSD 0x6eaf...bb4c",
+          "LLTV: 86%",
+          "Block 36,900,000 snapshot: 68.0168M USDC supplied, 68.0168M USDC borrowed, effectively zero idle liquidity",
+          "The material lender is Safe 0xaf8d...b070; the material borrower is Stream actor 0x1597...5763"
+        ]
+      }
+    },
+    {
+      "id": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "type": "semantic",
+      "label": "Morpho sdeUSD/USDC market",
+      "data": {
+        "kind": "market",
+        "category": "lending",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Market selected because Stream-controlled actor has onchain Morpho collateral/borrow logs here",
+          "Current Morpho snapshot shows the same Stream actor as the dominant USDC borrower",
+          "Collateral token: sdeUSD vault shares",
+          "Loan token: USDC"
+        ]
+      }
+    },
+    {
+      "id": "semantic:presentation-metamorpho-supplier-vaults",
+      "type": "semantic",
+      "label": "MetaMorpho USDC supplier vaults",
+      "data": {
+        "kind": "cluster",
+        "category": "lender_cluster",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Top suppliers from Morpho marketPositions SupplyShares",
+          "Examples checked onchain: Relend USDC, Usual Boosted USDC, Adpend USDC"
+        ]
+      }
+    },
+    {
+      "id": "market:morpho:0xbd1ad3b968f5f0552dbd8cf1989a62881407c5cccf9e49fb3657c8731caf0c1f",
+      "type": "semantic",
+      "label": "Morpho deUSD/USDC market",
+      "data": {
+        "kind": "market",
+        "category": "lending",
+        "is_seed": true,
+        "in_cycle": false,
+        "members": [
+          "Market included because the current top supplier is an Elixir-named MetaMorpho vault",
+          "Collateral token: deUSD",
+          "Loan token: USDC"
+        ]
+      }
+    },
+    {
+      "id": "0x1265a81d42d513df40d0031f8f2e1346954d665a",
+      "type": "address",
+      "label": "MEV Capital Elixir USDC vault",
+      "data": {
+        "kind": "cluster",
+        "category": "lender_cluster",
+        "is_seed": true,
+        "in_cycle": false,
+        "address": "0x1265a81d42d513df40d0031f8f2e1346954d665a",
+        "members": [
+          "Onchain name(): MEV Capital Elixir USDC",
+          "Onchain symbol(): MC.eUSDC",
+          "Address: 0x1265a81d42d513df40d0031f8f2e1346954d665a"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0x1265a81d42d513df40d0031f8f2e1346954d665a->market:morpho:0xbd1ad3b968f5f0552dbd8cf1989a62881407c5cccf9e49fb3657c8731caf0c1f:elixir_vault_supply_deusd_usdc:USDC",
+      "source": "0x1265a81d42d513df40d0031f8f2e1346954d665a",
+      "target": "market:morpho:0xbd1ad3b968f5f0552dbd8cf1989a62881407c5cccf9e49fb3657c8731caf0c1f",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 133854.458586,
+      "count": 1,
+      "role": "elixir_vault_supply_deusd_usdc",
+      "category": "lending",
+      "block_range": [
+        0,
+        0
+      ],
+      "sample_tx": null,
+      "sample_txs": [],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=morpho_current_supply_snapshot; source=semantic:morpho-position-group:0xbd1ad3b968f5f0552dbd8cf1989a62881407c5cccf9e49fb3657c8731caf0c1f:supply; target=market:morpho:0xbd1ad3b968f5f0552dbd8cf1989a62881407c5cccf9e49fb3657c8731caf0c1f; tx=None",
+        "Morpho API current marketPositions; order=SupplyShares; user=0x1265...665a; market=Morpho deUSD/USDC 0xbd1a...0c1f; usd=133831.50; source=morpho_graphql:marketPositions"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "source_label": "Morpho deUSD/USDC 0xbd1a...0c1f top suppliers",
+      "label": "MORPHO lender side: MEV Capital Elixir USDC supplied USDC: 133.9K USDC across 1 transfers"
+    },
+    {
+      "id": "0x1bdb4c119225abaca0bfe12610789902851221ab->0xaf8d3fc487261b04256a1cc433856cc808eeb070:plume_elixir_safe_funding:USDC",
+      "source": "0x1bdb4c119225abaca0bfe12610789902851221ab",
+      "target": "0xaf8d3fc487261b04256a1cc433856cc808eeb070",
+      "asset": "USDC",
+      "token": null,
+      "amount": 70498049.005,
+      "count": 6,
+      "role": "plume_elixir_safe_funding",
+      "category": "presentation",
+      "block_range": [
+        32766671,
+        35636955
+      ],
+      "sample_tx": "0xc186168e12d5afd944b94cdd85e9ad37419dec89e0121ccb45e82b2275613327",
+      "sample_txs": [
+        "0xc186168e12d5afd944b94cdd85e9ad37419dec89e0121ccb45e82b2275613327",
+        "0x56fe4133d2374f656dc40cee627006db49822577fbd2047c7e135e7e0663197c",
+        "0xc186e6c8976c14e7f16d4d08195d38e2a98799ba51e7da74c6cec88a8e813c08",
+        "0x6dc20ed3bd88bcb59a073e11b7aceb80c770a4a6df7f0d98d6267b002509e141",
+        "0x4c3720b72c2c265a30736ad13aa6ea7774856d503732b02885a00bcd03a65834"
+      ],
+      "semantic_routes": [
+        "Plume USDC Transfer logs: 0x1bdb...21ab funded Safe 0xaf8d...b070 with 70.498M USDC before the incident."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "plume",
+      "label": "PLUME private-market step 1: Elixir signer funded the Safe with USDC: 70.50M USDC across 6 transfers"
+    },
+    {
+      "id": "0xaf8d3fc487261b04256a1cc433856cc808eeb070->market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d:plume_elixir_usdc_supply:USDC",
+      "source": "0xaf8d3fc487261b04256a1cc433856cc808eeb070",
+      "target": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "asset": "USDC",
+      "token": null,
+      "amount": 68016782.80113,
+      "count": 7,
+      "role": "plume_elixir_usdc_supply",
+      "category": "presentation",
+      "block_range": [
+        32778831,
+        36900000
+      ],
+      "sample_tx": "0xd14c41ac6459119407c233dbb1f6ac757297fe7ab506e7e933f6a1d5f54a7830",
+      "sample_txs": [
+        "0xd14c41ac6459119407c233dbb1f6ac757297fe7ab506e7e933f6a1d5f54a7830",
+        "0xd7d18f68784bd59e3d1e39813cfdae59d9d652ccf07f99d292aac1dcef4bb786",
+        "0xe8e27e1062c8f175989fe93eb01c31c60dc4e19cbf5f0cff6e95732dfc024928",
+        "0xcfbd232c430e19c1fbb092b8d693a7a1e355e43e5fc5d306401628cd509ae7ab"
+      ],
+      "semantic_routes": [
+        "Plume Morpho market() at block 36,900,000: market supply was 68.0168M USDC; Safe 0xaf8d...b070 held essentially all supply shares."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "plume",
+      "market_id": "0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "evidence_block": 36900000,
+      "label": "PLUME private-market step 2: Elixir-linked Safe supplied USDC: 68.02M USDC across 7 transfers"
+    },
+    {
+      "id": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129->semantic:stream-observed-actors:stream_current_usdc_borrow:USDC",
+      "source": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 807130871.279924,
+      "count": 1,
+      "role": "stream_current_usdc_borrow",
+      "category": "lending",
+      "block_range": [
+        0,
+        0
+      ],
+      "sample_tx": null,
+      "sample_txs": [],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=morpho_current_borrow_snapshot; source=market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129; target=0x1597e4b7cf6d2877a1d690b6088668afdb045763; tx=None",
+        "Morpho API current marketPositions; order=BorrowShares; user=0x1597...5763; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=806992459.32; source=morpho_graphql:marketPositions"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "MORPHO current snapshot: Stream still owes USDC: 807.13M USDC across 1 transfers"
+    },
+    {
+      "id": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129->semantic:stream-observed-actors:stream_historical_usdc_borrow:USDC",
+      "source": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 13300001.0,
+      "count": 5,
+      "role": "stream_historical_usdc_borrow",
+      "category": "lending",
+      "block_range": [
+        23677405,
+        23680706
+      ],
+      "sample_tx": "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+      "sample_txs": [
+        "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "0x365ef618d04253e2c1fc3a126f4368401300df21f1535f1ac8f8ac4c4d57e188",
+        "0xfa1654dcf2b37c9c05739c476d69590448557cc4b883c4d55d1ccb2a32fd18ff",
+        "0x19687445d2f14474a8ec725c66d03e7942a4a29242eda6627f8de803223ccfc2",
+        "0x4b41ed90462b561a13b3862d125ae8995ccab419c7cfb9b7c709fca0ee2a6a68"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=morpho_borrow; source=market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129; target=0x1597e4b7cf6d2877a1d690b6088668afdb045763; tx=0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "Morpho Blue borrow; onBehalf=0x1597...5763; caller=0x4a6c...0ae0; receiver=0x1597...5763; market=Morpho sdeUSD/USDC 0x0f95...b129"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "MORPHO borrow txs: Stream borrowed USDC: 13.30M USDC across 5 transfers"
+    },
+    {
+      "id": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d->semantic:stream-observed-actors:plume_stream_usdc_borrow:USDC",
+      "source": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDC",
+      "token": null,
+      "amount": 68011177.445289,
+      "count": 11,
+      "role": "plume_stream_usdc_borrow",
+      "category": "presentation",
+      "block_range": [
+        32783126,
+        36900000
+      ],
+      "sample_tx": "0xd6fc5062dfaf4f00fb38ccf5475a58f03e203ceaacdaa8cee2f7c606f92b131e",
+      "sample_txs": [
+        "0xd6fc5062dfaf4f00fb38ccf5475a58f03e203ceaacdaa8cee2f7c606f92b131e",
+        "0x7e96edfa3633d0daeacd22682d9e1f3406dad79ffec417058f0c3e08883c3e7a",
+        "0xe4e7577d9ed3788566bb4d5ca2fbe68a1338f4e5d236c6ec19c67c36341ddb9f"
+      ],
+      "semantic_routes": [
+        "Plume Morpho position() at block 36,900,000: Stream actor 0x1597...5763 owed 68.0112M USDC against 65.8401M xUSD collateral."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "plume",
+      "market_id": "0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "evidence_block": 36900000,
+      "label": "PLUME private-market step 5: Stream borrowed USDC: 68.01M USDC across 11 transfers"
+    },
+    {
+      "id": "protocol:ethereum:elixir:sdeusd-staking-vault->market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129:sdeusd_market_collateral_asset:sdeUSD",
+      "source": "protocol:ethereum:elixir:sdeusd-staking-vault",
+      "target": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "asset": "sdeUSD",
+      "token": null,
+      "amount": 0.0,
+      "count": 1,
+      "role": "sdeusd_market_collateral_asset",
+      "category": "market_asset",
+      "block_range": [
+        0,
+        0
+      ],
+      "sample_tx": null,
+      "sample_txs": [],
+      "semantic_routes": [
+        "Morpho adapter evidence for this market includes Stream sdeUSD collateral logs and a current sdeUSD collateral snapshot. Loan asset is USDC."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "ethereum",
+      "label": "MARKET PARAM: Morpho sdeUSD/USDC treats sdeUSD vault shares as collateral: sdeUSD"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->protocol:ethereum:elixir:sdeusd-staking-vault:deusd_sdeusd_wrapper_surface:deUSD/sdeUSD",
+      "source": "semantic:elixir-observed-actors",
+      "target": "protocol:ethereum:elixir:sdeusd-staking-vault",
+      "asset": "deUSD/sdeUSD",
+      "token": null,
+      "amount": 0.0,
+      "count": 1,
+      "role": "deusd_sdeusd_wrapper_surface",
+      "category": "wrapper",
+      "block_range": [
+        0,
+        0
+      ],
+      "sample_tx": null,
+      "sample_txs": [],
+      "semantic_routes": [
+        "Direct eth_call at Ethereum block 25,344,736: sdeUSD contract asset() returned deUSD 0x15700B564Ca08D9439C58cA5053166E8317aa138."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "ethereum",
+      "evidence_block": 25344736,
+      "label": "WRAPPER: deUSD is staked through Elixir's sdeUSD vault: deUSD/sdeUSD"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->protocol:ethereum:elixir:sdeusd-staking-vault:elixir_token_burn:deUSD",
+      "source": "semantic:elixir-observed-actors",
+      "target": "protocol:ethereum:elixir:sdeusd-staking-vault",
+      "asset": "deUSD",
+      "token": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+      "amount": 15538933.791544,
+      "count": 27,
+      "role": "elixir_token_burn",
+      "category": "wrapper",
+      "block_range": [
+        23726902,
+        23735303
+      ],
+      "sample_tx": "0x18555b0f9ed8541a2fbffe78e0f709ba2a657e1408e6423cbebc156b6a4f7c67",
+      "sample_txs": [
+        "0x18555b0f9ed8541a2fbffe78e0f709ba2a657e1408e6423cbebc156b6a4f7c67",
+        "0x756f0962ade83b169e3e65985ef6fffddd42dc7ff13859bf8ee8f6f41f15e85d",
+        "0xee9658a9791c272f2b190564f7debe86d74adf62504420f00bdbbb91e6e6e96c",
+        "0xffb6251bfc9320c8ee667b7db22f8f847e81bebd8d7ca247aab3cdc2dd221ca7",
+        "0x9aba4c5ef61dd95a8b34f0af6fa4aba41f21f91270965eb5902e30ebe413315d"
+      ],
+      "semantic_routes": [
+        "Elixir actor burn/redeem transfer aggregate; raw source=0x738744237b7fd97af670d9ddf54390c24263cea8; raw target=0x0000000000000000000000000000000000000000; sample tx=0x18555b0f9ed8541a2fbffe78e0f709ba2a657e1408e6423cbebc156b6a4f7c67"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir-side redeem / burn flow: 15.54M deUSD across 27 transfers"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->protocol:ethereum:elixir:sdeusd-staking-vault:elixir_token_burn:sdeUSD",
+      "source": "semantic:elixir-observed-actors",
+      "target": "protocol:ethereum:elixir:sdeusd-staking-vault",
+      "asset": "sdeUSD",
+      "token": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+      "amount": 10573142.68,
+      "count": 10,
+      "role": "elixir_token_burn",
+      "category": "wrapper",
+      "block_range": [
+        23729532,
+        23729903
+      ],
+      "sample_tx": "0x6b1b5fb31a92e5c49d35d66e166a67a106030b5b467db6d67dea5f2ab185ad8c",
+      "sample_txs": [
+        "0x6b1b5fb31a92e5c49d35d66e166a67a106030b5b467db6d67dea5f2ab185ad8c",
+        "0x6db4704df701595dc0a0ef4b4f8325a9e984d2619497e82f7a0efa95a01d1c35",
+        "0xb5e0e4a975476e9b43177be92ca5704202e5d6833d041d02a5f1ecbe817ecb51",
+        "0x1e3e469c7358ff0eedffcd13c75af0409733a76c362c75daaafaceb78c2ff4d6",
+        "0xcdbd4d9ce3d185db1b9fcd144b1052f3bebf3855f59856f9535ae4e37c503671"
+      ],
+      "semantic_routes": [
+        "Elixir actor burn/redeem transfer aggregate; raw source=0x738744237b7fd97af670d9ddf54390c24263cea8; raw target=0x0000000000000000000000000000000000000000; sample tx=0x6b1b5fb31a92e5c49d35d66e166a67a106030b5b467db6d67dea5f2ab185ad8c"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir-side redeem / burn flow: 10.57M sdeUSD across 10 transfers"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->semantic:presentation-dex-routing:elixir_swap_paid:USDC",
+      "source": "semantic:elixir-observed-actors",
+      "target": "semantic:presentation-dex-routing",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 17921101.977359,
+      "count": 13,
+      "role": "elixir_swap_paid",
+      "category": "presentation",
+      "block_range": [
+        23719595,
+        23736445
+      ],
+      "sample_tx": "0x1c7635beb603541d4316709cb8f22d726763e7393d732966c001df2f976e9da2",
+      "sample_txs": [
+        "0x1c7635beb603541d4316709cb8f22d726763e7393d732966c001df2f976e9da2",
+        "0x1d2036fce616e4a927ff43320297399506aa8b02e5dfd537e252010fd7364493",
+        "0xe038af651fb11f92b67242bdd4c32011d87a9b4ba39fff1dd1583c1eaa8c870e",
+        "0xee55d8a198c8706e87da058b3e71b1ad265bc6300679099f246c4bf4303de129",
+        "0x76df9b65d8e32ebd454f7ca314b924d4a266fce0825ec34dc3ef2bda92271757"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x738744237b7fd97af670d9ddf54390c24263cea8; target=0x9008d19f58aabd9ed0d60971565aa8510560ab41; tx=0x1c7635beb603541d4316709cb8f22d726763e7393d732966c001df2f976e9da2",
+        "actor paid 4.93M USDC; got 4.93M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 750.0K USDC; got 750.1K USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 750.0K USDC; got 750.1K USDT via CoW Protocol GPv2Settlement",
+        "actor paid 1.41M USDC; got 1.41M USDT via CoW Protocol GPv2Settlement",
+        "actor paid 1.41M USDC; got 1.41M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir paid into DEX / solver routing: 17.92M USDC across 13 transfers"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->semantic:presentation-dex-routing:elixir_swap_paid:USDT",
+      "source": "semantic:elixir-observed-actors",
+      "target": "semantic:presentation-dex-routing",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 28849135.48777,
+      "count": 25,
+      "role": "elixir_swap_paid",
+      "category": "presentation",
+      "block_range": [
+        23672087,
+        23743779
+      ],
+      "sample_tx": "0x7180552294145c8f172918d486274a974cd80f789313e417d4d8f514a3d04ef9",
+      "sample_txs": [
+        "0x7180552294145c8f172918d486274a974cd80f789313e417d4d8f514a3d04ef9",
+        "0xc26caacf0c1061c42cea292940d84daa4c7be28f873b2ad48cbaf8f81e8abeeb",
+        "0x895b13bda6bd12ae3296fa4aca645e36259459930de216e0ba3a2ef0cd04c4c7",
+        "0x4e74bb12cc9ec742947ae04cd4248bf61e531085932db73870937e7b6dd209f0",
+        "0xfb0194fffd1ac49932259f10bd7a8cedfe3da9ec632f06c526d8abc8d9db60be"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x738744237b7fd97af670d9ddf54390c24263cea8; target=0x9008d19f58aabd9ed0d60971565aa8510560ab41; tx=0x7180552294145c8f172918d486274a974cd80f789313e417d4d8f514a3d04ef9",
+        "actor paid 1.26M USDT; got 1.26M USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 1.26M USDT; got 1.26M USDC via CoW Protocol GPv2Settlement"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir paid into DEX / solver routing: 28.85M USDT across 25 transfers"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->semantic:stream-observed-actors:elixir_to_stream_transfer:USDT",
+      "source": "semantic:elixir-observed-actors",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 40186468.0,
+      "count": 115,
+      "role": "elixir_to_stream_transfer",
+      "category": "actor_cluster",
+      "block_range": [
+        23680765,
+        23737939
+      ],
+      "sample_tx": "0x20c4bc8faa9dd459205e2f33cde76762aa5343671d985aa6c18ebc781b70ec68",
+      "sample_txs": [
+        "0x20c4bc8faa9dd459205e2f33cde76762aa5343671d985aa6c18ebc781b70ec68",
+        "0x69886fc55fde7a4c06628a642b80a15c72edb3675d93aefcdf6a0bc076c3b0a2",
+        "0x66e374365c43536e8d348bf295762c5457180333264b9cc1cb1237b86ed39079",
+        "0xc00db415baf75c304c7e31b44815a5c88492e6dd59c8cd0342a52a5aa0a07cad",
+        "0xd839415fc6d24922e5f69a3a8c21c48c1279ba280a2fc1373fd6007700660028"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=elixir_to_stream_observed_transfer; source=semantic:elixir-observed-actors; target=semantic:stream-observed-actors; tx=0x20c4bc8faa9dd459205e2f33cde76762aa5343671d985aa6c18ebc781b70ec68",
+        "exact ERC20 Transfer aggregate; from=0x69088d25a635d22dcbe7c4a5c7707b9cc64bd114 to=0x25e028a45a6012763a76145d7ceea3587015e990; token=USDT; amount=40.19M; tx=0x20c4bc8faa9dd459205e2f33cde76762aa5343671d985aa6c18ebc781b70ec68"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "TOKEN FLOW: Elixir actors sent tokens back to Stream actors: 40.19M USDT across 115 transfers"
+    },
+    {
+      "id": "semantic:elixir-observed-actors->semantic:stream-observed-actors:elixir_to_stream_transfer:deUSD",
+      "source": "semantic:elixir-observed-actors",
+      "target": "semantic:stream-observed-actors",
+      "asset": "deUSD",
+      "token": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+      "amount": 36502.0,
+      "count": 1,
+      "role": "elixir_to_stream_transfer",
+      "category": "actor_cluster",
+      "block_range": [
+        23734989,
+        23734989
+      ],
+      "sample_tx": "0xd6a8d648c918814dc068e7590f8de276050bbdfc8a6c243ea3175a5f246b8170",
+      "sample_txs": [
+        "0xd6a8d648c918814dc068e7590f8de276050bbdfc8a6c243ea3175a5f246b8170"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=elixir_to_stream_observed_transfer; source=semantic:elixir-observed-actors; target=semantic:stream-observed-actors; tx=0xd6a8d648c918814dc068e7590f8de276050bbdfc8a6c243ea3175a5f246b8170",
+        "exact ERC20 Transfer aggregate; from=0x738744237b7fd97af670d9ddf54390c24263cea8 to=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a; token=deUSD; amount=36.5K; tx=0xd6a8d648c918814dc068e7590f8de276050bbdfc8a6c243ea3175a5f246b8170"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "TOKEN FLOW: Elixir actors sent tokens back to Stream actors: 36.5K deUSD across 1 transfers"
+    },
+    {
+      "id": "semantic:presentation-dex-routing->semantic:elixir-observed-actors:elixir_swap_received:USDC",
+      "source": "semantic:presentation-dex-routing",
+      "target": "semantic:elixir-observed-actors",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 18870111.247728,
+      "count": 16,
+      "role": "elixir_swap_received",
+      "category": "presentation",
+      "block_range": [
+        23742020,
+        23743779
+      ],
+      "sample_tx": "0x211492c062d453c0e7acda8910c8326cc3f2354b2190aadda3c8ca536817d15c",
+      "sample_txs": [
+        "0x211492c062d453c0e7acda8910c8326cc3f2354b2190aadda3c8ca536817d15c",
+        "0xf835462478deec35f46255d4382859a673d71b0fb9b969e01522142663cb795c",
+        "0x62e78a40b1f75b6c51b0b5b4b74d4d2ecc3f62a70806626c79940c4bb35365d2",
+        "0xbd0a54be4ecbc1ffcdfc8a8a514aa201e1eabc9a420d49f9ff342025a8de0650",
+        "0x67676d969f814dd72703753599dd159ef49456cc22998567b3409009c12dcda3"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_received; source=0x9008d19f58aabd9ed0d60971565aa8510560ab41; target=0x738744237b7fd97af670d9ddf54390c24263cea8; tx=0x211492c062d453c0e7acda8910c8326cc3f2354b2190aadda3c8ca536817d15c",
+        "actor paid 1.26M USDT; got 1.26M USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 1.26M USDT; got 1.26M USDC via CoW Protocol GPv2Settlement"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir received from DEX / solver routing: 18.87M USDC across 16 transfers"
+    },
+    {
+      "id": "semantic:presentation-dex-routing->semantic:elixir-observed-actors:elixir_swap_received:USDT",
+      "source": "semantic:presentation-dex-routing",
+      "target": "semantic:elixir-observed-actors",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 69250535.853377,
+      "count": 44,
+      "role": "elixir_swap_received",
+      "category": "presentation",
+      "block_range": [
+        23685290,
+        23736445
+      ],
+      "sample_tx": "0x475b4103f13dbbd1b0e7e01424515f634a7b8e70017c3c0f817d24d3d120c44b",
+      "sample_txs": [
+        "0x475b4103f13dbbd1b0e7e01424515f634a7b8e70017c3c0f817d24d3d120c44b",
+        "0x47b4062c41f77a4d35941dd5be5a52b5cf1d01d53c800220fda5143cead12369",
+        "0xb41001019dba48cce67c7c2bab572b228f4c5a2ddc7c80532ecca1acfeacbd7e",
+        "0xe8e4f1e1d3d3842c05aba6e272243040f557af17d92bf59bbfd2abc4f6d95d37",
+        "0x9b0806e648873987ff3557098bca18fd56f76f33b01f652a8b065b7e2769aaa5"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_received; source=0x9008d19f58aabd9ed0d60971565aa8510560ab41; target=0x69088d25a635d22dcbe7c4a5c7707b9cc64bd114; tx=0x475b4103f13dbbd1b0e7e01424515f634a7b8e70017c3c0f817d24d3d120c44b",
+        "actor paid 4.93M USDC; got 4.93M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 750.0K USDC; got 750.1K USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 750.0K USDC; got 750.1K USDT via CoW Protocol GPv2Settlement",
+        "actor paid 1.41M USDC; got 1.41M USDT via CoW Protocol GPv2Settlement",
+        "actor paid 1.41M USDC; got 1.41M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "Elixir received from DEX / solver routing: 69.25M USDT across 44 transfers"
+    },
+    {
+      "id": "semantic:presentation-dex-routing->semantic:stream-observed-actors:stream_router_swap_received:USDC",
+      "source": "semantic:presentation-dex-routing",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 56787885.659202,
+      "count": 46,
+      "role": "stream_router_swap_received",
+      "category": "presentation",
+      "block_range": [
+        23677293,
+        23745006
+      ],
+      "sample_tx": "0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+      "sample_txs": [
+        "0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+        "0x98cf6233b04fce67931ccc87ee0382451f1dca9aeb9f6d049a523d6efeeb939f",
+        "0x7781f7f8ae19469db2a5dcb7446b316200bf2b19e109131bc2d19ae01ad116ad",
+        "0x82d304cb9f6cc86b931cfcbf6e601294db1e7646ee6b2dab3a006ae0596b5cad",
+        "0xe7faba7ab7d30a7f5aa014c71190cb399caf8a8589a875f7b9e7a44b903e8a59",
+        "0x8e1f7f395f5e02cb0ff8968f32adfb11668d7acdc6c90e9e570c65c6d402b172",
+        "0x88fc472ff650fe764576d3f5f002f75ce3553296f7131658f5d187f0956327d1",
+        "0x2e78c6911e95c794b7d04a3b59bb51fa00da1fc0e59a99508f86fbef7f7b130f"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_received; source=0x9008d19f58aabd9ed0d60971565aa8510560ab41; target=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a; tx=0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+        "actor paid 182.2K USDT; got 182.2K USDC via CoW Protocol GPv2Settlement",
+        "actor paid 230.0K USDT; got 230.1K USDC via CoW Protocol GPv2Settlement",
+        "actor paid 250.0K USDT; got 250.0K USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 255.0K USDT; got 255.0K USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 33.3K deUSD; got 33.3K USDC via CoW Protocol GPv2Settlement",
+        "Aggregated from onchain evidence edge role=swap_received; source=0x111111125421ca6dc452d289314280a0f8842a65; target=0x1597e4b7cf6d2877a1d690b6088668afdb045763; tx=0x8e1f7f395f5e02cb0ff8968f32adfb11668d7acdc6c90e9e570c65c6d402b172",
+        "actor paid 1.50M USDT; got 1.50M USDC via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM execution: Stream received from DEX / solver routing: 56.79M USDC across 46 transfers"
+    },
+    {
+      "id": "semantic:presentation-dex-routing->semantic:stream-observed-actors:stream_router_swap_received:USDT",
+      "source": "semantic:presentation-dex-routing",
+      "target": "semantic:stream-observed-actors",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 56865583.083007,
+      "count": 25,
+      "role": "stream_router_swap_received",
+      "category": "presentation",
+      "block_range": [
+        23671079,
+        23714676
+      ],
+      "sample_tx": "0x64ae3205d8075a8524dbfb5c582e6f3c19ca8ebc7c7ace392c67309c1714e81c",
+      "sample_txs": [
+        "0x64ae3205d8075a8524dbfb5c582e6f3c19ca8ebc7c7ace392c67309c1714e81c",
+        "0xb2be3e6c6accdba60ed73a82eb41ac4342e3856627e83bad71fd3dfbcd99d446",
+        "0x70cd91809dbd6a52fbb7601ae239701e082ba335c0bb87ca70404afe40739671",
+        "0x5d62d9c48a0eadc8e50d70677aa2dc09d1e5962c077fabacc76ffa0340069d14",
+        "0x3831f4a8d760fd70530ab8f73669d91f249312984da5d72fd9a3766f034bf39d",
+        "0xd3a59f990a426ed86aec480fceb753192830f166eea27819e18fd0c860bce440",
+        "0x501a4e42a6384427778eede5bb31091c42fabf4ab53ab9ba6454ca614b5a18c0",
+        "0xed4fd7f6ade3bdcc96f27e69ae002f07cf2b2243217ec126038f1144b4c29a78"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_received; source=0x9008d19f58aabd9ed0d60971565aa8510560ab41; target=0x25e028a45a6012763a76145d7ceea3587015e990; tx=0x64ae3205d8075a8524dbfb5c582e6f3c19ca8ebc7c7ace392c67309c1714e81c",
+        "actor paid 2.40M USDC; got 2.40M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 4.40M USDC; got 4.40M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 2.50M USDC; got 2.50M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 4.00M USDC; got 4.00M USDT via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 350.1K USDC; got 350.0K USDT via CoW Protocol GPv2Settlement",
+        "Aggregated from onchain evidence edge role=swap_received; source=0x111111125421ca6dc452d289314280a0f8842a65; target=0x1597e4b7cf6d2877a1d690b6088668afdb045763; tx=0xd3a59f990a426ed86aec480fceb753192830f166eea27819e18fd0c860bce440",
+        "actor paid 3.00M USDC; got 3.00M USDT via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM execution: Stream received from DEX / solver routing: 56.87M USDT across 25 transfers"
+    },
+    {
+      "id": "semantic:presentation-metamorpho-supplier-vaults->market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129:metamorpho_supply_sdeusd_usdc:USDC",
+      "source": "semantic:presentation-metamorpho-supplier-vaults",
+      "target": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 807257560.246234,
+      "count": 10,
+      "role": "metamorpho_supply_sdeusd_usdc",
+      "category": "lending",
+      "block_range": [
+        0,
+        0
+      ],
+      "sample_tx": null,
+      "sample_txs": [],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=morpho_current_supply_snapshot; source=semantic:morpho-position-group:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129:supply; target=market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129; tx=None",
+        "Morpho API current marketPositions; order=SupplyShares; user=0x0f35...f32a; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=380263149.32; source=morpho_graphql:marketPositions",
+        "Morpho API current marketPositions; order=SupplyShares; user=0xd630...3a3d; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=241623451.19; source=morpho_graphql:marketPositions",
+        "Morpho API current marketPositions; order=SupplyShares; user=0x5555...5555; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=41897706.94; source=morpho_graphql:marketPositions",
+        "Morpho API current marketPositions; order=SupplyShares; user=0x6c44...281a; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=32102133.76; source=morpho_graphql:marketPositions",
+        "Morpho API current marketPositions; order=SupplyShares; user=0x5b56...4fe6; market=Morpho sdeUSD/USDC 0x0f95...b129; usd=31028419.91; source=morpho_graphql:marketPositions"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "source_label": "Morpho sdeUSD/USDC 0x0f95...b129 top suppliers",
+      "label": "MORPHO lender side: MetaMorpho vaults supplied USDC: 807.26M USDC across 10 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129:stream_sdeusd_collateral:sdeUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129",
+      "asset": "sdeUSD",
+      "token": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+      "amount": 13859848.632659,
+      "count": 4,
+      "role": "stream_sdeusd_collateral",
+      "category": "lending",
+      "block_range": [
+        23677405,
+        23680706
+      ],
+      "sample_tx": "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+      "sample_txs": [
+        "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "0x365ef618d04253e2c1fc3a126f4368401300df21f1535f1ac8f8ac4c4d57e188",
+        "0x19687445d2f14474a8ec725c66d03e7942a4a29242eda6627f8de803223ccfc2",
+        "0x4b41ed90462b561a13b3862d125ae8995ccab419c7cfb9b7c709fca0ee2a6a68"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=morpho_collateralize; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=market:morpho:0x0f9563442d64ab3bd3bcb27058db0b0d4046a4c46f0acd811dacae9551d2b129; tx=0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "Morpho Blue collateralize; onBehalf=0x1597...5763; caller=0x4a6c...0ae0; receiver=-; market=Morpho sdeUSD/USDC 0x0f95...b129"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "MORPHO collateral side: Stream posted sdeUSD: 13.86M sdeUSD across 4 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d:plume_stream_xusd_collateral:xUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "asset": "xUSD",
+      "token": null,
+      "amount": 65840102.0,
+      "count": 11,
+      "role": "plume_stream_xusd_collateral",
+      "category": "presentation",
+      "block_range": [
+        32782416,
+        35704736
+      ],
+      "sample_tx": "0x428f7a7d7e0485128ed236ef7b183b22c11b616142e6c870450cf3ca6acf5b88",
+      "sample_txs": [
+        "0x428f7a7d7e0485128ed236ef7b183b22c11b616142e6c870450cf3ca6acf5b88",
+        "0xfed04a8c760934bab5f4a64e2aa1f32d7d3c3eb21ffd79e2bd09ea8f60d9bf81",
+        "0xbb13be2f8797619636ffdc639b7b5fcfd539305b25b2d142ac1a14454689be45"
+      ],
+      "semantic_routes": [
+        "Plume xUSD Transfer + Morpho SupplyCollateral logs: Stream actor posted 65.8401M xUSD as collateral."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "plume",
+      "market_id": "0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "evidence_block": 36900000,
+      "label": "PLUME private-market step 4: Stream posted xUSD collateral: 65.84M xUSD across 11 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d:plume_stream_xusd_layerzero_bridge:xUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "asset": "xUSD",
+      "token": null,
+      "amount": 65740387.095642,
+      "count": 10,
+      "role": "plume_stream_xusd_layerzero_bridge",
+      "category": "bridge",
+      "block_range": [
+        23551071,
+        23674856
+      ],
+      "sample_tx": "0x67712a72adf1deb8315c0b5fbcddd7aba2dc66757dbbe45b07c2d9ce46899d51",
+      "sample_txs": [
+        "0x67712a72adf1deb8315c0b5fbcddd7aba2dc66757dbbe45b07c2d9ce46899d51",
+        "0x0392876c26e4c192ee4a79f5d6c77bf20ee895a756a4c2e2a3bd0651a80ce9d4",
+        "0xb3b96365b455c8a4ad59981e217a422bac655f16b17bb9fca7b63185746a67d4",
+        "0x14a62c1377a087c253972478422649f6ddaf7b57ed36a660d7259714e0fe9c3c",
+        "0xe2510ba261795ece09b477bcee2a66c19c18be2ae11411a5a0864e457008fa05",
+        "0xa8651701cfa352619584177c337889a5739f93a86be043389a6c055ec82d3bb9"
+      ],
+      "semantic_routes": [
+        "LayerZero OFT receipt evidence: Ethereum xUSD OFTSent/Transfer logs burned xUSD from Stream actor 0x1597...5763, and matching Plume xUSD OFTReceived/Transfer logs minted the same bridge flow to 0x1597...5763 before the Plume Morpho collateral deposits."
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "chain": "ethereum",
+      "market_id": "0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d",
+      "label": "BRIDGE: Stream moved xUSD from Ethereum to Plume via LayerZero OFT: 65.74M xUSD across 10 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:elixir-observed-actors:stream_to_elixir_transfer:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:elixir-observed-actors",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 34697.814721,
+      "count": 1,
+      "role": "stream_to_elixir_transfer",
+      "category": "actor_cluster",
+      "block_range": [
+        23741077,
+        23741077
+      ],
+      "sample_tx": "0xb2070ed6fbb478ed35508a6c99cf33866509ec76268f03023c1b02ae223664b5",
+      "sample_txs": [
+        "0xb2070ed6fbb478ed35508a6c99cf33866509ec76268f03023c1b02ae223664b5"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=stream_to_elixir_observed_transfer; source=semantic:stream-observed-actors; target=semantic:elixir-observed-actors; tx=0xb2070ed6fbb478ed35508a6c99cf33866509ec76268f03023c1b02ae223664b5",
+        "exact ERC20 Transfer aggregate; from=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a to=0x738744237b7fd97af670d9ddf54390c24263cea8; token=USDC; amount=34.7K; tx=0xb2070ed6fbb478ed35508a6c99cf33866509ec76268f03023c1b02ae223664b5"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "TOKEN FLOW: Stream actors sent tokens to Elixir actors: 34.7K USDC across 1 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:elixir-observed-actors:stream_to_elixir_transfer:USDT",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:elixir-observed-actors",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 24700000.0,
+      "count": 34,
+      "role": "stream_to_elixir_transfer",
+      "category": "actor_cluster",
+      "block_range": [
+        23671095,
+        23688137
+      ],
+      "sample_tx": "0xed43bc0241775afe49c8fde807ddad863223fafb29b480655ac23f000dcf1aa1",
+      "sample_txs": [
+        "0xed43bc0241775afe49c8fde807ddad863223fafb29b480655ac23f000dcf1aa1",
+        "0xf953f2c9d6f423351746cca097afb8158d5f34a28b95e8e230b5c0e428521ffe",
+        "0x7d819a038b2f32c80897fcc54677c27edaf66d0d128fdedb94d254fa81a66838",
+        "0x139d095597d503254311ca5a9fabe706875ae191ffe6ebffdb5dc5da7b859ea1",
+        "0x6363a347fafc5ba2115803e16e4737013148dd00bf875526c165903e5dfbbe62"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=stream_to_elixir_observed_transfer; source=semantic:stream-observed-actors; target=semantic:elixir-observed-actors; tx=0xed43bc0241775afe49c8fde807ddad863223fafb29b480655ac23f000dcf1aa1",
+        "exact ERC20 Transfer aggregate; from=0x25e028a45a6012763a76145d7ceea3587015e990 to=0x69088d25a635d22dcbe7c4a5c7707b9cc64bd114; token=USDT; amount=24.70M; tx=0xed43bc0241775afe49c8fde807ddad863223fafb29b480655ac23f000dcf1aa1"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "TOKEN FLOW: Stream actors sent tokens to Elixir actors: 24.70M USDT across 34 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:elixir-observed-actors:stream_to_elixir_transfer:deUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:elixir-observed-actors",
+      "asset": "deUSD",
+      "token": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+      "amount": 3680335.660009,
+      "count": 11,
+      "role": "stream_to_elixir_transfer",
+      "category": "actor_cluster",
+      "block_range": [
+        23726874,
+        23735251
+      ],
+      "sample_tx": "0xc19fd2d514073db2154986b0c60e866a7840dcf422271cf8b685123950a41737",
+      "sample_txs": [
+        "0xc19fd2d514073db2154986b0c60e866a7840dcf422271cf8b685123950a41737",
+        "0xe48570b03636aaa15652053423369f51a402b13480b9c7a2901b8ecb7d4c31bb",
+        "0x2c56e9166971308252d608d75ec8c2724ce12ccbf17aae8e1f6cf661a21306fc",
+        "0x4bbe605a79bca54c3051682baac93bd693d31ec4716ba70c610772bf7a804fba",
+        "0xf37bf7b87bc7ef862310158d65dcf7dd2180956bc9863eea750408abc9bb5364"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=stream_to_elixir_observed_transfer; source=semantic:stream-observed-actors; target=semantic:elixir-observed-actors; tx=0xc19fd2d514073db2154986b0c60e866a7840dcf422271cf8b685123950a41737",
+        "exact ERC20 Transfer aggregate; from=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a to=0x738744237b7fd97af670d9ddf54390c24263cea8; token=deUSD; amount=2.83M; tx=0xc19fd2d514073db2154986b0c60e866a7840dcf422271cf8b685123950a41737",
+        "exact ERC20 Transfer aggregate; from=0x25e028a45a6012763a76145d7ceea3587015e990 to=0x738744237b7fd97af670d9ddf54390c24263cea8; token=deUSD; amount=851.8K; tx=0xdf67f161fed2ac99b86075f6ca8b3784334f3a6cb083ccc4118d70d43bd77a97"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "TOKEN FLOW: Stream actors sent tokens to Elixir actors: 3.68M deUSD across 11 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-aave-usdc-position:stream_aave_usdc_position:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-aave-usdc-position",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 13809522.669386,
+      "count": 8,
+      "role": "stream_aave_usdc_position",
+      "category": "lending",
+      "block_range": [
+        23671511,
+        23721895
+      ],
+      "sample_tx": "0xc2a4a33c55dd55e3c300026611609929c7f51e74a6ca84e6a213c4a1fd1f1cca",
+      "sample_txs": [
+        "0xc2a4a33c55dd55e3c300026611609929c7f51e74a6ca84e6a213c4a1fd1f1cca",
+        "0x0c413081894b972f24b9bb39873d4ca670db060546c35ecbfa454eb1c1e3741d",
+        "0x60851e05e64ca9307a6b8e604e8c06410c94827a2a952d417566c90f90ddb924",
+        "0xba4d8802dc2b70ce9bd4dd16b840bd8cd02ce22b99ec74611b7b3886fee33dff",
+        "0xd709bbcdbd2e3581b4a4fb7988dbe0efd32d944fe683c7193bcb621ccc1c6c3f"
+      ],
+      "semantic_routes": [
+        "Stream actor sent USDC to Aave Ethereum USDC V3 aToken; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c; sample tx=0xc2a4a33c55dd55e3c300026611609929c7f51e74a6ca84e6a213c4a1fd1f1cca"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM Aave surface: Stream moved USDC into Aave V3 USDC token surface: 13.81M USDC across 8 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-crosschain-bridges:stream_bridge_outflow:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-crosschain-bridges",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 14272718.814337,
+      "count": 10,
+      "role": "stream_bridge_outflow",
+      "category": "bridge",
+      "block_range": [
+        23679359,
+        23730178
+      ],
+      "sample_tx": "0x541bc658e096d3400c9dec1823c9818d08c5994659a1784323d1358218444a2a",
+      "sample_txs": [
+        "0x541bc658e096d3400c9dec1823c9818d08c5994659a1784323d1358218444a2a",
+        "0x24d231866ee669c9c683a66921ba711a3ad3008956479ba0a3c2b6f9dd19840f",
+        "0x6284478f59778b832c91a857b9708c98d5183a5c5b0dea80572a70e12ae78f80",
+        "0xd26d13d42c716ac73e09480e8aa2cc4a654ba4e60b15c35d114aec97246766ee",
+        "0x083ecdda1e61da378045fb44cddae7689f1ae89bdd3ab376e4342fd6c56b33bd",
+        "0xe73655a372fe5656817981541bfa49d0127556ec1b857f6da5d89061558e2e30",
+        "0xbd9026b75f0e23b480f2339297be1fa71b8f4fea5e361637a48f14fcd9eb7cc6",
+        "0x32e8fc0b8ab29566a6a2d72ddd6d4790029e00a336db45537a56f21d6c21793e"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to Interport CCTP v2 Bridge; raw source=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a; raw target=0x674cb5133a2deaa4abe86ed56cb7555960966320; sample tx=0x541bc658e096d3400c9dec1823c9818d08c5994659a1784323d1358218444a2a",
+        "Stream actor sent assets to Agglayer vbUSDC Token; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x53e82abbb12638f09d9e624578ccb666217a765e; sample tx=0xe73655a372fe5656817981541bfa49d0127556ec1b857f6da5d89061558e2e30"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM cross-chain/outside-chain exit: Stream sent assets to bridge or wrapper endpoints: 14.27M USDC across 10 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-crosschain-bridges:stream_bridge_outflow:USDT",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-crosschain-bridges",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 45272320.571438,
+      "count": 18,
+      "role": "stream_bridge_outflow",
+      "category": "bridge",
+      "block_range": [
+        23676468,
+        23715436
+      ],
+      "sample_tx": "0x3666a79c98347bc010d99fb43b8fdd77e54b9b0e7926892842ce59d3bda9ea35",
+      "sample_txs": [
+        "0x3666a79c98347bc010d99fb43b8fdd77e54b9b0e7926892842ce59d3bda9ea35",
+        "0x6b336ac98c24c2786c39a7138c431a483dbc6a7aa70c43b97107163daabcf819",
+        "0x340523108ef35314e620817dfe76171c4e14ed8f0a7135c634b5805b0e5142e1",
+        "0x7b3351007292d0e8464863dc45ee9adfd517fea9510c30b0dbe75d60e6e2cc53",
+        "0x51fcf3d42fd39e322dc5c1bb991a9f7124f5c306ccf5879cee334fac8ce14044"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to USDT0 OAdapterUpgradeable; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x6c96de32cea08842dcc4058c14d3aaad7fa41dee; sample tx=0x3666a79c98347bc010d99fb43b8fdd77e54b9b0e7926892842ce59d3bda9ea35"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM cross-chain/outside-chain exit: Stream sent assets to bridge or wrapper endpoints: 45.27M USDT across 18 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-dex-routing:stream_router_swap_paid:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-dex-routing",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 226515806.947868,
+      "count": 100,
+      "role": "stream_router_swap_paid",
+      "category": "presentation",
+      "block_range": [
+        23667299,
+        23722461
+      ],
+      "sample_tx": "0x4c0f1f0069544866c44dc161be5a80b5f576f1732a4c541b98affb512824ee69",
+      "sample_txs": [
+        "0x4c0f1f0069544866c44dc161be5a80b5f576f1732a4c541b98affb512824ee69",
+        "0x494ce58d36749de3ab8a7d1c92417620e5ee61dfea470f15966018de0d50fbcc",
+        "0xc6c22161a82f7baf610acb4fb97a589f50d6ef42fb600a18c50bfe94d01e610f",
+        "0x1f5c1d5cc75471493f5ad1578ec9348566399cf8234b6e268396cf34faf6f9a3",
+        "0xdaf78cb8726281e0097d769511f9d1ee625f0359bddf9bef98d7f1dbb220d86c",
+        "0xa75b37529d4f7570941eaee987ddf0035a1937c7acf07622792e75aeeb0ecc0e",
+        "0xd29cd444cc841445635c3da74672ffa5df2da3a9515bc36e4dffeb319dcdd49d",
+        "0x2303b57c7a8a44b5810ce69fa4bbbb9c242e9965e8201d37c4bd0cd591f32a72"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=0x4a6c312ec70e8747a587ee860a0353cd42be0ae0; tx=0x4c0f1f0069544866c44dc161be5a80b5f576f1732a4c541b98affb512824ee69",
+        "actor paid 785.3K USDC; got 900.0K sdeUSD via EthereumGeneralAdapter1",
+        "actor paid 1.20M USDC; got 1.30M sdeUSD via EthereumGeneralAdapter1",
+        "actor paid 1.80M USDC; got 1.90M sdeUSD via EthereumGeneralAdapter1",
+        "actor paid 2.53M USDC; got 2.60M sdeUSD via EthereumGeneralAdapter1",
+        "actor paid 1.40M USDC; got 1.50M sdeUSD via EthereumGeneralAdapter1",
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=0x3a23f943181408eac424116af7b7790c94cb97a5; tx=0xa75b37529d4f7570941eaee987ddf0035a1937c7acf07622792e75aeeb0ecc0e",
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x33a47b816cf4fc6698b4cf1b876da9783b18b325; target=0x9008d19f58aabd9ed0d60971565aa8510560ab41; tx=0x64ae3205d8075a8524dbfb5c582e6f3c19ca8ebc7c7ace392c67309c1714e81c"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM execution: Stream paid into DEX / solver routing: 226.52M USDC across 100 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-dex-routing:stream_router_swap_paid:USDT",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-dex-routing",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 27953831.715444,
+      "count": 27,
+      "role": "stream_router_swap_paid",
+      "category": "presentation",
+      "block_range": [
+        23681327,
+        23745006
+      ],
+      "sample_tx": "0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+      "sample_txs": [
+        "0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+        "0x98cf6233b04fce67931ccc87ee0382451f1dca9aeb9f6d049a523d6efeeb939f",
+        "0x7781f7f8ae19469db2a5dcb7446b316200bf2b19e109131bc2d19ae01ad116ad",
+        "0x82d304cb9f6cc86b931cfcbf6e601294db1e7646ee6b2dab3a006ae0596b5cad",
+        "0x879833942a303a0790d059a7e6d214fd48cd888b9107357f0d5a338a5f98bafe",
+        "0xdd0c66f61ce5648c65481ebe82515103c99a107ac0295de2ac69e4e6710f178b",
+        "0x2df4c2969ca295aa2be2f246b177a7b2d1fb3b1b46da04cfaaf01b1a4b88910b",
+        "0x115e95ce04d1f72eb7b3bdfa001765c1c7b9b583a4fd1e3d2b34ae5c252ccb16"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_paid; source=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a; target=0x9008d19f58aabd9ed0d60971565aa8510560ab41; tx=0x775690028b82585bd02866ee13c3861b975bf47912b54284728060a0b8f84fbc",
+        "actor paid 182.2K USDT; got 182.2K USDC via CoW Protocol GPv2Settlement",
+        "actor paid 230.0K USDT; got 230.1K USDC via CoW Protocol GPv2Settlement",
+        "actor paid 250.0K USDT; got 250.0K USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 255.0K USDT; got 255.0K USDC via Uniswap V4 PoolManager, CoW Protocol GPv2Settlement",
+        "actor paid 250.0K USDT; got 249.9K USDC via CoW Protocol GPv2Settlement",
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=0x4a6c312ec70e8747a587ee860a0353cd42be0ae0; tx=0xdd0c66f61ce5648c65481ebe82515103c99a107ac0295de2ac69e4e6710f178b"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM execution: Stream paid into DEX / solver routing: 27.95M USDT across 27 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-dex-routing:stream_router_swap_paid:sdeUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-dex-routing",
+      "asset": "sdeUSD",
+      "token": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+      "amount": 13859848.632659,
+      "count": 4,
+      "role": "stream_router_swap_paid",
+      "category": "presentation",
+      "block_range": [
+        23677405,
+        23680706
+      ],
+      "sample_tx": "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+      "sample_txs": [
+        "0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "0x365ef618d04253e2c1fc3a126f4368401300df21f1535f1ac8f8ac4c4d57e188",
+        "0x19687445d2f14474a8ec725c66d03e7942a4a29242eda6627f8de803223ccfc2",
+        "0x4b41ed90462b561a13b3862d125ae8995ccab419c7cfb9b7c709fca0ee2a6a68"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=swap_paid; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=0x4a6c312ec70e8747a587ee860a0353cd42be0ae0; tx=0x36cec01193bba4976850710fefa4290e511c94b96bfbb98236c6046982944e49",
+        "actor paid 4.68M sdeUSD; got 4.50M USDC via EthereumGeneralAdapter1",
+        "actor paid 3.74M sdeUSD; got 3.60M USDC via EthereumGeneralAdapter1",
+        "actor paid 1.70M sdeUSD; got 1.60M USDC via EthereumGeneralAdapter1"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM execution: Stream paid into DEX / solver routing: 13.86M sdeUSD across 4 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-mev-routing:stream_mev_route_outflow:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-mev-routing",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 33638623.817944,
+      "count": 15,
+      "role": "stream_mev_route_outflow",
+      "category": "solver",
+      "block_range": [
+        23676460,
+        23727471
+      ],
+      "sample_tx": "0xd3a59f990a426ed86aec480fceb753192830f166eea27819e18fd0c860bce440",
+      "sample_txs": [
+        "0xd3a59f990a426ed86aec480fceb753192830f166eea27819e18fd0c860bce440",
+        "0x501a4e42a6384427778eede5bb31091c42fabf4ab53ab9ba6454ca614b5a18c0",
+        "0xed4fd7f6ade3bdcc96f27e69ae002f07cf2b2243217ec126038f1144b4c29a78",
+        "0xd54be7a034d013de2b4e831c589390004f6e828a522c25e13d984b56f4f7e599",
+        "0x3387bc197f84265318f7207fb929ba346646ad05f4796108a04baeff2f2e61a4"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to Etherscan-labeled MEV Bot 0x8c86...f940; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940; sample tx=0xd3a59f990a426ed86aec480fceb753192830f166eea27819e18fd0c860bce440",
+        "actor paid 3.00M USDC; got 3.00M USDT via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 2.00M USDC; got 2.00M USDT via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 1.00M USDC; got 999.7K USDT via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 2.04M USDC; got 2.04M USDT via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 1.00M USDC; got 999.7K USDT via 1inch AggregationRouterV6"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM external execution: Stream sent assets to MEV / solver counterparty: 33.64M USDC across 15 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-mev-routing:stream_mev_route_outflow:USDT",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-mev-routing",
+      "asset": "USDT",
+      "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "amount": 10230000.00389,
+      "count": 5,
+      "role": "stream_mev_route_outflow",
+      "category": "solver",
+      "block_range": [
+        23681661,
+        23695532
+      ],
+      "sample_tx": "0x07e11ec666e1b62abcbc3af1127139994d2ebd579005fbab30c194a759fa661e",
+      "sample_txs": [
+        "0x07e11ec666e1b62abcbc3af1127139994d2ebd579005fbab30c194a759fa661e",
+        "0xc70ae60f3a5e234e9fdded4dc98619f093f204ac3dfcace6438435619722d74d",
+        "0xb181dce0b25991c8b5e9d5d53e3e6a712115b01347fb173fe9886e07ecd04b8e",
+        "0xd816f4857118c68bb221927520f345ea2057bae8101a6103fe62070aa3a426a7",
+        "0xb31f3dc467e015a338adfd511cb8a1b22cf30be4bdd3e628cb318be8019d6083"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to Etherscan-labeled MEV Bot 0x8c86...f940; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x8c864d0c8e476bf9eb9d620c10e1296fb0e2f940; sample tx=0x07e11ec666e1b62abcbc3af1127139994d2ebd579005fbab30c194a759fa661e",
+        "actor paid 1.50M USDT; got 1.50M USDC via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 2.97M USDT; got 2.97M USDC via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 970.0K USDT; got 970.2K USDC via 1inch AggregationRouterV6",
+        "actor paid 2.03M USDT; got 2.03M USDC via Uniswap V4 PoolManager, 1inch AggregationRouterV6, Uniswap Universal Router",
+        "actor paid 2.76M USDT; got 2.76M USDC via 1inch AggregationRouterV6"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM external execution: Stream sent assets to MEV / solver counterparty: 10.23M USDT across 5 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-opaque-external-outflows:stream_opaque_external_outflow:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-opaque-external-outflows",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 9179224.061153,
+      "count": 2,
+      "role": "stream_opaque_external_outflow",
+      "category": "opaque_boundary",
+      "block_range": [
+        23681026,
+        23719509
+      ],
+      "sample_tx": "0x58211b51ecf9397108c769cfd13ea06329fc6179cddcdefd15dc3f403605e057",
+      "sample_txs": [
+        "0x58211b51ecf9397108c769cfd13ea06329fc6179cddcdefd15dc3f403605e057",
+        "0xe7ad04a6d10d705e5b5e380060bd5207b5ba943c6bbe932af84861f6d6cce5bc"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to unlabeled EOA receiving USDC; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0xa65e4b8af4d325838d68fd9ddf925ea3ca96f167; sample tx=0x58211b51ecf9397108c769cfd13ea06329fc6179cddcdefd15dc3f403605e057"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM opaque external outflow: Stream sent assets to unlabeled non-protocol endpoints: 9.18M USDC across 2 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-opaque-external-outflows:stream_opaque_external_outflow:deUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-opaque-external-outflows",
+      "asset": "deUSD",
+      "token": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+      "amount": 17929483.455961,
+      "count": 8,
+      "role": "stream_opaque_external_outflow",
+      "category": "opaque_boundary",
+      "block_range": [
+        23671141,
+        23695584
+      ],
+      "sample_tx": "0xd2cb74329848712f1840aa82153c59f35593d74b47719749f165eb37d911ce5e",
+      "sample_txs": [
+        "0xd2cb74329848712f1840aa82153c59f35593d74b47719749f165eb37d911ce5e",
+        "0x92e38f761848064d008bef64994a7102534d64e39cfffb6995c9e79838e2a8ed",
+        "0x4c1d56277bc212c56a6ccd3cfb69ad8da2f49aab4144a6cbc6e30d15c351bfc3",
+        "0xe91fdb9f3a28b63c8190ed2d5fcfc471d2fd9c6d74b817edd9d2dff6aa64b7c6",
+        "0x0a4a71b25b51a395b92dba871e96ede91ea7dc408b548d63f5f89a9efad8ea4b"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to unlabeled deUSD holder contract; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0xd629edc5f1ff4cb7d9dd0a5be72c1d9fc5d02709; sample tx=0xd2cb74329848712f1840aa82153c59f35593d74b47719749f165eb37d911ce5e"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM opaque external outflow: Stream sent assets to unlabeled non-protocol endpoints: 17.93M deUSD across 8 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:presentation-pusd-minter:stream_pusd_minter_outflow:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:presentation-pusd-minter",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 6805015.305291,
+      "count": 14,
+      "role": "stream_pusd_minter_outflow",
+      "category": "mint_surface",
+      "block_range": [
+        23681344,
+        23726708
+      ],
+      "sample_tx": "0x090f571fe9bf3e7f768ff20a6870f84ca8002b00ca785369ff77ee4d67d0ae91",
+      "sample_txs": [
+        "0x090f571fe9bf3e7f768ff20a6870f84ca8002b00ca785369ff77ee4d67d0ae91",
+        "0xd173023719e4f57d772db0f64efbf59f859841f84ee4d41b00d6d9b7d81e73ea",
+        "0xc6474c0b74a9e5db5a015f124a70d854e04089c242db3047bc37ebe58c5c2da0",
+        "0x3c7292ecd79ce4cd528c813dd6769db00b748ac637b940c567024951d3c7f3a9",
+        "0x5f34b06fad20333039348b042e44aa82161c040ca0c32cca9bff4b5a4b9bfe58"
+      ],
+      "semantic_routes": [
+        "Stream actor sent assets to Plume pUSD TellerWithMultiAssetSupportPredicateProxy; raw source=0xcb4a7b790edb7fa3e2731efd7ed85275f92fc74a; raw target=0x6104fe10ca937a086ba7adbd0910a4733d380cb6; sample tx=0x090f571fe9bf3e7f768ff20a6870f84ca8002b00ca785369ff77ee4d67d0ae91"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM tokenized cash surface: Stream sent USDC into pUSD minter: 6.81M USDC across 14 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:stream-xusd-minting-surface:stream_stablecoin_funding:USDC/USDT",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:stream-xusd-minting-surface",
+      "asset": "USDC/USDT",
+      "token": "multi:stablecoin",
+      "amount": 31789293.296102,
+      "count": 10,
+      "role": "stream_stablecoin_funding",
+      "category": "self_mint_pattern",
+      "block_range": [
+        23671059,
+        23727492
+      ],
+      "sample_tx": "0x53fe13dcefa3d38e29ee9435763c1b85254c818c961b591342b71c0c69ecafa3",
+      "sample_txs": [
+        "0x53fe13dcefa3d38e29ee9435763c1b85254c818c961b591342b71c0c69ecafa3",
+        "0xc4835f5f1f355ae035551df6f5f774d89568415f9a907740ef458775c1283cc4",
+        "0x296ffd3a5ba241f7b697e1cad6e4c4aa8df3b1f47f359981c39e07d1ad12fa93",
+        "0x6c711a01e271bf1f47441122cee454a99e053e29441aa05b8348ad7b2afe0308",
+        "0xd29127701ec8ec7d0e334e338c08d515cee2dd264f6af05a4d21b11396937f0d"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=possible_self_mint_funding; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=semantic:stream-xusd-minting-surface; tx=0x53fe13dcefa3d38e29ee9435763c1b85254c818c961b591342b71c0c69ecafa3",
+        "actor sent 26.50M USDC + 5.29M USDT to Stream-controlled surface and received 50.89M xUSD mint in the same scan window",
+        "not same-tx-only; this is a cross-window self-mint pattern awaiting StreamVault function adapter"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "SELF-MINT step 1: Stream actors sent stablecoins into the xUSD mint surface: 31.79M USDC/USDT across 10 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:stream-xusd-minting-surface:stream_stablewrapper_outflow:USDC",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:stream-xusd-minting-surface",
+      "asset": "USDC",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "amount": 47574879.011179,
+      "count": 14,
+      "role": "stream_stablewrapper_outflow",
+      "category": "mint_surface",
+      "block_range": [
+        23671503,
+        23702834
+      ],
+      "sample_tx": "0x9d7de290d60a0250c6c3dfe78772d6075ad051f2cf7457b3b5f4830502628493",
+      "sample_txs": [
+        "0x9d7de290d60a0250c6c3dfe78772d6075ad051f2cf7457b3b5f4830502628493",
+        "0xaf371c5883901be5ed38a1dc5c3ddfe21f068d5dc4f6146dfb3d1c78d1ea8546",
+        "0x0f7a2a273ff2069e50c6559d4673527a945fb92938eb18fadac76aca78753303",
+        "0x68320a043442e0bc14d7a920e26a75fa72c25045612d333f424b567ed2d2c6d6",
+        "0x04fb27a5d4f1f59f4658ecf1e09edf21e3265140bfee7685dd7a0b6898c1a8e4"
+      ],
+      "semantic_routes": [
+        "Stream actor sent liquid assets to the StableWrapper / withdrawal surface; raw source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; raw target=0x6eaf19b2fc24552925db245f9ff613157a7dbb4c; sample tx=0x9d7de290d60a0250c6c3dfe78772d6075ad051f2cf7457b3b5f4830502628493"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "STREAM redemption surface: Stream sent liquid assets to StableWrapper: 47.57M USDC across 14 transfers"
+    },
+    {
+      "id": "semantic:stream-observed-actors->semantic:stream-xusd-minting-surface:xusd_burn_by_stream:xUSD",
+      "source": "semantic:stream-observed-actors",
+      "target": "semantic:stream-xusd-minting-surface",
+      "asset": "xUSD",
+      "token": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+      "amount": 12306691.303772,
+      "count": 2,
+      "role": "xusd_burn_by_stream",
+      "category": "self_mint_pattern",
+      "block_range": [
+        23672035,
+        23674856
+      ],
+      "sample_tx": "0xaac64a684758099a1e1cad1c3b1d307f0f20d92164b460bac99ce392c0e841aa",
+      "sample_txs": [
+        "0xaac64a684758099a1e1cad1c3b1d307f0f20d92164b460bac99ce392c0e841aa",
+        "0xb3b96365b455c8a4ad59981e217a422bac655f16b17bb9fca7b63185746a67d4"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=xusd_burn_by_actor; source=0x1597e4b7cf6d2877a1d690b6088668afdb045763; target=semantic:stream-xusd-minting-surface; tx=0xaac64a684758099a1e1cad1c3b1d307f0f20d92164b460bac99ce392c0e841aa",
+        "exact xUSD Transfer burn by actor"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "SELF-MINT unwind: Stream actors burned xUSD: 12.31M xUSD across 2 transfers"
+    },
+    {
+      "id": "semantic:stream-xusd-minting-surface->semantic:stream-observed-actors:xusd_mint_to_stream:xUSD",
+      "source": "semantic:stream-xusd-minting-surface",
+      "target": "semantic:stream-observed-actors",
+      "asset": "xUSD",
+      "token": "0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94",
+      "amount": 50893874.592591,
+      "count": 5,
+      "role": "xusd_mint_to_stream",
+      "category": "self_mint_pattern",
+      "block_range": [
+        23699564,
+        23719344
+      ],
+      "sample_tx": "0xcf1d5b8468191bdb88e6a0286581c96f4cac904fdba250e0ee578f5c9ae19b83",
+      "sample_txs": [
+        "0xcf1d5b8468191bdb88e6a0286581c96f4cac904fdba250e0ee578f5c9ae19b83",
+        "0x729bce4cbe834ab9169f7d3a0cf5678e2632450090e51a5d538b3dad8096c49b",
+        "0x77f97707981c459e31c9f947e5ac2ca8e4b5f24622a0ec1dfd503a711fc7c146",
+        "0x80ebb2e6195eed88130de549efa81b7c382330815f321a6ea12b297ceb41560a",
+        "0xb99a2a75b74c834bddba7c0e897f1cf57b0c969c635456c1558066b97bf49f78"
+      ],
+      "semantic_routes": [
+        "Aggregated from onchain evidence edge role=xusd_mint_to_actor; source=semantic:stream-xusd-minting-surface; target=0x1597e4b7cf6d2877a1d690b6088668afdb045763; tx=0xcf1d5b8468191bdb88e6a0286581c96f4cac904fdba250e0ee578f5c9ae19b83",
+        "exact xUSD Transfer mint to actor; caller/minter adapter still required for final vault attribution",
+        "function execute302(tuple _executionParams)"
+      ],
+      "method_ids": [],
+      "function_names": [],
+      "in_cycle": false,
+      "morpho": false,
+      "mint_burn": false,
+      "presentation": true,
+      "label": "SELF-MINT step 2: xUSD was minted back to Stream actors: 50.89M xUSD across 5 transfers"
+    }
+  ],
+  "metadata": {
+    "seeds": [
+      "semantic:stream-observed-actors",
+      "semantic:stream-xusd-minting-surface",
+      "semantic:elixir-observed-actors",
+      "0xaf8d3fc487261b04256a1cc433856cc808eeb070",
+      "market:plume:morpho:0x82e7ab8ccabaac59b5f397507ed031ebf19a9a5b2657c00c93bc2423cd0a890d"
+    ],
+    "from_block": 23667000,
+    "to_block": 23750000,
+    "plume_evidence_block": 36900000,
+    "cycle_nodes": 0,
+    "source": "feeder/stream_presentation_flow.py (historical artifact plus fixed block-pinned Plume onchain evidence)",
+    "presentation": true,
+    "excluded": [
+      "Broad Morpho market discovery and unrelated top-position snapshots",
+      "raw third-party wallet counterparties",
+      "offchain incident narrative edges"
+    ],
+    "focus": "English presentation graph for Stream <-> Elixir transfers, Stream self-mint evidence, and the Plume Morpho xUSD/USDC private lending market",
+    "findings": [
+      {
+        "id": "finding:presentation:direct-stream-elixir",
+        "type": "direct_transfer_evidence",
+        "confidence": "exact_onchain_transfer_aggregate",
+        "message": "Direct token transfers between Stream observed actors and Elixir observed actors are present in the selected block window.",
+        "source": "flow.stream.historical.json"
+      },
+      {
+        "id": "finding:presentation:self-mint-surface",
+        "type": "stream_self_mint_pattern",
+        "confidence": "onchain_transfer_aggregate",
+        "message": "Stream-controlled actors sent USDC/USDT into the xUSD mint surface and xUSD was minted back to Stream-controlled actors in the same scan window.",
+        "source": "flow.stream.historical.json"
+      },
+      {
+        "id": "finding:presentation:morpho-stream-borrow",
+        "type": "morpho_sdeusd_usdc_borrow",
+        "confidence": "receipt_logs_plus_morpho_snapshot",
+        "message": "Stream-controlled actor posted sdeUSD collateral and borrowed USDC from the Morpho sdeUSD/USDC market; current Morpho snapshot shows a large remaining USDC borrow.",
+        "source": "flow.stream.historical.json"
+      },
+      {
+        "id": "finding:presentation:elixir-named-vault-supply",
+        "type": "morpho_elixir_named_vault_supply",
+        "confidence": "morpho_snapshot_plus_onchain_name",
+        "message": "A MetaMorpho vault whose onchain name is MEV Capital Elixir USDC is the current top supplier in the Morpho deUSD/USDC market.",
+        "source": "flow.stream.historical.json"
+      },
+      {
+        "id": "finding:presentation:plume-private-market",
+        "type": "plume_xusd_usdc_private_credit_line",
+        "confidence": "block_pinned_rpc_plus_decoded_logs",
+        "message": "On Plume, an Elixir-linked Safe supplied almost all USDC into a Morpho xUSD/USDC market, while the Stream actor posted xUSD and borrowed almost all USDC.",
+        "source": "plume_rpc_and_dune_logs"
+      },
+      {
+        "id": "finding:presentation:stream-xusd-bridge-to-plume",
+        "type": "layerzero_oft_bridge_path",
+        "confidence": "matching_oftsent_oftreceived_guid",
+        "message": "Stream actor bridged xUSD from Ethereum to Plume via LayerZero OFT before posting it as Plume Morpho collateral.",
+        "source": "ethereum_and_plume_receipt_logs"
+      }
+    ],
+    "summary": {
+      "stream_to_elixir_edges": 3,
+      "elixir_to_stream_edges": 2,
+      "plume_private_market_edges": 5,
+      "canonical_structure_edges": 2,
+      "nodes": 17,
+      "edges": 40
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "nodes": [],
+  "edges": [],
+  "events": [],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 0,
+    "event_count": 0,
+    "category_counts": {},
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [],
+      "edges": [],
+      "seeds": [
+        "0x1c9ba9144505aaba12f4b126fda9807150b88f80"
+      ],
+      "max_depth": 0,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-17T07:53:11Z",
+    "dfs": {
+      "seed_addresses": [
+        "0x1c9ba9144505aaba12f4b126fda9807150b88f80"
+      ],
+      "depth": 0,
+      "directions": "both",
+      "discovered_addresses": 0,
+      "discovery_edges": 0
+    }
+  }
+}

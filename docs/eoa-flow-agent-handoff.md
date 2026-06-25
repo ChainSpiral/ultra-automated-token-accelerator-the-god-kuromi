@@ -4,6 +4,10 @@ Updated: 2026-06-16
 Branch: `grahahahahahahaha`
 Repo remote: `ChainSpiral/ultra-automated-token-accelerator-the-god-kuromi`
 
+Before extending vault/entity strategy graphs, also read
+`docs/strategy-graph-handoff.md`. The current product direction is a
+proof-backed strategy graph, not a research-summary graph.
+
 ## Repo Split
 
 This repo, `/Users/link/defi-dagggg`, is the data/crawler/prototype engine. It

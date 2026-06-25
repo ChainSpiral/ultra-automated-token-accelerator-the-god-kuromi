@@ -1,0 +1,4919 @@
+{
+  "nodes": [
+    {
+      "id": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "type": "eoa",
+      "label": "EOA 0x3252...5669",
+      "data": {
+        "kind": "eoa",
+        "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+        "lane": 0,
+        "step": -1,
+        "dfs_depth": 0,
+        "discovered_by": "seed",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+      "type": "eoa",
+      "label": "EOA 0x0720...e07b",
+      "data": {
+        "kind": "eoa",
+        "address": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+        "lane": 1,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0x0720697896b81dc9e2c690289248ec09e898e07b",
+      "type": "eoa",
+      "label": "EOA 0x0720...e07b",
+      "data": {
+        "kind": "eoa",
+        "address": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+        "lane": 2,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0x547090eb068220b3da1f7b611ef21723caa4121e",
+      "type": "eoa",
+      "label": "EOA 0x5470...121e",
+      "data": {
+        "kind": "eoa",
+        "address": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+        "lane": 3,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "out",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+      "type": "eoa",
+      "label": "EOA 0x6a00...1068",
+      "data": {
+        "kind": "eoa",
+        "address": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+        "lane": 4,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868070b708e44b72bb899847a99757d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+        "lane": 5,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+        "lane": 6,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc86842969051600a1c6af0143670c059648cc85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc86842969051600a1c6af0143670c059648cc85c",
+        "lane": 7,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+        "lane": 8,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+        "lane": 9,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+        "lane": 10,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+        "lane": 11,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+        "lane": 12,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+        "lane": 13,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+        "lane": 14,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+      "type": "eoa",
+      "label": "EOA 0xc868...c85c",
+      "data": {
+        "kind": "eoa",
+        "address": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+        "lane": 15,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xda14344788f863e0412925523bb97147f23f5f61",
+      "type": "eoa",
+      "label": "EOA 0xda14...5f61",
+      "data": {
+        "kind": "eoa",
+        "address": "0xda14344788f863e0412925523bb97147f23f5f61",
+        "lane": 16,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+      "type": "eoa",
+      "label": "EOA 0xda14...5f61",
+      "data": {
+        "kind": "eoa",
+        "address": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+        "lane": 17,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+      "type": "eoa",
+      "label": "EOA 0xda14...5f61",
+      "data": {
+        "kind": "eoa",
+        "address": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+        "lane": 18,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "out",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    },
+    {
+      "id": "eoa:0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+      "type": "eoa",
+      "label": "EOA 0xf30b...0eb0",
+      "data": {
+        "kind": "eoa",
+        "address": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+        "lane": 19,
+        "step": -1,
+        "dfs_depth": 1,
+        "discovered_by": "in",
+        "event_count": 0,
+        "category_counts": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "eoa-discovery-edge-0",
+      "source": "eoa:0xda14344788f863e0412925523bb97147f23f5f61",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xda14344788f863e0412925523bb97147f23f5f61:0x325228217e02e31529bf4bc6e32db695ea525669:24956790:0:0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "address": "0xda14344788f863e0412925523bb97147f23f5f61",
+          "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "datetime_utc": "2026-04-25T11:43:47Z",
+          "block_number": 24956790,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-1",
+      "source": "eoa:0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61:0x325228217e02e31529bf4bc6e32db695ea525669:24956767:0:0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "address": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+          "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "datetime_utc": "2026-04-25T11:39:11Z",
+          "block_number": 24956767,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-2",
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "eoa:0x547090eb068220b3da1f7b611ef21723caa4121e",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | USDC",
+      "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:0x547090eb068220b3da1f7b611ef21723caa4121e:24921894:0:0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "datetime_utc": "2026-04-20T15:05:47Z",
+          "block_number": 24921894,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1500.0,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-3",
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "eoa:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61:24909739:0:0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "datetime_utc": "2026-04-18T22:27:35Z",
+          "block_number": 24909739,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 0.0100000046,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-4",
+      "source": "eoa:0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "2 tx | ETH",
+      "tx_hash": "0xe24ae305a98cfa8399cfee0edfb0a5ecdf70371db36a2d95a03351a04ee4f78f",
+      "event_count": 2,
+      "details": [
+        {
+          "event_id": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0:0x325228217e02e31529bf4bc6e32db695ea525669:24909732:0:0xd25d647634128162da566a7fe50f2d0ebad6b7b85970a1cb7475a1b81100e9bf",
+          "address": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+          "tx_hash": "0xd25d647634128162da566a7fe50f2d0ebad6b7b85970a1cb7475a1b81100e9bf",
+          "datetime_utc": "2026-04-18T22:26:11Z",
+          "block_number": 24909732,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 0.01,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0:0x325228217e02e31529bf4bc6e32db695ea525669:24911744:1:0xe24ae305a98cfa8399cfee0edfb0a5ecdf70371db36a2d95a03351a04ee4f78f",
+          "address": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+          "tx_hash": "0xe24ae305a98cfa8399cfee0edfb0a5ecdf70371db36a2d95a03351a04ee4f78f",
+          "datetime_utc": "2026-04-19T05:09:23Z",
+          "block_number": 24911744,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 529.29,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-5",
+      "source": "eoa:0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:0:0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "address": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-6",
+      "source": "eoa:0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842439:0:0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "address": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "datetime_utc": "2026-04-09T13:24:47Z",
+          "block_number": 24842439,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-7",
+      "source": "eoa:0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735667:0:0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "address": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "datetime_utc": "2026-03-25T16:10:23Z",
+          "block_number": 24735667,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-8",
+      "source": "eoa:0x0720697896b81dc9e2c690289248ec09e898e07b",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | USDC",
+      "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x0720697896b81dc9e2c690289248ec09e898e07b:0x325228217e02e31529bf4bc6e32db695ea525669:24578016:0:0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "address": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "datetime_utc": "2026-03-03T16:07:11Z",
+          "block_number": 24578016,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 0.002,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-9",
+      "source": "eoa:0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b:0x325228217e02e31529bf4bc6e32db695ea525669:24578016:0:0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "address": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+          "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "datetime_utc": "2026-03-03T16:07:11Z",
+          "block_number": 24578016,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-10",
+      "source": "eoa:0xc86842969051600a1c6af0143670c059648cc85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc86842969051600a1c6af0143670c059648cc85c:0x325228217e02e31529bf4bc6e32db695ea525669:24518425:0:0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "address": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "datetime_utc": "2026-02-23T08:34:47Z",
+          "block_number": 24518425,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.4966016146e-07,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-11",
+      "source": "eoa:0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448598:0:0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "address": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "datetime_utc": "2026-02-13T14:56:35Z",
+          "block_number": 24448598,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-12",
+      "source": "eoa:0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397116:0:0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+          "datetime_utc": "2026-02-06T10:14:23Z",
+          "block_number": 24397116,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448600:1:0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+          "datetime_utc": "2026-02-13T14:56:59Z",
+          "block_number": 24448600,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735676:2:0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+          "datetime_utc": "2026-03-25T16:12:11Z",
+          "block_number": 24735676,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:3:0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:25171298:4:0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "datetime_utc": "2026-05-25T09:03:23Z",
+          "block_number": 25171298,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-13",
+      "source": "eoa:0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397116:0:0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "address": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "datetime_utc": "2026-02-06T10:14:23Z",
+          "block_number": 24397116,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-14",
+      "source": "eoa:0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068:0x325228217e02e31529bf4bc6e32db695ea525669:24390294:0:0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "address": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+          "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "datetime_utc": "2026-02-05T11:20:35Z",
+          "block_number": 24390294,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 2e-18,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-15",
+      "source": "eoa:0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375749:0:0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "address": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "datetime_utc": "2026-02-03T10:31:59Z",
+          "block_number": 24375749,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-16",
+      "source": "eoa:0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | weETH",
+      "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375725:0:0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "address": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "datetime_utc": "2026-02-03T10:26:59Z",
+          "block_number": 24375725,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-17",
+      "source": "eoa:0xc868070b708e44b72bb899847a99757d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375725:0:0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+          "datetime_utc": "2026-02-03T10:26:59Z",
+          "block_number": 24375725,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375749:1:0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+          "datetime_utc": "2026-02-03T10:31:59Z",
+          "block_number": 24375749,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397115:2:0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+          "datetime_utc": "2026-02-06T10:14:11Z",
+          "block_number": 24397115,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842435:3:0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+          "datetime_utc": "2026-04-09T13:23:59Z",
+          "block_number": 24842435,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:25180005:4:0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "datetime_utc": "2026-05-26T14:11:11Z",
+          "block_number": 25180005,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-18",
+      "source": "eoa:0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24369512:0:0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+          "datetime_utc": "2026-02-02T13:36:23Z",
+          "block_number": 24369512,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448600:1:0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+          "datetime_utc": "2026-02-13T14:56:59Z",
+          "block_number": 24448600,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735676:2:0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+          "datetime_utc": "2026-03-25T16:12:11Z",
+          "block_number": 24735676,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842434:3:0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+          "datetime_utc": "2026-04-09T13:23:47Z",
+          "block_number": 24842434,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:4:0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-19",
+      "source": "eoa:0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24369512:0:0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+          "datetime_utc": "2026-02-02T13:36:23Z",
+          "block_number": 24369512,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448600:1:0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+          "datetime_utc": "2026-02-13T14:56:59Z",
+          "block_number": 24448600,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735676:2:0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+          "datetime_utc": "2026-03-25T16:12:11Z",
+          "block_number": 24735676,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842434:3:0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+          "datetime_utc": "2026-04-09T13:23:47Z",
+          "block_number": 24842434,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:4:0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-20",
+      "source": "eoa:0xc868070b708e44b72bb899847a99757d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375725:0:0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+          "datetime_utc": "2026-02-03T10:26:59Z",
+          "block_number": 24375725,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375749:1:0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+          "datetime_utc": "2026-02-03T10:31:59Z",
+          "block_number": 24375749,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397115:2:0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+          "datetime_utc": "2026-02-06T10:14:11Z",
+          "block_number": 24397115,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842435:3:0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+          "datetime_utc": "2026-04-09T13:23:59Z",
+          "block_number": 24842435,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868070b708e44b72bb899847a99757d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:25180005:4:0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "datetime_utc": "2026-05-26T14:11:11Z",
+          "block_number": 25180005,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-21",
+      "source": "eoa:0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | weETH",
+      "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375725:0:0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "address": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "datetime_utc": "2026-02-03T10:26:59Z",
+          "block_number": 24375725,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-22",
+      "source": "eoa:0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24375749:0:0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "address": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "datetime_utc": "2026-02-03T10:31:59Z",
+          "block_number": 24375749,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-23",
+      "source": "eoa:0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068:0x325228217e02e31529bf4bc6e32db695ea525669:24390294:0:0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "address": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+          "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "datetime_utc": "2026-02-05T11:20:35Z",
+          "block_number": 24390294,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 2e-18,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-24",
+      "source": "eoa:0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397116:0:0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "address": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "datetime_utc": "2026-02-06T10:14:23Z",
+          "block_number": 24397116,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-25",
+      "source": "eoa:0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "5 tx | ETH",
+      "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+      "event_count": 5,
+      "details": [
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24397116:0:0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+          "datetime_utc": "2026-02-06T10:14:23Z",
+          "block_number": 24397116,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448600:1:0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+          "datetime_utc": "2026-02-13T14:56:59Z",
+          "block_number": 24448600,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735676:2:0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+          "datetime_utc": "2026-03-25T16:12:11Z",
+          "block_number": 24735676,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:3:0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "event_id": "0xc868bad6fac0509acbc555eaecca951d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:25171298:4:0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "datetime_utc": "2026-05-25T09:03:23Z",
+          "block_number": 25171298,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-26",
+      "source": "eoa:0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24448598:0:0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "address": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "datetime_utc": "2026-02-13T14:56:35Z",
+          "block_number": 24448598,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-27",
+      "source": "eoa:0xc86842969051600a1c6af0143670c059648cc85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc86842969051600a1c6af0143670c059648cc85c:0x325228217e02e31529bf4bc6e32db695ea525669:24518425:0:0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "address": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "datetime_utc": "2026-02-23T08:34:47Z",
+          "block_number": 24518425,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1.4966016146e-07,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-28",
+      "source": "eoa:0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b:0x325228217e02e31529bf4bc6e32db695ea525669:24578016:0:0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "address": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+          "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "datetime_utc": "2026-03-03T16:07:11Z",
+          "block_number": 24578016,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-29",
+      "source": "eoa:0x0720697896b81dc9e2c690289248ec09e898e07b",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | USDC",
+      "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x0720697896b81dc9e2c690289248ec09e898e07b:0x325228217e02e31529bf4bc6e32db695ea525669:24578016:0:0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "address": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "datetime_utc": "2026-03-03T16:07:11Z",
+          "block_number": 24578016,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 0.002,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-30",
+      "source": "eoa:0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24735667:0:0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "address": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "datetime_utc": "2026-03-25T16:10:23Z",
+          "block_number": 24735667,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-31",
+      "source": "eoa:0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842439:0:0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "address": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "datetime_utc": "2026-04-09T13:24:47Z",
+          "block_number": 24842439,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-32",
+      "source": "eoa:0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | WETH",
+      "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c:0x325228217e02e31529bf4bc6e32db695ea525669:24842603:0:0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "address": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "datetime_utc": "2026-04-09T13:57:35Z",
+          "block_number": 24842603,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "amount": 1e-08,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-33",
+      "source": "eoa:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+      "target": "eoa:0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0x779c8ebfb3f478d80aa86b820783af9cf2fc1b756e55e01bacb34919737143fd",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61:0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0:24909772:0:0x779c8ebfb3f478d80aa86b820783af9cf2fc1b756e55e01bacb34919737143fd",
+          "address": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+          "tx_hash": "0x779c8ebfb3f478d80aa86b820783af9cf2fc1b756e55e01bacb34919737143fd",
+          "datetime_utc": "2026-04-18T22:34:11Z",
+          "block_number": 24909772,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 0.009920176335659,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-34",
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "eoa:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61:24909739:0:0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "datetime_utc": "2026-04-18T22:27:35Z",
+          "block_number": 24909739,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 0.0100000046,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-35",
+      "source": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "target": "eoa:0x547090eb068220b3da1f7b611ef21723caa4121e",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | USDC",
+      "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:0x547090eb068220b3da1f7b611ef21723caa4121e:24921894:0:0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "datetime_utc": "2026-04-20T15:05:47Z",
+          "block_number": 24921894,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "amount": 1500.0,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-36",
+      "source": "eoa:0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61:0x325228217e02e31529bf4bc6e32db695ea525669:24956767:0:0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "address": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+          "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "datetime_utc": "2026-04-25T11:39:11Z",
+          "block_number": 24956767,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eoa-discovery-edge-37",
+      "source": "eoa:0xda14344788f863e0412925523bb97147f23f5f61",
+      "target": "eoa:0x325228217e02e31529bf4bc6e32db695ea525669",
+      "edge_type": "wallet_move",
+      "category": "wallet_flow",
+      "label": "1 tx | ETH",
+      "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+      "event_count": 1,
+      "details": [
+        {
+          "event_id": "0xda14344788f863e0412925523bb97147f23f5f61:0x325228217e02e31529bf4bc6e32db695ea525669:24956790:0:0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "address": "0xda14344788f863e0412925523bb97147f23f5f61",
+          "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "datetime_utc": "2026-04-25T11:43:47Z",
+          "block_number": 24956790,
+          "category": "wallet_flow",
+          "protocol": "EOA/Safe transfer",
+          "action": "send",
+          "transfers": [
+            {
+              "direction": "out",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "amount": 1e-09,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23993876:91:5",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xcab9199d1231178f1bad11e2382be1faf97635f8bc9c9221a8436045cf37b735",
+      "datetime_utc": "2025-12-12T03:25:23Z",
+      "block_number": 23993876,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xfffc1fd463d953422ef7b3e4f39ac8fcb6a93825",
+          "symbol": "MetaAI",
+          "amount": 10.0,
+          "count": 1,
+          "from": "0xfffc1fd463d953422ef7b3e4f39ac8fcb6a93825",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:23998372:66:9",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x8e65cffa8a238baaae6f804b94f098a1c844a68f38cce906ad0afe960579d623",
+      "datetime_utc": "2025-12-12T18:37:35Z",
+      "block_number": 23998372,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "symbol": "cbBTC",
+          "amount": 50.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24036073:42:21",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xdff34c473f8fe9684259c961d9a28a89eb3e8a6b1909401f3e6541bb471c5de2",
+      "datetime_utc": "2025-12-18T01:01:23Z",
+      "block_number": 24036073,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x692cd1cce74bfb88947a3e02f6993ce677d54638",
+          "symbol": "xAI",
+          "amount": 10.0,
+          "count": 1,
+          "from": "0x692cd1cce74bfb88947a3e02f6993ce677d54638",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24038889:124:25",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x4a28624dee83d50e77e0b7693f74e75e4876e1829a8a25442d71bfad0ea31031",
+      "datetime_utc": "2025-12-18T10:27:35Z",
+      "block_number": 24038889,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 0.2798700866795954,
+          "count": 1,
+          "from": "0x59e608e4842162480591032f3c8b0ae55c98d104",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24070069:23:30",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x33ff424bc048d8c3b768eec60265a0b9b8082fcc8a7fe895cf00473633737eb1",
+      "datetime_utc": "2025-12-22T18:53:47Z",
+      "block_number": 24070069,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xf28ccd4e6a2faad9ab050e181273ccf24bc36a70",
+          "symbol": "DOGX",
+          "amount": 2.0,
+          "count": 1,
+          "from": "0xf28ccd4e6a2faad9ab050e181273ccf24bc36a70",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24075662:131:34",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe2e8a4cb75dbd4bf968d5f9e53bf2b7f8a56b9ce35bbff60425db019b51da340",
+      "datetime_utc": "2025-12-23T13:38:35Z",
+      "block_number": 24075662,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110175:44:38",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xfe86aa98ffd9778f5aec401ce18e0abdde89dfcd15654f1e38c2880d7abd8c56",
+      "datetime_utc": "2025-12-28T09:16:47Z",
+      "block_number": 24110175,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24110751:180:39",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe36d845254087393c89c41773fb7805aede08629c574ce1d42e2a7d272cb6500",
+      "datetime_utc": "2025-12-28T11:12:35Z",
+      "block_number": 24110751,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x7f3ba3f18f1378fbd8efa0a20bfe7016e2efd266",
+          "symbol": "YES",
+          "amount": 3.0,
+          "count": 1,
+          "from": "0x7f3ba3f18f1378fbd8efa0a20bfe7016e2efd266",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24125843:145:42",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1873d90709b88d9bb58704cb7a74f2f7dd119d7722b0c1d4e38fe51c4dcdf920",
+      "datetime_utc": "2025-12-30T13:48:11Z",
+      "block_number": 24125843,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24126062:112:45",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xdf6612aeb530f2ed08398537a783b4c2dccb4516ee6825d2bf9dc7abc2fb8550",
+      "datetime_utc": "2025-12-30T14:31:59Z",
+      "block_number": 24126062,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24130329:50:46",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1e86e585684152e9063859332932b6547222e9ecc9e465e67b0cc34543c2ca98",
+      "datetime_utc": "2025-12-31T04:49:59Z",
+      "block_number": 24130329,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x9e351a9d94d7a0727f273450f4a75f2b062e479b",
+          "symbol": "KIB",
+          "amount": 1.0,
+          "count": 1,
+          "from": "0x9e351a9d94d7a0727f273450f4a75f2b062e479b",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24175027:288:49",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x9ec016889aec7ccb9c856d52c12d92297226259acec9ec8487da2ae72fd5d163",
+      "datetime_utc": "2026-01-06T10:25:59Z",
+      "block_number": 24175027,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 1500000.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181557:293:51",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5e4c143edd0231833e1af04fd34fb240130a927209471ac054ae8cd48a235b9f",
+      "datetime_utc": "2026-01-07T08:18:23Z",
+      "block_number": 24181557,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.2127939203162708,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181597:355:52",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x8c9afee41b7b4a2c410c95a5fec0d0a6ecb4b69bc336eeb4dc08b212b784f526",
+      "datetime_utc": "2026-01-07T08:26:23Z",
+      "block_number": 24181597,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 1000.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181646:323:57",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xcc9f38fab0c1c82f260f6b970c13e68f9fdea3c8ecb71a7d199203ea053beb3b",
+      "datetime_utc": "2026-01-07T08:36:23Z",
+      "block_number": 24181646,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 39.5928855873582,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181677:138:58",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x3e37e122c6bdc8902331e3982b981a0bf8af5e725ee9f2097f666f40739bb7cd",
+      "datetime_utc": "2026-01-07T08:42:35Z",
+      "block_number": 24181677,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 750.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181682:0:59",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x7b8b0112c42c28f461ce9ab6e97e8ebc38d0ca830eeefa039a79947fa677f105",
+      "datetime_utc": "2026-01-07T08:43:35Z",
+      "block_number": 24181682,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x695e449525d42055d368f84e97912032c7410a46",
+          "symbol": "SUPERDOG",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0x695e449525d42055d368f84e97912032c7410a46",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24181764:65:64",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6885516e08d5dd5a1ee24e923434743cc47105b91466bc678fad7d8afa717ef2",
+      "datetime_utc": "2026-01-07T08:59:59Z",
+      "block_number": 24181764,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 100.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24275672:121:90",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x631ae7bfc14b5e9d381a59cbcd0a845410c598abb1038d10d4215f9a1cc1b130",
+      "datetime_utc": "2026-01-20T11:24:59Z",
+      "block_number": 24275672,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x059b2051bc369a52dfa4bcbaa77388483279320c",
+          "symbol": "UniLife",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0x059b2051bc369a52dfa4bcbaa77388483279320c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24318081:61:96",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x91799ee8b416a5202cd5abab6925b5192d82c63d37fd8bd29a4254bb5f51694e",
+      "datetime_utc": "2026-01-26T09:22:47Z",
+      "block_number": 24318081,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x3ab281cfad326e4e93c16d99ea51cb9db27fb198",
+          "symbol": "Elon Air",
+          "amount": 2.0,
+          "count": 1,
+          "from": "0x3ab281cfad326e4e93c16d99ea51cb9db27fb198",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24332208:72:99",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x91cedd9cdfc3cdb87ad50a6c0bad5d12ecf7b01ba20dc085df114319040af36e",
+      "datetime_utc": "2026-01-28T08:40:35Z",
+      "block_number": 24332208,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 0.0015,
+          "count": 1,
+          "from": "0x0720a0e9fba34ccedfc1f03fd270d169e898e07b",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24346643:245:101",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xee6b8a4b8b3ba98d2a1a5580c70f1ff5f523666ddb1d9d25d6b16b49e7102873",
+      "datetime_utc": "2026-01-30T08:59:47Z",
+      "block_number": 24346643,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 0.00015,
+          "count": 1,
+          "from": "0x0720e174486b2a7953ff105c9637f439e898e07b",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24347414:21:104",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x65febf485e2d259831acaea62979ce0ba4fe495e4270fbb11cbc07adffb21703",
+      "datetime_utc": "2026-01-30T11:34:23Z",
+      "block_number": 24347414,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xd8f1200650fb2e28b8a068d4bc4d53c4d8984990",
+          "symbol": "ChinaHorse",
+          "amount": 6.0,
+          "count": 1,
+          "from": "0xd8f1200650fb2e28b8a068d4bc4d53c4d8984990",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375696:318:116",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x98b43a530f5dad22f70b8f3dd6d7a78026a7113faa23cc8f8ee9eb88f2cc4c08",
+      "datetime_utc": "2026-02-03T10:20:11Z",
+      "block_number": 24375696,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xb4a8294e89a42edeb02b73b3fa3431c54af2f9f7",
+          "symbol": "ꓴꓢꓓС",
+          "amount": 200056.394117,
+          "count": 1,
+          "from": "0x03d18c09f1335a7a9d1765ab6f65129cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375725:448:121",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+      "datetime_utc": "2026-02-03T10:26:59Z",
+      "block_number": 24375725,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "symbol": "weETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375749:271:126",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+      "datetime_utc": "2026-02-03T10:31:59Z",
+      "block_number": 24375749,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24375955:367:128",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x02ec698344a57040be02c7b4e4b90e363ec25c3b93fdec6e16d14edf8dfdb577",
+      "datetime_utc": "2026-02-03T11:13:23Z",
+      "block_number": 24375955,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "symbol": "SpaceX",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24380182:43:130",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xec7e82592a17a3c5538a761cb4b4840f76b8656108b4ad32a2db633f533422e9",
+      "datetime_utc": "2026-02-04T01:23:59Z",
+      "block_number": 24380182,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "symbol": "SpaceX",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24380202:62:131",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xae72de15ff4516e5aebb4a8167629bf35c6729af038457fe53c187f8508ba1aa",
+      "datetime_utc": "2026-02-04T01:27:59Z",
+      "block_number": 24380202,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "symbol": "SpaceX",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0xff93322a5fa4dee11d0d5b4634c32ba0b4055cbe",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24390277:85:134",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x198d0b0b40f39191c50bf1027f76f133ba8327c12cda9753a9001f9e4f1a6156",
+      "datetime_utc": "2026-02-05T11:17:11Z",
+      "block_number": 24390277,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xd31d3af49de4713f3f87bc31a46cfff7a88a782f",
+          "symbol": "USDC",
+          "amount": 400176.098112,
+          "count": 1,
+          "from": "0x03d18c09f1335a7a9d1765ab6f65129cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24396966:408:141",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1669f0bfd58517c3da851a039bf5bd10802b7d842fc1593aceea0bf196aa094b",
+      "datetime_utc": "2026-02-06T09:43:59Z",
+      "block_number": 24396966,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x5eb3059e5deb2625967e0010a01ab0bbe07186cc",
+          "symbol": "USDC",
+          "amount": 399837.615629,
+          "count": 1,
+          "from": "0x03d18c09f1335a7a9d1765ab6f65129cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24397116:234:148",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+      "datetime_utc": "2026-02-06T10:14:23Z",
+      "block_number": 24397116,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24448598:534:158",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+      "datetime_utc": "2026-02-13T14:56:35Z",
+      "block_number": 24448598,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24449581:70:162",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x29844c456d702ebfae7fad653b2f9ff2deecb7617bb551732d01c80ae3b28124",
+      "datetime_utc": "2026-02-13T18:14:11Z",
+      "block_number": 24449581,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc26cdfca6999d2aa45ab09ae2e4e9458b2fa18a2",
+          "symbol": "AILife",
+          "amount": 6.0,
+          "count": 1,
+          "from": "0xc26cdfca6999d2aa45ab09ae2e4e9458b2fa18a2",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24451669:62:164",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6a22ff31176e2c78a97086061101ccbec893247ba8981ceb64c9448598cdc2f0",
+      "datetime_utc": "2026-02-14T01:13:59Z",
+      "block_number": 24451669,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x290b3b9f7661a6834135be44c3475aef987fa3b2",
+          "symbol": "DOGE",
+          "amount": 1.0,
+          "count": 1,
+          "from": "0x290b3b9f7661a6834135be44c3475aef987fa3b2",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24451850:126:165",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x14988338bea3072a72aa98e4ff6df0b9b4d9858f784325ca2e20c116011fddc1",
+      "datetime_utc": "2026-02-14T01:50:11Z",
+      "block_number": 24451850,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x93fb4459f48f379ba865eb55dddc292c702ff569",
+          "symbol": "DOG",
+          "amount": 1.0,
+          "count": 1,
+          "from": "0x93fb4459f48f379ba865eb55dddc292c702ff569",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24518425:271:172",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+      "datetime_utc": "2026-02-23T08:34:47Z",
+      "block_number": 24518425,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.4966016146e-07,
+          "count": 1,
+          "from": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24527768:49:181",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xd2475c0a2cc24caa6366658c821a3f7c7bd6284f1346114d354b13770f2172b0",
+      "datetime_utc": "2026-02-24T15:50:23Z",
+      "block_number": 24527768,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 2813.126974,
+          "count": 1,
+          "from": "0xd152f549545093347a162dce210e7293f1452150",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24536012:27:182",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x727bb17e54ce840378e880ca39dcc96ec42bf7e93df89ed1cbb964095ebf29eb",
+      "datetime_utc": "2026-02-25T19:27:23Z",
+      "block_number": 24536012,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x05d26df93ba55a8e9e60693291213a5a835764bb",
+          "symbol": "POWER",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0x05d26df93ba55a8e9e60693291213a5a835764bb",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24568618:250:183",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5b83d6b39d870060c207014b08d285ff2b6e2057c32d835ad4c6b69b27624a16",
+      "datetime_utc": "2026-03-02T08:38:47Z",
+      "block_number": 24568618,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 276.50114073683113,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24578016:302:188",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+      "datetime_utc": "2026-03-03T16:07:11Z",
+      "block_number": 24578016,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "symbol": "USDC",
+          "amount": 0.002,
+          "count": 1,
+          "from": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24578492:91:190",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe4c53325eaed2fef7da404cd3f30d7561f4d83fa906008c7d5d49d14d6210324",
+      "datetime_utc": "2026-03-03T17:42:59Z",
+      "block_number": 24578492,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x3b10d974439b7124c1bf124e1764bb3cc59cf04f",
+          "symbol": "WAR",
+          "amount": 6.0,
+          "count": 1,
+          "from": "0x3b10d974439b7124c1bf124e1764bb3cc59cf04f",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24578498:213:191",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x3d5ecdd876c644771979c55107f4fd028b8b704c05fb53c125a6b4acf3e7ad10",
+      "datetime_utc": "2026-03-03T17:44:11Z",
+      "block_number": 24578498,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x7f9acaddfe815921b1228ea3e6eee098ab8e2cb7",
+          "symbol": "BlackGold",
+          "amount": 6.0,
+          "count": 1,
+          "from": "0x7f9acaddfe815921b1228ea3e6eee098ab8e2cb7",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24618940:351:194",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5a661e77468f9e5f476d230231e31d58de2a8cbdc879f109106d3046c4563b73",
+      "datetime_utc": "2026-03-09T09:12:11Z",
+      "block_number": 24618940,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xf03271ad021822e3a5628ecd6af2f2f6d10fc80c",
+          "symbol": "TX",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0xf03271ad021822e3a5628ecd6af2f2f6d10fc80c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24628151:211:196",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x71ef0ba6e07c19e862aa961354473cb8626c474f5bd1ff3653783577e2fae883",
+      "datetime_utc": "2026-03-10T16:06:47Z",
+      "block_number": 24628151,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 50.59632014246186,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24633851:167:199",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xcbe2550842633c2cdd316de1d1af25f7a60ad2bad96bb4361d71eae318712fbb",
+      "datetime_utc": "2026-03-11T11:12:11Z",
+      "block_number": 24633851,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 80.0,
+          "count": 1,
+          "from": "0xc868bfb240ed207449afe71d2ecc781d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24671405:53:208",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x55e30efb7dcf7bf4f2ca6658fc41286a9d31ce11e5962b3daeb17b242a93f840",
+      "datetime_utc": "2026-03-16T16:58:11Z",
+      "block_number": 24671405,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 1120.125786,
+          "count": 1,
+          "from": "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24690695:43:249",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x1082f814273dce479ea1157b4cab6a84b097086eb0e481b3cbdaf4a0ebbeb640",
+      "datetime_utc": "2026-03-19T09:40:11Z",
+      "block_number": 24690695,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xfdb7941769e292d3f0b9cc356c9e054cb3f2c729",
+          "symbol": "Ainance",
+          "amount": 8.0,
+          "count": 1,
+          "from": "0xfdb7941769e292d3f0b9cc356c9e054cb3f2c729",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24690695:42:248",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x99832223eec004fbfdc90f74ee9ce7a867f706201a06a5130b1fa7ef08d4e6ef",
+      "datetime_utc": "2026-03-19T09:40:11Z",
+      "block_number": 24690695,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x6fb1b08a39601303a466de1815fd1a70f9fc65f5",
+          "symbol": "AFK",
+          "amount": 10.0,
+          "count": 1,
+          "from": "0x6fb1b08a39601303a466de1815fd1a70f9fc65f5",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24726624:375:261",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xf246590152993d717320dde8bf779d8f7ffde1eb5e6107e4b477eeb90fe3445a",
+      "datetime_utc": "2026-03-24T09:54:23Z",
+      "block_number": 24726624,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24726640:39:264",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x17052c5f9d56bcad3ae35abdd9d1c487504d1926b5982371631c3191c0a71ef5",
+      "datetime_utc": "2026-03-24T09:57:35Z",
+      "block_number": 24726640,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x423f8211085db9b3c8f4fda3569af3f52bee93bf",
+          "symbol": "MEZO",
+          "amount": 5.0,
+          "count": 1,
+          "from": "0x423f8211085db9b3c8f4fda3569af3f52bee93bf",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24735336:272:267",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xe3a66788518e022caa9700b6e6a09e9169de1d51f3d2e20d1cedf7ab0f934a50",
+      "datetime_utc": "2026-03-25T15:03:59Z",
+      "block_number": 24735336,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x6c9e6797927c46bf99285aa1925796d32b7088b0",
+          "symbol": "υꓢƊⅭ",
+          "amount": 1556266.122264,
+          "count": 1,
+          "from": "0x03d18c09f1335a7a9d1765ab6f65129cb6e14bfc",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24735667:250:274",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+      "datetime_utc": "2026-03-25T16:10:23Z",
+      "block_number": 24735667,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24735728:220:279",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x72625742dc475b43228f4a87f127dbbd52635ed77e2a29950bcaf3165d52a38e",
+      "datetime_utc": "2026-03-25T16:22:35Z",
+      "block_number": 24735728,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868358d6841c8499da5bda8f2925630bb7dc85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24752197:236:282",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xa171f8c13307ce6a66244248d730c26c228a1e70408da63cda93c39847d7e2d9",
+      "datetime_utc": "2026-03-27T23:31:47Z",
+      "block_number": 24752197,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39",
+          "symbol": "HEX",
+          "amount": 1.0,
+          "count": 1,
+          "from": "0xd152f549545093347a162dce210e7293f1452150",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24764896:208:283",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5ac3ac99839a7c7cdcbcf064dfadffcce73691a390a860b8659b2bf18170ad01",
+      "datetime_utc": "2026-03-29T18:00:23Z",
+      "block_number": 24764896,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x9d24364b97270961b2948734afe8d58832efd43a",
+          "symbol": "FAM",
+          "amount": 3e-09,
+          "count": 1,
+          "from": "0x9d44c40e88e079187496842307a217679b210a9c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24842439:264:289",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+      "datetime_utc": "2026-04-09T13:24:47Z",
+      "block_number": 24842439,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24842603:316:297",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+      "datetime_utc": "2026-04-09T13:57:35Z",
+      "block_number": 24842603,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1e-08,
+          "count": 1,
+          "from": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24984857:165:317",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5295a07114b2dec55da30b083660e16b45c965b239e14037b987cfa5b61cc891",
+      "datetime_utc": "2026-04-29T09:30:35Z",
+      "block_number": 24984857,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xa0a675d08ca63066f48408136f8a71fc65be4afc",
+          "symbol": "BZR",
+          "amount": 0.001,
+          "count": 1,
+          "from": "0x3d62335cc19812981e2a20d62867eb569f84ab45",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24985966:266:321",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0xbb126ed6ce81bf472d4db211664b65f61aab3b948c1fb4731790e4a238eb78bd",
+      "datetime_utc": "2026-04-29T13:12:59Z",
+      "block_number": 24985966,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 3.4008280925e-08,
+          "count": 1,
+          "from": "0xc868a36f1807121d72e275e96dfc18b08501c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:24986357:245:325",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x5b21f473ac6b3e3c755f4c25659e81b819ebe8b6dbe448cacf77169aa223ca07",
+      "datetime_utc": "2026-04-29T14:31:11Z",
+      "block_number": 24986357,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.9310000003e-08,
+          "count": 1,
+          "from": "0xc868a36f1807121d72e275e96dfc18b08501c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:25121791:134:335",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x342a748c9c732a3862206eefbaecaf8c926f21a54c77505d22d745012382a1aa",
+      "datetime_utc": "2026-05-18T11:28:47Z",
+      "block_number": 25121791,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "WETH",
+          "amount": 1.1054689438e-08,
+          "count": 1,
+          "from": "0xc868a36f1807121d72e275e96dfc18b08501c85c",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    },
+    {
+      "event_id": "0x325228217e02e31529bf4bc6e32db695ea525669:25128366:19:337",
+      "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+      "tx_hash": "0x6efac2994692233ba2d7ec70684a5ddb9b308689b0190f3759b91a154c1327d3",
+      "datetime_utc": "2026-05-19T09:27:47Z",
+      "block_number": 25128366,
+      "category": "token_receive",
+      "protocol": "",
+      "action": "receive",
+      "transfers": [
+        {
+          "direction": "in",
+          "token": "0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc",
+          "symbol": "9SUSDC",
+          "amount": 2836.890411,
+          "count": 1,
+          "from": "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3",
+          "to": "0x325228217e02e31529bf4bc6e32db695ea525669"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "feeder/eoa_timeline.py --frontend-flow --dfs-only",
+    "view": "eoa_flow",
+    "format_version": 2,
+    "address_count": 20,
+    "event_count": 63,
+    "category_counts": {
+      "token_receive": 63
+    },
+    "max_events_per_address": 80,
+    "discovery": {
+      "nodes": [
+        {
+          "address": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "kind": "EOA",
+          "depth": 0,
+          "discovered_by": "seed"
+        },
+        {
+          "address": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "out"
+        },
+        {
+          "address": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xda14344788f863e0412925523bb97147f23f5f61",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        },
+        {
+          "address": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "out"
+        },
+        {
+          "address": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+          "kind": "EOA",
+          "depth": 1,
+          "discovered_by": "in"
+        }
+      ],
+      "edges": [
+        {
+          "source": "0xda14344788f863e0412925523bb97147f23f5f61",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24956790,
+          "last_block": 24956790,
+          "sample_tx": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "transfers": [
+            {
+              "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+              "block_number": 24956790,
+              "timestamp": 1777117427,
+              "datetime_utc": "2026-04-25T11:43:47Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xda14344788f863e0412925523bb97147f23f5f61",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24956767,
+          "last_block": 24956767,
+          "sample_tx": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "transfers": [
+            {
+              "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+              "block_number": 24956767,
+              "timestamp": 1777117151,
+              "datetime_utc": "2026-04-25T11:39:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "target": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+          "relation": "out",
+          "symbols": [
+            "USDC"
+          ],
+          "transfer_count": 1,
+          "first_block": 24921894,
+          "last_block": 24921894,
+          "sample_tx": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "transfers": [
+            {
+              "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+              "block_number": 24921894,
+              "timestamp": 1776697547,
+              "datetime_utc": "2026-04-20T15:05:47Z",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "decimals": 6,
+              "value_raw": "1500000000",
+              "amount": "1500",
+              "amount_float": 1500.0,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "target": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24909739,
+          "last_block": 24909739,
+          "sample_tx": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "transfers": [
+            {
+              "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+              "block_number": 24909739,
+              "timestamp": 1776551255,
+              "datetime_utc": "2026-04-18T22:27:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "10000004600000000",
+              "amount": "0.0100000046",
+              "amount_float": 0.0100000046,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 2,
+          "first_block": 24909732,
+          "last_block": 24911744,
+          "sample_tx": "0xe24ae305a98cfa8399cfee0edfb0a5ecdf70371db36a2d95a03351a04ee4f78f",
+          "transfers": [
+            {
+              "tx_hash": "0xd25d647634128162da566a7fe50f2d0ebad6b7b85970a1cb7475a1b81100e9bf",
+              "block_number": 24909732,
+              "timestamp": 1776551171,
+              "datetime_utc": "2026-04-18T22:26:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "10000000000000000",
+              "amount": "0.01",
+              "amount_float": 0.01,
+              "from": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0xe24ae305a98cfa8399cfee0edfb0a5ecdf70371db36a2d95a03351a04ee4f78f",
+              "block_number": 24911744,
+              "timestamp": 1776575363,
+              "datetime_utc": "2026-04-19T05:09:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "529290000000000000000",
+              "amount": "529.29",
+              "amount_float": 529.29,
+              "from": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24842603,
+          "last_block": 24842603,
+          "sample_tx": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "transfers": [
+            {
+              "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24842439,
+          "last_block": 24842439,
+          "sample_tx": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "transfers": [
+            {
+              "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+              "block_number": 24842439,
+              "timestamp": 1775741087,
+              "datetime_utc": "2026-04-09T13:24:47Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24735667,
+          "last_block": 24735667,
+          "sample_tx": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "transfers": [
+            {
+              "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+              "block_number": 24735667,
+              "timestamp": 1774455023,
+              "datetime_utc": "2026-03-25T16:10:23Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "USDC"
+          ],
+          "transfer_count": 1,
+          "first_block": 24578016,
+          "last_block": 24578016,
+          "sample_tx": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "transfers": [
+            {
+              "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+              "block_number": 24578016,
+              "timestamp": 1772554031,
+              "datetime_utc": "2026-03-03T16:07:11Z",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "decimals": 6,
+              "value_raw": "2000",
+              "amount": "0.002",
+              "amount_float": 0.002,
+              "from": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24578016,
+          "last_block": 24578016,
+          "sample_tx": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "transfers": [
+            {
+              "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+              "block_number": 24578016,
+              "timestamp": 1772554031,
+              "datetime_utc": "2026-03-03T16:07:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24518425,
+          "last_block": 24518425,
+          "sample_tx": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "transfers": [
+            {
+              "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+              "block_number": 24518425,
+              "timestamp": 1771835687,
+              "datetime_utc": "2026-02-23T08:34:47Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "149660161460",
+              "amount": "0.00000014966016146",
+              "amount_float": 1.4966016146e-07,
+              "from": "0xc86842969051600a1c6af0143670c059648cc85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24448598,
+          "last_block": 24448598,
+          "sample_tx": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "transfers": [
+            {
+              "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+              "block_number": 24448598,
+              "timestamp": 1770994595,
+              "datetime_utc": "2026-02-13T14:56:35Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24397116,
+          "last_block": 25171298,
+          "sample_tx": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "transfers": [
+            {
+              "tx_hash": "0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+              "block_number": 24397116,
+              "timestamp": 1770372863,
+              "datetime_utc": "2026-02-06T10:14:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+              "block_number": 24448600,
+              "timestamp": 1770994619,
+              "datetime_utc": "2026-02-13T14:56:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+              "block_number": 24735676,
+              "timestamp": 1774455131,
+              "datetime_utc": "2026-03-25T16:12:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+              "block_number": 25171298,
+              "timestamp": 1779699803,
+              "datetime_utc": "2026-05-25T09:03:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24397116,
+          "last_block": 24397116,
+          "sample_tx": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "transfers": [
+            {
+              "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+              "block_number": 24397116,
+              "timestamp": 1770372863,
+              "datetime_utc": "2026-02-06T10:14:23Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24390294,
+          "last_block": 24390294,
+          "sample_tx": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "transfers": [
+            {
+              "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+              "block_number": 24390294,
+              "timestamp": 1770290435,
+              "datetime_utc": "2026-02-05T11:20:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "2",
+              "amount": "0.000000000000000002",
+              "amount_float": 2e-18,
+              "from": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24375749,
+          "last_block": 24375749,
+          "sample_tx": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "transfers": [
+            {
+              "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+              "block_number": 24375749,
+              "timestamp": 1770114719,
+              "datetime_utc": "2026-02-03T10:31:59Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "weETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24375725,
+          "last_block": 24375725,
+          "sample_tx": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "transfers": [
+            {
+              "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+              "block_number": 24375725,
+              "timestamp": 1770114419,
+              "datetime_utc": "2026-02-03T10:26:59Z",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24375725,
+          "last_block": 25180005,
+          "sample_tx": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "transfers": [
+            {
+              "tx_hash": "0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+              "block_number": 24375725,
+              "timestamp": 1770114419,
+              "datetime_utc": "2026-02-03T10:26:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+              "block_number": 24375749,
+              "timestamp": 1770114719,
+              "datetime_utc": "2026-02-03T10:31:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+              "block_number": 24397115,
+              "timestamp": 1770372851,
+              "datetime_utc": "2026-02-06T10:14:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+              "block_number": 24842435,
+              "timestamp": 1775741039,
+              "datetime_utc": "2026-04-09T13:23:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+              "block_number": 25180005,
+              "timestamp": 1779804671,
+              "datetime_utc": "2026-05-26T14:11:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24369512,
+          "last_block": 24842603,
+          "sample_tx": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "transfers": [
+            {
+              "tx_hash": "0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+              "block_number": 24369512,
+              "timestamp": 1770039383,
+              "datetime_utc": "2026-02-02T13:36:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+              "block_number": 24448600,
+              "timestamp": 1770994619,
+              "datetime_utc": "2026-02-13T14:56:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+              "block_number": 24735676,
+              "timestamp": 1774455131,
+              "datetime_utc": "2026-03-25T16:12:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+              "block_number": 24842434,
+              "timestamp": 1775741027,
+              "datetime_utc": "2026-04-09T13:23:47Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            },
+            {
+              "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24369512,
+          "last_block": 24842603,
+          "sample_tx": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+          "transfers": [
+            {
+              "tx_hash": "0xc71144abce543c0e5d1ab326b505928369df6ddf3dd5c777bf1408d5c7d57ee5",
+              "block_number": 24369512,
+              "timestamp": 1770039383,
+              "datetime_utc": "2026-02-02T13:36:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x31010167dbcea5fea8c263554c4ceb99145ec1c063f779ff585dd6f2d9affb99",
+              "block_number": 24448600,
+              "timestamp": 1770994619,
+              "datetime_utc": "2026-02-13T14:56:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x0d06b6444d623955ef683e085e3538d7bf48fe85b1b392b844964e52c2286ce0",
+              "block_number": 24735676,
+              "timestamp": 1774455131,
+              "datetime_utc": "2026-03-25T16:12:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x2d8fde97dda8767015ad76ceb1a06f10d289b8b59de1ccb9f04dfa7cbade3c74",
+              "block_number": 24842434,
+              "timestamp": 1775741027,
+              "datetime_utc": "2026-04-09T13:23:47Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0xd7bf6792717aba2c6d3ca7aa090f7423a0f827dc1e9445196aef621ef860fbc3",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868d8b213ff3a99e17d5aecc4ba507d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24375725,
+          "last_block": 25180005,
+          "sample_tx": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+          "transfers": [
+            {
+              "tx_hash": "0xaa037c54d49dfc14b86c15317081c1d5c2af7b45a6d5100a09a566759ee815db",
+              "block_number": 24375725,
+              "timestamp": 1770114419,
+              "datetime_utc": "2026-02-03T10:26:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x1aa0559ebc67879e0fe546b71c6e1066ab84da9af976ed2f19e7c0c04489b6fa",
+              "block_number": 24375749,
+              "timestamp": 1770114719,
+              "datetime_utc": "2026-02-03T10:31:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x20e052b3c7d31b0f757399b86e45e7324aca8ad1cc7995bee83608048a41deb9",
+              "block_number": 24397115,
+              "timestamp": 1770372851,
+              "datetime_utc": "2026-02-06T10:14:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0xe4d360b49a0e32d4ff2783f7ab1c6035a5064fc707ecccd057d5569c6831d088",
+              "block_number": 24842435,
+              "timestamp": 1775741039,
+              "datetime_utc": "2026-04-09T13:23:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x260495956111089206bee8fb05f9af31c7996ca51abe597761ce87934f03c96d",
+              "block_number": 25180005,
+              "timestamp": 1779804671,
+              "datetime_utc": "2026-05-26T14:11:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868070b708e44b72bb899847a99757d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "weETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24375725,
+          "last_block": 24375725,
+          "sample_tx": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+          "transfers": [
+            {
+              "tx_hash": "0x84ebd8b70e0fdd46bb0fd0895b28f3629bde16016c3deac008b730441c35d0a6",
+              "block_number": 24375725,
+              "timestamp": 1770114419,
+              "datetime_utc": "2026-02-03T10:26:59Z",
+              "token": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+              "symbol": "weETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868fa00f69eb2faa51540a609dc9a1d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24375749,
+          "last_block": 24375749,
+          "sample_tx": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+          "transfers": [
+            {
+              "tx_hash": "0x3755f55342804f10b82bad7e200c67dbcccf176074c445eb3fd3409254d6c7e5",
+              "block_number": 24375749,
+              "timestamp": 1770114719,
+              "datetime_utc": "2026-02-03T10:31:59Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8689e2d53cdd0988f858e707a4d405d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24390294,
+          "last_block": 24390294,
+          "sample_tx": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+          "transfers": [
+            {
+              "tx_hash": "0xd9eae8013e9a8f9e84a39c2e37ffbf971aa76898932cce0db53acc2982f90e78",
+              "block_number": 24390294,
+              "timestamp": 1770290435,
+              "datetime_utc": "2026-02-05T11:20:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "2",
+              "amount": "0.000000000000000002",
+              "amount_float": 2e-18,
+              "from": "0x6a00964e195a0b3aacf2a224c4bc835d55ab1068",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24397116,
+          "last_block": 24397116,
+          "sample_tx": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+          "transfers": [
+            {
+              "tx_hash": "0x31ca3497b31e77a146bbc43238ad2fef66328400436f693c6f2112894576a172",
+              "block_number": 24397116,
+              "timestamp": 1770372863,
+              "datetime_utc": "2026-02-06T10:14:23Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8686311f0aa5fe9a05c9598db2d331d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 5,
+          "first_block": 24397116,
+          "last_block": 25171298,
+          "sample_tx": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+          "transfers": [
+            {
+              "tx_hash": "0x62e38ea47976a284907403d39bd901e958eb272508e43593ce65c3c0c28d344b",
+              "block_number": 24397116,
+              "timestamp": 1770372863,
+              "datetime_utc": "2026-02-06T10:14:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0xbb75e9adf10e872b33c570391f9b84de874e420e598eb984dc0f29f838a74e45",
+              "block_number": 24448600,
+              "timestamp": 1770994619,
+              "datetime_utc": "2026-02-13T14:56:59Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x66e4b5e95492fba29c3c55c53a86e2ca8b2590f4a12d110adf6c04ce0897ae8c",
+              "block_number": 24735676,
+              "timestamp": 1774455131,
+              "datetime_utc": "2026-03-25T16:12:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0x4aa3b85f7ae6329b6f2cef3b0a0a2c13d2ab9b069ee96bd6b710ddbc46ba0f47",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            },
+            {
+              "tx_hash": "0xfa0200aad001217a6b30812933b1d1e6b0c755eaba78c1cd08415ff8ef628a52",
+              "block_number": 25171298,
+              "timestamp": 1779699803,
+              "datetime_utc": "2026-05-25T09:03:23Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xc868bad6fac0509acbc555eaecca951d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24448598,
+          "last_block": 24448598,
+          "sample_tx": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+          "transfers": [
+            {
+              "tx_hash": "0x03bd1d1eeaea8b61b3908867fabf80b8204c0838c8cf2cc61544aabec08fbdb5",
+              "block_number": 24448598,
+              "timestamp": 1770994595,
+              "datetime_utc": "2026-02-13T14:56:35Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868d2b6c59ebe2fd4ec7134a69315bd5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc86842969051600a1c6af0143670c059648cc85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24518425,
+          "last_block": 24518425,
+          "sample_tx": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+          "transfers": [
+            {
+              "tx_hash": "0x02ff1907891c4ecf512ea5f8684657ca994254f3176c799ab0617cbcd81e596c",
+              "block_number": 24518425,
+              "timestamp": 1771835687,
+              "datetime_utc": "2026-02-23T08:34:47Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "149660161460",
+              "amount": "0.00000014966016146",
+              "amount_float": 1.4966016146e-07,
+              "from": "0xc86842969051600a1c6af0143670c059648cc85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24578016,
+          "last_block": 24578016,
+          "sample_tx": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+          "transfers": [
+            {
+              "tx_hash": "0x3b0e8849ab7c5c38d24b083fbd3acc2b34529ff6218c422815ac17d7da723ffb",
+              "block_number": 24578016,
+              "timestamp": 1772554031,
+              "datetime_utc": "2026-03-03T16:07:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0x07203e8bdf2c62d3d3903ded601d7de9e898e07b",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "USDC"
+          ],
+          "transfer_count": 1,
+          "first_block": 24578016,
+          "last_block": 24578016,
+          "sample_tx": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+          "transfers": [
+            {
+              "tx_hash": "0xbdc0dfe16312d80f52b4ad78d669cc5034b3b7b079a341684068ee4cfc336a7c",
+              "block_number": 24578016,
+              "timestamp": 1772554031,
+              "datetime_utc": "2026-03-03T16:07:11Z",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "decimals": 6,
+              "value_raw": "2000",
+              "amount": "0.002",
+              "amount_float": 0.002,
+              "from": "0x0720697896b81dc9e2c690289248ec09e898e07b",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24735667,
+          "last_block": 24735667,
+          "sample_tx": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+          "transfers": [
+            {
+              "tx_hash": "0x72659dfb1ca214ee78fbc6976b5fae578c8a9afb753fd5bc883fdfd01ced403f",
+              "block_number": 24735667,
+              "timestamp": 1774455023,
+              "datetime_utc": "2026-03-25T16:10:23Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc8685975a040435b2f0a5f4aecb4827d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24842439,
+          "last_block": 24842439,
+          "sample_tx": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+          "transfers": [
+            {
+              "tx_hash": "0xf2ae0d86b42d5679f62abc230919da0177d710a7c91b194f46daa52a44066170",
+              "block_number": 24842439,
+              "timestamp": 1775741087,
+              "datetime_utc": "2026-04-09T13:24:47Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc86841bbeba223256461b9f7c0d057bd5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "WETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24842603,
+          "last_block": 24842603,
+          "sample_tx": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+          "transfers": [
+            {
+              "tx_hash": "0xa6fc9eb7a6cd8b4ba196aa08220a38781a14432fda96caf6eb05196f015fb869",
+              "block_number": 24842603,
+              "timestamp": 1775743055,
+              "datetime_utc": "2026-04-09T13:57:35Z",
+              "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "symbol": "WETH",
+              "decimals": 18,
+              "value_raw": "10000000000",
+              "amount": "0.00000001",
+              "amount_float": 1e-08,
+              "from": "0xc868b18fdbda255253f4005b748e8e4d5e10c85c",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+          "target": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24909772,
+          "last_block": 24909772,
+          "sample_tx": "0x779c8ebfb3f478d80aa86b820783af9cf2fc1b756e55e01bacb34919737143fd",
+          "transfers": [
+            {
+              "tx_hash": "0x779c8ebfb3f478d80aa86b820783af9cf2fc1b756e55e01bacb34919737143fd",
+              "block_number": 24909772,
+              "timestamp": 1776551651,
+              "datetime_utc": "2026-04-18T22:34:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "9920176335659000",
+              "amount": "0.009920176335659",
+              "amount_float": 0.009920176335659,
+              "from": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+              "to": "0xf30ba13e4b04ce5dc4d254ae5fa95477800f0eb0",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "target": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+          "relation": "in",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24909739,
+          "last_block": 24909739,
+          "sample_tx": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+          "transfers": [
+            {
+              "tx_hash": "0xbdc548c9ea561e2341752774202a192ad04033ae7ce8a4bd0d2e9af12503c594",
+              "block_number": 24909739,
+              "timestamp": 1776551255,
+              "datetime_utc": "2026-04-18T22:27:35Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "10000004600000000",
+              "amount": "0.0100000046",
+              "amount_float": 0.0100000046,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0xda14fbdf1e1f153abb65337405b6d90f4e1e5f61",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "target": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+          "relation": "in",
+          "symbols": [
+            "USDC"
+          ],
+          "transfer_count": 1,
+          "first_block": 24921894,
+          "last_block": 24921894,
+          "sample_tx": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+          "transfers": [
+            {
+              "tx_hash": "0x87ee928933339abbbfaf9cb23658c7fe863fafe356cbfcf20c8c8c59dd33bd67",
+              "block_number": 24921894,
+              "timestamp": 1776697547,
+              "datetime_utc": "2026-04-20T15:05:47Z",
+              "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "symbol": "USDC",
+              "decimals": 6,
+              "value_raw": "1500000000",
+              "amount": "1500",
+              "amount_float": 1500.0,
+              "from": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "to": "0x547090eb068220b3da1f7b611ef21723caa4121e",
+              "direction": "in"
+            }
+          ]
+        },
+        {
+          "source": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24956767,
+          "last_block": 24956767,
+          "sample_tx": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+          "transfers": [
+            {
+              "tx_hash": "0x63f332d2e816a443c49f39a471c0611a0fbf9fad40be59e2734a296bc320e49f",
+              "block_number": 24956767,
+              "timestamp": 1777117151,
+              "datetime_utc": "2026-04-25T11:39:11Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xda14b9b2b4d6842668be5d37e66b80ab38d35f61",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        },
+        {
+          "source": "0xda14344788f863e0412925523bb97147f23f5f61",
+          "target": "0x325228217e02e31529bf4bc6e32db695ea525669",
+          "relation": "out",
+          "symbols": [
+            "ETH"
+          ],
+          "transfer_count": 1,
+          "first_block": 24956790,
+          "last_block": 24956790,
+          "sample_tx": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+          "transfers": [
+            {
+              "tx_hash": "0xccc180861687c6cc3944a1f14fef58dba777014ed8e87423261f0117b20c7aba",
+              "block_number": 24956790,
+              "timestamp": 1777117427,
+              "datetime_utc": "2026-04-25T11:43:47Z",
+              "token": "native:eth",
+              "symbol": "ETH",
+              "decimals": 18,
+              "value_raw": "1000000000",
+              "amount": "0.000000001",
+              "amount_float": 1e-09,
+              "from": "0xda14344788f863e0412925523bb97147f23f5f61",
+              "to": "0x325228217e02e31529bf4bc6e32db695ea525669",
+              "direction": "out"
+            }
+          ]
+        }
+      ],
+      "seeds": [
+        "0x325228217e02e31529bf4bc6e32db695ea525669"
+      ],
+      "max_depth": 99,
+      "directions": "both"
+    },
+    "chain": "ethereum",
+    "chain_id": 1,
+    "from_block": 23990000,
+    "to_block": 25242078,
+    "receipt_transfers": "none",
+    "important_only": true,
+    "generated_at_utc": "2026-06-17T08:10:32Z",
+    "dfs": {
+      "seed_addresses": [
+        "0x325228217e02e31529bf4bc6e32db695ea525669"
+      ],
+      "depth": 99,
+      "directions": "both",
+      "discovered_addresses": 20,
+      "discovery_edges": 38
+    }
+  }
+}

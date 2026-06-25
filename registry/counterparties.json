@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-18",
+  "purpose": "Deterministic endpoint registry for counterparties that the strategy graph may show as endpoints but must not expand as wallet-cluster members.",
+  "rules": [
+    "CEX, bridge, router, solver, and protocol-contract addresses are endpoint nodes, not wallet-cluster members.",
+    "Every entry needs explicit evidence pointers. Research prose can guide registry review, but it is not graph evidence by itself.",
+    "If an address is not listed here, code may still classify it by wallet kind, but it must not infer a named counterparty from articles or narrative notes."
+  ],
+  "chains": {
+    "1": {
+      "name": "ethereum",
+      "addresses": {
+        "0x176f3dab24a159341c0509bb36b833e7fdd0a132": {
+          "label": "Poloniex 9",
+          "category": "cex",
+          "subtype": "exchange_wallet",
+          "endpoint_role": "cex_wallet",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["cex_deposit"],
+          "evidence": [
+            {
+              "source": "https://etherscan.io/address/0x176f3dab24a159341c0509bb36b833e7fdd0a132",
+              "source_type": "explorer_label",
+              "description": "Explorer label pinned locally as Poloniex 9.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2": {
+          "label": "Aave V3 Pool",
+          "category": "protocol_contract",
+          "subtype": "lending_pool",
+          "endpoint_role": "lending_pool",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["lending", "aave_v3"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AAVE_SPARK_POOLS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow semantic call target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xc13e21b648a5ee794902342038ff3adab66be987": {
+          "label": "Spark Pool",
+          "category": "protocol_contract",
+          "subtype": "lending_pool",
+          "endpoint_role": "lending_pool",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["lending", "spark"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AAVE_SPARK_POOLS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow semantic call target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x4e033931ad43597d96d6bcc25c280717730b58b1": {
+          "label": "Aave Lido Pool",
+          "category": "protocol_contract",
+          "subtype": "lending_pool",
+          "endpoint_role": "lending_pool",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["lending", "aave_lido"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AAVE_SPARK_POOLS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow semantic call target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb": {
+          "label": "Morpho Blue",
+          "category": "protocol_contract",
+          "subtype": "lending_singleton",
+          "endpoint_role": "lending_market_controller",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["lending", "morpho_blue"],
+          "evidence": [
+            {
+              "source": "local:feeder/flow_trace.py:MORPHO",
+              "source_type": "local_registry",
+              "description": "Existing flow-trace protocol singleton constant.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x888888888889758f76e7103c6cbf23abbf58f946": {
+          "label": "Pendle Router V4",
+          "category": "router",
+          "subtype": "dex_router",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["pendle", "swap"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:KNOWN_LABELS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow hardcoded call target label migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x6a000f20005980200259b80c5102003040001068": {
+          "label": "ParaSwap AugustusV6",
+          "category": "router",
+          "subtype": "dex_aggregator",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["swap", "paraswap"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AGGREGATORS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow aggregator target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559": {
+          "label": "Odos Router V2",
+          "category": "router",
+          "subtype": "dex_aggregator",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["swap", "odos"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AGGREGATORS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow aggregator target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x111111125421ca6dc452d289314280a0f8842a65": {
+          "label": "1inch AggregationRouterV6",
+          "category": "router",
+          "subtype": "dex_aggregator",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["swap", "1inch"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AGGREGATORS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow aggregator target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x6131b5fae19ea4f9d964eac0408e4408b66337b5": {
+          "label": "Kyber MetaAggregationRouterV2",
+          "category": "router",
+          "subtype": "dex_aggregator",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["swap", "kyber"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:AGGREGATORS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow aggregator target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xdef1c0ded9bec7f1a1670819833240f027b25eff": {
+          "label": "0x Exchange Proxy",
+          "category": "router",
+          "subtype": "dex_aggregator",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["swap", "0x"],
+          "evidence": [
+            {
+              "source": "https://etherscan.io/address/0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+              "source_type": "explorer_contract",
+              "description": "Explorer contract/address page for the 0x Exchange Proxy endpoint.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x9008d19f58aabd9ed0d60971565aa8510560ab41": {
+          "label": "CoW Protocol GPv2Settlement",
+          "category": "solver",
+          "subtype": "settlement_contract",
+          "endpoint_role": "solver_settlement",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["solver", "cow_protocol", "swap"],
+          "evidence": [
+            {
+              "source": "https://etherscan.io/address/0x9008d19f58aabd9ed0d60971565aa8510560ab41",
+              "source_type": "explorer_contract",
+              "description": "Explorer contract/address page for the CoW Protocol settlement endpoint.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xd19d4b5d358258f05d7b411e21a1460d11b0876f": {
+          "label": "Linea Rollup",
+          "category": "bridge",
+          "subtype": "rollup_bridge",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "linea"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x81d40f21f12a8f0e3252bccb954d722d4c464b64": {
+          "label": "CCTP MessageTransmitterV2",
+          "category": "bridge",
+          "subtype": "cctp_message_transmitter",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "cctp"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x28b5a0e9c621a5badaa536219b3a228c8168cf5d": {
+          "label": "CCTP TokenMessengerV2",
+          "category": "bridge",
+          "subtype": "cctp_token_messenger",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "cctp"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x88ff1e5b602916615391f55854588efcbb7663f0": {
+          "label": "Optimism StandardBridge",
+          "category": "bridge",
+          "subtype": "standard_bridge",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "optimism"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x470458c91978d2d929704489ad730dc3e3001113": {
+          "label": "Optimism StandardBridge",
+          "category": "bridge",
+          "subtype": "standard_bridge",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "optimism"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xd5ec14a83b7d95be1e2ac12523e2dee12cbeea6c": {
+          "label": "Optimism Bridge Endpoint",
+          "category": "bridge",
+          "subtype": "optimism_bridge_endpoint",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "optimism"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x10d8b8daa26d307489803e10477de69c0492b610": {
+          "label": "Across Endpoint",
+          "category": "bridge",
+          "subtype": "bridge_endpoint",
+          "endpoint_role": "bridge_route",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["bridge", "across"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:BRIDGE_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow bridge target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xb753366082466c4b5984312f0c4bb97554be067e": {
+          "label": "f(x) / fxUSD router",
+          "category": "router",
+          "subtype": "leverage_router",
+          "endpoint_role": "router_exec",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["fx_long", "router"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:KNOWN_LABELS",
+              "source_type": "local_registry",
+              "description": "Existing EOA-flow hardcoded call target label migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2": {
+          "label": "Yield Basis old yb-cbBTC LT",
+          "category": "protocol_contract",
+          "subtype": "yield_basis_lt",
+          "endpoint_role": "strategy_surface",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["yield_basis", "vault"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:YIELD_BASIS_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing Yield Basis target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0x722fc3640ba007c3e9867ccdb0dca59f2e2f29f9": {
+          "label": "Yield Basis new yb-cbBTC LT",
+          "category": "protocol_contract",
+          "subtype": "yield_basis_lt",
+          "endpoint_role": "strategy_surface",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["yield_basis", "vault"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:YIELD_BASIS_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing Yield Basis target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xf3081a2eb8927c0462864ec3fdbe927c842a0893": {
+          "label": "Yield Basis old yb-cbBTC Gauge",
+          "category": "protocol_contract",
+          "subtype": "yield_basis_gauge",
+          "endpoint_role": "staking_surface",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["yield_basis", "staking"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:YIELD_BASIS_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing Yield Basis target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xf8764cbcdb15a9e4c7ca1b0b8a578d9ebeec1b6f": {
+          "label": "Yield Basis new yb-cbBTC Gauge",
+          "category": "protocol_contract",
+          "subtype": "yield_basis_gauge",
+          "endpoint_role": "staking_surface",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["yield_basis", "staking"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:YIELD_BASIS_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing Yield Basis target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        },
+        "0xdfd6fe3a540f68601002e889e33117a7e8a0669d": {
+          "label": "Yield Basis LTMigrator",
+          "category": "protocol_contract",
+          "subtype": "migrator",
+          "endpoint_role": "strategy_surface",
+          "exclude_from_wallet_cluster": true,
+          "retain_as_endpoint": true,
+          "semantic_tags": ["yield_basis", "migration"],
+          "evidence": [
+            {
+              "source": "local:feeder/eoa_timeline.py:YIELD_BASIS_TARGETS",
+              "source_type": "local_registry",
+              "description": "Existing Yield Basis target migrated into counterparty registry.",
+              "confidence": "registry_backed"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
